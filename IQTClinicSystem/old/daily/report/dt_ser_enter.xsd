@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dt_ser_enter" targetNamespace="http://tempuri.org/dt_ser_enter.xsd" xmlns:mstns="http://tempuri.org/dt_ser_enter.xsd" xmlns="http://tempuri.org/dt_ser_enter.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dt_ser_enter" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dt_ser_enter" msprop:Generator_UserDSName="dt_ser_enter">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="serjury" msprop:Generator_TableClassName="serjuryDataTable" msprop:Generator_TableVarName="tableserjury" msprop:Generator_TablePropName="serjury" msprop:Generator_RowDeletingName="serjuryRowDeleting" msprop:Generator_RowChangingName="serjuryRowChanging" msprop:Generator_RowEvHandlerName="serjuryRowChangeEventHandler" msprop:Generator_RowDeletedName="serjuryRowDeleted" msprop:Generator_UserTableName="serjury" msprop:Generator_RowChangedName="serjuryRowChanged" msprop:Generator_RowEvArgName="serjuryRowChangeEvent" msprop:Generator_RowClassName="serjuryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:string" minOccurs="0" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_UserColumnName="age" type="xs:string" minOccurs="0" />
+              <xs:element name="date_enter" msprop:Generator_ColumnVarNameInTable="columndate_enter" msprop:Generator_ColumnPropNameInRow="date_enter" msprop:Generator_ColumnPropNameInTable="date_enterColumn" msprop:Generator_UserColumnName="date_enter" type="xs:string" minOccurs="0" />
+              <xs:element name="date_out" msprop:Generator_ColumnVarNameInTable="columndate_out" msprop:Generator_ColumnPropNameInRow="date_out" msprop:Generator_ColumnPropNameInTable="date_outColumn" msprop:Generator_UserColumnName="date_out" type="xs:string" minOccurs="0" />
+              <xs:element name="doctor1" msprop:Generator_ColumnVarNameInTable="columndoctor1" msprop:Generator_ColumnPropNameInRow="doctor1" msprop:Generator_ColumnPropNameInTable="doctor1Column" msprop:Generator_UserColumnName="doctor1" type="xs:string" minOccurs="0" />
+              <xs:element name="doctor2" msprop:Generator_ColumnVarNameInTable="columndoctor2" msprop:Generator_ColumnPropNameInRow="doctor2" msprop:Generator_ColumnPropNameInTable="doctor2Column" msprop:Generator_UserColumnName="doctor2" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:string" minOccurs="0" />
+              <xs:element name="ser_type" msprop:Generator_ColumnVarNameInTable="columnser_type" msprop:Generator_ColumnPropNameInRow="ser_type" msprop:Generator_ColumnPropNameInTable="ser_typeColumn" msprop:Generator_UserColumnName="ser_type" type="xs:string" minOccurs="0" />
+              <xs:element name="note" msprop:Generator_ColumnVarNameInTable="columnnote" msprop:Generator_ColumnPropNameInRow="note" msprop:Generator_ColumnPropNameInTable="noteColumn" msprop:Generator_UserColumnName="note" type="xs:string" minOccurs="0" />
+              <xs:element name="f20" msprop:Generator_ColumnVarNameInTable="columnf20" msprop:Generator_ColumnPropNameInRow="f20" msprop:Generator_ColumnPropNameInTable="f20Column" msprop:Generator_UserColumnName="f20" type="xs:string" minOccurs="0" />
+              <xs:element name="f21" msprop:Generator_ColumnVarNameInTable="columnf21" msprop:Generator_ColumnPropNameInRow="f21" msprop:Generator_ColumnPropNameInTable="f21Column" msprop:Generator_UserColumnName="f21" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="17.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" DataSourceSchema="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;xs:schema id=&quot;d_sell_menu&quot; targetNamespace=&quot;http://tempuri.org/d_sell_menu.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/d_sell_menu.xsd&quot; xmlns=&quot;http://tempuri.org/d_sell_menu.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;&#xD;&#xA;  &lt;xs:element name=&quot;d_sell_menu&quot; msdata:IsDataSet=&quot;true&quot; msdata:UseCurrentLocale=&quot;true&quot; msprop:EnableTableAdapterManager=&quot;true&quot; msprop:Generator_UserDSName=&quot;d_sell_menu&quot; msprop:Generator_DataSetName=&quot;d_sell_menu&quot;&gt;&#xD;&#xA;    &lt;xs:complexType&gt;&#xD;&#xA;      &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;        &lt;xs:element name=&quot;sell_menu&quot; msprop:Generator_RowEvHandlerName=&quot;sell_menuRowChangeEventHandler&quot; msprop:Generator_RowDeletedName=&quot;sell_menuRowDeleted&quot; msprop:Generator_RowDeletingName=&quot;sell_menuRowDeleting&quot; msprop:Generator_RowEvArgName=&quot;sell_menuRowChangeEvent&quot; msprop:Generator_TablePropName=&quot;sell_menu&quot; msprop:Generator_RowChangedName=&quot;sell_menuRowChanged&quot; msprop:Generator_RowChangingName=&quot;sell_menuRowChanging&quot; msprop:Generator_TableClassName=&quot;sell_menuDataTable&quot; msprop:Generator_RowClassName=&quot;sell_menuRow&quot; msprop:Generator_TableVarName=&quot;tablesell_menu&quot; msprop:Generator_UserTableName=&quot;sell_menu&quot;&gt;&#xD;&#xA;          &lt;xs:complexType&gt;&#xD;&#xA;            &lt;xs:sequence&gt;&#xD;&#xA;              &lt;xs:element name=&quot;id&quot; msprop:Generator_ColumnPropNameInRow=&quot;id&quot; msprop:Generator_ColumnPropNameInTable=&quot;idColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnid&quot; msprop:Generator_UserColumnName=&quot;id&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;customer_id&quot; msprop:Generator_ColumnPropNameInRow=&quot;customer_id&quot; msprop:Generator_ColumnPropNameInTable=&quot;customer_idColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columncustomer_id&quot; msprop:Generator_UserColumnName=&quot;customer_id&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;date&quot; msprop:Generator_ColumnPropNameInRow=&quot;_date&quot; msprop:Generator_ColumnPropNameInTable=&quot;dateColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columndate&quot; msprop:Generator_UserColumnName=&quot;date&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;total_price&quot; msprop:Generator_ColumnPropNameInRow=&quot;total_price&quot; msprop:Generator_ColumnPropNameInTable=&quot;total_priceColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columntotal_price&quot; msprop:Generator_UserColumnName=&quot;total_price&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;final_price&quot; msprop:Generator_ColumnPropNameInRow=&quot;final_price&quot; msprop:Generator_ColumnPropNameInTable=&quot;final_priceColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnfinal_price&quot; msprop:Generator_UserColumnName=&quot;final_price&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;item_name&quot; msprop:Generator_ColumnPropNameInRow=&quot;item_name&quot; msprop:Generator_ColumnPropNameInTable=&quot;item_nameColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnitem_name&quot; msprop:Generator_UserColumnName=&quot;item_name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;item_price&quot; msprop:Generator_ColumnPropNameInRow=&quot;item_price&quot; msprop:Generator_ColumnPropNameInTable=&quot;item_priceColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnitem_price&quot; msprop:Generator_UserColumnName=&quot;item_price&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;item_count&quot; msprop:Generator_ColumnPropNameInRow=&quot;item_count&quot; msprop:Generator_ColumnPropNameInTable=&quot;item_countColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnitem_count&quot; msprop:Generator_UserColumnName=&quot;item_count&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;datetime&quot; msprop:Generator_ColumnPropNameInRow=&quot;datetime&quot; msprop:Generator_ColumnPropNameInTable=&quot;datetimeColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columndatetime&quot; msprop:Generator_UserColumnName=&quot;datetime&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;discount&quot; msprop:Generator_ColumnPropNameInRow=&quot;discount&quot; msprop:Generator_ColumnPropNameInTable=&quot;discountColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columndiscount&quot; msprop:Generator_UserColumnName=&quot;discount&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;customer_name&quot; msprop:Generator_ColumnPropNameInRow=&quot;customer_name&quot; msprop:Generator_ColumnPropNameInTable=&quot;customer_nameColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columncustomer_name&quot; msprop:Generator_UserColumnName=&quot;customer_name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;f1&quot; msprop:Generator_ColumnPropNameInRow=&quot;f1&quot; msprop:Generator_ColumnPropNameInTable=&quot;f1Column&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnf1&quot; msprop:Generator_UserColumnName=&quot;f1&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;f2&quot; msprop:Generator_ColumnPropNameInRow=&quot;f2&quot; msprop:Generator_ColumnPropNameInTable=&quot;f2Column&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnf2&quot; msprop:Generator_UserColumnName=&quot;f2&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;f3&quot; msprop:Generator_ColumnPropNameInRow=&quot;f3&quot; msprop:Generator_ColumnPropNameInTable=&quot;f3Column&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnf3&quot; msprop:Generator_UserColumnName=&quot;f3&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;f4&quot; msprop:Generator_ColumnPropNameInRow=&quot;f4&quot; msprop:Generator_ColumnPropNameInTable=&quot;f4Column&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnf4&quot; msprop:Generator_UserColumnName=&quot;f4&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;            &lt;/xs:sequence&gt;&#xD;&#xA;          &lt;/xs:complexType&gt;&#xD;&#xA;        &lt;/xs:element&gt;&#xD;&#xA;      &lt;/xs:choice&gt;&#xD;&#xA;    &lt;/xs:complexType&gt;&#xD;&#xA;  &lt;/xs:element&gt;&#xD;&#xA;&lt;/xs:schema&gt;" Margins="21, 0, 0, 8" PaperKind="Custom" PaperName="S80 x 210 mm" PageWidth="301" PageHeight="826" Version="17.2">
+  <Parameters>
+    <Item1 Ref="2" Visible="false" Description="Parameter1" Name="i1" />
+    <Item2 Ref="3" Visible="false" Description="Parameter1" Name="i2" />
+    <Item3 Ref="4" Visible="false" Description="Parameter1" Name="i3" />
+    <Item4 Ref="5" Visible="false" Description="Parameter1" Name="i4" />
+    <Item5 Ref="6" Visible="false" Description="Parameter1" Name="i5" />
+    <Item6 Ref="7" Visible="false" Description="casher_name" Name="i6" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="8" ControlType="TopMarginBand" Name="TopMargin" HeightF="0" />
+    <Item2 Ref="9" ControlType="DetailBand" Name="Detail" HeightF="23.0000019" TextAlignment="MiddleLeft">
+      <Controls>
+        <Item1 Ref="10" ControlType="XRShape" Name="shape3" SizeF="2,23.0000019" LocationFloat="121.973991, 0" />
+        <Item2 Ref="11" ControlType="XRShape" Name="shape2" SizeF="2,23.0000019" LocationFloat="65.0626, 0" />
+        <Item3 Ref="12" ControlType="XRLabel" Name="label6" TextFormatString="{0:n0}" Text="label6" TextAlignment="MiddleCenter" SizeF="61.0626335,23.0000019" LocationFloat="3.99996448, 0" Font="Tempus Sans ITC, 8.25pt, style=Bold, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="13" Expression="[sell_menu].[item_price]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="14" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="15" ControlType="XRLabel" Name="label5" Text="label5" TextAlignment="MiddleCenter" SizeF="144.026062,23.0000019" LocationFloat="123.973991, 0" Font="Tempus Sans ITC, 8.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="16" Expression="[sell_menu].[item_name]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="17" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="18" ControlType="XRLabel" Name="label14" Text="label14" TextAlignment="MiddleCenter" SizeF="54.9113922,23" LocationFloat="67.0626, 0" Font="Tempus Sans ITC, 8.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="19" Expression="[sell_menu].[f4]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="20" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="21" ControlType="XRShape" Name="shape5" SizeF="266.000031,23.0000019" LocationFloat="3.99996948, 0">
+          <Shape Ref="22" ShapeName="Rectangle" />
+          <ExpressionBindings>
+            <Item1 Ref="23" Expression="[sell_menu].[f1]" PropertyName="Tag" EventName="BeforePrint" />
+          </ExpressionBindings>
+        </Item6>
+      </Controls>
+      <StylePriority Ref="24" UseTextAlignment="false" />
+    </Item2>
+    <Item3 Ref="25" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="8" />
+    <Item4 Ref="26" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="198.442413">
+      <Controls>
+        <Item1 Ref="27" ControlType="XRShape" Name="shape6" SizeF="2,23.0000019" LocationFloat="65.0626, 175.442383" />
+        <Item2 Ref="28" ControlType="XRShape" Name="shape4" SizeF="2,23.0000019" LocationFloat="121.973991, 175.442413" />
+        <Item3 Ref="29" ControlType="XRLabel" Name="label4" Text="مــول 2 كنـكَ" TextAlignment="MiddleCenter" SizeF="205.582321,39.04166" LocationFloat="22.802496, 2.604202" Font="Microsoft Sans Serif, 21.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="30" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="31" ControlType="XRLabel" Name="label11" Text="المادة" TextAlignment="MiddleCenter" SizeF="146.025909,22.99997" LocationFloat="123.973991, 175.442413" Font="Times New Roman, 9.75pt, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="32" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="33" ControlType="XRPanel" Name="panel1" SizeF="265.999847,172.838211" LocationFloat="3.99996948, 2.604202" Borders="Left, Top, Right" BorderWidth="1" BorderDashStyle="Solid">
+          <Controls>
+            <Item1 Ref="34" ControlType="XRLabel" Name="label24" Text="قائمة" TextAlignment="MiddleCenter" SizeF="46.5721741,17.2083054" LocationFloat="145.010925, 85.32292" Font="Times New Roman, 9.75pt, charSet=0" Padding="2,2,0,0,100" Borders="Top, Right, Bottom">
+              <StylePriority Ref="35" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="36" ControlType="XRLabel" Name="label23" Text="label23" TextAlignment="MiddleCenter" SizeF="69.79167,17.2083054" LocationFloat="75.21925, 85.32292" Font="Times New Roman, 9.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="Left, Top, Bottom">
+              <ExpressionBindings>
+                <Item1 Ref="37" Expression="[sell_menu].[f1]" PropertyName="Text" EventName="BeforePrint" />
+              </ExpressionBindings>
+              <StylePriority Ref="38" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+            </Item2>
+            <Item3 Ref="39" ControlType="XRLabel" Name="label15" TextFormatString="{0:dd/MM/yyyy       hh:mm tt}" Text="label15" TextAlignment="MiddleLeft" SizeF="137.469269,14.6421661" LocationFloat="7.54165649, 150.166626" Font="Times New Roman, 8.25pt, charSet=0" Padding="2,2,0,0,100" Borders="None">
+              <ExpressionBindings>
+                <Item1 Ref="40" Expression="[sell_menu].[datetime]" PropertyName="Text" EventName="BeforePrint" />
+              </ExpressionBindings>
+              <StylePriority Ref="41" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+            </Item3>
+            <Item4 Ref="42" ControlType="XRLabel" Name="label17" Text="07819795539 \ 07702811094" TextAlignment="MiddleCenter" SizeF="248.458374,14.5364609" LocationFloat="7.54173565, 68.78646" Font="Times New Roman, 12pt, charSet=0" Padding="2,2,0,0,100" Borders="None">
+              <StylePriority Ref="43" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+            </Item4>
+            <Item5 Ref="44" ControlType="XRLabel" Name="label16" Text="شارع كرامة غدير - مقابل جامع الخاقاني" TextAlignment="MiddleCenter" SizeF="248.458374,19.7447968" LocationFloat="7.54173565, 49.0416679" Font="Times New Roman, 11.25pt, charSet=0" Padding="2,2,0,0,100" Borders="None">
+              <StylePriority Ref="45" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+            </Item5>
+            <Item6 Ref="46" ControlType="XRShape" Name="shape7" SizeF="192.343079,2" LocationFloat="36.0417366, 83.32292">
+              <Shape Ref="47" ShapeName="Rectangle" />
+            </Item6>
+            <Item7 Ref="48" ControlType="XRLabel" Name="label2" Text="label2" TextAlignment="TopRight" SizeF="108.989517,15.7978821" LocationFloat="147.01091, 149.01091" Font="Times New Roman, 8.25pt, charSet=0" Padding="2,2,0,0,100" BorderWidth="0">
+              <ExpressionBindings>
+                <Item1 Ref="49" Expression="[sell_menu].[customer_name]" PropertyName="Text" EventName="BeforePrint" />
+              </ExpressionBindings>
+              <StylePriority Ref="50" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
+            </Item7>
+            <Item8 Ref="51" ControlType="XRBarCode" Name="barCode1" Module="1" Alignment="MiddleCenter" TextAlignment="MiddleCenter" SizeF="248.458466,47.6354" LocationFloat="7.541656, 102.531227" Padding="10,10,0,0,100" BorderWidth="0">
+              <Symbology Ref="52" Name="Code128" />
+              <ExpressionBindings>
+                <Item1 Ref="53" Expression="[Parameters].[i5]" PropertyName="Text" EventName="BeforePrint" />
+              </ExpressionBindings>
+              <StylePriority Ref="54" UseBorderWidth="false" UseTextAlignment="false" />
+            </Item8>
+          </Controls>
+          <StylePriority Ref="55" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" />
+        </Item5>
+        <Item6 Ref="56" ControlType="XRLabel" Name="label13" Text="قياس" TextAlignment="MiddleCenter" SizeF="54.9113922,22.99997" LocationFloat="67.0626, 175.442383" Font="Times New Roman, 9.75pt, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="57" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="58" ControlType="XRLabel" Name="label12" Text="السعر" TextAlignment="MiddleCenter" SizeF="61.0626335,22.99997" LocationFloat="3.99996448, 175.442383" Font="Times New Roman, 9.75pt, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="59" UseFont="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="60" ControlType="XRShape" Name="shape1" SizeF="266.000031,22.99997" LocationFloat="3.99996948, 175.442413">
+          <Shape Ref="61" ShapeName="Rectangle" />
+        </Item8>
+      </Controls>
+    </Item4>
+    <Item5 Ref="62" ControlType="PageFooterBand" Name="PageFooter" HeightF="8.723974" />
+    <Item6 Ref="63" ControlType="ReportFooterBand" Name="ReportFooter" HeightF="169.939926">
+      <Controls>
+        <Item1 Ref="64" ControlType="XRLabel" Name="label21" Text="label21" TextAlignment="MiddleRight" SizeF="128.520447,16.7499847" LocationFloat="99.86436, 117.773247" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="65" Expression="[Parameters].[i6]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="66" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="67" ControlType="XRLabel" Name="label19" TextFormatString="{0:n0}" Text="label7" TextAlignment="MiddleRight" SizeF="122.208405,23" LocationFloat="26.80247, 9.999984" Font="Times New Roman, 12pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <ExpressionBindings>
+            <Item1 Ref="68" Expression="[Parameters].[i3]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="69" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="70" ControlType="XRLabel" Name="label20" Text="عدد القطع" TextAlignment="MiddleCenter" SizeF="98.52551,23.0000019" LocationFloat="149.0109, 9.999984" Font="Times New Roman, 12pt, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="71" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="72" ControlType="XRLine" Name="line1" SizeF="248.046875,2" LocationFloat="11.9535151, 155.356567" />
+        <Item5 Ref="73" ControlType="XRLabel" Name="label10" Text="المبلغ النهائي" TextAlignment="MiddleCenter" SizeF="98.52551,23" LocationFloat="149.0109, 78.9999847" Font="Times New Roman, 12pt, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="74" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="75" ControlType="XRLabel" Name="label3" Text="الخصم" TextAlignment="MiddleCenter" SizeF="98.52551,23" LocationFloat="149.0109, 56.00005" Font="Times New Roman, 12pt, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="76" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="77" ControlType="XRLabel" Name="label1" Text="المجموع" TextAlignment="MiddleCenter" SizeF="98.52551,23.0000019" LocationFloat="149.0109, 33.0000153" Font="Times New Roman, 12pt, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <StylePriority Ref="78" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="79" ControlType="XRLabel" Name="label9" TextFormatString="{0:n0}" Text="label9" TextAlignment="MiddleRight" SizeF="122.2084,22.9999962" LocationFloat="26.80247, 78.9999847" Font="Times New Roman, 12pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <ExpressionBindings>
+            <Item1 Ref="80" Expression="[Parameters].[i2]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="81" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="82" ControlType="XRLabel" Name="label7" TextFormatString="{0:n0}" Text="label7" TextAlignment="MiddleRight" SizeF="122.208405,23" LocationFloat="26.80247, 33.0000153" Font="Times New Roman, 12pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <ExpressionBindings>
+            <Item1 Ref="83" Expression="[Parameters].[i1]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="84" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="85" ControlType="XRLabel" Name="label8" TextFormatString="{0:n0}" Text="label8" TextAlignment="MiddleRight" SizeF="122.2084,22.9999981" LocationFloat="26.80247, 56.00005" Font="Times New Roman, 12pt, style=Bold, charSet=0" Padding="2,2,0,0,100" Borders="All">
+          <ExpressionBindings>
+            <Item1 Ref="86" Expression="[sell_menu].[discount]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="87" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item10>
+        <Item11 Ref="88" ControlType="XRLabel" Name="label18" Text="+9647711433222 IQIT برمجة " TextAlignment="MiddleCenter" SizeF="146.875046,12.5833282" LocationFloat="67.06259, 157.3566" Font="Microsoft Sans Serif, 8.25pt, charSet=178" Padding="2,2,0,0,100">
+          <StylePriority Ref="89" UseFont="false" UseTextAlignment="false" />
+        </Item11>
+        <Item12 Ref="90" ControlType="XRLabel" Name="label22" Text="الكاشير" SizeF="53.1249847,23" LocationFloat="228.384811, 117.773247" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item6>
+  </Bands>
+</XtraReportsLayoutSerializer>

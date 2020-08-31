@@ -1,0 +1,2 @@
+main4
+write "main" in ther first line if this pc is main

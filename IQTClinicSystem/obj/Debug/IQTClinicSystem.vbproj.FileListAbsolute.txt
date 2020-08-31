@@ -1,0 +1,981 @@
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem - Copy\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\MySql.Data.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\AForge.dll
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\AForge.Video.dll
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\AForge.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\AForge.Video.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\bin\Debug\AForge.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\bin\Debug\AForge.Video.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\MyFiles\Project\WindowsApp\IQTClinicSystem\backup\8-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\bin\Debug\AForge.xml
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\bin\Debug\AForge.Video.xml
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\قبل العيد\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\bin\Debug\AForge.xml
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\bin\Debug\AForge.Video.xml
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\orginal\15-6-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\bin\Debug\AForge.xml
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\bin\Debug\AForge.Video.xml
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\orginal\2-7-2018\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\bin\Debug\AForge.xml
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\bin\Debug\AForge.Video.xml
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\orginal\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\bin\Debug\AForge.xml
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\bin\Debug\AForge.Video.xml
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\2018-8-7 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+C:\Users\ka\Desktop\2018-8-24 dr ahmed\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+C:\Users\ka\Desktop\MyClinic\myApp\IQTClinicSystem\bin\Debug\Dynamsoft.ImageCore.dll
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.dll
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\Dynamsoft.ImageCore.dll
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.xml
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+K:\MyClinic\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\RdlCompile.cache
+K:\MyClinic\myApp\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.dll
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.xml
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+F:\TRADE\myApp\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_barcode.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\RdlCompile.cache
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+F:\TRADE\myApp\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+D:\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_info.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_friend_card.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_visitor_card.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_item.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_delete_option.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_menu.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+D:\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+D:\complex\IQTClinicSystem\obj\Debug\RdlCompile.cache
+D:\complex\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+D:\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+D:\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+D:\complex\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.xml
+D:\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+D:\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.dll
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.xml
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+F:\TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_info.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_friend_card.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_visitor_card.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_item.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_item_option.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_size.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_delete_option.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_menu.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\RdlCompile.cache
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+F:\TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.dll
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\MySql.Data.EntityFramework.xml
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+F:\1TRADE\complex\IQTClinicSystem\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_info.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_friend_card.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_visitor_card.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_setting.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_item.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_item_option.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_size.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_delete_option.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_menu.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_select_size.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\RdlCompile.cache
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_rest.resources
+F:\1TRADE\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_rest.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_info.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_friend_card.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_customer.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_visitor_card.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_setting.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_item.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_item_option.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_size.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_money.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pull_money.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_view_pulls.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring_event.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_delete_option.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_menu.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_select_size.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_rest.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_rest.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_search.resources
+C:\Users\ka\Desktop\MyFiles\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_pulls.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_info.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_friend_card.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_customer.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_visitor_card.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_discounts.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_setting.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_item.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_item_option.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_size.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_money.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pull_money.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_view_pulls.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money_calculator.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring_event.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_search.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_delete_option.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_menu.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_select_size.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_rest.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_menu_not_cashe.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_pulls.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_rest.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\complex2\complex\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_info.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_friend_card.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_customer.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_visitor_card.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_discounts.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_setting.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_item.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_item_option.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_size.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_money.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pull_money.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_view_pulls.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money_calculator.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring_event.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_search.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_delete_option.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_menu.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_select_size.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_rest.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_menu_not_cashe.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_pulls.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_rest.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dept.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_other_required.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_other_dept_item.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_months.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_tasded_part.resources
+C:\Users\ka\Desktop\MyFiles\generator\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_months_tasded.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_info.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_friend_card.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_customer.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_visitor_card.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_discounts.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_setting.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_item.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_item_option.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_size.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_money.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pull_money.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_view_pulls.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money_calculator.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring_event.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_back_option.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_customer_search.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_delete_option.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_menu.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_select_size.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_sell.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_print_rest.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_menu_not_cashe.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_pulls.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_user_rest.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_other_dept_item.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_other_required.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dept.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_months.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_months_tasded.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_tasded_part.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fmdaily.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_bookto.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_money.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_ser_report.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport1.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_cergury.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_anylises.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_doctor_main.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_dose.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_edit_treatment.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_pic_view.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_sergury.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_message.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_monitoring.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_login.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_SplashScreen.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_queue.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_desiger.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_report_viewr.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_report_h_enter.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_m_report_viewer.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_designer_treat.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_x_viewer_treat.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_scanner.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treatment.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_treats.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_web_browser.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_main.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_camera.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.Resources.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_patient.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_patients.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_queue_option.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_wait.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_re_queue.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_win_report.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraReport2.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.Xstore.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.XtraForm1.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\RdlCompile.cache
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\RdlCompile.compiled
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache

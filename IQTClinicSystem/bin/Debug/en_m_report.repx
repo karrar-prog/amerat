@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="17.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" DataSourceSchema="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;xs:schema id=&quot;ar_m_report&quot; targetNamespace=&quot;http://tempuri.org/ar_m_report.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/ar_m_report.xsd&quot; xmlns=&quot;http://tempuri.org/ar_m_report.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;&#xD;&#xA;  &lt;xs:element name=&quot;ar_m_report&quot; msdata:IsDataSet=&quot;true&quot; msdata:UseCurrentLocale=&quot;true&quot; msprop:EnableTableAdapterManager=&quot;true&quot; msprop:Generator_UserDSName=&quot;ar_m_report&quot; msprop:Generator_DataSetName=&quot;ar_m_report&quot;&gt;&#xD;&#xA;    &lt;xs:complexType&gt;&#xD;&#xA;      &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;        &lt;xs:element name=&quot;m_r_table&quot; msprop:Generator_RowEvHandlerName=&quot;m_r_tableRowChangeEventHandler&quot; msprop:Generator_RowDeletedName=&quot;m_r_tableRowDeleted&quot; msprop:Generator_RowDeletingName=&quot;m_r_tableRowDeleting&quot; msprop:Generator_RowEvArgName=&quot;m_r_tableRowChangeEvent&quot; msprop:Generator_TablePropName=&quot;m_r_table&quot; msprop:Generator_RowChangedName=&quot;m_r_tableRowChanged&quot; msprop:Generator_RowChangingName=&quot;m_r_tableRowChanging&quot; msprop:Generator_TableClassName=&quot;m_r_tableDataTable&quot; msprop:Generator_RowClassName=&quot;m_r_tableRow&quot; msprop:Generator_TableVarName=&quot;tablem_r_table&quot; msprop:Generator_UserTableName=&quot;m_r_table&quot;&gt;&#xD;&#xA;          &lt;xs:complexType&gt;&#xD;&#xA;            &lt;xs:sequence&gt;&#xD;&#xA;              &lt;xs:element name=&quot;patient_id&quot; msprop:Generator_ColumnPropNameInRow=&quot;patient_id&quot; msprop:Generator_ColumnPropNameInTable=&quot;patient_idColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnpatient_id&quot; msprop:Generator_UserColumnName=&quot;patient_id&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;patient_name&quot; msprop:Generator_ColumnPropNameInRow=&quot;patient_name&quot; msprop:Generator_ColumnPropNameInTable=&quot;patient_nameColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnpatient_name&quot; msprop:Generator_UserColumnName=&quot;patient_name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;treatment&quot; msprop:Generator_ColumnPropNameInRow=&quot;treatment&quot; msprop:Generator_ColumnPropNameInTable=&quot;treatmentColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columntreatment&quot; msprop:Generator_UserColumnName=&quot;treatment&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;disease&quot; msprop:Generator_ColumnPropNameInRow=&quot;disease&quot; msprop:Generator_ColumnPropNameInTable=&quot;diseaseColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columndisease&quot; msprop:Generator_UserColumnName=&quot;disease&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;disease_type&quot; msprop:Generator_ColumnPropNameInRow=&quot;disease_type&quot; msprop:Generator_ColumnPropNameInTable=&quot;disease_typeColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columndisease_type&quot; msprop:Generator_UserColumnName=&quot;disease_type&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;date&quot; msprop:Generator_ColumnPropNameInRow=&quot;_date&quot; msprop:Generator_ColumnPropNameInTable=&quot;dateColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columndate&quot; msprop:Generator_UserColumnName=&quot;date&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;time&quot; msprop:Generator_ColumnPropNameInRow=&quot;time&quot; msprop:Generator_ColumnPropNameInTable=&quot;timeColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columntime&quot; msprop:Generator_UserColumnName=&quot;time&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;other&quot; msprop:Generator_ColumnPropNameInRow=&quot;other&quot; msprop:Generator_ColumnPropNameInTable=&quot;otherColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnother&quot; msprop:Generator_UserColumnName=&quot;other&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;note&quot; msprop:Generator_ColumnPropNameInRow=&quot;note&quot; msprop:Generator_ColumnPropNameInTable=&quot;noteColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columnnote&quot; msprop:Generator_UserColumnName=&quot;note&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;xs:element name=&quot;diagnosis_date&quot; msprop:Generator_ColumnPropNameInRow=&quot;diagnosis_date&quot; msprop:Generator_ColumnPropNameInTable=&quot;diagnosis_dateColumn&quot; msprop:Generator_ColumnVarNameInTable=&quot;columndiagnosis_date&quot; msprop:Generator_UserColumnName=&quot;diagnosis_date&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;            &lt;/xs:sequence&gt;&#xD;&#xA;          &lt;/xs:complexType&gt;&#xD;&#xA;        &lt;/xs:element&gt;&#xD;&#xA;      &lt;/xs:choice&gt;&#xD;&#xA;    &lt;/xs:complexType&gt;&#xD;&#xA;  &lt;/xs:element&gt;&#xD;&#xA;&lt;/xs:schema&gt;" Margins="23, 23, 16, 15" PaperKind="A5" PageWidth="583" PageHeight="827" Version="17.2">
+  <Bands>
+    <Item1 Ref="1" ControlType="TopMarginBand" Name="TopMargin" HeightF="16" />
+    <Item2 Ref="2" ControlType="DetailBand" Name="Detail" HeightF="218.907379">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRLine" Name="line2" SizeF="510.416626,2.08333588" LocationFloat="9.999998, 7.916673" />
+        <Item2 Ref="4" ControlType="XRLine" Name="line1" SizeF="510.416626,2.08333588" LocationFloat="9.999998, 44.45836" />
+        <Item3 Ref="5" ControlType="XRLabel" Name="label8" Text="Medical Report" TextAlignment="MiddleCenter" SizeF="159.624969,34.45835" LocationFloat="180.7917, 10.0000067" Font="Times New Roman, 15.75pt, style=Bold, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="6" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="7" ControlType="XRLabel" Name="label10" Text="label10" TextAlignment="MiddleLeft" SizeF="400.083221,23" LocationFloat="113.916756, 69.37497" Font="Times New Roman, 14.25pt, style=Bold, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="8" Expression="[m_r_table].[patient_name]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="9" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="10" ControlType="XRLabel" Name="label3" Text="label3" TextAlignment="MiddleLeft" SizeF="353.437561,23" LocationFloat="160.562424, 92.37497" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="11" Expression="[m_r_table].[disease]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="12" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="13" ControlType="XRLabel" Name="label5" Multiline="true" CanShrink="true" Text="label5" TextAlignment="MiddleLeft" SizeF="504.000031,23" LocationFloat="9.999998, 186.458313" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="14" Expression="[m_r_table].[note]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="15" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="16" ControlType="XRLabel" Name="label4" Multiline="true" CanShrink="true" Text="label4" TextAlignment="MiddleLeft" SizeF="504.000031,27.16668" LocationFloat="9.999998, 159.291626" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="17" Expression="[m_r_table].[treatment]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="18" UseFont="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="19" ControlType="XRLabel" Name="label2" Multiline="true" CanShrink="true" Text="label2" TextAlignment="MiddleLeft" SizeF="504,20.9166641" LocationFloat="10.0000305, 138.374969" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="20" Expression="[m_r_table].[other]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="21" UseFont="false" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="22" ControlType="XRLabel" Name="label1" TextFormatString="{0:yyyy-MM-dd}" Text="label1" TextAlignment="MiddleLeft" SizeF="117.458252,23.0000038" LocationFloat="269.59726, 115.374962" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="23" Expression="[m_r_table].[diagnosis_date]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="24" UseFont="false" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="25" ControlType="XRLabel" Name="label12" Text="and diagnosed in our clinic since" TextAlignment="MiddleLeft" SizeF="259.597229,23.0000076" LocationFloat="10.0000267, 115.374962" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="26" UseFont="false" UseTextAlignment="false" />
+        </Item10>
+        <Item11 Ref="27" ControlType="XRLabel" Name="label11" Text="Compluining of" TextAlignment="MiddleLeft" SizeF="150.562424,22.9999924" LocationFloat="10.0000267, 92.37497" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="28" UseFont="false" UseTextAlignment="false" />
+        </Item11>
+        <Item12 Ref="29" ControlType="XRLabel" Name="label9" Text="The patient" TextAlignment="MiddleLeft" SizeF="97.6759338,23" LocationFloat="10, 69.37497" Font="Times New Roman, 14.25pt, charSet=0" Padding="2,2,0,0,100">
+          <StylePriority Ref="30" UseFont="false" UseTextAlignment="false" />
+        </Item12>
+      </Controls>
+    </Item2>
+    <Item3 Ref="31" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="15.32402" />
+    <Item4 Ref="32" ControlType="PageHeaderBand" Name="PageHeader" HeightF="186.4587">
+      <Controls>
+        <Item1 Ref="33" ControlType="XRLabel" Name="label7" Text="اسم المراجع" TextAlignment="MiddleLeft" SizeF="63.1455078,23" LocationFloat="463.854523, 137.685486" Padding="2,2,0,0,100">
+          <StylePriority Ref="34" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="35" ControlType="XRLabel" Name="label13" Text="التأريخ" TextAlignment="MiddleLeft" SizeF="63.1455078,23" LocationFloat="463.659729, 163.4587" Padding="2,2,0,0,100">
+          <StylePriority Ref="36" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="37" ControlType="XRLabel" Name="label15" Text="رقم سجل المريض" TextAlignment="MiddleCenter" SizeF="149.875,23.0000038" LocationFloat="24.5833721, 126.227158" Padding="2,2,0,0,100">
+          <StylePriority Ref="38" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="39" ControlType="XRLabel" Name="label16" Text="label10" TextAlignment="TopLeft" SizeF="204.0625,23" LocationFloat="259.59726, 137.685486" Font="Times New Roman, 11.25pt, style=Bold, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="40" Expression="[m_r_table].[patient_name]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="41" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="42" ControlType="XRBarCode" Name="barCode1" TextAlignment="MiddleCenter" SizeF="149.875,35.77318" LocationFloat="24.5833721, 149.227173" Padding="10,10,0,0,100" Borders="None">
+          <Symbology Ref="43" Name="Code11" />
+          <ExpressionBindings>
+            <Item1 Ref="44" Expression="[m_r_table].[patient_id]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="45" UseBorders="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="46" ControlType="XRLabel" Name="label6" TextFormatString="{0:yyyy-MM-dd}" Text="label6" TextAlignment="MiddleCenter" SizeF="87.375,23" LocationFloat="376.284729, 163.4587" Padding="2,2,0,0,100" Borders="None">
+          <ExpressionBindings>
+            <Item1 Ref="47" Expression="[m_r_table].[date]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="48" UseBorders="false" UseTextAlignment="false" />
+        </Item6>
+      </Controls>
+    </Item4>
+    <Item5 Ref="49" ControlType="PageFooterBand" Name="PageFooter" HeightF="78.009285">
+      <Controls>
+        <Item1 Ref="50" ControlType="XRLabel" Name="label18" TextFormatString="{0:yyyy-MM-dd}" Text="label2" TextAlignment="MiddleCenter" SizeF="100,23" LocationFloat="41.1666451, 39.58335" Font="Microsoft Sans Serif, 11.25pt, charSet=0" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="51" Expression="[hospital_enter].[date]" PropertyName="Text" EventName="BeforePrint" />
+          </ExpressionBindings>
+          <StylePriority Ref="52" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="53" ControlType="XRLabel" Name="label17" Text="Dr. " TextAlignment="MiddleCenter" SizeF="183.333313,23.0000038" LocationFloat="9.999998, 16.5833473" Font="Microsoft Sans Serif, 14.25pt, charSet=0" Padding="2,2,0,0,100" Borders="Top">
+          <StylePriority Ref="54" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item5>
+  </Bands>
+</XtraReportsLayoutSerializer>

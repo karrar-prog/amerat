@@ -1,0 +1,1713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD2FD596-BFCA-458B-AF72-6E7CA9429138}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IQTClinicSystem</RootNamespace>
+    <AssemblyName>IQTClinicSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>IQTClinicSystem.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\قاعة\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\قاعة\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\قاعة\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dialogs.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Dynamsoft.Forms.Viewer">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Dynamsoft\Dynamic .NET TWAIN 8.0\Redistributable\Assembly\For .NETFramework 4.0\Dynamsoft.Forms.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Dynamsoft.Twain">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Dynamsoft\Dynamic .NET TWAIN 8.0\Redistributable\Assembly\For .NETFramework 4.0\Dynamsoft.Twain.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=8.0.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore.Design, Version=8.0.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dataset\d_item.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>d_item.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataset\d_item.vb">
+      <DependentUpon>d_item.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\d_customer.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>d_customer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\d_customer.vb">
+      <DependentUpon>d_customer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\fm_customer.Designer.vb">
+      <DependentUpon>fm_customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\fm_customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\customer\fm_customer_info.Designer.vb">
+      <DependentUpon>fm_customer_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\fm_customer_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\customer\fm_friend_card.Designer.vb">
+      <DependentUpon>fm_friend_card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\fm_friend_card.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\customer\fm_print_customer.Designer.vb">
+      <DependentUpon>fm_print_customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\fm_print_customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\customer\fm_visitor_card.Designer.vb">
+      <DependentUpon>fm_visitor_card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\customer\fm_visitor_card.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Discounts\fm_discounts.Designer.vb">
+      <DependentUpon>fm_discounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\Discounts\fm_discounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\fm_setting.Designer.vb">
+      <DependentUpon>fm_setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\fm_setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\item\fm_add_item.Designer.vb">
+      <DependentUpon>fm_add_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\item\fm_add_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\item\fm_item_option.Designer.vb">
+      <DependentUpon>fm_item_option.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\item\fm_item_option.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\item\fm_size.Designer.vb">
+      <DependentUpon>fm_size.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\item\fm_size.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\money\fm_print_money.Designer.vb">
+      <DependentUpon>fm_print_money.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\money\fm_print_money.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\money\fm_pull_money.Designer.vb">
+      <DependentUpon>fm_pull_money.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\money\fm_pull_money.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\money\fm_view_pulls.Designer.vb">
+      <DependentUpon>fm_view_pulls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\money\fm_view_pulls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\money_calculatoer\fm_money_calculator.Designer.vb">
+      <DependentUpon>fm_money_calculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\money_calculatoer\fm_money_calculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\monitoring\fm_monitoring_event.Designer.vb">
+      <DependentUpon>fm_monitoring_event.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\monitoring\fm_monitoring_event.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\sell\d_sell_menu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>d_sell_menu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\d_sell_menu.vb">
+      <DependentUpon>d_sell_menu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\fm_back_option.Designer.vb">
+      <DependentUpon>fm_back_option.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\fm_back_option.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\sell\fm_customer_search.Designer.vb">
+      <DependentUpon>fm_customer_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\fm_customer_search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\sell\fm_delete_option.Designer.vb">
+      <DependentUpon>fm_delete_option.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\fm_delete_option.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\sell\fm_print_menu.Designer.vb">
+      <DependentUpon>fm_print_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\fm_print_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\sell\fm_select_size.Designer.vb">
+      <DependentUpon>fm_select_size.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\fm_select_size.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\sell\fm_sell.Designer.vb">
+      <DependentUpon>fm_sell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\sell\fm_sell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\user\fm_print_rest.Designer.vb">
+      <DependentUpon>fm_print_rest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\user\fm_print_rest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\user\fm_user.Designer.vb">
+      <DependentUpon>fm_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\user\fm_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\user\fm_user_menu_not_cashe.Designer.vb">
+      <DependentUpon>fm_user_menu_not_cashe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\user\fm_user_menu_not_cashe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\user\fm_user_pulls.Designer.vb">
+      <DependentUpon>fm_user_pulls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\user\fm_user_pulls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\user\fm_user_rest.Designer.vb">
+      <DependentUpon>fm_user_rest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\user\fm_user_rest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_add_other_dept_item.Designer.vb">
+      <DependentUpon>fm_add_other_dept_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_add_other_dept_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_add_other_required.Designer.vb">
+      <DependentUpon>fm_add_other_required.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_add_other_required.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_dept.Designer.vb">
+      <DependentUpon>fm_dept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_dept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_months.Designer.vb">
+      <DependentUpon>fm_months.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_months.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_months_tasded.Designer.vb">
+      <DependentUpon>fm_months_tasded.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_months_tasded.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_tasded_part.Designer.vb">
+      <DependentUpon>fm_tasded_part.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_tasded_part.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\Months.vb" />
+    <Compile Include="model\Customer.vb" />
+    <Compile Include="model\CustomerDiscount.vb" />
+    <Compile Include="model\Dept.vb" />
+    <Compile Include="model\Discount.vb" />
+    <Compile Include="model\EventRecord.vb" />
+    <Compile Include="model\GlobalValue.vb" />
+    <Compile Include="model\Item.vb" />
+    <Compile Include="model\OtherRequired.vb" />
+    <Compile Include="model\Permission.vb" />
+    <Compile Include="model\Plan.vb" />
+    <Compile Include="model\Rests.vb" />
+    <Compile Include="model\sell_menu.vb" />
+    <Compile Include="model\sell_menu_item.vb" />
+    <Compile Include="model\store.vb" />
+    <Compile Include="model\type.vb" />
+    <Compile Include="model\UserMoneyList.vb" />
+    <Compile Include="old\daily\fmdaily.Designer.vb">
+      <DependentUpon>fmdaily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\daily\fmdaily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\daily\fm_bookto.Designer.vb">
+      <DependentUpon>fm_bookto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\daily\fm_bookto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\daily\fm_money.Designer.vb">
+      <DependentUpon>fm_money.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\daily\fm_money.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\daily\report\dt_ser_enter.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_ser_enter.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\daily\report\dt_ser_enter.vb">
+      <DependentUpon>dt_ser_enter.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\daily\report\fm_ser_report.Designer.vb">
+      <DependentUpon>fm_ser_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\daily\report\fm_ser_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\daily\report\XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\daily\report\XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\DB.vb" />
+    <Compile Include="old\doctor\fm_add_cergury.Designer.vb">
+      <DependentUpon>fm_add_cergury.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\doctor\fm_add_cergury.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\doctor\fm_anylises.Designer.vb">
+      <DependentUpon>fm_anylises.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\doctor\fm_anylises.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\doctor\fm_doctor_main.Designer.vb">
+      <DependentUpon>fm_doctor_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\doctor\fm_doctor_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\doctor\fm_dose.Designer.vb">
+      <DependentUpon>fm_dose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\doctor\fm_dose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\doctor\fm_edit_treatment.Designer.vb">
+      <DependentUpon>fm_edit_treatment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\doctor\fm_edit_treatment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\doctor\fm_pic_view.Designer.vb">
+      <DependentUpon>fm_pic_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\doctor\fm_pic_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\doctor\fm_show_sergury.Designer.vb">
+      <DependentUpon>fm_show_sergury.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\doctor\fm_show_sergury.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\doctor_controller.vb" />
+    <Compile Include="old\fm_message.Designer.vb">
+      <DependentUpon>fm_message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\fm_message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\fm_monitoring.Designer.vb">
+      <DependentUpon>fm_monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\fm_monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\HospitalEnter.vb" />
+    <Compile Include="model\Login.vb" />
+    <Compile Include="amerat\login\fm_login.Designer.vb">
+      <DependentUpon>fm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\login\fm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\login\fm_SplashScreen.Designer.vb">
+      <DependentUpon>fm_SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\login\fm_SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\MedicalOperation.vb" />
+    <Compile Include="old\MedicalReport.vb" />
+    <Compile Include="old\Queue.vb" />
+    <Compile Include="old\queue\fm_add_queue.Designer.vb">
+      <DependentUpon>fm_add_queue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\fm_add_queue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\report\fm_report_desiger.Designer.vb">
+      <DependentUpon>fm_report_desiger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\report\fm_report_desiger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\report\fm_report_viewr.Designer.vb">
+      <DependentUpon>fm_report_viewr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\report\fm_report_viewr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\Report.vb" />
+    <Compile Include="old\report\hospital_enter\ds_hospital.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_hospital.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\hospital_enter\ds_hospital.vb">
+      <DependentUpon>ds_hospital.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\hospital_enter\fm_x_report_h_enter.Designer.vb">
+      <DependentUpon>fm_x_report_h_enter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\hospital_enter\fm_x_report_h_enter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\report\hospital_enter\x_report_hospital_enter.Designer.vb">
+      <DependentUpon>x_report_hospital_enter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\hospital_enter\x_report_hospital_enter.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="old\report\medical_report\ar_m_report.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ar_m_report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\medical_report\ar_m_report.vb">
+      <DependentUpon>ar_m_report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\medical_report\fm_x_m_report_viewer.Designer.vb">
+      <DependentUpon>fm_x_m_report_viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\medical_report\fm_x_m_report_viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\report\medical_report\X_m_r_Report.Designer.vb">
+      <DependentUpon>X_m_r_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\medical_report\X_m_r_Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="old\report\treat\fm_x_designer_treat.Designer.vb">
+      <DependentUpon>fm_x_designer_treat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\treat\fm_x_designer_treat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\report\treat\fm_x_viewer_treat.Designer.vb">
+      <DependentUpon>fm_x_viewer_treat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\treat\fm_x_viewer_treat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\report\treat\treat_dataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>treat_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\treat\treat_dataset.vb">
+      <DependentUpon>treat_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\treat\X_treat_report.Designer.vb">
+      <DependentUpon>X_treat_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\report\treat\X_treat_report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="old\scanning\fm_scanner.Designer.vb">
+      <DependentUpon>fm_scanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\scanning\fm_scanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analyses.vb" />
+    <Compile Include="old\Suggest.vb" />
+    <Compile Include="old\Serjury.vb" />
+    <Compile Include="old\Treat.vb" />
+    <Compile Include="old\Treatment.vb" />
+    <Compile Include="old\treatment\fm_treatment.Designer.vb">
+      <DependentUpon>fm_treatment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\treatment\fm_treatment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\treat\fm_treats.Designer.vb">
+      <DependentUpon>fm_treats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\treat\fm_treats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\Visit.vb" />
+    <Compile Include="old\web\fm_web_browser.Designer.vb">
+      <DependentUpon>fm_web_browser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\web\fm_web_browser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_main.Designer.vb">
+      <DependentUpon>fm_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_camera.Designer.vb">
+      <DependentUpon>fm_camera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_camera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="old\Patient.vb" />
+    <Compile Include="amerat\patinet\fm_add_patient.Designer.vb">
+      <DependentUpon>fm_add_patient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_add_patient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_show_patients.Designer.vb">
+      <DependentUpon>fm_show_patients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_show_patients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\fm_queue.Designer.vb">
+      <DependentUpon>fm_queue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\fm_queue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\fm_queue_option.Designer.vb">
+      <DependentUpon>fm_queue_option.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\fm_queue_option.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\fm_wait.Designer.vb">
+      <DependentUpon>fm_wait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\fm_wait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\report\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="old\queue\report\ds_queue.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_queue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\report\ds_queue.vb">
+      <DependentUpon>ds_queue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\report\fm_re_queue.Designer.vb">
+      <DependentUpon>fm_re_queue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\report\fm_re_queue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\report\fm_win_report.Designer.vb">
+      <DependentUpon>fm_win_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\report\fm_win_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old\queue\report\re_queue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>re_queue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="old\queue\report\XtraReport2.Designer.vb">
+      <DependentUpon>XtraReport2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="old\queue\report\XtraReport2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="form\item\XtraForm1.Designer.vb">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\item\XtraForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\item\Xstore.Designer.vb">
+      <DependentUpon>Xstore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form\item\Xstore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\xreport_designer.Designer.vb">
+      <DependentUpon>xreport_designer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report\xreport_designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="form\customer\fm_customer.resx">
+      <DependentUpon>fm_customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\customer\fm_customer_info.resx">
+      <DependentUpon>fm_customer_info.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\customer\fm_friend_card.resx">
+      <DependentUpon>fm_friend_card.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\customer\fm_print_customer.resx">
+      <DependentUpon>fm_print_customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\customer\fm_visitor_card.resx">
+      <DependentUpon>fm_visitor_card.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Discounts\fm_discounts.resx">
+      <DependentUpon>fm_discounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\fm_setting.resx">
+      <DependentUpon>fm_setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\item\fm_add_item.resx">
+      <DependentUpon>fm_add_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\item\fm_item_option.resx">
+      <DependentUpon>fm_item_option.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\item\fm_size.resx">
+      <DependentUpon>fm_size.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\money\fm_print_money.resx">
+      <DependentUpon>fm_print_money.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\money\fm_pull_money.resx">
+      <DependentUpon>fm_pull_money.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\money\fm_view_pulls.resx">
+      <DependentUpon>fm_view_pulls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\money_calculatoer\fm_money_calculator.resx">
+      <DependentUpon>fm_money_calculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\monitoring\fm_monitoring_event.resx">
+      <DependentUpon>fm_monitoring_event.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\sell\fm_back_option.resx">
+      <DependentUpon>fm_back_option.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\sell\fm_customer_search.resx">
+      <DependentUpon>fm_customer_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\sell\fm_delete_option.resx">
+      <DependentUpon>fm_delete_option.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\sell\fm_print_menu.resx">
+      <DependentUpon>fm_print_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\sell\fm_select_size.resx">
+      <DependentUpon>fm_select_size.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\sell\fm_sell.resx">
+      <DependentUpon>fm_sell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\user\fm_print_rest.resx">
+      <DependentUpon>fm_print_rest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\user\fm_user.resx">
+      <DependentUpon>fm_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\user\fm_user_menu_not_cashe.resx">
+      <DependentUpon>fm_user_menu_not_cashe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\user\fm_user_pulls.resx">
+      <DependentUpon>fm_user_pulls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\user\fm_user_rest.resx">
+      <DependentUpon>fm_user_rest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_add_other_dept_item.resx">
+      <DependentUpon>fm_add_other_dept_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_add_other_required.resx">
+      <DependentUpon>fm_add_other_required.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_dept.resx">
+      <DependentUpon>fm_dept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_months.resx">
+      <DependentUpon>fm_months.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_months_tasded.resx">
+      <DependentUpon>fm_months_tasded.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_tasded_part.resx">
+      <DependentUpon>fm_tasded_part.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\daily\fmdaily.resx">
+      <DependentUpon>fmdaily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\daily\fm_bookto.resx">
+      <DependentUpon>fm_bookto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\daily\fm_money.resx">
+      <DependentUpon>fm_money.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\daily\report\fm_ser_report.resx">
+      <DependentUpon>fm_ser_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\daily\report\XtraReport1.resx">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\doctor\fm_add_cergury.resx">
+      <DependentUpon>fm_add_cergury.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\doctor\fm_anylises.resx">
+      <DependentUpon>fm_anylises.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\doctor\fm_doctor_main.resx">
+      <DependentUpon>fm_doctor_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\doctor\fm_dose.resx">
+      <DependentUpon>fm_dose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\doctor\fm_edit_treatment.resx">
+      <DependentUpon>fm_edit_treatment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\doctor\fm_pic_view.resx">
+      <DependentUpon>fm_pic_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\doctor\fm_show_sergury.resx">
+      <DependentUpon>fm_show_sergury.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\fm_message.resx">
+      <DependentUpon>fm_message.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\fm_monitoring.resx">
+      <DependentUpon>fm_monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\login\fm_login.resx">
+      <DependentUpon>fm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\login\fm_SplashScreen.resx">
+      <DependentUpon>fm_SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\fm_add_queue.resx">
+      <DependentUpon>fm_add_queue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\report\fm_report_desiger.resx">
+      <DependentUpon>fm_report_desiger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\report\fm_report_viewr.resx">
+      <DependentUpon>fm_report_viewr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\report\hospital_enter\fm_x_report_h_enter.resx">
+      <DependentUpon>fm_x_report_h_enter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\report\medical_report\fm_x_m_report_viewer.resx">
+      <DependentUpon>fm_x_m_report_viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\report\treat\fm_x_designer_treat.resx">
+      <DependentUpon>fm_x_designer_treat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\report\treat\fm_x_viewer_treat.resx">
+      <DependentUpon>fm_x_viewer_treat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\scanning\fm_scanner.resx">
+      <DependentUpon>fm_scanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\treatment\fm_treatment.resx">
+      <DependentUpon>fm_treatment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\treat\fm_treats.resx">
+      <DependentUpon>fm_treats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\web\fm_web_browser.resx">
+      <DependentUpon>fm_web_browser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_main.resx">
+      <DependentUpon>fm_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\patinet\fm_camera.resx">
+      <DependentUpon>fm_camera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="amerat\patinet\fm_add_patient.resx">
+      <DependentUpon>fm_add_patient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\patinet\fm_show_patients.resx">
+      <DependentUpon>fm_show_patients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\fm_queue.resx">
+      <DependentUpon>fm_queue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\fm_queue_option.resx">
+      <DependentUpon>fm_queue_option.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\fm_wait.resx">
+      <DependentUpon>fm_wait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\report\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\report\fm_re_queue.resx">
+      <DependentUpon>fm_re_queue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\report\fm_win_report.resx">
+      <DependentUpon>fm_win_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\report\Report1.rdlc" />
+    <EmbeddedResource Include="old\queue\report\re_queue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>re_queue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old\queue\report\XtraReport2.resx">
+      <DependentUpon>XtraReport2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\item\Xstore.resx">
+      <DependentUpon>Xstore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\item\XtraForm1.resx">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\xreport_designer.resx">
+      <DependentUpon>xreport_designer.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dataset\d_item.xsc">
+      <DependentUpon>d_item.xsd</DependentUpon>
+    </None>
+    <None Include="dataset\d_item.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>d_item.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dataset\d_item.xss">
+      <DependentUpon>d_item.xsd</DependentUpon>
+    </None>
+    <None Include="form\customer\d_customer.xsc">
+      <DependentUpon>d_customer.xsd</DependentUpon>
+    </None>
+    <None Include="form\customer\d_customer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>d_customer.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="form\customer\d_customer.xss">
+      <DependentUpon>d_customer.xsd</DependentUpon>
+    </None>
+    <None Include="form\sell\d_sell_menu.xsc">
+      <DependentUpon>d_sell_menu.xsd</DependentUpon>
+    </None>
+    <None Include="form\sell\d_sell_menu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>d_sell_menu.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="form\sell\d_sell_menu.xss">
+      <DependentUpon>d_sell_menu.xsd</DependentUpon>
+    </None>
+    <None Include="old\daily\report\dt_ser_enter.xsc">
+      <DependentUpon>dt_ser_enter.xsd</DependentUpon>
+    </None>
+    <None Include="old\daily\report\dt_ser_enter.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_ser_enter.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="old\daily\report\dt_ser_enter.xss">
+      <DependentUpon>dt_ser_enter.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="old\queue\report\ds_queue.xsc">
+      <DependentUpon>ds_queue.xsd</DependentUpon>
+    </None>
+    <None Include="old\queue\report\ds_queue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_queue.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="old\queue\report\ds_queue.xss">
+      <DependentUpon>ds_queue.xsd</DependentUpon>
+    </None>
+    <None Include="old\report\hospital_enter\ds_hospital.xsc">
+      <DependentUpon>ds_hospital.xsd</DependentUpon>
+    </None>
+    <None Include="old\report\hospital_enter\ds_hospital.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_hospital.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="old\report\hospital_enter\ds_hospital.xss">
+      <DependentUpon>ds_hospital.xsd</DependentUpon>
+    </None>
+    <None Include="old\report\medical_report\ar_m_report.xsc">
+      <DependentUpon>ar_m_report.xsd</DependentUpon>
+    </None>
+    <None Include="old\report\medical_report\ar_m_report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ar_m_report.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="old\report\medical_report\ar_m_report.xss">
+      <DependentUpon>ar_m_report.xsd</DependentUpon>
+    </None>
+    <None Include="old\report\treat\treat_dataset.xsc">
+      <DependentUpon>treat_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="old\report\treat\treat_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>treat_dataset.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="old\report\treat\treat_dataset.xss">
+      <DependentUpon>treat_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\bein-ar-normal.ttf" />
+    <None Include="Resources\doctor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
+    <Folder Include="old\main\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addition-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PNU-Regular.ttf" />
+    <None Include="Resources\prescription-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downloads-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fingerprint-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photos-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jpg-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-disease-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name-card-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_chrome_reader_mode_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_chrome_reader_mode_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_accessibility_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_person_add_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_library_add_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_person_add_white_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_add_comment_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp-build-24px %281%29.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_security_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_build_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_build_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_people_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_folder_shared_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_people_white_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_wc_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_security_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_important_devices_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_compass_calibration_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_enhanced_encryption_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_event_note_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_loupe_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_search_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_close_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_library_add_white_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_description_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_enhanced_encryption_white_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_airline_seat_flat_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_airline_seat_recline_extra_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_event_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_rate_review_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_personal_video_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_local_printshop_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_dvr_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_airline_seat_individual_suite_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_airline_seat_flat_white_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_public_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_home_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_airline_seat_individual_suite_white_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_power_settings_new_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_power_settings_new_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescription-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharp_close_white_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13577b4a585d93e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certificate-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capsule-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downloads-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attach-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name-card-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equation-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics-market-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addition-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورةة.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-settings-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-settings-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-beat-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lungs-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo 3.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo 31.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo 2.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2817%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2823%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2824%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2825%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2826%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2827%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2828%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2830%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2831%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2832%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2833%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2834%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2835%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2836%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2837%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2838%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2839%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2840%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2841%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2842%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2843%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2844%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2845%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2846%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2847%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2848%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2849%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2850%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2851%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2852%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2853%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2854%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2855%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2856%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2857%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2858%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2859%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2860%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2861%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2862%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2863%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2864%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2865%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2866%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2867%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2868%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2869%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2870%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2871%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2872%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2873%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2874%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2875%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2876%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2877%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2878%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2879%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2880%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2881%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2882%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2883%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2884%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2885%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2886%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2887%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2888%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2889%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2890%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2891%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2892%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2893%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2894%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2895%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2896%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2897%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2898%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %2899%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28100%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28101%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28102%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28103%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28104%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28105%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28106%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28107%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28108%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28109%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28110%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28111%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28112%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28113%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28114%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28115%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28116%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28117%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28118%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28119%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28120%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28121%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28122%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28123%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28124%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %28125%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handshake %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
