@@ -379,15 +379,23 @@ Public Class fm_add_other_required
     Private Sub print()
 
         Dim f As New fm_x_viewer_treat
-        f.ds = getdatat1("select * from dept where user_id = " & __(tb_id.Text) & " and arrive_amount <> amount order by id desc ")
+        f.ds = getdatat1("select * from dept where user_id = " & __(tb_id.Text) & " order by id asc")
         f.user_name = tb_name.Text
         f.final_price = tb_all_dept.Text
         f.arrive = tb_arrive.Text
         f.remaind = tb_net_dept.Text
-        f.admin_name = user.name
         Dim p As New Patient(__(tb_id.Text))
         f.user_dar = p.f3
-        f.user_block = p.f1 & p.f2
+        f.user_block = p.f1
+
+        f.admin_name = user.name
+        f.user_name = " ( " & tb_name.Text & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
+
+        f.dar_area = p.ref_by
+        f.contract_date = p.register_date
+        f.user_block_number = p.f2
+        f.user_id_number = p.f6
+
         f.Show()
 
 

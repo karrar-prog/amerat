@@ -10,9 +10,15 @@ Public Class fm_x_viewer_treat
     Public final_price As String
     Public arrive As String
 
+
+    Public dar_area As String
+    Public contract_date As String
+    Public user_block_number As String
+    Public user_id_number As String
+   
     Public remaind As String
     Public admin_name As String
-    Public path As String = "treat"
+    Public path As String = "contract"
 
 
 
@@ -20,7 +26,7 @@ Public Class fm_x_viewer_treat
 
         Dim filePath As String
        
-        filePath = Application.StartupPath & "/" & path & ".repx"
+        filePath = Application.StartupPath & "/reports/" & path & ".repx"
       
 
 
@@ -39,7 +45,16 @@ Public Class fm_x_viewer_treat
         report.Parameters("admin_name").Value = admin_name
         report.Parameters("user_block").Value = user_block
         report.Parameters("user_dar").Value = user_dar
+
+
+        report.Parameters("dar_area").Value = user_dar
+        report.Parameters("contract_date").Value = contract_date
+        report.Parameters("user_block_number").Value = user_block_number
+        report.Parameters("user_id_number").Value = user_id_number
+
+
        
+
         report.DataSource = ds
 
         DocumentViewer1.DocumentSource = report
