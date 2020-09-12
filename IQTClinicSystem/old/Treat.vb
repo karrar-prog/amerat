@@ -363,9 +363,10 @@ Public Class Treat
                 Dim dose As String = fm_add_other_required.lv_treat_table.Items(i).SubItems(2).Text
                 Dim take_number As String = fm_add_other_required.lv_treat_table.Items(i).SubItems(3).Text
                 Dim note As String = fm_add_other_required.lv_treat_table.Items(i).SubItems(4).Text
+                Dim months As Integer = __(fm_add_other_required.lv_treat_table.Items(i).SubItems(5).Text)
 
 
-                SQLCommand.CommandText = "INSERT INTO template_treatment( template , treatment , dose , take_number , note ) VALUES( '" & title & "' , '" & treatment & "' , '" & dose & "' , '" & take_number & "' , '" & note & "' )"
+                SQLCommand.CommandText = "INSERT INTO template_treatment( template , treatment , dose , take_number , note,months ) VALUES( '" & title & "' , '" & treatment & "' , '" & dose & "' , '" & take_number & "' , '" & note & "', " & months & " )"
                 'SQLCommand.Parameters("@template").Value = title
                 'SQLCommand.Parameters("@treatment").Value = treatment
                 'SQLCommand.Parameters("@dose").Value = dose

@@ -27,6 +27,12 @@ Public Class Patient
 
 
 
+    Public first_push_amount As Decimal
+    Public first_push_present As Decimal
+    Public first_push_amount_arrived As Decimal
+
+
+
     Public saller As String
     Public is_token As String
     Public token_date As String
@@ -65,6 +71,109 @@ Public Class Patient
                 Me.code = ds.Tables(0).Rows(0).Item("code").ToString
 
                 Try
+
+                    Me.birthdate = ds.Tables(0).Rows(0).Item("birthdate").ToString
+
+                Catch ex As Exception
+
+                End Try
+                Me.finger_print = ds.Tables(0).Rows(0).Item("finger_print").ToString
+                Me.wieght = ds.Tables(0).Rows(0).Item("wieght").ToString
+                Try
+                    Me.register_date = ds.Tables(0).Rows(0).Item("register_date").ToString
+                Catch ex As Exception
+
+                End Try
+                Try
+                    Me.birthdate = ds.Tables(0).Rows(0).Item("birthdate").ToString
+                Catch ex As Exception
+
+                End Try
+
+                Me.ref_by = ds.Tables(0).Rows(0).Item("ref_by").ToString
+                Me.gender = ds.Tables(0).Rows(0).Item("gender").ToString
+                Me.phone = ds.Tables(0).Rows(0).Item("phone").ToString
+                Me.note = ds.Tables(0).Rows(0).Item("note").ToString
+                Me.diagonosis = ds.Tables(0).Rows(0).Item("diagonosis").ToString
+
+                Me.f1 = ds.Tables(0).Rows(0).Item("f1").ToString
+                Me.f2 = ds.Tables(0).Rows(0).Item("f2").ToString
+                Me.f3 = ds.Tables(0).Rows(0).Item("f3").ToString
+                Me.f4 = __(ds.Tables(0).Rows(0).Item("f4").ToString)
+
+
+                Me.house_price = ___(ds.Tables(0).Rows(0).Item("house_price").ToString)
+                Me.first_part = ___(ds.Tables(0).Rows(0).Item("first_part").ToString)
+                Me.last_part = ___(ds.Tables(0).Rows(0).Item("last_part").ToString)
+                Me.first_present = __(ds.Tables(0).Rows(0).Item("first_present").ToString)
+                Me.last_present = __(ds.Tables(0).Rows(0).Item("last_present").ToString)
+                Me.water_price = __(ds.Tables(0).Rows(0).Item("water_price").ToString)
+
+                Me.saller = ds.Tables(0).Rows(0).Item("saller").ToString
+                Me.is_token = ds.Tables(0).Rows(0).Item("is_token").ToString
+                Me.token_date = ds.Tables(0).Rows(0).Item("token_date").ToString
+                Me.lower_name = ds.Tables(0).Rows(0).Item("lower_name").ToString
+
+                Me.f5 = ds.Tables(0).Rows(0).Item("f5").ToString
+                Me.f6 = ds.Tables(0).Rows(0).Item("f6").ToString
+                Me.f7 = ds.Tables(0).Rows(0).Item("f7").ToString
+                Me.f8 = ds.Tables(0).Rows(0).Item("f8").ToString
+                Me.f9 = ds.Tables(0).Rows(0).Item("f9").ToString
+                Me.f10 = ds.Tables(0).Rows(0).Item("f10").ToString
+                Me.deleted = ds.Tables(0).Rows(0).Item("deleted").ToString
+
+
+
+                Me.first_push_amount = ___(ds.Tables(0).Rows(0).Item("first_push_amount").ToString)
+                Me.first_push_present = ___(ds.Tables(0).Rows(0).Item("first_push_present").ToString)
+                Me.first_push_amount_arrived = ___(ds.Tables(0).Rows(0).Item("first_push_amount_arrived").ToString)
+
+
+            Else
+                conn.Close()
+
+                Exit Sub
+
+
+            End If
+
+        Catch ex As Exception
+            conn.Close()
+            MsgBox("failed to get patient" + ex.Message)
+            Exit Sub
+
+        End Try
+
+
+        conn.Close()
+
+    End Sub
+    Sub New(lataer As String, blok_num As Decimal, home_num As Decimal)
+
+        Me.id = 0
+        Dim query As String = "select * from patient where f1 like '" & lataer & "' and f2 like '" & blok_num & "' and f3 like '" & home_num & "'"
+
+
+
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        'Try
+        conn.Open()
+        'Catch myerror As MySqlException
+        '    MsgBox("Connection to the Database Failed")
+        '    Exit Sub
+
+        'End Try
+        Try
+
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+            If ds.Tables(0).Rows.Count > 0 Then
+                Me.name = ds.Tables(0).Rows(0).Item("name").ToString
+                Me.code = ds.Tables(0).Rows(0).Item("code").ToString
+
+                Try
                     Me.birthdate = ds.Tables(0).Rows(0).Item("birthdate").ToString
 
                 Catch ex As Exception
@@ -78,6 +187,7 @@ Public Class Patient
 
                 End Try
 
+                Me.id = __(ds.Tables(0).Rows(0).Item("id").ToString)
                 Me.ref_by = ds.Tables(0).Rows(0).Item("ref_by").ToString
                 Me.gender = ds.Tables(0).Rows(0).Item("gender").ToString
                 Me.phone = ds.Tables(0).Rows(0).Item("phone").ToString
@@ -109,6 +219,10 @@ Public Class Patient
                 Me.f9 = ds.Tables(0).Rows(0).Item("f9").ToString
                 Me.f10 = ds.Tables(0).Rows(0).Item("f10").ToString
                 Me.deleted = ds.Tables(0).Rows(0).Item("deleted").ToString
+                Me.first_push_amount = ___(ds.Tables(0).Rows(0).Item("first_push_amount").ToString)
+                Me.first_push_present = ___(ds.Tables(0).Rows(0).Item("first_push_present").ToString)
+                Me.first_push_amount_arrived = ___(ds.Tables(0).Rows(0).Item("first_push_amount_arrived").ToString)
+
 
             Else
                 conn.Close()
@@ -171,8 +285,8 @@ Public Class Patient
 
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "INSERT INTO patient(name ,`code`, `birthdate` , finger_print , wieght , register_date , gender ,phone ,note ,diagonosis , ref_by , f1 , f2 , f3 , f4 , f5 , f6 , f7 , f8 , f9 , f10 ,deleted,saller,house_price,first_part,last_part,first_present,last_present,water_price,is_token , token_date,lower_name ) " +
-                                                " VALUES(@name, @code , @birthdate ,  @finger_print , @wieght ,@register_date , @gender,@phone,@note,@diagonosis,@ref_by, @f1 ,@f2 ,@f3 ,@f4 ,@f5 ,@f6 ,@f7 , @f8 ,@f9 ,@f10,@deleted,@saller,@house_price,@first_part,@last_part,@first_present,@last_present,@water_price,@is_token ,@token_date,@lower_name)"
+            SQLCommand.CommandText = "INSERT INTO patient(name ,`code`, `birthdate` , finger_print , wieght , register_date , gender ,phone ,note ,diagonosis , ref_by , f1 , f2 , f3 , f4 , f5 , f6 , f7 , f8 , f9 , f10 ,deleted,saller,house_price,first_part,last_part,first_present,last_present,water_price,is_token , token_date,lower_name , first_push_present ,first_push_amount,first_push_amount_arrived ) " +
+                                                " VALUES(@name, @code , @birthdate ,  @finger_print , @wieght ,@register_date , @gender,@phone,@note,@diagonosis,@ref_by, @f1 ,@f2 ,@f3 ,@f4 ,@f5 ,@f6 ,@f7 , @f8 ,@f9 ,@f10,@deleted,@saller,@house_price,@first_part,@last_part,@first_present,@last_present,@water_price,@is_token ,@token_date,@lower_name , @first_push_present ,@first_push_amount,@first_push_amount_arrived )"
 
             SQLCommand.Parameters.Add("@name", MySqlDbType.String).Value = Me.name
             SQLCommand.Parameters.Add("@code", MySqlDbType.String).Value = Me.code
@@ -204,6 +318,10 @@ Public Class Patient
             SQLCommand.Parameters.Add("@house_price", MySqlDbType.Decimal).Value = Me.house_price
             SQLCommand.Parameters.Add("@first_part", MySqlDbType.Decimal).Value = Me.first_part
             SQLCommand.Parameters.Add("@last_part", MySqlDbType.Decimal).Value = Me.last_part
+
+            SQLCommand.Parameters.Add("@first_push_amount", MySqlDbType.Decimal).Value = Me.first_push_amount
+            SQLCommand.Parameters.Add("@first_push_amount_arrived", MySqlDbType.Decimal).Value = Me.first_push_amount_arrived
+            SQLCommand.Parameters.Add("@first_push_present", MySqlDbType.Decimal).Value = Me.first_push_present
 
 
             SQLCommand.Parameters.Add("@first_present", MySqlDbType.Int32).Value = Me.first_present

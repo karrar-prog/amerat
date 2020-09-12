@@ -500,7 +500,7 @@ Public Class fm_doctor_main
         If lv_treat_table.SelectedItems.Count > 0 Then
 
             fm_edit_treatment.tb_treatment_name.Text = lv_treat_table.SelectedItems.Item(0).SubItems(1).Text
-            fm_edit_treatment.tb_dose_to_patient.Text = lv_treat_table.SelectedItems.Item(0).SubItems(2).Text
+            fm_edit_treatment.tb_selected_money.Value = __(lv_treat_table.SelectedItems.Item(0).SubItems(2).Text)
             fm_edit_treatment.tb_note.Text = lv_treat_table.SelectedItems.Item(0).SubItems(3).Text
 
             fm_edit_treatment.Show()

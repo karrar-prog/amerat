@@ -41,23 +41,34 @@ Public Class fm_add_other_required
         tb_arrive.EditValue = 0
         Try
             Dim dt As New DateTimePicker
-            Dim ds_treat_table As New DataSet
-            ds_treat_table = getdatat1("select * from dept where user_id = " & __(tb_id.Text) & " order by id desc ")
+            Dim ds_contract_items As New DataSet
+            ds_contract_items = getdatat1("select *  from dept where user_id = " & __(tb_id.Text) & " order by id asc ")
             lv_dept.Items.Clear()
-            If ds_treat_table.Tables(0).Rows.Count > 0 Then
-                For i = 0 To ds_treat_table.Tables(0).Rows.Count - 1
+            If ds_contract_items.Tables(0).Rows.Count > 0 Then
+                For i = 0 To ds_contract_items.Tables(0).Rows.Count - 1
+                  
+                    lv_dept.Items.Add(ds_contract_items.Tables(0).Rows(i).Item("id").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("title").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("amount").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("arrive_amount").ToString)
 
-                    lv_dept.Items.Add(ds_treat_table.Tables(0).Rows(i).Item("id").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("title").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("amount").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("arrive_amount").ToString)
+                    Try
+                        Dim d As New DateTimePicker
+                        d.Value = Convert.ToDateTime(ds_contract_items.Tables(0).Rows(i).Item("payment_date").ToString)
+                        lv_dept.Items(i).SubItems.Add(d.Value.ToShortDateString)
+                    Catch ex As Exception
+                        lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("payment_date").ToString)
 
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("f1").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("type").ToString)
-                    If ds_treat_table.Tables(0).Rows(i).Item("amount").ToString = ds_treat_table.Tables(0).Rows(i).Item("arrive_amount").ToString Then
+                    End Try
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("f1").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("type").ToString)
+
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("create_at").ToString)
+
+                    If ds_contract_items.Tables(0).Rows(i).Item("amount").ToString = ds_contract_items.Tables(0).Rows(i).Item("arrive_amount").ToString Then
                         lv_dept.Items(i).SubItems.Add("تم التسديد")
                         lv_dept.Items(i).BackColor = Color.LightGreen
-                    ElseIf __(ds_treat_table.Tables(0).Rows(i).Item("arrive_amount").ToString) <> 0 Then
+                    ElseIf __(ds_contract_items.Tables(0).Rows(i).Item("arrive_amount").ToString) <> 0 Then
                         lv_dept.Items(i).SubItems.Add("تسديد جزء")
                         lv_dept.Items(i).BackColor = Color.LightYellow
 
@@ -66,20 +77,21 @@ Public Class fm_add_other_required
 
 
                     End If
-                     lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("create_at").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("payment_date").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("user_did_id").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("f2").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("f3").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("f4").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("f5").ToString)
-                    lv_dept.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("user_id").ToString)
 
-                    tb_all_dept.EditValue = __(tb_all_dept.EditValue.ToString) + __(ds_treat_table.Tables(0).Rows(i).Item("amount").ToString)
-                    tb_arrive.EditValue = __(tb_arrive.EditValue.ToString) + __(ds_treat_table.Tables(0).Rows(i).Item("arrive_amount").ToString)
-                  
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("user_did_id").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("f2").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("f3").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("f4").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("f5").ToString)
+                    lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("user_id").ToString)
+
+                    tb_all_dept.EditValue = __(tb_all_dept.EditValue.ToString) + __(ds_contract_items.Tables(0).Rows(i).Item("amount").ToString)
+                    tb_arrive.EditValue = __(tb_arrive.EditValue.ToString) + __(ds_contract_items.Tables(0).Rows(i).Item("arrive_amount").ToString)
+
                 Next
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
+                tb_l_2.Text = get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة "
+            Else
 
             End If
             calculating_amount()
@@ -108,6 +120,7 @@ Public Class fm_add_other_required
                     lv_treat_table.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("dose").ToString)
                     lv_treat_table.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("take_number").ToString)
                     lv_treat_table.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("note").ToString)
+                    lv_treat_table.Items(i).SubItems.Add(ds_treat_table.Tables(0).Rows(i).Item("months").ToString)
 
 
 
@@ -126,7 +139,7 @@ Public Class fm_add_other_required
 
     End Sub
 
-    Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
+    Private Sub RibbonControl1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -134,7 +147,7 @@ Public Class fm_add_other_required
         fm_main.Show()
 
     End Sub
-
+  
     Private Sub fm_add_other_required_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         formatlist_treat_table(lv_treat_table)
         formatlist_dept_table(lv_dept)
@@ -179,13 +192,13 @@ Public Class fm_add_other_required
     End Sub
     Private Sub save_new_temp()
         Try
-            Dim title As String = InputBox("ادخل عنوان هذه المتطلبات ")
+            Dim title As String = InputBox("ادخل عنوان هذه المتطلبات ", "دفعات ")
             If title.Trim <> "" Then
                 Dim t As New Treat
 1:
 
                 Try
-                    t.save_in_templete(title)
+                    t.save_in_templete(title & " " & tb_amount.EditValue.ToString)
                 Catch ex As Exception
                     If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
                         GoTo 1
@@ -247,6 +260,8 @@ Public Class fm_add_other_required
         If lv_treat_table.SelectedItems.Count > 0 Then
             lv_treat_table.Items.RemoveAt(lv_treat_table.SelectedIndices(0))
 
+            calculating_amount()
+
         End If
     End Sub
 
@@ -262,6 +277,14 @@ Public Class fm_add_other_required
         'If Notadded() Then
         '    Exit Sub
         'End If
+        If lv_dept.Items.Count > 0 Then
+            MessageBox.Show("يجب حذف الدفعات الحاله من القائمة")
+            Exit Sub
+        End If
+        If nu_first_part.Value <> ___(tb_amount.EditValue.ToString) Then
+            MessageBox.Show("يجب ان يتساوى المبلغ الكلي للدفعات مع القسم الاول من المبلغ البالغ " & nu_first_part.Value.ToString)
+            Exit Sub
+        End If
 
         add()
         put_depts()
@@ -274,7 +297,16 @@ Public Class fm_add_other_required
 
     Private Sub add()
         If lv_treat_table.Items.Count > 0 Then
-            For i = 0 To lv_treat_table.Items.Count - 1
+            Dim date_now As New DateTimePicker
+            Dim p As New Patient(__(tb_id.Text))
+
+            p.first_push_amount = __(lv_treat_table.Items.Item(0).SubItems(2).Text)
+
+            p.first_push_present = ___(lv_treat_table.Items.Item(0).SubItems(3).Text)
+            p.save()
+            tb_2.Text = " ألدفعة الاولى " & "(" & p.first_push_present & ")%" & " " & String.Format("{0:#,##0.00}", p.first_push_amount) & "(" & ToArabicLetter(p.first_push_amount) & ")"
+            Dim dates_count As Integer = __(lv_treat_table.Items.Item(0).SubItems(5).Text)
+            For i = 1 To lv_treat_table.Items.Count - 1
                 Dim dept As New Dept
                 dept.user_id = __(tb_id.Text)
                 dept.user_did_id = user.id
@@ -283,14 +315,16 @@ Public Class fm_add_other_required
                 dept.status = "لا"
                 dept.arrive_amount = 0
                 dept.create_at = Date.Now.ToString
-                dept.type = cb_templet_treat.Text
+                dept.type = ToArabicLetter(dept.amount)
                 dept.f1 = lv_treat_table.Items.Item(i).SubItems(3).Text
                 dept.f2 = ""
                 dept.f3 = ""
                 dept.f4 = ""
+                dept.payment_date = date_now.Value.AddMonths(dates_count).ToShortDateString
                 dept.f5 = ""
                 dept.save()
-                excute1("update patient set f4 = f4 + " & dept.amount & " where id = " & __(tb_id.Text) & "")
+                dates_count = dates_count + __(lv_treat_table.Items.Item(i).SubItems(5).Text)
+                'excute1("update patient set f4 = f4 + " & dept.amount & " where id = " & __(tb_id.Text) & "")
 
 
             Next
@@ -364,7 +398,7 @@ Public Class fm_add_other_required
 
     End Sub
 
-    Private Sub LabelControl4_Click(sender As Object, e As EventArgs) Handles LabelControl4.Click
+    Private Sub LabelControl4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -382,20 +416,20 @@ Public Class fm_add_other_required
         f.ds = getdatat1("select * from dept where user_id = " & __(tb_id.Text) & " order by id asc")
         f.user_name = tb_name.Text
         f.final_price = tb_all_dept.Text
-        f.arrive = tb_arrive.Text
-        f.remaind = tb_net_dept.Text
+        f.arrive = tb_2.Text
+        f.remaind = tb_l_1.Text & tb_l_2.Text & tb_l_3.Text & tb_l_4.Text & tb_l_5.Text
         Dim p As New Patient(__(tb_id.Text))
         f.user_dar = p.f3
-        f.user_block = p.f1
+        f.user_block = p.f1 & p.f2 & "." & p.f3
 
         f.admin_name = user.name
         f.user_name = " ( " & tb_name.Text & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
 
-        f.dar_area = p.ref_by
+
         f.contract_date = p.register_date
         f.user_block_number = p.f2
         f.user_id_number = p.f6
-
+        f.dar_area = p.ref_by
         f.Show()
 
 
@@ -419,7 +453,7 @@ Public Class fm_add_other_required
             If MessageBox.Show("حل تريد الحذف ؟", "", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
                 For i = 0 To lv_dept.SelectedItems.Count - 1
 
-                    delete_dept(__(lv_dept.SelectedItems.Item(i).Text), __(lv_dept.SelectedItems.Item(i).SubItems(2).Text) - __(lv_dept.SelectedItems.Item(i).SubItems(3).Text), __(lv_dept.SelectedItems.Item(i).SubItems(14).Text))
+                    delete_dept(__(lv_dept.SelectedItems.Item(i).Text))
 
                 Next
                 put_depts()
@@ -427,9 +461,9 @@ Public Class fm_add_other_required
 
         End If
     End Sub
-    Private Sub delete_dept(id As Integer, price As Integer, user_id As Integer)
+    Private Sub delete_dept(id As Integer)
         excute1("delete from dept where id = " & id & "")
-        excute1("update patient set f4 = f4 - " & price & " where id = " & user_id & "")
+        'excute1("update patient set f4 = f4 - " & price & " where id = " & user_id & "")
     End Sub
  
  
@@ -484,7 +518,7 @@ Public Class fm_add_other_required
         Beep()
 
         SimpleButton9.ForeColor = Color.Green
-
+        tb_name.Text = ToArabicLetter(23000)
     End Sub
 
     Private Sub SimpleButton10_Click(sender As Object, e As EventArgs)
@@ -535,7 +569,7 @@ Public Class fm_add_other_required
         If lv_treat_table.SelectedItems.Count > 0 Then
 
             fm_edit_treatment.tb_treatment_name.Text = lv_treat_table.SelectedItems.Item(0).SubItems(1).Text
-            fm_edit_treatment.tb_dose_to_patient.Text = lv_treat_table.SelectedItems.Item(0).SubItems(2).Text
+            fm_edit_treatment.tb_selected_money.Value = ___(lv_treat_table.SelectedItems.Item(0).SubItems(2).Text)
             fm_edit_treatment.tb_note.Text = lv_treat_table.SelectedItems.Item(0).SubItems(3).Text
 
             fm_edit_treatment.Show()
@@ -633,4 +667,36 @@ Public Class fm_add_other_required
 
 
 
+    Private Sub tb_note_TextChanged(sender As Object, e As EventArgs) Handles tb_l_5.TextChanged
+
+    End Sub
+
+    Private Sub GroupControl2_Paint(sender As Object, e As PaintEventArgs) Handles GroupControl2.Paint
+
+    End Sub
+
+    Private Sub GroupControl1_Paint(sender As Object, e As PaintEventArgs) Handles GroupControl1.Paint
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles tb_1.TextChanged
+
+    End Sub
+
+    Private Sub SimpleButton8_Click_1(sender As Object, e As EventArgs) Handles SimpleButton8.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub SimpleButton10_Click_1(sender As Object, e As EventArgs) Handles SimpleButton10.Click
+        fm_devided.nu_first_part.Value = nu_first_part.Value
+     
+        fm_devided.Show()
+
+
+    End Sub
+
+    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs) Handles TextBox7.TextChanged
+
+    End Sub
 End Class

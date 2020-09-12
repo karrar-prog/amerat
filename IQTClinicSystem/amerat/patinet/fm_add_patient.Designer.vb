@@ -80,15 +80,15 @@ Partial Class fm_add_patient
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupControl7 = New DevExpress.XtraEditors.GroupControl()
-        Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
-        Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
-        Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
-        Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
-        Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl8 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl10 = New DevExpress.XtraEditors.GroupControl()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.LabelControl8 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
+        Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_phone.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,15 +122,15 @@ Partial Class fm_add_patient
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl7.SuspendLayout()
+        CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl10.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl8.SuspendLayout()
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl2.SuspendLayout()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl9.SuspendLayout()
-        CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl10.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tb_phone
@@ -312,6 +312,7 @@ Partial Class fm_add_patient
         Me.GroupControl1.Appearance.BackColor = System.Drawing.Color.AntiqueWhite
         Me.GroupControl1.Appearance.Options.UseBackColor = True
         Me.GroupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.GroupControl1.Controls.Add(Me.ProgressPanel1)
         Me.GroupControl1.Controls.Add(Me.LabelControl12)
         Me.GroupControl1.Controls.Add(Me.LabelControl9)
         Me.GroupControl1.Controls.Add(Me.tb_id)
@@ -384,7 +385,7 @@ Partial Class fm_add_patient
         Me.ProgressPanel1.BarAnimationElementThickness = 2
         Me.ProgressPanel1.Caption = "يتم الحفظ "
         Me.ProgressPanel1.Description = ""
-        Me.ProgressPanel1.Location = New System.Drawing.Point(5, 18)
+        Me.ProgressPanel1.Location = New System.Drawing.Point(374, 157)
         Me.ProgressPanel1.Name = "ProgressPanel1"
         Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
@@ -596,12 +597,11 @@ Partial Class fm_add_patient
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(474, 468)
+        Me.Label5.Location = New System.Drawing.Point(472, 416)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(71, 21)
+        Me.Label5.Size = New System.Drawing.Size(79, 21)
         Me.Label5.TabIndex = 267
-        Me.Label5.Text = "تم التسليم؟"
-        Me.Label5.Visible = False
+        Me.Label5.Text = "حالة الشراء"
         '
         'cb_plan
         '
@@ -611,13 +611,12 @@ Partial Class fm_add_patient
         Me.cb_plan.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_plan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.cb_plan.FormattingEnabled = True
-        Me.cb_plan.Items.AddRange(New Object() {"لا", "نعم"})
-        Me.cb_plan.Location = New System.Drawing.Point(50, 458)
+        Me.cb_plan.Items.AddRange(New Object() {"حجز", "تعاقد", "تم الاستلام"})
+        Me.cb_plan.Location = New System.Drawing.Point(48, 406)
         Me.cb_plan.Name = "cb_plan"
         Me.cb_plan.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.cb_plan.Size = New System.Drawing.Size(420, 39)
         Me.cb_plan.TabIndex = 10
-        Me.cb_plan.Visible = False
         '
         'tb_munite
         '
@@ -656,7 +655,6 @@ Partial Class fm_add_patient
         '
         'GroupControl4
         '
-        Me.GroupControl4.Controls.Add(Me.ProgressPanel1)
         Me.GroupControl4.Controls.Add(Me.PictureBox1)
         Me.GroupControl4.Controls.Add(Me.Label2)
         Me.GroupControl4.Location = New System.Drawing.Point(8, 154)
@@ -799,6 +797,36 @@ Partial Class fm_add_patient
         Me.GroupControl7.TabIndex = 270
         Me.GroupControl7.Text = "العمليات"
         '
+        'GroupControl10
+        '
+        Me.GroupControl10.Controls.Add(Me.PictureBox6)
+        Me.GroupControl10.Controls.Add(Me.Label7)
+        Me.GroupControl10.Location = New System.Drawing.Point(8, 371)
+        Me.GroupControl10.Name = "GroupControl10"
+        Me.GroupControl10.Size = New System.Drawing.Size(102, 94)
+        Me.GroupControl10.TabIndex = 262
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.IQTClinicSystem.My.Resources.Resources.e__98_
+        Me.PictureBox6.Location = New System.Drawing.Point(18, 25)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(62, 62)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 254
+        Me.PictureBox6.TabStop = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(4, 1)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(93, 19)
+        Me.Label7.TabIndex = 255
+        Me.Label7.Text = "استحقاقات اخرى"
+        '
         'GroupControl8
         '
         Me.GroupControl8.Controls.Add(Me.GroupControl1)
@@ -848,6 +876,28 @@ Partial Class fm_add_patient
         Me.GroupControl2.TabIndex = 250
         Me.GroupControl2.Text = "المعلومات الثانوية"
         '
+        'LabelControl8
+        '
+        Me.LabelControl8.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.LabelControl8.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl8.Appearance.Options.UseBackColor = True
+        Me.LabelControl8.Appearance.Options.UseFont = True
+        Me.LabelControl8.Location = New System.Drawing.Point(373, 29)
+        Me.LabelControl8.Name = "LabelControl8"
+        Me.LabelControl8.Size = New System.Drawing.Size(17, 21)
+        Me.LabelControl8.TabIndex = 283
+        Me.LabelControl8.Text = "فئة"
+        '
+        'LabelControl5
+        '
+        Me.LabelControl5.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl5.Appearance.Options.UseFont = True
+        Me.LabelControl5.Location = New System.Drawing.Point(241, 167)
+        Me.LabelControl5.Name = "LabelControl5"
+        Me.LabelControl5.Size = New System.Drawing.Size(54, 21)
+        Me.LabelControl5.TabIndex = 282
+        Me.LabelControl5.Text = "رقم السند"
+        '
         'LabelControl14
         '
         Me.LabelControl14.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -868,58 +918,6 @@ Partial Class fm_add_patient
         Me.GroupControl9.Size = New System.Drawing.Size(599, 680)
         Me.GroupControl9.TabIndex = 272
         Me.GroupControl9.Text = "معلومات الدار"
-        '
-        'LabelControl5
-        '
-        Me.LabelControl5.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl5.Appearance.Options.UseFont = True
-        Me.LabelControl5.Location = New System.Drawing.Point(241, 167)
-        Me.LabelControl5.Name = "LabelControl5"
-        Me.LabelControl5.Size = New System.Drawing.Size(54, 21)
-        Me.LabelControl5.TabIndex = 282
-        Me.LabelControl5.Text = "رقم السند"
-        '
-        'LabelControl8
-        '
-        Me.LabelControl8.Appearance.BackColor = System.Drawing.Color.Transparent
-        Me.LabelControl8.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl8.Appearance.Options.UseBackColor = True
-        Me.LabelControl8.Appearance.Options.UseFont = True
-        Me.LabelControl8.Location = New System.Drawing.Point(373, 29)
-        Me.LabelControl8.Name = "LabelControl8"
-        Me.LabelControl8.Size = New System.Drawing.Size(17, 21)
-        Me.LabelControl8.TabIndex = 283
-        Me.LabelControl8.Text = "فئة"
-        '
-        'GroupControl10
-        '
-        Me.GroupControl10.Controls.Add(Me.PictureBox6)
-        Me.GroupControl10.Controls.Add(Me.Label7)
-        Me.GroupControl10.Location = New System.Drawing.Point(8, 371)
-        Me.GroupControl10.Name = "GroupControl10"
-        Me.GroupControl10.Size = New System.Drawing.Size(102, 94)
-        Me.GroupControl10.TabIndex = 262
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.IQTClinicSystem.My.Resources.Resources.e__98_
-        Me.PictureBox6.Location = New System.Drawing.Point(18, 25)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(62, 62)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 254
-        Me.PictureBox6.TabStop = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(4, 1)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(93, 19)
-        Me.Label7.TabIndex = 255
-        Me.Label7.Text = "استحقاقات اخرى"
         '
         'fm_add_patient
         '
@@ -978,6 +976,10 @@ Partial Class fm_add_patient
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl7.ResumeLayout(False)
+        CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl10.ResumeLayout(False)
+        Me.GroupControl10.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl8.ResumeLayout(False)
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -985,10 +987,6 @@ Partial Class fm_add_patient
         Me.GroupControl2.PerformLayout()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl9.ResumeLayout(False)
-        CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl10.ResumeLayout(False)
-        Me.GroupControl10.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout
 

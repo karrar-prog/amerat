@@ -979,3 +979,4 @@ C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\RdlCompile.compiled
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_devided.resources

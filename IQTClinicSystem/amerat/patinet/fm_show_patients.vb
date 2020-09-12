@@ -59,24 +59,24 @@ Public Class fm_show_patients
                 Else
 
                     If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' order by f2,f1,f3  limit " & num_limit.Value & ""
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%'  and is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3  limit " & num_limit.Value & ""
 
                     Else
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' and  f2 like '%" & tb_f2.Text & "%'   order by f2,f1,f3  limit " & num_limit.Value & ""
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' and  and is_token like '%" & cb_plan.Text & "%'    f2 like '%" & tb_f2.Text & "%'   order by f2,f1,f3  limit " & num_limit.Value & ""
 
                     End If
 
                 End If
             Else
                 If tb_f1.Text.Trim = "الكل" Or tb_f1.Text.Trim = "" Then
-                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'   order by id desc limit " & num_limit.Value & ""
+                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'   and is_token like '%" & cb_plan.Text & "%'   order by id desc limit " & num_limit.Value & ""
                 Else
 
                     If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' order by id desc  limit " & num_limit.Value & ""
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' order by id desc  limit " & num_limit.Value & ""
 
                     Else
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' and  f2 like '%" & tb_f2.Text & "%'   order by id desc  limit " & num_limit.Value & ""
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' and  f2 like '%" & tb_f2.Text & "%'   order by id desc  limit " & num_limit.Value & ""
 
                     End If
 
@@ -227,6 +227,14 @@ Public Class fm_show_patients
             fm_add_patient.tb_f7.Text = patient.f7
             fm_add_patient.tb_f8.Text = patient.f8
 
+
+
+            fm_add_patient.nu_first_present.Value = patient.first_present
+            fm_add_patient.nu_last_present.Value = patient.last_present
+            fm_add_patient.nu_first_part.Value = patient.first_part
+            fm_add_patient.nu_last_part.Value = patient.last_part
+            fm_add_patient.cb_plan.Text = patient.is_token
+
       
             fm_add_patient.Show()
             fm_add_patient.cb_plan.Text = patient.f5
@@ -338,9 +346,15 @@ Public Class fm_show_patients
 
     Private Sub اضافةحجزعمليةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles اضافةحجزعمليةToolStripMenuItem.Click
         If lv_queue.SelectedItems.Count > 0 Then
+            Dim p As New Patient(__(lv_queue.SelectedItems.Item(0).Text))
+            fm_add_other_required.tb_id.Text = p.id.ToString
+            fm_add_other_required.tb_name.Text = p.name
+            fm_add_other_required.nu_first_part.Value = p.first_part
+            fm_add_other_required.nu_house_price.Value = p.house_price
+            fm_add_other_required.nu_last_part.Value = p.last_part
+            fm_add_other_required.nu_first_present.Value = p.first_present
+            fm_add_other_required.nu_last_present.Value = p.last_present
 
-            fm_add_other_required.tb_id.Text = lv_queue.SelectedItems.Item(0).Text
-            fm_add_other_required.tb_name.Text = lv_queue.SelectedItems.Item(0).SubItems(1).Text
             fm_add_other_required.Show()
 
 
@@ -470,5 +484,9 @@ Public Class fm_show_patients
 
         End Try
 
+    End Sub
+
+    Private Sub cb_plan_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_plan.SelectedIndexChanged
+        search()
     End Sub
 End Class

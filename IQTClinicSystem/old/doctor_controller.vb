@@ -65,11 +65,12 @@
         lv.View = View.Details
 
         lv.Columns.Add("ت", 1)
-        lv.Columns.Add("العنوان", 220)
-        lv.Columns.Add("المبلغ", 170)
-        lv.Columns.Add("ملاحظة", 150)
-
-        lv.Columns.Add("ملاحظة", 0)
+        lv.Columns.Add("العنوان", 140)
+        lv.Columns.Add("المبلغ", 120)
+        lv.Columns.Add("النسبة", 60)
+        lv.Columns.Add("المبلغ كتابة", 290)
+        lv.Columns.Add("عدد الاشهر", 100)
+        lv.Columns.Add("تأريخ الاستحقاق", 100)
 
 
     End Sub
@@ -82,18 +83,16 @@
         lv.Columns.Add("العنوان", 140)
         lv.Columns.Add("المبلغ", 100)
         lv.Columns.Add("الواصل", 100)
-
-        lv.Columns.Add("ملاحظة", 150)
-        lv.Columns.Add("النوع", 100)
-        lv.Columns.Add("الحاله", 0)
+        lv.Columns.Add("تأريخ الاستحقاق", 150)
+        lv.Columns.Add("النسبة", 100)
+        lv.Columns.Add("المبلغ كتابة", 200)
         lv.Columns.Add("تأريخ الانشاء", 120)
-        lv.Columns.Add("تأريخ التسديد", 100)
         lv.Columns.Add("رقم المستخدم", 100)
         lv.Columns.Add("", 0)
         lv.Columns.Add("", 0)
         lv.Columns.Add("", 0)
         lv.Columns.Add("", 0)
-        lv.Columns.Add("", 0)
+
         lv.Columns.Add("رقم المشترك", 0)
 
     End Sub

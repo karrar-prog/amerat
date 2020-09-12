@@ -47,7 +47,7 @@ Public Class fm_x_viewer_treat
         report.Parameters("user_dar").Value = user_dar
 
 
-        report.Parameters("dar_area").Value = user_dar
+        report.Parameters("dar_area").Value = dar_area
         report.Parameters("contract_date").Value = contract_date
         report.Parameters("user_block_number").Value = user_block_number
         report.Parameters("user_id_number").Value = user_id_number

@@ -74,7 +74,16 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        add()
+        Dim p As New Patient(tb_wieght.Text, nu_blok_num.Value, num_home_num.Value)
+        If p.id = 0 Or p.id = __(tb_id.Text) Then
+            add()
+        Else
+
+            MessageBox.Show(p.is_token & "  للزبون  " & p.name, "لايمكن الحفظ")
+
+        End If
+
+
 
     End Sub
 
@@ -102,7 +111,7 @@ Public Class fm_add_patient
         patient.last_present = __(nu_last_present.Value.ToString)
         patient.house_price = nu_house_price.Value
         patient.is_token = cb_plan.Text
-      
+
         Try
             patient.register_date = dt_register_date.Value
         Catch ex As Exception
@@ -644,6 +653,11 @@ Public Class fm_add_patient
         End If
         fm_add_other_required.tb_id.Text = tb_id.Text
         fm_add_other_required.tb_name.Text = tb_name.Text
+        fm_add_other_required.nu_first_part.Value = nu_first_part.Value
+        fm_add_other_required.nu_house_price.Value = nu_house_price.Value
+        fm_add_other_required.nu_last_part.Value = nu_last_part.Value
+        fm_add_other_required.nu_first_present.Value = nu_first_present.Value
+        fm_add_other_required.nu_last_present.Value = nu_last_present.Value
 
         fm_add_other_required.Show()
 
@@ -757,4 +771,7 @@ Public Class fm_add_patient
         fm_add_other_required.tb_id.Text = tb_id.Text
         fm_add_other_required.Show() '
     End Sub
+
+  
+
 End Class
