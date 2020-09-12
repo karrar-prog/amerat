@@ -542,7 +542,6 @@ Public Class fm_main
 
     Private Sub TileItem11_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem11.ItemClick
         fm_add_other_required.Show()
-        Me.Hide()
-
+    
     End Sub
 End Class

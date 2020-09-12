@@ -1,2 +1,2 @@
-main4
+main
 write "main" in ther first line if this pc is main

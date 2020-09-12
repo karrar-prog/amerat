@@ -47,6 +47,7 @@
             Next
 
             fm_add_other_required.calculating_amount()
+            Me.Close()
 
         Catch ex As Exception
             If MessageBox.Show(ex.Message & "Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then

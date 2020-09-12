@@ -35,10 +35,37 @@ Public Class fm_add_other_required
 
     Private Sub put_depts()
 1:
+        Dim p As New Patient(__(tb_id.Text))
 
-        tb_net_dept.EditValue = 0
-        tb_all_dept.EditValue = 0
-        tb_arrive.EditValue = 0
+        Try
+
+            tb_name.Text = p.name
+
+
+            tb_net_dept.EditValue = 0
+            tb_all_dept.EditValue = 0
+            tb_arrive.EditValue = 0
+            nu_first_present.Value = p.first_present
+            nu_last_present.Value = p.last_present
+
+            nu_first_part.Value = p.first_part
+            nu_last_part.Value = p.last_part
+
+            nu_house_price.Value = p.house_price
+
+        Catch ex As Exception
+            nu_first_present.Value = 0
+            nu_last_present.Value = 0
+
+            nu_first_part.Value = 0
+            nu_last_part.Value = 0
+
+            nu_house_price.Value = 1
+            Beep()
+        End Try
+
+
+
         Try
             Dim dt As New DateTimePicker
             Dim ds_contract_items As New DataSet
@@ -46,7 +73,7 @@ Public Class fm_add_other_required
             lv_dept.Items.Clear()
             If ds_contract_items.Tables(0).Rows.Count > 0 Then
                 For i = 0 To ds_contract_items.Tables(0).Rows.Count - 1
-                  
+
                     lv_dept.Items.Add(ds_contract_items.Tables(0).Rows(i).Item("id").ToString)
                     lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("title").ToString)
                     lv_dept.Items(i).SubItems.Add(ds_contract_items.Tables(0).Rows(i).Item("amount").ToString)
@@ -89,12 +116,19 @@ Public Class fm_add_other_required
                     tb_arrive.EditValue = __(tb_arrive.EditValue.ToString) + __(ds_contract_items.Tables(0).Rows(i).Item("arrive_amount").ToString)
 
                 Next
+
+                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count & " دفعات "
+
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
                 tb_l_2.Text = get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة "
-            Else
+                tb_last_amount.EditValue = nu_last_part.Value
+                tb_last_amount_text.Text = ToArabicLetter(nu_last_part.Value)
+
+            
+                item2.Text = "ثانياً - إن بدل شراءالدار مبلغاً إجمالياً قدره" & " ( " & p.house_price.ToString & " ) " & ToArabicLetter(p.house_price)
+                calculating_amount()
 
             End If
-            calculating_amount()
 
         Catch ex As Exception
             If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
@@ -144,8 +178,7 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub fm_add_other_required_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        fm_main.Show()
-
+       
     End Sub
   
     Private Sub fm_add_other_required_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -269,7 +302,7 @@ Public Class fm_add_other_required
         tb_amount.EditValue = 0
 
         For i = 0 To lv_treat_table.Items.Count - 1
-            tb_amount.EditValue = __(tb_amount.EditValue.ToString) + __(lv_treat_table.Items(i).SubItems(2).Text)
+            tb_amount.EditValue = ___(tb_amount.EditValue.ToString) + ___(lv_treat_table.Items(i).SubItems(2).Text)
         Next
     End Sub
 
@@ -316,7 +349,7 @@ Public Class fm_add_other_required
                 dept.arrive_amount = 0
                 dept.create_at = Date.Now.ToString
                 dept.type = ToArabicLetter(dept.amount)
-                dept.f1 = lv_treat_table.Items.Item(i).SubItems(3).Text
+                dept.f1 = "(%" & lv_treat_table.Items.Item(i).SubItems(3).Text & ")"
                 dept.f2 = ""
                 dept.f3 = ""
                 dept.f4 = ""
@@ -417,19 +450,26 @@ Public Class fm_add_other_required
         f.user_name = tb_name.Text
         f.final_price = tb_all_dept.Text
         f.arrive = tb_2.Text
-        f.remaind = tb_l_1.Text & tb_l_2.Text & tb_l_3.Text & tb_l_4.Text & tb_l_5.Text
+        f.remaind = tb_l_1.Text & tb_l_2.Text & tb_l_3.Text & tb_l_4.Text & tb_l_5.Text & " " & tb_last_amount.EditValue.ToString & " " & tb_last_amount_text.Text
         Dim p As New Patient(__(tb_id.Text))
-        f.user_dar = p.f3
-        f.user_block = p.f1 & p.f2 & "." & p.f3
+        f.user_dar = " ( " & p.f3 & " ) "
+        f.user_block = " ( " & p.f1 & " ) "
 
         f.admin_name = user.name
         f.user_name = " ( " & tb_name.Text & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
 
 
         f.contract_date = p.register_date
-        f.user_block_number = p.f2
-        f.user_id_number = p.f6
-        f.dar_area = p.ref_by
+        f.user_block_number = " ( " & p.f2 & " ) "
+        f.user_id_number = " ( " & p.f6 & " ) "
+        f.dar_area = " ( " & p.ref_by & " ) "
+
+        f.item2 = item2.Text
+        f.item3 = item3.Text
+        f.item4 = item4.Text
+        f.item9 = p.f1 & p.f2 & "." & p.f3
+        f.item10 = p.name
+
         f.Show()
 
 
@@ -518,7 +558,7 @@ Public Class fm_add_other_required
         Beep()
 
         SimpleButton9.ForeColor = Color.Green
-        tb_name.Text = ToArabicLetter(23000)
+        'tb_name.Text = ToArabicLetter(23000)
     End Sub
 
     Private Sub SimpleButton10_Click(sender As Object, e As EventArgs)
@@ -679,7 +719,7 @@ Public Class fm_add_other_required
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles tb_1.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -696,7 +736,7 @@ Public Class fm_add_other_required
 
     End Sub
 
-    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs) Handles TextBox7.TextChanged
+    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 End Class

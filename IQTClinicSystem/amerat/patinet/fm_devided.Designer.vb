@@ -71,7 +71,7 @@ Partial Class fm_devided
         Me.tb_count_devided.TabIndex = 407
         Me.tb_count_devided.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.tb_count_devided.ThousandsSeparator = True
-        Me.tb_count_devided.Value = New Decimal(New Integer() {11, 0, 0, 0})
+        Me.tb_count_devided.Value = New Decimal(New Integer() {10, 0, 0, 0})
         '
         'tb_first_money
         '
@@ -260,7 +260,7 @@ Partial Class fm_devided
         Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
         Me.Name = "fm_devided"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "fm_devided"
+        Me.Text = "ث~بئ"
         Me.TopMost = True
         CType(Me.nu_first_part, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_count_devided, System.ComponentModel.ISupportInitialize).EndInit()

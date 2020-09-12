@@ -20,6 +20,16 @@ Public Class fm_x_viewer_treat
     Public admin_name As String
     Public path As String = "contract"
 
+    Public item1 As String
+    Public item2 As String
+    Public item3 As String
+    Public item4 As String
+    Public item5 As String
+    Public item6 As String
+    Public item7 As String
+    Public item8 As String
+    Public item9 As String
+    Public item10 As String
 
 
     Private Sub fm_x_viewer_treat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -51,6 +61,12 @@ Public Class fm_x_viewer_treat
         report.Parameters("contract_date").Value = contract_date
         report.Parameters("user_block_number").Value = user_block_number
         report.Parameters("user_id_number").Value = user_id_number
+        report.Parameters("item1").Value = item1
+        report.Parameters("item2").Value = item2
+        report.Parameters("item3").Value = item3
+        report.Parameters("item4").Value = item4
+        report.Parameters("item9").Value = item9
+        report.Parameters("item10").Value = item10
 
 
        

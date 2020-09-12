@@ -96,11 +96,11 @@ Partial Class fm_show_patients
         Me.lv_queue.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lv_queue.FullRowSelect = True
         Me.lv_queue.GridLines = True
-        Me.lv_queue.Location = New System.Drawing.Point(2, 20)
+        Me.lv_queue.Location = New System.Drawing.Point(2, 21)
         Me.lv_queue.Name = "lv_queue"
         Me.lv_queue.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_queue.RightToLeftLayout = True
-        Me.lv_queue.Size = New System.Drawing.Size(1093, 712)
+        Me.lv_queue.Size = New System.Drawing.Size(1018, 705)
         Me.lv_queue.TabIndex = 1
         Me.lv_queue.UseCompatibleStateImageBehavior = False
         '
@@ -171,9 +171,9 @@ Partial Class fm_show_patients
         Me.GroupControl6.Controls.Add(Me.Label4)
         Me.GroupControl6.Controls.Add(Me.tb_name)
         Me.GroupControl6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl6.Location = New System.Drawing.Point(1097, 49)
+        Me.GroupControl6.Location = New System.Drawing.Point(1022, 52)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(279, 734)
+        Me.GroupControl6.Size = New System.Drawing.Size(348, 728)
         Me.GroupControl6.TabIndex = 261
         '
         'Label3
@@ -181,7 +181,7 @@ Partial Class fm_show_patients
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(199, 163)
+        Me.Label3.Location = New System.Drawing.Point(199, 164)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(69, 17)
         Me.Label3.TabIndex = 294
@@ -250,7 +250,7 @@ Partial Class fm_show_patients
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(10, 157)
+        Me.RadioButton2.Location = New System.Drawing.Point(10, 158)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton2.Size = New System.Drawing.Size(105, 26)
@@ -264,7 +264,7 @@ Partial Class fm_show_patients
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
         Me.RadioButton1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(120, 157)
+        Me.RadioButton1.Location = New System.Drawing.Point(120, 158)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton1.Size = New System.Drawing.Size(70, 26)
@@ -278,7 +278,7 @@ Partial Class fm_show_patients
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(112, 499)
+        Me.Label2.Location = New System.Drawing.Point(112, 500)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label2.Size = New System.Drawing.Size(71, 17)
@@ -309,7 +309,7 @@ Partial Class fm_show_patients
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(164, 27)
+        Me.LabelControl1.Location = New System.Drawing.Point(164, 28)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(112, 13)
         Me.LabelControl1.TabIndex = 270
@@ -378,7 +378,7 @@ Partial Class fm_show_patients
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(187, 3)
+        Me.Label4.Location = New System.Drawing.Point(187, 4)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(72, 17)
         Me.Label4.TabIndex = 257
@@ -402,7 +402,7 @@ Partial Class fm_show_patients
         Me.RibbonControl2.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl2.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl2.ShowToolbarCustomizeItem = False
-        Me.RibbonControl2.Size = New System.Drawing.Size(1376, 49)
+        Me.RibbonControl2.Size = New System.Drawing.Size(1370, 52)
         Me.RibbonControl2.Toolbar.ShowCustomizeItem = False
         '
         'tb_user
@@ -536,10 +536,10 @@ Partial Class fm_show_patients
         '
         Me.GroupControl2.Controls.Add(Me.lv_queue)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl2.Location = New System.Drawing.Point(0, 49)
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 52)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(1097, 734)
+        Me.GroupControl2.Size = New System.Drawing.Size(1022, 728)
         Me.GroupControl2.TabIndex = 263
         Me.GroupControl2.Text = "نتائج البحث"
         '
@@ -547,7 +547,7 @@ Partial Class fm_show_patients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1376, 783)
+        Me.ClientSize = New System.Drawing.Size(1370, 780)
         Me.Controls.Add(Me.GroupControl2)
         Me.Controls.Add(Me.GroupControl6)
         Me.Controls.Add(Me.RibbonControl2)
