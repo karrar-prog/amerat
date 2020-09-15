@@ -32,6 +32,8 @@ Public Class fm_login
             Dim reader As New StreamReader(Application.StartupPath & "/server/image_path.txt", Encoding.Default)
             patient_image_path = reader.ReadLine
             images_path = patient_image_path
+            reader.Close()
+
         Catch ex As Exception
 
         End Try
@@ -40,6 +42,8 @@ Public Class fm_login
         Try
             Dim reader2 As New StreamReader(Application.StartupPath & "/server/serverInfo.txt", Encoding.Default)
             serverInfo = reader2.ReadLine
+            reader2.Close()
+
         Catch ex As Exception
 
         End Try
@@ -48,6 +52,7 @@ Public Class fm_login
         Try
             Dim reader2 As New StreamReader(Application.StartupPath & "/server/pc_type.txt", Encoding.Default)
             pc_type = reader2.ReadLine
+            reader2.Close()
 
         Catch ex As Exception
 
@@ -57,6 +62,8 @@ Public Class fm_login
         Try
             Dim reader3 As New StreamReader(Application.StartupPath & "/server/email.txt", Encoding.Default)
             main_email = reader3.ReadLine
+            reader3.Close()
+
         Catch ex As Exception
 
         End Try

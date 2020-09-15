@@ -1,4 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.IO
+Imports System.Text
 
 Public Class fm_add_other_required
 
@@ -117,14 +119,14 @@ Public Class fm_add_other_required
 
                 Next
 
-                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count & " دفعات "
+                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 1 & " دفعات "
 
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
                 tb_l_2.Text = get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة "
                 tb_last_amount.EditValue = nu_last_part.Value
                 tb_last_amount_text.Text = ToArabicLetter(nu_last_part.Value)
 
-            
+
                 item2.Text = "ثانياً - إن بدل شراءالدار مبلغاً إجمالياً قدره" & " ( " & p.house_price.ToString & " ) " & ToArabicLetter(p.house_price)
                 calculating_amount()
 
@@ -136,6 +138,7 @@ Public Class fm_add_other_required
 
             End If
         End Try
+        put_defult_items()
 
     End Sub
     Private Sub put_template(template_title As String)
@@ -178,20 +181,20 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub fm_add_other_required_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-       
+
     End Sub
-  
+
     Private Sub fm_add_other_required_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         formatlist_treat_table(lv_treat_table)
         formatlist_dept_table(lv_dept)
         format_templet_treat(cb_templet_treat)
-    
+
         all_depts()
-      
+
     End Sub
 
     Private Sub lv_treat_table_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv_treat_table.SelectedIndexChanged
-      
+
     End Sub
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
@@ -374,7 +377,7 @@ Public Class fm_add_other_required
             For i = 0 To lv_dept.Items.Count - 1
                 Dim d As New Dept()
                 d.id = __(lv_dept.Items.Item(i).Text)
-              
+
                 d.tasded()
                 Dim content = "تسديد ديون: " & tb_name.Text
                 new_event2("تسديد", content, (__(tb_net_dept.EditValue.ToString)))
@@ -505,8 +508,8 @@ Public Class fm_add_other_required
         excute1("delete from dept where id = " & id & "")
         'excute1("update patient set f4 = f4 - " & price & " where id = " & user_id & "")
     End Sub
- 
- 
+
+
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked = False Then
             GroupControl1.Visible = False
@@ -520,7 +523,7 @@ Public Class fm_add_other_required
     Public Sub all_depts()
         If (tb_id.Text.Trim <> "") Then
             put_depts()
-          
+
 
         End If
 
@@ -543,12 +546,12 @@ Public Class fm_add_other_required
             If tb_search.Text.Trim <> "" Then
                 tb_id.Text = tb_search.Text
                 all_depts()
-             
+
             End If
             tb_search.Text = ""
 
         End If
-      
+
     End Sub
 
     Private Sub SimpleButton9_Click(sender As Object, e As EventArgs) Handles SimpleButton9.Click
@@ -562,10 +565,10 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub SimpleButton10_Click(sender As Object, e As EventArgs)
-     
+
         Beep()
         SimpleButton9.ForeColor = Color.Black
-       
+
     End Sub
 
     Private Sub تسديدهذهالمتطلباتToolStripMenuItem_Click(sender As Object, e As EventArgs)
@@ -644,13 +647,13 @@ Public Class fm_add_other_required
         End If
     End Sub
 
- 
+
 
     Private Sub tb_search2_EditValueChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-   
+
 
     Private Sub get_months_details(id As Integer)
         Try
@@ -671,7 +674,7 @@ Public Class fm_add_other_required
 
                 MessageBox.Show("لايوجد")
             End If
-          
+
 
         Catch ex As Exception
 
@@ -730,7 +733,7 @@ Public Class fm_add_other_required
 
     Private Sub SimpleButton10_Click_1(sender As Object, e As EventArgs) Handles SimpleButton10.Click
         fm_devided.nu_first_part.Value = nu_first_part.Value
-     
+
         fm_devided.Show()
 
 
@@ -739,4 +742,22 @@ Public Class fm_add_other_required
     Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        open_text("contract_items")
+    End Sub
+
+    Private Sub put_defult_items()
+        Try
+            Dim reader As New StreamReader(Application.StartupPath & "/server/contract_items.txt", Encoding.Default)
+
+            item4.Text = reader.ReadToEnd
+            reader.Close()
+
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
 End Class

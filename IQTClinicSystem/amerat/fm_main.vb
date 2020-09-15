@@ -544,4 +544,9 @@ Public Class fm_main
         fm_add_other_required.Show()
     
     End Sub
+
+    Private Sub TileItem12_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem12.ItemClick
+        fm_queue.Show()
+
+    End Sub
 End Class

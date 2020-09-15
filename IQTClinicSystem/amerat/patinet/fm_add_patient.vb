@@ -768,8 +768,14 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        fm_add_other_required.tb_id.Text = tb_id.Text
-        fm_add_other_required.Show() '
+        fm_add_queue.tb_id.Text = "0"
+        fm_add_queue.tb_patient_id.Text = tb_id.Text
+
+        fm_add_queue.tb_number.Text = tb_id.Text
+
+
+        fm_add_queue.Show()
+
     End Sub
 
   

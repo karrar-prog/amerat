@@ -9,9 +9,18 @@ Public Class Queue
     Public note As String
     Public state As String
     Public test_type As String
-    Public test_amount As Integer
-    Public test_min As Integer
+    Public test_amount As String
+    Public test_min As String
     Public booking_number As Integer
+
+
+
+    Public dept_id As Integer
+    Public amount As Decimal
+    Public amount_text As String
+    Public recived_date As String
+    Public f1 As String
+    Public f2 As String
 
 
     Sub New()
@@ -39,9 +48,17 @@ Public Class Queue
                 Me.note = ds.Tables(0).Rows(0).Item("note").ToString
                 Me.state = ds.Tables(0).Rows(0).Item("state").ToString
 
-                Me.test_amount = Convert.ToInt32(ds.Tables(0).Rows(0).Item("test_amount").ToString)
-                Me.test_min = Convert.ToInt32(ds.Tables(0).Rows(0).Item("test_min").ToString)
+                Me.test_amount = ds.Tables(0).Rows(0).Item("test_amount").ToString
+                Me.test_min = ds.Tables(0).Rows(0).Item("test_min").ToString
                 Me.booking_number = Convert.ToInt32(ds.Tables(0).Rows(0).Item("booking_number").ToString)
+                Me.dept_id = Convert.ToInt32(ds.Tables(0).Rows(0).Item("dept_id").ToString)
+                Me.amount = Convert.ToDecimal(ds.Tables(0).Rows(0).Item("amount").ToString)
+
+                Me.recived_date = ds.Tables(0).Rows(0).Item("recived_date").ToString
+                Me.amount_text = ds.Tables(0).Rows(0).Item("amount_text").ToString
+                Me.f1 = ds.Tables(0).Rows(0).Item("f1").ToString
+                Me.f2 = ds.Tables(0).Rows(0).Item("f2").ToString
+
             Else
                 conn.Close()
                 MessageBox.Show("there is no queue in this id")
@@ -83,25 +100,25 @@ Public Class Queue
             dt_date.Value = Me.q_date
 
 
-            Dim query As String = "select * from queue where `date` = '" & dt_date.Value.ToShortDateString & "'"
-            Dim da As New MySqlDataAdapter(query, conn)
-            Dim ds As New DataSet()
+            'Dim query As String = "select * from queue where `date` = '" & dt_date.Value.ToShortDateString & "'"
+            'Dim da As New MySqlDataAdapter(query, conn)
+            'Dim ds As New DataSet()
 
 
-            da.Fill(ds)
-            Me.booking_number = Convert.ToInt32(ds.Tables(0).Rows.Count) + 1
+            'da.Fill(ds)
+            'Me.booking_number = Convert.ToInt32(ds.Tables(0).Rows.Count) + 1
 
-            query = "select * from queue where `date` = '" & dt_date.Value.ToShortDateString & "' and patient_id = " & Me.patient_id & ""
-            da = New MySqlDataAdapter(query, conn)
-            ds = New DataSet()
+            'query = "select * from queue where `date` = '" & dt_date.Value.ToShortDateString & "' and patient_id = " & Me.patient_id & ""
+            'da = New MySqlDataAdapter(query, conn)
+            'ds = New DataSet()
 
 
-            da.Fill(ds)
-            If ds.Tables(0).Rows.Count > 0 Then
-                conn.Close()
-                MessageBox.Show("يوجد حجز  لهذا المراجع في هذا اليوم")
-                Return False
-            End If
+            'da.Fill(ds)
+            'If ds.Tables(0).Rows.Count > 0 Then
+            '    conn.Close()
+            '    MessageBox.Show("تمت طباعة فيشة اليوم")
+            '    Return False
+            'End If
 
 
 
@@ -109,22 +126,28 @@ Public Class Queue
 
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "INSERT INTO queue(patient_id ,`date` , note , state ,test_type, test_amount , test_min ,booking_number) " +
-                                                " VALUES(@patient_id, @date ,@note , @state , @test_type ,@test_amount , @test_min,@booking_number)"
+            SQLCommand.CommandText = "INSERT INTO queue(patient_id ,`date` , note , state ,test_type, test_amount , test_min ,booking_number,dept_id,amount,amount_text,recived_date,f1,f2) " +
+                                                " VALUES(@patient_id, @date ,@note , @state , @test_type ,@test_amount , @test_min,@booking_number,@dept_id,@amount,@amount_text,@recived_date,@f1,@f2)"
             SQLCommand.Parameters.Add("@patient_id", MySqlDbType.String).Value = Me.patient_id
             SQLCommand.Parameters.Add("@date", MySqlDbType.String).Value = Me.q_date
             SQLCommand.Parameters.Add("@note", MySqlDbType.String).Value = Me.note
             SQLCommand.Parameters.Add("@state", MySqlDbType.String).Value = Me.state
             SQLCommand.Parameters.Add("@test_type", MySqlDbType.String).Value = Me.test_type
-            SQLCommand.Parameters.Add("@test_amount", MySqlDbType.Int32).Value = Me.test_amount
-            SQLCommand.Parameters.Add("@test_min", MySqlDbType.Int32).Value = Me.test_min
+            SQLCommand.Parameters.Add("@test_amount", MySqlDbType.String).Value = Me.test_amount
+            SQLCommand.Parameters.Add("@test_min", MySqlDbType.String).Value = Me.test_min
             SQLCommand.Parameters.Add("@booking_number", MySqlDbType.Int32).Value = Me.booking_number
+            SQLCommand.Parameters.Add("@dept_id", MySqlDbType.Int32).Value = Me.dept_id
+            SQLCommand.Parameters.Add("@amount_text", MySqlDbType.String).Value = Me.amount_text
+            SQLCommand.Parameters.Add("@amount", MySqlDbType.Decimal).Value = Me.amount
+            SQLCommand.Parameters.Add("@recived_date", MySqlDbType.String).Value = Me.recived_date
+            SQLCommand.Parameters.Add("@f1", MySqlDbType.String).Value = Me.f1
+            SQLCommand.Parameters.Add("@f2", MySqlDbType.String).Value = Me.f2
             SQLCommand.ExecuteNonQuery()
 
             'اضافة حدث
-            Dim conent As String = "تمت اضافة حجز الى تأريخ : " & Me.q_date.ToShortDateString & "  للمريض رقم :" & Me.patient_id & ""
+            Dim conent As String = "تممت طباعة فيشة  : " & Me.q_date.ToShortDateString & "  للزبون رقم :" & Me.patient_id & ""
 
-            ' add_event(conn, s_add, conent)
+            add_event(conn, s_add, conent)
             '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
             'اذا كان يوجد حجز فقد تمت الاضافة الان - هنا نجلب البيانات لكي نرسلها للطباعه
             'query = "select patient.name as current_name , queue.`date` as date , queue.test_type as type  , queue.test_amount as amount  , queue.booking_number as number  from queue , patient where `date` = '" & dt_date.Value.ToShortDateString & "' and patient_id = " & Me.patient_id & " and patient.id = queue.patient_id"
@@ -177,8 +200,8 @@ Public Class Queue
             SQLCommand.Parameters.Add("@date", MySqlDbType.String).Value = Me.q_date
             SQLCommand.Parameters.Add("@note", MySqlDbType.String).Value = Me.note
             SQLCommand.Parameters.Add("@test_type", MySqlDbType.String).Value = Me.test_type
-            SQLCommand.Parameters.Add("@test_amount", MySqlDbType.Int32).Value = Me.test_amount
-            SQLCommand.Parameters.Add("@test_min", MySqlDbType.Int32).Value = Me.test_min
+            SQLCommand.Parameters.Add("@test_amount", MySqlDbType.String).Value = Me.test_amount
+            SQLCommand.Parameters.Add("@test_min", MySqlDbType.String).Value = Me.test_min
 
             SQLCommand.ExecuteNonQuery()
 

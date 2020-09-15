@@ -37,11 +37,11 @@ Partial Class fm_add_patient
         Me.tb_f7 = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl20 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
         Me.LabelControl12 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl9 = New DevExpress.XtraEditors.LabelControl()
         Me.tb_note = New System.Windows.Forms.TextBox()
         Me.tb_f8 = New DevExpress.XtraEditors.TextEdit()
-        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LabelControl22 = New DevExpress.XtraEditors.LabelControl()
         Me.num_home_num = New System.Windows.Forms.NumericUpDown()
@@ -312,7 +312,6 @@ Partial Class fm_add_patient
         Me.GroupControl1.Appearance.BackColor = System.Drawing.Color.AntiqueWhite
         Me.GroupControl1.Appearance.Options.UseBackColor = True
         Me.GroupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.GroupControl1.Controls.Add(Me.ProgressPanel1)
         Me.GroupControl1.Controls.Add(Me.LabelControl12)
         Me.GroupControl1.Controls.Add(Me.LabelControl9)
         Me.GroupControl1.Controls.Add(Me.tb_id)
@@ -332,6 +331,24 @@ Partial Class fm_add_patient
         Me.GroupControl1.Size = New System.Drawing.Size(437, 658)
         Me.GroupControl1.TabIndex = 249
         Me.GroupControl1.Text = "المعلومات الاساسية"
+        '
+        'ProgressPanel1
+        '
+        Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.ProgressPanel1.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProgressPanel1.Appearance.Options.UseBackColor = True
+        Me.ProgressPanel1.Appearance.Options.UseFont = True
+        Me.ProgressPanel1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProgressPanel1.AppearanceCaption.Options.UseFont = True
+        Me.ProgressPanel1.BarAnimationElementThickness = 2
+        Me.ProgressPanel1.Caption = "يتم الحفظ "
+        Me.ProgressPanel1.Description = ""
+        Me.ProgressPanel1.Location = New System.Drawing.Point(3, 18)
+        Me.ProgressPanel1.Name = "ProgressPanel1"
+        Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
+        Me.ProgressPanel1.TabIndex = 252
+        Me.ProgressPanel1.Text = "ProgressPanel1"
         '
         'LabelControl12
         '
@@ -373,24 +390,6 @@ Partial Class fm_add_patient
         Me.tb_f8.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.tb_f8.Size = New System.Drawing.Size(186, 38)
         Me.tb_f8.TabIndex = 5
-        '
-        'ProgressPanel1
-        '
-        Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
-        Me.ProgressPanel1.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProgressPanel1.Appearance.Options.UseBackColor = True
-        Me.ProgressPanel1.Appearance.Options.UseFont = True
-        Me.ProgressPanel1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProgressPanel1.AppearanceCaption.Options.UseFont = True
-        Me.ProgressPanel1.BarAnimationElementThickness = 2
-        Me.ProgressPanel1.Caption = "يتم الحفظ "
-        Me.ProgressPanel1.Description = ""
-        Me.ProgressPanel1.Location = New System.Drawing.Point(374, 157)
-        Me.ProgressPanel1.Name = "ProgressPanel1"
-        Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
-        Me.ProgressPanel1.TabIndex = 252
-        Me.ProgressPanel1.Text = "ProgressPanel1"
         '
         'Label3
         '
@@ -655,6 +654,7 @@ Partial Class fm_add_patient
         '
         'GroupControl4
         '
+        Me.GroupControl4.Controls.Add(Me.ProgressPanel1)
         Me.GroupControl4.Controls.Add(Me.PictureBox1)
         Me.GroupControl4.Controls.Add(Me.Label2)
         Me.GroupControl4.Location = New System.Drawing.Point(8, 154)
@@ -808,7 +808,7 @@ Partial Class fm_add_patient
         '
         'PictureBox6
         '
-        Me.PictureBox6.Image = Global.IQTClinicSystem.My.Resources.Resources.e__98_
+        Me.PictureBox6.Image = Global.IQTClinicSystem.My.Resources.Resources.e__107_
         Me.PictureBox6.Location = New System.Drawing.Point(18, 25)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(62, 62)
@@ -821,11 +821,11 @@ Partial Class fm_add_patient
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(4, 1)
+        Me.Label7.Location = New System.Drawing.Point(16, 1)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(93, 19)
+        Me.Label7.Size = New System.Drawing.Size(67, 19)
         Me.Label7.TabIndex = 255
-        Me.Label7.Text = "استحقاقات اخرى"
+        Me.Label7.Text = "طباعة فيشة"
         '
         'GroupControl8
         '

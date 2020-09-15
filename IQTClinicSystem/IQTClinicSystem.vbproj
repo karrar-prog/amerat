@@ -488,22 +488,22 @@
     <Compile Include="old\MedicalOperation.vb" />
     <Compile Include="old\MedicalReport.vb" />
     <Compile Include="old\Queue.vb" />
-    <Compile Include="old\queue\fm_add_queue.Designer.vb">
+    <Compile Include="amerat\queue\fm_add_queue.Designer.vb">
       <DependentUpon>fm_add_queue.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\fm_add_queue.vb">
+    <Compile Include="amerat\queue\fm_add_queue.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\report\fm_report_desiger.Designer.vb">
+    <Compile Include="amerat\queue\report\fm_report_desiger.Designer.vb">
       <DependentUpon>fm_report_desiger.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\report\fm_report_desiger.vb">
+    <Compile Include="amerat\queue\report\fm_report_desiger.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\report\fm_report_viewr.Designer.vb">
+    <Compile Include="amerat\queue\report\fm_report_viewr.Designer.vb">
       <DependentUpon>fm_report_viewr.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\report\fm_report_viewr.vb">
+    <Compile Include="amerat\queue\report\fm_report_viewr.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="old\Report.vb" />
@@ -633,60 +633,60 @@
     <Compile Include="amerat\patinet\fm_show_patients.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\fm_queue.Designer.vb">
+    <Compile Include="amerat\queue\fm_queue.Designer.vb">
       <DependentUpon>fm_queue.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\fm_queue.vb">
+    <Compile Include="amerat\queue\fm_queue.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\fm_queue_option.Designer.vb">
+    <Compile Include="amerat\queue\fm_queue_option.Designer.vb">
       <DependentUpon>fm_queue_option.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\fm_queue_option.vb">
+    <Compile Include="amerat\queue\fm_queue_option.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\fm_wait.Designer.vb">
+    <Compile Include="amerat\queue\fm_wait.Designer.vb">
       <DependentUpon>fm_wait.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\fm_wait.vb">
+    <Compile Include="amerat\queue\fm_wait.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\report\CrystalReport1.vb">
+    <Compile Include="amerat\queue\report\CrystalReport1.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="old\queue\report\ds_queue.Designer.vb">
+    <Compile Include="amerat\queue\report\ds_queue.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ds_queue.xsd</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\report\ds_queue.vb">
+    <Compile Include="amerat\queue\report\ds_queue.vb">
       <DependentUpon>ds_queue.xsd</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\report\fm_re_queue.Designer.vb">
+    <Compile Include="amerat\queue\report\fm_re_queue.Designer.vb">
       <DependentUpon>fm_re_queue.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\report\fm_re_queue.vb">
+    <Compile Include="amerat\queue\report\fm_re_queue.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\report\fm_win_report.Designer.vb">
+    <Compile Include="amerat\queue\report\fm_win_report.Designer.vb">
       <DependentUpon>fm_win_report.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\report\fm_win_report.vb">
+    <Compile Include="amerat\queue\report\fm_win_report.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\queue\report\re_queue.vb">
+    <Compile Include="amerat\queue\report\re_queue.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>re_queue.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="old\queue\report\XtraReport2.Designer.vb">
+    <Compile Include="amerat\queue\report\XtraReport2.Designer.vb">
       <DependentUpon>XtraReport2.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\queue\report\XtraReport2.vb">
+    <Compile Include="amerat\queue\report\XtraReport2.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="form\item\XtraForm1.Designer.vb">
@@ -855,13 +855,13 @@
     <EmbeddedResource Include="amerat\login\fm_SplashScreen.resx">
       <DependentUpon>fm_SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\fm_add_queue.resx">
+    <EmbeddedResource Include="amerat\queue\fm_add_queue.resx">
       <DependentUpon>fm_add_queue.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\report\fm_report_desiger.resx">
+    <EmbeddedResource Include="amerat\queue\report\fm_report_desiger.resx">
       <DependentUpon>fm_report_desiger.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\report\fm_report_viewr.resx">
+    <EmbeddedResource Include="amerat\queue\report\fm_report_viewr.resx">
       <DependentUpon>fm_report_viewr.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="old\report\hospital_enter\fm_x_report_h_enter.resx">
@@ -912,31 +912,31 @@
     <EmbeddedResource Include="amerat\patinet\fm_show_patients.resx">
       <DependentUpon>fm_show_patients.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\fm_queue.resx">
+    <EmbeddedResource Include="amerat\queue\fm_queue.resx">
       <DependentUpon>fm_queue.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\fm_queue_option.resx">
+    <EmbeddedResource Include="amerat\queue\fm_queue_option.resx">
       <DependentUpon>fm_queue_option.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\fm_wait.resx">
+    <EmbeddedResource Include="amerat\queue\fm_wait.resx">
       <DependentUpon>fm_wait.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\report\CrystalReport1.rpt">
+    <EmbeddedResource Include="amerat\queue\report\CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\report\fm_re_queue.resx">
+    <EmbeddedResource Include="amerat\queue\report\fm_re_queue.resx">
       <DependentUpon>fm_re_queue.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\report\fm_win_report.resx">
+    <EmbeddedResource Include="amerat\queue\report\fm_win_report.resx">
       <DependentUpon>fm_win_report.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\report\Report1.rdlc" />
-    <EmbeddedResource Include="old\queue\report\re_queue.rpt">
+    <EmbeddedResource Include="amerat\queue\report\Report1.rdlc" />
+    <EmbeddedResource Include="amerat\queue\report\re_queue.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>re_queue.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\queue\report\XtraReport2.resx">
+    <EmbeddedResource Include="amerat\queue\report\XtraReport2.resx">
       <DependentUpon>XtraReport2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\item\Xstore.resx">
@@ -1011,15 +1011,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="old\queue\report\ds_queue.xsc">
+    <None Include="amerat\queue\report\ds_queue.xsc">
       <DependentUpon>ds_queue.xsd</DependentUpon>
     </None>
-    <None Include="old\queue\report\ds_queue.xsd">
+    <None Include="amerat\queue\report\ds_queue.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ds_queue.Designer.vb</LastGenOutput>
     </None>
-    <None Include="old\queue\report\ds_queue.xss">
+    <None Include="amerat\queue\report\ds_queue.xss">
       <DependentUpon>ds_queue.xsd</DependentUpon>
     </None>
     <None Include="old\report\hospital_enter\ds_hospital.xsc">

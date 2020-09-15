@@ -143,6 +143,16 @@ Module DB
     '  Public serverInfo As String = "server=127.0.0.1;userid=user1;password=;database=doctor_db;SslMode=none;CHARSET=utf8"
 
     Public conn As MySqlConnection
+    Public Sub open_text(my_text As String)
+        Dim proc As New System.Diagnostics.Process()
+        Try
+            proc = Process.Start(Application.StartupPath & "/server/" & my_text & ".txt", "تشغيل السيرفر")
+          
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
     Public Function permistion_titles(ByRef li As ListView) As Integer
         li.Items.Clear()
         li.Items.Add("حذف")
