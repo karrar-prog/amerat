@@ -5,7 +5,7 @@ Public Class Patient
     Public id As Integer
     Public name As String
     Public code As String
-    Public birthdate As String
+
     Public finger_print As String
     Public register_date As String
     Public wieght As String
@@ -70,13 +70,6 @@ Public Class Patient
                 Me.name = ds.Tables(0).Rows(0).Item("name").ToString
                 Me.code = ds.Tables(0).Rows(0).Item("code").ToString
 
-                Try
-
-                    Me.birthdate = ds.Tables(0).Rows(0).Item("birthdate").ToString
-
-                Catch ex As Exception
-
-                End Try
                 Me.finger_print = ds.Tables(0).Rows(0).Item("finger_print").ToString
                 Me.wieght = ds.Tables(0).Rows(0).Item("wieght").ToString
                 Try
@@ -84,12 +77,7 @@ Public Class Patient
                 Catch ex As Exception
 
                 End Try
-                Try
-                    Me.birthdate = ds.Tables(0).Rows(0).Item("birthdate").ToString
-                Catch ex As Exception
-
-                End Try
-
+               
                 Me.ref_by = ds.Tables(0).Rows(0).Item("ref_by").ToString
                 Me.gender = ds.Tables(0).Rows(0).Item("gender").ToString
                 Me.phone = ds.Tables(0).Rows(0).Item("phone").ToString
@@ -111,7 +99,12 @@ Public Class Patient
 
                 Me.saller = ds.Tables(0).Rows(0).Item("saller").ToString
                 Me.is_token = ds.Tables(0).Rows(0).Item("is_token").ToString
-                Me.token_date = ds.Tables(0).Rows(0).Item("token_date").ToString
+                Try
+                    Me.token_date = ds.Tables(0).Rows(0).Item("token_date").ToString
+                Catch ex As Exception
+                    MessageBox.Show(ex.Message & "FfFff")
+                End Try
+
                 Me.lower_name = ds.Tables(0).Rows(0).Item("lower_name").ToString
 
                 Me.f5 = ds.Tables(0).Rows(0).Item("f5").ToString
@@ -122,6 +115,12 @@ Public Class Patient
                 Me.f10 = ds.Tables(0).Rows(0).Item("f10").ToString
                 Me.deleted = ds.Tables(0).Rows(0).Item("deleted").ToString
 
+                Me.item2 = ds.Tables(0).Rows(0).Item("item2").ToString
+                Me.item3 = ds.Tables(0).Rows(0).Item("item3").ToString
+                Me.tb_2 = ds.Tables(0).Rows(0).Item("tb_2").ToString
+                Me.tb_l_5 = ds.Tables(0).Rows(0).Item("tb_l_5").ToString
+                Me.item4 = ds.Tables(0).Rows(0).Item("item4").ToString
+                Me.admin_name = ds.Tables(0).Rows(0).Item("admin_name").ToString
 
 
                 Me.first_push_amount = ___(ds.Tables(0).Rows(0).Item("first_push_amount").ToString)
@@ -173,12 +172,7 @@ Public Class Patient
                 Me.name = ds.Tables(0).Rows(0).Item("name").ToString
                 Me.code = ds.Tables(0).Rows(0).Item("code").ToString
 
-                Try
-                    Me.birthdate = ds.Tables(0).Rows(0).Item("birthdate").ToString
-
-                Catch ex As Exception
-
-                End Try
+          
                 Me.finger_print = ds.Tables(0).Rows(0).Item("finger_print").ToString
                 Me.wieght = ds.Tables(0).Rows(0).Item("wieght").ToString
                 Try
@@ -249,6 +243,18 @@ Public Class Patient
         Me.id = 0
     End Sub
 
+    Property item2 As String
+
+    Property item3 As String
+
+    Property tb_2 As String
+
+    Property tb_l_5 As String
+
+    Property item4 As String
+
+    Property admin_name As String
+
 
     Public Function save() As Boolean
 
@@ -285,12 +291,12 @@ Public Class Patient
 
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "INSERT INTO patient(name ,`code`, `birthdate` , finger_print , wieght , register_date , gender ,phone ,note ,diagonosis , ref_by , f1 , f2 , f3 , f4 , f5 , f6 , f7 , f8 , f9 , f10 ,deleted,saller,house_price,first_part,last_part,first_present,last_present,water_price,is_token , token_date,lower_name , first_push_present ,first_push_amount,first_push_amount_arrived ) " +
-                                                " VALUES(@name, @code , @birthdate ,  @finger_print , @wieght ,@register_date , @gender,@phone,@note,@diagonosis,@ref_by, @f1 ,@f2 ,@f3 ,@f4 ,@f5 ,@f6 ,@f7 , @f8 ,@f9 ,@f10,@deleted,@saller,@house_price,@first_part,@last_part,@first_present,@last_present,@water_price,@is_token ,@token_date,@lower_name , @first_push_present ,@first_push_amount,@first_push_amount_arrived )"
+            SQLCommand.CommandText = "INSERT INTO patient(name ,`code` , finger_print , wieght , register_date , gender ,phone ,note ,diagonosis , ref_by , f1 , f2 , f3 , f4 , f5 , f6 , f7 , f8 , f9 , f10 ,deleted,saller,house_price,first_part,last_part,first_present,last_present,water_price,is_token , token_date,lower_name , first_push_present ,first_push_amount,first_push_amount_arrived ) " +
+                                                " VALUES(@name, @code  ,  @finger_print , @wieght ,@register_date , @gender,@phone,@note,@diagonosis,@ref_by, @f1 ,@f2 ,@f3 ,@f4 ,@f5 ,@f6 ,@f7 , @f8 ,@f9 ,@f10,@deleted,@saller,@house_price,@first_part,@last_part,@first_present,@last_present,@water_price,@is_token ,@token_date,@lower_name , @first_push_present ,@first_push_amount,@first_push_amount_arrived )"
 
             SQLCommand.Parameters.Add("@name", MySqlDbType.String).Value = Me.name
             SQLCommand.Parameters.Add("@code", MySqlDbType.String).Value = Me.code
-            SQLCommand.Parameters.Add("@birthdate", MySqlDbType.String).Value = Me.birthdate
+
             SQLCommand.Parameters.Add("@finger_print", MySqlDbType.String).Value = Me.finger_print
             SQLCommand.Parameters.Add("@wieght", MySqlDbType.String).Value = Me.wieght
             SQLCommand.Parameters.Add("@register_date", MySqlDbType.String).Value = Me.register_date
@@ -465,13 +471,14 @@ Public Class Patient
         Try
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "UPDATE patient SET name = @name , `code` = @code , `birthdate` = @birthdate , finger_print = @finger_print , wieght = @wieght , gender = @gender , phone = @phone , note = @note , diagonosis = @diagonosis , ref_by = @ref_by " +
-                " , f1 = @f1 , f2 = @f2 , f3 = @f3 , f4 = @f4 , f5 = @f5 , f6 = @f6 , f7 = @f7 , f8 = @f8 , f9 = @f9 , f10 = @f10 , deleted = @deleted,saller = @saller,house_price = @house_price,first_part= @first_part,last_part = @last_part,first_present = @first_present,last_present = @last_present,water_price =@water_price,is_token = @is_token , token_date = @token_date,lower_name=@lower_name WHERE id = @id"
+            SQLCommand.CommandText = "UPDATE patient SET name = @name , `code` = @code , finger_print = @finger_print , wieght = @wieght , gender = @gender , phone = @phone , note = @note , diagonosis = @diagonosis , ref_by = @ref_by " +
+                " , f1 = @f1 , f2 = @f2 , f3 = @f3 , f4 = @f4 , f5 = @f5 , f6 = @f6 , f7 = @f7 , f8 = @f8 , f9 = @f9 , f10 = @f10 , deleted = @deleted,saller = @saller,house_price = @house_price,first_part= @first_part,last_part = @last_part,first_present = @first_present,last_present = @last_present,water_price =@water_price,is_token = @is_token ,lower_name=@lower_name WHERE id = @id"
 
             SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
             SQLCommand.Parameters.Add("@name", MySqlDbType.String).Value = Me.name
             SQLCommand.Parameters.Add("@code", MySqlDbType.String).Value = Me.code
-            SQLCommand.Parameters.Add("@birthdate", MySqlDbType.String).Value = Me.birthdate
+
+
             SQLCommand.Parameters.Add("@finger_print", MySqlDbType.String).Value = Me.finger_print
             SQLCommand.Parameters.Add("@wieght", MySqlDbType.String).Value = Me.wieght
               SQLCommand.Parameters.Add("@gender", MySqlDbType.String).Value = Me.gender
@@ -505,7 +512,7 @@ Public Class Patient
             SQLCommand.Parameters.Add("@water_price", MySqlDbType.Int32).Value = Me.water_price
 
             SQLCommand.Parameters.Add("@is_token", MySqlDbType.String).Value = Me.is_token
-            SQLCommand.Parameters.Add("@token_date", MySqlDbType.String).Value = Me.token_date
+         
 
 
 
@@ -661,6 +668,55 @@ Public Class Patient
 
         conn.Close()
     End Function
+
+    Sub set_contract()
+
+
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        'Try
+        conn.Open()
+        'Catch myerror As MySqlException
+        '    MsgBox("Connection to the Database Failed")
+        '    Return False
+
+        'End Try
+
+        Try
+            Dim SQLCommand As New MySqlCommand()
+            SQLCommand.Connection = conn
+            SQLCommand.CommandText = "UPDATE patient SET first_push_amount = @first_push_amount ,first_push_present = @first_push_present ,item2 = @item2 ,is_token = @is_token , item3 = @item3 , tb_2 = @tb_2 , tb_l_5 = @tb_l_5 , item4 = @item4 , admin_name = @admin_name WHERE id = @id"
+
+            SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
+            SQLCommand.Parameters.Add("@item2", MySqlDbType.String).Value = Me.item2
+            SQLCommand.Parameters.Add("@item3", MySqlDbType.String).Value = Me.item3
+            SQLCommand.Parameters.Add("@tb_2", MySqlDbType.String).Value = Me.tb_2
+            SQLCommand.Parameters.Add("@tb_l_5", MySqlDbType.String).Value = Me.tb_l_5
+            SQLCommand.Parameters.Add("@item4", MySqlDbType.String).Value = Me.item4
+            SQLCommand.Parameters.Add("@admin_name", MySqlDbType.String).Value = Me.admin_name
+            SQLCommand.Parameters.Add("@is_token", MySqlDbType.String).Value = Me.is_token
+            SQLCommand.Parameters.Add("@first_push_amount", MySqlDbType.Decimal).Value = Me.first_push_amount
+            SQLCommand.Parameters.Add("@first_push_present", MySqlDbType.Decimal).Value = Me.first_push_present
+
+
+
+            SQLCommand.ExecuteNonQuery()
+
+            '  add_event(conn, s_update, conent)
+
+            Dim content = " تم التعاقد مع" & "  " & Me.name
+
+            new_event_opened(s_update, content)
+
+
+            conn.Close()
+          
+        Catch ex As Exception
+            conn.Close()
+            MessageBox.Show(ex.Message)
+
+        End Try
+    End Sub
 
 
 

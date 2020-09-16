@@ -273,7 +273,7 @@ where id = @id
     Public Function delete() As Boolean
 
         excute1("delete from dept where id = " & Me.id & "")
-        Dim content = "تم حذف دين للمشترك" & Me.user_id.ToString & "/" & Me.amount
+        Dim content = "تم حذف فيشة الزبون" & Me.user_id.ToString & "/" & Me.amount
 
         new_event(e_delete, content)
         Return True

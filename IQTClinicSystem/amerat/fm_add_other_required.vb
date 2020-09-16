@@ -5,6 +5,11 @@ Imports System.Text
 Public Class fm_add_other_required
 
     Public p_DataSet As DataSet
+    Public first_push As Decimal = 0
+    Public first_push_text As String = ""
+    Public first_push_present As Decimal = 0
+
+
 
     Private Sub cb_templet_treat_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_templet_treat.SelectedIndexChanged
 
@@ -38,7 +43,12 @@ Public Class fm_add_other_required
     Private Sub put_depts()
 1:
         Dim p As New Patient(__(tb_id.Text))
+        If p.finger_print = "نعم" Then
+            SimpleButton2.Text = "طباعة فقط"
+            SimpleButton5.Text = "التعديلات مقفلة"
+            SimpleButton5.Enabled = False
 
+        End If
         Try
 
             tb_name.Text = p.name
@@ -119,15 +129,38 @@ Public Class fm_add_other_required
 
                 Next
 
-                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 1 & " دفعات "
 
+            
+
+
+                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 2 & " دفعات "
+                Dim last_part_value As New Decimal
+                last_part_value = nu_last_part.Value
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
-                tb_l_2.Text = get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة "
-                tb_last_amount.EditValue = nu_last_part.Value
-                tb_last_amount_text.Text = ToArabicLetter(nu_last_part.Value)
+                tb_l_5.Text = " الدفعة " & get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة " & " ( " & nu_last_present.Value.ToString & "%) من قيمة شراء الدار" &
+                tb_l_5.Text & " ( " & Format(last_part_value, "###,###,###,###,###") & " ) " & ToArabicLetter(nu_last_part.Value)
+
+                Dim house_value As New Decimal
+                house_value = p.house_price
+                item2.Text = "ثانياً - إن بدل شراءالدار مبلغاً إجمالياً قدره" & " ( " & Format(house_value, "###,###,###,###,###") & " ) " & ToArabicLetter(p.house_price)
+                put_defult_items()
+
+                If p.first_push_amount > 0 Then
+                    item2.Text = p.item2
+
+                    item3.Text = p.item3
+                    tb_2.Text = p.tb_2
+                    tb_l_5.Text = p.tb_l_5
+                    item4.Text = p.item4
+                    first_push = p.first_push_amount
+                    first_push_text = ToArabicLetter(first_push)
+                    first_push_present = p.first_push_present
+                    tb_admin_name.Text = p.admin_name
+                End If
 
 
-                item2.Text = "ثانياً - إن بدل شراءالدار مبلغاً إجمالياً قدره" & " ( " & p.house_price.ToString & " ) " & ToArabicLetter(p.house_price)
+
+
                 calculating_amount()
 
             End If
@@ -138,8 +171,7 @@ Public Class fm_add_other_required
 
             End If
         End Try
-        put_defult_items()
-
+   
     End Sub
     Private Sub put_template(template_title As String)
 1:
@@ -190,7 +222,7 @@ Public Class fm_add_other_required
         format_templet_treat(cb_templet_treat)
 
         all_depts()
-
+      
     End Sub
 
     Private Sub lv_treat_table_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv_treat_table.SelectedIndexChanged
@@ -340,7 +372,7 @@ Public Class fm_add_other_required
 
             p.first_push_present = ___(lv_treat_table.Items.Item(0).SubItems(3).Text)
             p.save()
-            tb_2.Text = " ألدفعة الاولى " & "(" & p.first_push_present & ")%" & " " & String.Format("{0:#,##0.00}", p.first_push_amount) & "(" & ToArabicLetter(p.first_push_amount) & ")"
+            tb_2.Text = " ألدفعة الاولى " & "(" & p.first_push_present & "%)" & " (" & Format(p.first_push_amount, "###,###,###,###") & ")" & ToArabicLetter(p.first_push_amount)
             Dim dates_count As Integer = __(lv_treat_table.Items.Item(0).SubItems(5).Text)
             For i = 1 To lv_treat_table.Items.Count - 1
                 Dim dept As New Dept
@@ -443,6 +475,27 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        If SimpleButton2.Text = "حفظ و طباعة" Then
+            Dim p As New Patient()
+            p.id = __(tb_id.Text)
+            p.item2 = item2.Text
+            p.name = tb_name.Text
+            p.item3 = item3.Text
+            p.tb_2 = tb_2.Text
+            p.tb_l_5 = tb_l_5.Text
+            p.item4 = item4.Text
+
+            p.admin_name = tb_admin_name.Text
+            p.is_token = "تعاقد"
+
+            p.first_push_amount = first_push
+            p.first_push_present = first_push_present
+
+
+            p.set_contract()
+
+        End If
+
         print()
 
     End Sub
@@ -452,26 +505,25 @@ Public Class fm_add_other_required
         f.ds = getdatat1("select * from dept where user_id = " & __(tb_id.Text) & " order by id asc")
         f.user_name = tb_name.Text
         f.final_price = tb_all_dept.Text
-        f.arrive = tb_2.Text
-        f.remaind = tb_l_1.Text & tb_l_2.Text & tb_l_3.Text & tb_l_4.Text & tb_l_5.Text & " " & tb_last_amount.EditValue.ToString & " " & tb_last_amount_text.Text
+
         Dim p As New Patient(__(tb_id.Text))
         f.user_dar = " ( " & p.f3 & " ) "
         f.user_block = " ( " & p.f1 & " ) "
-
-        f.admin_name = user.name
+        f.remaind = p.tb_l_5
+        f.arrive = p.tb_2
         f.user_name = " ( " & tb_name.Text & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
-
-
         f.contract_date = p.register_date
         f.user_block_number = " ( " & p.f2 & " ) "
         f.user_id_number = " ( " & p.f6 & " ) "
         f.dar_area = " ( " & p.ref_by & " ) "
-
-        f.item2 = item2.Text
-        f.item3 = item3.Text
-        f.item4 = item4.Text
+        f.item2 = p.item2
+        f.item3 = p.item3
+        f.item4 = p.item4
         f.item9 = p.f1 & p.f2 & "." & p.f3
         f.item10 = p.name
+        f.admin_name = p.admin_name
+
+
 
         f.Show()
 
@@ -494,9 +546,9 @@ Public Class fm_add_other_required
         End If
         If lv_dept.SelectedItems.Count > 0 Then
             If MessageBox.Show("حل تريد الحذف ؟", "", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
-                For i = 0 To lv_dept.SelectedItems.Count - 1
+                For i = 0 To lv_dept.Items.Count - 1
 
-                    delete_dept(__(lv_dept.SelectedItems.Item(i).Text))
+                    delete_dept(__(lv_dept.Items.Item(i).Text))
 
                 Next
                 put_depts()
@@ -726,7 +778,7 @@ Public Class fm_add_other_required
 
     End Sub
 
-    Private Sub SimpleButton8_Click_1(sender As Object, e As EventArgs) Handles SimpleButton8.Click
+    Private Sub SimpleButton8_Click_1(sender As Object, e As EventArgs)
         Me.Close()
 
     End Sub
@@ -743,8 +795,8 @@ Public Class fm_add_other_required
 
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        open_text("contract_items")
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub put_defult_items()
@@ -752,12 +804,43 @@ Public Class fm_add_other_required
             Dim reader As New StreamReader(Application.StartupPath & "/server/contract_items.txt", Encoding.Default)
 
             item4.Text = reader.ReadToEnd
-            reader.Close()
 
+            reader.Close()
+            item4.Text = item4.Text & " " & Date.Now.ToShortDateString
         Catch ex As Exception
 
         End Try
 
     End Sub
 
+    Private Sub TabFormControl1_Click(sender As Object, e As EventArgs) Handles TabFormControl1.Click
+
+    End Sub
+
+    Private Sub SimpleButton8_Click_2(sender As Object, e As EventArgs) Handles SimpleButton8.Click
+        open_text("contract_items")
+    End Sub
+
+    Private Sub SimpleButton11_Click(sender As Object, e As EventArgs) Handles SimpleButton11.Click
+        put_defult_items()
+    End Sub
+
+    Private Sub SimpleButton5_Click_1(sender As Object, e As EventArgs) Handles SimpleButton5.Click
+
+        If user.type = user_admin Then
+            If MessageBox.Show("هل تريد قفل التعديلات ؟", "", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+                Dim p As New Patient(__(tb_id.Text))
+                p.finger_print = "نعم"
+                p.save()
+                SimpleButton2.Text = "طباعة فقط"
+                SimpleButton5.Text = "التعديلات مقفلة"
+                SimpleButton5.Enabled = False
+            End If
+        Else
+            MessageBox.Show("يجب الدخول بحساب مدير")
+        End If
+
+
+
+    End Sub
 End Class

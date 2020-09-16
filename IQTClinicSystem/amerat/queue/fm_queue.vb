@@ -75,17 +75,16 @@ Partial Public Class fm_queue
     Private Sub formatlist()
         lv_queue.View = View.Details
 
-        lv_queue.Columns.Add("رقم الحجز", 100)
-        lv_queue.Columns.Add("رقم المريض", 0)
-        lv_queue.Columns.Add("اسم المريض", 250)
-
-        lv_queue.Columns.Add("الوقت", 99)
-        lv_queue.Columns.Add("التأريخ", 120)
+        lv_queue.Columns.Add("رقم الدفعة", 100)
+        lv_queue.Columns.Add("رقم العقد", 0)
+        lv_queue.Columns.Add("اسم الزبون", 250)
+        lv_queue.Columns.Add("المبلغ", 99)
+        lv_queue.Columns.Add("تأريخ الارسال", 120)
         lv_queue.Columns.Add("الحالة", 120)
         lv_queue.Columns.Add("ت", 0)
-        lv_queue.Columns.Add("الوقت التقريبي", 230)
-        lv_queue.Columns.Add("نوع الحجز", 200)
-        lv_queue.Columns.Add("ملاحظات", 200)
+        lv_queue.Columns.Add("تأريخ الاستلام", 230)
+        lv_queue.Columns.Add("تسلسل الدفعة", 200)
+        lv_queue.Columns.Add("", 200)
 
     End Sub
 
@@ -96,7 +95,7 @@ Partial Public Class fm_queue
       
 
             '  Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and queue.state <>'" & entered_state & "' and patient.id = queue.patient_id order by queue.id"
-            Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and patient.id = queue.patient_id order by queue.id"
+            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and patient.id = queue.patient_id order by queue.id"
             Dim DataSet = getdatat1(s)
             Dim c_enter = 0
             Dim time As New DateTimePicker
@@ -105,46 +104,31 @@ Partial Public Class fm_queue
 
             lv_queue.Items.Clear()
             For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
+
+
+
+
+
+          
                 lv_queue.Items.Add(DataSet.Tables(0).Rows(i).Item("booking_number").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("patient_id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
-                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("time").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("amount").ToString)
                 td_date.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("date").ToString)
                 lv_queue.Items(i).SubItems.Add(td_date.Value.ToShortDateString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("state").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
-                Dim orginal_time As New DateTimePicker
-                'If i = 0 Then
-                '    If DataSet.Tables(0).Rows(i).Item("time").ToString <> "" Then
-                '        orginal_time.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("time").ToString)
-                '    Else
-                '    End If
-                '    lv_queue.Items(i).SubItems.Add(orginal_time.Value.ToShortTimeString)
-                'Else
-                '    If (DataSet.Tables(0).Rows(i).Item("time").ToString = "") Then
-                '        time.Value = Convert.ToDateTime(lv_queue.Items(i - 1).SubItems(7).Text)
-                '        lv_queue.Items(i).SubItems.Add(Convert.ToString(time.Value.AddMinutes(Convert.ToDecimal(DataSet.Tables(0).Rows(i).Item("test_min").ToString)).ToShortTimeString))
-                '    Else
-                '        orginal_time.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("time").ToString)
-                '        lv_queue.Items(i).SubItems.Add(orginal_time.Value.ToShortTimeString)
-                '    End If
-                'End If
-                If DataSet.Tables(0).Rows(i).Item("state").ToString = entered_state Then
-                    lv_queue.Items(i).BackColor = Color.Green
-                    c_enter = c_enter + 1
-
-                End If
-                If DataSet.Tables(0).Rows(i).Item("state").ToString = ready_state Then
-                    lv_queue.Items(i).ForeColor = Color.Blue
-
-                End If
-                If DataSet.Tables(0).Rows(i).Item("state").ToString = cancel_state Then
-                    lv_queue.Items(i).ForeColor = Color.Yellow
-
-                End If
-                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("test_type").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("recived_date").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("dept_id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
 
+                If DataSet.Tables(0).Rows(i).Item("state").ToString = "استلام" Then
+                    lv_queue.Items(i).BackColor = Color.LightGreen
+                    c_enter = c_enter + 1
+                Else
+                    lv_queue.Items(i).BackColor = Color.LightPink
+
+                End If
 
             Next
 
@@ -226,7 +210,7 @@ Partial Public Class fm_queue
 
     End Sub
 
-    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs)
         dt_queue.Value = Date.Now.AddDays(1)
 
 
@@ -274,7 +258,7 @@ Partial Public Class fm_queue
             fm_add_patient.tb_name.Text = patient.name
             fm_add_patient.tb_note.Text = patient.note
             Try
-                fm_add_patient.dt_birthdate.Value = Convert.ToDateTime(patient.birthdate)
+
                 fm_add_patient.dt_register_date.Value = Convert.ToDateTime(patient.register_date)
             Catch ex As Exception
             End Try
@@ -308,8 +292,8 @@ Partial Public Class fm_queue
 
     End Sub
 
-    Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
-      
+    Private Sub SimpleButton3_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub الغائالحجزToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles الغائالحجزToolStripMenuItem.Click
@@ -407,5 +391,57 @@ Partial Public Class fm_queue
 
     Private Sub طباعةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles طباعةToolStripMenuItem.Click
         print_report()
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+
+    End Sub
+
+    Private Sub الغاءحجزهذاالزبونToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles الغاءحجزهذاالزبونToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+            If no_item_in_dept(__(lv_queue.SelectedItems(0).SubItems(1).Text)) Then
+                If MessageBox.Show("هل تريد الغاء الحجز ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+                    Dim p As New Patient(__(lv_queue.SelectedItems(0).SubItems(1).Text))
+                    p.delete()
+                    Dim que As New Queue()
+                    que.id = __(lv_queue.SelectedItems(0).SubItems(6).Text)
+                    que.delete()
+                    search()
+
+                End If
+
+            Else
+                MessageBox.Show("هذا الزبون لدية عقد بيع")
+            End If
+        End If
+
+    End Sub
+
+    Private Function no_item_in_dept(p_id As Integer) As Boolean
+        Dim D As New DataSet
+        D = getdatat1("select * from dept where user_id = " & p_id & "")
+        If D.Tables(0).Rows.Count = 0 Then
+            Return True
+
+        Else
+            Return False
+        End If
+    End Function
+
+    Private Sub حذفهذهالفيشةفقطToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles حذفهذهالفيشةفقطToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+
+            If MessageBox.Show("هل تريد حذف الفيشة ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+
+                Dim que As New Queue()
+                que.id = __(lv_queue.SelectedItems(0).SubItems(6).Text)
+                que.delete()
+                search()
+
+            End If
+
+
+        End If
+
     End Sub
 End Class

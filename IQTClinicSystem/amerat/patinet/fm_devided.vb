@@ -29,6 +29,9 @@
             fm_add_other_required.lv_treat_table.Items(0).SubItems.Add(ToArabicLetter(tb_first_money.Value))
 
             fm_add_other_required.lv_treat_table.Items(0).SubItems.Add(tb_months_period.Value.ToString)
+            fm_add_other_required.first_push_present = nu_first_money_present.Value
+            fm_add_other_required.first_push = tb_first_money.Value
+            fm_add_other_required.first_push_text = ToArabicLetter(tb_first_money.Value)
 
             For i = 1 To __(my_months_count.ToString)
 
@@ -36,7 +39,7 @@
                 fm_add_other_required.lv_treat_table.Items.Add("0")
                 fm_add_other_required.lv_treat_table.Items(i).SubItems.Add(get_text(i + 1))
                 fm_add_other_required.lv_treat_table.Items(i).SubItems.Add(money_per_one_month.ToString)
-                fm_add_other_required.lv_treat_table.Items(i).SubItems.Add(FormatNumber(CDbl(present_one.ToString), 1))
+                fm_add_other_required.lv_treat_table.Items(i).SubItems.Add(FormatNumber(CDbl(present_one.ToString), 0))
                 fm_add_other_required.lv_treat_table.Items(i).SubItems.Add(ToArabicLetter(money_per_one_month))
 
                 fm_add_other_required.lv_treat_table.Items(i).SubItems.Add(tb_months_period.Value.ToString)

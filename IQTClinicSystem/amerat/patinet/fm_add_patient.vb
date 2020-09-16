@@ -26,13 +26,16 @@ Public Class fm_add_patient
         'combo_city()
 
         Combo_format()
-      
+        If tb_id.Text.Trim <> "" Then
+            put_info(__(tb_id.Text))
+
+        End If
     
     End Sub
  
     Private Sub Combo_format()
 
-        cb_plan.SelectedItem = "لا"
+
         'plan = New DataSet
 
         'plan = getdatat1("select * from amount_plan")
@@ -117,12 +120,7 @@ Public Class fm_add_patient
         Catch ex As Exception
 
         End Try
-        Try
-            patient.birthdate = dt_birthdate.Value
-        Catch ex As Exception
-
-        End Try
-
+      
         If patient.save() Then
 
 
@@ -309,9 +307,13 @@ Public Class fm_add_patient
     Private Sub finger_show()
         If tb_id.Text.Trim = "" Then
             GroupControl6.Hide()
+            GroupControl10.Hide()
+            GroupControl3.Hide()
 
         Else
             GroupControl6.Show()
+            GroupControl10.Show()
+            GroupControl3.Show()
 
         End If
 
@@ -638,7 +640,7 @@ Public Class fm_add_patient
 
     End Sub
 
-    Private Sub cb_plan_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_plan.SelectedIndexChanged
+    Private Sub cb_plan_SelectedIndexChanged(sender As Object, e As EventArgs)
         'get_plan(cb_plan.Text)
     End Sub
 
@@ -651,6 +653,13 @@ Public Class fm_add_patient
             MessageBox.Show("اختر مشترك")
             Exit Sub
         End If
+
+        Try
+            fm_add_other_required.Close()
+
+        Catch ex As Exception
+
+        End Try
         fm_add_other_required.tb_id.Text = tb_id.Text
         fm_add_other_required.tb_name.Text = tb_name.Text
         fm_add_other_required.nu_first_part.Value = nu_first_part.Value
@@ -768,16 +777,52 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+
+        Try
+            fm_add_queue.Close()
+
+        Catch ex As Exception
+
+        End Try
         fm_add_queue.tb_id.Text = "0"
         fm_add_queue.tb_patient_id.Text = tb_id.Text
 
-        fm_add_queue.tb_number.Text = tb_id.Text
-
-
+        fm_add_queue.tb_number.Text = "1"
+        fm_add_queue.tb_dept_title.Text = "الدفعة " & get_text(1)
+        fm_add_queue.tb_dept_id.Text = "0"
+        fm_add_queue.tb_fesha_amount.Text = (nu_house_price.Value * 0.1).ToString
+        fm_add_queue.tb_amount_text.Text = ToArabicLetter(nu_house_price.Value * 0.1)
         fm_add_queue.Show()
 
     End Sub
 
   
+
+    Private Sub tb_f8_EditValueChanged(sender As Object, e As EventArgs) Handles tb_f8.EditValueChanged
+
+    End Sub
+
+    Private Sub nu_house_price_ValueChanged(sender As Object, e As EventArgs) Handles nu_house_price.ValueChanged
+        cal_moneys()
+    End Sub
+
+    Private Sub tb_id_EditValueChanged(sender As Object, e As EventArgs) Handles tb_id.EditValueChanged
+5:
+    End Sub
+
+    Private Sub put_info(p_id As Integer)
+        Try
+            Dim p As New Patient(p_id)
+            cb_plan.Text = p.is_token
+            nu_blok_num.Value = __(p.f2)
+            nu_first_part.Value = p.first_present
+            nu_first_present.Value = p.first_push_present
+            nu_house_price.Value = p.house_price
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
 
 End Class

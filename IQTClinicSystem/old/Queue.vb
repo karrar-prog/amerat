@@ -225,6 +225,10 @@ Public Class Queue
 
     End Function
 
+    Sub delete()
+        excute1("delete from queue where id = " & Me.id & "")
+    End Sub
+
 
 
 End Class

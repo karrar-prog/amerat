@@ -38,10 +38,10 @@
         Me.ApplicationMenu3 = New DevExpress.XtraBars.Ribbon.ApplicationMenu(Me.components)
         Me.lv_queue = New System.Windows.Forms.ListView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.طباعةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تعديلالحجزToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الغائالحجزToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تعديلالاسمToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.dt_queue = New System.Windows.Forms.DateTimePicker()
         Me.DefaultLookAndFeel2 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
@@ -66,8 +66,19 @@
         Me.RibbonControl2 = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.l_entered = New DevExpress.XtraEditors.LabelControl()
-        Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
-        Me.طباعةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
+        Me.الغاءحجزهذاالزبونToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.حذفهذهالفيشةفقطToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl7 = New DevExpress.XtraEditors.GroupControl()
+        Me.tb_id = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl6 = New DevExpress.XtraEditors.LabelControl()
+        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl3.SuspendLayout()
         CType(Me.p_fingerPrint, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,6 +90,18 @@
         CType(Me.ApplicationMenu3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.RibbonControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl1.SuspendLayout()
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl2.SuspendLayout()
+        CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl4.SuspendLayout()
+        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl6.SuspendLayout()
+        CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl7.SuspendLayout()
+        CType(Me.tb_id.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupControl3
@@ -87,7 +110,7 @@
         Me.GroupControl3.Appearance.Options.UseBackColor = True
         Me.GroupControl3.Controls.Add(Me.p_fingerPrint)
         Me.GroupControl3.Controls.Add(Me.Label3)
-        Me.GroupControl3.Location = New System.Drawing.Point(17, 251)
+        Me.GroupControl3.Location = New System.Drawing.Point(155, 22)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.Size = New System.Drawing.Size(102, 103)
         Me.GroupControl3.TabIndex = 259
@@ -107,11 +130,11 @@
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(2, 4)
+        Me.Label3.Location = New System.Drawing.Point(16, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 17)
+        Me.Label3.Size = New System.Drawing.Size(75, 17)
         Me.Label3.TabIndex = 257
-        Me.Label3.Text = "معلومات الزبون"
+        Me.Label3.Text = "عرض الزبائن"
         '
         'GroupControl5
         '
@@ -119,7 +142,7 @@
         Me.GroupControl5.Appearance.Options.UseBackColor = True
         Me.GroupControl5.Controls.Add(Me.PictureBox3)
         Me.GroupControl5.Controls.Add(Me.Label1)
-        Me.GroupControl5.Location = New System.Drawing.Point(18, 383)
+        Me.GroupControl5.Location = New System.Drawing.Point(25, 22)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.Size = New System.Drawing.Size(102, 103)
         Me.GroupControl5.TabIndex = 261
@@ -161,54 +184,53 @@
         '
         Me.lv_queue.Activation = System.Windows.Forms.ItemActivation.OneClick
         Me.lv_queue.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.lv_queue.Dock = System.Windows.Forms.DockStyle.Top
         Me.lv_queue.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lv_queue.FullRowSelect = True
         Me.lv_queue.GridLines = True
-        Me.lv_queue.Location = New System.Drawing.Point(142, 104)
+        Me.lv_queue.Location = New System.Drawing.Point(2, 20)
         Me.lv_queue.Name = "lv_queue"
         Me.lv_queue.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_queue.RightToLeftLayout = True
-        Me.lv_queue.Size = New System.Drawing.Size(1055, 637)
+        Me.lv_queue.Size = New System.Drawing.Size(1254, 554)
         Me.lv_queue.TabIndex = 263
         Me.lv_queue.UseCompatibleStateImageBehavior = False
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.طباعةToolStripMenuItem, Me.تعديلالحجزToolStripMenuItem, Me.الغائالحجزToolStripMenuItem, Me.تعديلالاسمToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.طباعةToolStripMenuItem, Me.تعديلالحجزToolStripMenuItem, Me.الغائالحجزToolStripMenuItem, Me.تعديلالاسمToolStripMenuItem, Me.الغاءحجزهذاالزبونToolStripMenuItem, Me.حذفهذهالفيشةفقطToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 114)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(199, 158)
+        '
+        'طباعةToolStripMenuItem
+        '
+        Me.طباعةToolStripMenuItem.Name = "طباعةToolStripMenuItem"
+        Me.طباعةToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.طباعةToolStripMenuItem.Text = "طباعة"
         '
         'تعديلالحجزToolStripMenuItem
         '
         Me.تعديلالحجزToolStripMenuItem.Name = "تعديلالحجزToolStripMenuItem"
-        Me.تعديلالحجزToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.تعديلالحجزToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
         Me.تعديلالحجزToolStripMenuItem.Text = "تعديل الفيشة"
         '
         'الغائالحجزToolStripMenuItem
         '
         Me.الغائالحجزToolStripMenuItem.Name = "الغائالحجزToolStripMenuItem"
-        Me.الغائالحجزToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.الغائالحجزToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
         Me.الغائالحجزToolStripMenuItem.Text = "الغاء الفيشة"
         '
         'تعديلالاسمToolStripMenuItem
         '
         Me.تعديلالاسمToolStripMenuItem.Name = "تعديلالاسمToolStripMenuItem"
-        Me.تعديلالاسمToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.تعديلالاسمToolStripMenuItem.Text = "تعديل الاسم"
-        '
-        'SimpleButton2
-        '
-        Me.SimpleButton2.Location = New System.Drawing.Point(464, 71)
-        Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(75, 23)
-        Me.SimpleButton2.TabIndex = 271
-        Me.SimpleButton2.Text = "غدا"
+        Me.تعديلالاسمToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.تعديلالاسمToolStripMenuItem.Text = "تعديل معلومات الزبون"
         '
         'SimpleButton1
         '
-        Me.SimpleButton1.Location = New System.Drawing.Point(701, 71)
+        Me.SimpleButton1.Location = New System.Drawing.Point(16, 39)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(75, 23)
+        Me.SimpleButton1.Size = New System.Drawing.Size(93, 29)
         Me.SimpleButton1.TabIndex = 270
         Me.SimpleButton1.Text = "اليوم"
         '
@@ -216,7 +238,7 @@
         '
         Me.dt_queue.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dt_queue.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dt_queue.Location = New System.Drawing.Point(557, 68)
+        Me.dt_queue.Location = New System.Drawing.Point(115, 39)
         Me.dt_queue.Name = "dt_queue"
         Me.dt_queue.RightToLeftLayout = True
         Me.dt_queue.Size = New System.Drawing.Size(127, 29)
@@ -356,14 +378,14 @@
         Me.RibbonControl2.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl2.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages
         Me.RibbonControl2.ShowToolbarCustomizeItem = False
-        Me.RibbonControl2.Size = New System.Drawing.Size(1220, 49)
+        Me.RibbonControl2.Size = New System.Drawing.Size(1258, 49)
         Me.RibbonControl2.Toolbar.ShowCustomizeItem = False
         '
         'LabelControl1
         '
         Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.Location = New System.Drawing.Point(23, 88)
+        Me.LabelControl1.Location = New System.Drawing.Point(305, 54)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(57, 22)
         Me.LabelControl1.TabIndex = 273
@@ -373,40 +395,170 @@
         '
         Me.l_entered.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.l_entered.Appearance.Options.UseFont = True
-        Me.l_entered.Location = New System.Drawing.Point(23, 121)
+        Me.l_entered.Location = New System.Drawing.Point(306, 94)
         Me.l_entered.Name = "l_entered"
         Me.l_entered.Size = New System.Drawing.Size(111, 22)
         Me.l_entered.TabIndex = 274
         Me.l_entered.Text = "عدد الغير مسددين"
         '
-        'SimpleButton3
+        'GroupControl1
         '
-        Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(357, 55)
-        Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(38, 42)
-        Me.SimpleButton3.TabIndex = 276
+        Me.GroupControl1.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.GroupControl1.Appearance.Options.UseBackColor = True
+        Me.GroupControl1.Controls.Add(Me.SimpleButton1)
+        Me.GroupControl1.Controls.Add(Me.dt_queue)
+        Me.GroupControl1.Location = New System.Drawing.Point(997, 22)
+        Me.GroupControl1.Name = "GroupControl1"
+        Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.GroupControl1.Size = New System.Drawing.Size(261, 103)
+        Me.GroupControl1.TabIndex = 260
+        Me.GroupControl1.Text = "بحث حسب التأريخ"
         '
-        'طباعةToolStripMenuItem
+        'GroupControl2
         '
-        Me.طباعةToolStripMenuItem.Name = "طباعةToolStripMenuItem"
-        Me.طباعةToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.طباعةToolStripMenuItem.Text = "طباعة"
+        Me.GroupControl2.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.GroupControl2.Appearance.Options.UseBackColor = True
+        Me.GroupControl2.Controls.Add(Me.LabelControl2)
+        Me.GroupControl2.Controls.Add(Me.DateTimePicker1)
+        Me.GroupControl2.Location = New System.Drawing.Point(708, 22)
+        Me.GroupControl2.Name = "GroupControl2"
+        Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.GroupControl2.Size = New System.Drawing.Size(261, 103)
+        Me.GroupControl2.TabIndex = 271
+        Me.GroupControl2.Text = "بحث عن المتأخرين"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(14, 40)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.RightToLeftLayout = True
+        Me.DateTimePicker1.Size = New System.Drawing.Size(127, 29)
+        Me.DateTimePicker1.TabIndex = 269
+        '
+        'LabelControl2
+        '
+        Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl2.Appearance.Options.UseFont = True
+        Me.LabelControl2.Location = New System.Drawing.Point(147, 44)
+        Me.LabelControl2.Name = "LabelControl2"
+        Me.LabelControl2.Size = New System.Drawing.Size(99, 21)
+        Me.LabelControl2.TabIndex = 274
+        Me.LabelControl2.Text = "تمت طبعاتها قبل"
+        '
+        'الغاءحجزهذاالزبونToolStripMenuItem
+        '
+        Me.الغاءحجزهذاالزبونToolStripMenuItem.Name = "الغاءحجزهذاالزبونToolStripMenuItem"
+        Me.الغاءحجزهذاالزبونToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.الغاءحجزهذاالزبونToolStripMenuItem.Text = "الغاء حجز هذا الزبون تماما"
+        '
+        'حذفهذهالفيشةفقطToolStripMenuItem
+        '
+        Me.حذفهذهالفيشةفقطToolStripMenuItem.Name = "حذفهذهالفيشةفقطToolStripMenuItem"
+        Me.حذفهذهالفيشةفقطToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.حذفهذهالفيشةفقطToolStripMenuItem.Text = "حذف هذه الفيشة فقط"
+        '
+        'GroupControl4
+        '
+        Me.GroupControl4.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.GroupControl4.Appearance.Options.UseBackColor = True
+        Me.GroupControl4.Controls.Add(Me.GroupControl7)
+        Me.GroupControl4.Controls.Add(Me.GroupControl1)
+        Me.GroupControl4.Controls.Add(Me.l_entered)
+        Me.GroupControl4.Controls.Add(Me.GroupControl5)
+        Me.GroupControl4.Controls.Add(Me.GroupControl2)
+        Me.GroupControl4.Controls.Add(Me.GroupControl3)
+        Me.GroupControl4.Controls.Add(Me.LabelControl1)
+        Me.GroupControl4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupControl4.Location = New System.Drawing.Point(0, 49)
+        Me.GroupControl4.Name = "GroupControl4"
+        Me.GroupControl4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.GroupControl4.Size = New System.Drawing.Size(1258, 125)
+        Me.GroupControl4.TabIndex = 278
+        Me.GroupControl4.Text = "عمليات البحث"
+        '
+        'GroupControl6
+        '
+        Me.GroupControl6.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.GroupControl6.Appearance.Options.UseBackColor = True
+        Me.GroupControl6.Controls.Add(Me.lv_queue)
+        Me.GroupControl6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupControl6.Location = New System.Drawing.Point(0, 174)
+        Me.GroupControl6.Name = "GroupControl6"
+        Me.GroupControl6.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.GroupControl6.Size = New System.Drawing.Size(1258, 590)
+        Me.GroupControl6.TabIndex = 279
+        Me.GroupControl6.Text = "نتئج البحث"
+        '
+        'GroupControl7
+        '
+        Me.GroupControl7.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.GroupControl7.Appearance.Options.UseBackColor = True
+        Me.GroupControl7.Controls.Add(Me.TextEdit1)
+        Me.GroupControl7.Controls.Add(Me.LabelControl3)
+        Me.GroupControl7.Controls.Add(Me.tb_id)
+        Me.GroupControl7.Controls.Add(Me.LabelControl6)
+        Me.GroupControl7.Location = New System.Drawing.Point(423, 22)
+        Me.GroupControl7.Name = "GroupControl7"
+        Me.GroupControl7.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.GroupControl7.Size = New System.Drawing.Size(261, 103)
+        Me.GroupControl7.TabIndex = 275
+        Me.GroupControl7.Text = "استلام فيشة"
+        '
+        'tb_id
+        '
+        Me.tb_id.EnterMoveNextControl = True
+        Me.tb_id.Location = New System.Drawing.Point(147, 58)
+        Me.tb_id.Name = "tb_id"
+        Me.tb_id.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.tb_id.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_id.Properties.Appearance.Options.UseFont = True
+        Me.tb_id.Properties.NullValuePrompt = "الاسم"
+        Me.tb_id.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.tb_id.Size = New System.Drawing.Size(109, 36)
+        Me.tb_id.TabIndex = 220
+        '
+        'LabelControl6
+        '
+        Me.LabelControl6.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl6.Appearance.Options.UseFont = True
+        Me.LabelControl6.Location = New System.Drawing.Point(163, 33)
+        Me.LabelControl6.Name = "LabelControl6"
+        Me.LabelControl6.Size = New System.Drawing.Size(71, 21)
+        Me.LabelControl6.TabIndex = 221
+        Me.LabelControl6.Text = "باركود فيشة"
+        '
+        'TextEdit1
+        '
+        Me.TextEdit1.EnterMoveNextControl = True
+        Me.TextEdit1.Location = New System.Drawing.Point(16, 58)
+        Me.TextEdit1.Name = "TextEdit1"
+        Me.TextEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit1.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit1.Properties.NullValuePrompt = "الاسم"
+        Me.TextEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.TextEdit1.Size = New System.Drawing.Size(109, 36)
+        Me.TextEdit1.TabIndex = 222
+        '
+        'LabelControl3
+        '
+        Me.LabelControl3.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl3.Appearance.Options.UseFont = True
+        Me.LabelControl3.Location = New System.Drawing.Point(40, 33)
+        Me.LabelControl3.Name = "LabelControl3"
+        Me.LabelControl3.Size = New System.Drawing.Size(65, 21)
+        Me.LabelControl3.TabIndex = 223
+        Me.LabelControl3.Text = "باركود عقد"
         '
         'fm_queue
         '
         Me.Appearance.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Appearance.Options.UseBackColor = True
-        Me.ClientSize = New System.Drawing.Size(1220, 764)
-        Me.Controls.Add(Me.SimpleButton3)
-        Me.Controls.Add(Me.l_entered)
-        Me.Controls.Add(Me.LabelControl1)
-        Me.Controls.Add(Me.SimpleButton2)
-        Me.Controls.Add(Me.SimpleButton1)
-        Me.Controls.Add(Me.dt_queue)
-        Me.Controls.Add(Me.lv_queue)
-        Me.Controls.Add(Me.GroupControl5)
-        Me.Controls.Add(Me.GroupControl3)
+        Me.ClientSize = New System.Drawing.Size(1258, 764)
+        Me.Controls.Add(Me.GroupControl6)
+        Me.Controls.Add(Me.GroupControl4)
         Me.Controls.Add(Me.RibbonControl2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "fm_queue"
@@ -428,6 +580,21 @@
         CType(Me.ApplicationMenu3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.RibbonControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl1.ResumeLayout(False)
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl2.ResumeLayout(False)
+        Me.GroupControl2.PerformLayout()
+        CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl4.ResumeLayout(False)
+        Me.GroupControl4.PerformLayout()
+        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl6.ResumeLayout(False)
+        CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl7.ResumeLayout(False)
+        Me.GroupControl7.PerformLayout()
+        CType(Me.tb_id.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -443,7 +610,6 @@
     Friend WithEvents ApplicationMenu2 As DevExpress.XtraBars.Ribbon.ApplicationMenu
     Friend WithEvents ApplicationMenu3 As DevExpress.XtraBars.Ribbon.ApplicationMenu
     Friend WithEvents lv_queue As System.Windows.Forms.ListView
-    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents dt_queue As System.Windows.Forms.DateTimePicker
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
@@ -471,9 +637,21 @@
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents l_entered As DevExpress.XtraEditors.LabelControl
     Friend WithEvents تعديلالاسمToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents الغائالحجزToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents طباعةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents GroupControl2 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents الغاءحجزهذاالزبونToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents حذفهذهالفيشةفقطToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GroupControl4 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents GroupControl7 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents GroupControl6 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents tb_id As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl6 As DevExpress.XtraEditors.LabelControl
 
 #End Region
 

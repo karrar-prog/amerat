@@ -1,2 +1,2 @@
-main
+maindsd
 write "main" in ther first line if this pc is main

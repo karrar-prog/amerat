@@ -534,7 +534,7 @@ Public Class fm_main
 
     End Sub
 
-    Private Sub TileItem5_ItemClick_3(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem5.ItemClick
+    Private Sub TileItem5_ItemClick_3(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs)
         fm_months.Show()
         Me.Hide()
 
@@ -546,6 +546,13 @@ Public Class fm_main
     End Sub
 
     Private Sub TileItem12_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem12.ItemClick
+
+        Try
+            fm_queue.Close()
+
+        Catch ex As Exception
+
+        End Try
         fm_queue.Show()
 
     End Sub

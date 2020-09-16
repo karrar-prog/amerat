@@ -69,6 +69,7 @@ Partial Class fm_show_patients
         Me.BarCheckItem1 = New DevExpress.XtraBars.BarCheckItem()
         Me.BarHeaderItem4 = New DevExpress.XtraBars.BarHeaderItem()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,11 +97,11 @@ Partial Class fm_show_patients
         Me.lv_queue.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lv_queue.FullRowSelect = True
         Me.lv_queue.GridLines = True
-        Me.lv_queue.Location = New System.Drawing.Point(2, 21)
+        Me.lv_queue.Location = New System.Drawing.Point(2, 20)
         Me.lv_queue.Name = "lv_queue"
         Me.lv_queue.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_queue.RightToLeftLayout = True
-        Me.lv_queue.Size = New System.Drawing.Size(1018, 705)
+        Me.lv_queue.Size = New System.Drawing.Size(1018, 678)
         Me.lv_queue.TabIndex = 1
         Me.lv_queue.UseCompatibleStateImageBehavior = False
         '
@@ -171,9 +172,9 @@ Partial Class fm_show_patients
         Me.GroupControl6.Controls.Add(Me.Label4)
         Me.GroupControl6.Controls.Add(Me.tb_name)
         Me.GroupControl6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl6.Location = New System.Drawing.Point(1022, 52)
+        Me.GroupControl6.Location = New System.Drawing.Point(1022, 49)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(348, 728)
+        Me.GroupControl6.Size = New System.Drawing.Size(348, 700)
         Me.GroupControl6.TabIndex = 261
         '
         'Label3
@@ -402,7 +403,7 @@ Partial Class fm_show_patients
         Me.RibbonControl2.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl2.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl2.ShowToolbarCustomizeItem = False
-        Me.RibbonControl2.Size = New System.Drawing.Size(1370, 52)
+        Me.RibbonControl2.Size = New System.Drawing.Size(1370, 49)
         Me.RibbonControl2.Toolbar.ShowCustomizeItem = False
         '
         'tb_user
@@ -528,7 +529,7 @@ Partial Class fm_show_patients
         '
         'BarHeaderItem4
         '
-        Me.BarHeaderItem4.Caption = "عدد المشتركين في نتائج البحث"
+        Me.BarHeaderItem4.Caption = "عدد الزبائن في نتائج البحث"
         Me.BarHeaderItem4.Id = 20
         Me.BarHeaderItem4.Name = "BarHeaderItem4"
         '
@@ -536,10 +537,10 @@ Partial Class fm_show_patients
         '
         Me.GroupControl2.Controls.Add(Me.lv_queue)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl2.Location = New System.Drawing.Point(0, 52)
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 49)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(1022, 728)
+        Me.GroupControl2.Size = New System.Drawing.Size(1022, 700)
         Me.GroupControl2.TabIndex = 263
         Me.GroupControl2.Text = "نتائج البحث"
         '
@@ -547,7 +548,7 @@ Partial Class fm_show_patients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1370, 780)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.GroupControl2)
         Me.Controls.Add(Me.GroupControl6)
         Me.Controls.Add(Me.RibbonControl2)
@@ -555,7 +556,7 @@ Partial Class fm_show_patients
         Me.Name = "fm_show_patients"
         Me.Ribbon = Me.RibbonControl2
         Me.ShowIcon = False
-        Me.Text = "معلومات المراجعين"
+        Me.Text = "معلومات الزبائن"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -629,4 +630,5 @@ Partial Class fm_show_patients
     Friend WithEvents اضافةملفاتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents cb_plan As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
 End Class

@@ -528,7 +528,7 @@ Public Class fmdaily
         Dim patient As New Patient
 
         patient.name = name2.Text
-        patient.birthdate = Date.Now.AddYears(-(Convert.ToInt32(tb_age.Text))).ToShortDateString
+
         patient.wieght = ""
         patient.f1 = ""
         patient.f2 = ""
@@ -598,12 +598,7 @@ Public Class fmdaily
                 Dim da As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 da.Fill(ds)
-                Dim birthdate As String = ds.Tables(0).Rows(0).Item("birthdate").ToString
-                Dim d As New DateTime
-                Try
-                    d = Convert.ToDateTime(birthdate)
-                Catch ex As Exception
-                End Try
+            
                 'اضافة زيارة لمراجع
                 SQLCommand = New MySqlCommand()
                 SQLCommand.Connection = conn
@@ -611,7 +606,7 @@ Public Class fmdaily
                 SQLCommand.Parameters.Add("@patient_id", MySqlDbType.Decimal).Value = id
                 SQLCommand.Parameters.Add("@doctor_ID", MySqlDbType.Decimal).Value = doctor_id_in_visit
                 SQLCommand.Parameters.Add("@weight", MySqlDbType.Decimal).Value = Convert.ToDecimal(tb_wieght)
-                SQLCommand.Parameters.Add("@age", MySqlDbType.Decimal).Value = fm_queue_option.GetCurrentAge(d)
+
                 SQLCommand.Parameters.Add("@time", MySqlDbType.String).Value = Convert.ToString(Date.Now.ToLongTimeString)
                 SQLCommand.Parameters.Add("@date", MySqlDbType.String).Value = Convert.ToString(Date.Now.ToShortDateString)
                 SQLCommand.Parameters.Add("@test_type", MySqlDbType.String).Value = ""

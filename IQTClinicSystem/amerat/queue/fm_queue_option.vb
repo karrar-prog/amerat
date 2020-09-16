@@ -323,14 +323,7 @@ Public Class fm_queue_option
             Dim da As New MySqlDataAdapter(query, conn)
             Dim ds As New DataSet()
             da.Fill(ds)
-            Dim birthdate As String = ds.Tables(0).Rows(0).Item("birthdate").ToString
-
-            Dim d As New DateTime
-            Try
-                d = Convert.ToDateTime(birthdate)
-            Catch ex As Exception
-
-            End Try
+        
 
 
             'اضافة زيارة لمراجع
@@ -343,8 +336,6 @@ Public Class fm_queue_option
             SQLCommand.Parameters.Add("@patient_id", MySqlDbType.Decimal).Value = tb_patient_id.Text
             SQLCommand.Parameters.Add("@doctor_ID", MySqlDbType.Decimal).Value = doctor_id_in_visit
      
-
-            SQLCommand.Parameters.Add("@age", MySqlDbType.Decimal).Value = GetCurrentAge(d)
             SQLCommand.Parameters.Add("@time", MySqlDbType.String).Value = Convert.ToString(Date.Now.ToLongTimeString)
             SQLCommand.Parameters.Add("@date", MySqlDbType.String).Value = Convert.ToString(Date.Now.ToShortDateString)
             SQLCommand.Parameters.Add("@test_type", MySqlDbType.String).Value = cb_plan.Text

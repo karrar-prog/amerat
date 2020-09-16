@@ -206,7 +206,7 @@ Public Class fm_show_patients
             fm_add_patient.tb_name.Text = patient.name
             fm_add_patient.tb_note.Text = patient.note
             Try
-                fm_add_patient.dt_birthdate.Value = Convert.ToDateTime(patient.birthdate)
+
                 fm_add_patient.dt_register_date.Value = Convert.ToDateTime(patient.register_date)
 
             Catch ex As Exception

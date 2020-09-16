@@ -317,7 +317,6 @@ Partial Class fm_add_queue
         Me.tb_dept_title.Properties.Appearance.Options.UseFont = True
         Me.tb_dept_title.Properties.Mask.BeepOnError = True
         Me.tb_dept_title.Properties.Mask.EditMask = "n0"
-        Me.tb_dept_title.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_dept_title.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.tb_dept_title.Size = New System.Drawing.Size(377, 34)
         Me.tb_dept_title.TabIndex = 285
@@ -357,16 +356,17 @@ Partial Class fm_add_queue
         'tb_amount_text
         '
         Me.tb_amount_text.EnterMoveNextControl = True
-        Me.tb_amount_text.Location = New System.Drawing.Point(205, 407)
+        Me.tb_amount_text.Location = New System.Drawing.Point(12, 407)
         Me.tb_amount_text.Name = "tb_amount_text"
         Me.tb_amount_text.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_amount_text.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_amount_text.Properties.Appearance.Options.UseFont = True
+        Me.tb_amount_text.Properties.Appearance.Options.UseTextOptions = True
+        Me.tb_amount_text.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.tb_amount_text.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
         Me.tb_amount_text.Properties.Mask.BeepOnError = True
-        Me.tb_amount_text.Properties.Mask.EditMask = "n0"
-        Me.tb_amount_text.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_amount_text.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_amount_text.Size = New System.Drawing.Size(460, 28)
+        Me.tb_amount_text.Size = New System.Drawing.Size(880, 28)
         Me.tb_amount_text.TabIndex = 288
         '
         'fm_add_queue

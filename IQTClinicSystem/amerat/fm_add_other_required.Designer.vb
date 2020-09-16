@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class fm_add_other_required
-    Inherits DevExpress.XtraBars.Ribbon.RibbonForm
+    Inherits DevExpress.XtraBars.TabForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -31,13 +31,12 @@ Partial Class fm_add_other_required
         Me.حذفالعلاجToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تعديلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
-        Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         Me.tb_amount = New DevExpress.XtraEditors.TextEdit()
         Me.lv_dept = New System.Windows.Forms.ListView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.تسديدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.حذفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تسديدجزءToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.حذفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tb_id = New DevExpress.XtraEditors.TextEdit()
         Me.tb_name = New DevExpress.XtraEditors.TextEdit()
         Me.tb_net_dept = New DevExpress.XtraEditors.TextEdit()
@@ -68,24 +67,25 @@ Partial Class fm_add_other_required
         Me.LabelControl18 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl15 = New DevExpress.XtraEditors.LabelControl()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.SimpleButton8 = New DevExpress.XtraEditors.SimpleButton()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.item2 = New System.Windows.Forms.TextBox()
-        Me.item4 = New System.Windows.Forms.TextBox()
         Me.item3 = New DevExpress.XtraEditors.TextEdit()
         Me.tb_2 = New System.Windows.Forms.TextBox()
-        Me.tb_l_4 = New DevExpress.XtraEditors.TextEdit()
         Me.tb_l_5 = New System.Windows.Forms.TextBox()
-        Me.tb_last_amount_text = New DevExpress.XtraEditors.TextEdit()
-        Me.tb_last_amount = New DevExpress.XtraEditors.TextEdit()
-        Me.tb_l_2 = New DevExpress.XtraEditors.TextEdit()
-        Me.tb_l_3 = New DevExpress.XtraEditors.TextEdit()
-        Me.tb_l_1 = New DevExpress.XtraEditors.TextEdit()
+        Me.tb_admin_name = New DevExpress.XtraEditors.TextEdit()
         Me.SimpleButton5 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton9 = New DevExpress.XtraEditors.SimpleButton()
         Me.tb_search = New DevExpress.XtraEditors.TextEdit()
+        Me.item4 = New System.Windows.Forms.TextBox()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
+        Me.RibbonPage3 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.TabFormControl1 = New DevExpress.XtraBars.TabFormControl()
+        Me.TabFormPage1 = New DevExpress.XtraBars.TabFormPage()
+        Me.TabFormContentContainer1 = New DevExpress.XtraBars.TabFormContentContainer()
+        Me.SimpleButton8 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton11 = New DevExpress.XtraEditors.SimpleButton()
         Me.ContextMenu_delete_temp.SuspendLayout()
         Me.Context_treatTable.SuspendLayout()
         CType(Me.tb_amount.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,14 +107,10 @@ Partial Class fm_add_other_required
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl2.SuspendLayout()
         CType(Me.item3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tb_l_4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tb_last_amount_text.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tb_last_amount.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tb_l_2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tb_l_3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tb_l_1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tb_admin_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_search.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabFormControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RibbonPage2
@@ -131,7 +127,7 @@ Partial Class fm_add_other_required
         Me.cb_templet_treat.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_templet_treat.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.cb_templet_treat.FormattingEnabled = True
-        Me.cb_templet_treat.Location = New System.Drawing.Point(50, 144)
+        Me.cb_templet_treat.Location = New System.Drawing.Point(37, 142)
         Me.cb_templet_treat.Name = "cb_templet_treat"
         Me.cb_templet_treat.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.cb_templet_treat.Size = New System.Drawing.Size(426, 31)
@@ -159,13 +155,13 @@ Partial Class fm_add_other_required
         Me.lv_treat_table.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.lv_treat_table.FullRowSelect = True
         Me.lv_treat_table.GridLines = True
-        Me.lv_treat_table.Location = New System.Drawing.Point(40, 173)
+        Me.lv_treat_table.Location = New System.Drawing.Point(10, 173)
         Me.lv_treat_table.MultiSelect = False
         Me.lv_treat_table.Name = "lv_treat_table"
         Me.lv_treat_table.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_treat_table.RightToLeftLayout = True
         Me.lv_treat_table.ShowItemToolTips = True
-        Me.lv_treat_table.Size = New System.Drawing.Size(466, 441)
+        Me.lv_treat_table.Size = New System.Drawing.Size(447, 441)
         Me.lv_treat_table.TabIndex = 320
         Me.lv_treat_table.UseCompatibleStateImageBehavior = False
         '
@@ -196,28 +192,18 @@ Partial Class fm_add_other_required
         'SimpleButton3
         '
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(302, 620)
+        Me.SimpleButton3.Location = New System.Drawing.Point(289, 620)
         Me.SimpleButton3.Name = "SimpleButton3"
         Me.SimpleButton3.Size = New System.Drawing.Size(176, 36)
         Me.SimpleButton3.TabIndex = 322
         Me.SimpleButton3.Text = "حفظ كجديدة للنظام"
         Me.SimpleButton3.Visible = False
         '
-        'LabelControl2
-        '
-        Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl2.Appearance.Options.UseFont = True
-        Me.LabelControl2.Location = New System.Drawing.Point(443, 653)
-        Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(33, 21)
-        Me.LabelControl2.TabIndex = 338
-        Me.LabelControl2.Text = "المبلغ"
-        '
         'tb_amount
         '
         Me.tb_amount.EditValue = "0"
         Me.tb_amount.EnterMoveNextControl = True
-        Me.tb_amount.Location = New System.Drawing.Point(50, 670)
+        Me.tb_amount.Location = New System.Drawing.Point(37, 670)
         Me.tb_amount.Name = "tb_amount"
         Me.tb_amount.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_amount.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -237,79 +223,79 @@ Partial Class fm_add_other_required
         '
         'lv_dept
         '
-        Me.lv_dept.BackColor = System.Drawing.Color.Honeydew
+        Me.lv_dept.BackColor = System.Drawing.Color.White
         Me.lv_dept.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lv_dept.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.lv_dept.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lv_dept.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lv_dept.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.lv_dept.FullRowSelect = True
         Me.lv_dept.GridLines = True
-        Me.lv_dept.Location = New System.Drawing.Point(8, 162)
+        Me.lv_dept.Location = New System.Drawing.Point(502, 135)
         Me.lv_dept.Name = "lv_dept"
         Me.lv_dept.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_dept.RightToLeftLayout = True
         Me.lv_dept.ShowItemToolTips = True
-        Me.lv_dept.Size = New System.Drawing.Size(769, 239)
+        Me.lv_dept.Size = New System.Drawing.Size(775, 245)
         Me.lv_dept.TabIndex = 342
         Me.lv_dept.UseCompatibleStateImageBehavior = False
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.تسديدToolStripMenuItem, Me.حذفToolStripMenuItem, Me.تسديدجزءToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.تسديدToolStripMenuItem, Me.تسديدجزءToolStripMenuItem, Me.حذفToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 70)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(190, 70)
         '
         'تسديدToolStripMenuItem
         '
         Me.تسديدToolStripMenuItem.Name = "تسديدToolStripMenuItem"
-        Me.تسديدToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.تسديدToolStripMenuItem.Text = "تسديد هذه الديون"
-        '
-        'حذفToolStripMenuItem
-        '
-        Me.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem"
-        Me.حذفToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.حذفToolStripMenuItem.Text = "حذف"
+        Me.تسديدToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.تسديدToolStripMenuItem.Text = "تسديد كل القسط"
         '
         'تسديدجزءToolStripMenuItem
         '
         Me.تسديدجزءToolStripMenuItem.Name = "تسديدجزءToolStripMenuItem"
-        Me.تسديدجزءToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.تسديدجزءToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
         Me.تسديدجزءToolStripMenuItem.Text = "تسديد جزء"
+        '
+        'حذفToolStripMenuItem
+        '
+        Me.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem"
+        Me.حذفToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.حذفToolStripMenuItem.Text = "حذف جميع فقرات العقد"
         '
         'tb_id
         '
         Me.tb_id.EnterMoveNextControl = True
-        Me.tb_id.Location = New System.Drawing.Point(551, 23)
+        Me.tb_id.Location = New System.Drawing.Point(892, 24)
         Me.tb_id.Name = "tb_id"
         Me.tb_id.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_id.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_id.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_id.Properties.Appearance.Options.UseFont = True
         Me.tb_id.Properties.NullValuePrompt = "الاسم"
         Me.tb_id.Properties.ReadOnly = True
         Me.tb_id.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_id.Size = New System.Drawing.Size(70, 32)
+        Me.tb_id.Size = New System.Drawing.Size(70, 28)
         Me.tb_id.TabIndex = 347
         '
         'tb_name
         '
         Me.tb_name.EnterMoveNextControl = True
-        Me.tb_name.Location = New System.Drawing.Point(279, 23)
+        Me.tb_name.Location = New System.Drawing.Point(617, 24)
         Me.tb_name.Name = "tb_name"
         Me.tb_name.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_name.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_name.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_name.Properties.Appearance.Options.UseFont = True
         Me.tb_name.Properties.NullValuePrompt = "الاسم"
         Me.tb_name.Properties.ReadOnly = True
         Me.tb_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_name.Size = New System.Drawing.Size(275, 32)
+        Me.tb_name.Size = New System.Drawing.Size(275, 28)
         Me.tb_name.TabIndex = 345
         '
         'tb_net_dept
         '
         Me.tb_net_dept.EditValue = "0"
         Me.tb_net_dept.EnterMoveNextControl = True
-        Me.tb_net_dept.Location = New System.Drawing.Point(246, 721)
+        Me.tb_net_dept.Location = New System.Drawing.Point(744, 731)
         Me.tb_net_dept.Name = "tb_net_dept"
         Me.tb_net_dept.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_net_dept.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -333,16 +319,16 @@ Partial Class fm_add_other_required
         Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton2.Appearance.Options.UseFont = True
         Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(12, 24)
+        Me.SimpleButton2.Location = New System.Drawing.Point(506, 637)
         Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(94, 31)
+        Me.SimpleButton2.Size = New System.Drawing.Size(155, 36)
         Me.SimpleButton2.TabIndex = 351
-        Me.SimpleButton2.Text = "طباعة"
+        Me.SimpleButton2.Text = "حفظ و طباعة"
         '
         'SimpleButton1
         '
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(0, 247)
+        Me.SimpleButton1.Location = New System.Drawing.Point(457, 228)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(39, 35)
         Me.SimpleButton1.TabIndex = 354
@@ -352,7 +338,7 @@ Partial Class fm_add_other_required
         Me.SimpleButton4.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton4.Appearance.Options.UseFont = True
         Me.SimpleButton4.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton4.Location = New System.Drawing.Point(51, 165)
+        Me.SimpleButton4.Location = New System.Drawing.Point(37, 139)
         Me.SimpleButton4.Name = "SimpleButton4"
         Me.SimpleButton4.Size = New System.Drawing.Size(246, 36)
         Me.SimpleButton4.TabIndex = 359
@@ -362,7 +348,7 @@ Partial Class fm_add_other_required
         'SimpleButton6
         '
         Me.SimpleButton6.ImageOptions.Image = CType(resources.GetObject("SimpleButton6.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton6.Location = New System.Drawing.Point(50, 620)
+        Me.SimpleButton6.Location = New System.Drawing.Point(37, 620)
         Me.SimpleButton6.Name = "SimpleButton6"
         Me.SimpleButton6.Size = New System.Drawing.Size(176, 36)
         Me.SimpleButton6.TabIndex = 362
@@ -374,7 +360,7 @@ Partial Class fm_add_other_required
         Me.SimpleButton7.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton7.Appearance.Options.UseFont = True
         Me.SimpleButton7.ImageOptions.Image = CType(resources.GetObject("SimpleButton7.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton7.Location = New System.Drawing.Point(244, 620)
+        Me.SimpleButton7.Location = New System.Drawing.Point(231, 620)
         Me.SimpleButton7.Name = "SimpleButton7"
         Me.SimpleButton7.Size = New System.Drawing.Size(40, 36)
         Me.SimpleButton7.TabIndex = 363
@@ -385,7 +371,7 @@ Partial Class fm_add_other_required
         '
         Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.Location = New System.Drawing.Point(629, 602)
+        Me.LabelControl1.Location = New System.Drawing.Point(616, 602)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(88, 21)
         Me.LabelControl1.TabIndex = 365
@@ -396,7 +382,7 @@ Partial Class fm_add_other_required
         '
         Me.tb_arrive.EditValue = "0"
         Me.tb_arrive.EnterMoveNextControl = True
-        Me.tb_arrive.Location = New System.Drawing.Point(385, 596)
+        Me.tb_arrive.Location = New System.Drawing.Point(372, 596)
         Me.tb_arrive.Name = "tb_arrive"
         Me.tb_arrive.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_arrive.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -419,7 +405,7 @@ Partial Class fm_add_other_required
         '
         Me.LabelControl6.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl6.Appearance.Options.UseFont = True
-        Me.LabelControl6.Location = New System.Drawing.Point(629, 567)
+        Me.LabelControl6.Location = New System.Drawing.Point(616, 567)
         Me.LabelControl6.Name = "LabelControl6"
         Me.LabelControl6.Size = New System.Drawing.Size(94, 21)
         Me.LabelControl6.TabIndex = 367
@@ -430,7 +416,7 @@ Partial Class fm_add_other_required
         '
         Me.tb_all_dept.EditValue = "0"
         Me.tb_all_dept.EnterMoveNextControl = True
-        Me.tb_all_dept.Location = New System.Drawing.Point(385, 564)
+        Me.tb_all_dept.Location = New System.Drawing.Point(372, 564)
         Me.tb_all_dept.Name = "tb_all_dept"
         Me.tb_all_dept.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_all_dept.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -472,12 +458,12 @@ Partial Class fm_add_other_required
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(961, 20)
+        Me.CheckBox1.Location = New System.Drawing.Point(502, 26)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.CheckBox1.Size = New System.Drawing.Size(86, 25)
+        Me.CheckBox1.Size = New System.Drawing.Size(115, 25)
         Me.CheckBox1.TabIndex = 383
-        Me.CheckBox1.Text = "انشاء عقد"
+        Me.CheckBox1.Text = "اداة انشاء العقد"
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
         'GroupControl1
@@ -502,15 +488,14 @@ Partial Class fm_add_other_required
         Me.GroupControl1.Controls.Add(Me.SimpleButton4)
         Me.GroupControl1.Controls.Add(Me.SimpleButton3)
         Me.GroupControl1.Controls.Add(Me.tb_amount)
-        Me.GroupControl1.Controls.Add(Me.LabelControl2)
         Me.GroupControl1.Controls.Add(Me.SimpleButton1)
         Me.GroupControl1.Controls.Add(Me.SimpleButton6)
         Me.GroupControl1.Controls.Add(Me.SimpleButton7)
         Me.GroupControl1.Controls.Add(Me.lv_treat_table)
-        Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl1.Location = New System.Drawing.Point(781, 20)
+        Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl1.Location = New System.Drawing.Point(2, 20)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(509, 734)
+        Me.GroupControl1.Size = New System.Drawing.Size(498, 677)
         Me.GroupControl1.TabIndex = 384
         Me.GroupControl1.Visible = False
         '
@@ -518,7 +503,7 @@ Partial Class fm_add_other_required
         '
         Me.LabelControl3.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl3.Appearance.Options.UseFont = True
-        Me.LabelControl3.Location = New System.Drawing.Point(309, 43)
+        Me.LabelControl3.Location = New System.Drawing.Point(289, 8)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(16, 21)
         Me.LabelControl3.TabIndex = 414
@@ -529,7 +514,7 @@ Partial Class fm_add_other_required
         Me.NumericUpDown1.BackColor = System.Drawing.Color.White
         Me.NumericUpDown1.Enabled = False
         Me.NumericUpDown1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDown1.Location = New System.Drawing.Point(331, 38)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(311, 3)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.NumericUpDown1.Size = New System.Drawing.Size(57, 29)
@@ -541,7 +526,7 @@ Partial Class fm_add_other_required
         '
         Me.LabelControl17.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl17.Appearance.Options.UseFont = True
-        Me.LabelControl17.Location = New System.Drawing.Point(307, 115)
+        Me.LabelControl17.Location = New System.Drawing.Point(287, 80)
         Me.LabelControl17.Name = "LabelControl17"
         Me.LabelControl17.Size = New System.Drawing.Size(16, 21)
         Me.LabelControl17.TabIndex = 412
@@ -552,7 +537,7 @@ Partial Class fm_add_other_required
         Me.nu_last_present.BackColor = System.Drawing.Color.White
         Me.nu_last_present.Enabled = False
         Me.nu_last_present.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nu_last_present.Location = New System.Drawing.Point(331, 108)
+        Me.nu_last_present.Location = New System.Drawing.Point(311, 73)
         Me.nu_last_present.Name = "nu_last_present"
         Me.nu_last_present.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.nu_last_present.Size = New System.Drawing.Size(57, 29)
@@ -564,7 +549,7 @@ Partial Class fm_add_other_required
         '
         Me.LabelControl16.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl16.Appearance.Options.UseFont = True
-        Me.LabelControl16.Location = New System.Drawing.Point(306, 79)
+        Me.LabelControl16.Location = New System.Drawing.Point(286, 44)
         Me.LabelControl16.Name = "LabelControl16"
         Me.LabelControl16.Size = New System.Drawing.Size(16, 21)
         Me.LabelControl16.TabIndex = 410
@@ -575,7 +560,7 @@ Partial Class fm_add_other_required
         Me.nu_first_present.BackColor = System.Drawing.Color.White
         Me.nu_first_present.Enabled = False
         Me.nu_first_present.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nu_first_present.Location = New System.Drawing.Point(330, 72)
+        Me.nu_first_present.Location = New System.Drawing.Point(310, 37)
         Me.nu_first_present.Name = "nu_first_present"
         Me.nu_first_present.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.nu_first_present.Size = New System.Drawing.Size(57, 29)
@@ -585,10 +570,12 @@ Partial Class fm_add_other_required
         '
         'SimpleButton10
         '
+        Me.SimpleButton10.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton10.Appearance.Options.UseFont = True
         Me.SimpleButton10.ImageOptions.Image = CType(resources.GetObject("SimpleButton10.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton10.Location = New System.Drawing.Point(4, 69)
+        Me.SimpleButton10.Location = New System.Drawing.Point(153, 108)
         Me.SimpleButton10.Name = "SimpleButton10"
-        Me.SimpleButton10.Size = New System.Drawing.Size(118, 36)
+        Me.SimpleButton10.Size = New System.Drawing.Size(185, 59)
         Me.SimpleButton10.TabIndex = 408
         Me.SimpleButton10.Text = "تقسيم الدفعات"
         '
@@ -598,12 +585,12 @@ Partial Class fm_add_other_required
         Me.nu_house_price.Enabled = False
         Me.nu_house_price.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_house_price.Increment = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.nu_house_price.Location = New System.Drawing.Point(17, 38)
+        Me.nu_house_price.Location = New System.Drawing.Point(77, 3)
         Me.nu_house_price.Maximum = New Decimal(New Integer() {1215752192, 23, 0, 0})
         Me.nu_house_price.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nu_house_price.Name = "nu_house_price"
         Me.nu_house_price.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.nu_house_price.Size = New System.Drawing.Size(286, 29)
+        Me.nu_house_price.Size = New System.Drawing.Size(206, 29)
         Me.nu_house_price.TabIndex = 407
         Me.nu_house_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.nu_house_price.ThousandsSeparator = True
@@ -615,11 +602,11 @@ Partial Class fm_add_other_required
         Me.nu_last_part.Enabled = False
         Me.nu_last_part.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_last_part.Increment = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.nu_last_part.Location = New System.Drawing.Point(128, 109)
+        Me.nu_last_part.Location = New System.Drawing.Point(76, 73)
         Me.nu_last_part.Maximum = New Decimal(New Integer() {1215752192, 23, 0, 0})
         Me.nu_last_part.Name = "nu_last_part"
         Me.nu_last_part.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.nu_last_part.Size = New System.Drawing.Size(175, 29)
+        Me.nu_last_part.Size = New System.Drawing.Size(206, 29)
         Me.nu_last_part.TabIndex = 406
         Me.nu_last_part.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.nu_last_part.ThousandsSeparator = True
@@ -631,11 +618,11 @@ Partial Class fm_add_other_required
         Me.nu_first_part.Enabled = False
         Me.nu_first_part.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_first_part.Increment = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.nu_first_part.Location = New System.Drawing.Point(127, 73)
+        Me.nu_first_part.Location = New System.Drawing.Point(76, 38)
         Me.nu_first_part.Maximum = New Decimal(New Integer() {1215752192, 23, 0, 0})
         Me.nu_first_part.Name = "nu_first_part"
         Me.nu_first_part.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.nu_first_part.Size = New System.Drawing.Size(175, 29)
+        Me.nu_first_part.Size = New System.Drawing.Size(206, 29)
         Me.nu_first_part.TabIndex = 405
         Me.nu_first_part.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.nu_first_part.ThousandsSeparator = True
@@ -645,7 +632,7 @@ Partial Class fm_add_other_required
         '
         Me.LabelControl18.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl18.Appearance.Options.UseFont = True
-        Me.LabelControl18.Location = New System.Drawing.Point(390, 115)
+        Me.LabelControl18.Location = New System.Drawing.Point(370, 80)
         Me.LabelControl18.Name = "LabelControl18"
         Me.LabelControl18.Size = New System.Drawing.Size(72, 21)
         Me.LabelControl18.TabIndex = 404
@@ -655,7 +642,7 @@ Partial Class fm_add_other_required
         '
         Me.LabelControl15.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl15.Appearance.Options.UseFont = True
-        Me.LabelControl15.Location = New System.Drawing.Point(389, 79)
+        Me.LabelControl15.Location = New System.Drawing.Point(369, 44)
         Me.LabelControl15.Name = "LabelControl15"
         Me.LabelControl15.Size = New System.Drawing.Size(104, 21)
         Me.LabelControl15.TabIndex = 403
@@ -666,81 +653,67 @@ Partial Class fm_add_other_required
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(387, 46)
+        Me.Label3.Location = New System.Drawing.Point(367, 11)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(111, 21)
         Me.Label3.TabIndex = 402
         Me.Label3.Text = "السعر الكلي للدار"
         '
-        'SimpleButton8
-        '
-        Me.SimpleButton8.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SimpleButton8.Appearance.Options.UseFont = True
-        Me.SimpleButton8.ImageOptions.Image = CType(resources.GetObject("SimpleButton8.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton8.Location = New System.Drawing.Point(1194, 18)
-        Me.SimpleButton8.Name = "SimpleButton8"
-        Me.SimpleButton8.Size = New System.Drawing.Size(98, 36)
-        Me.SimpleButton8.TabIndex = 401
-        Me.SimpleButton8.Text = "اغلاق"
-        '
         'GroupControl2
         '
-        Me.GroupControl2.Controls.Add(Me.PictureBox3)
+        Me.GroupControl2.Controls.Add(Me.SimpleButton11)
+        Me.GroupControl2.Controls.Add(Me.SimpleButton8)
+        Me.GroupControl2.Controls.Add(Me.Label1)
         Me.GroupControl2.Controls.Add(Me.item2)
-        Me.GroupControl2.Controls.Add(Me.item4)
         Me.GroupControl2.Controls.Add(Me.item3)
         Me.GroupControl2.Controls.Add(Me.tb_2)
-        Me.GroupControl2.Controls.Add(Me.tb_l_4)
         Me.GroupControl2.Controls.Add(Me.tb_l_5)
-        Me.GroupControl2.Controls.Add(Me.tb_last_amount_text)
-        Me.GroupControl2.Controls.Add(Me.SimpleButton8)
-        Me.GroupControl2.Controls.Add(Me.tb_last_amount)
-        Me.GroupControl2.Controls.Add(Me.tb_l_2)
-        Me.GroupControl2.Controls.Add(Me.tb_l_3)
-        Me.GroupControl2.Controls.Add(Me.tb_l_1)
+        Me.GroupControl2.Controls.Add(Me.tb_admin_name)
         Me.GroupControl2.Controls.Add(Me.SimpleButton5)
         Me.GroupControl2.Controls.Add(Me.SimpleButton9)
         Me.GroupControl2.Controls.Add(Me.tb_search)
         Me.GroupControl2.Controls.Add(Me.tb_name)
         Me.GroupControl2.Controls.Add(Me.tb_id)
-        Me.GroupControl2.Controls.Add(Me.CheckBox1)
         Me.GroupControl2.Controls.Add(Me.tb_net_dept)
+        Me.GroupControl2.Controls.Add(Me.CheckBox1)
         Me.GroupControl2.Controls.Add(Me.lv_dept)
         Me.GroupControl2.Controls.Add(Me.SimpleButton2)
         Me.GroupControl2.Controls.Add(Me.GroupControl1)
+        Me.GroupControl2.Controls.Add(Me.item4)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(0, 0)
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 50)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(1292, 756)
+        Me.GroupControl2.Size = New System.Drawing.Size(1292, 699)
         Me.GroupControl2.TabIndex = 386
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(1234, 640)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(41, 21)
+        Me.Label1.TabIndex = 415
+        Me.Label1.Text = "البائع"
         '
         'item2
         '
+        Me.item2.BackColor = System.Drawing.Color.White
         Me.item2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.item2.Location = New System.Drawing.Point(5, 59)
+        Me.item2.Location = New System.Drawing.Point(502, 56)
         Me.item2.Multiline = True
         Me.item2.Name = "item2"
         Me.item2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.item2.Size = New System.Drawing.Size(772, 47)
+        Me.item2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.item2.Size = New System.Drawing.Size(775, 25)
         Me.item2.TabIndex = 403
-        Me.item2.Text = "2-"
-        '
-        'item4
-        '
-        Me.item4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.item4.Location = New System.Drawing.Point(5, 473)
-        Me.item4.Multiline = True
-        Me.item4.Name = "item4"
-        Me.item4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.item4.Size = New System.Drawing.Size(771, 271)
-        Me.item4.TabIndex = 397
-        Me.item4.Text = "فقرات العقد"
         '
         'item3
         '
-        Me.item3.EditValue = "item3"
+        Me.item3.EditValue = ""
         Me.item3.EnterMoveNextControl = True
-        Me.item3.Location = New System.Drawing.Point(5, 105)
+        Me.item3.Location = New System.Drawing.Point(502, 80)
         Me.item3.Name = "item3"
         Me.item3.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.item3.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -750,131 +723,61 @@ Partial Class fm_add_other_required
         Me.item3.Properties.NullValuePrompt = "الاسم"
         Me.item3.Properties.ReadOnly = True
         Me.item3.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.item3.Size = New System.Drawing.Size(773, 26)
+        Me.item3.Size = New System.Drawing.Size(775, 26)
         Me.item3.TabIndex = 396
         '
         'tb_2
         '
+        Me.tb_2.BackColor = System.Drawing.Color.White
         Me.tb_2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_2.Location = New System.Drawing.Point(5, 130)
+        Me.tb_2.Location = New System.Drawing.Point(502, 106)
         Me.tb_2.Multiline = True
         Me.tb_2.Name = "tb_2"
+        Me.tb_2.ReadOnly = True
         Me.tb_2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_2.Size = New System.Drawing.Size(773, 31)
+        Me.tb_2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.tb_2.Size = New System.Drawing.Size(775, 27)
         Me.tb_2.TabIndex = 395
         Me.tb_2.Text = "الدفعة الاولى"
         '
-        'tb_l_4
-        '
-        Me.tb_l_4.EditValue = "%"
-        Me.tb_l_4.EnterMoveNextControl = True
-        Me.tb_l_4.Location = New System.Drawing.Point(560, 402)
-        Me.tb_l_4.Name = "tb_l_4"
-        Me.tb_l_4.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_l_4.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_l_4.Properties.Appearance.Options.UseFont = True
-        Me.tb_l_4.Properties.NullValuePrompt = "الاسم"
-        Me.tb_l_4.Properties.ReadOnly = True
-        Me.tb_l_4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_l_4.Size = New System.Drawing.Size(24, 26)
-        Me.tb_l_4.TabIndex = 393
-        '
         'tb_l_5
         '
+        Me.tb_l_5.BackColor = System.Drawing.Color.White
         Me.tb_l_5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_l_5.Location = New System.Drawing.Point(5, 402)
+        Me.tb_l_5.Location = New System.Drawing.Point(502, 383)
         Me.tb_l_5.Multiline = True
         Me.tb_l_5.Name = "tb_l_5"
         Me.tb_l_5.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_l_5.Size = New System.Drawing.Size(555, 44)
+        Me.tb_l_5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.tb_l_5.Size = New System.Drawing.Size(773, 44)
         Me.tb_l_5.TabIndex = 392
-        Me.tb_l_5.Text = "من قيمة شراء الدار تدفع قبل مدة ( شهر ) من استلام الداار بعد اشعار مرسل من الطرف " & _
-    "الاول الى الطرف الثاني باستلام الدار ولفتره لاتزيد عن 30 شهراً من دفع المقدمة وق" & _
-    "درها "
+        Me.tb_l_5.Text = " تدفع قبل مدة ( شهر ) من استلام الدار بعد اشعار مرسل من الطرف الاول الى الطرف الث" & _
+    "اني باستلام الدار ولفتره لاتزيد عن 30 شهراً من دفع المقدمة وقدرها "
         '
-        'tb_last_amount_text
+        'tb_admin_name
         '
-        Me.tb_last_amount_text.EditValue = ""
-        Me.tb_last_amount_text.EnterMoveNextControl = True
-        Me.tb_last_amount_text.Location = New System.Drawing.Point(5, 447)
-        Me.tb_last_amount_text.Name = "tb_last_amount_text"
-        Me.tb_last_amount_text.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_last_amount_text.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_last_amount_text.Properties.Appearance.Options.UseFont = True
-        Me.tb_last_amount_text.Properties.NullValuePrompt = "الاسم"
-        Me.tb_last_amount_text.Properties.ReadOnly = True
-        Me.tb_last_amount_text.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_last_amount_text.Size = New System.Drawing.Size(626, 26)
-        Me.tb_last_amount_text.TabIndex = 391
-        '
-        'tb_last_amount
-        '
-        Me.tb_last_amount.EditValue = ""
-        Me.tb_last_amount.EnterMoveNextControl = True
-        Me.tb_last_amount.Location = New System.Drawing.Point(634, 447)
-        Me.tb_last_amount.Name = "tb_last_amount"
-        Me.tb_last_amount.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_last_amount.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_last_amount.Properties.Appearance.Options.UseFont = True
-        Me.tb_last_amount.Properties.NullValuePrompt = "الاسم"
-        Me.tb_last_amount.Properties.ReadOnly = True
-        Me.tb_last_amount.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_last_amount.Size = New System.Drawing.Size(142, 26)
-        Me.tb_last_amount.TabIndex = 390
-        '
-        'tb_l_2
-        '
-        Me.tb_l_2.EditValue = "الحادية عشر والاخيره"
-        Me.tb_l_2.EnterMoveNextControl = True
-        Me.tb_l_2.Location = New System.Drawing.Point(614, 402)
-        Me.tb_l_2.Name = "tb_l_2"
-        Me.tb_l_2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_l_2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_l_2.Properties.Appearance.Options.UseFont = True
-        Me.tb_l_2.Properties.NullValuePrompt = "الاسم"
-        Me.tb_l_2.Properties.ReadOnly = True
-        Me.tb_l_2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_l_2.Size = New System.Drawing.Size(122, 26)
-        Me.tb_l_2.TabIndex = 388
-        '
-        'tb_l_3
-        '
-        Me.tb_l_3.EditValue = "45"
-        Me.tb_l_3.EnterMoveNextControl = True
-        Me.tb_l_3.Location = New System.Drawing.Point(583, 402)
-        Me.tb_l_3.Name = "tb_l_3"
-        Me.tb_l_3.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_l_3.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_l_3.Properties.Appearance.Options.UseFont = True
-        Me.tb_l_3.Properties.NullValuePrompt = "الاسم"
-        Me.tb_l_3.Properties.ReadOnly = True
-        Me.tb_l_3.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_l_3.Size = New System.Drawing.Size(30, 26)
-        Me.tb_l_3.TabIndex = 386
-        '
-        'tb_l_1
-        '
-        Me.tb_l_1.EditValue = "ألدفعة"
-        Me.tb_l_1.EnterMoveNextControl = True
-        Me.tb_l_1.Location = New System.Drawing.Point(735, 402)
-        Me.tb_l_1.Name = "tb_l_1"
-        Me.tb_l_1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
-        Me.tb_l_1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_l_1.Properties.Appearance.Options.UseFont = True
-        Me.tb_l_1.Properties.NullValuePrompt = "الاسم"
-        Me.tb_l_1.Properties.ReadOnly = True
-        Me.tb_l_1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_l_1.Size = New System.Drawing.Size(43, 26)
-        Me.tb_l_1.TabIndex = 387
+        Me.tb_admin_name.EditValue = "محمد علي محمد"
+        Me.tb_admin_name.EnterMoveNextControl = True
+        Me.tb_admin_name.Location = New System.Drawing.Point(882, 637)
+        Me.tb_admin_name.Name = "tb_admin_name"
+        Me.tb_admin_name.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.tb_admin_name.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.tb_admin_name.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_admin_name.Properties.Appearance.Options.UseBackColor = True
+        Me.tb_admin_name.Properties.Appearance.Options.UseFont = True
+        Me.tb_admin_name.Properties.NullValuePrompt = "الاسم"
+        Me.tb_admin_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.tb_admin_name.Size = New System.Drawing.Size(346, 26)
+        Me.tb_admin_name.TabIndex = 390
         '
         'SimpleButton5
         '
         Me.SimpleButton5.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton5.Appearance.Options.UseFont = True
         Me.SimpleButton5.ImageOptions.Image = CType(resources.GetObject("SimpleButton5.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton5.Location = New System.Drawing.Point(111, 24)
+        Me.SimpleButton5.Location = New System.Drawing.Point(713, 637)
         Me.SimpleButton5.Name = "SimpleButton5"
-        Me.SimpleButton5.Size = New System.Drawing.Size(163, 31)
+        Me.SimpleButton5.Size = New System.Drawing.Size(163, 36)
         Me.SimpleButton5.TabIndex = 385
         Me.SimpleButton5.Text = "قفل التعديلات"
         '
@@ -883,7 +786,7 @@ Partial Class fm_add_other_required
         Me.SimpleButton9.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton9.Appearance.Options.UseFont = True
         Me.SimpleButton9.ImageOptions.Image = CType(resources.GetObject("SimpleButton9.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton9.Location = New System.Drawing.Point(626, 23)
+        Me.SimpleButton9.Location = New System.Drawing.Point(1126, 21)
         Me.SimpleButton9.Name = "SimpleButton9"
         Me.SimpleButton9.Size = New System.Drawing.Size(149, 32)
         Me.SimpleButton9.TabIndex = 384
@@ -892,7 +795,7 @@ Partial Class fm_add_other_required
         'tb_search
         '
         Me.tb_search.EditValue = ""
-        Me.tb_search.Location = New System.Drawing.Point(626, 24)
+        Me.tb_search.Location = New System.Drawing.Point(1125, 23)
         Me.tb_search.Name = "tb_search"
         Me.tb_search.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_search.Properties.Appearance.Options.UseFont = True
@@ -902,15 +805,85 @@ Partial Class fm_add_other_required
         Me.tb_search.Size = New System.Drawing.Size(62, 30)
         Me.tb_search.TabIndex = 383
         '
-        'PictureBox3
+        'item4
         '
-        Me.PictureBox3.Image = Global.IQTClinicSystem.My.Resources.Resources.certificate_icon
-        Me.PictureBox3.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(36, 35)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 404
-        Me.PictureBox3.TabStop = False
+        Me.item4.BackColor = System.Drawing.Color.White
+        Me.item4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.item4.Location = New System.Drawing.Point(500, 433)
+        Me.item4.Multiline = True
+        Me.item4.Name = "item4"
+        Me.item4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.item4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.item4.Size = New System.Drawing.Size(730, 201)
+        Me.item4.TabIndex = 397
+        Me.item4.Text = "فقرات العقد"
+        '
+        'RibbonControl1
+        '
+        Me.RibbonControl1.ExpandCollapseItem.Id = 0
+        Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem})
+        Me.RibbonControl1.Location = New System.Drawing.Point(0, 50)
+        Me.RibbonControl1.MaxItemId = 1
+        Me.RibbonControl1.Name = "RibbonControl1"
+        Me.RibbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007
+        Me.RibbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
+        Me.RibbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.[False]
+        Me.RibbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.[False]
+        Me.RibbonControl1.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.[False]
+        Me.RibbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages
+        Me.RibbonControl1.ShowQatLocationSelector = False
+        Me.RibbonControl1.ShowToolbarCustomizeItem = False
+        Me.RibbonControl1.Size = New System.Drawing.Size(1292, 0)
+        Me.RibbonControl1.Toolbar.ShowCustomizeItem = False
+        Me.RibbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
+        Me.RibbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.[False]
+        Me.RibbonControl1.Visible = False
+        '
+        'RibbonPage3
+        '
+        Me.RibbonPage3.Name = "RibbonPage3"
+        Me.RibbonPage3.Text = "RibbonPage3"
+        '
+        'TabFormControl1
+        '
+        Me.TabFormControl1.Location = New System.Drawing.Point(0, 0)
+        Me.TabFormControl1.Name = "TabFormControl1"
+        Me.TabFormControl1.Pages.Add(Me.TabFormPage1)
+        Me.TabFormControl1.SelectedPage = Me.TabFormPage1
+        Me.TabFormControl1.Size = New System.Drawing.Size(1292, 50)
+        Me.TabFormControl1.TabForm = Me
+        Me.TabFormControl1.TabIndex = 389
+        Me.TabFormControl1.TabStop = False
+        '
+        'TabFormPage1
+        '
+        Me.TabFormPage1.ContentContainer = Me.TabFormContentContainer1
+        Me.TabFormPage1.Name = "TabFormPage1"
+        Me.TabFormPage1.Text = "Page 0"
+        '
+        'TabFormContentContainer1
+        '
+        Me.TabFormContentContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabFormContentContainer1.Location = New System.Drawing.Point(0, 50)
+        Me.TabFormContentContainer1.Name = "TabFormContentContainer1"
+        Me.TabFormContentContainer1.Size = New System.Drawing.Size(1292, 699)
+        Me.TabFormContentContainer1.TabIndex = 390
+        '
+        'SimpleButton8
+        '
+        Me.SimpleButton8.ImageOptions.Image = CType(resources.GetObject("SimpleButton8.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton8.Location = New System.Drawing.Point(1236, 433)
+        Me.SimpleButton8.Name = "SimpleButton8"
+        Me.SimpleButton8.Size = New System.Drawing.Size(39, 35)
+        Me.SimpleButton8.TabIndex = 415
+        '
+        'SimpleButton11
+        '
+        Me.SimpleButton11.ImageOptions.Image = CType(resources.GetObject("SimpleButton11.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton11.Location = New System.Drawing.Point(1236, 474)
+        Me.SimpleButton11.Name = "SimpleButton11"
+        Me.SimpleButton11.Size = New System.Drawing.Size(39, 35)
+        Me.SimpleButton11.TabIndex = 416
         '
         'fm_add_other_required
         '
@@ -921,15 +894,19 @@ Partial Class fm_add_other_required
         Me.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1292, 756)
+        Me.ClientSize = New System.Drawing.Size(1292, 749)
         Me.Controls.Add(Me.GroupControl2)
         Me.Controls.Add(Me.tb_arrive)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.tb_all_dept)
         Me.Controls.Add(Me.LabelControl6)
+        Me.Controls.Add(Me.RibbonControl1)
+        Me.Controls.Add(Me.TabFormContentContainer1)
+        Me.Controls.Add(Me.TabFormControl1)
         Me.Name = "fm_add_other_required"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "استحقاقات اخرى للزبون"
+        Me.TabFormControl = Me.TabFormControl1
+        Me.Text = "العقد"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ContextMenu_delete_temp.ResumeLayout(False)
         Me.Context_treatTable.ResumeLayout(False)
@@ -954,14 +931,10 @@ Partial Class fm_add_other_required
         Me.GroupControl2.ResumeLayout(False)
         Me.GroupControl2.PerformLayout()
         CType(Me.item3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tb_l_4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tb_last_amount_text.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tb_last_amount.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tb_l_2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tb_l_3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tb_l_1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tb_admin_name.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_search.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabFormControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -974,7 +947,6 @@ Partial Class fm_add_other_required
     Friend WithEvents حذفهذهالوصفةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Context_treatTable As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents حذفالعلاجToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents tb_amount As DevExpress.XtraEditors.TextEdit
     Friend WithEvents lv_dept As System.Windows.Forms.ListView
     Friend WithEvents tb_id As DevExpress.XtraEditors.TextEdit
@@ -1004,14 +976,8 @@ Partial Class fm_add_other_required
     Friend WithEvents تسديدToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents طباعةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SimpleButton5 As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents tb_l_3 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents tb_l_1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents tb_last_amount_text As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents tb_last_amount As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents tb_l_2 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents tb_admin_name As DevExpress.XtraEditors.TextEdit
     Friend WithEvents tb_l_5 As System.Windows.Forms.TextBox
-    Friend WithEvents tb_l_4 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents SimpleButton8 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents item4 As System.Windows.Forms.TextBox
     Friend WithEvents item3 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents tb_2 As System.Windows.Forms.TextBox
@@ -1030,5 +996,12 @@ Partial Class fm_add_other_required
     Friend WithEvents nu_first_present As System.Windows.Forms.NumericUpDown
     Friend WithEvents item2 As System.Windows.Forms.TextBox
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents RibbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+    Friend WithEvents RibbonPage3 As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents TabFormControl1 As DevExpress.XtraBars.TabFormControl
+    Friend WithEvents TabFormPage1 As DevExpress.XtraBars.TabFormPage
+    Friend WithEvents TabFormContentContainer1 As DevExpress.XtraBars.TabFormContentContainer
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents SimpleButton8 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents SimpleButton11 As DevExpress.XtraEditors.SimpleButton
 End Class

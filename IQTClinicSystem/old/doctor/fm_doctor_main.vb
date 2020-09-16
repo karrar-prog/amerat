@@ -982,7 +982,7 @@ Public Class fm_doctor_main
             fm_add_patient.tb_note.Text = patient.note
             fm_add_patient.nu_house_price.Value = patient.house_price
             Try
-                fm_add_patient.dt_birthdate.Value = patient.birthdate
+
                 fm_add_patient.dt_register_date.Value = patient.register_date
 
             Catch ex As Exception
@@ -1929,7 +1929,7 @@ Public Class fm_doctor_main
             fm_add_patient.tb_name.Text = patient.name
             fm_add_patient.tb_note.Text = patient.note
             Try
-                fm_add_patient.dt_birthdate.Value = patient.birthdate
+
                 fm_add_patient.dt_register_date.Value = patient.register_date
 
             Catch ex As Exception
