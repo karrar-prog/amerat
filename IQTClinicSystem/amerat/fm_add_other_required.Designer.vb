@@ -37,6 +37,7 @@ Partial Class fm_add_other_required
         Me.تسديدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تسديدجزءToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.حذفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.طباعةفيشةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tb_id = New DevExpress.XtraEditors.TextEdit()
         Me.tb_name = New DevExpress.XtraEditors.TextEdit()
         Me.tb_net_dept = New DevExpress.XtraEditors.TextEdit()
@@ -68,6 +69,8 @@ Partial Class fm_add_other_required
         Me.LabelControl15 = New DevExpress.XtraEditors.LabelControl()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.SimpleButton11 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton8 = New DevExpress.XtraEditors.SimpleButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.item2 = New System.Windows.Forms.TextBox()
         Me.item3 = New DevExpress.XtraEditors.TextEdit()
@@ -84,8 +87,6 @@ Partial Class fm_add_other_required
         Me.TabFormControl1 = New DevExpress.XtraBars.TabFormControl()
         Me.TabFormPage1 = New DevExpress.XtraBars.TabFormPage()
         Me.TabFormContentContainer1 = New DevExpress.XtraBars.TabFormContentContainer()
-        Me.SimpleButton8 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton11 = New DevExpress.XtraEditors.SimpleButton()
         Me.ContextMenu_delete_temp.SuspendLayout()
         Me.Context_treatTable.SuspendLayout()
         CType(Me.tb_amount.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -241,27 +242,33 @@ Partial Class fm_add_other_required
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.تسديدToolStripMenuItem, Me.تسديدجزءToolStripMenuItem, Me.حذفToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.تسديدToolStripMenuItem, Me.تسديدجزءToolStripMenuItem, Me.حذفToolStripMenuItem, Me.طباعةفيشةToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(190, 70)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(158, 92)
         '
         'تسديدToolStripMenuItem
         '
         Me.تسديدToolStripMenuItem.Name = "تسديدToolStripMenuItem"
-        Me.تسديدToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.تسديدToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.تسديدToolStripMenuItem.Text = "تسديد كل القسط"
         '
         'تسديدجزءToolStripMenuItem
         '
         Me.تسديدجزءToolStripMenuItem.Name = "تسديدجزءToolStripMenuItem"
-        Me.تسديدجزءToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.تسديدجزءToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.تسديدجزءToolStripMenuItem.Text = "تسديد جزء"
         '
         'حذفToolStripMenuItem
         '
         Me.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem"
-        Me.حذفToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.حذفToolStripMenuItem.Text = "حذف جميع فقرات العقد"
+        Me.حذفToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.حذفToolStripMenuItem.Text = "حذف هذا العقد"
+        '
+        'طباعةفيشةToolStripMenuItem
+        '
+        Me.طباعةفيشةToolStripMenuItem.Name = "طباعةفيشةToolStripMenuItem"
+        Me.طباعةفيشةToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.طباعةفيشةToolStripMenuItem.Text = "طباعة فيشة"
         '
         'tb_id
         '
@@ -686,6 +693,22 @@ Partial Class fm_add_other_required
         Me.GroupControl2.Size = New System.Drawing.Size(1292, 699)
         Me.GroupControl2.TabIndex = 386
         '
+        'SimpleButton11
+        '
+        Me.SimpleButton11.ImageOptions.Image = CType(resources.GetObject("SimpleButton11.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton11.Location = New System.Drawing.Point(1236, 474)
+        Me.SimpleButton11.Name = "SimpleButton11"
+        Me.SimpleButton11.Size = New System.Drawing.Size(39, 35)
+        Me.SimpleButton11.TabIndex = 416
+        '
+        'SimpleButton8
+        '
+        Me.SimpleButton8.ImageOptions.Image = CType(resources.GetObject("SimpleButton8.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton8.Location = New System.Drawing.Point(1236, 433)
+        Me.SimpleButton8.Name = "SimpleButton8"
+        Me.SimpleButton8.Size = New System.Drawing.Size(39, 35)
+        Me.SimpleButton8.TabIndex = 415
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -869,22 +892,6 @@ Partial Class fm_add_other_required
         Me.TabFormContentContainer1.Size = New System.Drawing.Size(1292, 699)
         Me.TabFormContentContainer1.TabIndex = 390
         '
-        'SimpleButton8
-        '
-        Me.SimpleButton8.ImageOptions.Image = CType(resources.GetObject("SimpleButton8.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton8.Location = New System.Drawing.Point(1236, 433)
-        Me.SimpleButton8.Name = "SimpleButton8"
-        Me.SimpleButton8.Size = New System.Drawing.Size(39, 35)
-        Me.SimpleButton8.TabIndex = 415
-        '
-        'SimpleButton11
-        '
-        Me.SimpleButton11.ImageOptions.Image = CType(resources.GetObject("SimpleButton11.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton11.Location = New System.Drawing.Point(1236, 474)
-        Me.SimpleButton11.Name = "SimpleButton11"
-        Me.SimpleButton11.Size = New System.Drawing.Size(39, 35)
-        Me.SimpleButton11.TabIndex = 416
-        '
         'fm_add_other_required
         '
         Me.Appearance.BackColor = System.Drawing.Color.Transparent
@@ -1004,4 +1011,5 @@ Partial Class fm_add_other_required
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents SimpleButton8 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton11 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents طباعةفيشةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

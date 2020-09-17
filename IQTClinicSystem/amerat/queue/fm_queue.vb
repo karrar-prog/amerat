@@ -251,31 +251,16 @@ Partial Public Class fm_queue
     End Sub
 
     Private Sub تعديلالاسمToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تعديلالاسمToolStripMenuItem.Click
-   If lv_queue.SelectedItems.Count > 0 Then
-            Dim id As Integer = Convert.ToInt32(lv_queue.SelectedItems.Item(0).SubItems(1).Text)
-            Dim patient As New Patient(id)
-            fm_add_patient.tb_id.Text = patient.id.ToString
-            fm_add_patient.tb_name.Text = patient.name
-            fm_add_patient.tb_note.Text = patient.note
+        If lv_queue.SelectedItems.Count > 0 Then
             Try
+                fm_add_patient.Close()
 
-                fm_add_patient.dt_register_date.Value = Convert.ToDateTime(patient.register_date)
             Catch ex As Exception
-            End Try
-            fm_add_patient.tb_wieght.Text = patient.wieght
-            fm_add_patient.tb_phone.Text = patient.phone
-            fm_add_patient.tb_ref_by.Text = patient.ref_by
-         
-         
-            fm_add_patient.tb_wieght.Text = patient.f1
-            fm_add_patient.nu_blok_num.Value = __(patient.f2)
-            fm_add_patient.num_home_num.Value = __(patient.f3)
 
-            fm_add_patient.cb_plan.Text = patient.f5
-            fm_add_patient.tb_f6.Text = patient.f6
-            fm_add_patient.tb_f7.Text = patient.f7
-            fm_add_patient.tb_f8.Text = patient.f8
-       
+            End Try
+            Dim id As Integer = Convert.ToInt32(lv_queue.SelectedItems.Item(0).SubItems(1).Text)
+            fm_add_patient.tb_id.Text = id.ToString
+
             fm_add_patient.Show()
 
         End If

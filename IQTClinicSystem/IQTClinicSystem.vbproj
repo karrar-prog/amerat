@@ -138,6 +138,12 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="amerat\patinet\fm_call.Designer.vb">
+      <DependentUpon>fm_call.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_call.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="amerat\patinet\fm_devided.Designer.vb">
       <DependentUpon>fm_devided.vb</DependentUpon>
     </Compile>
@@ -244,10 +250,10 @@
     <Compile Include="form\money_calculatoer\fm_money_calculator.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\monitoring\fm_monitoring_event.Designer.vb">
+    <Compile Include="amerat\monitoring\fm_monitoring_event.Designer.vb">
       <DependentUpon>fm_monitoring_event.vb</DependentUpon>
     </Compile>
-    <Compile Include="form\monitoring\fm_monitoring_event.vb">
+    <Compile Include="amerat\monitoring\fm_monitoring_event.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form\sell\d_sell_menu.Designer.vb">
@@ -547,30 +553,30 @@
     <Compile Include="old\report\medical_report\X_m_r_Report.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="old\report\treat\fm_x_designer_treat.Designer.vb">
+    <Compile Include="amerat\patinet\treat\fm_x_designer_treat.Designer.vb">
       <DependentUpon>fm_x_designer_treat.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\report\treat\fm_x_designer_treat.vb">
+    <Compile Include="amerat\patinet\treat\fm_x_designer_treat.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\report\treat\fm_x_viewer_treat.Designer.vb">
+    <Compile Include="amerat\patinet\treat\fm_x_viewer_treat.Designer.vb">
       <DependentUpon>fm_x_viewer_treat.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\report\treat\fm_x_viewer_treat.vb">
+    <Compile Include="amerat\patinet\treat\fm_x_viewer_treat.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\report\treat\treat_dataset.Designer.vb">
+    <Compile Include="amerat\patinet\treat\treat_dataset.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>treat_dataset.xsd</DependentUpon>
     </Compile>
-    <Compile Include="old\report\treat\treat_dataset.vb">
+    <Compile Include="amerat\patinet\treat\treat_dataset.vb">
       <DependentUpon>treat_dataset.xsd</DependentUpon>
     </Compile>
-    <Compile Include="old\report\treat\X_treat_report.Designer.vb">
+    <Compile Include="amerat\patinet\treat\X_treat_report.Designer.vb">
       <DependentUpon>X_treat_report.vb</DependentUpon>
     </Compile>
-    <Compile Include="old\report\treat\X_treat_report.vb">
+    <Compile Include="amerat\patinet\treat\X_treat_report.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="old\scanning\fm_scanner.Designer.vb">
@@ -707,6 +713,9 @@
     <Compile Include="report\xreport_designer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <EmbeddedResource Include="amerat\patinet\fm_call.resx">
+      <DependentUpon>fm_call.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="amerat\patinet\fm_devided.resx">
       <DependentUpon>fm_devided.vb</DependentUpon>
     </EmbeddedResource>
@@ -753,7 +762,7 @@
     <EmbeddedResource Include="form\money_calculatoer\fm_money_calculator.resx">
       <DependentUpon>fm_money_calculator.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\monitoring\fm_monitoring_event.resx">
+    <EmbeddedResource Include="amerat\monitoring\fm_monitoring_event.resx">
       <DependentUpon>fm_monitoring_event.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\sell\fm_back_option.resx">
@@ -870,10 +879,10 @@
     <EmbeddedResource Include="old\report\medical_report\fm_x_m_report_viewer.resx">
       <DependentUpon>fm_x_m_report_viewer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\report\treat\fm_x_designer_treat.resx">
+    <EmbeddedResource Include="amerat\patinet\treat\fm_x_designer_treat.resx">
       <DependentUpon>fm_x_designer_treat.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="old\report\treat\fm_x_viewer_treat.resx">
+    <EmbeddedResource Include="amerat\patinet\treat\fm_x_viewer_treat.resx">
       <DependentUpon>fm_x_viewer_treat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="old\scanning\fm_scanner.resx">
@@ -1044,15 +1053,15 @@
     <None Include="old\report\medical_report\ar_m_report.xss">
       <DependentUpon>ar_m_report.xsd</DependentUpon>
     </None>
-    <None Include="old\report\treat\treat_dataset.xsc">
+    <None Include="amerat\patinet\treat\treat_dataset.xsc">
       <DependentUpon>treat_dataset.xsd</DependentUpon>
     </None>
-    <None Include="old\report\treat\treat_dataset.xsd">
+    <None Include="amerat\patinet\treat\treat_dataset.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>treat_dataset.Designer.vb</LastGenOutput>
     </None>
-    <None Include="old\report\treat\treat_dataset.xss">
+    <None Include="amerat\patinet\treat\treat_dataset.xss">
       <DependentUpon>treat_dataset.xsd</DependentUpon>
     </None>
     <None Include="Resources\bein-ar-normal.ttf" />

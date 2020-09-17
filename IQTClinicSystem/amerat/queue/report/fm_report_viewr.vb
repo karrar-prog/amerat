@@ -8,6 +8,7 @@ Public Class fm_report_viewr
     Public small As String = "no"
     Public query As String
     Public ds As New DataSet
+    Public rep_name As String = "fesha"
 
     Dim report As New XtraReport
 
@@ -48,7 +49,7 @@ Public Class fm_report_viewr
         'i4.Value = p4
 
 
-        filePath = Application.StartupPath & "/reports/fesha.repx"
+        filePath = Application.StartupPath & "/reports/" & rep_name & ".repx"
 
         report = XtraReport.FromFile(filePath, True)
         'report.Parameters.Add(i1)
@@ -67,6 +68,7 @@ Public Class fm_report_viewr
         DocumentViewer1.DocumentSource = report
 
         report.CreateDocument()
+
        
     End Sub
 

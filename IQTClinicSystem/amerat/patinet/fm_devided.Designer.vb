@@ -32,11 +32,11 @@ Partial Class fm_devided
         Me.tb_months_period = New System.Windows.Forms.NumericUpDown()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.SimpleButton6 = New DevExpress.XtraEditors.SimpleButton()
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.SimpleButton8 = New DevExpress.XtraEditors.SimpleButton()
         Me.LabelControl16 = New DevExpress.XtraEditors.LabelControl()
         Me.nu_first_money_present = New System.Windows.Forms.NumericUpDown()
+        Me.SimpleButton8 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton6 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.nu_first_part, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_count_devided, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_first_money, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -188,32 +188,10 @@ Partial Class fm_devided
         Me.Label8.TabIndex = 417
         Me.Label8.Text = "دينار عراقي"
         '
-        'SimpleButton6
-        '
-        Me.SimpleButton6.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SimpleButton6.Appearance.Options.UseFont = True
-        Me.SimpleButton6.ImageOptions.Image = CType(resources.GetObject("SimpleButton6.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton6.Location = New System.Drawing.Point(180, 281)
-        Me.SimpleButton6.Name = "SimpleButton6"
-        Me.SimpleButton6.Size = New System.Drawing.Size(201, 36)
-        Me.SimpleButton6.TabIndex = 418
-        Me.SimpleButton6.Text = "تم"
-        '
         'RibbonPage2
         '
         Me.RibbonPage2.Name = "RibbonPage2"
         Me.RibbonPage2.Text = "RibbonPage2"
-        '
-        'SimpleButton8
-        '
-        Me.SimpleButton8.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SimpleButton8.Appearance.Options.UseFont = True
-        Me.SimpleButton8.ImageOptions.Image = CType(resources.GetObject("SimpleButton8.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton8.Location = New System.Drawing.Point(12, 12)
-        Me.SimpleButton8.Name = "SimpleButton8"
-        Me.SimpleButton8.Size = New System.Drawing.Size(98, 36)
-        Me.SimpleButton8.TabIndex = 419
-        Me.SimpleButton8.Text = "اغلاق"
         '
         'LabelControl16
         '
@@ -235,6 +213,28 @@ Partial Class fm_devided
         Me.nu_first_money_present.TabIndex = 420
         Me.nu_first_money_present.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.nu_first_money_present.Value = New Decimal(New Integer() {10, 0, 0, 0})
+        '
+        'SimpleButton8
+        '
+        Me.SimpleButton8.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton8.Appearance.Options.UseFont = True
+        Me.SimpleButton8.ImageOptions.Image = CType(resources.GetObject("SimpleButton8.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton8.Location = New System.Drawing.Point(12, 12)
+        Me.SimpleButton8.Name = "SimpleButton8"
+        Me.SimpleButton8.Size = New System.Drawing.Size(98, 36)
+        Me.SimpleButton8.TabIndex = 419
+        Me.SimpleButton8.Text = "اغلاق"
+        '
+        'SimpleButton6
+        '
+        Me.SimpleButton6.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton6.Appearance.Options.UseFont = True
+        Me.SimpleButton6.ImageOptions.Image = CType(resources.GetObject("SimpleButton6.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton6.Location = New System.Drawing.Point(180, 281)
+        Me.SimpleButton6.Name = "SimpleButton6"
+        Me.SimpleButton6.Size = New System.Drawing.Size(201, 36)
+        Me.SimpleButton6.TabIndex = 418
+        Me.SimpleButton6.Text = "تم"
         '
         'fm_devided
         '

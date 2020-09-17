@@ -344,9 +344,8 @@ Public Class Patient
 
        
 
-            Dim content = " تمت اضافة مشترك جديد" & "  " & Me.name
-
-            new_event_opened(e_add, content)
+            Dim content = " تم اضافة زبون جديد بأسم : " & Me.name & "وحجز الدار " & Me.f1 & Me.f2 & "." & Me.f3
+            new_event2("حجز", content, 0)
 
             conn.Close()
             Return True
@@ -389,10 +388,9 @@ Public Class Patient
                 SQLCommand.ExecuteNonQuery()
 
            
-                Dim content = " تمت الغاء تفعيل الحساب" & "  " & Me.name
+                Dim content = " تمت الغاء تفعيل الحساب" & "  " & Me.name & " رقم الزبون " & Me.id
 
-                new_event_opened("الغاء تفعيل حساب", content)
-
+                new_event2("الغاء التفعيل", content, 0)
 
                 conn.Close()
                 Return True
@@ -436,10 +434,10 @@ Public Class Patient
                 SQLCommand.ExecuteNonQuery()
 
 
-                Dim content = " تمت تفعيل  حساب المشترك" & "  " & Me.name
+                Dim content = " تمت تفعيل  حساب المشترك" & "  " & Me.name & " رقم الزبون " & Me.id
+                new_event2("تفعيل", content, 0)
 
-                new_event_opened("تفعيل حساب", content)
-
+              
 
                 conn.Close()
                 Return True
@@ -521,9 +519,10 @@ Public Class Patient
 
            '  add_event(conn, s_update, conent)
 
-            Dim content = " تم تعديل معومات المشترك" & "  " & Me.name
+            Dim content = " تم تعديل معومات الزبون" & "  " & Me.name & " رقم الزبون " & Me.id
 
-            new_event_opened(s_update, content)
+            new_event2("تعديل معلومات", content, 0)
+
 
 
             conn.Close()

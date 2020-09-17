@@ -108,16 +108,16 @@ Partial Class fm_print_menu
         '
         'RibbonStatusBar1
         '
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 679)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 677)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(783, 23)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(783, 27)
         '
         'RibbonControl1
         '
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
         Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem})
-        Me.RibbonControl1.Location = New System.Drawing.Point(0, 54)
+        Me.RibbonControl1.Location = New System.Drawing.Point(0, 53)
         Me.RibbonControl1.MaxItemId = 1
         Me.RibbonControl1.Name = "RibbonControl1"
         Me.RibbonControl1.PopupMenuAlignment = DevExpress.XtraBars.PopupMenuAlignment.Right
@@ -157,9 +157,9 @@ Partial Class fm_print_menu
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 54)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 53)
         Me.barDockControlLeft.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 648)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 651)
         '
         'DocumentViewerBarManager1
         '
@@ -612,31 +612,31 @@ Partial Class fm_print_menu
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlTop.Size = New System.Drawing.Size(783, 54)
+        Me.barDockControlTop.Size = New System.Drawing.Size(783, 53)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 702)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 704)
         Me.barDockControlBottom.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlBottom.Size = New System.Drawing.Size(783, 28)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(783, 26)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(783, 54)
+        Me.barDockControlRight.Location = New System.Drawing.Point(783, 53)
         Me.barDockControlRight.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 648)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 651)
         '
         'DocumentViewer1
         '
         Me.DocumentViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DocumentViewer1.IsMetric = True
-        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 79)
+        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 78)
         Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(783, 600)
+        Me.DocumentViewer1.Size = New System.Drawing.Size(783, 599)
         Me.DocumentViewer1.TabIndex = 16
         '
         'miBackground

@@ -145,7 +145,7 @@ Public Class fm_add_other_required
                 item2.Text = "ثانياً - إن بدل شراءالدار مبلغاً إجمالياً قدره" & " ( " & Format(house_value, "###,###,###,###,###") & " ) " & ToArabicLetter(p.house_price)
                 put_defult_items()
 
-                If p.first_push_amount > 0 Then
+                If p.is_token = "تعاقد" Then
                     item2.Text = p.item2
 
                     item3.Text = p.item3
@@ -431,24 +431,32 @@ Public Class fm_add_other_required
 
         'End If
         Dim total = 0
-
+        Dim my_text As String = ""
+        If lv_dept.SelectedItems.Count <= 0 Then
+            Exit Sub
+        End If
         For i = 0 To lv_dept.SelectedItems.Count - 1
             Dim d As New Dept()
             total = total + (__(lv_dept.SelectedItems.Item(i).SubItems(2).Text) - __(lv_dept.SelectedItems.Item(i).SubItems(3).Text))
 
-
+            my_text = my_text & " + " & lv_dept.SelectedItems.Item(i).SubItems(1).Text
+            If lv_dept.SelectedItems.Count = 1 Then
+                my_text = lv_dept.SelectedItems.Item(i).SubItems(1).Text
+            End If
         Next
+
         If MessageBox.Show(total.ToString, "هل استلمت المبلغ", MessageBoxButtons.YesNo) = vbYes Then
             For i = 0 To lv_dept.SelectedItems.Count - 1
                 Dim d As New Dept()
                 d.id = __(lv_dept.SelectedItems.Item(i).Text)
-                excute1("update patient set f4 = f4 - " & total & " where id = " & tb_id.Text & "")
-                Dim content = "تسديد ديون: " & tb_name.Text
-                new_event2("تسديد", content, total)
+
 
                 d.tasded()
 
             Next
+            Dim content = " تسديد قسط : " & tb_name.Text & " الدفعة " & my_text
+            new_event2("تسديد دفعة", content, total)
+
             all_depts()
         End If
     End Sub
@@ -493,6 +501,8 @@ Public Class fm_add_other_required
 
 
             p.set_contract()
+            Dim content = " تم تحرير عقد : " & tb_name.Text
+            new_event2("تحرير عقد", content, 0)
 
         End If
 
@@ -500,13 +510,18 @@ Public Class fm_add_other_required
 
     End Sub
     Private Sub print()
+        Dim p As New Patient(__(tb_id.Text))
+
+        Dim d As New DataSet
+        d = getdatat1("select * from dept where user_id = " & __(tb_id.Text) & " order by id asc")
+
 
         Dim f As New fm_x_viewer_treat
-        f.ds = getdatat1("select * from dept where user_id = " & __(tb_id.Text) & " order by id asc")
+        f.ds = d
         f.user_name = tb_name.Text
         f.final_price = tb_all_dept.Text
 
-        Dim p As New Patient(__(tb_id.Text))
+
         f.user_dar = " ( " & p.f3 & " ) "
         f.user_block = " ( " & p.f1 & " ) "
         f.remaind = p.tb_l_5
@@ -528,6 +543,34 @@ Public Class fm_add_other_required
         f.Show()
 
 
+
+        Dim f2 As New fm_x_viewer_treat
+        f2.ds = d
+        f2.user_name = tb_name.Text
+        f2.final_price = tb_all_dept.Text
+        f2.path = "contract_list"
+
+        f2.user_dar = " ( " & p.f3 & " ) "
+        f2.user_block = " ( " & p.f1 & " ) "
+        f2.remaind = p.tb_l_5
+        f2.arrive = p.tb_2
+        f2.user_name = " ( " & tb_name.Text & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
+        f2.contract_date = p.register_date
+        f2.user_block_number = " ( " & p.f2 & " ) "
+        f2.user_id_number = " ( " & p.f6 & " ) "
+        f2.dar_area = " ( " & p.ref_by & " ) "
+        f2.item2 = p.item2
+        f2.item3 = p.item3
+        f2.item4 = p.item4
+        f2.item9 = p.f1 & p.f2 & "." & p.f3
+        f2.item10 = p.name
+        f2.admin_name = p.admin_name
+
+
+
+        f2.Show()
+
+
     End Sub
 
     Private Sub SimpleButton7_Click(sender As Object, e As EventArgs) Handles SimpleButton7.Click
@@ -538,10 +581,10 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub حذفToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles حذفToolStripMenuItem.Click
-        If hasPermission("حذف") Then
+        If user.type = user_admin Then
 
         Else
-            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+            MessageBox.Show("صلاحيات المدير فقط", "مركز الصلاحيات")
             Exit Sub
         End If
         If lv_dept.SelectedItems.Count > 0 Then
@@ -551,6 +594,11 @@ Public Class fm_add_other_required
                     delete_dept(__(lv_dept.Items.Item(i).Text))
 
                 Next
+                Dim p As New Patient(__(tb_id.Text))
+                p.finger_print = ""
+                p.is_token = "حجز"
+                p.save()
+
                 put_depts()
             End If
 
@@ -842,5 +890,38 @@ Public Class fm_add_other_required
 
 
 
+    End Sub
+
+    Private Sub طباعةفيشةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles طباعةفيشةToolStripMenuItem.Click
+        If lv_dept.SelectedItems.Count = 1 Then
+            Dim dept As New Dept(__(lv_dept.SelectedItems(0).Text))
+            If dept.amount = dept.arrive_amount Then
+                MessageBox.Show("تم التسديد مسبقا")
+            Else
+
+
+
+                Try
+                    fm_add_queue.Close()
+
+                Catch ex As Exception
+
+                End Try
+                fm_add_queue.tb_id.Text = dept.id.ToString
+                fm_add_queue.tb_patient_id.Text = tb_id.Text
+
+                fm_add_queue.tb_number.Text = get_number(dept.title).ToString
+                fm_add_queue.tb_dept_title.Text = dept.title
+                fm_add_queue.tb_dept_id.Text = dept.id.ToString
+                fm_add_queue.tb_fesha_amount.Text = dept.amount.ToString
+                fm_add_queue.tb_amount_text.Text = ToArabicLetter(dept.amount)
+                fm_add_queue.Show()
+
+
+            End If
+
+        Else
+            MessageBox.Show("يرجى اختيار عنر واحد")
+        End If
     End Sub
 End Class

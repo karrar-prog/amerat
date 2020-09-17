@@ -489,13 +489,13 @@ Public Class fm_months
 
             End Try
 
-            fm_add_patient.tb_wieght.Text = patient.wieght
+            fm_add_patient.tb_blok_title.Text = patient.wieght
             fm_add_patient.tb_phone.Text = patient.phone
             fm_add_patient.tb_ref_by.Text = patient.ref_by
 
 
 
-            fm_add_patient.tb_wieght.Text = patient.f1
+            fm_add_patient.tb_blok_title.Text = patient.f1
             fm_add_patient.nu_blok_num.Value = __(patient.f2)
             fm_add_patient.num_home_num.Value = __(patient.f3)
 

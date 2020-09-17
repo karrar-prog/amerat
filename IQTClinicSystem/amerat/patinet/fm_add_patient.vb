@@ -77,7 +77,7 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Dim p As New Patient(tb_wieght.Text, nu_blok_num.Value, num_home_num.Value)
+        Dim p As New Patient(tb_blok_title.Text, nu_blok_num.Value, num_home_num.Value)
         If p.id = 0 Or p.id = __(tb_id.Text) Then
             add()
         Else
@@ -96,11 +96,11 @@ Public Class fm_add_patient
         patient.name = tb_name.Text.Trim
 
         patient.gender = ""
-         patient.note = tb_note.Text.Trim
+        patient.note = tb_note.Text.Trim
         patient.phone = tb_phone.Text.Trim
         patient.ref_by = tb_ref_by.Text.Trim
-        patient.wieght = tb_wieght.Text.Trim
-        patient.f1 = tb_wieght.Text.Trim
+        patient.wieght = tb_blok_title.Text.Trim
+        patient.f1 = tb_blok_title.Text.Trim
         patient.f2 = nu_blok_num.Value.ToString
         patient.f3 = num_home_num.Value.ToString
         patient.f5 = cb_plan.Text.Trim
@@ -120,7 +120,7 @@ Public Class fm_add_patient
         Catch ex As Exception
 
         End Try
-      
+
         If patient.save() Then
 
 
@@ -145,8 +145,8 @@ Public Class fm_add_patient
         patient.note = tb_note.Text.Trim
         patient.phone = tb_phone.Text.Trim
         patient.ref_by = tb_ref_by.Text.Trim
-        patient.wieght = tb_wieght.Text.Trim
-        patient.f1 = tb_wieght.Text.Trim
+        patient.wieght = tb_blok_title.Text.Trim
+        patient.f1 = tb_blok_title.Text.Trim
         patient.f2 = nu_blok_num.Value.ToString
         patient.f3 = num_home_num.Value.ToString
         patient.f5 = cb_plan.Text.Trim
@@ -160,7 +160,7 @@ Public Class fm_add_patient
         patient.last_present = __(nu_last_present.Value.ToString)
         patient.house_price = nu_house_price.Value
         patient.is_token = cb_plan.Text
-    
+
 
 
         If patient.save() Then
@@ -224,10 +224,10 @@ Public Class fm_add_patient
             tb_f7.BackColor = Color.White
 
         End If
-        If tb_wieght.Text.Trim = "" Then
+        If tb_blok_title.Text.Trim = "" Then
 
-            tb_wieght.BackColor = Color.LightPink
-            tb_wieght.Focus()
+            tb_blok_title.BackColor = Color.LightPink
+            tb_blok_title.Focus()
             Return False
         Else
 
@@ -240,9 +240,9 @@ Public Class fm_add_patient
             Else
                 tb_ref_by.BackColor = Color.White
             End If
-         
 
-            tb_wieght.BackColor = Color.White
+
+            tb_blok_title.BackColor = Color.White
         End If
         If cb_plan.Text.Trim = "" Then
 
@@ -253,7 +253,7 @@ Public Class fm_add_patient
             cb_plan.BackColor = Color.White
         End If
 
-    
+
         Return True
 
 
@@ -264,12 +264,12 @@ Public Class fm_add_patient
         tb_name.Text = ""
 
 
-     
+
         tb_phone.Text = ""
         tb_ref_by.Text = ""
-        tb_wieght.Text = ""
+        tb_blok_title.Text = ""
 
-     
+
         tb_f6.Text = ""
         tb_f7.Text = ""
         tb_f8.Text = ""
@@ -309,11 +309,13 @@ Public Class fm_add_patient
             GroupControl6.Hide()
             GroupControl10.Hide()
             GroupControl3.Hide()
+            GroupControl1.Hide()
 
         Else
             GroupControl6.Show()
             GroupControl10.Show()
             GroupControl3.Show()
+            GroupControl1.Show()
 
         End If
 
@@ -339,7 +341,7 @@ Public Class fm_add_patient
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
 
-       
+
         If tb_id.Text.Trim <> "" Then
 
             fm_camera.patient_id = Convert.ToInt32(tb_id.Text)
@@ -471,14 +473,14 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-      
+
         save_images()
 
 
     End Sub
 
     Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
-        
+
         If tb_id.Text.Trim = "" Then
             MessageBox.Show("لم تقم بحفظ معلومات المراجع")
             Exit Sub
@@ -611,7 +613,7 @@ Public Class fm_add_patient
 
     End Sub
 
-    Private Sub tb_wieght_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tb_wieght.SelectedIndexChanged
+    Private Sub tb_wieght_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tb_blok_title.SelectedIndexChanged
         tb_name.BackColor = Color.White
 
     End Sub
@@ -716,7 +718,7 @@ Public Class fm_add_patient
 
 
     End Sub
-   
+
 
     Private Sub nu_first_part_KeyUp(sender As Object, e As KeyEventArgs) Handles nu_first_part.KeyUp
         If nu_first_part.Value > nu_house_price.Value Then
@@ -735,7 +737,7 @@ Public Class fm_add_patient
 
     Private Sub nu_first_part_ValueChanged(sender As Object, e As EventArgs) Handles nu_first_part.ValueChanged
 
-      If nu_first_part.Value > nu_house_price.Value Then
+        If nu_first_part.Value > nu_house_price.Value Then
             nu_first_part.Value = nu_house_price.Value
             nu_last_part.Value = 0
         Else
@@ -785,7 +787,7 @@ Public Class fm_add_patient
 
         End Try
         fm_add_queue.tb_id.Text = "0"
-        fm_add_queue.tb_patient_id.Text = tb_id.Text
+        fm_add_queue.tb_patient_id.Text = tb_id.Text 
 
         fm_add_queue.tb_number.Text = "1"
         fm_add_queue.tb_dept_title.Text = "الدفعة " & get_text(1)
@@ -796,7 +798,7 @@ Public Class fm_add_patient
 
     End Sub
 
-  
+
 
     Private Sub tb_f8_EditValueChanged(sender As Object, e As EventArgs) Handles tb_f8.EditValueChanged
 
@@ -812,15 +814,54 @@ Public Class fm_add_patient
 
     Private Sub put_info(p_id As Integer)
         Try
-            Dim p As New Patient(p_id)
-            cb_plan.Text = p.is_token
-            nu_blok_num.Value = __(p.f2)
-            nu_first_part.Value = p.first_present
-            nu_first_present.Value = p.first_push_present
-            nu_house_price.Value = p.house_price
+            Dim patient As New Patient(p_id)
+            tb_name.Text = patient.name
+            tb_note.Text = patient.note
+            Try
+                dt_register_date.Value = Convert.ToDateTime(patient.register_date)
+            Catch ex As Exception
+            End Try
+            tb_blok_title.Text = patient.wieght
+            tb_phone.Text = patient.phone
+            tb_ref_by.Text = patient.ref_by
+            tb_blok_title.Text = patient.f1
+            num_home_num.Value = __(patient.f3)
+            tb_f6.Text = patient.f6
+            tb_f7.Text = patient.f7
+            tb_f8.Text = patient.f8
+            cb_plan.Text = patient.is_token
+            nu_blok_num.Value = __(patient.f2)
+            nu_first_part.Value = patient.first_present
+            nu_first_present.Value = patient.first_push_present
+            nu_house_price.Value = patient.house_price
+            nu_last_part.Value = patient.last_part
+            nu_last_present.Value = patient.last_present
+            If patient.is_token = "تعاقد" Then
+                cb_plan.Enabled = False
+                nu_blok_num.Enabled = False
+                nu_first_part.Enabled = False
+                nu_first_present.Enabled = False
+                nu_house_price.Enabled = False
+                nu_last_part.Enabled = False
+                nu_last_present.Enabled = False
+
+                tb_ref_by.Enabled = False
+                tb_blok_title.Enabled = False
+                num_home_num.Enabled = False
+                tb_ref_by.Enabled = False
+            End If
 
         Catch ex As Exception
             MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        Try
+            call_report(__(tb_id.Text))
+        Catch ex As Exception
+
         End Try
 
     End Sub

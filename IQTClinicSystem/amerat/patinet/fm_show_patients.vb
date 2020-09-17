@@ -195,51 +195,19 @@ Public Class fm_show_patients
         End If
         If lv_queue.SelectedItems.Count > 0 Then
 
-          
-
-            Dim id As Integer = Convert.ToInt32(lv_queue.SelectedItems.Item(0).Text)
-
-
-            Dim patient As New Patient(id)
-
-            fm_add_patient.tb_id.Text = patient.id.ToString
-            fm_add_patient.tb_name.Text = patient.name
-            fm_add_patient.tb_note.Text = patient.note
             Try
-
-                fm_add_patient.dt_register_date.Value = Convert.ToDateTime(patient.register_date)
+                fm_add_patient.Close()
 
             Catch ex As Exception
 
             End Try
 
-            fm_add_patient.tb_wieght.Text = patient.wieght
-            fm_add_patient.tb_phone.Text = patient.phone
-            fm_add_patient.tb_ref_by.Text = patient.ref_by
+            Dim id As Integer = Convert.ToInt32(lv_queue.SelectedItems.Item(0).Text)
+            fm_add_patient.tb_id.Text = id.ToString
 
+        
 
-
-            fm_add_patient.tb_wieght.Text = patient.f1
-            fm_add_patient.nu_blok_num.Value = __(patient.f2)
-            fm_add_patient.num_home_num.Value = __(patient.f3)
-
-            fm_add_patient.tb_f6.Text = patient.f6
-            fm_add_patient.tb_f7.Text = patient.f7
-            fm_add_patient.tb_f8.Text = patient.f8
-
-
-
-            fm_add_patient.nu_first_present.Value = patient.first_present
-            fm_add_patient.nu_last_present.Value = patient.last_present
-            fm_add_patient.nu_first_part.Value = patient.first_part
-            fm_add_patient.nu_last_part.Value = patient.last_part
-            fm_add_patient.cb_plan.Text = patient.is_token
-
-      
             fm_add_patient.Show()
-            fm_add_patient.cb_plan.Text = patient.f5
-
-
             fm_add_patient.re = "2"
             re = "2"
             Me.Close()
@@ -488,5 +456,92 @@ Public Class fm_show_patients
 
     Private Sub cb_plan_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_plan.SelectedIndexChanged
         search()
+    End Sub
+
+    Private Sub اتصالToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles اتصالToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+            call_report(__(lv_queue.SelectedItems(0).Text))
+        End If
+    End Sub
+    Private Sub print_list(id As Integer)
+        Dim p As New Patient(id)
+
+        Dim d As New DataSet
+        d = getdatat1("select * from dept where user_id = " & id & " order by id asc")
+
+        Dim f2 As New fm_x_viewer_treat
+        f2.ds = d
+        f2.user_name = p.name
+        f2.final_price = p.house_price.ToString
+        f2.path = "contract_list"
+
+        f2.user_dar = " ( " & p.f3 & " ) "
+        f2.user_block = " ( " & p.f1 & " ) "
+        f2.remaind = p.tb_l_5
+        f2.arrive = p.tb_2
+        f2.user_name = " ( " & p.name & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
+        f2.contract_date = p.register_date
+        f2.user_block_number = " ( " & p.f2 & " ) "
+        f2.user_id_number = " ( " & p.f6 & " ) "
+        f2.dar_area = " ( " & p.ref_by & " ) "
+        f2.item2 = p.item2
+        f2.item3 = p.item3
+        f2.item4 = p.item4
+        f2.item9 = p.f1 & p.f2 & "." & p.f3
+        f2.item10 = p.name
+        f2.admin_name = p.admin_name
+        f2.Show()
+
+
+    End Sub
+
+    Private Sub print_contract(id As Integer)
+        Dim p As New Patient(id)
+
+        Dim d As New DataSet
+        d = getdatat1("select * from dept where user_id = " & id & " order by id asc")
+
+
+        Dim f As New fm_x_viewer_treat
+        f.ds = d
+        f.user_name = p.name
+        f.final_price = p.house_price.ToString
+
+
+        f.user_dar = " ( " & p.f3 & " ) "
+        f.user_block = " ( " & p.f1 & " ) "
+        f.remaind = p.tb_l_5
+        f.arrive = p.tb_2
+
+        f.user_name = " ( " & p.name & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
+        f.contract_date = p.register_date
+        f.user_block_number = " ( " & p.f2 & " ) "
+        f.user_id_number = " ( " & p.f6 & " ) "
+        f.dar_area = " ( " & p.ref_by & " ) "
+        f.item2 = p.item2
+        f.item3 = p.item3
+        f.item4 = p.item4
+        f.item9 = p.f1 & p.f2 & "." & p.f3
+        f.item10 = p.name
+        f.admin_name = p.admin_name
+
+
+
+        f.Show()
+
+
+
+    End Sub
+
+    Private Sub عرضالعقدToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles عرضالعقدToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+            print_contract(__(lv_queue.SelectedItems(0).Text))
+        End If
+    End Sub
+
+    Private Sub عرضسجلالتسديدToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles عرضسجلالتسديدToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+            print_list(__(lv_queue.SelectedItems(0).Text))
+        End If
     End Sub
 End Class
