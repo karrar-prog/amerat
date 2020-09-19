@@ -138,6 +138,12 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="amerat\fm_fesha.Designer.vb">
+      <DependentUpon>fm_fesha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_fesha.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="amerat\patinet\fm_call.Designer.vb">
       <DependentUpon>fm_call.vb</DependentUpon>
     </Compile>
@@ -713,6 +719,9 @@
     <Compile Include="report\xreport_designer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <EmbeddedResource Include="amerat\fm_fesha.resx">
+      <DependentUpon>fm_fesha.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="amerat\patinet\fm_call.resx">
       <DependentUpon>fm_call.vb</DependentUpon>
     </EmbeddedResource>

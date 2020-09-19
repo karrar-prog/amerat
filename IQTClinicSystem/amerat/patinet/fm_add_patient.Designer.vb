@@ -448,7 +448,7 @@ Partial Class fm_add_patient
         Me.tb_blok_title.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tb_blok_title.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_blok_title.FormattingEnabled = True
-        Me.tb_blok_title.Items.AddRange(New Object() {"A", "B", "C", "A+", "B+", "C+", "A VIP", "B VIP", "C VIP"})
+        Me.tb_blok_title.Items.AddRange(New Object() {"A", "B", "C", "A VIP", "A VVIP"})
         Me.tb_blok_title.Location = New System.Drawing.Point(333, 57)
         Me.tb_blok_title.Name = "tb_blok_title"
         Me.tb_blok_title.RightToLeft = System.Windows.Forms.RightToLeft.No

@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports DevExpress.LookAndFeel
 
 Public Class fm_add_patient
     Public re As String = from_main
@@ -19,6 +20,8 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub fm_add_patient_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
+
         Me.CenterToScreen()
         ProgressPanel1.Hide()
         finger_show()
@@ -30,9 +33,9 @@ Public Class fm_add_patient
             put_info(__(tb_id.Text))
 
         End If
-    
+
     End Sub
- 
+
     Private Sub Combo_format()
 
 
@@ -309,13 +312,11 @@ Public Class fm_add_patient
             GroupControl6.Hide()
             GroupControl10.Hide()
             GroupControl3.Hide()
-            GroupControl1.Hide()
 
         Else
             GroupControl6.Show()
             GroupControl10.Show()
             GroupControl3.Show()
-            GroupControl1.Show()
 
         End If
 
@@ -787,7 +788,7 @@ Public Class fm_add_patient
 
         End Try
         fm_add_queue.tb_id.Text = "0"
-        fm_add_queue.tb_patient_id.Text = tb_id.Text 
+        fm_add_queue.tb_patient_id.Text = tb_id.Text
 
         fm_add_queue.tb_number.Text = "1"
         fm_add_queue.tb_dept_title.Text = "الدفعة " & get_text(1)

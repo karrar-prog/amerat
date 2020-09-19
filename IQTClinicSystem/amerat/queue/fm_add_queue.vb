@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports DevExpress.LookAndFeel
 
 Public Class fm_add_queue
 
@@ -7,6 +8,8 @@ Public Class fm_add_queue
 
 
     Private Sub fm_add_queue_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
+
         Me.CenterToScreen()
 
         Combo_format()
@@ -89,7 +92,7 @@ Public Class fm_add_queue
 
 1:
         PictureBox1.Hide()
-    
+
         Try
             If cb_plan.Text.Trim = "" Then
                 MessageBox.Show("اختر نوع الحجز")
@@ -129,7 +132,7 @@ Public Class fm_add_queue
 
         Catch ex As Exception
             PictureBox1.Show()
-        
+
             If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
 
                 GoTo 1
@@ -142,7 +145,7 @@ Public Class fm_add_queue
 
 1:
         PictureBox1.Hide()
-     
+
         Try
             If cb_plan.Text.Trim = "" Then
                 MessageBox.Show("اختر اسم المصرف  ")
@@ -201,7 +204,7 @@ Public Class fm_add_queue
 
         Catch ex As Exception
             PictureBox1.Show()
-        
+
             If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
 
                 GoTo 1
@@ -210,10 +213,17 @@ Public Class fm_add_queue
         End Try
     End Sub
     Private Sub print_report()
+        Dim query As String
 
 1:
         Try
-            Dim query As String = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  patient.id = " & tb_patient_id.Text & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
+            If tb_dept_id.Text.Trim = "0" Or tb_dept_id.Text.Trim = "" Then
+                query = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  patient.id = " & tb_patient_id.Text & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
+
+            Else
+                query = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.dept_id = " & tb_dept_id.Text & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
+
+            End If
 
             'Dim query As String = "select queue.id as id , queue.test_type as test_type , queue.test_amount as test_amount  , queue.booking_number as booking_number ,  patient.name as patient_name from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
             Dim fm = New fm_report_viewr
@@ -296,8 +306,8 @@ Public Class fm_add_queue
                     Dim da As New MySqlDataAdapter(query, conn)
                     Dim ds As New DataSet()
                     da.Fill(ds)
-       
-               
+
+
 
 
                     'اضافة زيارة لمراجع

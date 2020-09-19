@@ -1,8 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports DevExpress.LookAndFeel
 
 Public Class fm_monitoring_event
 
     Private Sub fm_monitoring_event_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
+
         li_format()
         get_all()
         all_user()
@@ -128,6 +131,9 @@ Public Class fm_monitoring_event
         tb_out.Text = "0"
 
         tb_net.Text = "0"
+        TextEdit1.Text = ""
+        TextEdit2.Text = ""
+        TextEdit3.Text = ""
 
 
 
@@ -196,6 +202,14 @@ Public Class fm_monitoring_event
     End Sub
 
     Private Sub GroupControl2_Paint(sender As Object, e As PaintEventArgs) Handles GroupControl2.Paint
+
+    End Sub
+
+    Private Sub tb_come_EditValueChanged(sender As Object, e As EventArgs) Handles tb_come.EditValueChanged
+
+    End Sub
+
+    Private Sub TextEdit1_EditValueChanged(sender As Object, e As EventArgs) Handles TextEdit1.EditValueChanged
 
     End Sub
 End Class

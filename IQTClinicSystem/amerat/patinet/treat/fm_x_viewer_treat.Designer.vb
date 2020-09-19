@@ -227,6 +227,9 @@ Partial Class fm_x_viewer_treat
         Me.PrintPreviewBarCheckItem18 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
         Me.PrintPreviewBarCheckItem19 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
         Me.RibbonPage4 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.TabFormControl1 = New DevExpress.XtraBars.TabFormControl()
+        Me.TabFormPage1 = New DevExpress.XtraBars.TabFormPage()
+        Me.TabFormContentContainer1 = New DevExpress.XtraBars.TabFormContentContainer()
         CType(Me.PrintPreviewRepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemProgressBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemZoomTrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -234,6 +237,7 @@ Partial Class fm_x_viewer_treat
         CType(Me.PrintPreviewRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemZoomTrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabFormControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PrintPreviewRepositoryItemComboBox2
@@ -923,9 +927,9 @@ Partial Class fm_x_viewer_treat
         '
         Me.BarDockControl4.CausesValidation = False
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl4.Location = New System.Drawing.Point(1041, 53)
+        Me.BarDockControl4.Location = New System.Drawing.Point(1041, 103)
         Me.BarDockControl4.Manager = Nothing
-        Me.BarDockControl4.Size = New System.Drawing.Size(0, 704)
+        Me.BarDockControl4.Size = New System.Drawing.Size(0, 654)
         '
         'RibbonPage2
         '
@@ -1400,9 +1404,9 @@ Partial Class fm_x_viewer_treat
         '
         Me.BarDockControl5.CausesValidation = False
         Me.BarDockControl5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl5.Location = New System.Drawing.Point(1041, 53)
+        Me.BarDockControl5.Location = New System.Drawing.Point(1041, 103)
         Me.BarDockControl5.Manager = Nothing
-        Me.BarDockControl5.Size = New System.Drawing.Size(0, 704)
+        Me.BarDockControl5.Size = New System.Drawing.Size(0, 654)
         '
         'PrintPreviewBarCheckItem1
         '
@@ -1897,9 +1901,9 @@ Partial Class fm_x_viewer_treat
         '
         Me.DocumentViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DocumentViewer1.IsMetric = True
-        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 53)
+        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 103)
         Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(1041, 704)
+        Me.DocumentViewer1.Size = New System.Drawing.Size(1041, 654)
         Me.DocumentViewer1.TabIndex = 118
         '
         'miBackground
@@ -2097,6 +2101,31 @@ Partial Class fm_x_viewer_treat
         Me.RibbonPage4.Name = "RibbonPage4"
         Me.RibbonPage4.Text = "RibbonPage2"
         '
+        'TabFormControl1
+        '
+        Me.TabFormControl1.Location = New System.Drawing.Point(0, 53)
+        Me.TabFormControl1.Name = "TabFormControl1"
+        Me.TabFormControl1.Pages.Add(Me.TabFormPage1)
+        Me.TabFormControl1.SelectedPage = Me.TabFormPage1
+        Me.TabFormControl1.Size = New System.Drawing.Size(1041, 50)
+        Me.TabFormControl1.TabForm = Me
+        Me.TabFormControl1.TabIndex = 123
+        Me.TabFormControl1.TabStop = False
+        '
+        'TabFormPage1
+        '
+        Me.TabFormPage1.ContentContainer = Me.TabFormContentContainer1
+        Me.TabFormPage1.Name = "TabFormPage1"
+        Me.TabFormPage1.Text = "Page 0"
+        '
+        'TabFormContentContainer1
+        '
+        Me.TabFormContentContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabFormContentContainer1.Location = New System.Drawing.Point(0, 103)
+        Me.TabFormContentContainer1.Name = "TabFormContentContainer1"
+        Me.TabFormContentContainer1.Size = New System.Drawing.Size(1041, 654)
+        Me.TabFormContentContainer1.TabIndex = 124
+        '
         'fm_x_viewer_treat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2107,6 +2136,8 @@ Partial Class fm_x_viewer_treat
         Me.Controls.Add(Me.BarDockControl4)
         Me.Controls.Add(Me.BarDockControl5)
         Me.Controls.Add(Me.DocumentViewer1)
+        Me.Controls.Add(Me.TabFormContentContainer1)
+        Me.Controls.Add(Me.TabFormControl1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
@@ -2115,6 +2146,7 @@ Partial Class fm_x_viewer_treat
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "fm_x_viewer_treat"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.TabFormControl = Me.TabFormControl1
         Me.TopMost = True
         CType(Me.PrintPreviewRepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemProgressBar2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2123,6 +2155,7 @@ Partial Class fm_x_viewer_treat
         CType(Me.PrintPreviewRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemZoomTrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabFormControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2333,4 +2366,7 @@ Partial Class fm_x_viewer_treat
     Friend WithEvents PrintPreviewRepositoryItemComboBox2 As DevExpress.XtraPrinting.Preview.PrintPreviewRepositoryItemComboBox
     Friend WithEvents RepositoryItemProgressBar2 As DevExpress.XtraEditors.Repository.RepositoryItemProgressBar
     Friend WithEvents RepositoryItemZoomTrackBar2 As DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar
+    Friend WithEvents TabFormContentContainer1 As DevExpress.XtraBars.TabFormContentContainer
+    Friend WithEvents TabFormControl1 As DevExpress.XtraBars.TabFormControl
+    Friend WithEvents TabFormPage1 As DevExpress.XtraBars.TabFormPage
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports DevExpress.LookAndFeel
 
 Public Class fm_show_patients
     Dim re As String = ""
@@ -8,12 +9,13 @@ Public Class fm_show_patients
     Private Sub fm_show_patients_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If re = "" Then
             fm_main.Show()
-       
+
 
         End If
     End Sub
 
     Private Sub fm_show_patients_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
 
         Me.CenterToScreen()
 
@@ -103,7 +105,7 @@ Public Class fm_show_patients
                     lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString & DataSet.Tables(0).Rows(i).Item("f2").ToString)
                     lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f3").ToString)
                     lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("house_price").ToString)
-               
+
                     lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("register_date").ToString)
 
                     If DataSet.Tables(0).Rows(i).Item("deleted").ToString = "1" Then
@@ -160,7 +162,7 @@ Public Class fm_show_patients
     End Sub
 
     Private Sub lv_queue_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv_queue.SelectedIndexChanged
-       If lv_queue.SelectedItems.Count > 0 Then
+        If lv_queue.SelectedItems.Count > 0 Then
             Try
                 Dim id = __(lv_queue.SelectedItems.Item(0).Text)
                 p_patient.Image = Image.FromFile(images_path & "\im" & id & ".png")
@@ -205,7 +207,7 @@ Public Class fm_show_patients
             Dim id As Integer = Convert.ToInt32(lv_queue.SelectedItems.Item(0).Text)
             fm_add_patient.tb_id.Text = id.ToString
 
-        
+
 
             fm_add_patient.Show()
             fm_add_patient.re = "2"
@@ -263,7 +265,7 @@ Public Class fm_show_patients
 
         lv_queue.Items.Clear()
         If DataSet.Tables(0).Rows.Count > 0 Then
-          
+
             For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
                 lv_queue.Items().Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)

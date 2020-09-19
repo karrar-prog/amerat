@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.IO
 Imports System.Text
+Imports DevExpress.LookAndFeel
 
 Public Class fm_add_other_required
 
@@ -130,7 +131,7 @@ Public Class fm_add_other_required
                 Next
 
 
-            
+
 
 
                 item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 2 & " دفعات "
@@ -171,7 +172,7 @@ Public Class fm_add_other_required
 
             End If
         End Try
-   
+
     End Sub
     Private Sub put_template(template_title As String)
 1:
@@ -217,12 +218,14 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub fm_add_other_required_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
+
         formatlist_treat_table(lv_treat_table)
         formatlist_dept_table(lv_dept)
         format_templet_treat(cb_templet_treat)
 
         all_depts()
-      
+
     End Sub
 
     Private Sub lv_treat_table_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv_treat_table.SelectedIndexChanged
@@ -907,9 +910,8 @@ Public Class fm_add_other_required
                 Catch ex As Exception
 
                 End Try
-                fm_add_queue.tb_id.Text = dept.id.ToString
+                fm_add_queue.tb_id.Text = "0"
                 fm_add_queue.tb_patient_id.Text = tb_id.Text
-
                 fm_add_queue.tb_number.Text = get_number(dept.title).ToString
                 fm_add_queue.tb_dept_title.Text = dept.title
                 fm_add_queue.tb_dept_id.Text = dept.id.ToString

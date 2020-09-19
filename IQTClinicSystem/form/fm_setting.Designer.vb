@@ -44,6 +44,9 @@ Partial Class fm_setting
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.tb_id1 = New DevExpress.XtraEditors.TextEdit()
         Me.tb_id2 = New DevExpress.XtraEditors.TextEdit()
+        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
+        Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
+        Me.CachedCrystalReport11 = New IQTClinicSystem.CachedCrystalReport1()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_amount2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_title2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,6 +55,8 @@ Partial Class fm_setting
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_id1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_id2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RibbonPage2
@@ -180,7 +185,7 @@ Partial Class fm_setting
         'tb_amount2
         '
         Me.tb_amount2.EnterMoveNextControl = True
-        Me.tb_amount2.Location = New System.Drawing.Point(461, 181)
+        Me.tb_amount2.Location = New System.Drawing.Point(257, 262)
         Me.tb_amount2.Name = "tb_amount2"
         Me.tb_amount2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_amount2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -188,22 +193,19 @@ Partial Class fm_setting
         Me.tb_amount2.Properties.Appearance.Options.UseTextOptions = True
         Me.tb_amount2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.tb_amount2.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-        Me.tb_amount2.Properties.Mask.EditMask = "n0"
-        Me.tb_amount2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_amount2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_amount2.Size = New System.Drawing.Size(106, 28)
+        Me.tb_amount2.Size = New System.Drawing.Size(303, 28)
         Me.tb_amount2.TabIndex = 269
         '
         'tb_title2
         '
         Me.tb_title2.EnterMoveNextControl = True
-        Me.tb_title2.Location = New System.Drawing.Point(569, 181)
+        Me.tb_title2.Location = New System.Drawing.Point(562, 262)
         Me.tb_title2.Name = "tb_title2"
         Me.tb_title2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_title2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_title2.Properties.Appearance.Options.UseFont = True
         Me.tb_title2.Properties.NullValuePrompt = "الاسم"
-        Me.tb_title2.Properties.ReadOnly = True
         Me.tb_title2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.tb_title2.Size = New System.Drawing.Size(174, 28)
         Me.tb_title2.TabIndex = 273
@@ -211,13 +213,12 @@ Partial Class fm_setting
         'tb_title1
         '
         Me.tb_title1.EnterMoveNextControl = True
-        Me.tb_title1.Location = New System.Drawing.Point(569, 150)
+        Me.tb_title1.Location = New System.Drawing.Point(562, 231)
         Me.tb_title1.Name = "tb_title1"
         Me.tb_title1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_title1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_title1.Properties.Appearance.Options.UseFont = True
         Me.tb_title1.Properties.NullValuePrompt = "الاسم"
-        Me.tb_title1.Properties.ReadOnly = True
         Me.tb_title1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.tb_title1.Size = New System.Drawing.Size(174, 28)
         Me.tb_title1.TabIndex = 274
@@ -225,7 +226,7 @@ Partial Class fm_setting
         'tb_amount1
         '
         Me.tb_amount1.EnterMoveNextControl = True
-        Me.tb_amount1.Location = New System.Drawing.Point(461, 150)
+        Me.tb_amount1.Location = New System.Drawing.Point(257, 231)
         Me.tb_amount1.Name = "tb_amount1"
         Me.tb_amount1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_amount1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -233,16 +234,14 @@ Partial Class fm_setting
         Me.tb_amount1.Properties.Appearance.Options.UseTextOptions = True
         Me.tb_amount1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.tb_amount1.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-        Me.tb_amount1.Properties.Mask.EditMask = "n0"
-        Me.tb_amount1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_amount1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_amount1.Size = New System.Drawing.Size(106, 28)
+        Me.tb_amount1.Size = New System.Drawing.Size(303, 28)
         Me.tb_amount1.TabIndex = 275
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.IQTClinicSystem.My.Resources.Resources.Downloads_icon
-        Me.PictureBox1.Location = New System.Drawing.Point(393, 150)
+        Me.PictureBox1.Location = New System.Drawing.Point(366, 304)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(62, 59)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -252,7 +251,7 @@ Partial Class fm_setting
         'tb_id1
         '
         Me.tb_id1.EnterMoveNextControl = True
-        Me.tb_id1.Location = New System.Drawing.Point(745, 150)
+        Me.tb_id1.Location = New System.Drawing.Point(738, 231)
         Me.tb_id1.Name = "tb_id1"
         Me.tb_id1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_id1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -267,7 +266,7 @@ Partial Class fm_setting
         'tb_id2
         '
         Me.tb_id2.EnterMoveNextControl = True
-        Me.tb_id2.Location = New System.Drawing.Point(745, 181)
+        Me.tb_id2.Location = New System.Drawing.Point(738, 262)
         Me.tb_id2.Name = "tb_id2"
         Me.tb_id2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_id2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -279,11 +278,43 @@ Partial Class fm_setting
         Me.tb_id2.TabIndex = 276
         Me.tb_id2.Visible = False
         '
+        'TextEdit1
+        '
+        Me.TextEdit1.EnterMoveNextControl = True
+        Me.TextEdit1.Location = New System.Drawing.Point(12, 231)
+        Me.TextEdit1.Name = "TextEdit1"
+        Me.TextEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit1.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit1.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.TextEdit1.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+        Me.TextEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.TextEdit1.Size = New System.Drawing.Size(239, 28)
+        Me.TextEdit1.TabIndex = 280
+        '
+        'TextEdit2
+        '
+        Me.TextEdit2.EnterMoveNextControl = True
+        Me.TextEdit2.Location = New System.Drawing.Point(12, 262)
+        Me.TextEdit2.Name = "TextEdit2"
+        Me.TextEdit2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit2.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit2.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.TextEdit2.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+        Me.TextEdit2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.TextEdit2.Size = New System.Drawing.Size(239, 28)
+        Me.TextEdit2.TabIndex = 279
+        '
         'fm_setting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(794, 460)
+        Me.Controls.Add(Me.TextEdit1)
+        Me.Controls.Add(Me.TextEdit2)
         Me.Controls.Add(Me.tb_id1)
         Me.Controls.Add(Me.tb_id2)
         Me.Controls.Add(Me.PictureBox1)
@@ -309,6 +340,8 @@ Partial Class fm_setting
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_id1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_id2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -337,4 +370,7 @@ Partial Class fm_setting
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents tb_id1 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents tb_id2 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents CachedCrystalReport11 As IQTClinicSystem.CachedCrystalReport1
 End Class

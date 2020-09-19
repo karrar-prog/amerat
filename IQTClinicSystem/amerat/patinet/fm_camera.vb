@@ -1,6 +1,7 @@
 ﻿Imports AForge.Video.DirectShow
 Imports AForge.Video
 Imports System.IO
+Imports DevExpress.LookAndFeel
 
 
 Public Class fm_camera
@@ -32,6 +33,7 @@ Public Class fm_camera
         End If
     End Sub
     Private Sub fm_camera_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
 
         Me.CenterToScreen()
 

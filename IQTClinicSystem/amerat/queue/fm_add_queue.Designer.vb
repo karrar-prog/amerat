@@ -331,6 +331,7 @@ Partial Class fm_add_queue
         Me.tb_dept_id.Size = New System.Drawing.Size(79, 25)
         Me.tb_dept_id.TabIndex = 286
         Me.tb_dept_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tb_dept_id.Visible = False
         '
         'Label11
         '
@@ -342,6 +343,7 @@ Partial Class fm_add_queue
         Me.Label11.Size = New System.Drawing.Size(94, 23)
         Me.Label11.TabIndex = 287
         Me.Label11.Text = "تسلسل الدفعة"
+        Me.Label11.Visible = False
         '
         'Label12
         '

@@ -1,4 +1,6 @@
-﻿Public Class fm_devided 
+﻿Imports DevExpress.LookAndFeel
+
+Public Class fm_devided
 
     Private Sub SimpleButton8_Click(sender As Object, e As EventArgs) Handles SimpleButton8.Click
         Me.Close()
@@ -19,7 +21,7 @@
             'lv.Columns.Add("عدد الاشهر", 150)
             'lv.Columns.Add("تأريخ الاستحقاق", 100)
 
-         
+
             fm_add_other_required.lv_treat_table.Items.Clear()
             Dim i2 As Decimal = 0
             fm_add_other_required.lv_treat_table.Items.Add("0")
@@ -65,8 +67,10 @@
         pusts_devided()
     End Sub
 
-  
+
     Private Sub fm_devided_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
+
         cal_first_money()
     End Sub
 

@@ -6,8 +6,8 @@ Public Class Plan
     Public id As Integer
     Public title As String
 
-    Public amount As Int32
-    Public time As Int32
+    Public amount As String
+    Public time As String
 
 
 
@@ -35,8 +35,8 @@ Public Class Plan
 
                 Me.id = Convert.ToInt32(ds.Tables(0).Rows(0).Item("id").ToString)
                 Me.title = (ds.Tables(0).Rows(0).Item("title").ToString)
-                Me.amount = Convert.ToInt32(ds.Tables(0).Rows(0).Item("amount").ToString)
-                Me.time = Convert.ToInt32(ds.Tables(0).Rows(0).Item("time").ToString)
+                Me.amount = ds.Tables(0).Rows(0).Item("amount").ToString
+                Me.time = ds.Tables(0).Rows(0).Item("time").ToString
 
 
 
@@ -92,8 +92,8 @@ Public Class Plan
 
             SQLCommand.Parameters.Add("@id", MySqlDbType.Int32).Value = Me.id
             SQLCommand.Parameters.Add("@title", MySqlDbType.String).Value = Me.title
-            SQLCommand.Parameters.Add("@amount", MySqlDbType.Int32).Value = Me.amount
-            SQLCommand.Parameters.Add("@time", MySqlDbType.Int32).Value = Me.time
+            SQLCommand.Parameters.Add("@amount", MySqlDbType.String).Value = Me.amount
+            SQLCommand.Parameters.Add("@time", MySqlDbType.String).Value = Me.time
 
             SQLCommand.ExecuteNonQuery()
 

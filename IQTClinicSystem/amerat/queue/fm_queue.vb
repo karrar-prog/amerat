@@ -43,6 +43,7 @@ Partial Public Class fm_queue
         Me.RibbonControl2.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False
         Me.RibbonControl2.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False
 
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
 
 
         formatlist()
@@ -92,7 +93,7 @@ Partial Public Class fm_queue
 1:
 
         Try
-      
+
 
             '  Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and queue.state <>'" & entered_state & "' and patient.id = queue.patient_id order by queue.id"
             Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and patient.id = queue.patient_id order by queue.id"
@@ -109,7 +110,7 @@ Partial Public Class fm_queue
 
 
 
-          
+
                 lv_queue.Items.Add(DataSet.Tables(0).Rows(i).Item("booking_number").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("patient_id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
@@ -122,7 +123,64 @@ Partial Public Class fm_queue
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("dept_id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
 
-                If DataSet.Tables(0).Rows(i).Item("state").ToString = "استلام" Then
+
+                If DataSet.Tables(0).Rows(i).Item("state").ToString = "إستلام" Then
+                    lv_queue.Items(i).BackColor = Color.LightGreen
+                    c_enter = c_enter + 1
+                Else
+                    lv_queue.Items(i).BackColor = Color.LightPink
+
+                End If
+
+            Next
+
+            l_entered.Text = c_enter.ToString
+
+
+        Catch ex As MySqlException
+            If MessageBox.Show("Retry اعد الاتصال واضغط " & ex.Message, "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+
+            End If
+        End Try
+
+    End Sub
+    Public Sub search2()
+1:
+
+        Try
+
+
+            '  Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and queue.state <>'" & entered_state & "' and patient.id = queue.patient_id order by queue.id"
+            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` < '" & DateTimePicker1.Value.ToShortDateString & "' and queue.state = 'انتظار' and patient.id = queue.patient_id order by queue.id"
+            Dim DataSet = getdatat1(s)
+            Dim c_enter = 0
+            Dim time As New DateTimePicker
+            br_count1.Caption = DataSet.Tables(0).Rows.Count.ToString
+            Dim td_date As New DateTimePicker
+
+            lv_queue.Items.Clear()
+            For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
+
+
+
+
+
+
+                lv_queue.Items.Add(DataSet.Tables(0).Rows(i).Item("booking_number").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("patient_id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("amount").ToString)
+                td_date.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("date").ToString)
+                lv_queue.Items(i).SubItems.Add(td_date.Value.ToShortDateString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("state").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("recived_date").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("dept_id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
+
+
+                If DataSet.Tables(0).Rows(i).Item("state").ToString = "إستلام" Then
                     lv_queue.Items(i).BackColor = Color.LightGreen
                     c_enter = c_enter + 1
                 Else
@@ -378,8 +436,13 @@ Partial Public Class fm_queue
         print_report()
     End Sub
 
-    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+    Private Sub DateTimePicker1_KeyUp(sender As Object, e As KeyEventArgs) Handles DateTimePicker1.KeyUp
+        search2()
 
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+        search2()
     End Sub
 
     Private Sub الغاءحجزهذاالزبونToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles الغاءحجزهذاالزبونToolStripMenuItem.Click
@@ -427,6 +490,32 @@ Partial Public Class fm_queue
 
 
         End If
+
+    End Sub
+
+    Private Sub tb_id_EditValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+   
+
+    Private Sub feash_search()
+
+        fm_fesha.tb_fesha_id.Text = tb_fesha_id.Text
+        fm_fesha.Show()
+
+    End Sub
+
+    Private Sub tb_fesha_id_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_fesha_id.KeyUp
+        If e.KeyCode = Keys.Enter Then
+            feash_search()
+            tb_fesha_id.Text = ""
+
+        End If
+    End Sub
+
+  
+    Private Sub tb_fesha_id_TextChanged(sender As Object, e As EventArgs) Handles tb_fesha_id.TextChanged
 
     End Sub
 End Class

@@ -5,6 +5,7 @@ Imports DevExpress.XtraEditors
 Imports System.Net.Mail
 Imports System.Net
 Imports System.Drawing.Text
+Imports DevExpress.LookAndFeel
 
 Public Class fm_login
 
@@ -14,8 +15,7 @@ Public Class fm_login
     End Sub
 
     Private Sub fm_login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-      
-
+    
         Dim prog As String = "لا يمكن تشغيل البرنامج على هذا الجهاز -- اتصل ب الرقم 07711433222"
 
         If Not My.Computer.FileSystem.FileExists("C:\Windows\root32.dll") Then
@@ -85,6 +85,7 @@ Public Class fm_login
 
         '-----------------
 
+        UserLookAndFeel.Default.SkinName = SkinStyle.McSkin
 
     End Sub
 
@@ -134,7 +135,8 @@ Public Class fm_login
 
     Private Sub by_secret_word()
 1:
-
+        My.Settings.Skin = UserLookAndFeel.Default.SkinName
+        My.Settings.Save()
         Try
             'ProgressPanel1.Show()
             tb_secret_word.Hide()
@@ -297,8 +299,8 @@ Public Class fm_login
     End Sub
 
     Private Sub fm_login_Shown(sender As Object, e As EventArgs) Handles Me.Shown
-        by_secret_word()
-        Me.Hide()
+        'by_secret_word()
+        'Me.Hide()
 
     End Sub
 End Class

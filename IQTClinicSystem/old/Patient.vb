@@ -434,7 +434,7 @@ Public Class Patient
                 SQLCommand.ExecuteNonQuery()
 
 
-                Dim content = " تمت تفعيل  حساب المشترك" & "  " & Me.name & " رقم الزبون " & Me.id
+                Dim content = " تمت تفعيل  حساب الزبون" & "  " & Me.name & " رقم الزبون " & Me.id
                 new_event2("تفعيل", content, 0)
 
               
@@ -469,7 +469,7 @@ Public Class Patient
         Try
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "UPDATE patient SET name = @name , `code` = @code , finger_print = @finger_print , wieght = @wieght , gender = @gender , phone = @phone , note = @note , diagonosis = @diagonosis , ref_by = @ref_by " +
+            SQLCommand.CommandText = "UPDATE patient SET first_push_amount_arrived=@first_push_amount_arrived , name = @name , `code` = @code , finger_print = @finger_print , wieght = @wieght , gender = @gender , phone = @phone , note = @note , diagonosis = @diagonosis , ref_by = @ref_by " +
                 " , f1 = @f1 , f2 = @f2 , f3 = @f3 , f4 = @f4 , f5 = @f5 , f6 = @f6 , f7 = @f7 , f8 = @f8 , f9 = @f9 , f10 = @f10 , deleted = @deleted,saller = @saller,house_price = @house_price,first_part= @first_part,last_part = @last_part,first_present = @first_present,last_present = @last_present,water_price =@water_price,is_token = @is_token ,lower_name=@lower_name WHERE id = @id"
 
             SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
@@ -502,6 +502,7 @@ Public Class Patient
             SQLCommand.Parameters.Add("@house_price", MySqlDbType.Decimal).Value = Me.house_price
             SQLCommand.Parameters.Add("@first_part", MySqlDbType.Decimal).Value = Me.first_part
             SQLCommand.Parameters.Add("@last_part", MySqlDbType.Decimal).Value = Me.last_part
+            SQLCommand.Parameters.Add("@first_push_amount_arrived", MySqlDbType.Decimal).Value = Me.first_push_amount_arrived
 
 
             SQLCommand.Parameters.Add("@first_present", MySqlDbType.Int32).Value = Me.first_present
@@ -519,10 +520,7 @@ Public Class Patient
 
            '  add_event(conn, s_update, conent)
 
-            Dim content = " تم تعديل معومات الزبون" & "  " & Me.name & " رقم الزبون " & Me.id
-
-            new_event2("تعديل معلومات", content, 0)
-
+        
 
 
             conn.Close()

@@ -8,6 +8,7 @@ Imports System.Threading.Tasks
 Imports System.Net.Mail
 Imports System.Text
 Imports System.Drawing.Text
+Imports DevExpress.LookAndFeel
 
 
 
@@ -62,7 +63,12 @@ Public Class fm_main
 
         Me.CenterToScreen()
         tb_user.Caption = user.name
-        'DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("Blue")
+        UserLookAndFeel.Default.SkinName = My.Settings.Skin
+        'apply a vector skin and choose a palette
+        'UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Bezier, SkinSvgPalette.Bezier.CherryInk)
+        'disable skinning, apply the "Flat" style
+        'note that some DevExpress controls (for example, the Ribbon) cannot be displayed without a skin
+        'UserLookAndFeel.Default.SetStyle(LookAndFeelStyle.Flat, False, True)
     End Sub
 
     Private Sub TileItem5_ItemClick(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs)
@@ -542,7 +548,7 @@ Public Class fm_main
 
     Private Sub TileItem11_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem11.ItemClick
         fm_add_other_required.Show()
-    
+
     End Sub
 
     Private Sub TileItem12_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem12.ItemClick

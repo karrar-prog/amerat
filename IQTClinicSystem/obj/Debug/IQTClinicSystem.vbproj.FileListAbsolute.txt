@@ -981,3 +981,4 @@ C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_devided.resources
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_call.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_fesha.resources

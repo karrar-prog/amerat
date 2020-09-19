@@ -52,6 +52,9 @@ Partial Class fm_monitoring_event
         Me.tb_out = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl10 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
+        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
+        Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
+        Me.TextEdit3 = New DevExpress.XtraEditors.TextEdit()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
@@ -68,6 +71,9 @@ Partial Class fm_monitoring_event
         CType(Me.tb_come.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_net.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_out.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RibbonControl1
@@ -85,7 +91,7 @@ Partial Class fm_monitoring_event
         Me.RibbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl1.ShowQatLocationSelector = False
         Me.RibbonControl1.ShowToolbarCustomizeItem = False
-        Me.RibbonControl1.Size = New System.Drawing.Size(1024, 27)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1243, 27)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         Me.RibbonControl1.Toolbar.ShowCustomizeItem = False
         Me.RibbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
@@ -96,7 +102,7 @@ Partial Class fm_monitoring_event
         Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 736)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1024, 31)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1243, 31)
         '
         'RibbonPage2
         '
@@ -110,7 +116,7 @@ Partial Class fm_monitoring_event
         Me.GroupControl1.Location = New System.Drawing.Point(0, 27)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl1.Size = New System.Drawing.Size(1024, 331)
+        Me.GroupControl1.Size = New System.Drawing.Size(1243, 331)
         Me.GroupControl1.TabIndex = 2
         Me.GroupControl1.Text = "العمليات"
         '
@@ -120,7 +126,7 @@ Partial Class fm_monitoring_event
         Me.XtraTabControl1.Location = New System.Drawing.Point(2, 20)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1020, 309)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1239, 309)
         Me.XtraTabControl1.TabIndex = 121
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
         '
@@ -128,7 +134,7 @@ Partial Class fm_monitoring_event
         '
         Me.XtraTabPage1.Controls.Add(Me.li_event)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1017, 282)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1233, 281)
         Me.XtraTabPage1.Text = "عرض"
         '
         'li_event
@@ -142,7 +148,7 @@ Partial Class fm_monitoring_event
         Me.li_event.Name = "li_event"
         Me.li_event.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_event.RightToLeftLayout = True
-        Me.li_event.Size = New System.Drawing.Size(1017, 282)
+        Me.li_event.Size = New System.Drawing.Size(1233, 281)
         Me.li_event.TabIndex = 119
         Me.li_event.UseCompatibleStateImageBehavior = False
         '
@@ -233,7 +239,7 @@ Partial Class fm_monitoring_event
         Me.li_user.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.li_user.FullRowSelect = True
         Me.li_user.GridLines = True
-        Me.li_user.Location = New System.Drawing.Point(837, 358)
+        Me.li_user.Location = New System.Drawing.Point(1056, 358)
         Me.li_user.MultiSelect = False
         Me.li_user.Name = "li_user"
         Me.li_user.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -253,7 +259,7 @@ Partial Class fm_monitoring_event
         Me.GroupControl2.Controls.Add(Me.LabelControl9)
         Me.GroupControl2.Controls.Add(Me.SimpleButton6)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(554, 358)
+        Me.GroupControl2.Location = New System.Drawing.Point(773, 358)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.GroupControl2.Size = New System.Drawing.Size(283, 378)
@@ -356,7 +362,7 @@ Partial Class fm_monitoring_event
         'tb_come
         '
         Me.tb_come.EditValue = "0"
-        Me.tb_come.Location = New System.Drawing.Point(141, 486)
+        Me.tb_come.Location = New System.Drawing.Point(351, 387)
         Me.tb_come.Name = "tb_come"
         Me.tb_come.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.tb_come.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -364,6 +370,8 @@ Partial Class fm_monitoring_event
         Me.tb_come.Properties.Appearance.Options.UseFont = True
         Me.tb_come.Properties.Appearance.Options.UseTextOptions = True
         Me.tb_come.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.tb_come.Properties.Mask.EditMask = "n0"
+        Me.tb_come.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_come.Properties.ReadOnly = True
         Me.tb_come.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.tb_come.Size = New System.Drawing.Size(265, 28)
@@ -373,7 +381,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl32.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl32.Appearance.Options.UseFont = True
-        Me.LabelControl32.Location = New System.Drawing.Point(415, 539)
+        Me.LabelControl32.Location = New System.Drawing.Point(625, 468)
         Me.LabelControl32.Name = "LabelControl32"
         Me.LabelControl32.Size = New System.Drawing.Size(98, 22)
         Me.LabelControl32.TabIndex = 161
@@ -382,7 +390,7 @@ Partial Class fm_monitoring_event
         'tb_net
         '
         Me.tb_net.EditValue = "0"
-        Me.tb_net.Location = New System.Drawing.Point(141, 586)
+        Me.tb_net.Location = New System.Drawing.Point(351, 542)
         Me.tb_net.Name = "tb_net"
         Me.tb_net.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.tb_net.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -390,6 +398,8 @@ Partial Class fm_monitoring_event
         Me.tb_net.Properties.Appearance.Options.UseFont = True
         Me.tb_net.Properties.Appearance.Options.UseTextOptions = True
         Me.tb_net.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.tb_net.Properties.Mask.EditMask = "n0"
+        Me.tb_net.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_net.Properties.ReadOnly = True
         Me.tb_net.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.tb_net.Size = New System.Drawing.Size(265, 28)
@@ -398,7 +408,7 @@ Partial Class fm_monitoring_event
         'tb_out
         '
         Me.tb_out.EditValue = "0"
-        Me.tb_out.Location = New System.Drawing.Point(141, 536)
+        Me.tb_out.Location = New System.Drawing.Point(351, 465)
         Me.tb_out.Name = "tb_out"
         Me.tb_out.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.tb_out.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -406,6 +416,8 @@ Partial Class fm_monitoring_event
         Me.tb_out.Properties.Appearance.Options.UseFont = True
         Me.tb_out.Properties.Appearance.Options.UseTextOptions = True
         Me.tb_out.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.tb_out.Properties.Mask.EditMask = "n0"
+        Me.tb_out.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_out.Properties.ReadOnly = True
         Me.tb_out.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.tb_out.Size = New System.Drawing.Size(265, 28)
@@ -415,7 +427,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl10.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl10.Appearance.Options.UseFont = True
-        Me.LabelControl10.Location = New System.Drawing.Point(415, 489)
+        Me.LabelControl10.Location = New System.Drawing.Point(625, 390)
         Me.LabelControl10.Name = "LabelControl10"
         Me.LabelControl10.Size = New System.Drawing.Size(70, 22)
         Me.LabelControl10.TabIndex = 156
@@ -425,17 +437,71 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.Location = New System.Drawing.Point(415, 589)
+        Me.LabelControl1.Location = New System.Drawing.Point(625, 545)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(94, 22)
         Me.LabelControl1.TabIndex = 163
         Me.LabelControl1.Text = "صافي الايرادات"
         '
+        'TextEdit1
+        '
+        Me.TextEdit1.EditValue = "0"
+        Me.TextEdit1.Location = New System.Drawing.Point(25, 415)
+        Me.TextEdit1.Name = "TextEdit1"
+        Me.TextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit1.Properties.Appearance.Options.UseBackColor = True
+        Me.TextEdit1.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit1.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.TextEdit1.Properties.ReadOnly = True
+        Me.TextEdit1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TextEdit1.Size = New System.Drawing.Size(591, 28)
+        Me.TextEdit1.TabIndex = 166
+        Me.TextEdit1.Visible = False
+        '
+        'TextEdit2
+        '
+        Me.TextEdit2.EditValue = "0"
+        Me.TextEdit2.Location = New System.Drawing.Point(25, 571)
+        Me.TextEdit2.Name = "TextEdit2"
+        Me.TextEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit2.Properties.Appearance.Options.UseBackColor = True
+        Me.TextEdit2.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit2.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.TextEdit2.Properties.ReadOnly = True
+        Me.TextEdit2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TextEdit2.Size = New System.Drawing.Size(591, 28)
+        Me.TextEdit2.TabIndex = 167
+        Me.TextEdit2.Visible = False
+        '
+        'TextEdit3
+        '
+        Me.TextEdit3.EditValue = "0"
+        Me.TextEdit3.Location = New System.Drawing.Point(25, 493)
+        Me.TextEdit3.Name = "TextEdit3"
+        Me.TextEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit3.Properties.Appearance.Options.UseBackColor = True
+        Me.TextEdit3.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit3.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.TextEdit3.Properties.ReadOnly = True
+        Me.TextEdit3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TextEdit3.Size = New System.Drawing.Size(591, 28)
+        Me.TextEdit3.TabIndex = 168
+        Me.TextEdit3.Visible = False
+        '
         'fm_monitoring_event
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1024, 767)
+        Me.ClientSize = New System.Drawing.Size(1243, 767)
+        Me.Controls.Add(Me.TextEdit1)
+        Me.Controls.Add(Me.TextEdit2)
+        Me.Controls.Add(Me.TextEdit3)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.tb_come)
         Me.Controls.Add(Me.LabelControl32)
@@ -471,6 +537,9 @@ Partial Class fm_monitoring_event
         CType(Me.tb_come.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_net.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_out.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -507,4 +576,7 @@ Partial Class fm_monitoring_event
     Friend WithEvents colname As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents coldate As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colamount As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
 End Class

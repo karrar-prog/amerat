@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class fm_login
-    Inherits DevExpress.XtraEditors.XtraForm
+    Inherits DevExpress.XtraBars.Ribbon.RibbonForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -23,7 +23,6 @@ Partial Class fm_login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fm_login))
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.ribbonPageGroup = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.skinRibbonGalleryBarItem = New DevExpress.XtraBars.SkinRibbonGalleryBarItem()
         Me.جديد = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
@@ -36,7 +35,6 @@ Partial Class fm_login
         Me.employeesBarButtonItem = New DevExpress.XtraBars.BarButtonItem()
         Me.barSubItemNavigation = New DevExpress.XtraBars.BarSubItem()
         Me.ribbonControl = New DevExpress.XtraBars.Ribbon.RibbonControl()
-        Me.ribbonPage = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.DefaultLookAndFeel2 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -51,14 +49,6 @@ Partial Class fm_login
         '
         Me.RibbonPage2.Name = "RibbonPage2"
         Me.RibbonPage2.Text = "RibbonPage2"
-        '
-        'ribbonPageGroup
-        '
-        Me.ribbonPageGroup.AllowTextClipping = False
-        Me.ribbonPageGroup.ItemLinks.Add(Me.skinRibbonGalleryBarItem)
-        Me.ribbonPageGroup.Name = "ribbonPageGroup"
-        Me.ribbonPageGroup.ShowCaptionButton = False
-        Me.ribbonPageGroup.Text = "المظهر"
         '
         'skinRibbonGalleryBarItem
         '
@@ -137,17 +127,10 @@ Partial Class fm_login
         Me.ribbonControl.MaxItemId = 53
         Me.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.ribbonControl.Name = "ribbonControl"
-        Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage})
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ribbonControl.Size = New System.Drawing.Size(655, 143)
+        Me.ribbonControl.Size = New System.Drawing.Size(655, 49)
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
-        '
-        'ribbonPage
-        '
-        Me.ribbonPage.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup})
-        Me.ribbonPage.Name = "ribbonPage"
-        Me.ribbonPage.Text = "المظهر"
         '
         'RibbonPage1
         '
@@ -185,6 +168,7 @@ Partial Class fm_login
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(262, 282)
         Me.Label1.Name = "Label1"
@@ -194,7 +178,7 @@ Partial Class fm_login
         '
         'fm_login
         '
-        Me.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.Appearance.BackColor = System.Drawing.Color.White
         Me.Appearance.BackColor2 = System.Drawing.Color.Transparent
         Me.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Appearance.Options.UseBackColor = True
@@ -203,17 +187,17 @@ Partial Class fm_login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile
-        Me.BackgroundImageStore = Global.IQTClinicSystem.My.Resources.Resources.صورةة
         Me.ClientSize = New System.Drawing.Size(655, 372)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.tb_secret_word)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.ribbonControl)
+        Me.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "fm_login"
+        Me.Ribbon = Me.ribbonControl
         Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RightToLeftLayout = True
         Me.ShowIcon = False
@@ -227,7 +211,6 @@ Partial Class fm_login
     End Sub
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
     Friend WithEvents RibbonPage2 As DevExpress.XtraBars.Ribbon.RibbonPage
-    Private WithEvents ribbonPageGroup As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Private WithEvents skinRibbonGalleryBarItem As DevExpress.XtraBars.SkinRibbonGalleryBarItem
     Friend WithEvents جديد As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
@@ -240,7 +223,6 @@ Partial Class fm_login
     Private WithEvents employeesBarButtonItem As DevExpress.XtraBars.BarButtonItem
     Private WithEvents barSubItemNavigation As DevExpress.XtraBars.BarSubItem
     Private WithEvents ribbonControl As DevExpress.XtraBars.Ribbon.RibbonControl
-    Private WithEvents ribbonPage As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPage1 As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents DefaultLookAndFeel2 As DevExpress.LookAndFeel.DefaultLookAndFeel
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox

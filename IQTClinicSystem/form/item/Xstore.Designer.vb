@@ -203,7 +203,7 @@ Partial Public Class Xstore
         Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage})
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ribbonControl.Size = New System.Drawing.Size(1309, 143)
+        Me.ribbonControl.Size = New System.Drawing.Size(1307, 143)
         Me.ribbonControl.StatusBar = Me.ribbonStatusBar
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '
@@ -293,7 +293,7 @@ Partial Public Class Xstore
         Me.ribbonStatusBar.Location = New System.Drawing.Point(0, 736)
         Me.ribbonStatusBar.Name = "ribbonStatusBar"
         Me.ribbonStatusBar.Ribbon = Me.ribbonControl
-        Me.ribbonStatusBar.Size = New System.Drawing.Size(1309, 31)
+        Me.ribbonStatusBar.Size = New System.Drawing.Size(1307, 31)
         '
         'navigationFrame
         '
@@ -308,7 +308,7 @@ Partial Public Class Xstore
         Me.navigationFrame.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.employeesNavigationPage, Me.customersNavigationPage, Me.NavigationPage1})
         Me.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
         Me.navigationFrame.SelectedPage = Me.employeesNavigationPage
-        Me.navigationFrame.Size = New System.Drawing.Size(1309, 593)
+        Me.navigationFrame.Size = New System.Drawing.Size(1307, 593)
         Me.navigationFrame.TabIndex = 0
         Me.navigationFrame.Text = "navigationFrame"
         '
@@ -318,7 +318,7 @@ Partial Public Class Xstore
         Me.employeesNavigationPage.Controls.Add(Me.GroupControl1)
         Me.employeesNavigationPage.Controls.Add(Me.employeesLabelControl)
         Me.employeesNavigationPage.Name = "employeesNavigationPage"
-        Me.employeesNavigationPage.Size = New System.Drawing.Size(1309, 593)
+        Me.employeesNavigationPage.Size = New System.Drawing.Size(1307, 593)
         '
         'TabPane1
         '
@@ -334,10 +334,10 @@ Partial Public Class Xstore
         Me.TabPane1.Location = New System.Drawing.Point(0, 132)
         Me.TabPane1.Name = "TabPane1"
         Me.TabPane1.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.TabNavigationPage1, Me.TabNavigationPage2, Me.TabNavigationPage3})
-        Me.TabPane1.RegularSize = New System.Drawing.Size(1309, 461)
+        Me.TabPane1.RegularSize = New System.Drawing.Size(1307, 461)
         Me.TabPane1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.TabPane1.SelectedPage = Me.TabNavigationPage1
-        Me.TabPane1.Size = New System.Drawing.Size(1309, 461)
+        Me.TabPane1.Size = New System.Drawing.Size(1307, 461)
         Me.TabPane1.TabIndex = 8
         Me.TabPane1.Text = "TabPane1"
         '
@@ -350,7 +350,7 @@ Partial Public Class Xstore
         Me.TabNavigationPage1.Caption = "        المواد           "
         Me.TabNavigationPage1.Controls.Add(Me.li_item)
         Me.TabNavigationPage1.Name = "TabNavigationPage1"
-        Me.TabNavigationPage1.Size = New System.Drawing.Size(1289, 425)
+        Me.TabNavigationPage1.Size = New System.Drawing.Size(1289, 416)
         '
         'li_item
         '
@@ -363,7 +363,7 @@ Partial Public Class Xstore
         Me.li_item.Name = "li_item"
         Me.li_item.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_item.RightToLeftLayout = True
-        Me.li_item.Size = New System.Drawing.Size(1289, 425)
+        Me.li_item.Size = New System.Drawing.Size(1289, 416)
         Me.li_item.TabIndex = 1
         Me.li_item.UseCompatibleStateImageBehavior = False
         '
@@ -1167,7 +1167,7 @@ Partial Public Class Xstore
         Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl1.Size = New System.Drawing.Size(1309, 132)
+        Me.GroupControl1.Size = New System.Drawing.Size(1307, 132)
         Me.GroupControl1.TabIndex = 2
         '
         'tb_picese_count
@@ -1188,7 +1188,7 @@ Partial Public Class Xstore
         '
         Me.LabelControl25.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl25.Appearance.Options.UseFont = True
-        Me.LabelControl25.Location = New System.Drawing.Point(480, 71)
+        Me.LabelControl25.Location = New System.Drawing.Point(480, 69)
         Me.LabelControl25.Name = "LabelControl25"
         Me.LabelControl25.Size = New System.Drawing.Size(62, 22)
         Me.LabelControl25.TabIndex = 105
@@ -1212,7 +1212,7 @@ Partial Public Class Xstore
         '
         Me.LabelControl24.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl24.Appearance.Options.UseFont = True
-        Me.LabelControl24.Location = New System.Drawing.Point(480, 35)
+        Me.LabelControl24.Location = New System.Drawing.Point(480, 33)
         Me.LabelControl24.Name = "LabelControl24"
         Me.LabelControl24.Size = New System.Drawing.Size(65, 22)
         Me.LabelControl24.TabIndex = 103
@@ -1231,7 +1231,7 @@ Partial Public Class Xstore
         Me.GroupControl2.Controls.Add(Me.r_name)
         Me.GroupControl2.Controls.Add(Me.r_barcode)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(550, 20)
+        Me.GroupControl2.Location = New System.Drawing.Point(548, 20)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.Size = New System.Drawing.Size(757, 110)
         Me.GroupControl2.TabIndex = 102
@@ -1367,7 +1367,7 @@ Partial Public Class Xstore
         Me.employeesLabelControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.employeesLabelControl.Location = New System.Drawing.Point(0, 0)
         Me.employeesLabelControl.Name = "employeesLabelControl"
-        Me.employeesLabelControl.Size = New System.Drawing.Size(1309, 593)
+        Me.employeesLabelControl.Size = New System.Drawing.Size(1307, 593)
         Me.employeesLabelControl.TabIndex = 0
         Me.employeesLabelControl.Text = "المخزن"
         '
@@ -1375,7 +1375,7 @@ Partial Public Class Xstore
         '
         Me.customersNavigationPage.Controls.Add(Me.customersLabelControl)
         Me.customersNavigationPage.Name = "customersNavigationPage"
-        Me.customersNavigationPage.Size = New System.Drawing.Size(1309, 593)
+        Me.customersNavigationPage.Size = New System.Drawing.Size(1307, 593)
         '
         'customersLabelControl
         '
@@ -1390,7 +1390,7 @@ Partial Public Class Xstore
         Me.customersLabelControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.customersLabelControl.Location = New System.Drawing.Point(0, 0)
         Me.customersLabelControl.Name = "customersLabelControl"
-        Me.customersLabelControl.Size = New System.Drawing.Size(1309, 593)
+        Me.customersLabelControl.Size = New System.Drawing.Size(1307, 593)
         Me.customersLabelControl.TabIndex = 1
         Me.customersLabelControl.Text = "Customers"
         '
@@ -1399,14 +1399,14 @@ Partial Public Class Xstore
         Me.NavigationPage1.Controls.Add(Me.GroupControl3)
         Me.NavigationPage1.Name = "NavigationPage1"
         Me.NavigationPage1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.NavigationPage1.Size = New System.Drawing.Size(1309, 593)
+        Me.NavigationPage1.Size = New System.Drawing.Size(1307, 593)
         '
         'GroupControl3
         '
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl3.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl3.Name = "GroupControl3"
-        Me.GroupControl3.Size = New System.Drawing.Size(1309, 593)
+        Me.GroupControl3.Size = New System.Drawing.Size(1307, 593)
         Me.GroupControl3.TabIndex = 3
         Me.GroupControl3.Text = "ادارة المواد"
         '
@@ -1431,10 +1431,6 @@ Partial Public Class Xstore
         Me.num_limit.TabIndex = 110
         Me.num_limit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.num_limit.Value = New Decimal(New Integer() {200, 0, 0, 0})
-        '
-        'DefaultLookAndFeel1
-        '
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Blue"
         '
         'tb_red
         '
@@ -1467,7 +1463,7 @@ Partial Public Class Xstore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1309, 767)
+        Me.ClientSize = New System.Drawing.Size(1307, 767)
         Me.Controls.Add(Me.tb_red)
         Me.Controls.Add(Me.LabelControl26)
         Me.Controls.Add(Me.navigationFrame)
