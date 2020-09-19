@@ -312,11 +312,13 @@ Public Class fm_add_patient
             GroupControl6.Hide()
             GroupControl10.Hide()
             GroupControl3.Hide()
+            GroupControl1.Hide()
 
         Else
             GroupControl6.Show()
             GroupControl10.Show()
             GroupControl3.Show()
+            GroupControl1.Show()
 
         End If
 
@@ -480,21 +482,9 @@ Public Class fm_add_patient
 
     End Sub
 
-    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
-
-        If tb_id.Text.Trim = "" Then
-            MessageBox.Show("لم تقم بحفظ معلومات المراجع")
-            Exit Sub
-
-        End If
-        Try
-            Dim new_path = images_path & "\p" & tb_id.Text
-            Process.Start("explorer.exe", new_path)
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs)
 
 
-        Catch ex As Exception
-
-        End Try
 
     End Sub
 
@@ -867,4 +857,94 @@ Public Class fm_add_patient
 
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        If tb_id.Text.Trim = "" Then
+            MessageBox.Show("لم تقم بحفظ معلومات المراجع")
+            Exit Sub
+
+        End If
+        Try
+            Dim new_path = images_path & "\p" & tb_id.Text
+            If (Not System.IO.Directory.Exists(new_path)) Then
+                System.IO.Directory.CreateDirectory(new_path)
+            End If
+
+            Process.Start("explorer.exe", new_path)
+
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+        Try
+
+     
+        If tb_id.Text.Trim <> "" Then
+                OpenFileDialog1.Title = "Please select a image"
+        OpenFileDialog1.FileName = ""
+        OpenFileDialog1.InitialDirectory = images_path & "\maps"
+        OpenFileDialog1.Filter = "All files|*.*|png|*.png|jpg|*.jpg"
+        Dim path As String
+
+        Dim new_path = images_path & "\p" & tb_id.Text & "\map"
+        Dim new_file_path = new_path & "\map.png"
+        If File.Exists(new_file_path) Then
+            Try
+                Dim proc As New System.Diagnostics.Process()
+                proc = Process.Start(new_file_path, "فتح الصورة")
+            Catch ex As Exception
+
+            End Try
+
+        Else
+
+
+
+
+            If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+                path = OpenFileDialog1.FileName
+
+                If path.Trim <> "" Then
+
+                    If (Not System.IO.Directory.Exists(new_path)) Then
+                        System.IO.Directory.CreateDirectory(new_path)
+                    End If
+
+
+                    If Not System.IO.File.Exists(new_file_path) = True Then
+                        File.Copy(path, new_file_path, True)
+                    End If
+                    Try
+                        Dim proc As New System.Diagnostics.Process()
+                        proc = Process.Start(new_file_path, "فتح الصورة")
+                    Catch ex As Exception
+
+                    End Try
+                Else
+                    MessageBox.Show("لم تقم باختيار صورة")
+                End If
+
+            End If
+
+
+        End If
+        End If
+
+
+
+
+
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+
+    End Sub
 End Class

@@ -511,7 +511,7 @@ Module DB
 
         Dim image_id As String
 
-        image_id = Convert.ToString(Date.Now.Year) & "-" & Convert.ToString(Date.Now.Month) & "-" & Convert.ToString(Date.Now.Day) & " time " & Convert.ToString(Date.Now.Hour) & "-" & Convert.ToString(Date.Now.Minute)
+        image_id = Convert.ToString(Date.Now.Year) & "-" & Convert.ToString(Date.Now.Month) & "-" & Convert.ToString(Date.Now.Day) & "-" & Convert.ToString(Date.Now.Hour) & "-" & Convert.ToString(Date.Now.Minute)
         Return image_id
 
 

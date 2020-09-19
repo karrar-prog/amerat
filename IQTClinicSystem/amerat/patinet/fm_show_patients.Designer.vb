@@ -23,8 +23,6 @@ Partial Class fm_show_patients
         Me.lv_queue = New System.Windows.Forms.ListView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.اتصالToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.عرضالعقدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.عرضسجلالتسديدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.عرضاوتعديلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.اضافةحجزعمليةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ارشفةبياناتالمراجعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -73,6 +71,10 @@ Partial Class fm_show_patients
         Me.BarHeaderItem4 = New DevExpress.XtraBars.BarHeaderItem()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
+        Me.طباعةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.عقدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.خارطةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.سجلتسديدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -110,7 +112,7 @@ Partial Class fm_show_patients
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اتصالToolStripMenuItem, Me.عرضالعقدToolStripMenuItem, Me.عرضسجلالتسديدToolStripMenuItem, Me.عرضاوتعديلToolStripMenuItem, Me.اضافةحجزعمليةToolStripMenuItem, Me.ارشفةبياناتالمراجعToolStripMenuItem, Me.تفعيلالحسابToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اضافةحجزعمليةToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.ارشفةبياناتالمراجعToolStripMenuItem, Me.تفعيلالحسابToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.عرضاوتعديلToolStripMenuItem, Me.طباعةToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(178, 180)
         '
@@ -120,18 +122,6 @@ Partial Class fm_show_patients
         Me.اتصالToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.اتصالToolStripMenuItem.Text = "اتصال"
         '
-        'عرضالعقدToolStripMenuItem
-        '
-        Me.عرضالعقدToolStripMenuItem.Name = "عرضالعقدToolStripMenuItem"
-        Me.عرضالعقدToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.عرضالعقدToolStripMenuItem.Text = "عرض العقد"
-        '
-        'عرضسجلالتسديدToolStripMenuItem
-        '
-        Me.عرضسجلالتسديدToolStripMenuItem.Name = "عرضسجلالتسديدToolStripMenuItem"
-        Me.عرضسجلالتسديدToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.عرضسجلالتسديدToolStripMenuItem.Text = "عرض سجل التسديد"
-        '
         'عرضاوتعديلToolStripMenuItem
         '
         Me.عرضاوتعديلToolStripMenuItem.Name = "عرضاوتعديلToolStripMenuItem"
@@ -140,9 +130,10 @@ Partial Class fm_show_patients
         '
         'اضافةحجزعمليةToolStripMenuItem
         '
+        Me.اضافةحجزعمليةToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.عقدToolStripMenuItem, Me.خارطةToolStripMenuItem, Me.سجلتسديدToolStripMenuItem})
         Me.اضافةحجزعمليةToolStripMenuItem.Name = "اضافةحجزعمليةToolStripMenuItem"
         Me.اضافةحجزعمليةToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.اضافةحجزعمليةToolStripMenuItem.Text = "عرض العقد"
+        Me.اضافةحجزعمليةToolStripMenuItem.Text = "طباعة"
         '
         'ارشفةبياناتالمراجعToolStripMenuItem
         '
@@ -565,6 +556,30 @@ Partial Class fm_show_patients
         Me.GroupControl2.TabIndex = 263
         Me.GroupControl2.Text = "نتائج البحث"
         '
+        'طباعةToolStripMenuItem
+        '
+        Me.طباعةToolStripMenuItem.Name = "طباعةToolStripMenuItem"
+        Me.طباعةToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.طباعةToolStripMenuItem.Text = "تحرير العقد"
+        '
+        'عقدToolStripMenuItem
+        '
+        Me.عقدToolStripMenuItem.Name = "عقدToolStripMenuItem"
+        Me.عقدToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.عقدToolStripMenuItem.Text = "عقد"
+        '
+        'خارطةToolStripMenuItem
+        '
+        Me.خارطةToolStripMenuItem.Name = "خارطةToolStripMenuItem"
+        Me.خارطةToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.خارطةToolStripMenuItem.Text = "خارطة"
+        '
+        'سجلتسديدToolStripMenuItem
+        '
+        Me.سجلتسديدToolStripMenuItem.Name = "سجلتسديدToolStripMenuItem"
+        Me.سجلتسديدToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.سجلتسديدToolStripMenuItem.Text = "سجل تسديد"
+        '
         'fm_show_patients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -653,6 +668,8 @@ Partial Class fm_show_patients
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
     Friend WithEvents اتصالToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents عرضالعقدToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents عرضسجلالتسديدToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents عقدToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents خارطةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents سجلتسديدToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents طباعةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

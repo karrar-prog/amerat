@@ -315,21 +315,7 @@ Public Class fm_show_patients
     End Sub
 
     Private Sub اضافةحجزعمليةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles اضافةحجزعمليةToolStripMenuItem.Click
-        If lv_queue.SelectedItems.Count > 0 Then
-            Dim p As New Patient(__(lv_queue.SelectedItems.Item(0).Text))
-            fm_add_other_required.tb_id.Text = p.id.ToString
-            fm_add_other_required.tb_name.Text = p.name
-            fm_add_other_required.nu_first_part.Value = p.first_part
-            fm_add_other_required.nu_house_price.Value = p.house_price
-            fm_add_other_required.nu_last_part.Value = p.last_part
-            fm_add_other_required.nu_first_present.Value = p.first_present
-            fm_add_other_required.nu_last_present.Value = p.last_present
-
-            fm_add_other_required.Show()
-
-
-
-        End If
+    
 
     End Sub
 
@@ -535,15 +521,45 @@ Public Class fm_show_patients
 
     End Sub
 
-    Private Sub عرضالعقدToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles عرضالعقدToolStripMenuItem.Click
+    Private Sub عرضالعقدToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub عرضسجلالتسديدToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub طباعةالخارطةToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub عقدToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles عقدToolStripMenuItem.Click
         If lv_queue.SelectedItems.Count > 0 Then
             print_contract(__(lv_queue.SelectedItems(0).Text))
         End If
     End Sub
 
-    Private Sub عرضسجلالتسديدToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles عرضسجلالتسديدToolStripMenuItem.Click
+    Private Sub سجلتسديدToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles سجلتسديدToolStripMenuItem.Click
         If lv_queue.SelectedItems.Count > 0 Then
             print_list(__(lv_queue.SelectedItems(0).Text))
+        End If
+    End Sub
+
+    Private Sub طباعةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles طباعةToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+            Dim p As New Patient(__(lv_queue.SelectedItems.Item(0).Text))
+            fm_add_other_required.tb_id.Text = p.id.ToString
+            fm_add_other_required.tb_name.Text = p.name
+            fm_add_other_required.nu_first_part.Value = p.first_part
+            fm_add_other_required.nu_house_price.Value = p.house_price
+            fm_add_other_required.nu_last_part.Value = p.last_part
+            fm_add_other_required.nu_first_present.Value = p.first_present
+            fm_add_other_required.nu_last_present.Value = p.last_present
+
+            fm_add_other_required.Show()
+
+
+
         End If
     End Sub
 End Class

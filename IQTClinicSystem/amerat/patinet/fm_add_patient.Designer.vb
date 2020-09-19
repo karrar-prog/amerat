@@ -20,6 +20,7 @@ Partial Class fm_add_patient
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fm_add_patient))
         Me.BehaviorManager1 = New DevExpress.Utils.Behaviors.BehaviorManager(Me.components)
         Me.tb_phone = New DevExpress.XtraEditors.TextEdit()
         Me.tb_name = New DevExpress.XtraEditors.TextEdit()
@@ -49,7 +50,6 @@ Partial Class fm_add_patient
         Me.tb_blok_title = New System.Windows.Forms.ComboBox()
         Me.dt_register_date = New System.Windows.Forms.DateTimePicker()
         Me.dt_birthdate = New System.Windows.Forms.DateTimePicker()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.nu_house_price = New System.Windows.Forms.NumericUpDown()
         Me.nu_last_part = New System.Windows.Forms.NumericUpDown()
         Me.nu_first_part = New System.Windows.Forms.NumericUpDown()
@@ -92,6 +92,8 @@ Partial Class fm_add_patient
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_phone.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -377,7 +379,7 @@ Partial Class fm_add_patient
         Me.ProgressPanel1.BarAnimationElementThickness = 2
         Me.ProgressPanel1.Caption = "يتم الحفظ "
         Me.ProgressPanel1.Description = ""
-        Me.ProgressPanel1.Location = New System.Drawing.Point(-24, 18)
+        Me.ProgressPanel1.Location = New System.Drawing.Point(3, 18)
         Me.ProgressPanel1.Name = "ProgressPanel1"
         Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
@@ -477,19 +479,6 @@ Partial Class fm_add_patient
         Me.dt_birthdate.TabIndex = 228
         Me.dt_birthdate.Value = New Date(2020, 6, 23, 0, 9, 0, 0)
         Me.dt_birthdate.Visible = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(5, 75)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(92, 30)
-        Me.Button1.TabIndex = 265
-        Me.Button1.Text = "عرض الارشيف"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'nu_house_price
         '
@@ -683,13 +672,14 @@ Partial Class fm_add_patient
         '
         'GroupControl6
         '
-        Me.GroupControl6.Controls.Add(Me.Button1)
+        Me.GroupControl6.Controls.Add(Me.SimpleButton2)
+        Me.GroupControl6.Controls.Add(Me.SimpleButton1)
         Me.GroupControl6.Controls.Add(Me.PictureBox5)
         Me.GroupControl6.Controls.Add(Me.PictureBox2)
         Me.GroupControl6.Controls.Add(Me.Label4)
-        Me.GroupControl6.Location = New System.Drawing.Point(6, 553)
+        Me.GroupControl6.Location = New System.Drawing.Point(6, 506)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(102, 115)
+        Me.GroupControl6.Size = New System.Drawing.Size(102, 169)
         Me.GroupControl6.TabIndex = 259
         '
         'PictureBox5
@@ -746,7 +736,7 @@ Partial Class fm_add_patient
         '
         Me.GroupControl3.Controls.Add(Me.PictureBox4)
         Me.GroupControl3.Controls.Add(Me.Label6)
-        Me.GroupControl3.Location = New System.Drawing.Point(4, 229)
+        Me.GroupControl3.Location = New System.Drawing.Point(4, 223)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl3.TabIndex = 261
@@ -792,7 +782,7 @@ Partial Class fm_add_patient
         '
         Me.GroupControl11.Controls.Add(Me.PictureBox7)
         Me.GroupControl11.Controls.Add(Me.Label8)
-        Me.GroupControl11.Location = New System.Drawing.Point(4, 436)
+        Me.GroupControl11.Location = New System.Drawing.Point(4, 412)
         Me.GroupControl11.Name = "GroupControl11"
         Me.GroupControl11.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl11.TabIndex = 263
@@ -822,7 +812,7 @@ Partial Class fm_add_patient
         '
         Me.GroupControl10.Controls.Add(Me.PictureBox6)
         Me.GroupControl10.Controls.Add(Me.Label7)
-        Me.GroupControl10.Location = New System.Drawing.Point(4, 334)
+        Me.GroupControl10.Location = New System.Drawing.Point(4, 318)
         Me.GroupControl10.Name = "GroupControl10"
         Me.GroupControl10.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl10.TabIndex = 262
@@ -955,6 +945,24 @@ Partial Class fm_add_patient
         Me.GroupControl9.TabIndex = 272
         Me.GroupControl9.Text = "معلومات الدار"
         '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(5, 72)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(92, 42)
+        Me.SimpleButton1.TabIndex = 267
+        Me.SimpleButton1.Text = "خارطة"
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(5, 120)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(92, 42)
+        Me.SimpleButton2.TabIndex = 268
+        Me.SimpleButton2.Text = "الارشيف"
+        '
         'fm_add_patient
         '
         Me.Appearance.BackColor = System.Drawing.Color.LightSteelBlue
@@ -1065,7 +1073,6 @@ Partial Class fm_add_patient
     Friend WithEvents RibbonPage3 As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents tb_note As System.Windows.Forms.TextBox
     Friend WithEvents nu_blok_num As System.Windows.Forms.NumericUpDown
     Friend WithEvents tb_blok_title As System.Windows.Forms.ComboBox
@@ -1104,4 +1111,6 @@ Partial Class fm_add_patient
     Friend WithEvents GroupControl11 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
 End Class

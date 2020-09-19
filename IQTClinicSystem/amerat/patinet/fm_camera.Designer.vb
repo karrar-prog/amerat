@@ -162,7 +162,7 @@ Partial Class fm_camera
         Me.tb_type.Items.AddRange(New Object() {"فيشة", "عقد", "هوية", "بطاقة سكن", "بطاقة التموينية", "مستمسكات اخرى"})
         Me.tb_type.Location = New System.Drawing.Point(14, 172)
         Me.tb_type.Name = "tb_type"
-        Me.tb_type.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.tb_type.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.tb_type.Size = New System.Drawing.Size(194, 27)
         Me.tb_type.TabIndex = 269
         '

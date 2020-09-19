@@ -1,4 +1,5 @@
 ﻿Imports DevExpress.LookAndFeel
+Imports System.IO
 
 Public Class fm_setting
 
@@ -93,5 +94,62 @@ Public Class fm_setting
     Private Sub tb_amount2_EditValueChanged(sender As Object, e As EventArgs) Handles tb_amount2.EditValueChanged
         tb_amount2.BackColor = Color.White
 
+    End Sub
+
+    Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
+
+        Dim OpenFileDialog1 As New OpenFileDialog
+
+
+
+
+
+
+        OpenFileDialog1.Title = "Please select a image"
+        OpenFileDialog1.FileName = ""
+        OpenFileDialog1.InitialDirectory = "C:\"
+        OpenFileDialog1.Filter = "All files|*.*|png|*.png|jpg|*.jpg"
+        Dim path As String
+
+
+
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            path = OpenFileDialog1.FileName
+
+            If path.Trim <> "" Then
+                Dim new_path = images_path & "\maps"
+                If (Not System.IO.Directory.Exists(new_path)) Then
+                    System.IO.Directory.CreateDirectory(new_path)
+                End If
+
+                Dim new_file_path = new_path & "\" & "map" & generate_image_id() & ".png "
+
+                If Not System.IO.File.Exists(new_file_path) = True Then
+                    File.Copy(path, new_file_path, True)
+                End If
+
+            Else
+                MessageBox.Show("لم تقم باختيار صورة")
+            End If
+
+        End If
+
+
+
+    End Sub
+
+    Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles SimpleButton4.Click
+        Try
+            Dim new_path = images_path & "\maps"
+            If (Not System.IO.Directory.Exists(new_path)) Then
+                System.IO.Directory.CreateDirectory(new_path)
+            End If
+
+            Process.Start("explorer.exe", new_path)
+
+
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class
