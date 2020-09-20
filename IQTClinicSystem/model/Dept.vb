@@ -12,6 +12,7 @@ Public Class Dept
     Public user_did_id As Integer
     Public create_at As String
     Public payment_date As String
+    Public arrive_date As String
     Public status As String
     Public f1 As String
     Public f2 As String
@@ -43,6 +44,7 @@ Public Class Dept
                 Me.user_did_id = Convert.ToInt32((ds.Tables(0).Rows(0).Item("user_did_id").ToString))
                 Me.create_at = (ds.Tables(0).Rows(0).Item("create_at").ToString)
                 Me.payment_date = (ds.Tables(0).Rows(0).Item("payment_date").ToString)
+                Me.arrive_date = (ds.Tables(0).Rows(0).Item("arrive_date").ToString)
                 Me.status = (ds.Tables(0).Rows(0).Item("status").ToString)
                 Me.f1 = (ds.Tables(0).Rows(0).Item("f1").ToString)
                 Me.f2 = (ds.Tables(0).Rows(0).Item("f2").ToString)
@@ -101,6 +103,7 @@ Public Class Dept
                     type,      
                     create_at,      
                     payment_date,      
+                    arrive_date,      
                     user_did_id,           
                     status,      
                     f1 ,
@@ -120,6 +123,7 @@ Public Class Dept
                     @type,      
                     @create_at,      
                     @payment_date,      
+                    @arrive_date,      
                     @user_did_id,           
                     @status,      
                     @f1 ,
@@ -141,6 +145,7 @@ Public Class Dept
             SQLCommand.Parameters.Add("@user_did_id", MySqlDbType.Int32).Value = Me.user_did_id
             SQLCommand.Parameters.Add("@create_at", MySqlDbType.String).Value = Me.create_at
             SQLCommand.Parameters.Add("@payment_date", MySqlDbType.String).Value = Me.payment_date
+            SQLCommand.Parameters.Add("@arrive_date", MySqlDbType.String).Value = Me.arrive_date
             SQLCommand.Parameters.Add("@f1", MySqlDbType.String).Value = Me.f1
             SQLCommand.Parameters.Add("@f2", MySqlDbType.String).Value = Me.f2
             SQLCommand.Parameters.Add("@f3", MySqlDbType.String).Value = Me.f3
@@ -148,6 +153,7 @@ Public Class Dept
             SQLCommand.Parameters.Add("@f5", MySqlDbType.String).Value = Me.f5
             SQLCommand.ExecuteNonQuery()
             conn.Close()
+            Return True
 
 
 
@@ -250,6 +256,61 @@ where id = @id
 
             Dim content = "تم التسديد" & "  " & Me.user_id
             new_event_opened(e_edit, content)
+
+
+
+
+
+            conn.Close()
+
+            Return True
+
+        Catch ex As Exception
+            conn.Close()
+            MessageBox.Show(ex.Message)
+            Return False
+        End Try
+
+
+
+
+    End Function
+    Public Function update() As Boolean
+
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+1:
+        Try
+            conn.Open()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+
+            End If
+        End Try
+
+        Try
+
+
+            ' غير مكتمله
+            Dim sql = <sql>
+              update dept set
+                    arrive_amount = @arrive_amount , arrive_date = @arrive_date
+where id = @id
+                        </sql>
+
+            Dim SQLCommand As New MySqlCommand(sql.Value, conn)
+
+            SQLCommand.Parameters.Add("@id", MySqlDbType.Int32).Value = Me.id
+            SQLCommand.Parameters.Add("@arrive_amount", MySqlDbType.Int32).Value = Me.arrive_amount
+            SQLCommand.Parameters.Add("@arrive_date", MySqlDbType.String).Value = Me.arrive_date
+
+            SQLCommand.ExecuteNonQuery()
+
+
+            'Dim content = "تم التسديد" & "  " & Me.user_id
+            'new_event_opened(e_edit, content)
 
 
 

@@ -71,13 +71,14 @@ Public Class Queue
                 Me.f2 = ds.Tables(0).Rows(0).Item("f2").ToString
 
             Else
+                Me.id = -1
                 conn.Close()
-                MessageBox.Show("there is no queue in this id")
+                MessageBox.Show("لاتوجد فيشة بهذا الباركود")
                 Exit Sub
             End If
         Catch ex As Exception
             conn.Close()
-            MsgBox("failed to get patient" + ex.Message)
+            MsgBox("failed to get " + ex.Message)
             Exit Sub
         End Try
         conn.Close()

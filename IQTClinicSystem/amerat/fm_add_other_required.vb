@@ -525,13 +525,13 @@ Public Class fm_add_other_required
         f.final_price = tb_all_dept.Text
 
 
-        f.user_dar = " ( " & p.f3 & " ) "
-        f.user_block = " ( " & p.f1 & " ) "
+        f.user_dar = " ( H." & p.f3 & " ) "
+        f.user_block = " ( " & p.f1 & "." & p.f2 & " )"
         f.remaind = p.tb_l_5
         f.arrive = p.tb_2
         f.user_name = " ( " & tb_name.Text & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
         f.contract_date = p.register_date
-        f.user_block_number = " ( " & p.f2 & " ) "
+        f.user_block_number = ""
         f.user_id_number = " ( " & p.f6 & " ) "
         f.dar_area = " ( " & p.ref_by & " ) "
         f.item2 = p.item2

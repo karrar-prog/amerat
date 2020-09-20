@@ -7,7 +7,7 @@
     <Item4 Ref="5" Visible="false" Description="Parameter1" Name="i4" />
   </Parameters>
   <CalculatedFields>
-    <Item1 Ref="6" Name="calculatedField1" Expression="[blok_title] + [blok_number] + '/' + [dar_number]" DataMember="t_queue" />
+    <Item1 Ref="6" Name="calculatedField1" Expression="[blok_title] + [blok_number] + '.' + [dar_number]" DataMember="t_queue" />
     <Item2 Ref="7" Name="now_time" DataMember="t_queue" />
   </CalculatedFields>
   <Bands>

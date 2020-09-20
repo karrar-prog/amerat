@@ -68,6 +68,8 @@ Partial Class fm_add_patient
         Me.GroupControl5 = New DevExpress.XtraEditors.GroupControl()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -92,8 +94,11 @@ Partial Class fm_add_patient
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
+        Me.tb_f9 = New System.Windows.Forms.ComboBox()
+        Me.LabelControl13 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl19 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl21 = New DevExpress.XtraEditors.LabelControl()
+        Me.tb_f10 = New DevExpress.XtraEditors.TextEdit()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_phone.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,6 +145,7 @@ Partial Class fm_add_patient
         CType(Me.cb_plan.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl9.SuspendLayout()
+        CType(Me.tb_f10.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tb_phone
@@ -195,7 +201,7 @@ Partial Class fm_add_patient
         Me.LabelControl3.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl3.Appearance.Options.UseBackColor = True
         Me.LabelControl3.Appearance.Options.UseFont = True
-        Me.LabelControl3.Location = New System.Drawing.Point(255, 29)
+        Me.LabelControl3.Location = New System.Drawing.Point(239, 40)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(31, 24)
         Me.LabelControl3.TabIndex = 215
@@ -205,7 +211,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl4.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl4.Appearance.Options.UseFont = True
-        Me.LabelControl4.Location = New System.Drawing.Point(477, 541)
+        Me.LabelControl4.Location = New System.Drawing.Point(475, 498)
         Me.LabelControl4.Name = "LabelControl4"
         Me.LabelControl4.Size = New System.Drawing.Size(82, 21)
         Me.LabelControl4.TabIndex = 216
@@ -250,7 +256,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl10.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl10.Appearance.Options.UseFont = True
-        Me.LabelControl10.Location = New System.Drawing.Point(475, 167)
+        Me.LabelControl10.Location = New System.Drawing.Point(475, 225)
         Me.LabelControl10.Name = "LabelControl10"
         Me.LabelControl10.Size = New System.Drawing.Size(57, 24)
         Me.LabelControl10.TabIndex = 227
@@ -259,7 +265,7 @@ Partial Class fm_add_patient
         'tb_ref_by
         '
         Me.tb_ref_by.EnterMoveNextControl = True
-        Me.tb_ref_by.Location = New System.Drawing.Point(326, 159)
+        Me.tb_ref_by.Location = New System.Drawing.Point(285, 217)
         Me.tb_ref_by.Name = "tb_ref_by"
         Me.tb_ref_by.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_ref_by.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -268,14 +274,14 @@ Partial Class fm_add_patient
         Me.tb_ref_by.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.tb_ref_by.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
         Me.tb_ref_by.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_ref_by.Size = New System.Drawing.Size(143, 30)
+        Me.tb_ref_by.Size = New System.Drawing.Size(185, 30)
         Me.tb_ref_by.TabIndex = 12
         '
         'LabelControl11
         '
         Me.LabelControl11.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl11.Appearance.Options.UseFont = True
-        Me.LabelControl11.Location = New System.Drawing.Point(485, 167)
+        Me.LabelControl11.Location = New System.Drawing.Point(485, 225)
         Me.LabelControl11.Name = "LabelControl11"
         Me.LabelControl11.Size = New System.Drawing.Size(0, 24)
         Me.LabelControl11.TabIndex = 229
@@ -316,7 +322,7 @@ Partial Class fm_add_patient
         '
         'GroupControl1
         '
-        Me.GroupControl1.Appearance.BackColor = System.Drawing.Color.AntiqueWhite
+        Me.GroupControl1.Appearance.BackColor = System.Drawing.Color.DarkSeaGreen
         Me.GroupControl1.Appearance.Options.UseBackColor = True
         Me.GroupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.GroupControl1.Controls.Add(Me.LabelControl12)
@@ -389,13 +395,13 @@ Partial Class fm_add_patient
         'tb_f8
         '
         Me.tb_f8.EnterMoveNextControl = True
-        Me.tb_f8.Location = New System.Drawing.Point(48, 158)
+        Me.tb_f8.Location = New System.Drawing.Point(48, 217)
         Me.tb_f8.Name = "tb_f8"
         Me.tb_f8.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_f8.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_f8.Properties.Appearance.Options.UseFont = True
         Me.tb_f8.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_f8.Size = New System.Drawing.Size(186, 30)
+        Me.tb_f8.Size = New System.Drawing.Size(158, 30)
         Me.tb_f8.TabIndex = 5
         '
         'Label3
@@ -403,7 +409,7 @@ Partial Class fm_add_patient
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(471, 239)
+        Me.Label3.Location = New System.Drawing.Point(475, 277)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(111, 21)
         Me.Label3.TabIndex = 268
@@ -413,7 +419,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl22.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl22.Appearance.Options.UseFont = True
-        Me.LabelControl22.Location = New System.Drawing.Point(146, 29)
+        Me.LabelControl22.Location = New System.Drawing.Point(346, 40)
         Me.LabelControl22.Name = "LabelControl22"
         Me.LabelControl22.Size = New System.Drawing.Size(21, 24)
         Me.LabelControl22.TabIndex = 256
@@ -422,11 +428,11 @@ Partial Class fm_add_patient
         'num_home_num
         '
         Me.num_home_num.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.num_home_num.Location = New System.Drawing.Point(113, 57)
+        Me.num_home_num.Location = New System.Drawing.Point(319, 65)
         Me.num_home_num.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.num_home_num.Name = "num_home_num"
         Me.num_home_num.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.num_home_num.Size = New System.Drawing.Size(100, 32)
+        Me.num_home_num.Size = New System.Drawing.Size(87, 32)
         Me.num_home_num.TabIndex = 9
         Me.num_home_num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.num_home_num.Value = New Decimal(New Integer() {1, 0, 0, 0})
@@ -435,11 +441,11 @@ Partial Class fm_add_patient
         '
         Me.nu_blok_num.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.nu_blok_num.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nu_blok_num.Location = New System.Drawing.Point(223, 57)
+        Me.nu_blok_num.Location = New System.Drawing.Point(223, 65)
         Me.nu_blok_num.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
         Me.nu_blok_num.Name = "nu_blok_num"
         Me.nu_blok_num.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.nu_blok_num.Size = New System.Drawing.Size(100, 32)
+        Me.nu_blok_num.Size = New System.Drawing.Size(87, 32)
         Me.nu_blok_num.TabIndex = 8
         Me.nu_blok_num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.nu_blok_num.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left
@@ -451,7 +457,7 @@ Partial Class fm_add_patient
         Me.tb_blok_title.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_blok_title.FormattingEnabled = True
         Me.tb_blok_title.Items.AddRange(New Object() {"A", "B", "C", "A VIP", "A VVIP"})
-        Me.tb_blok_title.Location = New System.Drawing.Point(333, 57)
+        Me.tb_blok_title.Location = New System.Drawing.Point(123, 65)
         Me.tb_blok_title.Name = "tb_blok_title"
         Me.tb_blok_title.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.tb_blok_title.Size = New System.Drawing.Size(100, 32)
@@ -461,10 +467,11 @@ Partial Class fm_add_patient
         '
         Me.dt_register_date.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dt_register_date.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dt_register_date.Location = New System.Drawing.Point(50, 536)
+        Me.dt_register_date.Location = New System.Drawing.Point(285, 493)
         Me.dt_register_date.Name = "dt_register_date"
+        Me.dt_register_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.dt_register_date.RightToLeftLayout = True
-        Me.dt_register_date.Size = New System.Drawing.Size(421, 36)
+        Me.dt_register_date.Size = New System.Drawing.Size(183, 36)
         Me.dt_register_date.TabIndex = 229
         Me.dt_register_date.Visible = False
         '
@@ -484,7 +491,7 @@ Partial Class fm_add_patient
         '
         Me.nu_house_price.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_house_price.Increment = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.nu_house_price.Location = New System.Drawing.Point(48, 229)
+        Me.nu_house_price.Location = New System.Drawing.Point(48, 267)
         Me.nu_house_price.Maximum = New Decimal(New Integer() {1215752192, 23, 0, 0})
         Me.nu_house_price.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nu_house_price.Name = "nu_house_price"
@@ -499,11 +506,11 @@ Partial Class fm_add_patient
         '
         Me.nu_last_part.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_last_part.Increment = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.nu_last_part.Location = New System.Drawing.Point(50, 341)
+        Me.nu_last_part.Location = New System.Drawing.Point(48, 379)
         Me.nu_last_part.Maximum = New Decimal(New Integer() {1215752192, 23, 0, 0})
         Me.nu_last_part.Name = "nu_last_part"
         Me.nu_last_part.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.nu_last_part.Size = New System.Drawing.Size(306, 39)
+        Me.nu_last_part.Size = New System.Drawing.Size(308, 39)
         Me.nu_last_part.TabIndex = 280
         Me.nu_last_part.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.nu_last_part.ThousandsSeparator = True
@@ -513,7 +520,7 @@ Partial Class fm_add_patient
         '
         Me.nu_first_part.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_first_part.Increment = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.nu_first_part.Location = New System.Drawing.Point(49, 285)
+        Me.nu_first_part.Location = New System.Drawing.Point(49, 323)
         Me.nu_first_part.Maximum = New Decimal(New Integer() {1215752192, 23, 0, 0})
         Me.nu_first_part.Name = "nu_first_part"
         Me.nu_first_part.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -527,7 +534,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl17.Appearance.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl17.Appearance.Options.UseFont = True
-        Me.LabelControl17.Location = New System.Drawing.Point(366, 348)
+        Me.LabelControl17.Location = New System.Drawing.Point(366, 386)
         Me.LabelControl17.Name = "LabelControl17"
         Me.LabelControl17.Size = New System.Drawing.Size(25, 26)
         Me.LabelControl17.TabIndex = 278
@@ -536,7 +543,7 @@ Partial Class fm_add_patient
         'nu_last_present
         '
         Me.nu_last_present.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nu_last_present.Location = New System.Drawing.Point(394, 341)
+        Me.nu_last_present.Location = New System.Drawing.Point(393, 379)
         Me.nu_last_present.Name = "nu_last_present"
         Me.nu_last_present.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.nu_last_present.Size = New System.Drawing.Size(77, 39)
@@ -548,7 +555,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl18.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl18.Appearance.Options.UseFont = True
-        Me.LabelControl18.Location = New System.Drawing.Point(474, 351)
+        Me.LabelControl18.Location = New System.Drawing.Point(475, 389)
         Me.LabelControl18.Name = "LabelControl18"
         Me.LabelControl18.Size = New System.Drawing.Size(72, 21)
         Me.LabelControl18.TabIndex = 275
@@ -558,7 +565,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl16.Appearance.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl16.Appearance.Options.UseFont = True
-        Me.LabelControl16.Location = New System.Drawing.Point(364, 290)
+        Me.LabelControl16.Location = New System.Drawing.Point(364, 328)
         Me.LabelControl16.Name = "LabelControl16"
         Me.LabelControl16.Size = New System.Drawing.Size(25, 26)
         Me.LabelControl16.TabIndex = 274
@@ -567,7 +574,7 @@ Partial Class fm_add_patient
         'nu_first_present
         '
         Me.nu_first_present.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nu_first_present.Location = New System.Drawing.Point(392, 285)
+        Me.nu_first_present.Location = New System.Drawing.Point(393, 323)
         Me.nu_first_present.Name = "nu_first_present"
         Me.nu_first_present.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.nu_first_present.Size = New System.Drawing.Size(77, 39)
@@ -579,7 +586,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl15.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl15.Appearance.Options.UseFont = True
-        Me.LabelControl15.Location = New System.Drawing.Point(472, 295)
+        Me.LabelControl15.Location = New System.Drawing.Point(475, 333)
         Me.LabelControl15.Name = "LabelControl15"
         Me.LabelControl15.Size = New System.Drawing.Size(104, 21)
         Me.LabelControl15.TabIndex = 271
@@ -590,7 +597,7 @@ Partial Class fm_add_patient
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(472, 416)
+        Me.Label5.Location = New System.Drawing.Point(475, 454)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 21)
         Me.Label5.TabIndex = 267
@@ -677,10 +684,28 @@ Partial Class fm_add_patient
         Me.GroupControl6.Controls.Add(Me.PictureBox5)
         Me.GroupControl6.Controls.Add(Me.PictureBox2)
         Me.GroupControl6.Controls.Add(Me.Label4)
-        Me.GroupControl6.Location = New System.Drawing.Point(6, 506)
+        Me.GroupControl6.Location = New System.Drawing.Point(4, 506)
         Me.GroupControl6.Name = "GroupControl6"
         Me.GroupControl6.Size = New System.Drawing.Size(102, 169)
         Me.GroupControl6.TabIndex = 259
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(5, 120)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(92, 42)
+        Me.SimpleButton2.TabIndex = 268
+        Me.SimpleButton2.Text = "الارشيف"
+        '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(5, 72)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(92, 42)
+        Me.SimpleButton1.TabIndex = 267
+        Me.SimpleButton1.Text = "خارطة"
         '
         'PictureBox5
         '
@@ -854,6 +879,11 @@ Partial Class fm_add_patient
         Me.GroupControl2.Appearance.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.GroupControl2.Appearance.Options.UseBackColor = True
         Me.GroupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.GroupControl2.Controls.Add(Me.LabelControl21)
+        Me.GroupControl2.Controls.Add(Me.tb_f10)
+        Me.GroupControl2.Controls.Add(Me.LabelControl19)
+        Me.GroupControl2.Controls.Add(Me.LabelControl13)
+        Me.GroupControl2.Controls.Add(Me.tb_f9)
         Me.GroupControl2.Controls.Add(Me.cb_plan)
         Me.GroupControl2.Controls.Add(Me.LabelControl8)
         Me.GroupControl2.Controls.Add(Me.LabelControl5)
@@ -891,7 +921,7 @@ Partial Class fm_add_patient
         '
         Me.cb_plan.EditValue = "حجز"
         Me.cb_plan.EnterMoveNextControl = True
-        Me.cb_plan.Location = New System.Drawing.Point(48, 407)
+        Me.cb_plan.Location = New System.Drawing.Point(285, 445)
         Me.cb_plan.Name = "cb_plan"
         Me.cb_plan.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.cb_plan.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -899,7 +929,7 @@ Partial Class fm_add_patient
         Me.cb_plan.Properties.NullValuePrompt = "الاسم"
         Me.cb_plan.Properties.ReadOnly = True
         Me.cb_plan.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.cb_plan.Size = New System.Drawing.Size(420, 32)
+        Me.cb_plan.Size = New System.Drawing.Size(183, 32)
         Me.cb_plan.TabIndex = 253
         '
         'LabelControl8
@@ -908,7 +938,7 @@ Partial Class fm_add_patient
         Me.LabelControl8.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl8.Appearance.Options.UseBackColor = True
         Me.LabelControl8.Appearance.Options.UseFont = True
-        Me.LabelControl8.Location = New System.Drawing.Point(373, 29)
+        Me.LabelControl8.Location = New System.Drawing.Point(158, 40)
         Me.LabelControl8.Name = "LabelControl8"
         Me.LabelControl8.Size = New System.Drawing.Size(21, 24)
         Me.LabelControl8.TabIndex = 283
@@ -918,7 +948,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl5.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl5.Appearance.Options.UseFont = True
-        Me.LabelControl5.Location = New System.Drawing.Point(240, 162)
+        Me.LabelControl5.Location = New System.Drawing.Point(212, 220)
         Me.LabelControl5.Name = "LabelControl5"
         Me.LabelControl5.Size = New System.Drawing.Size(64, 24)
         Me.LabelControl5.TabIndex = 282
@@ -945,23 +975,59 @@ Partial Class fm_add_patient
         Me.GroupControl9.TabIndex = 272
         Me.GroupControl9.Text = "معلومات الدار"
         '
-        'SimpleButton1
+        'tb_f9
         '
-        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(5, 72)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(92, 42)
-        Me.SimpleButton1.TabIndex = 267
-        Me.SimpleButton1.Text = "خارطة"
+        Me.tb_f9.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.tb_f9.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_f9.FormattingEnabled = True
+        Me.tb_f9.Items.AddRange(New Object() {"القطاع الاول", "القطاع الثاني", "القطاع الثالث", "القطاع الرابع", "القطاع الخامس", "القطاع السادس"})
+        Me.tb_f9.Location = New System.Drawing.Point(285, 167)
+        Me.tb_f9.Name = "tb_f9"
+        Me.tb_f9.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.tb_f9.Size = New System.Drawing.Size(185, 32)
+        Me.tb_f9.TabIndex = 284
         '
-        'SimpleButton2
+        'LabelControl13
         '
-        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(5, 120)
-        Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(92, 42)
-        Me.SimpleButton2.TabIndex = 268
-        Me.SimpleButton2.Text = "الارشيف"
+        Me.LabelControl13.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl13.Appearance.Options.UseFont = True
+        Me.LabelControl13.Location = New System.Drawing.Point(312, 74)
+        Me.LabelControl13.Name = "LabelControl13"
+        Me.LabelControl13.Size = New System.Drawing.Size(5, 24)
+        Me.LabelControl13.TabIndex = 285
+        Me.LabelControl13.Text = "."
+        '
+        'LabelControl19
+        '
+        Me.LabelControl19.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl19.Appearance.Options.UseFont = True
+        Me.LabelControl19.Location = New System.Drawing.Point(476, 170)
+        Me.LabelControl19.Name = "LabelControl19"
+        Me.LabelControl19.Size = New System.Drawing.Size(44, 24)
+        Me.LabelControl19.TabIndex = 286
+        Me.LabelControl19.Text = "القطاع"
+        '
+        'LabelControl21
+        '
+        Me.LabelControl21.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl21.Appearance.Options.UseFont = True
+        Me.LabelControl21.Location = New System.Drawing.Point(212, 172)
+        Me.LabelControl21.Name = "LabelControl21"
+        Me.LabelControl21.Size = New System.Drawing.Size(44, 24)
+        Me.LabelControl21.TabIndex = 288
+        Me.LabelControl21.Text = "الموقع"
+        '
+        'tb_f10
+        '
+        Me.tb_f10.EnterMoveNextControl = True
+        Me.tb_f10.Location = New System.Drawing.Point(48, 169)
+        Me.tb_f10.Name = "tb_f10"
+        Me.tb_f10.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.tb_f10.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_f10.Properties.Appearance.Options.UseFont = True
+        Me.tb_f10.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.tb_f10.Size = New System.Drawing.Size(158, 30)
+        Me.tb_f10.TabIndex = 287
         '
         'fm_add_patient
         '
@@ -1036,6 +1102,7 @@ Partial Class fm_add_patient
         CType(Me.cb_plan.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl9.ResumeLayout(False)
+        CType(Me.tb_f10.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1113,4 +1180,9 @@ Partial Class fm_add_patient
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents LabelControl21 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents tb_f10 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl19 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents LabelControl13 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents tb_f9 As System.Windows.Forms.ComboBox
 End Class

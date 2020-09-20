@@ -110,7 +110,9 @@ Public Class fm_add_patient
         patient.f6 = tb_f6.Text.Trim
         patient.f7 = tb_f7.Text.Trim
         patient.f8 = tb_f8.Text.Trim
-        patient.f10 = tb_note.Text.Trim
+        patient.f9 = tb_f9.Text.Trim
+        patient.f10 = tb_f10.Text.Trim
+
         patient.first_part = nu_first_part.Value
         patient.last_part = nu_last_part.Value
         patient.first_present = __(nu_first_present.Value.ToString)
@@ -156,7 +158,9 @@ Public Class fm_add_patient
         patient.f6 = tb_f6.Text.Trim
         patient.f7 = tb_f7.Text.Trim
         patient.f8 = tb_f8.Text.Trim
-        patient.f10 = tb_note.Text.Trim
+        patient.f9 = tb_f9.Text.Trim
+        patient.f10 = tb_f10.Text.Trim
+
         patient.first_part = nu_first_part.Value
         patient.last_part = nu_last_part.Value
         patient.first_present = __(nu_first_present.Value.ToString)
@@ -312,13 +316,13 @@ Public Class fm_add_patient
             GroupControl6.Hide()
             GroupControl10.Hide()
             GroupControl3.Hide()
-            GroupControl1.Hide()
+            GroupControl11.Hide()
 
         Else
             GroupControl6.Show()
             GroupControl10.Show()
             GroupControl3.Show()
-            GroupControl1.Show()
+            GroupControl11.Show()
 
         End If
 
@@ -795,6 +799,11 @@ Public Class fm_add_patient
 
     End Sub
 
+    Private Sub nu_house_price_KeyUp(sender As Object, e As KeyEventArgs) Handles nu_house_price.KeyUp
+        cal_moneys()
+
+    End Sub
+
     Private Sub nu_house_price_ValueChanged(sender As Object, e As EventArgs) Handles nu_house_price.ValueChanged
         cal_moneys()
     End Sub
@@ -820,6 +829,8 @@ Public Class fm_add_patient
             tb_f6.Text = patient.f6
             tb_f7.Text = patient.f7
             tb_f8.Text = patient.f8
+            tb_f9.Text = patient.f9
+            tb_f10.Text = patient.f10
             cb_plan.Text = patient.is_token
             nu_blok_num.Value = __(patient.f2)
             nu_first_part.Value = patient.first_present

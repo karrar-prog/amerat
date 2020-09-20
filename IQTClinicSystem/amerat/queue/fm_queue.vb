@@ -76,15 +76,15 @@ Partial Public Class fm_queue
     Private Sub formatlist()
         lv_queue.View = View.Details
 
-        lv_queue.Columns.Add("رقم الدفعة", 100)
+        lv_queue.Columns.Add("رقم الدفعة", 0)
         lv_queue.Columns.Add("رقم العقد", 0)
-        lv_queue.Columns.Add("اسم الزبون", 250)
-        lv_queue.Columns.Add("المبلغ", 99)
+        lv_queue.Columns.Add("اسم الزبون", 300)
+        lv_queue.Columns.Add("المبلغ", 140)
         lv_queue.Columns.Add("تأريخ الارسال", 120)
         lv_queue.Columns.Add("الحالة", 120)
-        lv_queue.Columns.Add("ت", 0)
+        lv_queue.Columns.Add("تسلسل الفيشة", 100)
         lv_queue.Columns.Add("تأريخ الاستلام", 230)
-        lv_queue.Columns.Add("تسلسل الدفعة", 200)
+        lv_queue.Columns.Add("تسلسل الدفعة", 0)
         lv_queue.Columns.Add("", 200)
 
     End Sub
@@ -502,7 +502,16 @@ Partial Public Class fm_queue
     Private Sub feash_search()
 
         fm_fesha.tb_fesha_id.Text = tb_fesha_id.Text
-        fm_fesha.Show()
+        Dim fesha As New Queue(__(tb_fesha_id.Text))
+        If fesha.id = -1 Then
+           
+        Else
+            fm_fesha.fesha = fesha
+
+            fm_fesha.Show()
+
+        End If
+
 
     End Sub
 

@@ -315,6 +315,7 @@ Public Class Patient
             SQLCommand.Parameters.Add("@f8", MySqlDbType.String).Value = Me.f8
             SQLCommand.Parameters.Add("@f9", MySqlDbType.String).Value = Me.f9
             SQLCommand.Parameters.Add("@f10", MySqlDbType.String).Value = Me.f10
+
             SQLCommand.Parameters.Add("@deleted", MySqlDbType.String).Value = "0"
 
 
