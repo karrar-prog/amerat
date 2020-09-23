@@ -67,6 +67,7 @@ Public Class Patient
             Dim da As New MySqlDataAdapter(query, conn)
             da.Fill(ds)
             If ds.Tables(0).Rows.Count > 0 Then
+                Me.id = __(ds.Tables(0).Rows(0).Item("id").ToString)
                 Me.name = ds.Tables(0).Rows(0).Item("name").ToString
                 Me.code = ds.Tables(0).Rows(0).Item("code").ToString
 
@@ -129,6 +130,8 @@ Public Class Patient
 
 
             Else
+                Me.id = 0
+
                 conn.Close()
 
                 Exit Sub

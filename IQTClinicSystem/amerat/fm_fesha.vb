@@ -122,7 +122,7 @@
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
         If MessageBox.Show(tb_fesha_amount.EditValue.ToString & vbNewLine & tb_amount_text.Text, "هل استلمت المبلغ", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
             Dim p As New Patient(__(tb_patient_id.Text))
-            If __(tb1.Text) = 0 Then
+            If __(tb_dept_id.Text) = 0 Then
 
                 'يعني الدفعة الاولى
 
@@ -142,8 +142,9 @@
 
                     fesha.state = "إستلام"
                     fesha.recived_date = Date.Now.ToString
+
                     fesha.save()
-               
+
                 Else
                     MessageBox.Show("لم يتم الحفظ")
                 End If
@@ -166,9 +167,10 @@
                 Else
                     dept.arrive_amount = __(tb_fesha_amount.Text)
                     dept.arrive_date = Date.Now.ToString
-                    dept.update()
+                    dept.status = "إستلام"
+                    dept.f5 = tb_fesha_id.Text
 
-                    If dept.save Then
+                    If dept.update Then
 
                         Dim content = " تسديد قسط : " & p.name & dept.title & "للدار " & p.f1 & p.f2 & "." & p.f3
                         new_event2("تسديد دفعة", content, __(tb_fesha_amount.Text))

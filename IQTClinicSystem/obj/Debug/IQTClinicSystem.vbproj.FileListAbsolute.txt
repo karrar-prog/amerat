@@ -982,3 +982,4 @@ C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbp
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_devided.resources
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_call.resources
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_fesha.resources
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_show_details.resources

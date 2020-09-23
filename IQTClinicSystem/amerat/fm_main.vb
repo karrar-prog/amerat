@@ -278,7 +278,7 @@ Public Class fm_main
                 Dim backupStream As StreamWriter = backupProcess.StandardInput
                 Dim myStramreader As StreamReader = backupProcess.StandardOutput
 
-                backupStream.WriteLine("mysqldump -u root mol_db > mol_db_backup.sql")
+                backupStream.WriteLine("mysqldump -u root amerat_db > amerat_db_backup.sql")
                 backupStream.Close()
                 backupProcess.WaitForExit()
                 backupProcess.Close()
@@ -288,15 +288,15 @@ Public Class fm_main
                     If (Not System.IO.Directory.Exists(new_path)) Then
                         System.IO.Directory.CreateDirectory(new_path)
                     End If
-                    FileCopy("C:\wamp64\bin\mysql\mysql5.7.19\bin\mol_db_backup.sql", new_path & "\mol_db_backup" & Date.Now.ToShortDateString & ".sql")
+                    FileCopy("C:\wamp64\bin\mysql\mysql5.7.19\bin\amerat_db_backup.sql", new_path & "\amerat_db_backup" & Date.Now.ToShortDateString & ".sql")
                 Catch
                 End Try
 
-                SaveFileDialog1.FileName = "mol_db_backup in date " & Date.Now.ToShortDateString & ".sql"
+                SaveFileDialog1.FileName = "amerat_db_backup in date " & Date.Now.ToShortDateString & ".sql"
                 DBfile = SaveFileDialog1.FileName
                 SaveFileDialog1.Filter = "SQL file (*.sql)[sql *.sql|ALL files *.*]"
                 If SaveFileDialog1.ShowDialog = DialogResult.OK Then
-                    FileCopy("C:\wamp64\bin\mysql\mysql5.7.19\bin\mol_db_backup.sql", SaveFileDialog1.FileName)
+                    FileCopy("C:\wamp64\bin\mysql\mysql5.7.19\bin\amerat_db_backup.sql", SaveFileDialog1.FileName)
                 End If
 
             Catch ex As Exception
@@ -337,7 +337,7 @@ Public Class fm_main
                 Dim backupStream As StreamWriter = backupProcess.StandardInput
                 Dim myStramreader As StreamReader = backupProcess.StandardOutput
 
-                backupStream.WriteLine("mysqldump -u root mol_db > mol_db_backup.sql")
+                backupStream.WriteLine("mysqldump -u root amerat_db > amerat_db_backup.sql")
                 backupStream.Close()
                 backupProcess.WaitForExit()
                 backupProcess.Close()
@@ -345,7 +345,7 @@ Public Class fm_main
                 If (Not System.IO.Directory.Exists(new_path)) Then
                     System.IO.Directory.CreateDirectory(new_path)
                 End If
-                FileCopy("C:\wamp64\bin\mysql\mysql5.7.19\bin\mol_db_backup.sql", new_path & "\mol_db " & Date.Now.ToShortDateString & ".sql")
+                FileCopy("C:\wamp64\bin\mysql\mysql5.7.19\bin\amerat_db_backup.sql", new_path & "\amerat_db " & Date.Now.ToShortDateString & ".sql")
             Catch ex As Exception
 
             End Try
@@ -413,7 +413,7 @@ Public Class fm_main
                 backupProcess.Start()
                 Dim backupStream As StreamWriter = backupProcess.StandardInput
                 Dim myStramreader As StreamReader = backupProcess.StandardOutput
-                backupStream.WriteLine("mysqldump -u root mol_db > mol_db_backup.sql")
+                backupStream.WriteLine("mysqldump -u root amerat_db > amerat_db_backup.sql")
                 backupStream.Close()
                 backupProcess.WaitForExit()
                 backupProcess.Close()
@@ -547,7 +547,7 @@ Public Class fm_main
     End Sub
 
     Private Sub TileItem11_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem11.ItemClick
-        fm_add_other_required.Show()
+        fm_show_details.Show()
 
     End Sub
 

@@ -37,12 +37,12 @@ Public Class fm_show_patients
 
         lv_queue.View = View.Details
 
-        lv_queue.Columns.Add("رقم الزبون", 122)
-        lv_queue.Columns.Add("اسم الزبون", 200)
+        lv_queue.Columns.Add("رقم العقد", 122)
+        lv_queue.Columns.Add("اسم الزبون", 250)
         lv_queue.Columns.Add("هاتف", 150)
         lv_queue.Columns.Add("بلوك", 110)
         lv_queue.Columns.Add("رقم الدار", 110)
-        lv_queue.Columns.Add("المبلغ الكلي", 110)
+        lv_queue.Columns.Add("المبلغ الكلي", 200)
         lv_queue.Columns.Add("تأريخ الشراء", 150)
 
 
@@ -50,6 +50,85 @@ Public Class fm_show_patients
     End Sub
 
 
+    Public Sub search4()
+
+1:
+        Try
+            Dim s As String
+            If RadioButton2.Checked = True Then
+                If tb_f1.Text.Trim = "الكل" Or tb_f1.Text.Trim = "" Then
+                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3 limit " & num_limit.Value & ""
+                Else
+
+                    If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%'  and is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3  limit " & num_limit.Value & ""
+
+                    Else
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' and  and is_token like '%" & cb_plan.Text & "%'    f2 like '%" & tb_f2.Text & "%'   order by f2,f1,f3  limit " & num_limit.Value & ""
+
+                    End If
+
+                End If
+            Else
+                If tb_f1.Text.Trim = "الكل" Or tb_f1.Text.Trim = "" Then
+                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'   and is_token like '%" & cb_plan.Text & "%'   order by id desc limit " & num_limit.Value & ""
+                Else
+
+                    If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' order by id desc  limit " & num_limit.Value & ""
+
+                    Else
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' and  f2 like '%" & tb_f2.Text & "%'   order by id desc  limit " & num_limit.Value & ""
+
+                    End If
+
+                End If
+            End If
+
+
+            Dim DataSet = getdatat1(s)
+            GridControl1.DataSource = DataSet.Tables(0)
+
+            Dim dt As New DateTimePicker
+            Dim c As Integer
+
+            lv_queue.Items.Clear()
+
+            tb_count.Caption = DataSet.Tables(0).Rows.Count.ToString
+
+
+            If DataSet.Tables(0).Rows.Count > 0 Then
+
+                For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
+                    lv_queue.Items().Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("phone").ToString)
+
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString & DataSet.Tables(0).Rows(i).Item("f2").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f3").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("house_price").ToString)
+
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("register_date").ToString)
+
+                    If DataSet.Tables(0).Rows(i).Item("deleted").ToString = "1" Then
+                        lv_queue.Items(i).BackColor = Color.LightPink
+                    End If
+                    'lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                    '   dt.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("birthdate").ToString)
+
+                Next
+            End If
+        Catch ex As MySqlException
+            MessageBox.Show(ex.Message)
+            If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+
+            End If
+        End Try
+
+
+
+    End Sub
     Public Sub search()
 
 1:
@@ -87,6 +166,8 @@ Public Class fm_show_patients
 
 
             Dim DataSet = getdatat1(s)
+            GridControl1.DataSource = DataSet.Tables(0)
+
             Dim dt As New DateTimePicker
             Dim c As Integer
 
@@ -257,6 +338,40 @@ Public Class fm_show_patients
         End If
 
         Dim s As String = "select * from patient WHERE f3 like " & tb_id.Text & "  order by f2,f1,f3  limit " & num_limit.Value & ""
+
+        Dim DataSet = getdatat1(s)
+        Dim dt As New DateTimePicker
+        Dim c As Integer
+        tb_count.Caption = DataSet.Tables(0).Rows.Count.ToString
+
+        lv_queue.Items.Clear()
+        If DataSet.Tables(0).Rows.Count > 0 Then
+
+            For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
+                lv_queue.Items().Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("phone").ToString)
+
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString & DataSet.Tables(0).Rows(i).Item("f2").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f3").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("house_price").ToString)
+
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("register_date").ToString)
+
+                If DataSet.Tables(0).Rows(i).Item("deleted").ToString = "1" Then
+                    lv_queue.Items(i).BackColor = Color.LightPink
+                End If
+            Next
+        End If
+    End Sub
+    Private Sub search3()
+
+        If tb_patient_id.Text.Trim = "" Then
+            search()
+            Exit Sub
+        End If
+
+        Dim s As String = "select * from patient WHERE id = " & tb_patient_id.Text & "  order by f2,f1,f3  limit " & num_limit.Value & ""
 
         Dim DataSet = getdatat1(s)
         Dim dt As New DateTimePicker
@@ -561,5 +676,22 @@ Public Class fm_show_patients
 
 
         End If
+    End Sub
+
+    Private Sub tb_patient_id_EditValueChanged(sender As Object, e As EventArgs) Handles tb_patient_id.EditValueChanged
+
+    End Sub
+
+    Private Sub tb_patient_id_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_patient_id.KeyUp
+        If e.KeyCode = Keys.Enter Then
+            search3()
+            tb_patient_id.Text = ""
+
+        End If
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        search3()
+
     End Sub
 End Class

@@ -296,7 +296,7 @@ where id = @id
             ' غير مكتمله
             Dim sql = <sql>
               update dept set
-                    arrive_amount = @arrive_amount , arrive_date = @arrive_date
+                    arrive_amount = @arrive_amount , arrive_date = @arrive_date , status = @status , f5 = @f5
 where id = @id
                         </sql>
 
@@ -305,6 +305,8 @@ where id = @id
             SQLCommand.Parameters.Add("@id", MySqlDbType.Int32).Value = Me.id
             SQLCommand.Parameters.Add("@arrive_amount", MySqlDbType.Int32).Value = Me.arrive_amount
             SQLCommand.Parameters.Add("@arrive_date", MySqlDbType.String).Value = Me.arrive_date
+            SQLCommand.Parameters.Add("@status", MySqlDbType.String).Value = Me.status
+            SQLCommand.Parameters.Add("@f5", MySqlDbType.String).Value = Me.f5
 
             SQLCommand.ExecuteNonQuery()
 

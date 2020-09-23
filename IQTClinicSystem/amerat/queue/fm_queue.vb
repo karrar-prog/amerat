@@ -507,7 +507,7 @@ Partial Public Class fm_queue
            
         Else
             fm_fesha.fesha = fesha
-
+            fm_fesha.tb_dept_id.Text = fesha.dept_id.ToString
             fm_fesha.Show()
 
         End If

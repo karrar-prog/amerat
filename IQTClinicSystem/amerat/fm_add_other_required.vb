@@ -426,6 +426,8 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub تسديدToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تسديدToolStripMenuItem.Click
+        MessageBox.Show("سدد الدفعة من طباعة الفيشة")
+        Exit Sub
         'Dim c As Integer = 0
         'For i = 0 To lv_dept.SelectedItems.Count - 1
         '    c = c + __(lv_dept.SelectedItems.Item(i).SubItems(2).Text)
@@ -697,6 +699,8 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub تسديدجزءToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تسديدجزءToolStripMenuItem.Click
+        MessageBox.Show("سدد الدفعة من طباعة الفيشة")
+        Exit Sub
         If lv_dept.SelectedItems.Count = 1 Then
 
             fm_tasded_part.tb_id.Text = lv_dept.SelectedItems.Item(0).Text

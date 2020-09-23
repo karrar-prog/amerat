@@ -156,6 +156,12 @@
     <Compile Include="amerat\patinet\fm_devided.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="amerat\patinet\fm_show_details.Designer.vb">
+      <DependentUpon>fm_show_details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_show_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dataset\d_item.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -727,6 +733,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="amerat\patinet\fm_devided.resx">
       <DependentUpon>fm_devided.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\patinet\fm_show_details.resx">
+      <DependentUpon>fm_show_details.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\customer\fm_customer.resx">
       <DependentUpon>fm_customer.vb</DependentUpon>
