@@ -321,6 +321,8 @@ Partial Public Class ds_queue
 
         Private columnpatient_id As Global.System.Data.DataColumn
 
+        Private columnfesha_note As Global.System.Data.DataColumn
+
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
@@ -509,6 +511,14 @@ Partial Public Class ds_queue
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property fesha_noteColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfesha_note
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Browsable(False)> _
         Public ReadOnly Property Count() As Integer
@@ -564,9 +574,10 @@ Partial Public Class ds_queue
                     ByVal blok_title As String, _
                     ByVal dar_number As String, _
                     ByVal fesha_id As String, _
-                    ByVal patient_id As String) As t_queueRow
+                    ByVal patient_id As String, _
+                    ByVal fesha_note As String) As t_queueRow
             Dim rowt_queueRow As t_queueRow = CType(Me.NewRow, t_queueRow)
-            Dim columnValuesArray() As Object = New Object() {current_name, number, type, amount, _date, dept_id, fesha_amount, amount_text, recived_date, f1, f2, test_min, test_amount, phone, blok_number, blok_title, dar_number, fesha_id, patient_id}
+            Dim columnValuesArray() As Object = New Object() {current_name, number, type, amount, _date, dept_id, fesha_amount, amount_text, recived_date, f1, f2, test_min, test_amount, phone, blok_number, blok_title, dar_number, fesha_id, patient_id, fesha_note}
             rowt_queueRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowt_queueRow)
             Return rowt_queueRow
@@ -608,6 +619,7 @@ Partial Public Class ds_queue
             Me.columndar_number = MyBase.Columns("dar_number")
             Me.columnfesha_id = MyBase.Columns("fesha_id")
             Me.columnpatient_id = MyBase.Columns("patient_id")
+            Me.columnfesha_note = MyBase.Columns("fesha_note")
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -654,6 +666,8 @@ Partial Public Class ds_queue
             MyBase.Columns.Add(Me.columnfesha_id)
             Me.columnpatient_id = New Global.System.Data.DataColumn("patient_id", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpatient_id)
+            Me.columnfesha_note = New Global.System.Data.DataColumn("fesha_note", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfesha_note)
             Me.Locale = New Global.System.Globalization.CultureInfo("ar-IQ")
         End Sub
 
@@ -1086,6 +1100,21 @@ Partial Public Class ds_queue
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property fesha_note() As String
+            Get
+                Try
+                    Return CType(Me(Me.tablet_queue.fesha_noteColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fesha_note' in table 't_queue' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tablet_queue.fesha_noteColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Function Iscurrent_nameNull() As Boolean
             Return Me.IsNull(Me.tablet_queue.current_nameColumn)
         End Function
@@ -1310,6 +1339,18 @@ Partial Public Class ds_queue
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub Setpatient_idNull()
             Me(Me.tablet_queue.patient_idColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function Isfesha_noteNull() As Boolean
+            Return Me.IsNull(Me.tablet_queue.fesha_noteColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub Setfesha_noteNull()
+            Me(Me.tablet_queue.fesha_noteColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     

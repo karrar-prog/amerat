@@ -539,12 +539,6 @@
     <Compile Include="old\report\hospital_enter\fm_x_report_h_enter.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="old\report\hospital_enter\x_report_hospital_enter.Designer.vb">
-      <DependentUpon>x_report_hospital_enter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="old\report\hospital_enter\x_report_hospital_enter.vb">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="old\report\medical_report\ar_m_report.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -669,12 +663,6 @@
     <Compile Include="amerat\queue\fm_wait.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="amerat\queue\report\CrystalReport1.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="amerat\queue\report\ds_queue.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -682,30 +670,6 @@
     </Compile>
     <Compile Include="amerat\queue\report\ds_queue.vb">
       <DependentUpon>ds_queue.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="amerat\queue\report\fm_re_queue.Designer.vb">
-      <DependentUpon>fm_re_queue.vb</DependentUpon>
-    </Compile>
-    <Compile Include="amerat\queue\report\fm_re_queue.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="amerat\queue\report\fm_win_report.Designer.vb">
-      <DependentUpon>fm_win_report.vb</DependentUpon>
-    </Compile>
-    <Compile Include="amerat\queue\report\fm_win_report.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="amerat\queue\report\re_queue.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>re_queue.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="amerat\queue\report\XtraReport2.Designer.vb">
-      <DependentUpon>XtraReport2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="amerat\queue\report\XtraReport2.vb">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="form\item\XtraForm1.Designer.vb">
       <DependentUpon>XtraForm1.vb</DependentUpon>
@@ -947,24 +911,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="amerat\queue\fm_wait.resx">
       <DependentUpon>fm_wait.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="amerat\queue\report\CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="amerat\queue\report\fm_re_queue.resx">
-      <DependentUpon>fm_re_queue.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="amerat\queue\report\fm_win_report.resx">
-      <DependentUpon>fm_win_report.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="amerat\queue\report\Report1.rdlc" />
-    <EmbeddedResource Include="amerat\queue\report\re_queue.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>re_queue.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="amerat\queue\report\XtraReport2.resx">
-      <DependentUpon>XtraReport2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\item\Xstore.resx">
       <DependentUpon>Xstore.vb</DependentUpon>

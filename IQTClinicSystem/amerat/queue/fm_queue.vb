@@ -122,6 +122,7 @@ Partial Public Class fm_queue
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("recived_date").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("dept_id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString)
 
 
                 If DataSet.Tables(0).Rows(i).Item("state").ToString = "إستلام" Then
@@ -145,14 +146,20 @@ Partial Public Class fm_queue
         End Try
 
     End Sub
-    Public Sub search2()
+
+
+    Public Sub ContractSearch()
 1:
 
+        If tb_p_id.Text.Trim = "" Then
+            Exit Sub
+
+        End If
         Try
 
 
             '  Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and queue.state <>'" & entered_state & "' and patient.id = queue.patient_id order by queue.id"
-            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` < '" & DateTimePicker1.Value.ToShortDateString & "' and queue.state = 'انتظار' and patient.id = queue.patient_id order by queue.id"
+            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.patient_id = " & tb_p_id.text & " and patient.id = queue.patient_id order by queue.id"
             Dim DataSet = getdatat1(s)
             Dim c_enter = 0
             Dim time As New DateTimePicker
@@ -178,6 +185,66 @@ Partial Public Class fm_queue
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("recived_date").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("dept_id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
+
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString)
+
+                If DataSet.Tables(0).Rows(i).Item("state").ToString = "إستلام" Then
+                    lv_queue.Items(i).BackColor = Color.LightGreen
+                    c_enter = c_enter + 1
+                Else
+                    lv_queue.Items(i).BackColor = Color.LightPink
+
+                End If
+
+            Next
+
+            l_entered.Text = c_enter.ToString
+
+
+        Catch ex As MySqlException
+            If MessageBox.Show("Retry اعد الاتصال واضغط " & ex.Message, "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+
+            End If
+        End Try
+        tb_p_id.Text = ""
+
+    End Sub
+
+    Public Sub search2()
+1:
+
+        Try
+
+            'and queue.state = 'انتظار' 
+            '  Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and queue.state <>'" & entered_state & "' and patient.id = queue.patient_id order by queue.id"
+            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` < '" & DateTimePicker1.Value.ToShortDateString & "' and patient.id = queue.patient_id order by queue.id"
+            Dim DataSet = getdatat1(s)
+            Dim c_enter = 0
+            Dim time As New DateTimePicker
+            br_count1.Caption = DataSet.Tables(0).Rows.Count.ToString
+            Dim td_date As New DateTimePicker
+
+            lv_queue.Items.Clear()
+            For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
+
+
+
+
+
+
+                lv_queue.Items.Add(DataSet.Tables(0).Rows(i).Item("booking_number").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("patient_id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("amount").ToString)
+                td_date.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("date").ToString)
+                lv_queue.Items(i).SubItems.Add(td_date.Value.ToShortDateString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("state").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("recived_date").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("dept_id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString)
 
 
                 If DataSet.Tables(0).Rows(i).Item("state").ToString = "إستلام" Then
@@ -247,19 +314,19 @@ Partial Public Class fm_queue
     Private Sub lv_queue_DoubleClick1(sender As Object, e As EventArgs) Handles lv_queue.DoubleClick
 
         If lv_queue.SelectedItems.Count = 1 Then
-            If lv_queue.SelectedItems.Item(0).SubItems(5).Text = entered_state Then
-                MessageBox.Show("المريض في الفحص الان")
-                Exit Sub
+           
+            fm_fesha.tb_fesha_id.Text = lv_queue.SelectedItems(0).SubItems(6).Text
+
+            Dim fesha As New Queue(__(lv_queue.SelectedItems(0).SubItems(6).Text))
+            If fesha.id = -1 Then
+
+            Else
+                fm_fesha.fesha = fesha
+                fm_fesha.tb_dept_id.Text = fesha.dept_id.ToString
+                fm_fesha.Show()
 
             End If
-            fm_queue_option.id = lv_queue.SelectedItems.Item(0).SubItems(6).Text
-            fm_queue_option.current_name = lv_queue.SelectedItems.Item(0).SubItems(2).Text
-            fm_queue_option.currnet_state = lv_queue.SelectedItems.Item(0).SubItems(5).Text
-            fm_queue_option.title = lv_queue.SelectedItems.Item(0).SubItems(8).Text
-            fm_queue_option.number = lv_queue.SelectedItems.Item(0).Text
-            fm_queue_option.tb_patient_id.Text = lv_queue.SelectedItems.Item(0).SubItems(1).Text
 
-            fm_queue_option.Show()
 
         End If
     End Sub
@@ -286,7 +353,13 @@ Partial Public Class fm_queue
         search()
     End Sub
 
-    Private Sub تعديلالحجزToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تعديلالحجزToolStripMenuItem.Click
+    Private Sub تعديلالحجزToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+
+
+        MessageBox.Show("مغلق حاليا")
+        Exit Sub
+
         If lv_queue.SelectedItems.Count = 1 Then
 
             fm_add_queue.tb_id.Text = lv_queue.SelectedItems.Item(0).SubItems(6).Text
@@ -339,14 +412,14 @@ Partial Public Class fm_queue
 
     End Sub
 
-    Private Sub الغائالحجزToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles الغائالحجزToolStripMenuItem.Click
-        Try
-            change_state(cancel_state)
-        Catch ex As Exception
+    'Private Sub الغائالحجزToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles الغائالحجزToolStripMenuItem.Click
+    '    Try
+    '        change_state(cancel_state)
+    '    Catch ex As Exception
 
-        End Try
+    '    End Try
 
-    End Sub
+    'End Sub
     Private Sub change_state(state As String)
         If lv_queue.SelectedItems.Count > 0 Then
             Dim id As Int32 = Convert.ToInt16(lv_queue.SelectedItems.Item(0).SubItems(6).Text)
@@ -413,7 +486,7 @@ Partial Public Class fm_queue
         If lv_queue.SelectedItems.Count > 0 Then
 1:
             Try
-                Dim query As String = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & __(lv_queue.SelectedItems(0).SubItems(6).Text) & " and patient.id = queue.patient_id"
+                Dim query As String = "select * , queue.note as fesha_note, queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & __(lv_queue.SelectedItems(0).SubItems(6).Text) & " and patient.id = queue.patient_id"
 
                 'Dim query As String = "select queue.id as id , queue.test_type as test_type , queue.test_amount as test_amount  , queue.booking_number as booking_number ,  patient.name as patient_name from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
                 Dim fm = New fm_report_viewr
@@ -446,8 +519,12 @@ Partial Public Class fm_queue
     End Sub
 
     Private Sub الغاءحجزهذاالزبونToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles الغاءحجزهذاالزبونToolStripMenuItem.Click
+        If user.type <> user_admin Then
+            MessageBox.Show("مركز الصلاحيات", "لايمكن الحذف")
+            Exit Sub
+        End If
         If lv_queue.SelectedItems.Count > 0 Then
-            If no_item_in_dept(__(lv_queue.SelectedItems(0).SubItems(1).Text)) Then
+            If one_item_in_feash(__(lv_queue.SelectedItems(0).SubItems(1).Text)) Then
                 If MessageBox.Show("هل تريد الغاء الحجز ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
                     Dim p As New Patient(__(lv_queue.SelectedItems(0).SubItems(1).Text))
                     p.delete()
@@ -459,16 +536,26 @@ Partial Public Class fm_queue
                 End If
 
             Else
-                MessageBox.Show("هذا الزبون لدية عقد بيع")
+                MessageBox.Show("هذا الزبون لدية عدة فيشات - يرجى حذفها")
             End If
         End If
 
     End Sub
 
-    Private Function no_item_in_dept(p_id As Integer) As Boolean
+    Public Function no_item_in_dept(p_id As Integer) As Boolean
         Dim D As New DataSet
-        D = getdatat1("select * from dept where user_id = " & p_id & "")
+        D = getdatat1("select * from queue where patient_id = " & p_id & "")
         If D.Tables(0).Rows.Count = 0 Then
+            Return True
+
+        Else
+            Return False
+        End If
+    End Function
+    Public Function one_item_in_feash(p_id As Integer) As Boolean
+        Dim D As New DataSet
+        D = getdatat1("select * from queue where patient_id = " & p_id & "")
+        If D.Tables(0).Rows.Count = 1 Then
             Return True
 
         Else
@@ -515,6 +602,7 @@ Partial Public Class fm_queue
 
     End Sub
 
+
     Private Sub tb_fesha_id_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_fesha_id.KeyUp
         If e.KeyCode = Keys.Enter Then
             feash_search()
@@ -525,6 +613,17 @@ Partial Public Class fm_queue
 
   
     Private Sub tb_fesha_id_TextChanged(sender As Object, e As EventArgs) Handles tb_fesha_id.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_p_id.KeyUp
+        If e.KeyCode = Keys.Enter Then
+            ContractSearch()
+          
+        End If
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles tb_p_id.TextChanged
 
     End Sub
 End Class

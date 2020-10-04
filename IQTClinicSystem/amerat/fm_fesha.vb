@@ -144,6 +144,7 @@
                     fesha.recived_date = Date.Now.ToString
 
                     fesha.save()
+                    Me.Close()
 
                 Else
                     MessageBox.Show("لم يتم الحفظ")
@@ -160,6 +161,7 @@
                         fesha.delete()
                         fm_queue.search()
                         SimpleButton1.Enabled = False
+                        Me.Close()
 
                     End If
 

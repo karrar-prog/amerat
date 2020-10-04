@@ -536,6 +536,7 @@ Public Class fm_add_other_required
         f.user_block_number = ""
         f.user_id_number = " ( " & p.f6 & " ) "
         f.dar_area = " ( " & p.ref_by & " ) "
+        f.item1 = p.diagonosis
         f.item2 = p.item2
         f.item3 = p.item3
         f.item4 = p.item4
@@ -564,6 +565,7 @@ Public Class fm_add_other_required
         f2.user_block_number = " ( " & p.f2 & " ) "
         f2.user_id_number = " ( " & p.f6 & " ) "
         f2.dar_area = " ( " & p.ref_by & " ) "
+        f2.item1 = p.diagonosis
         f2.item2 = p.item2
         f2.item3 = p.item3
         f2.item4 = p.item4
@@ -586,10 +588,8 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub حذفToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles حذفToolStripMenuItem.Click
-        If user.type = user_admin Then
-
-        Else
-            MessageBox.Show("صلاحيات المدير فقط", "مركز الصلاحيات")
+        If user.type <> user_admin Then
+            MessageBox.Show("مركز الصلاحيات", "لايمكن الحذف")
             Exit Sub
         End If
         If lv_dept.SelectedItems.Count > 0 Then

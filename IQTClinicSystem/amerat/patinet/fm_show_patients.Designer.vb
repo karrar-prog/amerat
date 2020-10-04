@@ -27,8 +27,6 @@ Partial Class fm_show_patients
         Me.خارطةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.سجلتسديدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.اتصالToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ارشفةبياناتالمراجعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.تفعيلالحسابToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.اضافةملفاتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.عرضاوتعديلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.طباعةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -90,6 +88,9 @@ Partial Class fm_show_patients
         Me.colf3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colhouse_price = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
+        Me.حذفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.حذفنهائيToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.عرضالفيشToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -137,9 +138,9 @@ Partial Class fm_show_patients
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اضافةحجزعمليةToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.ارشفةبياناتالمراجعToolStripMenuItem, Me.تفعيلالحسابToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.عرضاوتعديلToolStripMenuItem, Me.طباعةToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اضافةحجزعمليةToolStripMenuItem, Me.حذفToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.عرضاوتعديلToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.طباعةToolStripMenuItem, Me.عرضالفيشToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(178, 158)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 180)
         '
         'اضافةحجزعمليةToolStripMenuItem
         '
@@ -171,18 +172,6 @@ Partial Class fm_show_patients
         Me.اتصالToolStripMenuItem.Name = "اتصالToolStripMenuItem"
         Me.اتصالToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.اتصالToolStripMenuItem.Text = "اتصال"
-        '
-        'ارشفةبياناتالمراجعToolStripMenuItem
-        '
-        Me.ارشفةبياناتالمراجعToolStripMenuItem.Name = "ارشفةبياناتالمراجعToolStripMenuItem"
-        Me.ارشفةبياناتالمراجعToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.ارشفةبياناتالمراجعToolStripMenuItem.Text = "تعطيل الحساب مؤقتا"
-        '
-        'تفعيلالحسابToolStripMenuItem
-        '
-        Me.تفعيلالحسابToolStripMenuItem.Name = "تفعيلالحسابToolStripMenuItem"
-        Me.تفعيلالحسابToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.تفعيلالحسابToolStripMenuItem.Text = "تفعيل الحساب"
         '
         'اضافةملفاتToolStripMenuItem
         '
@@ -749,6 +738,25 @@ Partial Class fm_show_patients
         Me.colhouse_price.VisibleIndex = 5
         Me.colhouse_price.Width = 141
         '
+        'حذفToolStripMenuItem
+        '
+        Me.حذفToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.حذفنهائيToolStripMenuItem1})
+        Me.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem"
+        Me.حذفToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.حذفToolStripMenuItem.Text = "حذف"
+        '
+        'حذفنهائيToolStripMenuItem1
+        '
+        Me.حذفنهائيToolStripMenuItem1.Name = "حذفنهائيToolStripMenuItem1"
+        Me.حذفنهائيToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.حذفنهائيToolStripMenuItem1.Text = "حذف نهائي"
+        '
+        'عرضالفيشToolStripMenuItem
+        '
+        Me.عرضالفيشToolStripMenuItem.Name = "عرضالفيشToolStripMenuItem"
+        Me.عرضالفيشToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.عرضالفيشToolStripMenuItem.Text = "عرض الفيش"
+        '
         'fm_show_patients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -822,7 +830,6 @@ Partial Class fm_show_patients
     Friend WithEvents BarButtonItem10 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents عرضاوتعديلToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ارشفةبياناتالمراجعToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -840,7 +847,6 @@ Partial Class fm_show_patients
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents p_patient As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents تفعيلالحسابToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents اضافةملفاتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -867,4 +873,7 @@ Partial Class fm_show_patients
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents tb_patient_id As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents حذفToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents حذفنهائيToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents عرضالفيشToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

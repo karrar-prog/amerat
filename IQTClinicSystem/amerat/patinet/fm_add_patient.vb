@@ -142,7 +142,7 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub update_patient()
-        Dim patient As New Patient
+        Dim patient As New Patient(__(tb_id.Text))
         patient.id = Convert.ToInt32(tb_id.Text.Trim)
         patient.name = tb_name.Text.Trim
 
@@ -608,10 +608,7 @@ Public Class fm_add_patient
 
     End Sub
 
-    Private Sub tb_wieght_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tb_blok_title.SelectedIndexChanged
-        tb_name.BackColor = Color.White
-
-    End Sub
+  
 
     Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles nu_blok_num.ValueChanged
         tb_name.BackColor = Color.White
@@ -800,12 +797,17 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub nu_house_price_KeyUp(sender As Object, e As KeyEventArgs) Handles nu_house_price.KeyUp
-        cal_moneys()
+
+
+        nu_first_part.Value = nu_house_price.Value * nu_first_present.Value / 100
+        nu_last_part.Value = nu_house_price.Value - nu_first_part.Value
 
     End Sub
 
     Private Sub nu_house_price_ValueChanged(sender As Object, e As EventArgs) Handles nu_house_price.ValueChanged
-        cal_moneys()
+        nu_first_part.Value = nu_house_price.Value * nu_first_present.Value / 100
+        nu_last_part.Value = nu_house_price.Value - nu_first_part.Value
+
     End Sub
 
     Private Sub tb_id_EditValueChanged(sender As Object, e As EventArgs) Handles tb_id.EditValueChanged
@@ -957,5 +959,23 @@ Public Class fm_add_patient
         End Try
 
 
+    End Sub
+
+    Private Sub tb_blok_title_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tb_blok_title.SelectedIndexChanged
+        tb_name.BackColor = Color.White
+        If tb_blok_title.Text = "A" Then
+            tb_ref_by.Text = "300 م"
+        ElseIf tb_blok_title.Text = "B" Then
+            tb_ref_by.Text = "250 م"
+        ElseIf tb_blok_title.Text = "C" Then
+            tb_ref_by.Text = "200 م"
+        ElseIf tb_blok_title.Text = "A VIP" Then
+            tb_ref_by.Text = "375 م"
+        ElseIf tb_blok_title.Text = "A VVIP" Then
+            tb_ref_by.Text = "396 م"
+        Else
+            tb_ref_by.Text = ""
+  
+        End If
     End Sub
 End Class

@@ -12,7 +12,7 @@
   <xs:element name="ds_queue" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_queue" msprop:Generator_UserDSName="ds_queue">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="t_queue" msdata:Locale="ar-IQ" msprop:Generator_TableClassName="t_queueDataTable" msprop:Generator_TableVarName="tablet_queue" msprop:Generator_RowChangedName="t_queueRowChanged" msprop:Generator_TablePropName="t_queue" msprop:Generator_RowDeletingName="t_queueRowDeleting" msprop:Generator_RowChangingName="t_queueRowChanging" msprop:Generator_RowEvHandlerName="t_queueRowChangeEventHandler" msprop:Generator_RowDeletedName="t_queueRowDeleted" msprop:Generator_RowClassName="t_queueRow" msprop:Generator_UserTableName="t_queue" msprop:Generator_RowEvArgName="t_queueRowChangeEvent">
+        <xs:element name="t_queue" msdata:Locale="ar-IQ" msprop:Generator_TableClassName="t_queueDataTable" msprop:Generator_TableVarName="tablet_queue" msprop:Generator_TablePropName="t_queue" msprop:Generator_RowDeletingName="t_queueRowDeleting" msprop:Generator_RowChangingName="t_queueRowChanging" msprop:Generator_RowEvHandlerName="t_queueRowChangeEventHandler" msprop:Generator_RowDeletedName="t_queueRowDeleted" msprop:Generator_UserTableName="t_queue" msprop:Generator_RowChangedName="t_queueRowChanged" msprop:Generator_RowEvArgName="t_queueRowChangeEvent" msprop:Generator_RowClassName="t_queueRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="current_name" msprop:Generator_ColumnVarNameInTable="columncurrent_name" msprop:Generator_ColumnPropNameInRow="current_name" msprop:Generator_ColumnPropNameInTable="current_nameColumn" msprop:Generator_UserColumnName="current_name" type="xs:string" minOccurs="0" />
@@ -34,6 +34,7 @@
               <xs:element name="dar_number" msprop:Generator_ColumnVarNameInTable="columndar_number" msprop:Generator_ColumnPropNameInRow="dar_number" msprop:Generator_ColumnPropNameInTable="dar_numberColumn" msprop:Generator_UserColumnName="dar_number" type="xs:string" minOccurs="0" />
               <xs:element name="fesha_id" msprop:Generator_ColumnVarNameInTable="columnfesha_id" msprop:Generator_ColumnPropNameInRow="fesha_id" msprop:Generator_ColumnPropNameInTable="fesha_idColumn" msprop:Generator_UserColumnName="fesha_id" type="xs:string" minOccurs="0" />
               <xs:element name="patient_id" msprop:Generator_ColumnVarNameInTable="columnpatient_id" msprop:Generator_ColumnPropNameInRow="patient_id" msprop:Generator_ColumnPropNameInTable="patient_idColumn" msprop:Generator_UserColumnName="patient_id" type="xs:string" minOccurs="0" />
+              <xs:element name="fesha_note" msprop:Generator_ColumnVarNameInTable="columnfesha_note" msprop:Generator_ColumnPropNameInRow="fesha_note" msprop:Generator_ColumnPropNameInTable="fesha_noteColumn" msprop:Generator_UserColumnName="fesha_note" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

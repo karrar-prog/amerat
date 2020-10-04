@@ -300,7 +300,7 @@ Public Class fm_show_patients
         End If
     End Sub
 
-    Private Sub ارشفةبياناتالمراجعToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ارشفةبياناتالمراجعToolStripMenuItem.Click
+    Private Sub ارشفةبياناتالمراجعToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
         If hasPermission("حذف") Then
 
@@ -502,7 +502,7 @@ Public Class fm_show_patients
         End If
     End Sub
 
-    Private Sub تفعيلالحسابToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تفعيلالحسابToolStripMenuItem.Click
+    Private Sub تفعيلالحسابToolStripMenuItem_Click(sender As Object, e As EventArgs)
         If hasPermission("الغاء تفعيل الحسابات") Then
 
         Else
@@ -587,6 +587,7 @@ Public Class fm_show_patients
         f2.user_block_number = " ( " & p.f2 & " ) "
         f2.user_id_number = " ( " & p.f6 & " ) "
         f2.dar_area = " ( " & p.ref_by & " ) "
+        f2.item1 = p.diagonosis
         f2.item2 = p.item2
         f2.item3 = p.item3
         f2.item4 = p.item4
@@ -692,6 +693,45 @@ Public Class fm_show_patients
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         search3()
+
+    End Sub
+
+    Private Sub حذفنهائيToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+
+    End Sub
+
+    Private Sub حذفنهائيToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles حذفنهائيToolStripMenuItem1.Click
+
+        If user.type <> user_admin Then
+            MessageBox.Show("مركز الصلاحيات", "لايمكن الحذف")
+            Exit Sub
+        End If
+        If lv_queue.SelectedItems.Count > 0 Then
+            If fm_queue.no_item_in_dept(__(lv_queue.SelectedItems(0).Text)) Then
+                If MessageBox.Show("هل تريد الحذف نهائيا ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+                    Dim p As New Patient(__(lv_queue.SelectedItems(0).Text))
+                    p.delete()
+                    'Dim que As New Queue()
+                    'que.id = __(lv_queue.SelectedItems(0).SubItems(6).Text)
+                    'que.delete()
+                    search()
+
+                End If
+
+            Else
+                MessageBox.Show("هذا الزبون لدية فيش - يرجى حذفها اولاً")
+            End If
+        End If
+    End Sub
+
+    Private Sub عرضالفيشToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles عرضالفيشToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count = 1 Then
+            fm_queue.tb_p_id.Text = lv_queue.SelectedItems(0).Text
+            fm_queue.Show()
+            fm_queue.ContractSearch()
+
+        End If
 
     End Sub
 End Class

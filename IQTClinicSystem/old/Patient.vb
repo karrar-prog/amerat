@@ -123,6 +123,8 @@ Public Class Patient
                 Me.item4 = ds.Tables(0).Rows(0).Item("item4").ToString
                 Me.admin_name = ds.Tables(0).Rows(0).Item("admin_name").ToString
 
+                Me.diagonosis = ds.Tables(0).Rows(0).Item("diagonosis").ToString
+
 
                 Me.first_push_amount = ___(ds.Tables(0).Rows(0).Item("first_push_amount").ToString)
                 Me.first_push_present = ___(ds.Tables(0).Rows(0).Item("first_push_present").ToString)
@@ -208,7 +210,8 @@ Public Class Patient
                 Me.is_token = ds.Tables(0).Rows(0).Item("is_token").ToString
                 Me.token_date = ds.Tables(0).Rows(0).Item("token_date").ToString
                 Me.lower_name = ds.Tables(0).Rows(0).Item("lower_name").ToString
-
+                Me.gender = ds.Tables(0).Rows(0).Item("gender").ToString
+              
                 Me.f5 = ds.Tables(0).Rows(0).Item("f5").ToString
                 Me.f6 = ds.Tables(0).Rows(0).Item("f6").ToString
                 Me.f7 = ds.Tables(0).Rows(0).Item("f7").ToString
@@ -384,17 +387,16 @@ Public Class Patient
 
                 Dim SQLCommand As New MySqlCommand()
                 SQLCommand.Connection = conn
-                SQLCommand.CommandText = "UPDATE  patient SET deleted = @deleted WHERE id = @id"
-                SQLCommand.Parameters.Add("@deleted", MySqlDbType.String).Value = "1"
+                SQLCommand.CommandText = "DELETE FROM  patient WHERE id = @id"
                 SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
 
 
                 SQLCommand.ExecuteNonQuery()
 
            
-                Dim content = " تمت الغاء تفعيل الحساب" & "  " & Me.name & " رقم الزبون " & Me.id
+                Dim content = " تمت حذف" & "  " & Me.name & " رقم الزبون " & Me.id
 
-                new_event2("الغاء التفعيل", content, 0)
+                new_event2("حذف زبون", content, 0)
 
                 conn.Close()
                 Return True

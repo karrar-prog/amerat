@@ -6,6 +6,11 @@
         End Sub
 
       
+        Private Sub monthsDataTable_ColumnChanging(sender As Object, e As DataColumnChangeEventArgs) Handles Me.ColumnChanging
+          
+
+        End Sub
+
     End Class
 
     Partial Class treatDataTable

@@ -26,7 +26,7 @@ Public Class fm_add_queue
             Next
 
 
-            If plan.Tables(0).Rows.Count = 1 Then
+            If plan.Tables(0).Rows.Count > 0 Then
 
                 cb_plan.SelectedItem = cb_plan.Items(0)
 
@@ -116,8 +116,8 @@ Public Class fm_add_queue
             q.note = tb_note.Text
             q.state = mysatate
 
-            q.test_amount = Convert.ToInt32(tb_amount.Text)
-            q.test_min = Convert.ToInt32(tb_munite.Text)
+            q.test_amount = tb_amount.Text
+            q.test_min = tb_munite.Text
             q.test_type = cb_plan.Text
 
             If q.save() Then
@@ -218,10 +218,10 @@ Public Class fm_add_queue
 1:
         Try
             If tb_dept_id.Text.Trim = "0" Or tb_dept_id.Text.Trim = "" Then
-                query = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  patient.id = " & tb_patient_id.Text & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
+                query = "select * , queue.id as fesha_id , queue.note as fesha_note ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  patient.id = " & tb_patient_id.Text & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
 
             Else
-                query = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.dept_id = " & tb_dept_id.Text & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
+                query = "select * , queue.id as fesha_id , queue.note as fesha_note,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.dept_id = " & tb_dept_id.Text & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
 
             End If
 
@@ -246,7 +246,7 @@ Public Class fm_add_queue
 1:
         Try
             '       Dim query As String = "select patient.name as current_name , queue.`date` as date , queue.test_type as type  , queue.test_amount as amount  , queue.booking_number as number  from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
-            Dim query As String = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
+            Dim query As String = "select * , queue.note as fesha_note , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
 
             'Dim query As String = "select queue.id as id , queue.test_type as test_type , queue.test_amount as test_amount  , queue.booking_number as booking_number ,  patient.name as patient_name from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
             Dim fm = New fm_report_viewr

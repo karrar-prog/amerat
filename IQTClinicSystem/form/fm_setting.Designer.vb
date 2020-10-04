@@ -46,7 +46,7 @@ Partial Class fm_setting
         Me.tb_id2 = New DevExpress.XtraEditors.TextEdit()
         Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
         Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
-        Me.CachedCrystalReport11 = New IQTClinicSystem.CachedCrystalReport1()
+
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -398,7 +398,7 @@ Partial Class fm_setting
     Friend WithEvents tb_id2 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents CachedCrystalReport11 As IQTClinicSystem.CachedCrystalReport1
+
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton4 As DevExpress.XtraEditors.SimpleButton
 End Class

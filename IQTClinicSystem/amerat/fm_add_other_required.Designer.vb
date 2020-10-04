@@ -464,6 +464,8 @@ Partial Class fm_add_other_required
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.Location = New System.Drawing.Point(502, 26)
         Me.CheckBox1.Name = "CheckBox1"
@@ -504,7 +506,6 @@ Partial Class fm_add_other_required
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.Size = New System.Drawing.Size(498, 677)
         Me.GroupControl1.TabIndex = 384
-        Me.GroupControl1.Visible = False
         '
         'LabelControl3
         '

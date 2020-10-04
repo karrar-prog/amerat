@@ -106,7 +106,7 @@ Partial Class fm_report_viewr
         Me.DocumentViewer1.IsMetric = True
         Me.DocumentViewer1.Location = New System.Drawing.Point(0, 53)
         Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(1119, 670)
+        Me.DocumentViewer1.Size = New System.Drawing.Size(1119, 839)
         Me.DocumentViewer1.TabIndex = 0
         '
         'DocumentViewerBarManager1
@@ -566,7 +566,7 @@ Partial Class fm_report_viewr
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 723)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 892)
         Me.barDockControlBottom.Manager = Me.DocumentViewerBarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1119, 26)
         '
@@ -576,7 +576,7 @@ Partial Class fm_report_viewr
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 53)
         Me.barDockControlLeft.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 670)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 839)
         '
         'barDockControlRight
         '
@@ -584,7 +584,7 @@ Partial Class fm_report_viewr
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1119, 53)
         Me.barDockControlRight.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 670)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 839)
         '
         'miBackground
         '
@@ -797,7 +797,7 @@ Partial Class fm_report_viewr
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1119, 749)
+        Me.ClientSize = New System.Drawing.Size(1119, 918)
         Me.Controls.Add(Me.DocumentViewer1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
