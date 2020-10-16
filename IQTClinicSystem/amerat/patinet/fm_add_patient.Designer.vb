@@ -38,10 +38,10 @@ Partial Class fm_add_patient
         Me.tb_f7 = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl20 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
         Me.LabelControl12 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl9 = New DevExpress.XtraEditors.LabelControl()
         Me.tb_note = New System.Windows.Forms.TextBox()
-        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
         Me.tb_f8 = New DevExpress.XtraEditors.TextEdit()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LabelControl22 = New DevExpress.XtraEditors.LabelControl()
@@ -99,6 +99,7 @@ Partial Class fm_add_patient
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
+        Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_phone.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -325,7 +326,6 @@ Partial Class fm_add_patient
         Me.GroupControl1.Appearance.BackColor = System.Drawing.Color.DarkSeaGreen
         Me.GroupControl1.Appearance.Options.UseBackColor = True
         Me.GroupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.GroupControl1.Controls.Add(Me.ProgressPanel1)
         Me.GroupControl1.Controls.Add(Me.LabelControl12)
         Me.GroupControl1.Controls.Add(Me.LabelControl9)
         Me.GroupControl1.Controls.Add(Me.tb_id)
@@ -342,9 +342,27 @@ Partial Class fm_add_patient
         Me.GroupControl1.Location = New System.Drawing.Point(2, 20)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl1.Size = New System.Drawing.Size(437, 658)
+        Me.GroupControl1.Size = New System.Drawing.Size(437, 727)
         Me.GroupControl1.TabIndex = 249
         Me.GroupControl1.Text = "المعلومات الاساسية"
+        '
+        'ProgressPanel1
+        '
+        Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.ProgressPanel1.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProgressPanel1.Appearance.Options.UseBackColor = True
+        Me.ProgressPanel1.Appearance.Options.UseFont = True
+        Me.ProgressPanel1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProgressPanel1.AppearanceCaption.Options.UseFont = True
+        Me.ProgressPanel1.BarAnimationElementThickness = 2
+        Me.ProgressPanel1.Caption = "يتم الحفظ "
+        Me.ProgressPanel1.Description = ""
+        Me.ProgressPanel1.Location = New System.Drawing.Point(5, 21)
+        Me.ProgressPanel1.Name = "ProgressPanel1"
+        Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
+        Me.ProgressPanel1.TabIndex = 252
+        Me.ProgressPanel1.Text = "ProgressPanel1"
         '
         'LabelControl12
         '
@@ -374,24 +392,6 @@ Partial Class fm_add_patient
         Me.tb_note.Name = "tb_note"
         Me.tb_note.Size = New System.Drawing.Size(315, 65)
         Me.tb_note.TabIndex = 6
-        '
-        'ProgressPanel1
-        '
-        Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
-        Me.ProgressPanel1.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProgressPanel1.Appearance.Options.UseBackColor = True
-        Me.ProgressPanel1.Appearance.Options.UseFont = True
-        Me.ProgressPanel1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProgressPanel1.AppearanceCaption.Options.UseFont = True
-        Me.ProgressPanel1.BarAnimationElementThickness = 2
-        Me.ProgressPanel1.Caption = "يتم الحفظ "
-        Me.ProgressPanel1.Description = ""
-        Me.ProgressPanel1.Location = New System.Drawing.Point(357, 115)
-        Me.ProgressPanel1.Name = "ProgressPanel1"
-        Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
-        Me.ProgressPanel1.TabIndex = 252
-        Me.ProgressPanel1.Text = "ProgressPanel1"
         '
         'tb_f8
         '
@@ -641,9 +641,10 @@ Partial Class fm_add_patient
         '
         'GroupControl4
         '
+        Me.GroupControl4.Controls.Add(Me.ProgressPanel1)
         Me.GroupControl4.Controls.Add(Me.PictureBox1)
         Me.GroupControl4.Controls.Add(Me.Label2)
-        Me.GroupControl4.Location = New System.Drawing.Point(4, 117)
+        Me.GroupControl4.Location = New System.Drawing.Point(24, 128)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.Size = New System.Drawing.Size(102, 106)
         Me.GroupControl4.TabIndex = 259
@@ -662,7 +663,7 @@ Partial Class fm_add_patient
         '
         Me.GroupControl5.Controls.Add(Me.PictureBox3)
         Me.GroupControl5.Controls.Add(Me.Label1)
-        Me.GroupControl5.Location = New System.Drawing.Point(4, 23)
+        Me.GroupControl5.Location = New System.Drawing.Point(24, 24)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl5.TabIndex = 260
@@ -684,15 +685,15 @@ Partial Class fm_add_patient
         Me.GroupControl6.Controls.Add(Me.PictureBox5)
         Me.GroupControl6.Controls.Add(Me.PictureBox2)
         Me.GroupControl6.Controls.Add(Me.Label4)
-        Me.GroupControl6.Location = New System.Drawing.Point(4, 506)
+        Me.GroupControl6.Location = New System.Drawing.Point(24, 556)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(102, 169)
+        Me.GroupControl6.Size = New System.Drawing.Size(102, 181)
         Me.GroupControl6.TabIndex = 259
         '
         'SimpleButton2
         '
         Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(5, 120)
+        Me.SimpleButton2.Location = New System.Drawing.Point(5, 126)
         Me.SimpleButton2.Name = "SimpleButton2"
         Me.SimpleButton2.Size = New System.Drawing.Size(92, 42)
         Me.SimpleButton2.TabIndex = 268
@@ -711,7 +712,7 @@ Partial Class fm_add_patient
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox5.Image = Global.IQTClinicSystem.My.Resources.Resources.attach_2_icon
-        Me.PictureBox5.Location = New System.Drawing.Point(5, 31)
+        Me.PictureBox5.Location = New System.Drawing.Point(5, 28)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -721,7 +722,7 @@ Partial Class fm_add_patient
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.IQTClinicSystem.My.Resources.Resources.camera_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(62, 31)
+        Me.PictureBox2.Location = New System.Drawing.Point(62, 28)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -759,9 +760,12 @@ Partial Class fm_add_patient
         '
         'GroupControl3
         '
+        Me.GroupControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.GroupControl3.Appearance.Options.UseBackColor = True
+        Me.GroupControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.GroupControl3.Controls.Add(Me.PictureBox4)
         Me.GroupControl3.Controls.Add(Me.Label6)
-        Me.GroupControl3.Location = New System.Drawing.Point(4, 223)
+        Me.GroupControl3.Location = New System.Drawing.Point(24, 243)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl3.TabIndex = 261
@@ -781,25 +785,25 @@ Partial Class fm_add_patient
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(17, 3)
+        Me.Label6.Location = New System.Drawing.Point(14, 6)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 19)
+        Me.Label6.Size = New System.Drawing.Size(66, 19)
         Me.Label6.TabIndex = 255
-        Me.Label6.Text = "طباعة عقد"
+        Me.Label6.Text = "تحرير العقد"
         '
         'GroupControl7
         '
         Me.GroupControl7.Controls.Add(Me.GroupControl11)
-        Me.GroupControl7.Controls.Add(Me.GroupControl10)
         Me.GroupControl7.Controls.Add(Me.GroupControl5)
         Me.GroupControl7.Controls.Add(Me.GroupControl4)
         Me.GroupControl7.Controls.Add(Me.GroupControl6)
         Me.GroupControl7.Controls.Add(Me.GroupControl3)
+        Me.GroupControl7.Controls.Add(Me.GroupControl10)
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl7.Location = New System.Drawing.Point(1040, 0)
+        Me.GroupControl7.Location = New System.Drawing.Point(1003, 0)
         Me.GroupControl7.Name = "GroupControl7"
         Me.GroupControl7.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl7.Size = New System.Drawing.Size(115, 680)
+        Me.GroupControl7.Size = New System.Drawing.Size(152, 749)
         Me.GroupControl7.TabIndex = 270
         Me.GroupControl7.Text = "العمليات"
         '
@@ -807,7 +811,7 @@ Partial Class fm_add_patient
         '
         Me.GroupControl11.Controls.Add(Me.PictureBox7)
         Me.GroupControl11.Controls.Add(Me.Label8)
-        Me.GroupControl11.Location = New System.Drawing.Point(4, 412)
+        Me.GroupControl11.Location = New System.Drawing.Point(24, 452)
         Me.GroupControl11.Name = "GroupControl11"
         Me.GroupControl11.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl11.TabIndex = 263
@@ -835,9 +839,13 @@ Partial Class fm_add_patient
         '
         'GroupControl10
         '
+        Me.GroupControl10.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GroupControl10.Appearance.Options.UseBackColor = True
+        Me.GroupControl10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.GroupControl10.Controls.Add(Me.Label9)
         Me.GroupControl10.Controls.Add(Me.PictureBox6)
         Me.GroupControl10.Controls.Add(Me.Label7)
-        Me.GroupControl10.Location = New System.Drawing.Point(4, 318)
+        Me.GroupControl10.Location = New System.Drawing.Point(24, 348)
         Me.GroupControl10.Name = "GroupControl10"
         Me.GroupControl10.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl10.TabIndex = 262
@@ -857,20 +865,20 @@ Partial Class fm_add_patient
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(16, 1)
+        Me.Label7.Location = New System.Drawing.Point(0, -20)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(67, 19)
+        Me.Label7.Size = New System.Drawing.Size(98, 19)
         Me.Label7.TabIndex = 255
-        Me.Label7.Text = "طباعة فيشة"
+        Me.Label7.Text = "فيشة الدفعة الاولى"
         '
         'GroupControl8
         '
         Me.GroupControl8.Controls.Add(Me.GroupControl1)
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl8.Location = New System.Drawing.Point(599, 0)
+        Me.GroupControl8.Location = New System.Drawing.Point(562, 0)
         Me.GroupControl8.Name = "GroupControl8"
         Me.GroupControl8.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl8.Size = New System.Drawing.Size(441, 680)
+        Me.GroupControl8.Size = New System.Drawing.Size(441, 749)
         Me.GroupControl8.TabIndex = 271
         Me.GroupControl8.Text = "معلومات الزبون"
         '
@@ -910,10 +918,10 @@ Partial Class fm_add_patient
         Me.GroupControl2.Controls.Add(Me.LabelControl3)
         Me.GroupControl2.Controls.Add(Me.tb_ref_by)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(2, 20)
+        Me.GroupControl2.Location = New System.Drawing.Point(-35, 20)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupControl2.Size = New System.Drawing.Size(595, 658)
+        Me.GroupControl2.Size = New System.Drawing.Size(595, 727)
         Me.GroupControl2.TabIndex = 250
         Me.GroupControl2.Text = "المعلومات الثانوية"
         '
@@ -1025,9 +1033,20 @@ Partial Class fm_add_patient
         Me.GroupControl9.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl9.Name = "GroupControl9"
         Me.GroupControl9.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl9.Size = New System.Drawing.Size(599, 680)
+        Me.GroupControl9.Size = New System.Drawing.Size(562, 749)
         Me.GroupControl9.TabIndex = 272
         Me.GroupControl9.Text = "معلومات الدار"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(7, 6)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(83, 19)
+        Me.Label9.TabIndex = 256
+        Me.Label9.Text = "فيشة دفعة اولى"
         '
         'fm_add_patient
         '
@@ -1035,7 +1054,7 @@ Partial Class fm_add_patient
         Me.Appearance.Options.UseBackColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1155, 680)
+        Me.ClientSize = New System.Drawing.Size(1155, 749)
         Me.Controls.Add(Me.GroupControl9)
         Me.Controls.Add(Me.GroupControl8)
         Me.Controls.Add(Me.GroupControl7)
@@ -1185,4 +1204,5 @@ Partial Class fm_add_patient
     Friend WithEvents LabelControl19 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl13 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents tb_f9 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
 End Class

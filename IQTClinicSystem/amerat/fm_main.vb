@@ -113,12 +113,7 @@ Public Class fm_main
     End Sub
 
     Private Sub TileItem6_ItemClick(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs)
-        If hasPermission(per_add_item) Or hasPermission(per_manage_item) Then
-            Xstore.Show()
-            Me.Hide()
-        Else
-            MessageBox.Show("ليس لديك الصلاحية")
-        End If
+      
 
     End Sub
 
@@ -227,8 +222,18 @@ Public Class fm_main
 
 
     Private Sub TileItem1_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem1.ItemClick
-        fm_show_patients.Show()
-        Me.Hide()
+
+        If hasPermission(i_cusomer) Then
+            fm_show_patients.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
+
+
+
+     
 
         'If hasPermission(per_saller) Then
         '    fm_show_patients.Show()
@@ -474,24 +479,20 @@ Public Class fm_main
     End Sub
 
     Private Sub TileItem3_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem3.ItemClick
-        MessageBox.Show("غير متوفر")
-        Exit Sub
 
-        MessageBox.Show("غير متوفر")
-        Exit Sub
+        If hasPermission(i_enter) Then
+            MessageBox.Show("غير متوفر")
+            Exit Sub
 
-        If hasPermission(per_rests) Then
-            fm_user_rest.Show()
-            Me.Hide()
-        Else
-            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+
         End If
 
+      
     End Sub
 
     Private Sub TileItem4_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem4.ItemClick
 
-        If hasPermission("الدخل") Then
+        If hasPermission(i_money) Then
             fm_monitoring_event.Show()
 
         Else
@@ -508,7 +509,7 @@ Public Class fm_main
 
     Private Sub TileItem7_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem7.ItemClick
 
-        If hasPermission(per_pulls_show) Then
+        If hasPermission(i_pull) Then
             fm_view_pulls.Show()
             Me.Hide()
         Else
@@ -517,7 +518,7 @@ Public Class fm_main
     End Sub
 
     Private Sub TileItem13_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem13.ItemClick
-        If hasPermission(per_pulls_show) Then
+        If hasPermission(i_delete_pull) Then
             Try
                 fm_pull_money.Close()
             Catch ex As Exception
@@ -532,7 +533,16 @@ Public Class fm_main
     End Sub
 
     Private Sub TileItem6_ItemClick_2(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem6.ItemClick
-        fm_add_patient.Show()
+
+
+        If hasPermission(i_add_booking) Then
+            fm_add_patient.Show()
+
+        Else
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
+
 
     End Sub
 
@@ -547,19 +557,43 @@ Public Class fm_main
     End Sub
 
     Private Sub TileItem11_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem11.ItemClick
-        fm_show_details.Show()
 
+
+        If hasPermission(i_fesha) Then
+
+            Try
+                fm_show_details.Close()
+
+            Catch ex As Exception
+
+            End Try
+            fm_show_details.Show()
+
+        Else
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
+    
     End Sub
 
     Private Sub TileItem12_ItemClick_1(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem12.ItemClick
+        If hasPermission(i_fesha) Then
 
-        Try
-            fm_queue.Close()
+            Try
+                fm_queue.Close()
 
-        Catch ex As Exception
+            Catch ex As Exception
 
-        End Try
-        fm_queue.Show()
+            End Try
+            fm_queue.Show()
+        Else
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
+
+
+
+      
 
     End Sub
 End Class

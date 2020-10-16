@@ -1230,16 +1230,7 @@ Public Class fm_sell
     End Sub
 
     Private Sub SimpleButton8_Click(sender As Object, e As EventArgs) Handles SimpleButton8.Click
-        If hasPermission(per_edite_dicount) Then
-
-            tb_status.Text = "0"
-            tb_discount.ReadOnly = False
-
-        Else
-            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
-        End If
-
-
+  
     End Sub
 
     Private Function from_card() As Boolean

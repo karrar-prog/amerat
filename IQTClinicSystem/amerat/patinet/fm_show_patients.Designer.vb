@@ -26,10 +26,13 @@ Partial Class fm_show_patients
         Me.عقدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.خارطةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.سجلتسديدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.اتصالToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.حذفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.حذفنهائيToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.اضافةملفاتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.عرضاوتعديلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.اتصالToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.طباعةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.عرضالفيشToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tb_name = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
@@ -88,9 +91,6 @@ Partial Class fm_show_patients
         Me.colf3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colhouse_price = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-        Me.حذفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.حذفنهائيToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.عرضالفيشToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,13 +140,13 @@ Partial Class fm_show_patients
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اضافةحجزعمليةToolStripMenuItem, Me.حذفToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.عرضاوتعديلToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.طباعةToolStripMenuItem, Me.عرضالفيشToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 180)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 158)
         '
         'اضافةحجزعمليةToolStripMenuItem
         '
         Me.اضافةحجزعمليةToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.عقدToolStripMenuItem, Me.خارطةToolStripMenuItem, Me.سجلتسديدToolStripMenuItem})
         Me.اضافةحجزعمليةToolStripMenuItem.Name = "اضافةحجزعمليةToolStripMenuItem"
-        Me.اضافةحجزعمليةToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.اضافةحجزعمليةToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.اضافةحجزعمليةToolStripMenuItem.Text = "طباعة"
         '
         'عقدToolStripMenuItem
@@ -167,29 +167,48 @@ Partial Class fm_show_patients
         Me.سجلتسديدToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.سجلتسديدToolStripMenuItem.Text = "سجل تسديد"
         '
-        'اتصالToolStripMenuItem
+        'حذفToolStripMenuItem
         '
-        Me.اتصالToolStripMenuItem.Name = "اتصالToolStripMenuItem"
-        Me.اتصالToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.اتصالToolStripMenuItem.Text = "اتصال"
+        Me.حذفToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.حذفنهائيToolStripMenuItem1})
+        Me.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem"
+        Me.حذفToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.حذفToolStripMenuItem.Text = "حذف"
+        '
+        'حذفنهائيToolStripMenuItem1
+        '
+        Me.حذفنهائيToolStripMenuItem1.Name = "حذفنهائيToolStripMenuItem1"
+        Me.حذفنهائيToolStripMenuItem1.Size = New System.Drawing.Size(129, 22)
+        Me.حذفنهائيToolStripMenuItem1.Text = "حذف نهائي"
         '
         'اضافةملفاتToolStripMenuItem
         '
         Me.اضافةملفاتToolStripMenuItem.Name = "اضافةملفاتToolStripMenuItem"
-        Me.اضافةملفاتToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.اضافةملفاتToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.اضافةملفاتToolStripMenuItem.Text = "اضافة ملفات"
         '
         'عرضاوتعديلToolStripMenuItem
         '
         Me.عرضاوتعديلToolStripMenuItem.Name = "عرضاوتعديلToolStripMenuItem"
-        Me.عرضاوتعديلToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.عرضاوتعديلToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.عرضاوتعديلToolStripMenuItem.Text = "تحديث المعلومات"
+        '
+        'اتصالToolStripMenuItem
+        '
+        Me.اتصالToolStripMenuItem.Name = "اتصالToolStripMenuItem"
+        Me.اتصالToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.اتصالToolStripMenuItem.Text = "اتصال"
         '
         'طباعةToolStripMenuItem
         '
         Me.طباعةToolStripMenuItem.Name = "طباعةToolStripMenuItem"
-        Me.طباعةToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.طباعةToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.طباعةToolStripMenuItem.Text = "تحرير العقد"
+        '
+        'عرضالفيشToolStripMenuItem
+        '
+        Me.عرضالفيشToolStripMenuItem.Name = "عرضالفيشToolStripMenuItem"
+        Me.عرضالفيشToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.عرضالفيشToolStripMenuItem.Text = "عرض الفيش"
         '
         'tb_name
         '
@@ -488,6 +507,7 @@ Partial Class fm_show_patients
         '
         'RibbonControl2
         '
+        Me.RibbonControl2.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl2.ExpandCollapseItem.Id = 0
         Me.RibbonControl2.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl2.ExpandCollapseItem, Me.tb_user, Me.BarButtonItem1, Me.BarHeaderItem1, Me.BarHeaderItem2, Me.BarButtonItem2, Me.SkinRibbonGalleryBarItem2, Me.btn_main, Me.BarHeaderItem3, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.tb_count, Me.BarCheckItem1, Me.BarHeaderItem4})
         Me.RibbonControl2.Location = New System.Drawing.Point(0, 0)
@@ -738,24 +758,9 @@ Partial Class fm_show_patients
         Me.colhouse_price.VisibleIndex = 5
         Me.colhouse_price.Width = 141
         '
-        'حذفToolStripMenuItem
+        'DefaultLookAndFeel1
         '
-        Me.حذفToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.حذفنهائيToolStripMenuItem1})
-        Me.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem"
-        Me.حذفToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.حذفToolStripMenuItem.Text = "حذف"
-        '
-        'حذفنهائيToolStripMenuItem1
-        '
-        Me.حذفنهائيToolStripMenuItem1.Name = "حذفنهائيToolStripMenuItem1"
-        Me.حذفنهائيToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.حذفنهائيToolStripMenuItem1.Text = "حذف نهائي"
-        '
-        'عرضالفيشToolStripMenuItem
-        '
-        Me.عرضالفيشToolStripMenuItem.Name = "عرضالفيشToolStripMenuItem"
-        Me.عرضالفيشToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.عرضالفيشToolStripMenuItem.Text = "عرض الفيش"
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Blue"
         '
         'fm_show_patients
         '

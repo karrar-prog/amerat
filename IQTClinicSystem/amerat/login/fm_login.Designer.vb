@@ -40,6 +40,8 @@ Partial Class fm_login
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.tb_secret_word = New DevExpress.XtraEditors.TextEdit()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_secret_word.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,6 +121,8 @@ Partial Class fm_login
         '
         'ribbonControl
         '
+        Me.ribbonControl.BackColor = System.Drawing.Color.Green
+        Me.ribbonControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.ribbonControl.ExpandCollapseItem.Id = 0
         Me.ribbonControl.ForeColor = System.Drawing.Color.Red
         Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.skinRibbonGalleryBarItem, Me.barSubItemNavigation, Me.employeesBarButtonItem, Me.customersBarButtonItem, Me.BarButtonItem1, Me.t_count, Me.BarHeaderItem1, Me.BarHeaderItem2, Me.BarStaticItem1, Me.BarButtonItem2, Me.جديد})
@@ -129,8 +133,14 @@ Partial Class fm_login
         Me.ribbonControl.Name = "ribbonControl"
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ribbonControl.Size = New System.Drawing.Size(655, 49)
+        Me.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
+        Me.ribbonControl.ShowQatLocationSelector = False
+        Me.ribbonControl.ShowToolbarCustomizeItem = False
+        Me.ribbonControl.Size = New System.Drawing.Size(628, 27)
+        Me.ribbonControl.Toolbar.ShowCustomizeItem = False
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
+        Me.ribbonControl.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.[False]
+        Me.ribbonControl.Visible = False
         '
         'RibbonPage1
         '
@@ -139,9 +149,10 @@ Partial Class fm_login
         '
         'PictureBox4
         '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.PanNorth
         Me.PictureBox4.Image = Global.IQTClinicSystem.My.Resources.Resources.unlock_icon
-        Me.PictureBox4.Location = New System.Drawing.Point(393, 182)
+        Me.PictureBox4.Location = New System.Drawing.Point(305, 278)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(58, 57)
@@ -151,18 +162,19 @@ Partial Class fm_login
         '
         'tb_secret_word
         '
-        Me.tb_secret_word.Location = New System.Drawing.Point(217, 191)
+        Me.tb_secret_word.Location = New System.Drawing.Point(176, 234)
         Me.tb_secret_word.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.tb_secret_word.Name = "tb_secret_word"
         Me.tb_secret_word.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.tb_secret_word.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_secret_word.Properties.Appearance.Options.UseFont = True
+        Me.tb_secret_word.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.tb_secret_word.Properties.Mask.EditMask = "d"
         Me.tb_secret_word.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_secret_word.Properties.NullValuePrompt = "ادخل كلمة المرور"
         Me.tb_secret_word.Properties.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tb_secret_word.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_secret_word.Size = New System.Drawing.Size(170, 38)
+        Me.tb_secret_word.Size = New System.Drawing.Size(296, 36)
         Me.tb_secret_word.TabIndex = 273
         '
         'Label1
@@ -170,11 +182,32 @@ Partial Class fm_login
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(262, 282)
+        Me.Label1.Location = New System.Drawing.Point(278, 195)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(108, 23)
         Me.Label1.TabIndex = 275
         Me.Label1.Text = "مجمع الاميرات"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(590, 30)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(26, 17)
+        Me.Label2.TabIndex = 277
+        Me.Label2.Text = "3.1"
+        '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.SimpleButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(12, 9)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(39, 44)
+        Me.SimpleButton1.TabIndex = 278
         '
         'fm_login
         '
@@ -187,13 +220,16 @@ Partial Class fm_login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(655, 372)
+        Me.ClientSize = New System.Drawing.Size(628, 485)
+        Me.Controls.Add(Me.SimpleButton1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.tb_secret_word)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.ribbonControl)
         Me.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "fm_login"
@@ -228,4 +264,6 @@ Partial Class fm_login
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents tb_secret_word As DevExpress.XtraEditors.TextEdit
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
 End Class

@@ -299,12 +299,22 @@ Partial Public Class fm_queue
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+
+        If Not hasPermission(i_add_booking) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
         fm_add_patient.Show()
         Me.Hide()
 
     End Sub
 
     Private Sub p_fingerPrint_Click(sender As Object, e As EventArgs) Handles p_fingerPrint.Click
+
+        If Not hasPermission(i_cusomer) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
         fm_show_patients.Show()
         Me.Hide()
 
@@ -382,6 +392,11 @@ Partial Public Class fm_queue
     End Sub
 
     Private Sub تعديلالاسمToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تعديلالاسمToolStripMenuItem.Click
+
+        If Not hasPermission(i_edit_contract) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
         If lv_queue.SelectedItems.Count > 0 Then
             Try
                 fm_add_patient.Close()
@@ -519,6 +534,11 @@ Partial Public Class fm_queue
     End Sub
 
     Private Sub الغاءحجزهذاالزبونToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles الغاءحجزهذاالزبونToolStripMenuItem.Click
+
+        If Not hasPermission(i_delete_customer) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
         If user.type <> user_admin Then
             MessageBox.Show("مركز الصلاحيات", "لايمكن الحذف")
             Exit Sub
@@ -564,6 +584,11 @@ Partial Public Class fm_queue
     End Function
 
     Private Sub حذفهذهالفيشةفقطToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles حذفهذهالفيشةفقطToolStripMenuItem.Click
+
+        If Not hasPermission(i_delete) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
         If lv_queue.SelectedItems.Count > 0 Then
 
             If MessageBox.Show("هل تريد حذف الفيشة ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then

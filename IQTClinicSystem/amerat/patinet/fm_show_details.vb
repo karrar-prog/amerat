@@ -1,4 +1,6 @@
-﻿Public Class fm_show_details 
+﻿Imports MySql.Data.MySqlClient
+
+Public Class fm_show_details
 
     Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
 
@@ -15,17 +17,95 @@
         lv.Columns.Add("", 270)
         lv.Columns.Add("", 270)
         lv.Columns.Add("", 270)
-        lv.Columns.Add("", 270)
-        lv.Columns.Add("", 270)
+        lv.Columns.Add("", 320)
+        lv.Columns.Add("", 300)
         lv.Columns.Add("تسلسل", 0)
-       
+
+
+        lv_queue.View = View.Details
+
+        lv_queue.Columns.Add("العقد", 60)
+        lv_queue.Columns.Add("اسم الزبون", 200)
+        lv_queue.Columns.Add("هاتف", 150)
+        lv_queue.Columns.Add("بلوك", 110)
+        lv_queue.Columns.Add("رقم الدار", 110)
+        lv_queue.Columns.Add("المبلغ الكلي", 200)
+        lv_queue.Columns.Add("تأريخ الشراء", 150)
+
+
 
 
     End Sub
 
+    Public Sub search()
 
+1:
+        Try
+            Dim s As String
+
+            If tb_f1.Text.Trim = "الكل" Or tb_f1.Text.Trim = "" Then
+                s = "select * from patient WHERE name like '%" & tb_name.Text & "%'   and is_token like '%" & cb_plan.Text & "%'   order by id desc limit " & num_limit.Value & ""
+            Else
+
+                If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
+                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' order by id desc  limit " & num_limit.Value & ""
+
+                Else
+                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' and  f2 like '%" & tb_f2.Text & "%'   order by id desc  limit " & num_limit.Value & ""
+
+                End If
+
+            End If
+
+            Dim DataSet = getdatat1(s)
+
+            Dim dt As New DateTimePicker
+            Dim c As Integer
+
+            lv_queue.Items.Clear()
+
+
+
+            If DataSet.Tables(0).Rows.Count > 0 Then
+                lv_queue.Show()
+
+                For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
+                    lv_queue.Items().Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("phone").ToString)
+
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString & DataSet.Tables(0).Rows(i).Item("f2").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f3").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("house_price").ToString)
+
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("register_date").ToString)
+
+                    If DataSet.Tables(0).Rows(i).Item("deleted").ToString = "1" Then
+                        lv_queue.Items(i).BackColor = Color.LightPink
+                    End If
+                    'lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                    '   dt.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("birthdate").ToString)
+
+                Next
+            Else
+                lv_queue.Hide()
+
+            End If
+        Catch ex As MySqlException
+            MessageBox.Show(ex.Message)
+            If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+
+            End If
+        End Try
+
+
+
+    End Sub
     Private Sub fm_show_details_Load(sender As Object, e As EventArgs) Handles Me.Load
         formatlist()
+        lv_queue.Hide()
+
     End Sub
 
     Private Sub tb_patient_id_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_patient_id.KeyUp
@@ -40,7 +120,7 @@
             End If
 
 
-          
+
 
         End If
     End Sub
@@ -49,7 +129,7 @@
 
     End Sub
 
-   
+
 
     Private Sub get_all_info()
         Dim p As New Patient(__(tb_patient_id.Text))
@@ -107,7 +187,7 @@
 
         End Try
 
-     
+
         lv.Items.Add("مبلغ الدار الكلي")
         lv.Items(12).SubItems.Add(p.house_price.ToString)
 
@@ -129,7 +209,7 @@
 
         Dim d As New DataSet
 
-        d = getdatat1("select * from dept where user_id = " & tb_patient_id.Text & "")
+        d = getdatat1("select * from dept where user_id = " & tb_patient_id.Text & " order by id ")
 
         Dim id2 As Integer = 18
 
@@ -200,36 +280,87 @@
     End Sub
 
     Private Sub طباعةفيشةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles طباعةفيشةToolStripMenuItem.Click
-        If lv.SelectedItems.Count = 1 Then
-            If lv.SelectedItems(0).SubItems(6).ToString.Trim <> "" Then
-                Dim dept As New Dept(__(lv.SelectedItems(0).SubItems(6).Text))
-                If dept.amount = dept.arrive_amount Then
-                    MessageBox.Show("تم التسديد مسبقا")
-                Else
 
 
-
-                    Try
-                        fm_add_queue.Close()
-
-                    Catch ex As Exception
-
-                    End Try
-                    fm_add_queue.tb_id.Text = "0"
-                    fm_add_queue.tb_patient_id.Text = lv.Items(0).SubItems(1).Text
-                    fm_add_queue.tb_number.Text = get_number(dept.title).ToString
-                    fm_add_queue.tb_dept_title.Text = dept.title
-                    fm_add_queue.tb_dept_id.Text = dept.id.ToString
-                    fm_add_queue.tb_fesha_amount.Text = dept.amount.ToString
-                    fm_add_queue.tb_amount_text.Text = ToArabicLetter(dept.amount)
-                    fm_add_queue.Show()
-
-
-                End If
-
-            Else
-                MessageBox.Show("يرجى اختيار عنر واحد")
-            End If
+        If Not hasPermission(i_fesha) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
         End If
+        If lv.SelectedItems.Count = 1 Then
+            Try
+                If lv.SelectedItems(0).SubItems(6).ToString.Trim <> "" Then
+                    Dim dept As New Dept(__(lv.SelectedItems(0).SubItems(6).Text))
+                    If dept.amount = dept.arrive_amount Then
+                        MessageBox.Show("تم التسديد مسبقا")
+                    Else
+
+
+
+                        Try
+                            fm_add_queue.Close()
+
+                        Catch ex As Exception
+
+                        End Try
+                        fm_add_queue.tb_id.Text = "0"
+                        fm_add_queue.tb_patient_id.Text = lv.Items(0).SubItems(1).Text
+                        fm_add_queue.tb_number.Text = get_number(dept.title).ToString
+                        fm_add_queue.tb_dept_title.Text = dept.title
+                        fm_add_queue.tb_dept_id.Text = dept.id.ToString
+                        fm_add_queue.tb_fesha_amount.Text = dept.amount.ToString
+                        fm_add_queue.tb_amount_text.Text = ToArabicLetter(dept.amount)
+                        fm_add_queue.Show()
+
+
+                    End If
+
+                Else
+                    MessageBox.Show("يرجى اختيار عنر واحد")
+                End If
+            Catch ex As Exception
+
+            End Try
+
+        End If
+    End Sub
+
+    Private Sub tb_name_EditValueChanged(sender As Object, e As EventArgs) Handles tb_name.EditValueChanged
+
+    End Sub
+
+    Private Sub tb_name_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_name.KeyUp
+        If tb_name.Text.Trim = "" Then
+            lv_queue.Hide()
+
+        Else
+            search()
+
+        End If
+    End Sub
+
+    Private Sub lv_queue_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv_queue.SelectedIndexChanged
+        If lv_queue.SelectedItems.Count > 0 Then
+            tb_patient_id.Text = lv_queue.SelectedItems(0).Text
+            get_all_info()
+        End If
+    End Sub
+
+    Private Sub tb_f2_EditValueChanged(sender As Object, e As EventArgs) Handles tb_f2.EditValueChanged
+
+    End Sub
+
+    Private Sub tb_f2_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_f2.KeyUp
+        search()
+
+    End Sub
+
+    Private Sub tb_f1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tb_f1.SelectedIndexChanged
+        search()
+
+    End Sub
+
+    Private Sub cb_plan_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_plan.SelectedIndexChanged
+        search()
+
     End Sub
 End Class

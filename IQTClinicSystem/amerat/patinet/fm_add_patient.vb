@@ -347,7 +347,10 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-
+        If Not hasPermission(i_add_booking) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
 
         If tb_id.Text.Trim <> "" Then
 
@@ -480,6 +483,10 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        If Not hasPermission(i_add_booking) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
 
         save_images()
 
@@ -554,14 +561,14 @@ Public Class fm_add_patient
             Exit Sub
         End If
 
-        Dim patient As New Patient()
-        patient.name = tb_name.Text
-        If patient.findByName() And tb_id.Text.Trim = "" Then
-            operatin_click(0)
-            tb_name.BackColor = Color.LightBlue
-            MessageBox.Show("هذا الاسم موجود")
-            Exit Sub
-        End If
+        'Dim patient As New Patient()
+        'patient.name = tb_name.Text
+        'If patient.findByName() And tb_id.Text.Trim = "" Then
+        '    operatin_click(0)
+        '    tb_name.BackColor = Color.LightBlue
+        '    MessageBox.Show("هذا الاسم موجود")
+        '    Exit Sub
+        'End If
 
 
         If tb_id.Text = "0" Then
@@ -570,6 +577,10 @@ Public Class fm_add_patient
 1:
 
             Try
+                If Not hasPermission(i_add_booking) Then
+                    Exit Sub
+                    MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+                End If
                 save_new()
                 tb_name.BackColor = Color.LightGreen
 
@@ -583,6 +594,10 @@ Public Class fm_add_patient
         Else
 2:
             Try
+                If Not hasPermission(i_edit_customer) Then
+                    Exit Sub
+                    MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+                End If
                 update_patient()
                 operatin_click(0)
             Catch ex As Exception
@@ -643,6 +658,16 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox4_Click_1(sender As Object, e As EventArgs) Handles PictureBox4.Click
+
+        If Not hasPermission(i_contract) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
+
+
+
+
         If tb_id.Text.Trim = "" Then
             MessageBox.Show("اختر مشترك")
             Exit Sub
@@ -771,6 +796,10 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        If Not hasPermission(i_fesha) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
 
         Try
             fm_add_queue.Close()
@@ -875,8 +904,14 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+
+        If Not hasPermission(i_add_booking) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
         If tb_id.Text.Trim = "" Then
-            MessageBox.Show("لم تقم بحفظ معلومات المراجع")
+            MessageBox.Show("لم تقم بحفظ معلومات ألزبون")
             Exit Sub
 
         End If
@@ -895,59 +930,65 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+
+        If Not hasPermission(i_add_booking) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
         Try
 
-     
-        If tb_id.Text.Trim <> "" Then
+
+            If tb_id.Text.Trim <> "" Then
                 OpenFileDialog1.Title = "Please select a image"
-        OpenFileDialog1.FileName = ""
-        OpenFileDialog1.InitialDirectory = images_path & "\maps"
-        OpenFileDialog1.Filter = "All files|*.*|png|*.png|jpg|*.jpg"
-        Dim path As String
+                OpenFileDialog1.FileName = ""
+                OpenFileDialog1.InitialDirectory = images_path & "\maps"
+                OpenFileDialog1.Filter = "All files|*.*|png|*.png|jpg|*.jpg"
+                Dim path As String
 
-        Dim new_path = images_path & "\p" & tb_id.Text & "\map"
-        Dim new_file_path = new_path & "\map.png"
-        If File.Exists(new_file_path) Then
-            Try
-                Dim proc As New System.Diagnostics.Process()
-                proc = Process.Start(new_file_path, "فتح الصورة")
-            Catch ex As Exception
-
-            End Try
-
-        Else
-
-
-
-
-            If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
-                path = OpenFileDialog1.FileName
-
-                If path.Trim <> "" Then
-
-                    If (Not System.IO.Directory.Exists(new_path)) Then
-                        System.IO.Directory.CreateDirectory(new_path)
-                    End If
-
-
-                    If Not System.IO.File.Exists(new_file_path) = True Then
-                        File.Copy(path, new_file_path, True)
-                    End If
+                Dim new_path = images_path & "\p" & tb_id.Text & "\map"
+                Dim new_file_path = new_path & "\map.png"
+                If File.Exists(new_file_path) Then
                     Try
                         Dim proc As New System.Diagnostics.Process()
                         proc = Process.Start(new_file_path, "فتح الصورة")
                     Catch ex As Exception
 
                     End Try
+
                 Else
-                    MessageBox.Show("لم تقم باختيار صورة")
+
+
+
+
+                    If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+                        path = OpenFileDialog1.FileName
+
+                        If path.Trim <> "" Then
+
+                            If (Not System.IO.Directory.Exists(new_path)) Then
+                                System.IO.Directory.CreateDirectory(new_path)
+                            End If
+
+
+                            If Not System.IO.File.Exists(new_file_path) = True Then
+                                File.Copy(path, new_file_path, True)
+                            End If
+                            Try
+                                Dim proc As New System.Diagnostics.Process()
+                                proc = Process.Start(new_file_path, "فتح الصورة")
+                            Catch ex As Exception
+
+                            End Try
+                        Else
+                            MessageBox.Show("لم تقم باختيار صورة")
+                        End If
+
+                    End If
+
+
                 End If
-
             End If
-
-
-        End If
-        End If
 
 
 

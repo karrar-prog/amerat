@@ -35,15 +35,21 @@ Module DB
     Public s_back As String = "استرجاع"
 
 
-    Public per_saller As String = "بائع"
-    Public per_user As String = "مستخدم"
-    Public per_manage_item As String = "مدير المواد"
-    Public per_add_item As String = "ادخال ألمواد"
-    Public per_rests As String = "واجهة الاستراحات"
-    Public per_worker As String = "واجهة العمال"
-    Public per_edite_dicount As String = "تعديل الخصم"
-    Public per_money As String = "جرد الدخل"
-    Public per_add_user As String = "اضافة مستخدم"
+
+
+    Public i_cusomer As String = "واجهه الزبائن"
+    Public i_add_booking As String = "اضافة حجز"
+    Public i_delete_customer As String = "حذف الزبون"
+    Public i_edit_customer As String = "تعديل زبون"
+    Public i_edit_contract As String = "تحرير العقد"
+    Public i_contract As String = "واجهه العقود"
+    Public i_fesha As String = "واجهه الفيشه"
+    Public i_delete As String = "حذف الفيشة"
+    Public i_money As String = "الاموال والمراقبة"
+    Public i_pull As String = "واجهه السحوبات"
+    Public i_delete_pull As String = "اضافة سحب"
+    Public i_enter As String = "الحضور والانصراف"
+
 
 
     Public per_pulls_show As String = "عرض السحوبات"
@@ -154,17 +160,48 @@ Module DB
     End Sub
 
     Public Function permistion_titles(ByRef li As ListView) As Integer
+
+
+
+
+
+
+
+  
+
+
         li.Items.Clear()
-        li.Items.Add("حذف")
-        li.Items(0).SubItems.Add("حذف الاستحقاقات والديون")
-        li.Items.Add("الدخل")
-        li.Items(1).SubItems.Add("عرض الدخل والمراقبه")
-        li.Items.Add("السحوبات")
-        li.Items(2).SubItems.Add("عرض واجهه اليحوبات")
-        li.Items.Add("ادارة")
-        li.Items(3).SubItems.Add("اضافة وتعديل معلومات المشتركين")
-        li.Items.Add("تسديد")
-        li.Items(4).SubItems.Add("تسديد الديون والجباية")
+        li.Items.Add(i_cusomer)
+        li.Items(0).SubItems.Add("بحث - طباعة")
+        li.Items.Add(i_add_booking)
+        li.Items(1).SubItems.Add("اضافة زبون جديد- اضافة ملفات")
+        li.Items.Add(i_delete_customer)
+        li.Items(2).SubItems.Add("حذف الزبون")
+        li.Items.Add(i_edit_customer)
+        li.Items(3).SubItems.Add("تعديل المعلومات-تعديل الملفات")
+        li.Items.Add(i_edit_contract)
+        li.Items(4).SubItems.Add("انشاء عقد-تحرير")
+
+        li.Items.Add(i_contract)
+        li.Items(5).SubItems.Add("بحث - طباعة")
+
+        li.Items.Add(i_fesha)
+        li.Items(6).SubItems.Add("بحث - طباعة")
+
+        li.Items.Add(i_delete)
+        li.Items(7).SubItems.Add("حذف - الغاء الفيشة")
+
+        li.Items.Add(i_money)
+        li.Items(8).SubItems.Add("بحث")
+
+        li.Items.Add(i_pull)
+        li.Items(9).SubItems.Add("واجه السحوبات")
+
+        li.Items.Add(i_delete_pull)
+        li.Items(10).SubItems.Add("اضافة - تسديد سحب")
+
+        li.Items.Add(i_enter)
+        li.Items(11).SubItems.Add("")
 
 
 
