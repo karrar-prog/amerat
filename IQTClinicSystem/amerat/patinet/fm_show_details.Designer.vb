@@ -53,10 +53,10 @@ Partial Class fm_show_details
         '
         'RibbonStatusBar1
         '
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 756)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 764)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1204, 31)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1208, 23)
         '
         'RibbonControl1
         '
@@ -66,7 +66,7 @@ Partial Class fm_show_details
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
         Me.RibbonControl1.MaxItemId = 1
         Me.RibbonControl1.Name = "RibbonControl1"
-        Me.RibbonControl1.Size = New System.Drawing.Size(1204, 49)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1208, 54)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         '
         'RibbonPage2
@@ -79,7 +79,7 @@ Partial Class fm_show_details
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(212, 41)
+        Me.Label7.Location = New System.Drawing.Point(212, 45)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(83, 23)
         Me.Label7.TabIndex = 275
@@ -110,10 +110,10 @@ Partial Class fm_show_details
         Me.GroupControl1.Controls.Add(Me.tb_patient_id)
         Me.GroupControl1.Controls.Add(Me.Label7)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl1.Location = New System.Drawing.Point(899, 49)
+        Me.GroupControl1.Location = New System.Drawing.Point(903, 54)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl1.Size = New System.Drawing.Size(305, 707)
+        Me.GroupControl1.Size = New System.Drawing.Size(305, 710)
         Me.GroupControl1.TabIndex = 276
         Me.GroupControl1.Text = "معلومات العقد"
         '
@@ -122,7 +122,7 @@ Partial Class fm_show_details
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(217, 166)
+        Me.Label3.Location = New System.Drawing.Point(217, 170)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(46, 23)
         Me.Label3.TabIndex = 300
@@ -133,7 +133,7 @@ Partial Class fm_show_details
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(212, 136)
+        Me.Label2.Location = New System.Drawing.Point(212, 140)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 23)
         Me.Label2.TabIndex = 299
@@ -169,7 +169,7 @@ Partial Class fm_show_details
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(176, 218)
+        Me.LabelControl1.Location = New System.Drawing.Point(176, 222)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(112, 13)
         Me.LabelControl1.TabIndex = 298
@@ -232,7 +232,7 @@ Partial Class fm_show_details
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(212, 102)
+        Me.Label1.Location = New System.Drawing.Point(212, 106)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 23)
         Me.Label1.TabIndex = 277
@@ -254,10 +254,10 @@ Partial Class fm_show_details
         '
         Me.GroupControl2.Controls.Add(Me.lv)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl2.Location = New System.Drawing.Point(0, 49)
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 54)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(899, 707)
+        Me.GroupControl2.Size = New System.Drawing.Size(903, 710)
         Me.GroupControl2.TabIndex = 277
         Me.GroupControl2.Text = "التفاصيل"
         '
@@ -270,11 +270,11 @@ Partial Class fm_show_details
         Me.lv.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lv.FullRowSelect = True
         Me.lv.GridLines = True
-        Me.lv.Location = New System.Drawing.Point(2, 20)
+        Me.lv.Location = New System.Drawing.Point(2, 22)
         Me.lv.Name = "lv"
         Me.lv.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv.RightToLeftLayout = True
-        Me.lv.Size = New System.Drawing.Size(895, 685)
+        Me.lv.Size = New System.Drawing.Size(899, 686)
         Me.lv.TabIndex = 2
         Me.lv.UseCompatibleStateImageBehavior = False
         '
@@ -282,7 +282,7 @@ Partial Class fm_show_details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1204, 787)
+        Me.ClientSize = New System.Drawing.Size(1208, 787)
         Me.Controls.Add(Me.GroupControl2)
         Me.Controls.Add(Me.GroupControl1)
         Me.Controls.Add(Me.RibbonStatusBar1)

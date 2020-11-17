@@ -596,4 +596,9 @@ Public Class fm_main
       
 
     End Sub
+
+    Private Sub tb_user_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles tb_user.ItemClick
+        fm_change_user.Show()
+
+    End Sub
 End Class

@@ -47,6 +47,10 @@ Partial Class fm_login
         CType(Me.tb_secret_word.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'DefaultLookAndFeel1
+        '
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Blue"
+        '
         'RibbonPage2
         '
         Me.RibbonPage2.Name = "RibbonPage2"
@@ -136,7 +140,7 @@ Partial Class fm_login
         Me.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.ribbonControl.ShowQatLocationSelector = False
         Me.ribbonControl.ShowToolbarCustomizeItem = False
-        Me.ribbonControl.Size = New System.Drawing.Size(628, 27)
+        Me.ribbonControl.Size = New System.Drawing.Size(628, 30)
         Me.ribbonControl.Toolbar.ShowCustomizeItem = False
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         Me.ribbonControl.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.[False]

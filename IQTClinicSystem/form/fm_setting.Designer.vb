@@ -46,9 +46,11 @@ Partial Class fm_setting
         Me.tb_id2 = New DevExpress.XtraEditors.TextEdit()
         Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
         Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
-
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton13 = New DevExpress.XtraEditors.SimpleButton()
+        Me.tb_secret_word = New System.Windows.Forms.TextBox()
+        Me.SimpleButton5 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_amount2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_title2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,9 +73,9 @@ Partial Class fm_setting
         Me.SimpleButton1.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton1.Appearance.Options.UseFont = True
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(12, 409)
+        Me.SimpleButton1.Location = New System.Drawing.Point(499, 245)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(249, 39)
+        Me.SimpleButton1.Size = New System.Drawing.Size(288, 39)
         Me.SimpleButton1.TabIndex = 0
         Me.SimpleButton1.Text = "تغيير ايميل النسخة الاحتياطية"
         '
@@ -89,6 +91,7 @@ Partial Class fm_setting
         '
         'ribbonControl
         '
+        Me.ribbonControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.ribbonControl.ExpandCollapseItem.Id = 0
         Me.ribbonControl.ForeColor = System.Drawing.Color.Red
         Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.skinRibbonGalleryBarItem, Me.barSubItemNavigation, Me.employeesBarButtonItem, Me.customersBarButtonItem, Me.BarButtonItem1, Me.t_count, Me.BarHeaderItem1, Me.BarHeaderItem2, Me.BarStaticItem1, Me.BarButtonItem2, Me.جديد})
@@ -100,7 +103,7 @@ Partial Class fm_setting
         Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage})
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ribbonControl.Size = New System.Drawing.Size(794, 143)
+        Me.ribbonControl.Size = New System.Drawing.Size(794, 147)
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '
         'skinRibbonGalleryBarItem
@@ -187,7 +190,7 @@ Partial Class fm_setting
         'tb_amount2
         '
         Me.tb_amount2.EnterMoveNextControl = True
-        Me.tb_amount2.Location = New System.Drawing.Point(257, 262)
+        Me.tb_amount2.Location = New System.Drawing.Point(258, 358)
         Me.tb_amount2.Name = "tb_amount2"
         Me.tb_amount2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_amount2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -202,7 +205,7 @@ Partial Class fm_setting
         'tb_title2
         '
         Me.tb_title2.EnterMoveNextControl = True
-        Me.tb_title2.Location = New System.Drawing.Point(562, 262)
+        Me.tb_title2.Location = New System.Drawing.Point(563, 358)
         Me.tb_title2.Name = "tb_title2"
         Me.tb_title2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_title2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -215,7 +218,7 @@ Partial Class fm_setting
         'tb_title1
         '
         Me.tb_title1.EnterMoveNextControl = True
-        Me.tb_title1.Location = New System.Drawing.Point(562, 231)
+        Me.tb_title1.Location = New System.Drawing.Point(563, 327)
         Me.tb_title1.Name = "tb_title1"
         Me.tb_title1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_title1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -228,7 +231,7 @@ Partial Class fm_setting
         'tb_amount1
         '
         Me.tb_amount1.EnterMoveNextControl = True
-        Me.tb_amount1.Location = New System.Drawing.Point(257, 231)
+        Me.tb_amount1.Location = New System.Drawing.Point(258, 327)
         Me.tb_amount1.Name = "tb_amount1"
         Me.tb_amount1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_amount1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -243,7 +246,7 @@ Partial Class fm_setting
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.IQTClinicSystem.My.Resources.Resources.Downloads_icon
-        Me.PictureBox1.Location = New System.Drawing.Point(366, 304)
+        Me.PictureBox1.Location = New System.Drawing.Point(361, 392)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(62, 59)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -253,7 +256,7 @@ Partial Class fm_setting
         'tb_id1
         '
         Me.tb_id1.EnterMoveNextControl = True
-        Me.tb_id1.Location = New System.Drawing.Point(738, 231)
+        Me.tb_id1.Location = New System.Drawing.Point(739, 327)
         Me.tb_id1.Name = "tb_id1"
         Me.tb_id1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_id1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -268,7 +271,7 @@ Partial Class fm_setting
         'tb_id2
         '
         Me.tb_id2.EnterMoveNextControl = True
-        Me.tb_id2.Location = New System.Drawing.Point(738, 262)
+        Me.tb_id2.Location = New System.Drawing.Point(739, 358)
         Me.tb_id2.Name = "tb_id2"
         Me.tb_id2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_id2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -283,7 +286,7 @@ Partial Class fm_setting
         'TextEdit1
         '
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(12, 231)
+        Me.TextEdit1.Location = New System.Drawing.Point(13, 327)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -298,7 +301,7 @@ Partial Class fm_setting
         'TextEdit2
         '
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(12, 262)
+        Me.TextEdit2.Location = New System.Drawing.Point(13, 358)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -315,9 +318,9 @@ Partial Class fm_setting
         Me.SimpleButton3.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton3.Appearance.Options.UseFont = True
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(645, 409)
+        Me.SimpleButton3.Location = New System.Drawing.Point(12, 155)
         Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(130, 39)
+        Me.SimpleButton3.Size = New System.Drawing.Size(209, 39)
         Me.SimpleButton3.TabIndex = 282
         Me.SimpleButton3.Text = "اضافة خارطة"
         '
@@ -326,17 +329,55 @@ Partial Class fm_setting
         Me.SimpleButton4.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton4.Appearance.Options.UseFont = True
         Me.SimpleButton4.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton4.Location = New System.Drawing.Point(500, 409)
+        Me.SimpleButton4.Location = New System.Drawing.Point(13, 210)
         Me.SimpleButton4.Name = "SimpleButton4"
-        Me.SimpleButton4.Size = New System.Drawing.Size(130, 39)
+        Me.SimpleButton4.Size = New System.Drawing.Size(209, 39)
         Me.SimpleButton4.TabIndex = 283
         Me.SimpleButton4.Text = "عرض الخرائط"
+        '
+        'SimpleButton13
+        '
+        Me.SimpleButton13.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton13.Appearance.Options.UseFont = True
+        Me.SimpleButton13.ImageOptions.Image = CType(resources.GetObject("SimpleButton13.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton13.Location = New System.Drawing.Point(499, 153)
+        Me.SimpleButton13.Margin = New System.Windows.Forms.Padding(9)
+        Me.SimpleButton13.Name = "SimpleButton13"
+        Me.SimpleButton13.Size = New System.Drawing.Size(288, 38)
+        Me.SimpleButton13.TabIndex = 286
+        Me.SimpleButton13.Text = "تغيير المستخدم الان"
+        '
+        'tb_secret_word
+        '
+        Me.tb_secret_word.BackColor = System.Drawing.Color.White
+        Me.tb_secret_word.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_secret_word.Location = New System.Drawing.Point(583, 197)
+        Me.tb_secret_word.Name = "tb_secret_word"
+        Me.tb_secret_word.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tb_secret_word.Size = New System.Drawing.Size(207, 35)
+        Me.tb_secret_word.TabIndex = 285
+        Me.tb_secret_word.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'SimpleButton5
+        '
+        Me.SimpleButton5.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton5.Appearance.Options.UseFont = True
+        Me.SimpleButton5.ImageOptions.Image = CType(resources.GetObject("SimpleButton5.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton5.Location = New System.Drawing.Point(499, 195)
+        Me.SimpleButton5.Margin = New System.Windows.Forms.Padding(9)
+        Me.SimpleButton5.Name = "SimpleButton5"
+        Me.SimpleButton5.Size = New System.Drawing.Size(81, 38)
+        Me.SimpleButton5.TabIndex = 288
+        Me.SimpleButton5.Text = "دخول"
         '
         'fm_setting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(794, 460)
+        Me.Controls.Add(Me.SimpleButton5)
+        Me.Controls.Add(Me.SimpleButton13)
+        Me.Controls.Add(Me.tb_secret_word)
         Me.Controls.Add(Me.SimpleButton4)
         Me.Controls.Add(Me.SimpleButton3)
         Me.Controls.Add(Me.TextEdit1)
@@ -401,4 +442,7 @@ Partial Class fm_setting
 
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton4 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents SimpleButton13 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents tb_secret_word As System.Windows.Forms.TextBox
+    Friend WithEvents SimpleButton5 As DevExpress.XtraEditors.SimpleButton
 End Class

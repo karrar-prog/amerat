@@ -578,8 +578,12 @@ Public Class fm_add_patient
 
             Try
                 If Not hasPermission(i_add_booking) Then
+
+                    MessageBox.Show("ليس لديك صلاحية الاضافة", "مركز الصلاحيات")
+                    finger_show()
+                    saveOrAdd()
+                    operatin_click(0)
                     Exit Sub
-                    MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
                 End If
                 save_new()
                 tb_name.BackColor = Color.LightGreen
@@ -595,8 +599,12 @@ Public Class fm_add_patient
 2:
             Try
                 If Not hasPermission(i_edit_customer) Then
+
+                    MessageBox.Show("ليس لديك صلاحية التعديل", "مركز الصلاحيات")
+                    finger_show()
+                    saveOrAdd()
+                    operatin_click(0)
                     Exit Sub
-                    MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
                 End If
                 update_patient()
                 operatin_click(0)
@@ -947,7 +955,7 @@ Public Class fm_add_patient
                 Dim path As String
 
                 Dim new_path = images_path & "\p" & tb_id.Text & "\map"
-                Dim new_file_path = new_path & "\map.png"
+                Dim new_file_path = new_path & "\ألخارطة.png"
                 If File.Exists(new_file_path) Then
                     Try
                         Dim proc As New System.Diagnostics.Process()

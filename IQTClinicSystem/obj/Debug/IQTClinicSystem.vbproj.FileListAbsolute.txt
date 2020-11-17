@@ -978,3 +978,4 @@ C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbp
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_change_user.resources

@@ -28,6 +28,7 @@ Partial Class fm_monitoring_event
         Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage()
         Me.li_event = New System.Windows.Forms.ListView()
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.colid = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -78,6 +79,7 @@ Partial Class fm_monitoring_event
         '
         'RibbonControl1
         '
+        Me.RibbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
         Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem})
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
@@ -91,7 +93,7 @@ Partial Class fm_monitoring_event
         Me.RibbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl1.ShowQatLocationSelector = False
         Me.RibbonControl1.ShowToolbarCustomizeItem = False
-        Me.RibbonControl1.Size = New System.Drawing.Size(1243, 27)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1243, 30)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         Me.RibbonControl1.Toolbar.ShowCustomizeItem = False
         Me.RibbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
@@ -99,10 +101,10 @@ Partial Class fm_monitoring_event
         '
         'RibbonStatusBar1
         '
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 736)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 744)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1243, 31)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1243, 23)
         '
         'RibbonPage2
         '
@@ -113,7 +115,7 @@ Partial Class fm_monitoring_event
         '
         Me.GroupControl1.Controls.Add(Me.XtraTabControl1)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupControl1.Location = New System.Drawing.Point(0, 27)
+        Me.GroupControl1.Location = New System.Drawing.Point(0, 30)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.GroupControl1.Size = New System.Drawing.Size(1243, 331)
@@ -123,10 +125,10 @@ Partial Class fm_monitoring_event
         'XtraTabControl1
         '
         Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 20)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 22)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1239, 309)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1239, 307)
         Me.XtraTabControl1.TabIndex = 121
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
         '
@@ -134,7 +136,7 @@ Partial Class fm_monitoring_event
         '
         Me.XtraTabPage1.Controls.Add(Me.li_event)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1233, 281)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1234, 282)
         Me.XtraTabPage1.Text = "عرض"
         '
         'li_event
@@ -148,16 +150,26 @@ Partial Class fm_monitoring_event
         Me.li_event.Name = "li_event"
         Me.li_event.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_event.RightToLeftLayout = True
-        Me.li_event.Size = New System.Drawing.Size(1233, 281)
+        Me.li_event.Size = New System.Drawing.Size(1234, 282)
         Me.li_event.TabIndex = 119
         Me.li_event.UseCompatibleStateImageBehavior = False
         '
         'XtraTabPage2
         '
+        Me.XtraTabPage2.Controls.Add(Me.SimpleButton2)
         Me.XtraTabPage2.Controls.Add(Me.GridControl1)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1014, 281)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1231, 281)
         Me.XtraTabPage2.Text = "بحث"
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(585, 3)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(72, 45)
+        Me.SimpleButton2.TabIndex = 2
+        Me.SimpleButton2.Text = "تصدير"
         '
         'GridControl1
         '
@@ -165,7 +177,7 @@ Partial Class fm_monitoring_event
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1014, 281)
+        Me.GridControl1.Size = New System.Drawing.Size(1231, 281)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -239,12 +251,12 @@ Partial Class fm_monitoring_event
         Me.li_user.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.li_user.FullRowSelect = True
         Me.li_user.GridLines = True
-        Me.li_user.Location = New System.Drawing.Point(1056, 358)
+        Me.li_user.Location = New System.Drawing.Point(1056, 361)
         Me.li_user.MultiSelect = False
         Me.li_user.Name = "li_user"
         Me.li_user.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_user.RightToLeftLayout = True
-        Me.li_user.Size = New System.Drawing.Size(187, 378)
+        Me.li_user.Size = New System.Drawing.Size(187, 383)
         Me.li_user.TabIndex = 148
         Me.li_user.UseCompatibleStateImageBehavior = False
         '
@@ -259,10 +271,10 @@ Partial Class fm_monitoring_event
         Me.GroupControl2.Controls.Add(Me.LabelControl9)
         Me.GroupControl2.Controls.Add(Me.SimpleButton6)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(773, 358)
+        Me.GroupControl2.Location = New System.Drawing.Point(773, 361)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(283, 378)
+        Me.GroupControl2.Size = New System.Drawing.Size(283, 383)
         Me.GroupControl2.TabIndex = 149
         Me.GroupControl2.Text = "بحث"
         '
@@ -579,4 +591,5 @@ Partial Class fm_monitoring_event
     Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
 End Class

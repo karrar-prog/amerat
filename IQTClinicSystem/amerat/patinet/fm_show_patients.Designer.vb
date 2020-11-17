@@ -20,6 +20,7 @@ Partial Class fm_show_patients
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fm_show_patients))
         Me.lv_queue = New System.Windows.Forms.ListView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.اضافةحجزعمليةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -82,6 +83,7 @@ Partial Class fm_show_patients
         Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
         Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage()
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.colid = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -132,7 +134,7 @@ Partial Class fm_show_patients
         Me.lv_queue.Name = "lv_queue"
         Me.lv_queue.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_queue.RightToLeftLayout = True
-        Me.lv_queue.Size = New System.Drawing.Size(1012, 650)
+        Me.lv_queue.Size = New System.Drawing.Size(1013, 646)
         Me.lv_queue.TabIndex = 1
         Me.lv_queue.UseCompatibleStateImageBehavior = False
         '
@@ -140,7 +142,7 @@ Partial Class fm_show_patients
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اضافةحجزعمليةToolStripMenuItem, Me.حذفToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.عرضاوتعديلToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.طباعةToolStripMenuItem, Me.عرضالفيشToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 158)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 180)
         '
         'اضافةحجزعمليةToolStripMenuItem
         '
@@ -158,7 +160,7 @@ Partial Class fm_show_patients
         'خارطةToolStripMenuItem
         '
         Me.خارطةToolStripMenuItem.Name = "خارطةToolStripMenuItem"
-        Me.خارطةToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
+        Me.خارطةToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.خارطةToolStripMenuItem.Text = "خارطة"
         '
         'سجلتسديدToolStripMenuItem
@@ -242,9 +244,9 @@ Partial Class fm_show_patients
         Me.GroupControl6.Controls.Add(Me.Label4)
         Me.GroupControl6.Controls.Add(Me.tb_name)
         Me.GroupControl6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl6.Location = New System.Drawing.Point(1022, 49)
+        Me.GroupControl6.Location = New System.Drawing.Point(1022, 54)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(348, 700)
+        Me.GroupControl6.Size = New System.Drawing.Size(348, 695)
         Me.GroupControl6.TabIndex = 261
         '
         'GroupControl3
@@ -297,7 +299,7 @@ Partial Class fm_show_patients
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(237, 163)
+        Me.Label3.Location = New System.Drawing.Point(237, 165)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(69, 17)
         Me.Label3.TabIndex = 294
@@ -366,7 +368,7 @@ Partial Class fm_show_patients
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(48, 157)
+        Me.RadioButton2.Location = New System.Drawing.Point(48, 159)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton2.Size = New System.Drawing.Size(105, 26)
@@ -380,7 +382,7 @@ Partial Class fm_show_patients
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
         Me.RadioButton1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(158, 157)
+        Me.RadioButton1.Location = New System.Drawing.Point(158, 159)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton1.Size = New System.Drawing.Size(70, 26)
@@ -394,7 +396,7 @@ Partial Class fm_show_patients
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(151, 601)
+        Me.Label2.Location = New System.Drawing.Point(148, 574)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label2.Size = New System.Drawing.Size(71, 17)
@@ -405,7 +407,7 @@ Partial Class fm_show_patients
         '
         Me.p_patient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.p_patient.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.p_patient.Location = New System.Drawing.Point(49, 433)
+        Me.p_patient.Location = New System.Drawing.Point(49, 409)
         Me.p_patient.Name = "p_patient"
         Me.p_patient.Size = New System.Drawing.Size(257, 160)
         Me.p_patient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -416,7 +418,7 @@ Partial Class fm_show_patients
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = Global.IQTClinicSystem.My.Resources.Resources.folder_icon
-        Me.PictureBox6.Location = New System.Drawing.Point(151, 616)
+        Me.PictureBox6.Location = New System.Drawing.Point(151, 592)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(62, 62)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -425,7 +427,7 @@ Partial Class fm_show_patients
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(202, 27)
+        Me.LabelControl1.Location = New System.Drawing.Point(202, 29)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(112, 13)
         Me.LabelControl1.TabIndex = 270
@@ -494,7 +496,7 @@ Partial Class fm_show_patients
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(187, 4)
+        Me.Label4.Location = New System.Drawing.Point(187, 6)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(72, 17)
         Me.Label4.TabIndex = 257
@@ -519,7 +521,7 @@ Partial Class fm_show_patients
         Me.RibbonControl2.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl2.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl2.ShowToolbarCustomizeItem = False
-        Me.RibbonControl2.Size = New System.Drawing.Size(1370, 49)
+        Me.RibbonControl2.Size = New System.Drawing.Size(1370, 54)
         Me.RibbonControl2.Toolbar.ShowCustomizeItem = False
         '
         'tb_user
@@ -653,20 +655,20 @@ Partial Class fm_show_patients
         '
         Me.GroupControl2.Controls.Add(Me.XtraTabControl1)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl2.Location = New System.Drawing.Point(0, 49)
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 54)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(1022, 700)
+        Me.GroupControl2.Size = New System.Drawing.Size(1022, 695)
         Me.GroupControl2.TabIndex = 263
         Me.GroupControl2.Text = "نتائج البحث"
         '
         'XtraTabControl1
         '
         Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 20)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 22)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1018, 678)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1018, 671)
         Me.XtraTabControl1.TabIndex = 122
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
         '
@@ -674,15 +676,25 @@ Partial Class fm_show_patients
         '
         Me.XtraTabPage1.Controls.Add(Me.lv_queue)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1012, 650)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1013, 646)
         Me.XtraTabPage1.Text = "عرض"
         '
         'XtraTabPage2
         '
+        Me.XtraTabPage2.Controls.Add(Me.SimpleButton2)
         Me.XtraTabPage2.Controls.Add(Me.GridControl1)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1012, 650)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1013, 646)
         Me.XtraTabPage2.Text = "بحث"
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(567, 3)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(72, 45)
+        Me.SimpleButton2.TabIndex = 5
+        Me.SimpleButton2.Text = "تصدير"
         '
         'GridControl1
         '
@@ -690,7 +702,7 @@ Partial Class fm_show_patients
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1012, 650)
+        Me.GridControl1.Size = New System.Drawing.Size(1013, 646)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -881,4 +893,5 @@ Partial Class fm_show_patients
     Friend WithEvents حذفToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents حذفنهائيToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents عرضالفيشToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
 End Class

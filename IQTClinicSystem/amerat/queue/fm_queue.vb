@@ -33,15 +33,11 @@ Partial Public Class fm_queue
   
    
 
-        tb_user.Caption = user.name
+      
 
 
 
 
-
-
-        Me.RibbonControl2.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False
-        Me.RibbonControl2.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False
 
         UserLookAndFeel.Default.SkinName = My.Settings.Skin
 
@@ -100,8 +96,9 @@ Partial Public Class fm_queue
             Dim DataSet = getdatat1(s)
             Dim c_enter = 0
             Dim time As New DateTimePicker
-            br_count1.Caption = DataSet.Tables(0).Rows.Count.ToString
+
             Dim td_date As New DateTimePicker
+            GridControl1.DataSource = DataSet.Tables(0)
 
             lv_queue.Items.Clear()
             For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
@@ -135,7 +132,7 @@ Partial Public Class fm_queue
 
             Next
 
-            l_entered.Text = c_enter.ToString
+            br_count1.Text = c_enter.ToString
 
 
         Catch ex As MySqlException
@@ -163,8 +160,10 @@ Partial Public Class fm_queue
             Dim DataSet = getdatat1(s)
             Dim c_enter = 0
             Dim time As New DateTimePicker
-            br_count1.Caption = DataSet.Tables(0).Rows.Count.ToString
+
             Dim td_date As New DateTimePicker
+            GridControl1.DataSource = DataSet.Tables(0)
+
 
             lv_queue.Items.Clear()
             For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
@@ -198,7 +197,7 @@ Partial Public Class fm_queue
 
             Next
 
-            l_entered.Text = c_enter.ToString
+            br_count1.Text = c_enter.ToString
 
 
         Catch ex As MySqlException
@@ -222,8 +221,10 @@ Partial Public Class fm_queue
             Dim DataSet = getdatat1(s)
             Dim c_enter = 0
             Dim time As New DateTimePicker
-            br_count1.Caption = DataSet.Tables(0).Rows.Count.ToString
+
             Dim td_date As New DateTimePicker
+            GridControl1.DataSource = DataSet.Tables(0)
+
 
             lv_queue.Items.Clear()
             For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
@@ -257,7 +258,66 @@ Partial Public Class fm_queue
 
             Next
 
-            l_entered.Text = c_enter.ToString
+            br_count1.Text = c_enter.ToString
+
+
+        Catch ex As MySqlException
+            If MessageBox.Show("Retry اعد الاتصال واضغط " & ex.Message, "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+
+            End If
+        End Try
+
+    End Sub
+    Public Sub searchAll()
+1:
+
+        Try
+
+            'and queue.state = 'انتظار' 
+            '  Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and queue.state <>'" & entered_state & "' and patient.id = queue.patient_id order by queue.id"
+            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE patient.id = queue.patient_id order by queue.id"
+            Dim DataSet = getdatat1(s)
+            Dim c_enter = 0
+            Dim time As New DateTimePicker
+
+            Dim td_date As New DateTimePicker
+            GridControl1.DataSource = DataSet.Tables(0)
+
+
+            lv_queue.Items.Clear()
+            For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
+
+
+
+
+
+
+                lv_queue.Items.Add(DataSet.Tables(0).Rows(i).Item("booking_number").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("patient_id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("amount").ToString)
+                td_date.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("date").ToString)
+                lv_queue.Items(i).SubItems.Add(td_date.Value.ToShortDateString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("state").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("recived_date").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("dept_id").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
+                lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f1").ToString)
+
+
+                If DataSet.Tables(0).Rows(i).Item("state").ToString = "إستلام" Then
+                    lv_queue.Items(i).BackColor = Color.LightGreen
+                    c_enter = c_enter + 1
+                Else
+                    lv_queue.Items(i).BackColor = Color.LightPink
+
+                End If
+
+            Next
+
+            br_count1.Text = c_enter.ToString
 
 
         Catch ex As MySqlException
@@ -298,7 +358,7 @@ Partial Public Class fm_queue
 
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs)
 
         If Not hasPermission(i_add_booking) Then
             Exit Sub
@@ -309,7 +369,7 @@ Partial Public Class fm_queue
 
     End Sub
 
-    Private Sub p_fingerPrint_Click(sender As Object, e As EventArgs) Handles p_fingerPrint.Click
+    Private Sub p_fingerPrint_Click(sender As Object, e As EventArgs)
 
         If Not hasPermission(i_cusomer) Then
             Exit Sub
@@ -345,12 +405,7 @@ Partial Public Class fm_queue
 
     End Sub
 
-    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs)
-        dt_queue.Value = Date.Now.AddDays(1)
 
-
-        search()
-    End Sub
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
         dt_queue.Value = Date.Now
@@ -387,7 +442,7 @@ Partial Public Class fm_queue
     End Sub
 
 
-    Private Sub RibbonControl2_Click(sender As Object, e As EventArgs) Handles RibbonControl2.Click
+    Private Sub RibbonControl2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -498,10 +553,15 @@ Partial Public Class fm_queue
 
     End Sub
     Private Sub print_report()
-        If lv_queue.SelectedItems.Count > 0 Then
+
+        Dim SelectedRowHandles = GridView1.GetSelectedRows()
+
+        If SelectedRowHandles.Length > 0 Then
+            Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(6))
+  
 1:
             Try
-                Dim query As String = "select * , queue.note as fesha_note, queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & __(lv_queue.SelectedItems(0).SubItems(6).Text) & " and patient.id = queue.patient_id"
+                Dim query As String = "select * , queue.note as fesha_note, queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & __(id.ToString) & " and patient.id = queue.patient_id"
 
                 'Dim query As String = "select queue.id as id , queue.test_type as test_type , queue.test_amount as test_amount  , queue.booking_number as booking_number ,  patient.name as patient_name from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
                 Dim fm = New fm_report_viewr
@@ -649,6 +709,142 @@ Partial Public Class fm_queue
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles tb_p_id.TextChanged
+
+    End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+
+        Dim path As String = "output" & Date.Now.Year & Date.Now.Month & Date.Now.Day & Date.Now.Hour & Date.Now.Minute & Date.Now.Second & Date.Now.Millisecond & ".xlsx"
+        GridControl1.ExportToXlsx(path)
+        ' Open the created XLSX file with the default application.
+        Process.Start(path)
+    End Sub
+
+ 
+    Private Sub SimpleButton3_Click_1(sender As Object, e As EventArgs) Handles SimpleButton3.Click
+        searchAll()
+
+    End Sub
+
+    Private Sub ContextMenuStrip1_Opening(sender As Object, e As CancelEventArgs) Handles ContextMenuStrip1.Opening
+
+    End Sub
+
+    Private Sub ContextMenuStrip2_Opening(sender As Object, e As CancelEventArgs) Handles ContextMenuStrip2.Opening
+
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        print_report()
+    End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+        Dim SelectedRowHandles = GridView1.GetSelectedRows()
+
+        If SelectedRowHandles.Length > 0 Then
+            Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(1))
+
+            If Not hasPermission(i_edit_contract) Then
+                Exit Sub
+                MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+            End If
+
+            Try
+                fm_add_patient.Close()
+
+            Catch ex As Exception
+
+            End Try
+
+            fm_add_patient.tb_id.Text = id.ToString
+
+            fm_add_patient.Show()
+
+
+
+
+
+        End If
+
+
+
+
+
+
+
+
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        If Not hasPermission(i_delete_customer) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+        If user.type <> user_admin Then
+            MessageBox.Show("مركز الصلاحيات", "لايمكن الحذف")
+            Exit Sub
+        End If
+
+
+        Dim SelectedRowHandles = GridView1.GetSelectedRows()
+
+        If SelectedRowHandles.Length > 0 Then
+            Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(1))
+
+
+            If one_item_in_feash(__(id.ToString)) Then
+                If MessageBox.Show("هل تريد الغاء الحجز ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+                    Dim p As New Patient(__(id.ToString))
+                    p.delete()
+                    Dim que As New Queue()
+                    Dim queid = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(6))
+
+                    que.id = __(queid.ToString)
+                    que.delete()
+                    search()
+
+                End If
+
+            Else
+                MessageBox.Show("هذا الزبون لدية عدة فيشات - يرجى حذفها")
+            End If
+        End If
+
+
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+
+
+
+        If Not hasPermission(i_delete) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
+
+
+        Dim SelectedRowHandles = GridView1.GetSelectedRows()
+
+        If SelectedRowHandles.Length > 0 Then
+            Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(6))
+            Dim is_recive = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(5))
+            If is_recive.ToString = "إستلام" Then
+                MessageBox.Show("لايمكن حذف الفيشة المسددة")
+                Exit Sub
+            End If
+
+            If MessageBox.Show("هل تريد حذف الفيشة ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+
+                Dim que As New Queue()
+                que.id = __(id.ToString)
+                que.delete()
+                search()
+
+            End If
+
+
+        End If
+
 
     End Sub
 End Class

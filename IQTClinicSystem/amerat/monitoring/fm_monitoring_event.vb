@@ -212,4 +212,27 @@ Public Class fm_monitoring_event
     Private Sub TextEdit1_EditValueChanged(sender As Object, e As EventArgs) Handles TextEdit1.EditValueChanged
 
     End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+
+        Dim path As String = "output.xlsx"
+        GridControl1.ExportToXlsx(path)
+        ' Open the created XLSX file with the default application.
+        Process.Start(path)
+    End Sub
+
+    Private Sub GridControl1_Click(sender As Object, e As EventArgs) Handles GridControl1.Click
+
+
+        Dim SelectedRowHandles = GridView1.GetSelectedRows()
+
+        If SelectedRowHandles.Length > 0 Then
+            Dim B = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(0))
+            MessageBox.Show(B.ToString)
+
+        End If
+
+
+
+    End Sub
 End Class

@@ -496,7 +496,7 @@ Public Class fm_show_patients
             End Try
 
         Else
-            MessageBox.Show("اختر كتاب")
+            MessageBox.Show("اختر زبون")
             Exit Sub
 
         End If
@@ -636,6 +636,44 @@ Public Class fm_show_patients
 
 
     End Sub
+    Private Sub print_map(id As Integer)
+        Dim p As New Patient(id)
+
+        Dim d As New DataSet
+        d = getdatat1("select * from dept where user_id = " & id & " order by id asc limit 1")
+
+
+        Dim f As New fm_x_viewer_treat
+        f.ds = d
+        f.user_name = p.name
+        f.final_price = p.house_price.ToString
+
+
+        f.user_dar = " ( " & p.f3 & " ) "
+        f.user_block = " ( " & p.f1 & " ) "
+        f.remaind = p.tb_l_5
+        f.arrive = p.tb_2
+
+        f.user_name = p.name
+        f.contract_date = p.register_date
+        f.user_block_number = " ( " & p.f2 & " ) "
+        f.user_id_number = " ( " & p.f6 & " ) "
+        f.dar_area = " ( " & p.ref_by & " ) "
+        f.item2 = p.item2
+        f.item3 = p.id.ToString
+        f.path = "map"
+        f.item4 = images_path & "\p" & id.ToString & "\map\ألخارطة.png"
+        f.item9 = p.f1 & p.f2 & "." & p.f3
+        f.item10 = p.name
+        f.admin_name = p.admin_name
+
+
+
+        f.Show()
+
+
+
+    End Sub
 
     Private Sub عرضالعقدToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
@@ -738,4 +776,60 @@ Public Class fm_show_patients
     Private Sub GroupControl2_Paint(sender As Object, e As PaintEventArgs) Handles GroupControl2.Paint
 
     End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+
+        Export_xlsx("Cutomer", GridControl1)
+
+    End Sub
+
+    Private Sub Export_xlsx(output As String, ByRef gridControl As DevExpress.XtraGrid.GridControl)
+        Dim path As String = "xlsx/" & output & "_Date_" & Date.Now.Year & "_" & Date.Now.Month & "_" & Date.Now.Day & "_Time_" & Date.Now.Hour & "_" & Date.Now.Minute & "_" & Date.Now.Second & Date.Now.Millisecond & ".xlsx"
+        GridControl1.ExportToXlsx(path)
+        ' Open the created XLSX file with the default application.
+        Process.Start(Application.StartupPath & "/" & path)
+    End Sub
+
+    Private Sub GridControl1_Click_1(sender As Object, e As EventArgs) Handles GridControl1.Click
+
+    End Sub
+
+    Private Sub tb_user_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles tb_user.ItemClick
+        fm_change_user.Show()
+
+    End Sub
+
+    Private Sub خارطةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles خارطةToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+            print_map(__(lv_queue.SelectedItems(0).Text))
+        End If
+
+    End Sub
+    Public Sub call_report(id As Integer)
+
+1:
+        Try
+            Dim query As String = "select * , queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  patient.id = " & id & " and patient.id = queue.patient_id order by queue.id desc limit 1 "
+
+            'Dim query As String = "select queue.id as id , queue.test_type as test_type , queue.test_amount as test_amount  , queue.booking_number as booking_number ,  patient.name as patient_name from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
+            Dim fm = New fm_call
+            fm.rep_name = "calling"
+
+            fm.ds = getdatat1(query)
+            If fm.ds.Tables(0).Rows.Count > 0 Then
+                fm.Show()
+            Else
+                MessageBox.Show("لم يتم طباعة اي فيشة لهذا الزبون")
+            End If
+
+        Catch ex As Exception
+            If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+            End If
+        End Try
+
+
+
+    End Sub
+
 End Class

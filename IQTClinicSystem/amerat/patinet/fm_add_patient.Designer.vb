@@ -38,10 +38,10 @@ Partial Class fm_add_patient
         Me.tb_f7 = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl20 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
-        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
         Me.LabelControl12 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl9 = New DevExpress.XtraEditors.LabelControl()
         Me.tb_note = New System.Windows.Forms.TextBox()
+        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
         Me.tb_f8 = New DevExpress.XtraEditors.TextEdit()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LabelControl22 = New DevExpress.XtraEditors.LabelControl()
@@ -85,6 +85,7 @@ Partial Class fm_add_patient
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupControl10 = New DevExpress.XtraEditors.GroupControl()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
@@ -99,7 +100,6 @@ Partial Class fm_add_patient
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
-        Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_phone.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -339,30 +339,12 @@ Partial Class fm_add_patient
         Me.GroupControl1.Controls.Add(Me.tb_f6)
         Me.GroupControl1.Controls.Add(Me.tb_f7)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl1.Location = New System.Drawing.Point(2, 20)
+        Me.GroupControl1.Location = New System.Drawing.Point(2, 22)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl1.Size = New System.Drawing.Size(437, 727)
+        Me.GroupControl1.Size = New System.Drawing.Size(437, 725)
         Me.GroupControl1.TabIndex = 249
         Me.GroupControl1.Text = "المعلومات الاساسية"
-        '
-        'ProgressPanel1
-        '
-        Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
-        Me.ProgressPanel1.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProgressPanel1.Appearance.Options.UseBackColor = True
-        Me.ProgressPanel1.Appearance.Options.UseFont = True
-        Me.ProgressPanel1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProgressPanel1.AppearanceCaption.Options.UseFont = True
-        Me.ProgressPanel1.BarAnimationElementThickness = 2
-        Me.ProgressPanel1.Caption = "يتم الحفظ "
-        Me.ProgressPanel1.Description = ""
-        Me.ProgressPanel1.Location = New System.Drawing.Point(5, 21)
-        Me.ProgressPanel1.Name = "ProgressPanel1"
-        Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
-        Me.ProgressPanel1.TabIndex = 252
-        Me.ProgressPanel1.Text = "ProgressPanel1"
         '
         'LabelControl12
         '
@@ -392,6 +374,24 @@ Partial Class fm_add_patient
         Me.tb_note.Name = "tb_note"
         Me.tb_note.Size = New System.Drawing.Size(315, 65)
         Me.tb_note.TabIndex = 6
+        '
+        'ProgressPanel1
+        '
+        Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.ProgressPanel1.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProgressPanel1.Appearance.Options.UseBackColor = True
+        Me.ProgressPanel1.Appearance.Options.UseFont = True
+        Me.ProgressPanel1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProgressPanel1.AppearanceCaption.Options.UseFont = True
+        Me.ProgressPanel1.BarAnimationElementThickness = 2
+        Me.ProgressPanel1.Caption = "يتم الحفظ "
+        Me.ProgressPanel1.Description = ""
+        Me.ProgressPanel1.Location = New System.Drawing.Point(5, 21)
+        Me.ProgressPanel1.Name = "ProgressPanel1"
+        Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
+        Me.ProgressPanel1.TabIndex = 252
+        Me.ProgressPanel1.Text = "ProgressPanel1"
         '
         'tb_f8
         '
@@ -850,6 +850,17 @@ Partial Class fm_add_patient
         Me.GroupControl10.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl10.TabIndex = 262
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(7, 6)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(83, 19)
+        Me.Label9.TabIndex = 256
+        Me.Label9.Text = "فيشة دفعة اولى"
+        '
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.IQTClinicSystem.My.Resources.Resources.e__107_
@@ -918,10 +929,10 @@ Partial Class fm_add_patient
         Me.GroupControl2.Controls.Add(Me.LabelControl3)
         Me.GroupControl2.Controls.Add(Me.tb_ref_by)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(-35, 20)
+        Me.GroupControl2.Location = New System.Drawing.Point(-35, 22)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupControl2.Size = New System.Drawing.Size(595, 727)
+        Me.GroupControl2.Size = New System.Drawing.Size(595, 725)
         Me.GroupControl2.TabIndex = 250
         Me.GroupControl2.Text = "المعلومات الثانوية"
         '
@@ -1036,17 +1047,6 @@ Partial Class fm_add_patient
         Me.GroupControl9.Size = New System.Drawing.Size(562, 749)
         Me.GroupControl9.TabIndex = 272
         Me.GroupControl9.Text = "معلومات الدار"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(7, 6)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 19)
-        Me.Label9.TabIndex = 256
-        Me.Label9.Text = "فيشة دفعة اولى"
         '
         'fm_add_patient
         '
