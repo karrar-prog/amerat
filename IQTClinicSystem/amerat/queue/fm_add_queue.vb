@@ -4,15 +4,23 @@ Imports DevExpress.LookAndFeel
 Public Class fm_add_queue
 
     Dim plan As New DataSet
+    Public house_price As Decimal = 0
+
 
 
 
     Private Sub fm_add_queue_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         UserLookAndFeel.Default.SkinName = My.Settings.Skin
+        If tb_number.Text.Trim = "1" Then
+            GroupControl1.Show()
+        Else
+            GroupControl1.Hide()
 
+        End If
         Me.CenterToScreen()
 
         Combo_format()
+        cal_money()
 
 
     End Sub
@@ -147,6 +155,18 @@ Public Class fm_add_queue
         PictureBox1.Hide()
 
         Try
+
+            If (tb_number.Text.Trim = "1") Then
+                Dim p As New Patient(__(tb_patient_id.Text))
+                If p.first_push_amount_arrived > 0 Then
+                    MessageBox.Show("تم استلام اول دفعة في تأريخ" & p.diagonosis)
+                    Exit Sub
+                End If
+                save_first_push(p)
+            End If
+
+
+
             If cb_plan.Text.Trim = "" Then
                 MessageBox.Show("اختر اسم المصرف  ")
                 PictureBox1.Show()
@@ -191,6 +211,7 @@ Public Class fm_add_queue
             End Try
 
             If q.save() Then
+
 
 
                 'Dim id As Integer = get_last_id(q.patient_id)
@@ -394,4 +415,27 @@ Public Class fm_add_queue
         End Try
 
     End Sub
+
+    Private Sub nu_first_money_present_KeyUp(sender As Object, e As KeyEventArgs) Handles nu_first_money_present.KeyUp
+        cal_money()
+    End Sub
+
+    Private Sub nu_first_money_present_ValueChanged(sender As Object, e As EventArgs) Handles nu_first_money_present.ValueChanged
+        cal_money()
+
+    End Sub
+
+    Private Sub cal_money()
+        tb_fesha_amount.Text = Math.Floor((house_price / 100 * nu_first_money_present.Value)).ToString
+        tb_amount_text.Text = ToArabicLetter(__(tb_fesha_amount.Text))
+    End Sub
+
+    Private Sub save_first_push(p As Patient)
+
+        p.first_push_amount = __(tb_fesha_amount.Text)
+        p.first_push_present = nu_first_money_present.Value
+        p.save()
+
+    End Sub
+
 End Class

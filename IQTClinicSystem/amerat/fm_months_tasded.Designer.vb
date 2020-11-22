@@ -23,9 +23,7 @@ Partial Class fm_months_tasded
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.LabelControl6 = New DevExpress.XtraEditors.LabelControl()
         Me.tb_f1 = New DevExpress.XtraEditors.TextEdit()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
-        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
@@ -39,6 +37,8 @@ Partial Class fm_months_tasded
         Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl7 = New DevExpress.XtraEditors.LabelControl()
         Me.tb_user_id = New DevExpress.XtraEditors.TextEdit()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.tb_f1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_arrived.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_remand.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,17 +83,6 @@ Partial Class fm_months_tasded
         Me.tb_f1.Size = New System.Drawing.Size(246, 30)
         Me.tb_f1.TabIndex = 369
         '
-        'SimpleButton1
-        '
-        Me.SimpleButton1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SimpleButton1.Appearance.Options.UseFont = True
-        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(12, 12)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(149, 36)
-        Me.SimpleButton1.TabIndex = 380
-        Me.SimpleButton1.Text = "الغاء العملية"
-        '
         'LabelControl5
         '
         Me.LabelControl5.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -103,17 +92,6 @@ Partial Class fm_months_tasded
         Me.LabelControl5.Size = New System.Drawing.Size(25, 21)
         Me.LabelControl5.TabIndex = 379
         Me.LabelControl5.Text = "باقي"
-        '
-        'SimpleButton2
-        '
-        Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SimpleButton2.Appearance.Options.UseFont = True
-        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(257, 449)
-        Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(222, 41)
-        Me.SimpleButton2.TabIndex = 370
-        Me.SimpleButton2.Text = "تم"
         '
         'LabelControl3
         '
@@ -334,11 +312,33 @@ Partial Class fm_months_tasded
         Me.tb_user_id.TabIndex = 385
         Me.tb_user_id.Visible = False
         '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton1.Appearance.Options.UseFont = True
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(12, 12)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(149, 36)
+        Me.SimpleButton1.TabIndex = 380
+        Me.SimpleButton1.Text = "الغاء العملية"
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton2.Appearance.Options.UseFont = True
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(257, 449)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(222, 41)
+        Me.SimpleButton2.TabIndex = 370
+        Me.SimpleButton2.Text = "تم"
+        '
         'fm_months_tasded
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(751, 578)
+        Me.ClientSize = New System.Drawing.Size(749, 577)
         Me.Controls.Add(Me.tb_user_id)
         Me.Controls.Add(Me.LabelControl7)
         Me.Controls.Add(Me.TextEdit1)

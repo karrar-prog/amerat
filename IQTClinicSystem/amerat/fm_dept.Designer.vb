@@ -61,6 +61,7 @@ Partial Class fm_dept
         '
         'RibbonControl1
         '
+        Me.RibbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
         Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem})
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 27)
@@ -132,6 +133,7 @@ Partial Class fm_dept
         '
         'RibbonControl2
         '
+        Me.RibbonControl2.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl2.ExpandCollapseItem.Id = 0
         Me.RibbonControl2.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl2.ExpandCollapseItem})
         Me.RibbonControl2.Location = New System.Drawing.Point(0, 0)

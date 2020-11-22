@@ -2,6 +2,7 @@
 Imports System.Text
 Imports MySql.Data.MySqlClient
 Imports DevExpress.LookAndFeel
+Imports System.IO
 
 Partial Public Class fm_queue
 
@@ -30,10 +31,10 @@ Partial Public Class fm_queue
         'p.f10 = "f10
         'p.delete()
 
-  
-   
 
-      
+
+
+
 
 
 
@@ -156,7 +157,7 @@ Partial Public Class fm_queue
 
 
             '  Dim s As String = "select queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.`date` = '" & dt_queue.Value.ToShortDateString & "' and queue.state <>'" & entered_state & "' and patient.id = queue.patient_id order by queue.id"
-            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.patient_id = " & tb_p_id.text & " and patient.id = queue.patient_id order by queue.id"
+            Dim s As String = "select * , queue.id as queueID  , queue.note as note ,  queue.`date` as queue_date , queue.booking_number as booking_number , queue.test_type as test_type  , queue.test_min as test_min , patient.name as name  ,queue.date as date ,queue.time as time , queue.state as state ,queue.id as id  ,patient.id as patient_id from queue , patient WHERE queue.patient_id = " & tb_p_id.Text & " and patient.id = queue.patient_id order by queue.id"
             Dim DataSet = getdatat1(s)
             Dim c_enter = 0
             Dim time As New DateTimePicker
@@ -384,7 +385,7 @@ Partial Public Class fm_queue
     Private Sub lv_queue_DoubleClick1(sender As Object, e As EventArgs) Handles lv_queue.DoubleClick
 
         If lv_queue.SelectedItems.Count = 1 Then
-           
+
             fm_fesha.tb_fesha_id.Text = lv_queue.SelectedItems(0).SubItems(6).Text
 
             Dim fesha As New Queue(__(lv_queue.SelectedItems(0).SubItems(6).Text))
@@ -494,37 +495,37 @@ Partial Public Class fm_queue
         If lv_queue.SelectedItems.Count > 0 Then
             Dim id As Int32 = Convert.ToInt16(lv_queue.SelectedItems.Item(0).SubItems(6).Text)
 
-                conn = New MySqlConnection()
-                conn.ConnectionString = serverInfo
-                conn.Open()
-                Try
+            conn = New MySqlConnection()
+            conn.ConnectionString = serverInfo
+            conn.Open()
+            Try
 
-                    Dim SQLCommand As New MySqlCommand()
-                    SQLCommand.Connection = conn
-                    SQLCommand.CommandText = "UPDATE queue SET `time` = @time , `state` = @state  WHERE id = @id"
+                Dim SQLCommand As New MySqlCommand()
+                SQLCommand.Connection = conn
+                SQLCommand.CommandText = "UPDATE queue SET `time` = @time , `state` = @state  WHERE id = @id"
 
-                    SQLCommand.Parameters.Add("@time", MySqlDbType.String).Value = Convert.ToString(Date.Now.ToLongTimeString)
+                SQLCommand.Parameters.Add("@time", MySqlDbType.String).Value = Convert.ToString(Date.Now.ToLongTimeString)
 
-                    SQLCommand.Parameters.Add("@state", MySqlDbType.String).Value = state
+                SQLCommand.Parameters.Add("@state", MySqlDbType.String).Value = state
 
-                    SQLCommand.Parameters.Add("@id", MySqlDbType.Decimal).Value = id
+                SQLCommand.Parameters.Add("@id", MySqlDbType.Decimal).Value = id
 
-                    SQLCommand.ExecuteNonQuery()
+                SQLCommand.ExecuteNonQuery()
 
 
-                    '   Dim conent As String = "تم تعديل حالة حجز المراجع  : " & tb_name.Text & " الى حالة  " & state & ""
+                '   Dim conent As String = "تم تعديل حالة حجز المراجع  : " & tb_name.Text & " الى حالة  " & state & ""
 
-                    ' add_event(conn, s_update, conent)
+                ' add_event(conn, s_update, conent)
 
-                    Me.Close()
-                Catch ex As Exception
+                Me.Close()
+            Catch ex As Exception
 
-                    MessageBox.Show(ex.Message)
-                End Try
+                MessageBox.Show(ex.Message)
+            End Try
 
-                conn.Close()
-                search()
-                'excute1("update queue set `test_time` = " & Date.Now.ToLongTimeString & " where id = " & id & "")
+            conn.Close()
+            search()
+            'excute1("update queue set `test_time` = " & Date.Now.ToLongTimeString & " where id = " & id & "")
 
 
         End If
@@ -553,31 +554,35 @@ Partial Public Class fm_queue
 
     End Sub
     Private Sub print_report()
+        Try
 
-        Dim SelectedRowHandles = GridView1.GetSelectedRows()
 
-        If SelectedRowHandles.Length > 0 Then
-            Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(6))
-  
+            Dim SelectedRowHandles = GridView1.GetSelectedRows()
+
+            If SelectedRowHandles.Length > 0 Then
+                Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(6))
+
 1:
-            Try
-                Dim query As String = "select * , queue.note as fesha_note, queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & __(id.ToString) & " and patient.id = queue.patient_id"
+                Try
+                    Dim query As String = "select * , queue.note as fesha_note, queue.id as fesha_id ,patient.f1 as blok_title , patient.f2 as blok_number , patient.f3 as dar_number ,   patient.name as current_name , queue.`date` as date , queue.test_type as type    , queue.booking_number as number  from queue , patient where  queue.id = " & __(id.ToString) & " and patient.id = queue.patient_id"
 
-                'Dim query As String = "select queue.id as id , queue.test_type as test_type , queue.test_amount as test_amount  , queue.booking_number as booking_number ,  patient.name as patient_name from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
-                Dim fm = New fm_report_viewr
+                    'Dim query As String = "select queue.id as id , queue.test_type as test_type , queue.test_amount as test_amount  , queue.booking_number as booking_number ,  patient.name as patient_name from queue , patient where  queue.id = " & id & " and patient.id = queue.patient_id"
+                    Dim fm = New fm_report_viewr
 
-                fm.ds = getdatat1(query)
+                    fm.ds = getdatat1(query)
 
-                fm.Show()
+                    fm.Show()
 
-            Catch ex As Exception
-                If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
-                    GoTo 1
-                End If
-            End Try
+                Catch ex As Exception
+                    If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                        GoTo 1
+                    End If
+                End Try
 
-        End If
+            End If
+        Catch ex As Exception
 
+        End Try
     End Sub
 
     Private Sub طباعةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles طباعةToolStripMenuItem.Click
@@ -669,14 +674,14 @@ Partial Public Class fm_queue
 
     End Sub
 
-   
+
 
     Private Sub feash_search()
 
         fm_fesha.tb_fesha_id.Text = tb_fesha_id.Text
         Dim fesha As New Queue(__(tb_fesha_id.Text))
         If fesha.id = -1 Then
-           
+
         Else
             fm_fesha.fesha = fesha
             fm_fesha.tb_dept_id.Text = fesha.dept_id.ToString
@@ -696,7 +701,7 @@ Partial Public Class fm_queue
         End If
     End Sub
 
-  
+
     Private Sub tb_fesha_id_TextChanged(sender As Object, e As EventArgs) Handles tb_fesha_id.TextChanged
 
     End Sub
@@ -704,7 +709,7 @@ Partial Public Class fm_queue
     Private Sub TextBox1_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_p_id.KeyUp
         If e.KeyCode = Keys.Enter Then
             ContractSearch()
-          
+
         End If
     End Sub
 
@@ -720,7 +725,7 @@ Partial Public Class fm_queue
         Process.Start(path)
     End Sub
 
- 
+
     Private Sub SimpleButton3_Click_1(sender As Object, e As EventArgs) Handles SimpleButton3.Click
         searchAll()
 
@@ -755,10 +760,14 @@ Partial Public Class fm_queue
             Catch ex As Exception
 
             End Try
+            Try
+                fm_add_patient.tb_id.Text = id.ToString
 
-            fm_add_patient.tb_id.Text = id.ToString
+                fm_add_patient.Show()
 
-            fm_add_patient.Show()
+            Catch ex As Exception
+
+            End Try
 
 
 
@@ -785,30 +794,43 @@ Partial Public Class fm_queue
             Exit Sub
         End If
 
+        Try
+            Dim SelectedRowHandles = GridView1.GetSelectedRows()
 
-        Dim SelectedRowHandles = GridView1.GetSelectedRows()
-
-        If SelectedRowHandles.Length > 0 Then
-            Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(1))
+            If SelectedRowHandles.Length > 0 Then
+                Dim id = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(1))
 
 
-            If one_item_in_feash(__(id.ToString)) Then
-                If MessageBox.Show("هل تريد الغاء الحجز ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
-                    Dim p As New Patient(__(id.ToString))
-                    p.delete()
-                    Dim que As New Queue()
-                    Dim queid = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(6))
+                If one_item_in_feash(__(id.ToString)) Then
+                    If MessageBox.Show("سوف يتم حذف الزبون ومستمسكاته  وصورة الشخصية ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+                        Dim p As New Patient(__(id.ToString))
+                        p.delete()
 
-                    que.id = __(queid.ToString)
-                    que.delete()
-                    search()
+                        Try
+                            delete_files(p.id)
 
+                        Catch ex As Exception
+
+                        End Try
+
+
+                        Dim que As New Queue()
+                        Dim queid = GridView1.GetRowCellValue(SelectedRowHandles(0), GridView1.Columns(6))
+
+                        que.id = __(queid.ToString)
+                        que.delete()
+                        search()
+
+                    End If
+
+                Else
+                    MessageBox.Show("هذا الزبون لدية عدة فيشات - يرجى حذفها")
                 End If
-
-            Else
-                MessageBox.Show("هذا الزبون لدية عدة فيشات - يرجى حذفها")
             End If
-        End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
 
 
     End Sub
@@ -847,4 +869,7 @@ Partial Public Class fm_queue
 
 
     End Sub
+
+  
+
 End Class

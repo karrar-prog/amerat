@@ -21,13 +21,13 @@ Partial Class fm_add_other_dept_item
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fm_add_other_dept_item))
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.tb_dose_to_patient = New DevExpress.XtraEditors.TextEdit()
         Me.tb_note = New DevExpress.XtraEditors.TextEdit()
         Me.tb_treatment_name = New DevExpress.XtraEditors.TextEdit()
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.tb_dose_to_patient.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_note.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_treatment_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -37,26 +37,6 @@ Partial Class fm_add_other_dept_item
         '
         Me.RibbonPage2.Name = "RibbonPage2"
         Me.RibbonPage2.Text = "RibbonPage2"
-        '
-        'SimpleButton1
-        '
-        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(12, 12)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(125, 35)
-        Me.SimpleButton1.TabIndex = 356
-        Me.SimpleButton1.Text = "الغاء العملية"
-        '
-        'SimpleButton2
-        '
-        Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SimpleButton2.Appearance.Options.UseFont = True
-        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(201, 282)
-        Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(94, 36)
-        Me.SimpleButton2.TabIndex = 355
-        Me.SimpleButton2.Text = "تم"
         '
         'tb_dose_to_patient
         '
@@ -126,6 +106,26 @@ Partial Class fm_add_other_dept_item
         Me.SimpleButton4.Name = "SimpleButton4"
         Me.SimpleButton4.Size = New System.Drawing.Size(42, 30)
         Me.SimpleButton4.TabIndex = 360
+        '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(12, 12)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(125, 35)
+        Me.SimpleButton1.TabIndex = 356
+        Me.SimpleButton1.Text = "الغاء العملية"
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton2.Appearance.Options.UseFont = True
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(201, 282)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(94, 36)
+        Me.SimpleButton2.TabIndex = 355
+        Me.SimpleButton2.Text = "تم"
         '
         'fm_add_other_dept_item
         '

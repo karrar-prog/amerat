@@ -387,16 +387,17 @@ Public Class Patient
 
                 Dim SQLCommand As New MySqlCommand()
                 SQLCommand.Connection = conn
-                SQLCommand.CommandText = "DELETE FROM  patient WHERE id = @id"
+                SQLCommand.CommandText = "UPDATE patient SET first_push_amount_arrived= 0 , name = ' ' , wieght = ' ' , gender = ' ' , phone = ' ' , note = ' ' , diagonosis = ''" +
+                " , first_push_amount =0 ,first_push_present = 0  , f4 =0 , f5 = '' , f6 = '' , f7 = '' , f8 = '', f9 = '' , f10 = '' , deleted = 0,saller = '',is_token = 'غير محجوز'  WHERE id = @id"
                 SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
 
 
                 SQLCommand.ExecuteNonQuery()
 
            
-                Dim content = " تمت حذف" & "  " & Me.name & " رقم الزبون " & Me.id
+                Dim content = " تمت الغاء حجز" & "  " & Me.name & " رقم الزبون " & Me.id
 
-                new_event2("حذف زبون", content, 0)
+                new_event2("الغاء حجز زبون", content, 0)
 
                 conn.Close()
                 Return True
@@ -476,7 +477,7 @@ Public Class Patient
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
             SQLCommand.CommandText = "UPDATE patient SET first_push_amount_arrived=@first_push_amount_arrived , name = @name , `code` = @code , finger_print = @finger_print , wieght = @wieght , gender = @gender , phone = @phone , note = @note , diagonosis = @diagonosis , ref_by = @ref_by " +
-                " , f1 = @f1 , f2 = @f2 , f3 = @f3 , f4 = @f4 , f5 = @f5 , f6 = @f6 , f7 = @f7 , f8 = @f8 , f9 = @f9 , f10 = @f10 , deleted = @deleted,saller = @saller,house_price = @house_price,first_part= @first_part,last_part = @last_part,first_present = @first_present,last_present = @last_present,water_price =@water_price,is_token = @is_token ,lower_name=@lower_name WHERE id = @id"
+                " , first_push_amount = @first_push_amount ,first_push_present = @first_push_present ,f1 = @f1 , f2 = @f2 , f3 = @f3 , f4 = @f4 , f5 = @f5 , f6 = @f6 , f7 = @f7 , f8 = @f8 , f9 = @f9 , f10 = @f10 , deleted = @deleted,saller = @saller,house_price = @house_price,first_part= @first_part,last_part = @last_part,first_present = @first_present,last_present = @last_present,water_price =@water_price,is_token = @is_token ,lower_name=@lower_name WHERE id = @id"
 
             SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
             SQLCommand.Parameters.Add("@name", MySqlDbType.String).Value = Me.name
@@ -509,6 +510,10 @@ Public Class Patient
             SQLCommand.Parameters.Add("@first_part", MySqlDbType.Decimal).Value = Me.first_part
             SQLCommand.Parameters.Add("@last_part", MySqlDbType.Decimal).Value = Me.last_part
             SQLCommand.Parameters.Add("@first_push_amount_arrived", MySqlDbType.Decimal).Value = Me.first_push_amount_arrived
+
+            SQLCommand.Parameters.Add("@first_push_amount", MySqlDbType.Decimal).Value = Me.first_push_amount
+
+            SQLCommand.Parameters.Add("@first_push_present", MySqlDbType.Int32).Value = Me.first_push_present
 
 
             SQLCommand.Parameters.Add("@first_present", MySqlDbType.Int32).Value = Me.first_present

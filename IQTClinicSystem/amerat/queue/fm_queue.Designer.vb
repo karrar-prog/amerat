@@ -71,6 +71,8 @@
         Me.Gridf1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.ApplicationMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -208,7 +210,7 @@
         'tb_p_id
         '
         Me.tb_p_id.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_p_id.Location = New System.Drawing.Point(985, 22)
+        Me.tb_p_id.Location = New System.Drawing.Point(929, 22)
         Me.tb_p_id.Name = "tb_p_id"
         Me.tb_p_id.Size = New System.Drawing.Size(100, 29)
         Me.tb_p_id.TabIndex = 224
@@ -227,7 +229,7 @@
         'tb_fesha_id
         '
         Me.tb_fesha_id.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_fesha_id.Location = New System.Drawing.Point(1108, 22)
+        Me.tb_fesha_id.Location = New System.Drawing.Point(1082, 22)
         Me.tb_fesha_id.Name = "tb_fesha_id"
         Me.tb_fesha_id.Size = New System.Drawing.Size(100, 29)
         Me.tb_fesha_id.TabIndex = 224
@@ -266,6 +268,8 @@
         '
         'XtraTabPage2
         '
+        Me.XtraTabPage2.Controls.Add(Me.Label2)
+        Me.XtraTabPage2.Controls.Add(Me.Label1)
         Me.XtraTabPage2.Controls.Add(Me.DateTimePicker1)
         Me.XtraTabPage2.Controls.Add(Me.dt_queue)
         Me.XtraTabPage2.Controls.Add(Me.br_count1)
@@ -464,6 +468,26 @@
         Me.GroupControl1.TabIndex = 277
         Me.GroupControl1.Text = "في هذا التأريخ"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(1184, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(41, 22)
+        Me.Label1.TabIndex = 279
+        Me.Label1.Text = "فيشة"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1030, 26)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(33, 22)
+        Me.Label2.TabIndex = 280
+        Me.Label2.Text = "عقد"
+        '
         'fm_queue
         '
         Me.Appearance.BackColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -542,6 +566,8 @@ End Sub
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 #End Region
 

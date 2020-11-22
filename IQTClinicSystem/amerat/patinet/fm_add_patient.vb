@@ -80,8 +80,14 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+
+
         Dim p As New Patient(tb_blok_title.Text, nu_blok_num.Value, num_home_num.Value)
-        If p.id = 0 Or p.id = __(tb_id.Text) Then
+        If p.is_token = s_not_booking Then
+            tb_id.Text = p.id.ToString
+        End If
+        If p.id = 0 Or p.id = __(tb_id.Text) Or p.is_token = s_not_booking Then
             add()
         Else
 
@@ -215,22 +221,22 @@ Public Class fm_add_patient
             tb_phone.BackColor = Color.White
 
         End If
-        If tb_f6.Text.Trim = "" Then
-            tb_f6.BackColor = Color.LightPink
-            tb_f6.Focus()
-            Return False
-        Else
-            tb_f6.BackColor = Color.White
+        'If tb_f6.Text.Trim = "" Then
+        '    tb_f6.BackColor = Color.LightPink
+        '    tb_f6.Focus()
+        '    Return False
+        'Else
+        '    tb_f6.BackColor = Color.White
 
-        End If
-        If tb_f7.Text.Trim = "" Then
-            tb_f7.BackColor = Color.LightPink
-            tb_f7.Focus()
-            Return False
-        Else
-            tb_f7.BackColor = Color.White
+        'End If
+        'If tb_f7.Text.Trim = "" Then
+        '    tb_f7.BackColor = Color.LightPink
+        '    tb_f7.Focus()
+        '    Return False
+        'Else
+        '    tb_f7.BackColor = Color.White
 
-        End If
+        'End If
         If tb_blok_title.Text.Trim = "" Then
 
             tb_blok_title.BackColor = Color.LightPink
@@ -312,6 +318,7 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub finger_show()
+     
         If tb_id.Text.Trim = "" Then
             GroupControl6.Hide()
             GroupControl10.Hide()
@@ -319,10 +326,13 @@ Public Class fm_add_patient
             GroupControl11.Hide()
 
         Else
-            GroupControl6.Show()
-            GroupControl10.Show()
-            GroupControl3.Show()
-            GroupControl11.Show()
+            If CheckEdit1.Checked = False Then
+                GroupControl6.Show()
+                GroupControl10.Show()
+                GroupControl3.Show()
+                GroupControl11.Show()
+
+            End If
 
         End If
 
@@ -554,9 +564,10 @@ Public Class fm_add_patient
     Public Sub add()
         operatin_click(1)
         finger_show()
+        If CheckEdit1.Checked = True Then
 
 
-        If Not validate_vale() Then
+        ElseIf Not validate_vale() Then
             operatin_click(0)
             Exit Sub
         End If
@@ -808,7 +819,11 @@ Public Class fm_add_patient
             Exit Sub
             MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
         End If
-
+        Dim p As New Patient(__(tb_id.Text))
+        If p.first_push_amount_arrived > 0 Then
+            MessageBox.Show("   تم استلام مبلغ الدفعة الاولى في تأريخ  " & p.diagonosis & "  المبلغ  " & p.first_push_amount_arrived.ToString)
+            Exit Sub
+        End If
         Try
             fm_add_queue.Close()
 
@@ -817,6 +832,7 @@ Public Class fm_add_patient
         End Try
         fm_add_queue.tb_id.Text = "0"
         fm_add_queue.tb_patient_id.Text = tb_id.Text
+        fm_add_queue.house_price = nu_house_price.Value
 
         fm_add_queue.tb_number.Text = "1"
         fm_add_queue.tb_dept_title.Text = "الدفعة " & get_text(1)
@@ -871,6 +887,12 @@ Public Class fm_add_patient
             tb_f9.Text = patient.f9
             tb_f10.Text = patient.f10
             cb_plan.Text = patient.is_token
+            If patient.is_token = s_not_booking Then
+                CheckEdit1.Checked = True
+            Else
+                CheckEdit1.Checked = False
+
+            End If
             nu_blok_num.Value = __(patient.f2)
             nu_first_part.Value = patient.first_present
             nu_first_present.Value = patient.first_push_present
@@ -891,7 +913,12 @@ Public Class fm_add_patient
                 num_home_num.Enabled = False
                 tb_ref_by.Enabled = False
             End If
+            If tb_name.Text.Trim = "" Then
+                CheckEdit1.Enabled = True
+            Else
+                CheckEdit1.Enabled = False
 
+            End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -1025,6 +1052,54 @@ Public Class fm_add_patient
         Else
             tb_ref_by.Text = ""
   
+        End If
+
+
+    End Sub
+
+    Private Sub check_if_exist()
+        nu_house_price.BackColor = Color.White
+        Dim p As New Patient(tb_blok_title.Text, nu_blok_num.Value, num_home_num.Value)
+        If p.id = 0 Then
+            MessageBox.Show("لم تتم اضافة معلومات هذا الدار ")
+
+        End If
+        If p.is_token = s_not_booking Then
+            put_info(p.id)
+            nu_house_price.BackColor = Color.LightGreen
+        End If
+
+        If p.is_token = s_booking Then
+            MessageBox.Show(" محجوز بأسم " & p.name)
+        End If
+
+        If p.is_token = s_deal Then
+            MessageBox.Show("  تم التعاقد مع   " & p.name)
+        End If
+
+
+    End Sub
+
+    Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
+
+        check_if_exist()
+    End Sub
+
+    Private Sub CheckEdit1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckEdit1.CheckedChanged
+        If CheckEdit1.Checked = True Then
+            cb_plan.Text = s_not_booking
+            GroupControl6.Hide()
+            GroupControl10.Hide()
+            GroupControl3.Hide()
+            GroupControl11.Hide()
+
+        Else
+            cb_plan.Text = s_booking
+            GroupControl6.Show()
+            GroupControl10.Show()
+            GroupControl3.Show()
+            GroupControl11.Show()
+
         End If
     End Sub
 End Class

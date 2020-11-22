@@ -135,22 +135,22 @@ Public Class fm_show_patients
         Try
             Dim s As String
             If RadioButton2.Checked = True Then
-                If tb_f1.Text.Trim = "الكل" Or tb_f1.Text.Trim = "" Then
-                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'   order by f2,f1,f3 limit " & num_limit.Value & ""
+                If tb_f1.Text.Trim = "" Or tb_f1.Text.Trim = "" Then
+                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and  is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3 limit " & num_limit.Value & ""
                 Else
 
                     If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
                         s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%'  and is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3  limit " & num_limit.Value & ""
 
                     Else
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' and  and is_token like '%" & cb_plan.Text & "%'    f2 like '%" & tb_f2.Text & "%'   order by f2,f1,f3  limit " & num_limit.Value & ""
+                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' and is_token like '%" & cb_plan.Text & "%'    f2 like '%" & tb_f2.Text & "%'   order by f2,f1,f3  limit " & num_limit.Value & ""
 
                     End If
 
                 End If
             Else
-                If tb_f1.Text.Trim = "الكل" Or tb_f1.Text.Trim = "" Then
-                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'   and is_token like '%" & cb_plan.Text & "%'   order by id desc limit " & num_limit.Value & ""
+                If tb_f1.Text.Trim = "" Or tb_f1.Text.Trim = "" Then
+                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   order by id desc limit " & num_limit.Value & ""
                 Else
 
                     If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
@@ -666,7 +666,7 @@ Public Class fm_show_patients
         f.item9 = p.f1 & p.f2 & "." & p.f3
         f.item10 = p.name
         f.admin_name = p.admin_name
-
+        f.item6 = p.f9
 
 
         f.Show()
@@ -747,9 +747,16 @@ Public Class fm_show_patients
         End If
         If lv_queue.SelectedItems.Count > 0 Then
             If fm_queue.no_item_in_dept(__(lv_queue.SelectedItems(0).Text)) Then
-                If MessageBox.Show("هل تريد الحذف نهائيا ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+                If MessageBox.Show("هل تريد الحذف نهائيا-سوف يتم حذف معلومات الزبون ومستمسكاته وصورتة الشخصية ؟", "تأكيد", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
                     Dim p As New Patient(__(lv_queue.SelectedItems(0).Text))
                     p.delete()
+                    Try
+                        delete_files(p.id)
+
+                    Catch ex As Exception
+
+                    End Try
+
                     'Dim que As New Queue()
                     'que.id = __(lv_queue.SelectedItems(0).SubItems(6).Text)
                     'que.delete()

@@ -23,6 +23,9 @@ Partial Class fm_show_patients
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fm_show_patients))
         Me.lv_queue = New System.Windows.Forms.ListView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.عرضاوتعديلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.عرضالفيشToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.طباعةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.اضافةحجزعمليةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.عقدToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.خارطةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -30,10 +33,7 @@ Partial Class fm_show_patients
         Me.حذفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.حذفنهائيToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.اضافةملفاتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.عرضاوتعديلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.اتصالToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.طباعةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.عرضالفيشToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tb_name = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
@@ -93,6 +93,13 @@ Partial Class fm_show_patients
         Me.colf3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colhouse_price = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
+        Me.first_part = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.last_part = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.f9 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.ref_by = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.is_token = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.f10 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.f8 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -134,15 +141,33 @@ Partial Class fm_show_patients
         Me.lv_queue.Name = "lv_queue"
         Me.lv_queue.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_queue.RightToLeftLayout = True
-        Me.lv_queue.Size = New System.Drawing.Size(1013, 646)
+        Me.lv_queue.Size = New System.Drawing.Size(1010, 649)
         Me.lv_queue.TabIndex = 1
         Me.lv_queue.UseCompatibleStateImageBehavior = False
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اضافةحجزعمليةToolStripMenuItem, Me.حذفToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.عرضاوتعديلToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.طباعةToolStripMenuItem, Me.عرضالفيشToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.عرضاوتعديلToolStripMenuItem, Me.عرضالفيشToolStripMenuItem, Me.طباعةToolStripMenuItem, Me.اضافةحجزعمليةToolStripMenuItem, Me.حذفToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.اتصالToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 180)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 158)
+        '
+        'عرضاوتعديلToolStripMenuItem
+        '
+        Me.عرضاوتعديلToolStripMenuItem.Name = "عرضاوتعديلToolStripMenuItem"
+        Me.عرضاوتعديلToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.عرضاوتعديلToolStripMenuItem.Text = "تحديث المعلومات"
+        '
+        'عرضالفيشToolStripMenuItem
+        '
+        Me.عرضالفيشToolStripMenuItem.Name = "عرضالفيشToolStripMenuItem"
+        Me.عرضالفيشToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.عرضالفيشToolStripMenuItem.Text = "عرض الفيش"
+        '
+        'طباعةToolStripMenuItem
+        '
+        Me.طباعةToolStripMenuItem.Name = "طباعةToolStripMenuItem"
+        Me.طباعةToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.طباعةToolStripMenuItem.Text = "تحرير العقد"
         '
         'اضافةحجزعمليةToolStripMenuItem
         '
@@ -160,7 +185,7 @@ Partial Class fm_show_patients
         'خارطةToolStripMenuItem
         '
         Me.خارطةToolStripMenuItem.Name = "خارطةToolStripMenuItem"
-        Me.خارطةToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.خارطةToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.خارطةToolStripMenuItem.Text = "خارطة"
         '
         'سجلتسديدToolStripMenuItem
@@ -188,29 +213,11 @@ Partial Class fm_show_patients
         Me.اضافةملفاتToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.اضافةملفاتToolStripMenuItem.Text = "اضافة ملفات"
         '
-        'عرضاوتعديلToolStripMenuItem
-        '
-        Me.عرضاوتعديلToolStripMenuItem.Name = "عرضاوتعديلToolStripMenuItem"
-        Me.عرضاوتعديلToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.عرضاوتعديلToolStripMenuItem.Text = "تحديث المعلومات"
-        '
         'اتصالToolStripMenuItem
         '
         Me.اتصالToolStripMenuItem.Name = "اتصالToolStripMenuItem"
         Me.اتصالToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.اتصالToolStripMenuItem.Text = "اتصال"
-        '
-        'طباعةToolStripMenuItem
-        '
-        Me.طباعةToolStripMenuItem.Name = "طباعةToolStripMenuItem"
-        Me.طباعةToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.طباعةToolStripMenuItem.Text = "تحرير العقد"
-        '
-        'عرضالفيشToolStripMenuItem
-        '
-        Me.عرضالفيشToolStripMenuItem.Name = "عرضالفيشToolStripMenuItem"
-        Me.عرضالفيشToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.عرضالفيشToolStripMenuItem.Text = "عرض الفيش"
         '
         'tb_name
         '
@@ -244,9 +251,9 @@ Partial Class fm_show_patients
         Me.GroupControl6.Controls.Add(Me.Label4)
         Me.GroupControl6.Controls.Add(Me.tb_name)
         Me.GroupControl6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl6.Location = New System.Drawing.Point(1022, 54)
+        Me.GroupControl6.Location = New System.Drawing.Point(1020, 49)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(348, 695)
+        Me.GroupControl6.Size = New System.Drawing.Size(348, 699)
         Me.GroupControl6.TabIndex = 261
         '
         'GroupControl3
@@ -299,7 +306,7 @@ Partial Class fm_show_patients
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(237, 165)
+        Me.Label3.Location = New System.Drawing.Point(237, 163)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(69, 17)
         Me.Label3.TabIndex = 294
@@ -313,7 +320,7 @@ Partial Class fm_show_patients
         Me.cb_plan.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_plan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.cb_plan.FormattingEnabled = True
-        Me.cb_plan.Items.AddRange(New Object() {"%", "حجز", "تعاقد", "تم الاستلام"})
+        Me.cb_plan.Items.AddRange(New Object() {"%", "حجز", "تعاقد", "تم الاستلام", "غير محجوز"})
         Me.cb_plan.Location = New System.Drawing.Point(95, 115)
         Me.cb_plan.Name = "cb_plan"
         Me.cb_plan.Size = New System.Drawing.Size(163, 29)
@@ -368,7 +375,7 @@ Partial Class fm_show_patients
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(48, 159)
+        Me.RadioButton2.Location = New System.Drawing.Point(48, 157)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton2.Size = New System.Drawing.Size(105, 26)
@@ -382,7 +389,7 @@ Partial Class fm_show_patients
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
         Me.RadioButton1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(158, 159)
+        Me.RadioButton1.Location = New System.Drawing.Point(158, 157)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton1.Size = New System.Drawing.Size(70, 26)
@@ -396,7 +403,7 @@ Partial Class fm_show_patients
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(148, 574)
+        Me.Label2.Location = New System.Drawing.Point(148, 572)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label2.Size = New System.Drawing.Size(71, 17)
@@ -427,7 +434,7 @@ Partial Class fm_show_patients
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(202, 29)
+        Me.LabelControl1.Location = New System.Drawing.Point(202, 27)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(112, 13)
         Me.LabelControl1.TabIndex = 270
@@ -436,21 +443,21 @@ Partial Class fm_show_patients
         'num_limit
         '
         Me.num_limit.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.num_limit.Location = New System.Drawing.Point(138, 20)
+        Me.num_limit.Location = New System.Drawing.Point(138, 25)
         Me.num_limit.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.num_limit.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.num_limit.Name = "num_limit"
         Me.num_limit.Size = New System.Drawing.Size(58, 21)
         Me.num_limit.TabIndex = 269
         Me.num_limit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.num_limit.Value = New Decimal(New Integer() {50, 0, 0, 0})
+        Me.num_limit.Value = New Decimal(New Integer() {2000, 0, 0, 0})
         '
         'tb_f1
         '
         Me.tb_f1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.tb_f1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_f1.FormattingEnabled = True
-        Me.tb_f1.Items.AddRange(New Object() {"A", "B", "C", "A+", "B+", "C+", "A VIP", "B VIP", "C VIP"})
+        Me.tb_f1.Items.AddRange(New Object() {"", "A", "B", "C", "A+", "B+", "C+", "A VIP", "A VVIP"})
         Me.tb_f1.Location = New System.Drawing.Point(168, 86)
         Me.tb_f1.Name = "tb_f1"
         Me.tb_f1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -496,7 +503,7 @@ Partial Class fm_show_patients
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(187, 6)
+        Me.Label4.Location = New System.Drawing.Point(187, 4)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(72, 17)
         Me.Label4.TabIndex = 257
@@ -521,7 +528,7 @@ Partial Class fm_show_patients
         Me.RibbonControl2.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl2.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl2.ShowToolbarCustomizeItem = False
-        Me.RibbonControl2.Size = New System.Drawing.Size(1370, 54)
+        Me.RibbonControl2.Size = New System.Drawing.Size(1368, 49)
         Me.RibbonControl2.Toolbar.ShowCustomizeItem = False
         '
         'tb_user
@@ -655,20 +662,20 @@ Partial Class fm_show_patients
         '
         Me.GroupControl2.Controls.Add(Me.XtraTabControl1)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl2.Location = New System.Drawing.Point(0, 54)
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 49)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(1022, 695)
+        Me.GroupControl2.Size = New System.Drawing.Size(1020, 699)
         Me.GroupControl2.TabIndex = 263
         Me.GroupControl2.Text = "نتائج البحث"
         '
         'XtraTabControl1
         '
         Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 22)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 20)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1018, 671)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1016, 677)
         Me.XtraTabControl1.TabIndex = 122
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
         '
@@ -676,7 +683,7 @@ Partial Class fm_show_patients
         '
         Me.XtraTabPage1.Controls.Add(Me.lv_queue)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1013, 646)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1010, 649)
         Me.XtraTabPage1.Text = "عرض"
         '
         'XtraTabPage2
@@ -684,7 +691,7 @@ Partial Class fm_show_patients
         Me.XtraTabPage2.Controls.Add(Me.SimpleButton2)
         Me.XtraTabPage2.Controls.Add(Me.GridControl1)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1013, 646)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1010, 649)
         Me.XtraTabPage2.Text = "بحث"
         '
         'SimpleButton2
@@ -702,7 +709,7 @@ Partial Class fm_show_patients
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1013, 646)
+        Me.GridControl1.Size = New System.Drawing.Size(1010, 649)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -710,7 +717,7 @@ Partial Class fm_show_patients
         '
         Me.GridView1.Appearance.Row.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridView1.Appearance.Row.Options.UseFont = True
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colid, Me.colname, Me.colf1, Me.colf2, Me.colf3, Me.colhouse_price})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colid, Me.colname, Me.colf1, Me.colf2, Me.colf3, Me.colhouse_price, Me.first_part, Me.last_part, Me.f9, Me.ref_by, Me.is_token, Me.f10, Me.f8})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -723,7 +730,7 @@ Partial Class fm_show_patients
         Me.colid.Name = "colid"
         Me.colid.Visible = True
         Me.colid.VisibleIndex = 0
-        Me.colid.Width = 50
+        Me.colid.Width = 32
         '
         'colname
         '
@@ -732,7 +739,7 @@ Partial Class fm_show_patients
         Me.colname.Name = "colname"
         Me.colname.Visible = True
         Me.colname.VisibleIndex = 1
-        Me.colname.Width = 134
+        Me.colname.Width = 120
         '
         'colf1
         '
@@ -741,7 +748,7 @@ Partial Class fm_show_patients
         Me.colf1.Name = "colf1"
         Me.colf1.Visible = True
         Me.colf1.VisibleIndex = 2
-        Me.colf1.Width = 189
+        Me.colf1.Width = 57
         '
         'colf2
         '
@@ -750,7 +757,7 @@ Partial Class fm_show_patients
         Me.colf2.Name = "colf2"
         Me.colf2.Visible = True
         Me.colf2.VisibleIndex = 3
-        Me.colf2.Width = 350
+        Me.colf2.Width = 60
         '
         'colf3
         '
@@ -759,7 +766,7 @@ Partial Class fm_show_patients
         Me.colf3.Name = "colf3"
         Me.colf3.Visible = True
         Me.colf3.VisibleIndex = 4
-        Me.colf3.Width = 134
+        Me.colf3.Width = 117
         '
         'colhouse_price
         '
@@ -768,17 +775,76 @@ Partial Class fm_show_patients
         Me.colhouse_price.Name = "colhouse_price"
         Me.colhouse_price.Visible = True
         Me.colhouse_price.VisibleIndex = 5
-        Me.colhouse_price.Width = 141
+        Me.colhouse_price.Width = 123
         '
-        'DefaultLookAndFeel1
+        'first_part
         '
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Blue"
+        Me.first_part.Caption = "ألقسم الاول"
+        Me.first_part.FieldName = "first_part"
+        Me.first_part.Name = "first_part"
+        Me.first_part.Visible = True
+        Me.first_part.VisibleIndex = 6
+        Me.first_part.Width = 65
+        '
+        'last_part
+        '
+        Me.last_part.Caption = "القسم الاخير"
+        Me.last_part.FieldName = "last_part"
+        Me.last_part.Name = "last_part"
+        Me.last_part.Visible = True
+        Me.last_part.VisibleIndex = 7
+        Me.last_part.Width = 65
+        '
+        'f9
+        '
+        Me.f9.Caption = "القطاع"
+        Me.f9.FieldName = "f9"
+        Me.f9.Name = "f9"
+        Me.f9.Visible = True
+        Me.f9.VisibleIndex = 8
+        Me.f9.Width = 65
+        '
+        'ref_by
+        '
+        Me.ref_by.Caption = "المساحة"
+        Me.ref_by.FieldName = "ref_by"
+        Me.ref_by.Name = "ref_by"
+        Me.ref_by.Visible = True
+        Me.ref_by.VisibleIndex = 9
+        Me.ref_by.Width = 65
+        '
+        'is_token
+        '
+        Me.is_token.Caption = "الحالة"
+        Me.is_token.FieldName = "is_token"
+        Me.is_token.Name = "is_token"
+        Me.is_token.Visible = True
+        Me.is_token.VisibleIndex = 10
+        Me.is_token.Width = 65
+        '
+        'f10
+        '
+        Me.f10.Caption = "الموقع"
+        Me.f10.FieldName = "f10"
+        Me.f10.Name = "f10"
+        Me.f10.Visible = True
+        Me.f10.VisibleIndex = 11
+        Me.f10.Width = 65
+        '
+        'f8
+        '
+        Me.f8.Caption = "رقم السند"
+        Me.f8.FieldName = "f8"
+        Me.f8.Name = "f8"
+        Me.f8.Visible = True
+        Me.f8.VisibleIndex = 12
+        Me.f8.Width = 93
         '
         'fm_show_patients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1368, 748)
         Me.Controls.Add(Me.GroupControl2)
         Me.Controls.Add(Me.GroupControl6)
         Me.Controls.Add(Me.RibbonControl2)
@@ -894,4 +960,11 @@ Partial Class fm_show_patients
     Friend WithEvents حذفنهائيToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents عرضالفيشToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents first_part As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents last_part As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents f9 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ref_by As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents is_token As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents f10 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents f8 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

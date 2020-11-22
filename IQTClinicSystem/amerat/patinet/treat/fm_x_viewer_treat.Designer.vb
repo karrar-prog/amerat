@@ -195,17 +195,16 @@ Partial Class fm_x_viewer_treat
         Me.PrintPreviewStaticItem2 = New DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem()
         Me.ZoomTrackBarEditItem1 = New DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem()
         Me.RepositoryItemZoomTrackBar1 = New DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar()
-        Me.PreviewBar7 = New DevExpress.XtraPrinting.Preview.PreviewBar()
+        Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
+        Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
+        Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
+        Me.DocumentViewer1 = New DevExpress.XtraPrinting.Preview.DocumentViewer()
         Me.miFile = New DevExpress.XtraPrinting.Preview.PrintPreviewSubItem()
         Me.miView = New DevExpress.XtraPrinting.Preview.PrintPreviewSubItem()
         Me.miPageLayout = New DevExpress.XtraPrinting.Preview.PrintPreviewSubItem()
         Me.miPageLayoutFacing = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
         Me.miPageLayoutContinuous = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
         Me.miToolbars = New DevExpress.XtraBars.BarToolbarsListItem()
-        Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
-        Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
-        Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
-        Me.DocumentViewer1 = New DevExpress.XtraPrinting.Preview.DocumentViewer()
         Me.miBackground = New DevExpress.XtraPrinting.Preview.PrintPreviewSubItem()
         Me.PrintPreviewBarCheckItem2 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
         Me.PrintPreviewBarCheckItem3 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
@@ -926,9 +925,9 @@ Partial Class fm_x_viewer_treat
         '
         Me.BarDockControl4.CausesValidation = False
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl4.Location = New System.Drawing.Point(1134, 76)
+        Me.BarDockControl4.Location = New System.Drawing.Point(1134, 78)
         Me.BarDockControl4.Manager = Nothing
-        Me.BarDockControl4.Size = New System.Drawing.Size(0, 660)
+        Me.BarDockControl4.Size = New System.Drawing.Size(0, 648)
         '
         'RibbonPage2
         '
@@ -958,10 +957,13 @@ Partial Class fm_x_viewer_treat
         '
         'SimpleButton3
         '
+        Me.SimpleButton3.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.SimpleButton3.Appearance.BackColor2 = System.Drawing.Color.Transparent
         Me.SimpleButton3.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton3.Appearance.Options.UseBackColor = True
         Me.SimpleButton3.Appearance.Options.UseFont = True
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(0, 76)
+        Me.SimpleButton3.Location = New System.Drawing.Point(0, 31)
         Me.SimpleButton3.Name = "SimpleButton3"
         Me.SimpleButton3.Size = New System.Drawing.Size(92, 50)
         Me.SimpleButton3.TabIndex = 103
@@ -1392,9 +1394,9 @@ Partial Class fm_x_viewer_treat
         '
         Me.BarDockControl5.CausesValidation = False
         Me.BarDockControl5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl5.Location = New System.Drawing.Point(1134, 76)
+        Me.BarDockControl5.Location = New System.Drawing.Point(1134, 78)
         Me.BarDockControl5.Manager = Nothing
-        Me.BarDockControl5.Size = New System.Drawing.Size(0, 660)
+        Me.BarDockControl5.Size = New System.Drawing.Size(0, 648)
         '
         'PrintPreviewBarCheckItem1
         '
@@ -1412,13 +1414,13 @@ Partial Class fm_x_viewer_treat
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 27)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 31)
         Me.barDockControlLeft.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 732)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 726)
         '
         'DocumentViewerBarManager1
         '
-        Me.DocumentViewerBarManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.PreviewBar3, Me.PreviewBar4, Me.PreviewBar7})
+        Me.DocumentViewerBarManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.PreviewBar3, Me.PreviewBar4})
         Me.DocumentViewerBarManager1.DockControls.Add(Me.barDockControlTop)
         Me.DocumentViewerBarManager1.DockControls.Add(Me.barDockControlBottom)
         Me.DocumentViewerBarManager1.DockControls.Add(Me.barDockControlLeft)
@@ -1427,7 +1429,6 @@ Partial Class fm_x_viewer_treat
         Me.DocumentViewerBarManager1.Form = Me
         Me.DocumentViewerBarManager1.ImageStream = CType(resources.GetObject("DocumentViewerBarManager1.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
         Me.DocumentViewerBarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.PrintPreviewStaticItem1, Me.verticalSpaceItem, Me.ProgressBarEditItem1, Me.PrintPreviewBarItem1, Me.PrintPreviewStaticItem2, Me.ZoomTrackBarEditItem1, Me.bbiDocumentMap, Me.bbiParameters, Me.bbiThumbnails, Me.bbiFind, Me.bbiHighlightEditingFields, Me.bbiCustomize, Me.bbiOpen, Me.bbiSave, Me.bbiPrint, Me.bbiPrintDirect, Me.bbiPageSetup, Me.bbiEditPageHF, Me.bbiScale, Me.bbiHandTool, Me.bbiMagnifier, Me.bbiZoomOut, Me.bbiZoom, Me.bbiZoomIn, Me.bbiShowFirstPage, Me.bbiShowPrevPage, Me.bbiShowNextPage, Me.bbiShowLastPage, Me.bbiMultiplePages, Me.bbiFillBackground, Me.bbiWatermark, Me.bbiExportFile, Me.bbiSendFile, Me.bbiClosePreview, Me.miFile, Me.miView, Me.miBackground, Me.miPageLayout, Me.miPageLayoutFacing, Me.miPageLayoutContinuous, Me.miToolbars, Me.PrintPreviewBarCheckItem1, Me.PrintPreviewBarCheckItem2, Me.PrintPreviewBarCheckItem3, Me.PrintPreviewBarCheckItem4, Me.PrintPreviewBarCheckItem5, Me.PrintPreviewBarCheckItem6, Me.PrintPreviewBarCheckItem7, Me.PrintPreviewBarCheckItem8, Me.PrintPreviewBarCheckItem9, Me.PrintPreviewBarCheckItem10, Me.PrintPreviewBarCheckItem11, Me.PrintPreviewBarCheckItem12, Me.PrintPreviewBarCheckItem13, Me.PrintPreviewBarCheckItem14, Me.PrintPreviewBarCheckItem15, Me.PrintPreviewBarCheckItem16, Me.PrintPreviewBarCheckItem17, Me.PrintPreviewBarCheckItem18, Me.PrintPreviewBarCheckItem19})
-        Me.DocumentViewerBarManager1.MainMenu = Me.PreviewBar7
         Me.DocumentViewerBarManager1.MaxItemId = 60
         Me.DocumentViewerBarManager1.PreviewBar = Me.PreviewBar3
         Me.DocumentViewerBarManager1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemProgressBar1, Me.RepositoryItemZoomTrackBar1, Me.PrintPreviewRepositoryItemComboBox1})
@@ -1440,8 +1441,8 @@ Partial Class fm_x_viewer_treat
         Me.PreviewBar3.DockCol = 0
         Me.PreviewBar3.DockRow = 0
         Me.PreviewBar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
+        Me.PreviewBar3.FloatLocation = New System.Drawing.Point(146, 119)
         Me.PreviewBar3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.bbiDocumentMap), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiParameters), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiThumbnails), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiFind), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiHighlightEditingFields), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiCustomize, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiOpen, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiSave), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiPrint, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiPrintDirect), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiPageSetup), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiEditPageHF), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiScale), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiHandTool, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiMagnifier), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiZoomOut, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiZoom), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiZoomIn), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiShowFirstPage, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiShowPrevPage), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiShowNextPage), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiShowLastPage), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiMultiplePages, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiFillBackground), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiWatermark), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiExportFile, True), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiSendFile), New DevExpress.XtraBars.LinkPersistInfo(Me.bbiClosePreview, True)})
-        Me.PreviewBar3.Offset = 296
         Me.PreviewBar3.Text = "Toolbar"
         '
         'bbiDocumentMap
@@ -1801,16 +1802,38 @@ Partial Class fm_x_viewer_treat
         Me.RepositoryItemZoomTrackBar1.Maximum = 180
         Me.RepositoryItemZoomTrackBar1.Name = "RepositoryItemZoomTrackBar1"
         '
-        'PreviewBar7
+        'barDockControlTop
         '
-        Me.PreviewBar7.BarName = "Main Menu"
-        Me.PreviewBar7.DockCol = 0
-        Me.PreviewBar7.DockRow = 0
-        Me.PreviewBar7.FloatLocation = New System.Drawing.Point(246, 145)
-        Me.PreviewBar7.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.miFile), New DevExpress.XtraBars.LinkPersistInfo(Me.miView)})
-        Me.PreviewBar7.OptionsBar.MultiLine = True
-        Me.PreviewBar7.OptionsBar.UseWholeRow = True
-        Me.PreviewBar7.Text = "Main Menu"
+        Me.barDockControlTop.CausesValidation = False
+        Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlTop.Manager = Me.DocumentViewerBarManager1
+        Me.barDockControlTop.Size = New System.Drawing.Size(1134, 31)
+        '
+        'barDockControlBottom
+        '
+        Me.barDockControlBottom.CausesValidation = False
+        Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 757)
+        Me.barDockControlBottom.Manager = Me.DocumentViewerBarManager1
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1134, 26)
+        '
+        'barDockControlRight
+        '
+        Me.barDockControlRight.CausesValidation = False
+        Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
+        Me.barDockControlRight.Location = New System.Drawing.Point(1134, 31)
+        Me.barDockControlRight.Manager = Me.DocumentViewerBarManager1
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 726)
+        '
+        'DocumentViewer1
+        '
+        Me.DocumentViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DocumentViewer1.IsMetric = True
+        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 78)
+        Me.DocumentViewer1.Name = "DocumentViewer1"
+        Me.DocumentViewer1.Size = New System.Drawing.Size(1134, 648)
+        Me.DocumentViewer1.TabIndex = 118
         '
         'miFile
         '
@@ -1861,39 +1884,6 @@ Partial Class fm_x_viewer_treat
         Me.miToolbars.Caption = "Bars"
         Me.miToolbars.Id = 40
         Me.miToolbars.Name = "miToolbars"
-        '
-        'barDockControlTop
-        '
-        Me.barDockControlTop.CausesValidation = False
-        Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlTop.Size = New System.Drawing.Size(1134, 27)
-        '
-        'barDockControlBottom
-        '
-        Me.barDockControlBottom.CausesValidation = False
-        Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 759)
-        Me.barDockControlBottom.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1134, 28)
-        '
-        'barDockControlRight
-        '
-        Me.barDockControlRight.CausesValidation = False
-        Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1134, 27)
-        Me.barDockControlRight.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 732)
-        '
-        'DocumentViewer1
-        '
-        Me.DocumentViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DocumentViewer1.IsMetric = True
-        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 76)
-        Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(1134, 660)
-        Me.DocumentViewer1.TabIndex = 118
         '
         'miBackground
         '
@@ -2095,18 +2085,18 @@ Partial Class fm_x_viewer_treat
         Me.RibbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
         Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem})
-        Me.RibbonControl1.Location = New System.Drawing.Point(0, 27)
+        Me.RibbonControl1.Location = New System.Drawing.Point(0, 31)
         Me.RibbonControl1.MaxItemId = 1
         Me.RibbonControl1.Name = "RibbonControl1"
-        Me.RibbonControl1.Size = New System.Drawing.Size(1134, 49)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1134, 47)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         '
         'RibbonStatusBar1
         '
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 736)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 726)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1134, 23)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1134, 31)
         '
         'RibbonPage8
         '
@@ -2117,7 +2107,7 @@ Partial Class fm_x_viewer_treat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1134, 787)
+        Me.ClientSize = New System.Drawing.Size(1134, 783)
         Me.Controls.Add(Me.SimpleButton3)
         Me.Controls.Add(Me.BarDockControl4)
         Me.Controls.Add(Me.BarDockControl5)
@@ -2317,7 +2307,6 @@ Partial Class fm_x_viewer_treat
     Friend WithEvents PrintPreviewStaticItem2 As DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem
     Friend WithEvents ZoomTrackBarEditItem1 As DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem
     Friend WithEvents RepositoryItemZoomTrackBar1 As DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar
-    Friend WithEvents PreviewBar7 As DevExpress.XtraPrinting.Preview.PreviewBar
     Friend WithEvents miFile As DevExpress.XtraPrinting.Preview.PrintPreviewSubItem
     Friend WithEvents miView As DevExpress.XtraPrinting.Preview.PrintPreviewSubItem
     Friend WithEvents miPageLayout As DevExpress.XtraPrinting.Preview.PrintPreviewSubItem

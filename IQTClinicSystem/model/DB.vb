@@ -2,11 +2,14 @@
 Imports MySql.Data.MySqlClient
 Imports System.Collections
 Imports System.Drawing.Text
+Imports System.IO
 
 
 Module DB
 
-
+    Public s_not_booking As String = "غير محجوز"
+    Public s_booking As String = "حجز"
+    Public s_deal As String = "تعاقد"
 
     Public e_amber As String = "تعديل التسعيرهف"
 
@@ -153,7 +156,7 @@ Module DB
         Dim proc As New System.Diagnostics.Process()
         Try
             proc = Process.Start(Application.StartupPath & "/server/" & my_text & ".txt", "تشغيل السيرفر")
-          
+
         Catch ex As Exception
 
         End Try
@@ -167,7 +170,7 @@ Module DB
 
 
 
-  
+
 
 
         li.Items.Clear()
@@ -756,5 +759,27 @@ Module DB
 
 
     End Sub
+    Public Sub delete_files(id As Integer)
 
+
+1:
+
+
+        Try
+            Dim directoryName As String = patient_image_path & "\p" & id
+            For Each deleteFile In Directory.GetFiles(directoryName, "*.*", SearchOption.TopDirectoryOnly)
+                File.Delete(deleteFile)
+            Next
+            Dim path As String = patient_image_path & "\im"
+
+            File.Delete(path & id & ".png")
+
+        Catch ex As Exception
+            MessageBox.Show("الصورة مستخدمة حاليا - لايمكن الاستبدال" & ex.Message)
+
+        End Try
+
+
+
+    End Sub
 End Module

@@ -65,6 +65,7 @@ Public Class fm_x_viewer_treat
         report.Parameters("item2").Value = item2
         report.Parameters("item3").Value = item3
         report.Parameters("item4").Value = item4
+        report.Parameters("item6").Value = item6
         report.Parameters("item9").Value = item9
         report.Parameters("item10").Value = item10
 

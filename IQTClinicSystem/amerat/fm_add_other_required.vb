@@ -134,7 +134,7 @@ Public Class fm_add_other_required
 
 
 
-                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 2 & " دفعات "
+                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 1 & " دفعات "
                 Dim last_part_value As New Decimal
                 last_part_value = nu_last_part.Value
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
@@ -488,30 +488,34 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
-        If SimpleButton2.Text = "حفظ و طباعة" Then
-            Dim p As New Patient()
-            p.id = __(tb_id.Text)
-            p.item2 = item2.Text
-            p.name = tb_name.Text
-            p.item3 = item3.Text
-            p.tb_2 = tb_2.Text
-            p.tb_l_5 = tb_l_5.Text
-            p.item4 = item4.Text
 
-            p.admin_name = tb_admin_name.Text
-            p.is_token = "تعاقد"
-
-            p.first_push_amount = first_push
-            p.first_push_present = first_push_present
+        fm_save_and.Show()
 
 
-            p.set_contract()
-            Dim content = " تم تحرير عقد : " & tb_name.Text
-            new_event2("تحرير عقد", content, 0)
+        'If SimpleButton2.Text = "حفظ و طباعة" Then
+        '    Dim p As New Patient()
+        '    p.id = __(tb_id.Text)
+        '    p.item2 = item2.Text
+        '    p.name = tb_name.Text
+        '    p.item3 = item3.Text
+        '    p.tb_2 = tb_2.Text
+        '    p.tb_l_5 = tb_l_5.Text
+        '    p.item4 = item4.Text
 
-        End If
+        '    p.admin_name = tb_admin_name.Text
+        '    p.is_token = "تعاقد"
 
-        print()
+        '    p.first_push_amount = first_push
+        '    p.first_push_present = first_push_present
+
+
+        '    p.set_contract()
+        '    Dim content = " تم تحرير عقد : " & tb_name.Text
+        '    new_event2("تحرير عقد", content, 0)
+
+        'End If
+
+        ' print()
 
     End Sub
     Private Sub print()

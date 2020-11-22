@@ -55,6 +55,7 @@ Partial Class fm_months
         '
         'RibbonControl
         '
+        Me.RibbonControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl.ExpandCollapseItem.Id = 0
         Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem})
         Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
@@ -68,7 +69,7 @@ Partial Class fm_months
         Me.RibbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl.ShowQatLocationSelector = False
         Me.RibbonControl.ShowToolbarCustomizeItem = False
-        Me.RibbonControl.Size = New System.Drawing.Size(1121, 27)
+        Me.RibbonControl.Size = New System.Drawing.Size(1123, 27)
         Me.RibbonControl.StatusBar = Me.RibbonStatusBar
         Me.RibbonControl.Toolbar.ShowCustomizeItem = False
         Me.RibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
@@ -79,7 +80,7 @@ Partial Class fm_months
         Me.RibbonStatusBar.Location = New System.Drawing.Point(0, 736)
         Me.RibbonStatusBar.Name = "RibbonStatusBar"
         Me.RibbonStatusBar.Ribbon = Me.RibbonControl
-        Me.RibbonStatusBar.Size = New System.Drawing.Size(1121, 31)
+        Me.RibbonStatusBar.Size = New System.Drawing.Size(1123, 31)
         '
         'SimpleButton2
         '
@@ -328,7 +329,7 @@ Partial Class fm_months
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1121, 767)
+        Me.ClientSize = New System.Drawing.Size(1123, 767)
         Me.Controls.Add(Me.LabelControl6)
         Me.Controls.Add(Me.LabelControl4)
         Me.Controls.Add(Me.tb_f9)

@@ -47,18 +47,24 @@ Partial Class fm_add_queue
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.tb_amount_text = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl16 = New DevExpress.XtraEditors.LabelControl()
+        Me.nu_first_money_present = New System.Windows.Forms.NumericUpDown()
+        Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_fesha_amount.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_dept_title.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_amount_text.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nu_first_money_present, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl1.SuspendLayout()
         Me.SuspendLayout()
         '
         'tb_munite
         '
         Me.tb_munite.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tb_munite.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_munite.Location = New System.Drawing.Point(205, 279)
+        Me.tb_munite.Location = New System.Drawing.Point(228, 252)
         Me.tb_munite.Name = "tb_munite"
         Me.tb_munite.ReadOnly = True
         Me.tb_munite.Size = New System.Drawing.Size(455, 32)
@@ -69,7 +75,7 @@ Partial Class fm_add_queue
         '
         Me.tb_amount.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tb_amount.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_amount.Location = New System.Drawing.Point(205, 242)
+        Me.tb_amount.Location = New System.Drawing.Point(228, 215)
         Me.tb_amount.Name = "tb_amount"
         Me.tb_amount.ReadOnly = True
         Me.tb_amount.Size = New System.Drawing.Size(455, 32)
@@ -84,7 +90,7 @@ Partial Class fm_add_queue
         Me.cb_plan.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_plan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.cb_plan.FormattingEnabled = True
-        Me.cb_plan.Location = New System.Drawing.Point(205, 198)
+        Me.cb_plan.Location = New System.Drawing.Point(228, 171)
         Me.cb_plan.Name = "cb_plan"
         Me.cb_plan.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.cb_plan.Size = New System.Drawing.Size(455, 39)
@@ -133,7 +139,7 @@ Partial Class fm_add_queue
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(666, 206)
+        Me.Label2.Location = New System.Drawing.Point(686, 179)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(94, 31)
         Me.Label2.TabIndex = 263
@@ -144,7 +150,7 @@ Partial Class fm_add_queue
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(665, 242)
+        Me.Label4.Location = New System.Drawing.Point(685, 215)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(115, 31)
         Me.Label4.TabIndex = 264
@@ -155,7 +161,7 @@ Partial Class fm_add_queue
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(664, 280)
+        Me.Label5.Location = New System.Drawing.Point(684, 253)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(115, 31)
         Me.Label5.TabIndex = 265
@@ -164,7 +170,7 @@ Partial Class fm_add_queue
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.IQTClinicSystem.My.Resources.Resources.Downloads_icon
-        Me.PictureBox1.Location = New System.Drawing.Point(404, 479)
+        Me.PictureBox1.Location = New System.Drawing.Point(422, 486)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(74, 74)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -175,7 +181,7 @@ Partial Class fm_add_queue
         '
         Me.dt_queue.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dt_queue.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dt_queue.Location = New System.Drawing.Point(12, 575)
+        Me.dt_queue.Location = New System.Drawing.Point(32, 579)
         Me.dt_queue.Name = "dt_queue"
         Me.dt_queue.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.dt_queue.RightToLeftLayout = True
@@ -187,7 +193,7 @@ Partial Class fm_add_queue
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(50, 541)
+        Me.Label6.Location = New System.Drawing.Point(70, 545)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(133, 31)
         Me.Label6.TabIndex = 271
@@ -220,7 +226,7 @@ Partial Class fm_add_queue
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(666, 317)
+        Me.Label8.Location = New System.Drawing.Point(686, 290)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(81, 31)
         Me.Label8.TabIndex = 275
@@ -230,7 +236,7 @@ Partial Class fm_add_queue
         '
         Me.tb_note.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tb_note.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_note.Location = New System.Drawing.Point(205, 316)
+        Me.tb_note.Location = New System.Drawing.Point(228, 289)
         Me.tb_note.Name = "tb_note"
         Me.tb_note.Size = New System.Drawing.Size(455, 32)
         Me.tb_note.TabIndex = 274
@@ -241,7 +247,7 @@ Partial Class fm_add_queue
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(671, 165)
+        Me.Label9.Location = New System.Drawing.Point(691, 138)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(47, 23)
         Me.Label9.TabIndex = 279
@@ -252,7 +258,7 @@ Partial Class fm_add_queue
         Me.tb_number.BackColor = System.Drawing.Color.White
         Me.tb_number.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tb_number.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_number.Location = New System.Drawing.Point(589, 156)
+        Me.tb_number.Location = New System.Drawing.Point(609, 129)
         Me.tb_number.Name = "tb_number"
         Me.tb_number.Size = New System.Drawing.Size(77, 32)
         Me.tb_number.TabIndex = 278
@@ -275,7 +281,7 @@ Partial Class fm_add_queue
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(378, 556)
+        Me.Label10.Location = New System.Drawing.Point(398, 564)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(123, 31)
         Me.Label10.TabIndex = 282
@@ -284,7 +290,7 @@ Partial Class fm_add_queue
         'tb_fesha_amount
         '
         Me.tb_fesha_amount.EnterMoveNextControl = True
-        Me.tb_fesha_amount.Location = New System.Drawing.Point(205, 365)
+        Me.tb_fesha_amount.Location = New System.Drawing.Point(310, 412)
         Me.tb_fesha_amount.Name = "tb_fesha_amount"
         Me.tb_fesha_amount.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_fesha_amount.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -293,7 +299,7 @@ Partial Class fm_add_queue
         Me.tb_fesha_amount.Properties.Mask.EditMask = "n0"
         Me.tb_fesha_amount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.tb_fesha_amount.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_fesha_amount.Size = New System.Drawing.Size(460, 36)
+        Me.tb_fesha_amount.Size = New System.Drawing.Size(273, 36)
         Me.tb_fesha_amount.TabIndex = 283
         '
         'Label3
@@ -301,7 +307,7 @@ Partial Class fm_add_queue
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(671, 368)
+        Me.Label3.Location = New System.Drawing.Point(586, 414)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(107, 31)
         Me.Label3.TabIndex = 284
@@ -310,7 +316,7 @@ Partial Class fm_add_queue
         'tb_dept_title
         '
         Me.tb_dept_title.EnterMoveNextControl = True
-        Me.tb_dept_title.Location = New System.Drawing.Point(206, 156)
+        Me.tb_dept_title.Location = New System.Drawing.Point(226, 129)
         Me.tb_dept_title.Name = "tb_dept_title"
         Me.tb_dept_title.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_dept_title.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -325,7 +331,7 @@ Partial Class fm_add_queue
         '
         Me.tb_dept_id.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tb_dept_id.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_dept_id.Location = New System.Drawing.Point(586, 123)
+        Me.tb_dept_id.Location = New System.Drawing.Point(606, 96)
         Me.tb_dept_id.Name = "tb_dept_id"
         Me.tb_dept_id.ReadOnly = True
         Me.tb_dept_id.Size = New System.Drawing.Size(79, 25)
@@ -338,7 +344,7 @@ Partial Class fm_add_queue
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(668, 125)
+        Me.Label11.Location = New System.Drawing.Point(688, 98)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(94, 23)
         Me.Label11.TabIndex = 287
@@ -350,7 +356,7 @@ Partial Class fm_add_queue
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(671, 410)
+        Me.Label12.Location = New System.Drawing.Point(691, 414)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(0, 21)
         Me.Label12.TabIndex = 289
@@ -358,7 +364,7 @@ Partial Class fm_add_queue
         'tb_amount_text
         '
         Me.tb_amount_text.EnterMoveNextControl = True
-        Me.tb_amount_text.Location = New System.Drawing.Point(12, 407)
+        Me.tb_amount_text.Location = New System.Drawing.Point(19, 454)
         Me.tb_amount_text.Name = "tb_amount_text"
         Me.tb_amount_text.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_amount_text.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -371,11 +377,45 @@ Partial Class fm_add_queue
         Me.tb_amount_text.Size = New System.Drawing.Size(880, 28)
         Me.tb_amount_text.TabIndex = 288
         '
+        'LabelControl16
+        '
+        Me.LabelControl16.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl16.Appearance.Options.UseFont = True
+        Me.LabelControl16.Location = New System.Drawing.Point(15, 36)
+        Me.LabelControl16.Name = "LabelControl16"
+        Me.LabelControl16.Size = New System.Drawing.Size(16, 21)
+        Me.LabelControl16.TabIndex = 424
+        Me.LabelControl16.Text = "%"
+        '
+        'nu_first_money_present
+        '
+        Me.nu_first_money_present.DecimalPlaces = 1
+        Me.nu_first_money_present.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nu_first_money_present.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
+        Me.nu_first_money_present.Location = New System.Drawing.Point(37, 34)
+        Me.nu_first_money_present.Name = "nu_first_money_present"
+        Me.nu_first_money_present.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.nu_first_money_present.Size = New System.Drawing.Size(72, 29)
+        Me.nu_first_money_present.TabIndex = 423
+        Me.nu_first_money_present.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.nu_first_money_present.Value = New Decimal(New Integer() {12, 0, 0, 0})
+        '
+        'GroupControl1
+        '
+        Me.GroupControl1.Controls.Add(Me.nu_first_money_present)
+        Me.GroupControl1.Controls.Add(Me.LabelControl16)
+        Me.GroupControl1.Location = New System.Drawing.Point(389, 327)
+        Me.GroupControl1.Name = "GroupControl1"
+        Me.GroupControl1.Size = New System.Drawing.Size(132, 79)
+        Me.GroupControl1.TabIndex = 425
+        Me.GroupControl1.Text = "نسبة الدفعة الاولى"
+        '
         'fm_add_queue
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(904, 630)
+        Me.ClientSize = New System.Drawing.Size(917, 629)
+        Me.Controls.Add(Me.GroupControl1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.tb_amount_text)
         Me.Controls.Add(Me.Label11)
@@ -411,6 +451,10 @@ Partial Class fm_add_queue
         CType(Me.tb_fesha_amount.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_dept_title.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tb_amount_text.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nu_first_money_present, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl1.ResumeLayout(False)
+        Me.GroupControl1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -443,4 +487,7 @@ Partial Class fm_add_queue
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents tb_amount_text As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl16 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents nu_first_money_present As System.Windows.Forms.NumericUpDown
+    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
 End Class
