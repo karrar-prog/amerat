@@ -211,6 +211,7 @@ Partial Class fm_user
         '
         'RibbonControl
         '
+        Me.RibbonControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl.ExpandCollapseItem.Id = 0
         Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem})
         Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
@@ -268,7 +269,7 @@ Partial Class fm_user
         Me.TabNavigationPage2.Controls.Add(Me.tb_f1)
         Me.TabNavigationPage2.Controls.Add(Me.SimpleButton2)
         Me.TabNavigationPage2.Name = "TabNavigationPage2"
-        Me.TabNavigationPage2.Size = New System.Drawing.Size(986, 666)
+        Me.TabNavigationPage2.Size = New System.Drawing.Size(1236, 677)
         '
         'LabelControl14
         '
@@ -617,7 +618,7 @@ Partial Class fm_user
         Me.TabNavigationPage1.Controls.Add(Me.li_user)
         Me.TabNavigationPage1.Name = "TabNavigationPage1"
         Me.TabNavigationPage1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TabNavigationPage1.Size = New System.Drawing.Size(1232, 686)
+        Me.TabNavigationPage1.Size = New System.Drawing.Size(1236, 677)
         '
         'GroupControl3
         '
@@ -626,7 +627,7 @@ Partial Class fm_user
         Me.GroupControl3.Location = New System.Drawing.Point(0, 232)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupControl3.Size = New System.Drawing.Size(551, 454)
+        Me.GroupControl3.Size = New System.Drawing.Size(555, 445)
         Me.GroupControl3.TabIndex = 145
         Me.GroupControl3.Visible = False
         '
@@ -645,10 +646,10 @@ Partial Class fm_user
         Me.TabPane2.Location = New System.Drawing.Point(2, 20)
         Me.TabPane2.Name = "TabPane2"
         Me.TabPane2.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.TabNavigationPage4, Me.TabNavigationPage6, Me.TabNavigationPage5, Me.TabNavigationPage3})
-        Me.TabPane2.RegularSize = New System.Drawing.Size(547, 432)
+        Me.TabPane2.RegularSize = New System.Drawing.Size(551, 423)
         Me.TabPane2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.TabPane2.SelectedPage = Me.TabNavigationPage4
-        Me.TabPane2.Size = New System.Drawing.Size(547, 432)
+        Me.TabPane2.Size = New System.Drawing.Size(551, 423)
         Me.TabPane2.TabIndex = 146
         Me.TabPane2.Text = "TabPane2"
         '
@@ -662,7 +663,7 @@ Partial Class fm_user
         Me.TabNavigationPage4.Controls.Add(Me.GroupControl4)
         Me.TabNavigationPage4.Name = "TabNavigationPage4"
         Me.TabNavigationPage4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TabNavigationPage4.Size = New System.Drawing.Size(525, 390)
+        Me.TabNavigationPage4.Size = New System.Drawing.Size(533, 378)
         '
         'GroupControl4
         '
@@ -698,7 +699,7 @@ Partial Class fm_user
         Me.GroupControl4.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupControl4.Size = New System.Drawing.Size(525, 390)
+        Me.GroupControl4.Size = New System.Drawing.Size(533, 378)
         Me.GroupControl4.TabIndex = 145
         '
         'LabelControl22
@@ -1433,10 +1434,10 @@ Partial Class fm_user
         Me.GroupControl2.Controls.Add(Me.LabelControl9)
         Me.GroupControl2.Controls.Add(Me.SimpleButton6)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(551, 232)
+        Me.GroupControl2.Location = New System.Drawing.Point(555, 232)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(194, 454)
+        Me.GroupControl2.Size = New System.Drawing.Size(194, 445)
         Me.GroupControl2.TabIndex = 142
         Me.GroupControl2.Text = "بحث"
         Me.GroupControl2.Visible = False
@@ -1660,7 +1661,7 @@ Partial Class fm_user
         Me.li_sell_menu_item.Name = "li_sell_menu_item"
         Me.li_sell_menu_item.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_sell_menu_item.RightToLeftLayout = True
-        Me.li_sell_menu_item.Size = New System.Drawing.Size(745, 232)
+        Me.li_sell_menu_item.Size = New System.Drawing.Size(749, 232)
         Me.li_sell_menu_item.TabIndex = 3
         Me.li_sell_menu_item.UseCompatibleStateImageBehavior = False
         Me.li_sell_menu_item.Visible = False
@@ -1672,12 +1673,12 @@ Partial Class fm_user
         Me.li_user.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.li_user.FullRowSelect = True
         Me.li_user.GridLines = True
-        Me.li_user.Location = New System.Drawing.Point(745, 0)
+        Me.li_user.Location = New System.Drawing.Point(749, 0)
         Me.li_user.MultiSelect = False
         Me.li_user.Name = "li_user"
         Me.li_user.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_user.RightToLeftLayout = True
-        Me.li_user.Size = New System.Drawing.Size(487, 686)
+        Me.li_user.Size = New System.Drawing.Size(487, 677)
         Me.li_user.TabIndex = 1
         Me.li_user.UseCompatibleStateImageBehavior = False
         '

@@ -226,16 +226,16 @@ Partial Class fm_add_patient
         '
         Me.LabelControl6.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl6.Appearance.Options.UseFont = True
-        Me.LabelControl6.Location = New System.Drawing.Point(171, 27)
+        Me.LabelControl6.Location = New System.Drawing.Point(552, 8)
         Me.LabelControl6.Name = "LabelControl6"
-        Me.LabelControl6.Size = New System.Drawing.Size(65, 21)
+        Me.LabelControl6.Size = New System.Drawing.Size(39, 21)
         Me.LabelControl6.TabIndex = 219
-        Me.LabelControl6.Text = "رقم الزبون"
+        Me.LabelControl6.Text = "تسلسل"
         '
         'tb_id
         '
         Me.tb_id.EnterMoveNextControl = True
-        Me.tb_id.Location = New System.Drawing.Point(153, 54)
+        Me.tb_id.Location = New System.Drawing.Point(438, 1)
         Me.tb_id.Name = "tb_id"
         Me.tb_id.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_id.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -331,12 +331,10 @@ Partial Class fm_add_patient
         Me.GroupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.GroupControl1.Controls.Add(Me.LabelControl12)
         Me.GroupControl1.Controls.Add(Me.LabelControl9)
-        Me.GroupControl1.Controls.Add(Me.tb_id)
         Me.GroupControl1.Controls.Add(Me.tb_note)
         Me.GroupControl1.Controls.Add(Me.tb_name)
         Me.GroupControl1.Controls.Add(Me.tb_phone)
         Me.GroupControl1.Controls.Add(Me.LabelControl20)
-        Me.GroupControl1.Controls.Add(Me.LabelControl6)
         Me.GroupControl1.Controls.Add(Me.LabelControl1)
         Me.GroupControl1.Controls.Add(Me.LabelControl7)
         Me.GroupControl1.Controls.Add(Me.tb_f6)
@@ -389,7 +387,7 @@ Partial Class fm_add_patient
         Me.ProgressPanel1.BarAnimationElementThickness = 2
         Me.ProgressPanel1.Caption = "يتم الحفظ "
         Me.ProgressPanel1.Description = ""
-        Me.ProgressPanel1.Location = New System.Drawing.Point(3, 18)
+        Me.ProgressPanel1.Location = New System.Drawing.Point(-39, 14)
         Me.ProgressPanel1.Name = "ProgressPanel1"
         Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
@@ -431,6 +429,7 @@ Partial Class fm_add_patient
         '
         'num_home_num
         '
+        Me.num_home_num.Enabled = False
         Me.num_home_num.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.num_home_num.Location = New System.Drawing.Point(341, 66)
         Me.num_home_num.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
@@ -444,6 +443,7 @@ Partial Class fm_add_patient
         'nu_blok_num
         '
         Me.nu_blok_num.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.nu_blok_num.Enabled = False
         Me.nu_blok_num.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_blok_num.Location = New System.Drawing.Point(245, 66)
         Me.nu_blok_num.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
@@ -458,6 +458,7 @@ Partial Class fm_add_patient
         'tb_blok_title
         '
         Me.tb_blok_title.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.tb_blok_title.Enabled = False
         Me.tb_blok_title.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_blok_title.FormattingEnabled = True
         Me.tb_blok_title.Items.AddRange(New Object() {"A", "B", "C", "A+", "B+", "C+", "A VIP", "A VVIP"})
@@ -670,6 +671,7 @@ Partial Class fm_add_patient
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.Size = New System.Drawing.Size(102, 94)
         Me.GroupControl5.TabIndex = 260
+        Me.GroupControl5.Visible = False
         '
         'PictureBox3
         '
@@ -903,10 +905,12 @@ Partial Class fm_add_patient
         Me.GroupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.GroupControl2.Controls.Add(Me.CheckEdit1)
         Me.GroupControl2.Controls.Add(Me.SimpleButton3)
+        Me.GroupControl2.Controls.Add(Me.tb_id)
         Me.GroupControl2.Controls.Add(Me.LabelControl21)
         Me.GroupControl2.Controls.Add(Me.tb_f10)
         Me.GroupControl2.Controls.Add(Me.LabelControl19)
         Me.GroupControl2.Controls.Add(Me.LabelControl13)
+        Me.GroupControl2.Controls.Add(Me.LabelControl6)
         Me.GroupControl2.Controls.Add(Me.tb_f9)
         Me.GroupControl2.Controls.Add(Me.cb_plan)
         Me.GroupControl2.Controls.Add(Me.LabelControl8)
@@ -955,11 +959,12 @@ Partial Class fm_add_patient
         'SimpleButton3
         '
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(49, 63)
+        Me.SimpleButton3.Location = New System.Drawing.Point(49, 64)
         Me.SimpleButton3.Name = "SimpleButton3"
         Me.SimpleButton3.Size = New System.Drawing.Size(91, 35)
         Me.SimpleButton3.TabIndex = 289
         Me.SimpleButton3.Text = "فحص"
+        Me.SimpleButton3.Visible = False
         '
         'LabelControl21
         '

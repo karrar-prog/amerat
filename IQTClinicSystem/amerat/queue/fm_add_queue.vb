@@ -185,6 +185,9 @@ Public Class fm_add_queue
 
 
             q.q_date = dt_queue.Value
+            q.q_time = Date.Now
+
+
             q.patient_id = Convert.ToInt32(tb_patient_id.Text)
             q.note = tb_note.Text
             q.state = mysatate

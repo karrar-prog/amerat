@@ -134,35 +134,68 @@ Public Class fm_show_patients
 1:
         Try
             Dim s As String
-            If RadioButton2.Checked = True Then
-                If tb_f1.Text.Trim = "" Or tb_f1.Text.Trim = "" Then
-                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and  is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3 limit " & num_limit.Value & ""
-                Else
 
-                    If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%'  and is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3  limit " & num_limit.Value & ""
+            s = "select * from patient WHERE name like '%" & tb_name.Text & "%' "
 
-                    Else
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '%" & tb_f1.Text & "%' and is_token like '%" & cb_plan.Text & "%'    f2 like '%" & tb_f2.Text & "%'   order by f2,f1,f3  limit " & num_limit.Value & ""
-
-                    End If
-
-                End If
-            Else
-                If tb_f1.Text.Trim = "" Or tb_f1.Text.Trim = "" Then
-                    s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   order by id desc limit " & num_limit.Value & ""
-                Else
-
-                    If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' order by id desc  limit " & num_limit.Value & ""
-
-                    Else
-                        s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '%" & tb_f1.Text & "%' and  f2 like '%" & tb_f2.Text & "%'   order by id desc  limit " & num_limit.Value & ""
-
-                    End If
-
-                End If
+            If tb_f1.Text.Trim <> "" Then
+                s = s & " and f1 like '" & tb_f1.Text & "' "
             End If
+
+            If tb_f2.Text.Trim <> "" Then
+                s = s & " and f2 like '" & tb_f2.Text & "' "
+            End If
+            If tb_house_number.Text.Trim <> "" Then
+                s = s & " and f3 like '" & tb_house_number.Text & "' "
+            End If
+
+            If cb_plan.Text.Trim <> "" Then
+                s = s & "  and  is_token like '" & cb_plan.Text & "'  "
+            End If
+
+
+
+            If RadioButton2.Checked = True Then
+                s = s & "  order by f2,f1,f3  "
+            Else
+                s = s & " order by id desc "
+            End If
+
+            If CheckEdit1.Checked = False Then
+
+
+                s = s & "  limit " & num_limit.Value & ""
+
+            End If
+
+            'If RadioButton2.Checked = True Then
+            '    If tb_f1.Text.Trim = "" Or tb_f1.Text.Trim = "" Then
+            '        s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and  is_token like '%" & cb_plan.Text & "%' and f3 like '%" & tb_house_number.Text & "%'  order by f2,f1,f3 limit " & num_limit.Value & ""
+            '    Else
+
+            '        If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
+            '            s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '" & tb_f1.Text & "'  and f3 like '%" & tb_house_number.Text & "%'  and is_token like '%" & cb_plan.Text & "%'  order by f2,f1,f3  limit " & num_limit.Value & ""
+
+            '        Else
+            '            s = "select * from patient WHERE name like '%" & tb_name.Text & "%' and f1 like '" & tb_f1.Text & "'  and f3 like '%" & tb_house_number.Text & "%'  and is_token like '%" & cb_plan.Text & "%'    f2 like '%" & tb_f2.Text & "%'   order by f2,f1,f3  limit " & num_limit.Value & ""
+
+            '        End If
+
+            '    End If
+            'Else
+            '    If tb_f1.Text.Trim = "" Or tb_f1.Text.Trim = "" Then
+            '        s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%' and f3 like '%" & tb_house_number.Text & "%'   order by id desc limit " & num_limit.Value & ""
+            '    Else
+
+            '        If tb_f2.Text.Trim = "" Or tb_f2.Text.Trim = "0" Then
+            '            s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '" & tb_f1.Text & "'  and f3 like '%" & tb_house_number.Text & "%'  order by id desc  limit " & num_limit.Value & ""
+
+            '        Else
+            '            s = "select * from patient WHERE name like '%" & tb_name.Text & "%'  and is_token like '%" & cb_plan.Text & "%'   and f1 like '" & tb_f1.Text & "' and  f2 like '%" & tb_f2.Text & "%'  and f3 like '%" & tb_house_number.Text & "%'   order by id desc  limit " & num_limit.Value & ""
+
+            '        End If
+
+            '    End If
+            'End If
 
 
             Dim DataSet = getdatat1(s)
@@ -270,7 +303,7 @@ Public Class fm_show_patients
         End Try
 
 
-        If hasPermission("ادارة") Then
+        If hasPermission(i_edit_customer) Then
 
         Else
             MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
@@ -340,6 +373,9 @@ Public Class fm_show_patients
         Dim s As String = "select * from patient WHERE f3 like " & tb_id.Text & "  order by f2,f1,f3  limit " & num_limit.Value & ""
 
         Dim DataSet = getdatat1(s)
+
+        GridControl1.DataSource = DataSet.Tables(0)
+
         Dim dt As New DateTimePicker
         Dim c As Integer
         tb_count.Caption = DataSet.Tables(0).Rows.Count.ToString
@@ -374,6 +410,8 @@ Public Class fm_show_patients
         Dim s As String = "select * from patient WHERE id = " & tb_patient_id.Text & "  order by f2,f1,f3  limit " & num_limit.Value & ""
 
         Dim DataSet = getdatat1(s)
+        GridControl1.DataSource = DataSet.Tables(0)
+
         Dim dt As New DateTimePicker
         Dim c As Integer
         tb_count.Caption = DataSet.Tables(0).Rows.Count.ToString
@@ -839,4 +877,32 @@ Public Class fm_show_patients
 
     End Sub
 
+    Private Sub num_limit_ValueChanged(sender As Object, e As EventArgs) Handles num_limit.ValueChanged
+
+    End Sub
+    Private Sub LabelControl1_Click(sender As Object, e As EventArgs) Handles LabelControl1.Click
+
+    End Sub
+
+    Private Sub tb_house_number_EditValueChanged(sender As Object, e As EventArgs) Handles tb_house_number.EditValueChanged
+
+    End Sub
+
+    Private Sub tb_house_number_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_house_number.KeyUp
+        search()
+    End Sub
+
+    Private Sub CheckEdit1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckEdit1.CheckedChanged
+        search()
+
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+        search()
+
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+        search()
+    End Sub
 End Class

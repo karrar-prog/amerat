@@ -42,8 +42,10 @@ Module DB
 
     Public i_cusomer As String = "واجهه الزبائن"
     Public i_add_booking As String = "اضافة حجز"
+    Public i_add_new_house As String = "اضافة دار"
     Public i_delete_customer As String = "حذف الزبون"
     Public i_edit_customer As String = "تعديل زبون"
+    Public i_edit_name As String = "تعديل اسم ازبون"
     Public i_edit_contract As String = "تحرير العقد"
     Public i_contract As String = "واجهه العقود"
     Public i_fesha As String = "واجهه الفيشه"
@@ -205,6 +207,12 @@ Module DB
 
         li.Items.Add(i_enter)
         li.Items(11).SubItems.Add("")
+
+        li.Items.Add(i_edit_name)
+        li.Items(12).SubItems.Add("تعديل اسم الزبون بعد الحجز والتعاقد")
+
+        li.Items.Add(i_add_new_house)
+        li.Items(13).SubItems.Add("اضافة دار جديد الى قائمة الدور والزبائن")
 
 
 

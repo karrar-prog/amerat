@@ -535,8 +535,15 @@ Public Class fm_main
     Private Sub TileItem6_ItemClick_2(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem6.ItemClick
 
 
-        If hasPermission(i_add_booking) Then
+        If hasPermission(i_add_new_house) Then
             fm_add_patient.Show()
+            fm_add_patient.CheckEdit1.Checked = True
+            fm_add_patient.nu_blok_num.Enabled = True
+            fm_add_patient.num_home_num.Enabled = True
+            fm_add_patient.tb_blok_title.Enabled = True
+            fm_add_patient.GroupControl8.Hide()
+            fm_add_patient.GroupControl5.Show()
+            fm_add_patient.CheckEdit1.Enabled = False
 
         Else
             MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")

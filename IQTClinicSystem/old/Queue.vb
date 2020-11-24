@@ -83,6 +83,64 @@ Public Class Queue
         End Try
         conn.Close()
     End Sub
+    Sub New(id As Integer, p_id As Integer)
+        Me.id = id
+        Dim query As String = "select * from queue where patient_id = " & p_id & ""
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        'Try
+        conn.Open()
+        'Catch myerror As MySqlException
+        '    MsgBox("Connection to the Database Failed")
+        '    Exit Sub
+        'End Try
+        Try
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+            If ds.Tables(0).Rows.Count > 0 Then
+                Me.patient_id = Convert.ToInt32(ds.Tables(0).Rows(0).Item("patient_id").ToString)
+                Try
+                    Me.q_date = Convert.ToDateTime(ds.Tables(0).Rows(0).Item("date").ToString)
+
+                Catch ex As Exception
+
+                End Try
+                Try
+                    Me.q_time = Convert.ToDateTime(ds.Tables(0).Rows(0).Item("time").ToString)
+                Catch ex As Exception
+                End Try
+                Me.note = ds.Tables(0).Rows(0).Item("note").ToString
+                Me.state = ds.Tables(0).Rows(0).Item("state").ToString
+                Me.test_amount = ds.Tables(0).Rows(0).Item("test_amount").ToString
+                Me.test_type = ds.Tables(0).Rows(0).Item("test_type").ToString
+                Me.test_min = ds.Tables(0).Rows(0).Item("test_min").ToString
+                Me.booking_number = Convert.ToInt32(ds.Tables(0).Rows(0).Item("booking_number").ToString)
+                Me.dept_id = Convert.ToInt32(ds.Tables(0).Rows(0).Item("dept_id").ToString)
+                Me.amount = Convert.ToDecimal(ds.Tables(0).Rows(0).Item("amount").ToString)
+                Try
+                    Me.recived_date = ds.Tables(0).Rows(0).Item("recived_date").ToString
+                Catch ex As Exception
+                    Me.recived_date = ""
+                End Try
+                Me.amount_text = ds.Tables(0).Rows(0).Item("amount_text").ToString
+                Me.f1 = ds.Tables(0).Rows(0).Item("f1").ToString
+                Me.f2 = ds.Tables(0).Rows(0).Item("f2").ToString
+
+            Else
+                Me.id = -1
+             
+                conn.Close()
+
+                Exit Sub
+            End If
+        Catch ex As Exception
+            conn.Close()
+            MsgBox("failed to get " + ex.Message)
+            Exit Sub
+        End Try
+        conn.Close()
+    End Sub
 
 
     Public Function save() As Boolean
@@ -138,10 +196,11 @@ Public Class Queue
 
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "INSERT INTO queue(patient_id ,`date` , note , state ,test_type, test_amount , test_min ,booking_number,dept_id,amount,amount_text,recived_date,f1,f2) " +
-                                                " VALUES(@patient_id, @date ,@note , @state , @test_type ,@test_amount , @test_min,@booking_number,@dept_id,@amount,@amount_text,@recived_date,@f1,@f2)"
+            SQLCommand.CommandText = "INSERT INTO queue(patient_id ,`time`,`date` , note , state ,test_type, test_amount , test_min ,booking_number,dept_id,amount,amount_text,recived_date,f1,f2) " +
+                                                " VALUES(@patient_id, @time, @date ,@note , @state , @test_type ,@test_amount , @test_min,@booking_number,@dept_id,@amount,@amount_text,@recived_date,@f1,@f2)"
             SQLCommand.Parameters.Add("@patient_id", MySqlDbType.String).Value = Me.patient_id
             SQLCommand.Parameters.Add("@date", MySqlDbType.String).Value = Me.q_date
+            SQLCommand.Parameters.Add("@time", MySqlDbType.String).Value = Me.q_time
             SQLCommand.Parameters.Add("@note", MySqlDbType.String).Value = Me.note
             SQLCommand.Parameters.Add("@state", MySqlDbType.String).Value = Me.state
             SQLCommand.Parameters.Add("@test_type", MySqlDbType.String).Value = Me.test_type

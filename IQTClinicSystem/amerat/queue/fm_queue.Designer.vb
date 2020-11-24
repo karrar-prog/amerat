@@ -50,6 +50,8 @@
         Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
         Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage()
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -71,8 +73,7 @@
         Me.Gridf1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.time = New DevExpress.XtraGrid.Columns.GridColumn()
         CType(Me.ApplicationMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -287,6 +288,26 @@
         Me.XtraTabPage2.Size = New System.Drawing.Size(1248, 699)
         Me.XtraTabPage2.Text = "بحث"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1030, 26)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(33, 22)
+        Me.Label2.TabIndex = 280
+        Me.Label2.Text = "عقد"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(1184, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(41, 22)
+        Me.Label1.TabIndex = 279
+        Me.Label1.Text = "فيشة"
+        '
         'SimpleButton2
         '
         Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
@@ -341,7 +362,7 @@
         '
         Me.GridView1.Appearance.Row.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridView1.Appearance.Row.Options.UseFont = True
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colbooking_number, Me.colpatient_id, Me.colname, Me.colamount, Me.coldate, Me.colstate, Me.colid, Me.Gridrecived_date, Me.Griddept_id, Me.Gridnote, Me.Gridf1})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colbooking_number, Me.colpatient_id, Me.colname, Me.colamount, Me.coldate, Me.colstate, Me.colid, Me.Gridrecived_date, Me.Griddept_id, Me.Gridnote, Me.Gridf1, Me.time})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -468,25 +489,13 @@
         Me.GroupControl1.TabIndex = 277
         Me.GroupControl1.Text = "في هذا التأريخ"
         '
-        'Label1
+        'time
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(1184, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 22)
-        Me.Label1.TabIndex = 279
-        Me.Label1.Text = "فيشة"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1030, 26)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(33, 22)
-        Me.Label2.TabIndex = 280
-        Me.Label2.Text = "عقد"
+        Me.time.Caption = "الوقت"
+        Me.time.FieldName = "time"
+        Me.time.Name = "time"
+        Me.time.Visible = True
+        Me.time.VisibleIndex = 11
         '
         'fm_queue
         '
@@ -568,6 +577,7 @@ End Sub
     Friend WithEvents ToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents time As DevExpress.XtraGrid.Columns.GridColumn
 
 #End Region
 
