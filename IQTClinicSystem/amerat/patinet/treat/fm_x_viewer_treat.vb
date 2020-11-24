@@ -100,7 +100,17 @@ Public Class fm_x_viewer_treat
     End Sub
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
-        report.Print()
+
+        If path = "contract" Then
+            report.Print()
+            report.Print()
+            report.Print()
+        Else
+            report.Print()
+            report.Print()
+
+        End If
+
         Me.Close()
 
     End Sub

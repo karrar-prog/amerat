@@ -693,7 +693,7 @@ Public Class Patient
         Try
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "UPDATE patient SET first_push_amount = @first_push_amount ,first_push_present = @first_push_present ,item2 = @item2 ,is_token = @is_token , item3 = @item3 , tb_2 = @tb_2 , tb_l_5 = @tb_l_5 , item4 = @item4 , admin_name = @admin_name WHERE id = @id"
+            SQLCommand.CommandText = "UPDATE patient SET register_date = @register_date , first_push_amount = @first_push_amount ,first_push_present = @first_push_present ,item2 = @item2 ,is_token = @is_token , item3 = @item3 , tb_2 = @tb_2 , tb_l_5 = @tb_l_5 , item4 = @item4 , admin_name = @admin_name WHERE id = @id"
 
             SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
             SQLCommand.Parameters.Add("@item2", MySqlDbType.String).Value = Me.item2
@@ -702,6 +702,7 @@ Public Class Patient
             SQLCommand.Parameters.Add("@tb_l_5", MySqlDbType.String).Value = Me.tb_l_5
             SQLCommand.Parameters.Add("@item4", MySqlDbType.String).Value = Me.item4
             SQLCommand.Parameters.Add("@admin_name", MySqlDbType.String).Value = Me.admin_name
+            SQLCommand.Parameters.Add("@register_date", MySqlDbType.String).Value = Me.register_date
             SQLCommand.Parameters.Add("@is_token", MySqlDbType.String).Value = Me.is_token
             SQLCommand.Parameters.Add("@first_push_amount", MySqlDbType.Decimal).Value = Me.first_push_amount
             SQLCommand.Parameters.Add("@first_push_present", MySqlDbType.Decimal).Value = Me.first_push_present

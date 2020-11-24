@@ -94,6 +94,7 @@ Partial Class fm_report_viewr
         Me.PrintPreviewBarCheckItem18 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
         Me.PrintPreviewBarCheckItem19 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.DocumentViewerBarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PrintPreviewRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,7 +107,7 @@ Partial Class fm_report_viewr
         Me.DocumentViewer1.IsMetric = True
         Me.DocumentViewer1.Location = New System.Drawing.Point(0, 53)
         Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(1119, 839)
+        Me.DocumentViewer1.Size = New System.Drawing.Size(1119, 670)
         Me.DocumentViewer1.TabIndex = 0
         '
         'DocumentViewerBarManager1
@@ -566,7 +567,7 @@ Partial Class fm_report_viewr
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 892)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 723)
         Me.barDockControlBottom.Manager = Me.DocumentViewerBarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1119, 26)
         '
@@ -576,7 +577,7 @@ Partial Class fm_report_viewr
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 53)
         Me.barDockControlLeft.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 839)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 670)
         '
         'barDockControlRight
         '
@@ -584,7 +585,7 @@ Partial Class fm_report_viewr
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1119, 53)
         Me.barDockControlRight.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 839)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 670)
         '
         'miBackground
         '
@@ -793,11 +794,21 @@ Partial Class fm_report_viewr
         Me.RibbonPage2.Name = "RibbonPage2"
         Me.RibbonPage2.Text = "RibbonPage2"
         '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(0, 53)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(89, 39)
+        Me.SimpleButton1.TabIndex = 5
+        Me.SimpleButton1.Text = "طباعة"
+        '
         'fm_report_viewr
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1119, 918)
+        Me.ClientSize = New System.Drawing.Size(1119, 749)
+        Me.Controls.Add(Me.SimpleButton1)
         Me.Controls.Add(Me.DocumentViewer1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
@@ -889,4 +900,5 @@ Partial Class fm_report_viewr
     Friend WithEvents PrintPreviewBarCheckItem18 As DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem
     Friend WithEvents PrintPreviewBarCheckItem19 As DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem
     Friend WithEvents RibbonPage2 As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
 End Class

@@ -34,15 +34,18 @@
 
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
         If fm_add_other_required.SimpleButton2.Text = "حفظ و طباعة" Then
-            Dim p As New Patient()
-            p.id = __(fm_add_other_required.tb_id.Text)
+            Dim p As New Patient(__(fm_add_other_required.tb_id.Text))
+
             p.item2 = fm_add_other_required.item2.Text
             p.name = fm_add_other_required.tb_name.Text
             p.item3 = fm_add_other_required.item3.Text
             p.tb_2 = fm_add_other_required.tb_2.Text
             p.tb_l_5 = fm_add_other_required.tb_l_5.Text
             p.item4 = fm_add_other_required.item4.Text
+            If p.register_date.Trim = "" Then
+                p.register_date = Date.Now.ToShortDateString
 
+            End If
             p.admin_name = fm_add_other_required.tb_admin_name.Text
             p.is_token = "تعاقد"
 
@@ -180,14 +183,18 @@
 
     Private Sub save_contract()
         If SimpleButton2.Text = "حفظ و طباعة" Then
-            Dim p As New Patient()
-            p.id = __(fm_add_other_required.tb_id.Text)
+            Dim p As New Patient(__(fm_add_other_required.tb_id.Text))
+
             p.item2 = fm_add_other_required.item2.Text
             p.name = fm_add_other_required.tb_name.Text
             p.item3 = fm_add_other_required.item3.Text
             p.tb_2 = fm_add_other_required.tb_2.Text
             p.tb_l_5 = fm_add_other_required.tb_l_5.Text
             p.item4 = fm_add_other_required.item4.Text
+            If p.register_date.Trim = "" Then
+                p.register_date = Date.Now.ToShortDateString
+
+            End If
 
             p.admin_name = fm_add_other_required.tb_admin_name.Text
             p.is_token = "تعاقد"

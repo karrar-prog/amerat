@@ -553,7 +553,7 @@ Partial Class fm_add_patient
         Me.nu_last_present.Size = New System.Drawing.Size(77, 39)
         Me.nu_last_present.TabIndex = 277
         Me.nu_last_present.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.nu_last_present.Value = New Decimal(New Integer() {45, 0, 0, 0})
+        Me.nu_last_present.Value = New Decimal(New Integer() {40, 0, 0, 0})
         '
         'LabelControl18
         '
@@ -584,7 +584,7 @@ Partial Class fm_add_patient
         Me.nu_first_present.Size = New System.Drawing.Size(77, 39)
         Me.nu_first_present.TabIndex = 273
         Me.nu_first_present.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.nu_first_present.Value = New Decimal(New Integer() {55, 0, 0, 0})
+        Me.nu_first_present.Value = New Decimal(New Integer() {60, 0, 0, 0})
         '
         'LabelControl15
         '

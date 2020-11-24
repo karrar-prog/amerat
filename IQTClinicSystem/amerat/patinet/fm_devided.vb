@@ -227,7 +227,8 @@ Public Class fm_devided
             Dim p As New Patient(__(fm_add_other_required.tb_id.Text))
 
             If p.first_push_amount_arrived > 0 Then
-                nu_first_part.Value = p.first_push_amount
+                nu_first_part.Value = p.first_part
+
                 nu_first_part.Enabled = False
 
                 nu_first_money_present.Value = p.first_push_present

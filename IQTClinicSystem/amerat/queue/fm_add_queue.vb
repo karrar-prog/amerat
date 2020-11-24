@@ -13,9 +13,10 @@ Public Class fm_add_queue
         UserLookAndFeel.Default.SkinName = My.Settings.Skin
         If tb_number.Text.Trim = "1" Then
             GroupControl1.Show()
+            tb_note.Text = "يعتمد هذا الوصل خلال فترة اقصاها 7 أيام من تأريخ اصداره وبعدها يعتبر لاغياً لحجز الدار"
         Else
             GroupControl1.Hide()
-
+            tb_note.Text = ""
         End If
         Me.CenterToScreen()
 
@@ -438,4 +439,7 @@ Public Class fm_add_queue
 
     End Sub
 
+    Private Sub tb_note_TextChanged(sender As Object, e As EventArgs) Handles tb_note.TextChanged
+
+    End Sub
 End Class

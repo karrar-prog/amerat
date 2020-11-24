@@ -330,6 +330,7 @@ Partial Class fm_devided
         'nu_total
         '
         Me.nu_total.DecimalPlaces = 1
+        Me.nu_total.Enabled = False
         Me.nu_total.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nu_total.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
         Me.nu_total.Location = New System.Drawing.Point(456, 324)

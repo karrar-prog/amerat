@@ -134,7 +134,7 @@ Public Class fm_add_other_required
 
 
 
-                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 1 & " دفعات "
+                item3.Text = " يكون تسديد مبلغ الدار على  " & ds_contract_items.Tables(0).Rows.Count + 2 & " دفعات "
                 Dim last_part_value As New Decimal
                 last_part_value = nu_last_part.Value
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
@@ -933,5 +933,9 @@ Public Class fm_add_other_required
         Else
             MessageBox.Show("يرجى اختيار عنر واحد")
         End If
+    End Sub
+
+    Private Sub tb_admin_name_EditValueChanged(sender As Object, e As EventArgs) Handles tb_admin_name.EditValueChanged
+
     End Sub
 End Class

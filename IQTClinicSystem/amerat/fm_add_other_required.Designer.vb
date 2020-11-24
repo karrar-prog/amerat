@@ -775,12 +775,12 @@ Partial Class fm_add_other_required
         Me.tb_l_5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.tb_l_5.Size = New System.Drawing.Size(773, 44)
         Me.tb_l_5.TabIndex = 392
-        Me.tb_l_5.Text = " تدفع قبل مدة ( شهر ) من استلام الدار بعد اشعار مرسل من الطرف الاول الى الطرف الث" & _
-    "اني باستلام الدار ولفتره لاتزيد عن 30 شهراً من دفع المقدمة وقدرها "
+        Me.tb_l_5.Text = " تدفع قبل مدة ( شهر ) من استلام الدار ولفتره لاتزيد عن 30 شهراً من دفع المقدمة وق" & _
+    "درها "
         '
         'tb_admin_name
         '
-        Me.tb_admin_name.EditValue = "محمد علي محمد"
+        Me.tb_admin_name.EditValue = "محمد رضا جعفر الرفيعي"
         Me.tb_admin_name.EnterMoveNextControl = True
         Me.tb_admin_name.Location = New System.Drawing.Point(882, 637)
         Me.tb_admin_name.Name = "tb_admin_name"

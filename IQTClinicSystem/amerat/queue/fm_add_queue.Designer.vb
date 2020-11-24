@@ -398,7 +398,7 @@ Partial Class fm_add_queue
         Me.nu_first_money_present.Size = New System.Drawing.Size(72, 29)
         Me.nu_first_money_present.TabIndex = 423
         Me.nu_first_money_present.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.nu_first_money_present.Value = New Decimal(New Integer() {12, 0, 0, 0})
+        Me.nu_first_money_present.Value = New Decimal(New Integer() {15, 0, 0, 0})
         '
         'GroupControl1
         '

@@ -307,9 +307,9 @@ Public Class fm_show_details
                         fm_add_queue.tb_number.Text = get_number(dept.title).ToString
                         fm_add_queue.tb_dept_title.Text = dept.title
                         fm_add_queue.tb_dept_id.Text = dept.id.ToString
+                        fm_add_queue.Show()
                         fm_add_queue.tb_fesha_amount.Text = dept.amount.ToString
                         fm_add_queue.tb_amount_text.Text = ToArabicLetter(dept.amount)
-                        fm_add_queue.Show()
 
 
                     End If

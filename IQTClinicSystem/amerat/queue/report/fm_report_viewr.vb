@@ -76,6 +76,13 @@ Public Class fm_report_viewr
   
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub SimpleButton1_Click_1(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+
+        report.Print()
+        report.Print()
         report.Print()
 
         Me.Close()
