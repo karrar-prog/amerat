@@ -18,7 +18,8 @@ Public Class fm_add_patient
             fm_show_patients.Show()
         ElseIf re = "5" Then
             fm_months.Show()
-
+        Else
+            fm_show_patients.Show()
         End If
 
     End Sub
@@ -37,7 +38,10 @@ Public Class fm_add_patient
             put_info(__(tb_id.Text))
 
         End If
+        If cb_plan.Text.Trim = s_not_booking Then
+            first_book = 1
 
+        End If
     End Sub
 
     Private Sub Combo_format()
@@ -93,9 +97,15 @@ Public Class fm_add_patient
 
         If first_book = 1 Then
             fesha_date = have_first_fesha(p.id)
+
             If fesha_date.Trim <> "" Then
 
                 MessageBox.Show("لايمكن حجز هذا الدار- تم الحجز و طباعة فيشة في  " & fesha_date)
+                Exit Sub
+
+            End If
+            If p.is_token = s_booking Then
+                MessageBox.Show("لايمكن حجز هذا الدار- تم الحجز في  " & fesha_date)
                 Exit Sub
 
             End If
@@ -641,6 +651,9 @@ Public Class fm_add_patient
                 End If
                 If p.id = 0 Then
                     save_new()
+                    'اضافة حدث
+                    Dim conent As String = "تمت اضافة دار جديد"
+                    new_event2("اضافة دار جديد", conent, 0)
                     tb_name.BackColor = Color.LightGreen
                     operatin_click(0)
                 Else
@@ -670,8 +683,21 @@ Public Class fm_add_patient
                 If p.id.ToString = tb_id.Text.Trim Then
 
 
+                 
 
                     update_patient()
+                 
+                    If first_book = 1 Then
+                        'اضافة حدث
+                        Dim conent As String = "تم حجز الدار" & p.id & "  من  " & p.name & "- " & p.is_token & " الجديد " & tb_name.Text & "-" & cb_plan.Text
+                        new_event2("حجز دار", conent, 0)
+
+                    Else
+                        'اضافة حدث
+                        Dim conent As String = "تمت تعديل معلوات الدار" & p.id & "  من  " & p.name & "- " & p.is_token & " الجديد " & tb_name.Text & "-" & cb_plan.Text
+                        new_event2("تعديل معلومات دار", conent, 0)
+
+                    End If
                     saveOrAdd()
 
                     operatin_click(0)
@@ -900,10 +926,11 @@ Public Class fm_add_patient
         Catch ex As Exception
 
         End Try
+
         fm_add_queue.tb_id.Text = "0"
         fm_add_queue.tb_patient_id.Text = tb_id.Text
         fm_add_queue.house_price = nu_house_price.Value
-
+        fm_add_queue.tb_patient_name.Text = tb_name.Text
         fm_add_queue.tb_number.Text = "1"
         fm_add_queue.tb_dept_title.Text = "الدفعة " & get_text(1)
         fm_add_queue.tb_dept_id.Text = "0"
@@ -1009,6 +1036,11 @@ Public Class fm_add_patient
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+        If user.type = user_admin Then
+            CheckEdit1.Enabled = True
+
+        End If
+    
 
     End Sub
 
@@ -1184,11 +1216,7 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub CheckEdit1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckEdit1.CheckedChanged
-        If cb_plan.Text.Trim = s_not_booking Then
-            first_book = 1
-      
-        End If
-
+  
         If CheckEdit1.Checked = True Then
             cb_plan.Text = s_not_booking
             GroupControl6.Hide()
@@ -1211,7 +1239,7 @@ Public Class fm_add_patient
         If fesha.id = -1 Then
             Return ""
         Else
-            Return fesha.q_date.ToShortDateString & "  " & fesha.q_time
+            Return fesha.q_time.ToString
         End If
     End Function
 

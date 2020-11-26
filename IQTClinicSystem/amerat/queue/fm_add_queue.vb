@@ -23,7 +23,10 @@ Public Class fm_add_queue
         Combo_format()
         cal_money()
 
+        If hasPermission(i_edit_customer) Then
+            tb_patient_name.ReadOnly = False
 
+        End If
     End Sub
     Private Sub Combo_format()
         plan = New DataSet
@@ -195,7 +198,7 @@ Public Class fm_add_queue
             q.test_amount = tb_amount.Text
             q.test_min = tb_munite.Text
             q.test_type = cb_plan.Text
-
+            q.f2 = tb_patient_name.Text
             q.amount = __(tb_fesha_amount.EditValue.ToString)
             q.amount_text = tb_amount_text.Text
 

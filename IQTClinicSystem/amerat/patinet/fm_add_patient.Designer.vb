@@ -340,10 +340,10 @@ Partial Class fm_add_patient
         Me.GroupControl1.Controls.Add(Me.tb_f6)
         Me.GroupControl1.Controls.Add(Me.tb_f7)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl1.Location = New System.Drawing.Point(2, 20)
+        Me.GroupControl1.Location = New System.Drawing.Point(2, 22)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl1.Size = New System.Drawing.Size(437, 727)
+        Me.GroupControl1.Size = New System.Drawing.Size(437, 725)
         Me.GroupControl1.TabIndex = 249
         Me.GroupControl1.Text = "المعلومات الاساسية"
         '
@@ -387,7 +387,7 @@ Partial Class fm_add_patient
         Me.ProgressPanel1.BarAnimationElementThickness = 2
         Me.ProgressPanel1.Caption = "يتم الحفظ "
         Me.ProgressPanel1.Description = ""
-        Me.ProgressPanel1.Location = New System.Drawing.Point(-39, 14)
+        Me.ProgressPanel1.Location = New System.Drawing.Point(-20, 18)
         Me.ProgressPanel1.Name = "ProgressPanel1"
         Me.ProgressPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ProgressPanel1.Size = New System.Drawing.Size(94, 88)
@@ -938,10 +938,10 @@ Partial Class fm_add_patient
         Me.GroupControl2.Controls.Add(Me.LabelControl3)
         Me.GroupControl2.Controls.Add(Me.tb_ref_by)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(-35, 20)
+        Me.GroupControl2.Location = New System.Drawing.Point(-35, 22)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GroupControl2.Size = New System.Drawing.Size(595, 727)
+        Me.GroupControl2.Size = New System.Drawing.Size(595, 725)
         Me.GroupControl2.TabIndex = 250
         Me.GroupControl2.Text = "المعلومات الثانوية"
         '
