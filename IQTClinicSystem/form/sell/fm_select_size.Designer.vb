@@ -32,6 +32,7 @@ Partial Class fm_select_size
         '
         'RibbonControl1
         '
+        Me.RibbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
         Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem})
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
@@ -43,15 +44,15 @@ Partial Class fm_select_size
         Me.RibbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl1.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
-        Me.RibbonControl1.Size = New System.Drawing.Size(1018, 30)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1016, 27)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         '
         'RibbonStatusBar1
         '
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 744)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 736)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1018, 23)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1016, 31)
         '
         'RibbonPage2
         '
@@ -102,7 +103,7 @@ Partial Class fm_select_size
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1018, 767)
+        Me.ClientSize = New System.Drawing.Size(1016, 767)
         Me.Controls.Add(Me.tb_select_size)
         Me.Controls.Add(Me.SimpleButton6)
         Me.Controls.Add(Me.li_size)

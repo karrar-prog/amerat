@@ -71,9 +71,10 @@
         Me.Griddept_id = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.Gridnote = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.Gridf1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.time = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
-        Me.time = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.f3 = New DevExpress.XtraGrid.Columns.GridColumn()
         CType(Me.ApplicationMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -362,7 +363,7 @@
         '
         Me.GridView1.Appearance.Row.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridView1.Appearance.Row.Options.UseFont = True
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colbooking_number, Me.colpatient_id, Me.colname, Me.colamount, Me.coldate, Me.colstate, Me.colid, Me.Gridrecived_date, Me.Griddept_id, Me.Gridnote, Me.Gridf1, Me.time})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colbooking_number, Me.colpatient_id, Me.colname, Me.colamount, Me.coldate, Me.colstate, Me.colid, Me.Gridrecived_date, Me.Griddept_id, Me.Gridnote, Me.Gridf1, Me.time, Me.f3})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -467,6 +468,14 @@
         Me.Gridf1.VisibleIndex = 10
         Me.Gridf1.Width = 74
         '
+        'time
+        '
+        Me.time.Caption = "الوقت"
+        Me.time.FieldName = "time"
+        Me.time.Name = "time"
+        Me.time.Visible = True
+        Me.time.VisibleIndex = 11
+        '
         'GroupControl2
         '
         Me.GroupControl2.Appearance.BackColor = System.Drawing.Color.Transparent
@@ -489,13 +498,13 @@
         Me.GroupControl1.TabIndex = 277
         Me.GroupControl1.Text = "في هذا التأريخ"
         '
-        'time
+        'f3
         '
-        Me.time.Caption = "الوقت"
-        Me.time.FieldName = "time"
-        Me.time.Name = "time"
-        Me.time.Visible = True
-        Me.time.VisibleIndex = 11
+        Me.f3.Caption = "نوع الفيشة"
+        Me.f3.FieldName = "f3"
+        Me.f3.Name = "f3"
+        Me.f3.Visible = True
+        Me.f3.VisibleIndex = 12
         '
         'fm_queue
         '
@@ -578,6 +587,7 @@ End Sub
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents time As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents f3 As DevExpress.XtraGrid.Columns.GridColumn
 
 #End Region
 

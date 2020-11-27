@@ -695,7 +695,14 @@ Partial Public Class fm_queue
 
     Private Sub tb_fesha_id_KeyUp(sender As Object, e As KeyEventArgs) Handles tb_fesha_id.KeyUp
         If e.KeyCode = Keys.Enter Then
-            feash_search()
+
+            If tb_fesha_id.Text.Contains("C") Then
+                fesha_collection_search()
+
+            Else
+                feash_search()
+            End If
+
             tb_fesha_id.Text = ""
 
         End If
@@ -868,6 +875,44 @@ Partial Public Class fm_queue
         End If
 
 
+    End Sub
+
+    Private Sub fesha_collection_search()
+        Dim id As Integer = __(tb_fesha_id.Text.Replace("C", ""))
+        Dim q As New Queue(id)
+        Dim s As String = q.f3
+
+
+        Dim parts As String() = s.Split(New Char() {"-"c})
+
+
+        Dim ids As New List(Of Integer)
+        ' Loop through result strings with For Each.
+        Dim part As String
+        For Each part In parts
+            If part.Trim <> "" Then
+                ids.Add(__(part))
+            End If
+
+        Next
+        If ids.Count > 0 Then
+
+            fm_fesha_collectiom.id_list_int = ids
+            fm_fesha_collectiom.tb_bank_name.Text = q.test_type
+            fm_fesha_collectiom.tb_acount_name.Text = q.test_amount
+            fm_fesha_collectiom.tb_acount_number.Text = q.test_min
+            fm_fesha_collectiom.tb_note.Text = q.note
+            fm_fesha_collectiom.tb_amount_text.Text = q.amount_text
+            fm_fesha_collectiom.tb_fesha_amount.Text = q.amount.ToString
+            fm_fesha_collectiom.tb_fesha_id.Text = q.id.ToString
+            Dim p As New Patient(q.patient_id)
+            fm_fesha_collectiom.tb_patient_name.Text = p.name
+
+            fm_fesha_collectiom.Show()
+
+        Else
+            MessageBox.Show("there is no fesha")
+        End If
     End Sub
 
   

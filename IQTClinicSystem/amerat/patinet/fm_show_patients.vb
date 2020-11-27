@@ -1028,4 +1028,36 @@ Public Class fm_show_patients
 
         End If
     End Sub
+
+    Private Sub BarHeaderItem5_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarHeaderItem5.ItemClick
+        fm_stecker.Show()
+
+    End Sub
+
+    Private Sub ستيكصغيرToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ستيكصغيرToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+
+
+            Dim s = " رقم العقد : " & lv_queue.SelectedItems(0).Text & vbNewLine & lv_queue.SelectedItems(0).SubItems(1).Text & vbNewLine & lv_queue.SelectedItems(0).SubItems(3).Text & "." & lv_queue.SelectedItems(0).SubItems(4).Text & " الدار  "
+            fm_stecker.PrintStecker(s, lv_queue.SelectedItems(0).Text)
+        End If
+
+    End Sub
+
+    Private Sub SimpleButton5_Click(sender As Object, e As EventArgs) Handles SimpleButton5.Click
+        tb_f1.Text = ""
+        tb_f2.Text = ""
+        tb_house_number.Text = ""
+        tb_f1.Focus()
+
+    End Sub
+
+    Private Sub فيشةمتعددةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles فيشةمتعددةToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count = 1 Then
+            fm_add_collection_fesha.p_id = __(lv_queue.SelectedItems(0).Text)
+            fm_add_collection_fesha.Show()
+
+
+        End If
+    End Sub
 End Class

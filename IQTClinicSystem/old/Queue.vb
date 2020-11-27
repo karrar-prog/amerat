@@ -21,6 +21,9 @@ Public Class Queue
     Public recived_date As String
     Public f1 As String
     Public f2 As String
+    Public f3 As String
+    Public f4 As String
+    Public f5 As String
 
 
     Sub New()
@@ -69,6 +72,9 @@ Public Class Queue
                 Me.amount_text = ds.Tables(0).Rows(0).Item("amount_text").ToString
                 Me.f1 = ds.Tables(0).Rows(0).Item("f1").ToString
                 Me.f2 = ds.Tables(0).Rows(0).Item("f2").ToString
+                Me.f3 = ds.Tables(0).Rows(0).Item("f3").ToString
+                Me.f4 = ds.Tables(0).Rows(0).Item("f4").ToString
+                Me.f5 = ds.Tables(0).Rows(0).Item("f5").ToString
 
             Else
                 Me.id = -1
@@ -83,6 +89,71 @@ Public Class Queue
         End Try
         conn.Close()
     End Sub
+
+
+
+    Sub New(f3 As String, t1 As Integer, t2 As Integer)
+
+        Dim query As String = "select * from queue where f3 = '" & f3.Trim & "' order by id desc "
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        'Try
+        conn.Open()
+        'Catch myerror As MySqlException
+        '    MsgBox("Connection to the Database Failed")
+        '    Exit Sub
+        'End Try
+        Try
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+            If ds.Tables(0).Rows.Count > 0 Then
+                Me.patient_id = Convert.ToInt32(ds.Tables(0).Rows(0).Item("patient_id").ToString)
+                Me.id = Convert.ToInt32(ds.Tables(0).Rows(0).Item("id").ToString)
+                Try
+                    Me.q_date = Convert.ToDateTime(ds.Tables(0).Rows(0).Item("date").ToString)
+
+                Catch ex As Exception
+
+                End Try
+                Try
+                    Me.q_time = Convert.ToDateTime(ds.Tables(0).Rows(0).Item("time").ToString)
+                Catch ex As Exception
+                End Try
+                Me.note = ds.Tables(0).Rows(0).Item("note").ToString
+                Me.state = ds.Tables(0).Rows(0).Item("state").ToString
+                Me.test_amount = ds.Tables(0).Rows(0).Item("test_amount").ToString
+                Me.test_type = ds.Tables(0).Rows(0).Item("test_type").ToString
+                Me.test_min = ds.Tables(0).Rows(0).Item("test_min").ToString
+                Me.booking_number = Convert.ToInt32(ds.Tables(0).Rows(0).Item("booking_number").ToString)
+                Me.dept_id = Convert.ToInt32(ds.Tables(0).Rows(0).Item("dept_id").ToString)
+                Me.amount = Convert.ToDecimal(ds.Tables(0).Rows(0).Item("amount").ToString)
+                Try
+                    Me.recived_date = ds.Tables(0).Rows(0).Item("recived_date").ToString
+                Catch ex As Exception
+                    Me.recived_date = ""
+                End Try
+                Me.amount_text = ds.Tables(0).Rows(0).Item("amount_text").ToString
+                Me.f1 = ds.Tables(0).Rows(0).Item("f1").ToString
+                Me.f2 = ds.Tables(0).Rows(0).Item("f2").ToString
+                Me.f3 = ds.Tables(0).Rows(0).Item("f3").ToString
+                Me.f4 = ds.Tables(0).Rows(0).Item("f4").ToString
+                Me.f5 = ds.Tables(0).Rows(0).Item("f5").ToString
+
+            Else
+                Me.id = -1
+                conn.Close()
+                MessageBox.Show("لاتوجد فيشة بهذا الباركود")
+                Exit Sub
+            End If
+        Catch ex As Exception
+            conn.Close()
+            MsgBox("failed to get " + ex.Message)
+            Exit Sub
+        End Try
+        conn.Close()
+    End Sub
+
     Sub New(id As Integer, p_id As Integer)
         Me.id = id
         Dim query As String = "select * from queue where patient_id = " & p_id & ""
@@ -126,6 +197,9 @@ Public Class Queue
                 Me.amount_text = ds.Tables(0).Rows(0).Item("amount_text").ToString
                 Me.f1 = ds.Tables(0).Rows(0).Item("f1").ToString
                 Me.f2 = ds.Tables(0).Rows(0).Item("f2").ToString
+                Me.f2 = ds.Tables(0).Rows(0).Item("f3").ToString
+                Me.f2 = ds.Tables(0).Rows(0).Item("f4").ToString
+                Me.f2 = ds.Tables(0).Rows(0).Item("f5").ToString
 
             Else
                 Me.id = -1
@@ -196,8 +270,8 @@ Public Class Queue
 
             Dim SQLCommand As New MySqlCommand()
             SQLCommand.Connection = conn
-            SQLCommand.CommandText = "INSERT INTO queue(patient_id ,`time`,`date` , note , state ,test_type, test_amount , test_min ,booking_number,dept_id,amount,amount_text,recived_date,f1,f2) " +
-                                                " VALUES(@patient_id, @time, @date ,@note , @state , @test_type ,@test_amount , @test_min,@booking_number,@dept_id,@amount,@amount_text,@recived_date,@f1,@f2)"
+            SQLCommand.CommandText = "INSERT INTO queue(patient_id ,`time`,`date` , note , state ,test_type, test_amount , test_min ,booking_number,dept_id,amount,amount_text,recived_date,f1,f2,f3,f4,f5) " +
+                                                " VALUES(@patient_id, @time, @date ,@note , @state , @test_type ,@test_amount , @test_min,@booking_number,@dept_id,@amount,@amount_text,@recived_date,@f1,@f2,@f3,@f4,@f5)"
             SQLCommand.Parameters.Add("@patient_id", MySqlDbType.String).Value = Me.patient_id
             SQLCommand.Parameters.Add("@date", MySqlDbType.String).Value = Me.q_date
             SQLCommand.Parameters.Add("@time", MySqlDbType.String).Value = Me.q_time
@@ -213,10 +287,13 @@ Public Class Queue
             SQLCommand.Parameters.Add("@recived_date", MySqlDbType.String).Value = Me.recived_date
             SQLCommand.Parameters.Add("@f1", MySqlDbType.String).Value = Me.f1
             SQLCommand.Parameters.Add("@f2", MySqlDbType.String).Value = Me.f2
+            SQLCommand.Parameters.Add("@f3", MySqlDbType.String).Value = Me.f3
+            SQLCommand.Parameters.Add("@f4", MySqlDbType.String).Value = Me.f4
+            SQLCommand.Parameters.Add("@f5", MySqlDbType.String).Value = Me.f5
             SQLCommand.ExecuteNonQuery()
 
             'اضافة حدث
-            Dim conent As String = "تممت طباعة فيشة  : " & Me.q_date.ToShortDateString & "  للزبون رقم :" & Me.patient_id & ""
+            Dim conent As String = "تمت حفظ فيشة  : " & Me.q_date.ToShortDateString & "  للزبون رقم :" & Me.patient_id & ""
 
             add_event(conn, s_add, conent)
             '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''

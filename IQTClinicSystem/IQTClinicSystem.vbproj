@@ -144,10 +144,16 @@
     <Compile Include="amerat\fm_change_user.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="amerat\fm_fesha.Designer.vb">
+    <Compile Include="amerat\queue\fm_fesha.Designer.vb">
       <DependentUpon>fm_fesha.vb</DependentUpon>
     </Compile>
-    <Compile Include="amerat\fm_fesha.vb">
+    <Compile Include="amerat\queue\fm_fesha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\fm_stecker.Designer.vb">
+      <DependentUpon>fm_stecker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\fm_stecker.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="amerat\patinet\fm_call.Designer.vb">
@@ -172,6 +178,24 @@
       <DependentUpon>fm_show_details.vb</DependentUpon>
     </Compile>
     <Compile Include="amerat\patinet\fm_show_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\queue\fm_add_collection_fesha.Designer.vb">
+      <DependentUpon>fm_add_collection_fesha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\queue\fm_add_collection_fesha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\queue\fm_fesha_collectiom.Designer.vb">
+      <DependentUpon>fm_fesha_collectiom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\queue\fm_fesha_collectiom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\queue\fm_print_fesha_collection.Designer.vb">
+      <DependentUpon>fm_print_fesha_collection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\queue\fm_print_fesha_collection.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dataset\d_item.Designer.vb">
@@ -704,8 +728,11 @@
     <EmbeddedResource Include="amerat\fm_change_user.resx">
       <DependentUpon>fm_change_user.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="amerat\fm_fesha.resx">
+    <EmbeddedResource Include="amerat\queue\fm_fesha.resx">
       <DependentUpon>fm_fesha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\fm_stecker.resx">
+      <DependentUpon>fm_stecker.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="amerat\patinet\fm_call.resx">
       <DependentUpon>fm_call.vb</DependentUpon>
@@ -718,6 +745,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="amerat\patinet\fm_show_details.resx">
       <DependentUpon>fm_show_details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\queue\fm_add_collection_fesha.resx">
+      <DependentUpon>fm_add_collection_fesha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\queue\fm_fesha_collectiom.resx">
+      <DependentUpon>fm_fesha_collectiom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\queue\fm_print_fesha_collection.resx">
+      <DependentUpon>fm_print_fesha_collection.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\customer\fm_customer.resx">
       <DependentUpon>fm_customer.vb</DependentUpon>

@@ -179,7 +179,6 @@ Partial Class fm_add_queue
         '
         'dt_queue
         '
-        Me.dt_queue.Enabled = False
         Me.dt_queue.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dt_queue.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dt_queue.Location = New System.Drawing.Point(32, 579)

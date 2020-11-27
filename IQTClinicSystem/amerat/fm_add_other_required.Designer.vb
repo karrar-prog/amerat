@@ -85,6 +85,7 @@ Partial Class fm_add_other_required
         Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.RibbonPage3 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.TabFormControl1 = New DevExpress.XtraBars.TabFormControl()
+        Me.BarHeaderItem1 = New DevExpress.XtraBars.BarHeaderItem()
         Me.TabFormPage1 = New DevExpress.XtraBars.TabFormPage()
         Me.TabFormContentContainer1 = New DevExpress.XtraBars.TabFormContentContainer()
         Me.ContextMenu_delete_temp.SuspendLayout()
@@ -871,6 +872,7 @@ Partial Class fm_add_other_required
         '
         'TabFormControl1
         '
+        Me.TabFormControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarHeaderItem1})
         Me.TabFormControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabFormControl1.Name = "TabFormControl1"
         Me.TabFormControl1.Pages.Add(Me.TabFormPage1)
@@ -879,6 +881,14 @@ Partial Class fm_add_other_required
         Me.TabFormControl1.TabForm = Me
         Me.TabFormControl1.TabIndex = 389
         Me.TabFormControl1.TabStop = False
+        Me.TabFormControl1.TitleItemLinks.Add(Me.BarHeaderItem1)
+        '
+        'BarHeaderItem1
+        '
+        Me.BarHeaderItem1.Caption = "ستيكر صغير"
+        Me.BarHeaderItem1.Id = 0
+        Me.BarHeaderItem1.ImageOptions.Image = CType(resources.GetObject("BarHeaderItem1.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarHeaderItem1.Name = "BarHeaderItem1"
         '
         'TabFormPage1
         '
@@ -1014,4 +1024,5 @@ Partial Class fm_add_other_required
     Friend WithEvents SimpleButton8 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton11 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents طباعةفيشةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BarHeaderItem1 As DevExpress.XtraBars.BarHeaderItem
 End Class

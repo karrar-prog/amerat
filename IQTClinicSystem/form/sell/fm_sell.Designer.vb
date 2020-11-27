@@ -611,7 +611,7 @@ Partial Class fm_sell
         Me.li_sell_menu_item.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.li_sell_menu_item.FullRowSelect = True
         Me.li_sell_menu_item.GridLines = True
-        Me.li_sell_menu_item.Location = New System.Drawing.Point(2, 22)
+        Me.li_sell_menu_item.Location = New System.Drawing.Point(2, 20)
         Me.li_sell_menu_item.Name = "li_sell_menu_item"
         Me.li_sell_menu_item.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_sell_menu_item.RightToLeftLayout = True
@@ -902,10 +902,6 @@ Partial Class fm_sell
         Me.l_message.TabIndex = 94
         Me.l_message.Text = "-"
         '
-        'DefaultLookAndFeel1
-        '
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Blue"
-        '
         'SkinRibbonGalleryBarItem1
         '
         Me.SkinRibbonGalleryBarItem1.Id = 14
@@ -1056,7 +1052,7 @@ Partial Class fm_sell
         Me.RibbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl1.ShowQatLocationSelector = False
         Me.RibbonControl1.ShowToolbarCustomizeItem = False
-        Me.RibbonControl1.Size = New System.Drawing.Size(1024, 30)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1024, 27)
         Me.RibbonControl1.Toolbar.ShowCustomizeItem = False
         Me.RibbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '

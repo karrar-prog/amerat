@@ -608,4 +608,9 @@ Public Class fm_main
         fm_change_user.Show()
 
     End Sub
+
+    Private Sub BarHeaderItem7_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarHeaderItem7.ItemClick
+        fm_stecker.Show()
+
+    End Sub
 End Class

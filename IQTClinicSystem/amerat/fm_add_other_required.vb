@@ -938,4 +938,9 @@ Public Class fm_add_other_required
     Private Sub tb_admin_name_EditValueChanged(sender As Object, e As EventArgs) Handles tb_admin_name.EditValueChanged
 
     End Sub
+
+    Private Sub BarHeaderItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarHeaderItem1.ItemClick
+        fm_stecker.Show()
+
+    End Sub
 End Class

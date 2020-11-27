@@ -117,9 +117,9 @@ Partial Class fm_print_customer
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 54)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 53)
         Me.barDockControlLeft.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 337)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 242)
         '
         'DocumentViewerBarManager1
         '
@@ -230,7 +230,7 @@ Partial Class fm_print_customer
         Me.bbiPrint.Caption = "&Print..."
         Me.bbiPrint.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Print
         Me.bbiPrint.Enabled = False
-        Me.bbiPrint.Hint = "Print"
+        Me.bbiPrint.Hint = "طباعة"
         Me.bbiPrint.Id = 14
         Me.bbiPrint.Name = "bbiPrint"
         '
@@ -572,31 +572,31 @@ Partial Class fm_print_customer
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlTop.Size = New System.Drawing.Size(945, 54)
+        Me.barDockControlTop.Size = New System.Drawing.Size(504, 53)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 391)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 295)
         Me.barDockControlBottom.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlBottom.Size = New System.Drawing.Size(945, 28)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(504, 26)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(945, 54)
+        Me.barDockControlRight.Location = New System.Drawing.Point(504, 53)
         Me.barDockControlRight.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 337)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 242)
         '
         'DocumentViewer1
         '
         Me.DocumentViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DocumentViewer1.IsMetric = True
-        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 54)
+        Me.DocumentViewer1.Location = New System.Drawing.Point(0, 53)
         Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(945, 337)
+        Me.DocumentViewer1.Size = New System.Drawing.Size(504, 242)
         Me.DocumentViewer1.TabIndex = 4
         '
         'miBackground
@@ -799,7 +799,7 @@ Partial Class fm_print_customer
         Me.SimpleButton1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton1.Appearance.Options.UseFont = True
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(396, 367)
+        Me.SimpleButton1.Location = New System.Drawing.Point(185, 237)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(114, 52)
         Me.SimpleButton1.TabIndex = 73
@@ -809,7 +809,7 @@ Partial Class fm_print_customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(945, 419)
+        Me.ClientSize = New System.Drawing.Size(504, 321)
         Me.Controls.Add(Me.SimpleButton1)
         Me.Controls.Add(Me.DocumentViewer1)
         Me.Controls.Add(Me.barDockControlLeft)

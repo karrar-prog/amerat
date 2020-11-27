@@ -93,7 +93,7 @@ Partial Class fm_monitoring_event
         Me.RibbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl1.ShowQatLocationSelector = False
         Me.RibbonControl1.ShowToolbarCustomizeItem = False
-        Me.RibbonControl1.Size = New System.Drawing.Size(1243, 30)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1243, 27)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         Me.RibbonControl1.Toolbar.ShowCustomizeItem = False
         Me.RibbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
@@ -101,10 +101,10 @@ Partial Class fm_monitoring_event
         '
         'RibbonStatusBar1
         '
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 744)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 736)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1243, 23)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1243, 31)
         '
         'RibbonPage2
         '
@@ -115,20 +115,20 @@ Partial Class fm_monitoring_event
         '
         Me.GroupControl1.Controls.Add(Me.XtraTabControl1)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupControl1.Location = New System.Drawing.Point(0, 30)
+        Me.GroupControl1.Location = New System.Drawing.Point(0, 27)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl1.Size = New System.Drawing.Size(1243, 331)
+        Me.GroupControl1.Size = New System.Drawing.Size(1243, 474)
         Me.GroupControl1.TabIndex = 2
         Me.GroupControl1.Text = "العمليات"
         '
         'XtraTabControl1
         '
         Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 22)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 20)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1239, 307)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1239, 452)
         Me.XtraTabControl1.TabIndex = 121
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
         '
@@ -136,7 +136,7 @@ Partial Class fm_monitoring_event
         '
         Me.XtraTabPage1.Controls.Add(Me.li_event)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1234, 282)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1233, 424)
         Me.XtraTabPage1.Text = "عرض"
         '
         'li_event
@@ -150,7 +150,7 @@ Partial Class fm_monitoring_event
         Me.li_event.Name = "li_event"
         Me.li_event.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_event.RightToLeftLayout = True
-        Me.li_event.Size = New System.Drawing.Size(1234, 282)
+        Me.li_event.Size = New System.Drawing.Size(1233, 424)
         Me.li_event.TabIndex = 119
         Me.li_event.UseCompatibleStateImageBehavior = False
         '
@@ -159,7 +159,7 @@ Partial Class fm_monitoring_event
         Me.XtraTabPage2.Controls.Add(Me.SimpleButton2)
         Me.XtraTabPage2.Controls.Add(Me.GridControl1)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1231, 281)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1233, 281)
         Me.XtraTabPage2.Text = "بحث"
         '
         'SimpleButton2
@@ -177,7 +177,7 @@ Partial Class fm_monitoring_event
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1231, 281)
+        Me.GridControl1.Size = New System.Drawing.Size(1233, 281)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -251,12 +251,12 @@ Partial Class fm_monitoring_event
         Me.li_user.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.li_user.FullRowSelect = True
         Me.li_user.GridLines = True
-        Me.li_user.Location = New System.Drawing.Point(1056, 361)
+        Me.li_user.Location = New System.Drawing.Point(1056, 501)
         Me.li_user.MultiSelect = False
         Me.li_user.Name = "li_user"
         Me.li_user.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.li_user.RightToLeftLayout = True
-        Me.li_user.Size = New System.Drawing.Size(187, 383)
+        Me.li_user.Size = New System.Drawing.Size(187, 235)
         Me.li_user.TabIndex = 148
         Me.li_user.UseCompatibleStateImageBehavior = False
         '
@@ -271,10 +271,10 @@ Partial Class fm_monitoring_event
         Me.GroupControl2.Controls.Add(Me.LabelControl9)
         Me.GroupControl2.Controls.Add(Me.SimpleButton6)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl2.Location = New System.Drawing.Point(773, 361)
+        Me.GroupControl2.Location = New System.Drawing.Point(701, 501)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(283, 383)
+        Me.GroupControl2.Size = New System.Drawing.Size(355, 235)
         Me.GroupControl2.TabIndex = 149
         Me.GroupControl2.Text = "بحث"
         '
@@ -283,7 +283,7 @@ Partial Class fm_monitoring_event
         Me.SimpleButton1.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton1.Appearance.Options.UseFont = True
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(16, 198)
+        Me.SimpleButton1.Location = New System.Drawing.Point(37, 116)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.SimpleButton1.Size = New System.Drawing.Size(122, 46)
@@ -293,7 +293,7 @@ Partial Class fm_monitoring_event
         'tb_user_id
         '
         Me.tb_user_id.EditValue = ""
-        Me.tb_user_id.Location = New System.Drawing.Point(32, 267)
+        Me.tb_user_id.Location = New System.Drawing.Point(48, 167)
         Me.tb_user_id.Name = "tb_user_id"
         Me.tb_user_id.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tb_user_id.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -309,7 +309,7 @@ Partial Class fm_monitoring_event
         'tb_username
         '
         Me.tb_username.EditValue = ""
-        Me.tb_username.Location = New System.Drawing.Point(32, 55)
+        Me.tb_username.Location = New System.Drawing.Point(48, 23)
         Me.tb_username.Name = "tb_username"
         Me.tb_username.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tb_username.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -325,7 +325,7 @@ Partial Class fm_monitoring_event
         '
         Me.DateTimePicker1.Font = New System.Drawing.Font("Times New Roman", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(70, 102)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(13, 76)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(135, 32)
         Me.DateTimePicker1.TabIndex = 4
@@ -334,7 +334,7 @@ Partial Class fm_monitoring_event
         '
         Me.DateTimePicker2.Font = New System.Drawing.Font("Times New Roman", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(70, 151)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(178, 78)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(135, 32)
         Me.DateTimePicker2.TabIndex = 5
@@ -343,7 +343,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl8.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl8.Appearance.Options.UseFont = True
-        Me.LabelControl8.Location = New System.Drawing.Point(214, 109)
+        Me.LabelControl8.Location = New System.Drawing.Point(154, 78)
         Me.LabelControl8.Name = "LabelControl8"
         Me.LabelControl8.Size = New System.Drawing.Size(18, 22)
         Me.LabelControl8.TabIndex = 82
@@ -353,7 +353,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl9.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl9.Appearance.Options.UseFont = True
-        Me.LabelControl9.Location = New System.Drawing.Point(214, 159)
+        Me.LabelControl9.Location = New System.Drawing.Point(319, 84)
         Me.LabelControl9.Name = "LabelControl9"
         Me.LabelControl9.Size = New System.Drawing.Size(19, 22)
         Me.LabelControl9.TabIndex = 83
@@ -364,7 +364,7 @@ Partial Class fm_monitoring_event
         Me.SimpleButton6.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton6.Appearance.Options.UseFont = True
         Me.SimpleButton6.ImageOptions.Image = CType(resources.GetObject("SimpleButton6.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton6.Location = New System.Drawing.Point(145, 198)
+        Me.SimpleButton6.Location = New System.Drawing.Point(165, 116)
         Me.SimpleButton6.Name = "SimpleButton6"
         Me.SimpleButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.SimpleButton6.Size = New System.Drawing.Size(122, 46)
@@ -374,7 +374,7 @@ Partial Class fm_monitoring_event
         'tb_come
         '
         Me.tb_come.EditValue = "0"
-        Me.tb_come.Location = New System.Drawing.Point(351, 387)
+        Me.tb_come.Location = New System.Drawing.Point(291, 507)
         Me.tb_come.Name = "tb_come"
         Me.tb_come.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.tb_come.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -393,7 +393,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl32.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl32.Appearance.Options.UseFont = True
-        Me.LabelControl32.Location = New System.Drawing.Point(625, 468)
+        Me.LabelControl32.Location = New System.Drawing.Point(565, 588)
         Me.LabelControl32.Name = "LabelControl32"
         Me.LabelControl32.Size = New System.Drawing.Size(98, 22)
         Me.LabelControl32.TabIndex = 161
@@ -402,7 +402,7 @@ Partial Class fm_monitoring_event
         'tb_net
         '
         Me.tb_net.EditValue = "0"
-        Me.tb_net.Location = New System.Drawing.Point(351, 542)
+        Me.tb_net.Location = New System.Drawing.Point(291, 662)
         Me.tb_net.Name = "tb_net"
         Me.tb_net.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.tb_net.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -420,7 +420,7 @@ Partial Class fm_monitoring_event
         'tb_out
         '
         Me.tb_out.EditValue = "0"
-        Me.tb_out.Location = New System.Drawing.Point(351, 465)
+        Me.tb_out.Location = New System.Drawing.Point(291, 585)
         Me.tb_out.Name = "tb_out"
         Me.tb_out.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.tb_out.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -439,7 +439,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl10.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl10.Appearance.Options.UseFont = True
-        Me.LabelControl10.Location = New System.Drawing.Point(625, 390)
+        Me.LabelControl10.Location = New System.Drawing.Point(565, 510)
         Me.LabelControl10.Name = "LabelControl10"
         Me.LabelControl10.Size = New System.Drawing.Size(70, 22)
         Me.LabelControl10.TabIndex = 156
@@ -449,7 +449,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.Location = New System.Drawing.Point(625, 545)
+        Me.LabelControl1.Location = New System.Drawing.Point(565, 665)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(94, 22)
         Me.LabelControl1.TabIndex = 163
@@ -458,7 +458,7 @@ Partial Class fm_monitoring_event
         'TextEdit1
         '
         Me.TextEdit1.EditValue = "0"
-        Me.TextEdit1.Location = New System.Drawing.Point(25, 415)
+        Me.TextEdit1.Location = New System.Drawing.Point(12, 535)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -468,14 +468,14 @@ Partial Class fm_monitoring_event
         Me.TextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TextEdit1.Properties.ReadOnly = True
         Me.TextEdit1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TextEdit1.Size = New System.Drawing.Size(591, 28)
+        Me.TextEdit1.Size = New System.Drawing.Size(544, 28)
         Me.TextEdit1.TabIndex = 166
         Me.TextEdit1.Visible = False
         '
         'TextEdit2
         '
         Me.TextEdit2.EditValue = "0"
-        Me.TextEdit2.Location = New System.Drawing.Point(25, 571)
+        Me.TextEdit2.Location = New System.Drawing.Point(12, 691)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -485,14 +485,14 @@ Partial Class fm_monitoring_event
         Me.TextEdit2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TextEdit2.Properties.ReadOnly = True
         Me.TextEdit2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TextEdit2.Size = New System.Drawing.Size(591, 28)
+        Me.TextEdit2.Size = New System.Drawing.Size(544, 28)
         Me.TextEdit2.TabIndex = 167
         Me.TextEdit2.Visible = False
         '
         'TextEdit3
         '
         Me.TextEdit3.EditValue = "0"
-        Me.TextEdit3.Location = New System.Drawing.Point(25, 493)
+        Me.TextEdit3.Location = New System.Drawing.Point(12, 613)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -502,7 +502,7 @@ Partial Class fm_monitoring_event
         Me.TextEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TextEdit3.Properties.ReadOnly = True
         Me.TextEdit3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TextEdit3.Size = New System.Drawing.Size(591, 28)
+        Me.TextEdit3.Size = New System.Drawing.Size(544, 28)
         Me.TextEdit3.TabIndex = 168
         Me.TextEdit3.Visible = False
         '
