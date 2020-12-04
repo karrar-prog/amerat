@@ -613,4 +613,12 @@ Public Class fm_main
         fm_stecker.Show()
 
     End Sub
+
+    Private Sub TileItem5_ItemClick_4(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem5.ItemClick
+        If user.type = user_admin Then
+            fm_statistics_money.Show()
+
+        End If
+
+    End Sub
 End Class

@@ -39,10 +39,15 @@ Public Class fm_x_viewer_treat
         filePath = Application.StartupPath & "/reports/" & path & ".repx"
       
 
+        If path = "contract" Then
+            SimpleButton3.Text = "3"
+        Else
+            SimpleButton3.Text = "2"
+        End If
 
-     
+
         report = XtraReport.FromFile(filePath, True)
-      
+
 
 
         ds.DataSetName = "trat_dataset"
@@ -70,14 +75,14 @@ Public Class fm_x_viewer_treat
         report.Parameters("item10").Value = item10
 
 
-       
+
 
         report.DataSource = ds
 
         DocumentViewer1.DocumentSource = report
 
         report.CreateDocument()
-  
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
@@ -130,5 +135,16 @@ Public Class fm_x_viewer_treat
     End Sub
     Private Sub DocumentViewer1_Load_1(sender As Object, e As EventArgs) Handles DocumentViewer1.Load
 
+    End Sub
+
+    Private Sub SimpleButton1_Click_1(sender As Object, e As EventArgs)
+        report.Print()
+        report.Print()
+
+    End Sub
+
+    Private Sub SimpleButton2_Click_1(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        report.Print()
+      
     End Sub
 End Class

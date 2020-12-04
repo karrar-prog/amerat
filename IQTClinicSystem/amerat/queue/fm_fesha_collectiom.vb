@@ -157,11 +157,14 @@ Public Class fm_fesha_collectiom
             Dim c_fesha As New Queue(fesha_id)
             c_fesha.state = "إستلام"
             c_fesha.recived_date = Date.Now.ToString
-            c_fesha.save()
-            fm_queue.search()
-            fm_queue.Show()
-            MessageBox.Show("تم استلام الفيشة المتعددة")
-            Me.Close()
+            If c_fesha.save() Then
+                fm_queue.search()
+                fm_queue.Show()
+                MessageBox.Show("تم استلام الفيشة المتعددة")
+                Me.Close()
+            End If
+
+
 
         End If
     End Sub

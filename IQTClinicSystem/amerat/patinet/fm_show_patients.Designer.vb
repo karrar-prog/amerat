@@ -35,6 +35,7 @@ Partial Class fm_show_patients
         Me.اضافةملفاتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.اتصالToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ستيكصغيرToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.فيشةمتعددةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tb_name = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
@@ -115,7 +116,14 @@ Partial Class fm_show_patients
         Me.f10 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.f8 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-        Me.فيشةمتعددةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.البصمةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.اضافةاوتعديلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.فحصToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupControl5 = New DevExpress.XtraEditors.GroupControl()
+        Me.SimpleButton7 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton8 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton6 = New DevExpress.XtraEditors.SimpleButton()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -147,6 +155,9 @@ Partial Class fm_show_patients
         Me.XtraTabPage2.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl5.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lv_queue
@@ -161,13 +172,13 @@ Partial Class fm_show_patients
         Me.lv_queue.Name = "lv_queue"
         Me.lv_queue.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lv_queue.RightToLeftLayout = True
-        Me.lv_queue.Size = New System.Drawing.Size(1010, 649)
+        Me.lv_queue.Size = New System.Drawing.Size(1010, 590)
         Me.lv_queue.TabIndex = 1
         Me.lv_queue.UseCompatibleStateImageBehavior = False
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.عرضاوتعديلToolStripMenuItem, Me.عرضالفيشToolStripMenuItem, Me.طباعةToolStripMenuItem, Me.اضافةحجزعمليةToolStripMenuItem, Me.حذفToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.ستيكصغيرToolStripMenuItem, Me.فيشةمتعددةToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.عرضاوتعديلToolStripMenuItem, Me.البصمةToolStripMenuItem, Me.عرضالفيشToolStripMenuItem, Me.طباعةToolStripMenuItem, Me.اضافةحجزعمليةToolStripMenuItem, Me.حذفToolStripMenuItem, Me.اضافةملفاتToolStripMenuItem, Me.اتصالToolStripMenuItem, Me.ستيكصغيرToolStripMenuItem, Me.فيشةمتعددةToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(162, 224)
         '
@@ -245,6 +256,12 @@ Partial Class fm_show_patients
         Me.ستيكصغيرToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.ستيكصغيرToolStripMenuItem.Text = "ستيكر صغير"
         '
+        'فيشةمتعددةToolStripMenuItem
+        '
+        Me.فيشةمتعددةToolStripMenuItem.Name = "فيشةمتعددةToolStripMenuItem"
+        Me.فيشةمتعددةToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.فيشةمتعددةToolStripMenuItem.Text = "فيشة متعددة"
+        '
         'tb_name
         '
         Me.tb_name.Location = New System.Drawing.Point(94, 27)
@@ -259,6 +276,7 @@ Partial Class fm_show_patients
         '
         'GroupControl6
         '
+        Me.GroupControl6.Controls.Add(Me.GroupControl5)
         Me.GroupControl6.Controls.Add(Me.GroupControl4)
         Me.GroupControl6.Controls.Add(Me.GroupControl3)
         Me.GroupControl6.Controls.Add(Me.GroupControl1)
@@ -269,11 +287,12 @@ Partial Class fm_show_patients
         Me.GroupControl6.Dock = System.Windows.Forms.DockStyle.Right
         Me.GroupControl6.Location = New System.Drawing.Point(1020, 49)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(348, 699)
+        Me.GroupControl6.Size = New System.Drawing.Size(348, 640)
         Me.GroupControl6.TabIndex = 261
         '
         'GroupControl4
         '
+        Me.GroupControl4.Controls.Add(Me.PictureBox5)
         Me.GroupControl4.Controls.Add(Me.SimpleButton5)
         Me.GroupControl4.Controls.Add(Me.CheckEdit1)
         Me.GroupControl4.Controls.Add(Me.Label10)
@@ -540,7 +559,7 @@ Partial Class fm_show_patients
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(221, 159)
+        Me.Label3.Location = New System.Drawing.Point(253, 156)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(69, 17)
         Me.Label3.TabIndex = 294
@@ -549,9 +568,9 @@ Partial Class fm_show_patients
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.IQTClinicSystem.My.Resources.Resources.search_disease_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(5, 31)
+        Me.PictureBox2.Location = New System.Drawing.Point(5, 80)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(50, 51)
+        Me.PictureBox2.Size = New System.Drawing.Size(45, 45)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 253
         Me.PictureBox2.TabStop = False
@@ -573,9 +592,9 @@ Partial Class fm_show_patients
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.IQTClinicSystem.My.Resources.Resources.addition_icon
-        Me.PictureBox3.Location = New System.Drawing.Point(5, 88)
+        Me.PictureBox3.Location = New System.Drawing.Point(5, 27)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(47, 47)
+        Me.PictureBox3.Size = New System.Drawing.Size(45, 45)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 263
         Me.PictureBox3.TabStop = False
@@ -596,7 +615,7 @@ Partial Class fm_show_patients
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(32, 153)
+        Me.RadioButton2.Location = New System.Drawing.Point(64, 150)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton2.Size = New System.Drawing.Size(105, 26)
@@ -622,7 +641,7 @@ Partial Class fm_show_patients
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
         Me.RadioButton1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(142, 153)
+        Me.RadioButton1.Location = New System.Drawing.Point(174, 150)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.RadioButton1.Size = New System.Drawing.Size(70, 26)
@@ -798,7 +817,7 @@ Partial Class fm_show_patients
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(148, 570)
+        Me.Label2.Location = New System.Drawing.Point(231, 523)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label2.Size = New System.Drawing.Size(71, 17)
@@ -809,9 +828,9 @@ Partial Class fm_show_patients
         '
         Me.p_patient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.p_patient.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.p_patient.Location = New System.Drawing.Point(49, 409)
+        Me.p_patient.Location = New System.Drawing.Point(181, 411)
         Me.p_patient.Name = "p_patient"
-        Me.p_patient.Size = New System.Drawing.Size(257, 160)
+        Me.p_patient.Size = New System.Drawing.Size(155, 109)
         Me.p_patient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.p_patient.TabIndex = 290
         Me.p_patient.TabStop = False
@@ -820,7 +839,7 @@ Partial Class fm_show_patients
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = Global.IQTClinicSystem.My.Resources.Resources.folder_icon
-        Me.PictureBox6.Location = New System.Drawing.Point(151, 592)
+        Me.PictureBox6.Location = New System.Drawing.Point(234, 542)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(62, 62)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -850,7 +869,7 @@ Partial Class fm_show_patients
         Me.GroupControl2.Location = New System.Drawing.Point(0, 49)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupControl2.Size = New System.Drawing.Size(1020, 699)
+        Me.GroupControl2.Size = New System.Drawing.Size(1020, 640)
         Me.GroupControl2.TabIndex = 263
         Me.GroupControl2.Text = "نتائج البحث"
         '
@@ -860,7 +879,7 @@ Partial Class fm_show_patients
         Me.XtraTabControl1.Location = New System.Drawing.Point(2, 20)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1016, 677)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1016, 618)
         Me.XtraTabControl1.TabIndex = 122
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
         '
@@ -868,7 +887,7 @@ Partial Class fm_show_patients
         '
         Me.XtraTabPage1.Controls.Add(Me.lv_queue)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1010, 649)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1010, 590)
         Me.XtraTabPage1.Text = "عرض"
         '
         'XtraTabPage2
@@ -1025,17 +1044,88 @@ Partial Class fm_show_patients
         Me.f8.VisibleIndex = 12
         Me.f8.Width = 93
         '
-        'فيشةمتعددةToolStripMenuItem
+        'البصمةToolStripMenuItem
         '
-        Me.فيشةمتعددةToolStripMenuItem.Name = "فيشةمتعددةToolStripMenuItem"
-        Me.فيشةمتعددةToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.فيشةمتعددةToolStripMenuItem.Text = "فيشة متعددة"
+        Me.البصمةToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اضافةاوتعديلToolStripMenuItem, Me.فحصToolStripMenuItem})
+        Me.البصمةToolStripMenuItem.Name = "البصمةToolStripMenuItem"
+        Me.البصمةToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.البصمةToolStripMenuItem.Text = "البصمة"
+        '
+        'اضافةاوتعديلToolStripMenuItem
+        '
+        Me.اضافةاوتعديلToolStripMenuItem.Name = "اضافةاوتعديلToolStripMenuItem"
+        Me.اضافةاوتعديلToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.اضافةاوتعديلToolStripMenuItem.Text = "اضافة او تعديل"
+        '
+        'فحصToolStripMenuItem
+        '
+        Me.فحصToolStripMenuItem.Name = "فحصToolStripMenuItem"
+        Me.فحصToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.فحصToolStripMenuItem.Text = "فحص"
+        '
+        'GroupControl5
+        '
+        Me.GroupControl5.Controls.Add(Me.SimpleButton6)
+        Me.GroupControl5.Controls.Add(Me.SimpleButton7)
+        Me.GroupControl5.Controls.Add(Me.SimpleButton8)
+        Me.GroupControl5.Location = New System.Drawing.Point(6, 411)
+        Me.GroupControl5.Name = "GroupControl5"
+        Me.GroupControl5.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.GroupControl5.Size = New System.Drawing.Size(169, 196)
+        Me.GroupControl5.TabIndex = 291
+        Me.GroupControl5.Text = "البصمة"
+        '
+        'SimpleButton7
+        '
+        Me.SimpleButton7.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton7.Appearance.Options.UseFont = True
+        Me.SimpleButton7.ImageOptions.Image = CType(resources.GetObject("SimpleButton7.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton7.Location = New System.Drawing.Point(14, 81)
+        Me.SimpleButton7.Margin = New System.Windows.Forms.Padding(9)
+        Me.SimpleButton7.Name = "SimpleButton7"
+        Me.SimpleButton7.Size = New System.Drawing.Size(144, 38)
+        Me.SimpleButton7.TabIndex = 270
+        Me.SimpleButton7.Text = "تعذر التسجيل"
+        '
+        'SimpleButton8
+        '
+        Me.SimpleButton8.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton8.Appearance.Options.UseFont = True
+        Me.SimpleButton8.ImageOptions.Image = CType(resources.GetObject("SimpleButton8.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton8.Location = New System.Drawing.Point(14, 31)
+        Me.SimpleButton8.Margin = New System.Windows.Forms.Padding(9)
+        Me.SimpleButton8.Name = "SimpleButton8"
+        Me.SimpleButton8.Size = New System.Drawing.Size(144, 38)
+        Me.SimpleButton8.TabIndex = 269
+        Me.SimpleButton8.Text = "لم يسجلو بعد"
+        '
+        'SimpleButton6
+        '
+        Me.SimpleButton6.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton6.Appearance.Options.UseFont = True
+        Me.SimpleButton6.ImageOptions.Image = CType(resources.GetObject("SimpleButton6.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton6.Location = New System.Drawing.Point(14, 131)
+        Me.SimpleButton6.Margin = New System.Windows.Forms.Padding(9)
+        Me.SimpleButton6.Name = "SimpleButton6"
+        Me.SimpleButton6.Size = New System.Drawing.Size(144, 38)
+        Me.SimpleButton6.TabIndex = 271
+        Me.SimpleButton6.Text = "توجد بصمة"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.IQTClinicSystem.My.Resources.Resources.fingerprint_512
+        Me.PictureBox5.Location = New System.Drawing.Point(5, 133)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(45, 45)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 304
+        Me.PictureBox5.TabStop = False
         '
         'fm_show_patients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1368, 748)
+        Me.ClientSize = New System.Drawing.Size(1368, 689)
         Me.Controls.Add(Me.GroupControl2)
         Me.Controls.Add(Me.GroupControl6)
         Me.Controls.Add(Me.RibbonControl2)
@@ -1079,6 +1169,9 @@ Partial Class fm_show_patients
         Me.XtraTabPage2.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl5.ResumeLayout(False)
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1178,4 +1271,12 @@ Partial Class fm_show_patients
     Friend WithEvents ستيكصغيرToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SimpleButton5 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents فيشةمتعددةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents البصمةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents اضافةاوتعديلToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents فحصToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GroupControl5 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents SimpleButton6 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents SimpleButton7 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents SimpleButton8 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
 End Class

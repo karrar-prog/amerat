@@ -228,6 +228,7 @@ Partial Class fm_x_viewer_treat
         Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.RibbonStatusBar1 = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         Me.RibbonPage8 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.PrintPreviewRepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemProgressBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemZoomTrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -965,9 +966,8 @@ Partial Class fm_x_viewer_treat
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
         Me.SimpleButton3.Location = New System.Drawing.Point(0, 31)
         Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(92, 50)
+        Me.SimpleButton3.Size = New System.Drawing.Size(72, 50)
         Me.SimpleButton3.TabIndex = 103
-        Me.SimpleButton3.Text = "طباعة"
         '
         'RibbonPage3
         '
@@ -2103,11 +2103,26 @@ Partial Class fm_x_viewer_treat
         Me.RibbonPage8.Name = "RibbonPage8"
         Me.RibbonPage8.Text = "RibbonPage8"
         '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.SimpleButton2.Appearance.BackColor2 = System.Drawing.Color.Transparent
+        Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton2.Appearance.Options.UseBackColor = True
+        Me.SimpleButton2.Appearance.Options.UseFont = True
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(98, 31)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(72, 50)
+        Me.SimpleButton2.TabIndex = 126
+        Me.SimpleButton2.Text = "1"
+        '
         'fm_x_viewer_treat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1134, 783)
+        Me.Controls.Add(Me.SimpleButton2)
         Me.Controls.Add(Me.SimpleButton3)
         Me.Controls.Add(Me.BarDockControl4)
         Me.Controls.Add(Me.BarDockControl5)
@@ -2343,4 +2358,5 @@ Partial Class fm_x_viewer_treat
     Friend WithEvents RibbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
     Friend WithEvents RibbonStatusBar1 As DevExpress.XtraBars.Ribbon.RibbonStatusBar
     Friend WithEvents RibbonPage8 As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
 End Class

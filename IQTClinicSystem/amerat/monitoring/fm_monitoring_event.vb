@@ -134,6 +134,7 @@ Public Class fm_monitoring_event
         TextEdit1.Text = ""
         TextEdit2.Text = ""
         TextEdit3.Text = ""
+        l_count.Text = d.Tables(0).Rows.Count.ToString
 
 
 
@@ -233,6 +234,10 @@ Public Class fm_monitoring_event
         'End If
 
 
+
+    End Sub
+
+    Private Sub GroupControl1_Paint(sender As Object, e As PaintEventArgs) Handles GroupControl1.Paint
 
     End Sub
 End Class

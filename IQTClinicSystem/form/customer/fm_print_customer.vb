@@ -24,13 +24,7 @@ Public Class fm_print_customer
         DocumentViewer1.DocumentSource = report
 
         report.CreateDocument()
-        Dim pt As New ReportPrintTool(report)
-        If pt.PrintDialog() Then
-            report.Print()
-
-            Me.Close()
-
-        End If
+     
 
     End Sub
 
@@ -48,5 +42,15 @@ Public Class fm_print_customer
 
     Private Sub bbiPrint_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbiPrint.ItemClick
 
+    End Sub
+
+    Private Sub fm_print_customer_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+
+        Dim pt As New ReportPrintTool(report)
+        If pt.PrintDialog() Then
+
+            Me.Close()
+
+        End If
     End Sub
 End Class

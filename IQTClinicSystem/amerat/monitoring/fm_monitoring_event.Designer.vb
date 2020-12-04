@@ -39,6 +39,8 @@ Partial Class fm_monitoring_event
         Me.colamount = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.li_user = New System.Windows.Forms.ListView()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
+        Me.l_count = New DevExpress.XtraEditors.LabelControl()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.tb_user_id = New DevExpress.XtraEditors.TextEdit()
         Me.tb_username = New DevExpress.XtraEditors.TextEdit()
@@ -159,7 +161,7 @@ Partial Class fm_monitoring_event
         Me.XtraTabPage2.Controls.Add(Me.SimpleButton2)
         Me.XtraTabPage2.Controls.Add(Me.GridControl1)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1233, 281)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1233, 424)
         Me.XtraTabPage2.Text = "بحث"
         '
         'SimpleButton2
@@ -177,7 +179,7 @@ Partial Class fm_monitoring_event
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1233, 281)
+        Me.GridControl1.Size = New System.Drawing.Size(1233, 424)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -262,6 +264,8 @@ Partial Class fm_monitoring_event
         '
         'GroupControl2
         '
+        Me.GroupControl2.Controls.Add(Me.LabelControl2)
+        Me.GroupControl2.Controls.Add(Me.l_count)
         Me.GroupControl2.Controls.Add(Me.SimpleButton1)
         Me.GroupControl2.Controls.Add(Me.tb_user_id)
         Me.GroupControl2.Controls.Add(Me.tb_username)
@@ -277,6 +281,26 @@ Partial Class fm_monitoring_event
         Me.GroupControl2.Size = New System.Drawing.Size(355, 235)
         Me.GroupControl2.TabIndex = 149
         Me.GroupControl2.Text = "بحث"
+        '
+        'LabelControl2
+        '
+        Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl2.Appearance.Options.UseFont = True
+        Me.LabelControl2.Location = New System.Drawing.Point(289, 179)
+        Me.LabelControl2.Name = "LabelControl2"
+        Me.LabelControl2.Size = New System.Drawing.Size(24, 22)
+        Me.LabelControl2.TabIndex = 147
+        Me.LabelControl2.Text = "عدد"
+        '
+        'l_count
+        '
+        Me.l_count.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.l_count.Appearance.Options.UseFont = True
+        Me.l_count.Location = New System.Drawing.Point(289, 207)
+        Me.l_count.Name = "l_count"
+        Me.l_count.Size = New System.Drawing.Size(10, 22)
+        Me.l_count.TabIndex = 146
+        Me.l_count.Text = "0"
         '
         'SimpleButton1
         '
@@ -592,4 +616,6 @@ Partial Class fm_monitoring_event
     Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents l_count As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
 End Class

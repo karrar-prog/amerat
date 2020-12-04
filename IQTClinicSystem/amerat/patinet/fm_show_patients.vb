@@ -461,6 +461,22 @@ Public Class fm_show_patients
         '    Next
         'End If
     End Sub
+    Private Sub search_finger(d As Integer)
+
+        Dim s As String
+        If d = 1 Then
+            s = "select * from patient WHERE finger_print = '' order by f2,f1,f3 "
+        ElseIf d = 2 Then
+            s = "select * from patient WHERE finger_print = 'no'  order by f2,f1,f3  "
+        Else
+            s = "select * from patient WHERE finger_print <> 'no' and  finger_print <> ''  order by f2,f1,f3  "
+        End If
+        Dim DataSet = getdatat1(s)
+        fill_db(DataSet)
+
+
+
+    End Sub
 
     Private Sub tb_id_InvalidValue(sender As Object, e As DevExpress.XtraEditors.Controls.InvalidValueExceptionEventArgs) Handles tb_id.InvalidValue
 
@@ -1059,5 +1075,63 @@ Public Class fm_show_patients
 
 
         End If
+    End Sub
+
+    Private Sub اضافةاوتعديلToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles اضافةاوتعديلToolStripMenuItem.Click
+
+
+        If lv_queue.SelectedItems.Count > 0 Then
+            Try
+                System.IO.File.WriteAllText(Application.StartupPath & "/FingerPrint/server/customer_id.txt", lv_queue.SelectedItems.Item(0).Text)
+            Catch ex As Exception
+            End Try
+            Dim proc As New System.Diagnostics.Process()
+            Try
+                proc = Process.Start(Application.StartupPath & "/FingerPrint/fingerPrint.exe", "تشغيل السيرفر")
+            Catch ex As Exception
+
+            End Try
+        End If
+
+    End Sub
+
+    Private Sub فحصToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles فحصToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count > 0 Then
+            Dim p As New Patient(__(lv_queue.SelectedItems.Item(0).Text))
+            If p.finger_print.Trim = "" Then
+                MessageBox.Show("لم يتم تسجيل بصمة لهذا الزبون", "", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf p.finger_print = "no" Then
+                MessageBox.Show("تعذر على الزبون تسجيل بصمة", "", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+            Else
+                MessageBox.Show("تم تسجيل بصمة", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+
+        End If
+  
+    End Sub
+
+    Private Sub SimpleButton8_Click(sender As Object, e As EventArgs) Handles SimpleButton8.Click
+        search_finger(1)
+    End Sub
+
+    Private Sub SimpleButton7_Click(sender As Object, e As EventArgs) Handles SimpleButton7.Click
+        search_finger(2)
+    End Sub
+
+    Private Sub SimpleButton6_Click(sender As Object, e As EventArgs) Handles SimpleButton6.Click
+        search_finger(3)
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        Try
+            System.IO.File.WriteAllText(Application.StartupPath & "/FingerPrint/server/customer_id.txt", "")
+        Catch ex As Exception
+        End Try
+        Dim proc As New System.Diagnostics.Process()
+        Try
+            proc = Process.Start(Application.StartupPath & "/FingerPrint/fingerPrint.exe", "تشغيل السيرفر")
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

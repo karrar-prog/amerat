@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports DevExpress.LookAndFeel
+Imports System.Text
 
 Public Class fm_add_patient
     Public re As String = from_main
@@ -140,7 +141,7 @@ Public Class fm_add_patient
         'End If
 
 
-      
+
 
 
 
@@ -332,7 +333,7 @@ Public Class fm_add_patient
 
         tb_phone.Text = ""
         tb_ref_by.Text = ""
-     
+
 
         tb_f6.Text = ""
         tb_f7.Text = ""
@@ -340,7 +341,7 @@ Public Class fm_add_patient
 
         tb_note.Text = ""
     End Sub
-  
+
 
     Private Sub tb_name_EditValueChanged(sender As Object, e As EventArgs) Handles tb_name.EditValueChanged
         tb_name.BackColor = Color.White
@@ -370,7 +371,7 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub finger_show()
-     
+
         If tb_id.Text.Trim = "" Then
             GroupControl6.Hide()
             GroupControl10.Hide()
@@ -642,7 +643,7 @@ Public Class fm_add_patient
                 If Not hasPermission(i_add_booking) Then
 
 
-                   
+
                     MessageBox.Show("ليس لديك صلاحية الاضافة", "مركز الصلاحيات")
                     finger_show()
                     saveOrAdd()
@@ -683,10 +684,10 @@ Public Class fm_add_patient
                 If p.id.ToString = tb_id.Text.Trim Then
 
 
-                 
+
 
                     update_patient()
-                 
+
                     If first_book = 1 Then
                         'اضافة حدث
                         Dim conent As String = "تم حجز الدار" & p.id & "  من  " & p.name & "- " & p.is_token & " الجديد " & tb_name.Text & "-" & cb_plan.Text
@@ -727,14 +728,14 @@ Public Class fm_add_patient
 
     Private Sub tb_f9_SelectedIndexChanged(sender As Object, e As EventArgs)
         tb_name.BackColor = Color.White
-      
+
     End Sub
 
     Private Sub nu_blok_num_KeyUp(sender As Object, e As KeyEventArgs) Handles nu_blok_num.KeyUp
         'is_checked = 0
     End Sub
 
-  
+
 
     Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles nu_blok_num.ValueChanged
         'tb_name.BackColor = Color.White
@@ -986,6 +987,16 @@ Public Class fm_add_patient
             tb_f10.Text = patient.f10
             cb_plan.Text = patient.is_token
             tb_name.BackColor = Color.White
+            If patient.finger_print.Trim = "" Then
+                l_finger.Text = "اضافة بصمة"
+            ElseIf patient.finger_print.Trim = "no" Then
+                l_finger.Text = "تعذر وجود بصمة"
+            Else
+                l_finger.Text = "تعديل البصمة"
+            End If
+
+
+
 
             If patient.is_token = s_not_booking Then
                 CheckEdit1.Checked = True
@@ -1040,7 +1051,7 @@ Public Class fm_add_patient
             CheckEdit1.Enabled = True
 
         End If
-    
+
 
     End Sub
 
@@ -1211,12 +1222,12 @@ Public Class fm_add_patient
     End Sub
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
-   
+
         'check_if_exist()
     End Sub
 
     Private Sub CheckEdit1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckEdit1.CheckedChanged
-  
+
         If CheckEdit1.Checked = True Then
             cb_plan.Text = s_not_booking
             GroupControl6.Hide()
@@ -1243,4 +1254,24 @@ Public Class fm_add_patient
         End If
     End Function
 
+
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        Try
+           
+
+            System.IO.File.WriteAllText(Application.StartupPath & "/FingerPrint/server/customer_id.txt", tb_id.Text)
+
+          
+      
+        Catch ex As Exception
+
+        End Try
+        Dim proc As New System.Diagnostics.Process()
+        Try
+            proc = Process.Start(Application.StartupPath & "/FingerPrint/fingerPrint.exe", "تشغيل السيرفر")
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class

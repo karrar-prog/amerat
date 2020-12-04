@@ -102,6 +102,9 @@ Partial Class fm_add_patient
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
         Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl12 = New DevExpress.XtraEditors.GroupControl()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.l_finger = New System.Windows.Forms.Label()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_phone.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,6 +153,9 @@ Partial Class fm_add_patient
         CType(Me.cb_plan.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl9.SuspendLayout()
+        CType(Me.GroupControl12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl12.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tb_phone
@@ -903,6 +909,7 @@ Partial Class fm_add_patient
         Me.GroupControl2.Appearance.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.GroupControl2.Appearance.Options.UseBackColor = True
         Me.GroupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.GroupControl2.Controls.Add(Me.GroupControl12)
         Me.GroupControl2.Controls.Add(Me.CheckEdit1)
         Me.GroupControl2.Controls.Add(Me.SimpleButton3)
         Me.GroupControl2.Controls.Add(Me.tb_id)
@@ -1078,6 +1085,36 @@ Partial Class fm_add_patient
         Me.GroupControl9.TabIndex = 272
         Me.GroupControl9.Text = "معلومات الدار"
         '
+        'GroupControl12
+        '
+        Me.GroupControl12.Controls.Add(Me.PictureBox8)
+        Me.GroupControl12.Controls.Add(Me.l_finger)
+        Me.GroupControl12.Location = New System.Drawing.Point(237, 579)
+        Me.GroupControl12.Name = "GroupControl12"
+        Me.GroupControl12.Size = New System.Drawing.Size(102, 94)
+        Me.GroupControl12.TabIndex = 291
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.IQTClinicSystem.My.Resources.Resources.fingerprint_512
+        Me.PictureBox8.Location = New System.Drawing.Point(18, 25)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(62, 62)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 254
+        Me.PictureBox8.TabStop = False
+        '
+        'l_finger
+        '
+        Me.l_finger.AutoSize = True
+        Me.l_finger.BackColor = System.Drawing.Color.Transparent
+        Me.l_finger.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.l_finger.Location = New System.Drawing.Point(27, 1)
+        Me.l_finger.Name = "l_finger"
+        Me.l_finger.Size = New System.Drawing.Size(45, 19)
+        Me.l_finger.TabIndex = 255
+        Me.l_finger.Text = "ألبصمة"
+        '
         'fm_add_patient
         '
         Me.Appearance.BackColor = System.Drawing.Color.LightSteelBlue
@@ -1153,6 +1190,10 @@ Partial Class fm_add_patient
         CType(Me.cb_plan.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl9.ResumeLayout(False)
+        CType(Me.GroupControl12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl12.ResumeLayout(False)
+        Me.GroupControl12.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1238,4 +1279,7 @@ Partial Class fm_add_patient
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents CheckEdit1 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents GroupControl12 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents l_finger As System.Windows.Forms.Label
 End Class

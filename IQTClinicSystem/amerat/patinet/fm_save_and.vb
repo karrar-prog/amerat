@@ -12,16 +12,16 @@
         save_contract()
 
         
-
+        If map Then
+            print_map(p, d)
+        End If
         If list Then
             print_list(p, d)
         End If
 
 
 
-        If map Then
-            print_map(p, d)
-        End If
+      
 
         If contract Then
             print_contract(p, d)
@@ -77,7 +77,7 @@
         f.user_block = " ( " & p.f1 & "." & p.f2 & " )"
         f.remaind = p.tb_l_5
         f.arrive = p.tb_2
-        f.user_name = " ( " & fm_add_other_required.tb_name.Text & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
+        f.user_name = fm_add_other_required.tb_name.Text & " )" & " بموجب الهوية المرقمة " & p.f6
         f.contract_date = p.register_date
         f.user_block_number = ""
         f.user_id_number = " ( " & p.f6 & " ) "
