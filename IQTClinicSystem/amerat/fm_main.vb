@@ -37,6 +37,9 @@ Public Class fm_main
     End Sub
 
     Private Sub fm_main_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Dim content = " تم اغلاق النظام وتسجيل الخروج من قبل : " & user.name
+        new_event2("تسجيل خروج", content, 0)
+
         If pc_type = "main" Then
             store_backup()
             send_to_drive("C:\wamp64\bin\mysql\mysql5.7.19\bin\mol_db_backup.sql")
@@ -617,8 +620,26 @@ Public Class fm_main
     Private Sub TileItem5_ItemClick_4(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem5.ItemClick
         If user.type = user_admin Then
             fm_statistics_money.Show()
+            'اضافة حدث
+            Dim conent As String = "تمت مشاهدة الاحصائيات من قبل " & user.name
+            new_event2("مشاهدة الاحصائيات", conent, 0)
 
         End If
 
+    End Sub
+
+    Private Sub BarHeaderItem8_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarHeaderItem8.ItemClick
+        If hasPermission(i_edit_customer) Then
+            Try
+                System.IO.File.WriteAllText(Application.StartupPath & "/FingerPrint/server/customer_id.txt", "")
+            Catch ex As Exception
+            End Try
+            Dim proc As New System.Diagnostics.Process()
+            Try
+                proc = Process.Start(Application.StartupPath & "/FingerPrint/fingerPrint.exe", "تشغيل السيرفر")
+            Catch ex As Exception
+
+            End Try
+        End If
     End Sub
 End Class

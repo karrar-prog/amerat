@@ -298,8 +298,14 @@ Partial Public Class fm_queue
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("patient_id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("amount").ToString)
-                td_date.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("date").ToString)
-                lv_queue.Items(i).SubItems.Add(td_date.Value.ToShortDateString)
+                Try
+                    td_date.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("queue_date").ToString)
+                    lv_queue.Items(i).SubItems.Add(td_date.Value.ToShortDateString)
+
+                Catch ex As Exception
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("queue_date").ToString)
+
+                End Try
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("state").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("id").ToString)
                 lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("recived_date").ToString)

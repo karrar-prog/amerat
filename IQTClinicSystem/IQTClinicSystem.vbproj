@@ -45,6 +45,9 @@
   <PropertyGroup>
     <StartupObject>IQTClinicSystem.My.MyApplication</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ameratICON.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge">
       <HintPath>..\..\..\..\قاعة\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
@@ -1802,6 +1805,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fingerprint-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ameratICON.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

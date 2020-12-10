@@ -12,6 +12,7 @@ Public Class fm_user
         '     DateTimePicker1.Value = DateTimePicker1.Value.AddDays(-7)
         formating()
         get_all()
+        GroupControl1.Visible = False
 
     End Sub
     Public Sub fill_li_menu_item(d As DataSet)
@@ -410,8 +411,13 @@ Public Class fm_user
             If li_user.SelectedItems.Item(0).SubItems(3).Text <> "1" Then
                 put_user_info(_i(li_user.SelectedItems.Item(0).Text))
             Else
-                MessageBox.Show("لايمكن تحرير معلومات المدير")
+                If li_user.SelectedItems.Item(0).Text = user.id.ToString Then
+                    put_user_info(_i(li_user.SelectedItems.Item(0).Text))
+                Else
+                    MessageBox.Show("لايمكن تحرير المعلومات")
 
+                End If
+               
             End If
 
         End If
@@ -529,14 +535,22 @@ Public Class fm_user
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.Checked = True Then
-            GroupControl1.Visible = True
 
+        If tb_id.Text = user.id.ToString Then
+
+            If CheckBox1.Checked = True Then
+                GroupControl1.Visible = True
+
+            Else
+                GroupControl1.Visible = False
+
+
+
+            End If
         Else
-            GroupControl1.Visible = False
 
 
-
+         
         End If
     End Sub
 

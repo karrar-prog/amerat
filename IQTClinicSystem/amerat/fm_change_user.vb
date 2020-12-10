@@ -9,14 +9,29 @@ Public Class fm_change_user
 1:
 
         Try
-
-
+            Dim s = user.name
+          
             user.secret_word = tb_secret_word.Text.Trim
             If user.isExsit() Then
+                If user.f1.Trim = "فعال" Then
 
-                Login()
+                    Login()
+                    Dim content = " تم خروج المستخدم : " & s & " ودخول المستخدم : " & user.name
+                    new_event2("تبديل الدخول", content, 0)
+
+                Else
+
+
+                    MessageBox.Show("تم تعطيل هذا الحساب مؤقتاً")
+                    fm_login.Close()
+
+                End If
+
+           
+
             Else
                 MessageBox.Show("الرمز خطأ")
+
                 tb_secret_word.BackColor = Color.LightPink
             End If
         Catch ex As MySqlException

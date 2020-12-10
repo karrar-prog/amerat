@@ -48,10 +48,6 @@ Partial Class fm_login
         CType(Me.tb_secret_word.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DefaultLookAndFeel1
-        '
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Blue"
-        '
         'RibbonPage2
         '
         Me.RibbonPage2.Name = "RibbonPage2"
@@ -202,7 +198,7 @@ Partial Class fm_login
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(26, 17)
         Me.Label2.TabIndex = 277
-        Me.Label2.Text = "3.1"
+        Me.Label2.Text = "4.3"
         '
         'SimpleButton1
         '

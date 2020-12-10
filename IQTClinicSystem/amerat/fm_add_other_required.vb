@@ -138,8 +138,7 @@ Public Class fm_add_other_required
                 Dim last_part_value As New Decimal
                 last_part_value = nu_last_part.Value
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
-                tb_l_5.Text = " الدفعة " & get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة " & " ( " & nu_last_present.Value.ToString & "%) من قيمة شراء الدار" &
-                tb_l_5.Text & " ( " & Format(last_part_value, "###,###,###,###,###") & " ) " & ToArabicLetter(nu_last_part.Value)
+                tb_l_5.Text = " الدفعة " & get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة " & " ( " & nu_last_present.Value.ToString & "%) من قيمة شراء الدار" & " البالغ" & " ( " & Format(last_part_value, "###,###,###,###,###") & " ) " & " ( " & ToArabicLetter(nu_last_part.Value) & " ) " & " تدفع قبل مدة ( شهر ) من استلام الدار ولفتره لاتزيد عن 30 شهراً من دفع المقدمة وقدرها "
 
                 Dim house_value As New Decimal
                 house_value = p.house_price

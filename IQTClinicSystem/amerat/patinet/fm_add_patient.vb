@@ -690,12 +690,12 @@ Public Class fm_add_patient
 
                     If first_book = 1 Then
                         'اضافة حدث
-                        Dim conent As String = "تم حجز الدار" & p.id & "  من  " & p.name & "- " & p.is_token & " الجديد " & tb_name.Text & "-" & cb_plan.Text
+                        Dim conent As String = "تم حجز الدار" & p.id & "  من  " & p.name & "- " & p.is_token & " الى " & tb_name.Text
                         new_event2("حجز دار", conent, 0)
 
                     Else
                         'اضافة حدث
-                        Dim conent As String = "تمت تعديل معلوات الدار" & p.id & "  من  " & p.name & "- " & p.is_token & " الجديد " & tb_name.Text & "-" & cb_plan.Text
+                        Dim conent As String = "تمت تعديل معلوات الدار" & p.id & "  من  " & p.name & "- " & p.is_token & " الجديد " & tb_name.Text
                         new_event2("تعديل معلومات دار", conent, 0)
 
                     End If

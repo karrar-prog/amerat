@@ -25,6 +25,11 @@ Partial Class fm_main
         Dim TileItemElement68 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement69 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement70 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement71 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement72 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame11 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement73 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement74 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement75 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement76 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement77 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
@@ -47,21 +52,6 @@ Partial Class fm_main
         Dim TileItemElement92 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement93 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement94 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement122 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement123 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame18 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement124 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement125 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement117 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement118 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement119 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement120 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement121 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement71 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement72 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame11 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement73 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement74 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement95 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement96 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement97 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
@@ -74,6 +64,13 @@ Partial Class fm_main
         Dim TileItemFrame15 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
         Dim TileItemElement103 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement104 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement105 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement106 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement107 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame16 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement108 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement109 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement110 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement111 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement112 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement113 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
@@ -81,6 +78,16 @@ Partial Class fm_main
         Dim TileItemElement114 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement115 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement116 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement117 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement118 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement119 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement120 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement121 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement122 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement123 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame18 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement124 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement125 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemElement126 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim TileItemFrame19 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
         Dim TileItemElement127 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
@@ -89,25 +96,22 @@ Partial Class fm_main
         Dim TileItemElement129 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fm_main))
         Dim TileItemElement130 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement105 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement106 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement107 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame16 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement108 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement109 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement110 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Me.TileControl1 = New DevExpress.XtraEditors.TileControl()
         Me.TileGroup2 = New DevExpress.XtraEditors.TileGroup()
         Me.TileItem1 = New DevExpress.XtraEditors.TileItem()
+        Me.TileItem6 = New DevExpress.XtraEditors.TileItem()
+        Me.TileGroup5 = New DevExpress.XtraEditors.TileGroup()
         Me.TileItem12 = New DevExpress.XtraEditors.TileItem()
         Me.TileItem11 = New DevExpress.XtraEditors.TileItem()
         Me.TileGroup3 = New DevExpress.XtraEditors.TileGroup()
-        Me.TileItem4 = New DevExpress.XtraEditors.TileItem()
-        Me.TileItem2 = New DevExpress.XtraEditors.TileItem()
-        Me.TileItem6 = New DevExpress.XtraEditors.TileItem()
         Me.TileItem7 = New DevExpress.XtraEditors.TileItem()
         Me.TileItem13 = New DevExpress.XtraEditors.TileItem()
+        Me.TileGroup7 = New DevExpress.XtraEditors.TileGroup()
+        Me.TileItem5 = New DevExpress.XtraEditors.TileItem()
         Me.TileItem3 = New DevExpress.XtraEditors.TileItem()
+        Me.TileGroup6 = New DevExpress.XtraEditors.TileGroup()
+        Me.TileItem2 = New DevExpress.XtraEditors.TileItem()
+        Me.TileItem4 = New DevExpress.XtraEditors.TileItem()
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.TileControl2 = New DevExpress.XtraEditors.TileControl()
         Me.TileGroup4 = New DevExpress.XtraEditors.TileGroup()
@@ -141,10 +145,7 @@ Partial Class fm_main
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.TileItem10 = New DevExpress.XtraEditors.TileItem()
-        Me.TileItem5 = New DevExpress.XtraEditors.TileItem()
-        Me.TileGroup5 = New DevExpress.XtraEditors.TileGroup()
-        Me.TileGroup7 = New DevExpress.XtraEditors.TileGroup()
-        Me.TileGroup6 = New DevExpress.XtraEditors.TileGroup()
+        Me.BarHeaderItem8 = New DevExpress.XtraBars.BarHeaderItem()
         CType(Me.RibbonControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -168,7 +169,6 @@ Partial Class fm_main
         Me.TileControl1.Location = New System.Drawing.Point(0, 27)
         Me.TileControl1.MaxId = 36
         Me.TileControl1.Name = "TileControl1"
-        Me.TileControl1.Position = 150
         Me.TileControl1.Size = New System.Drawing.Size(1376, 756)
         Me.TileControl1.TabIndex = 0
         '
@@ -285,6 +285,94 @@ Partial Class fm_main
         Me.TileItem1.Id = 14
         Me.TileItem1.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.TileItem1.Name = "TileItem1"
+        '
+        'TileItem6
+        '
+        Me.TileItem6.AppearanceItem.Normal.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TileItem6.AppearanceItem.Normal.Options.UseFont = True
+        TileItemElement71.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement71.Appearance.Hovered.Options.UseFont = True
+        TileItemElement71.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement71.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement71.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement71.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement71.Appearance.Normal.Options.UseFont = True
+        TileItemElement71.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement71.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement71.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement71.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement71.Appearance.Selected.Options.UseFont = True
+        TileItemElement71.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement71.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement71.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement71.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement71.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement71.MaxWidth = 185
+        TileItemElement71.Text = "اضافة دار جديد"
+        TileItemElement71.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement71.TextLocation = New System.Drawing.Point(89, 1)
+        TileItemElement72.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement72.Appearance.Hovered.Options.UseFont = True
+        TileItemElement72.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement72.Appearance.Normal.Options.UseFont = True
+        TileItemElement72.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement72.Appearance.Selected.Options.UseFont = True
+        TileItemElement72.Image = Global.IQTClinicSystem.My.Resources.Resources.add
+        TileItemElement72.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement72.ImageLocation = New System.Drawing.Point(6, 10)
+        TileItemElement72.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
+        TileItemElement72.ImageSize = New System.Drawing.Size(74, 74)
+        TileItemElement72.TextLocation = New System.Drawing.Point(1, 1)
+        Me.TileItem6.Elements.Add(TileItemElement71)
+        Me.TileItem6.Elements.Add(TileItemElement72)
+        TileItemFrame11.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        TileItemFrame11.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        TileItemFrame11.Appearance.Options.UseBackColor = True
+        TileItemElement73.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement73.Appearance.Hovered.Options.UseFont = True
+        TileItemElement73.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement73.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement73.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement73.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement73.Appearance.Normal.Options.UseFont = True
+        TileItemElement73.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement73.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement73.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement73.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement73.Appearance.Selected.Options.UseFont = True
+        TileItemElement73.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement73.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement73.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement73.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement73.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement73.MaxWidth = 185
+        TileItemElement73.Text = "اضافة دار جديد"
+        TileItemElement73.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement73.TextLocation = New System.Drawing.Point(89, 1)
+        TileItemElement74.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement74.Appearance.Hovered.Options.UseFont = True
+        TileItemElement74.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement74.Appearance.Normal.Options.UseFont = True
+        TileItemElement74.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement74.Appearance.Selected.Options.UseFont = True
+        TileItemElement74.Image = Global.IQTClinicSystem.My.Resources.Resources.add
+        TileItemElement74.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement74.ImageLocation = New System.Drawing.Point(6, 10)
+        TileItemElement74.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
+        TileItemElement74.ImageSize = New System.Drawing.Size(74, 74)
+        TileItemElement74.TextLocation = New System.Drawing.Point(1, 1)
+        TileItemFrame11.Elements.Add(TileItemElement73)
+        TileItemFrame11.Elements.Add(TileItemElement74)
+        Me.TileItem6.Frames.Add(TileItemFrame11)
+        Me.TileItem6.Id = 33
+        Me.TileItem6.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
+        Me.TileItem6.Name = "TileItem6"
+        '
+        'TileGroup5
+        '
+        Me.TileGroup5.Items.Add(Me.TileItem12)
+        Me.TileGroup5.Items.Add(Me.TileItem11)
+        Me.TileGroup5.Name = "TileGroup5"
         '
         'TileItem12
         '
@@ -725,272 +813,6 @@ Partial Class fm_main
         Me.TileGroup3.Items.Add(Me.TileItem13)
         Me.TileGroup3.Name = "TileGroup3"
         '
-        'TileItem4
-        '
-        TileItemElement122.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement122.Appearance.Hovered.Options.UseFont = True
-        TileItemElement122.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement122.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement122.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement122.Appearance.Normal.Options.UseFont = True
-        TileItemElement122.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement122.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement122.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement122.Appearance.Selected.Options.UseFont = True
-        TileItemElement122.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement122.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement122.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement122.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement122.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
-        TileItemElement122.Text = "الاموال الواردة والصادرة - مراقبة العمليات"
-        TileItemElement122.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement122.TextLocation = New System.Drawing.Point(5, 88)
-        TileItemElement123.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement123.Appearance.Hovered.Options.UseFont = True
-        TileItemElement123.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement123.Appearance.Normal.Options.UseFont = True
-        TileItemElement123.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement123.Appearance.Selected.Options.UseFont = True
-        TileItemElement123.Image = Global.IQTClinicSystem.My.Resources.Resources.e__30_
-        TileItemElement123.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement123.ImageLocation = New System.Drawing.Point(90, 0)
-        TileItemElement123.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement123.ImageSize = New System.Drawing.Size(288, 93)
-        TileItemElement123.TextLocation = New System.Drawing.Point(1, 1)
-        Me.TileItem4.Elements.Add(TileItemElement122)
-        Me.TileItem4.Elements.Add(TileItemElement123)
-        TileItemFrame18.Appearance.BackColor = System.Drawing.Color.DodgerBlue
-        TileItemFrame18.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        TileItemFrame18.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        TileItemFrame18.Appearance.Options.UseBackColor = True
-        TileItemElement124.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement124.Appearance.Hovered.Options.UseFont = True
-        TileItemElement124.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement124.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement124.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement124.Appearance.Normal.Options.UseFont = True
-        TileItemElement124.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement124.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement124.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement124.Appearance.Selected.Options.UseFont = True
-        TileItemElement124.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement124.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement124.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement124.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement124.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
-        TileItemElement124.Text = "الاموال الواردة والصادرة - مراقبة العمليات"
-        TileItemElement124.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement124.TextLocation = New System.Drawing.Point(5, 88)
-        TileItemElement125.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement125.Appearance.Hovered.Options.UseFont = True
-        TileItemElement125.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement125.Appearance.Normal.Options.UseFont = True
-        TileItemElement125.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement125.Appearance.Selected.Options.UseFont = True
-        TileItemElement125.Image = Global.IQTClinicSystem.My.Resources.Resources.e__30_
-        TileItemElement125.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement125.ImageLocation = New System.Drawing.Point(90, 0)
-        TileItemElement125.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement125.ImageSize = New System.Drawing.Size(288, 93)
-        TileItemElement125.TextLocation = New System.Drawing.Point(1, 1)
-        TileItemFrame18.Elements.Add(TileItemElement124)
-        TileItemFrame18.Elements.Add(TileItemElement125)
-        Me.TileItem4.Frames.Add(TileItemFrame18)
-        Me.TileItem4.Id = 19
-        Me.TileItem4.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
-        Me.TileItem4.Name = "TileItem4"
-        '
-        'TileItem2
-        '
-        Me.TileItem2.AppearanceItem.Normal.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.TileItem2.AppearanceItem.Normal.Options.UseBackColor = True
-        TileItemElement117.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement117.Appearance.Hovered.Options.UseFont = True
-        TileItemElement117.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement117.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement117.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement117.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement117.Appearance.Normal.Options.UseFont = True
-        TileItemElement117.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement117.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement117.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement117.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement117.Appearance.Selected.Options.UseFont = True
-        TileItemElement117.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement117.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement117.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement117.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement117.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement117.MaxWidth = 185
-        TileItemElement117.Text = "الادارة"
-        TileItemElement117.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement117.TextLocation = New System.Drawing.Point(89, 1)
-        TileItemElement118.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement118.Appearance.Hovered.Options.UseFont = True
-        TileItemElement118.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement118.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement118.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement118.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement118.Appearance.Normal.Options.UseFont = True
-        TileItemElement118.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement118.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement118.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement118.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement118.Appearance.Selected.Options.UseFont = True
-        TileItemElement118.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement118.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement118.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement118.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement118.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement118.MaxWidth = 185
-        TileItemElement118.Text = "الدخل , حساب العمال"
-        TileItemElement118.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement118.TextLocation = New System.Drawing.Point(89, 32)
-        TileItemElement119.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement119.Appearance.Hovered.Options.UseFont = True
-        TileItemElement119.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement119.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement119.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement119.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement119.Appearance.Normal.Options.UseFont = True
-        TileItemElement119.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement119.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement119.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement119.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement119.Appearance.Selected.Options.UseFont = True
-        TileItemElement119.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement119.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement119.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement119.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement119.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement119.MaxWidth = 185
-        TileItemElement119.Text = "الصلاحيات"
-        TileItemElement119.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft
-        TileItemElement119.TextLocation = New System.Drawing.Point(89, 51)
-        TileItemElement120.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement120.Appearance.Hovered.Options.UseFont = True
-        TileItemElement120.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement120.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement120.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement120.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement120.Appearance.Normal.Options.UseFont = True
-        TileItemElement120.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement120.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement120.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement120.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement120.Appearance.Selected.Options.UseFont = True
-        TileItemElement120.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement120.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement120.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement120.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement120.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement120.MaxWidth = 185
-        TileItemElement120.Text = "رموز الوصول"
-        TileItemElement120.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement120.TextLocation = New System.Drawing.Point(89, 70)
-        TileItemElement121.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement121.Appearance.Hovered.Options.UseFont = True
-        TileItemElement121.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement121.Appearance.Normal.Options.UseFont = True
-        TileItemElement121.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement121.Appearance.Selected.Options.UseFont = True
-        TileItemElement121.Image = Global.IQTClinicSystem.My.Resources.Resources.e__96_
-        TileItemElement121.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement121.ImageLocation = New System.Drawing.Point(6, 10)
-        TileItemElement121.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
-        TileItemElement121.ImageSize = New System.Drawing.Size(74, 74)
-        TileItemElement121.TextLocation = New System.Drawing.Point(1, 1)
-        Me.TileItem2.Elements.Add(TileItemElement117)
-        Me.TileItem2.Elements.Add(TileItemElement118)
-        Me.TileItem2.Elements.Add(TileItemElement119)
-        Me.TileItem2.Elements.Add(TileItemElement120)
-        Me.TileItem2.Elements.Add(TileItemElement121)
-        Me.TileItem2.Id = 17
-        Me.TileItem2.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
-        Me.TileItem2.Name = "TileItem2"
-        '
-        'TileItem6
-        '
-        Me.TileItem6.AppearanceItem.Normal.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TileItem6.AppearanceItem.Normal.Options.UseFont = True
-        TileItemElement71.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement71.Appearance.Hovered.Options.UseFont = True
-        TileItemElement71.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement71.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement71.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement71.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement71.Appearance.Normal.Options.UseFont = True
-        TileItemElement71.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement71.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement71.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement71.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement71.Appearance.Selected.Options.UseFont = True
-        TileItemElement71.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement71.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement71.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement71.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement71.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement71.MaxWidth = 185
-        TileItemElement71.Text = "اضافة دار جديد"
-        TileItemElement71.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement71.TextLocation = New System.Drawing.Point(89, 1)
-        TileItemElement72.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement72.Appearance.Hovered.Options.UseFont = True
-        TileItemElement72.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement72.Appearance.Normal.Options.UseFont = True
-        TileItemElement72.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement72.Appearance.Selected.Options.UseFont = True
-        TileItemElement72.Image = Global.IQTClinicSystem.My.Resources.Resources.add
-        TileItemElement72.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement72.ImageLocation = New System.Drawing.Point(6, 10)
-        TileItemElement72.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
-        TileItemElement72.ImageSize = New System.Drawing.Size(74, 74)
-        TileItemElement72.TextLocation = New System.Drawing.Point(1, 1)
-        Me.TileItem6.Elements.Add(TileItemElement71)
-        Me.TileItem6.Elements.Add(TileItemElement72)
-        TileItemFrame11.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        TileItemFrame11.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        TileItemFrame11.Appearance.Options.UseBackColor = True
-        TileItemElement73.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement73.Appearance.Hovered.Options.UseFont = True
-        TileItemElement73.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement73.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement73.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement73.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement73.Appearance.Normal.Options.UseFont = True
-        TileItemElement73.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement73.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement73.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement73.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement73.Appearance.Selected.Options.UseFont = True
-        TileItemElement73.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement73.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement73.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement73.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement73.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement73.MaxWidth = 185
-        TileItemElement73.Text = "اضافة دار جديد"
-        TileItemElement73.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement73.TextLocation = New System.Drawing.Point(89, 1)
-        TileItemElement74.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement74.Appearance.Hovered.Options.UseFont = True
-        TileItemElement74.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement74.Appearance.Normal.Options.UseFont = True
-        TileItemElement74.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement74.Appearance.Selected.Options.UseFont = True
-        TileItemElement74.Image = Global.IQTClinicSystem.My.Resources.Resources.add
-        TileItemElement74.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement74.ImageLocation = New System.Drawing.Point(6, 10)
-        TileItemElement74.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
-        TileItemElement74.ImageSize = New System.Drawing.Size(74, 74)
-        TileItemElement74.TextLocation = New System.Drawing.Point(1, 1)
-        TileItemFrame11.Elements.Add(TileItemElement73)
-        TileItemFrame11.Elements.Add(TileItemElement74)
-        Me.TileItem6.Frames.Add(TileItemFrame11)
-        Me.TileItem6.Id = 33
-        Me.TileItem6.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
-        Me.TileItem6.Name = "TileItem6"
-        '
         'TileItem7
         '
         TileItemElement95.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
@@ -1198,6 +1020,136 @@ Partial Class fm_main
         Me.TileItem13.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.TileItem13.Name = "TileItem13"
         '
+        'TileGroup7
+        '
+        Me.TileGroup7.Items.Add(Me.TileItem5)
+        Me.TileGroup7.Items.Add(Me.TileItem3)
+        Me.TileGroup7.Name = "TileGroup7"
+        '
+        'TileItem5
+        '
+        TileItemElement105.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement105.Appearance.Hovered.Options.UseFont = True
+        TileItemElement105.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement105.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement105.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement105.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement105.Appearance.Normal.Options.UseFont = True
+        TileItemElement105.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement105.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement105.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement105.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement105.Appearance.Selected.Options.UseFont = True
+        TileItemElement105.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement105.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement105.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement105.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement105.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement105.MaxWidth = 185
+        TileItemElement105.Text = "احصائات"
+        TileItemElement105.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement105.TextLocation = New System.Drawing.Point(89, 1)
+        TileItemElement106.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement106.Appearance.Hovered.Options.UseFont = True
+        TileItemElement106.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement106.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement106.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement106.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement106.Appearance.Normal.Options.UseFont = True
+        TileItemElement106.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement106.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement106.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement106.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement106.Appearance.Selected.Options.UseFont = True
+        TileItemElement106.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement106.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement106.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement106.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement106.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement106.MaxWidth = 185
+        TileItemElement106.Text = ""
+        TileItemElement106.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement106.TextLocation = New System.Drawing.Point(89, 32)
+        TileItemElement107.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement107.Appearance.Hovered.Options.UseFont = True
+        TileItemElement107.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement107.Appearance.Normal.Options.UseFont = True
+        TileItemElement107.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement107.Appearance.Selected.Options.UseFont = True
+        TileItemElement107.Image = Global.IQTClinicSystem.My.Resources.Resources.e__82_
+        TileItemElement107.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement107.ImageLocation = New System.Drawing.Point(6, 10)
+        TileItemElement107.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
+        TileItemElement107.ImageSize = New System.Drawing.Size(74, 74)
+        TileItemElement107.TextLocation = New System.Drawing.Point(1, 1)
+        Me.TileItem5.Elements.Add(TileItemElement105)
+        Me.TileItem5.Elements.Add(TileItemElement106)
+        Me.TileItem5.Elements.Add(TileItemElement107)
+        TileItemFrame16.Appearance.BackColor = System.Drawing.Color.HotPink
+        TileItemFrame16.Appearance.BackColor2 = System.Drawing.Color.Orchid
+        TileItemFrame16.Appearance.Options.UseBackColor = True
+        TileItemElement108.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement108.Appearance.Hovered.Options.UseFont = True
+        TileItemElement108.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement108.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement108.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement108.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement108.Appearance.Normal.Options.UseFont = True
+        TileItemElement108.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement108.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement108.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement108.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement108.Appearance.Selected.Options.UseFont = True
+        TileItemElement108.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement108.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement108.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement108.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement108.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement108.MaxWidth = 185
+        TileItemElement108.Text = "احصائات"
+        TileItemElement108.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement108.TextLocation = New System.Drawing.Point(89, 1)
+        TileItemElement109.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement109.Appearance.Hovered.Options.UseFont = True
+        TileItemElement109.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement109.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement109.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement109.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement109.Appearance.Normal.Options.UseFont = True
+        TileItemElement109.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement109.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement109.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement109.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement109.Appearance.Selected.Options.UseFont = True
+        TileItemElement109.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement109.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement109.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement109.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement109.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement109.MaxWidth = 185
+        TileItemElement109.Text = ""
+        TileItemElement109.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement109.TextLocation = New System.Drawing.Point(89, 32)
+        TileItemElement110.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement110.Appearance.Hovered.Options.UseFont = True
+        TileItemElement110.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement110.Appearance.Normal.Options.UseFont = True
+        TileItemElement110.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement110.Appearance.Selected.Options.UseFont = True
+        TileItemElement110.Image = Global.IQTClinicSystem.My.Resources.Resources.e__82_
+        TileItemElement110.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement110.ImageLocation = New System.Drawing.Point(6, 10)
+        TileItemElement110.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
+        TileItemElement110.ImageSize = New System.Drawing.Size(74, 74)
+        TileItemElement110.TextLocation = New System.Drawing.Point(1, 1)
+        TileItemFrame16.Elements.Add(TileItemElement108)
+        TileItemFrame16.Elements.Add(TileItemElement109)
+        TileItemFrame16.Elements.Add(TileItemElement110)
+        Me.TileItem5.Frames.Add(TileItemFrame16)
+        Me.TileItem5.Id = 35
+        Me.TileItem5.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
+        Me.TileItem5.Name = "TileItem5"
+        '
         'TileItem3
         '
         TileItemElement111.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
@@ -1324,6 +1276,196 @@ Partial Class fm_main
         Me.TileItem3.Id = 18
         Me.TileItem3.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.TileItem3.Name = "TileItem3"
+        '
+        'TileGroup6
+        '
+        Me.TileGroup6.Items.Add(Me.TileItem2)
+        Me.TileGroup6.Items.Add(Me.TileItem4)
+        Me.TileGroup6.Name = "TileGroup6"
+        '
+        'TileItem2
+        '
+        Me.TileItem2.AppearanceItem.Normal.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.TileItem2.AppearanceItem.Normal.Options.UseBackColor = True
+        TileItemElement117.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement117.Appearance.Hovered.Options.UseFont = True
+        TileItemElement117.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement117.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement117.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement117.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement117.Appearance.Normal.Options.UseFont = True
+        TileItemElement117.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement117.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement117.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement117.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
+        TileItemElement117.Appearance.Selected.Options.UseFont = True
+        TileItemElement117.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement117.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement117.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement117.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement117.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement117.MaxWidth = 185
+        TileItemElement117.Text = "الادارة"
+        TileItemElement117.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement117.TextLocation = New System.Drawing.Point(89, 1)
+        TileItemElement118.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement118.Appearance.Hovered.Options.UseFont = True
+        TileItemElement118.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement118.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement118.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement118.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement118.Appearance.Normal.Options.UseFont = True
+        TileItemElement118.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement118.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement118.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement118.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement118.Appearance.Selected.Options.UseFont = True
+        TileItemElement118.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement118.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement118.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement118.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement118.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement118.MaxWidth = 185
+        TileItemElement118.Text = "الدخل , حساب العمال"
+        TileItemElement118.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement118.TextLocation = New System.Drawing.Point(89, 32)
+        TileItemElement119.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement119.Appearance.Hovered.Options.UseFont = True
+        TileItemElement119.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement119.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement119.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement119.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement119.Appearance.Normal.Options.UseFont = True
+        TileItemElement119.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement119.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement119.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement119.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement119.Appearance.Selected.Options.UseFont = True
+        TileItemElement119.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement119.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement119.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement119.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement119.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement119.MaxWidth = 185
+        TileItemElement119.Text = "الصلاحيات"
+        TileItemElement119.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft
+        TileItemElement119.TextLocation = New System.Drawing.Point(89, 51)
+        TileItemElement120.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement120.Appearance.Hovered.Options.UseFont = True
+        TileItemElement120.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement120.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement120.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement120.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement120.Appearance.Normal.Options.UseFont = True
+        TileItemElement120.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement120.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement120.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement120.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement120.Appearance.Selected.Options.UseFont = True
+        TileItemElement120.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement120.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        TileItemElement120.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        TileItemElement120.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement120.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement120.MaxWidth = 185
+        TileItemElement120.Text = "رموز الوصول"
+        TileItemElement120.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement120.TextLocation = New System.Drawing.Point(89, 70)
+        TileItemElement121.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement121.Appearance.Hovered.Options.UseFont = True
+        TileItemElement121.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement121.Appearance.Normal.Options.UseFont = True
+        TileItemElement121.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement121.Appearance.Selected.Options.UseFont = True
+        TileItemElement121.Image = Global.IQTClinicSystem.My.Resources.Resources.e__96_
+        TileItemElement121.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement121.ImageLocation = New System.Drawing.Point(6, 10)
+        TileItemElement121.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
+        TileItemElement121.ImageSize = New System.Drawing.Size(74, 74)
+        TileItemElement121.TextLocation = New System.Drawing.Point(1, 1)
+        Me.TileItem2.Elements.Add(TileItemElement117)
+        Me.TileItem2.Elements.Add(TileItemElement118)
+        Me.TileItem2.Elements.Add(TileItemElement119)
+        Me.TileItem2.Elements.Add(TileItemElement120)
+        Me.TileItem2.Elements.Add(TileItemElement121)
+        Me.TileItem2.Id = 17
+        Me.TileItem2.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
+        Me.TileItem2.Name = "TileItem2"
+        '
+        'TileItem4
+        '
+        TileItemElement122.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement122.Appearance.Hovered.Options.UseFont = True
+        TileItemElement122.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement122.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement122.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement122.Appearance.Normal.Options.UseFont = True
+        TileItemElement122.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement122.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement122.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement122.Appearance.Selected.Options.UseFont = True
+        TileItemElement122.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement122.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement122.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement122.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement122.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
+        TileItemElement122.Text = "الاموال الواردة والصادرة - مراقبة العمليات"
+        TileItemElement122.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement122.TextLocation = New System.Drawing.Point(5, 88)
+        TileItemElement123.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement123.Appearance.Hovered.Options.UseFont = True
+        TileItemElement123.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement123.Appearance.Normal.Options.UseFont = True
+        TileItemElement123.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement123.Appearance.Selected.Options.UseFont = True
+        TileItemElement123.Image = Global.IQTClinicSystem.My.Resources.Resources.e__30_
+        TileItemElement123.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement123.ImageLocation = New System.Drawing.Point(90, 0)
+        TileItemElement123.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement123.ImageSize = New System.Drawing.Size(288, 93)
+        TileItemElement123.TextLocation = New System.Drawing.Point(1, 1)
+        Me.TileItem4.Elements.Add(TileItemElement122)
+        Me.TileItem4.Elements.Add(TileItemElement123)
+        TileItemFrame18.Appearance.BackColor = System.Drawing.Color.DodgerBlue
+        TileItemFrame18.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        TileItemFrame18.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
+        TileItemFrame18.Appearance.Options.UseBackColor = True
+        TileItemElement124.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement124.Appearance.Hovered.Options.UseFont = True
+        TileItemElement124.Appearance.Hovered.Options.UseTextOptions = True
+        TileItemElement124.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement124.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement124.Appearance.Normal.Options.UseFont = True
+        TileItemElement124.Appearance.Normal.Options.UseTextOptions = True
+        TileItemElement124.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement124.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        TileItemElement124.Appearance.Selected.Options.UseFont = True
+        TileItemElement124.Appearance.Selected.Options.UseTextOptions = True
+        TileItemElement124.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        TileItemElement124.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement124.ImageLocation = New System.Drawing.Point(1, 1)
+        TileItemElement124.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
+        TileItemElement124.Text = "الاموال الواردة والصادرة - مراقبة العمليات"
+        TileItemElement124.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement124.TextLocation = New System.Drawing.Point(5, 88)
+        TileItemElement125.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement125.Appearance.Hovered.Options.UseFont = True
+        TileItemElement125.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement125.Appearance.Normal.Options.UseFont = True
+        TileItemElement125.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
+        TileItemElement125.Appearance.Selected.Options.UseFont = True
+        TileItemElement125.Image = Global.IQTClinicSystem.My.Resources.Resources.e__30_
+        TileItemElement125.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileItemElement125.ImageLocation = New System.Drawing.Point(90, 0)
+        TileItemElement125.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement125.ImageSize = New System.Drawing.Size(288, 93)
+        TileItemElement125.TextLocation = New System.Drawing.Point(1, 1)
+        TileItemFrame18.Elements.Add(TileItemElement124)
+        TileItemFrame18.Elements.Add(TileItemElement125)
+        Me.TileItem4.Frames.Add(TileItemFrame18)
+        Me.TileItem4.Id = 19
+        Me.TileItem4.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
+        Me.TileItem4.Name = "TileItem4"
         '
         'RibbonPage2
         '
@@ -1580,9 +1722,9 @@ Partial Class fm_main
         Me.RibbonControl2.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl2.ExpandCollapseItem.Id = 0
         Me.RibbonControl2.ForeColor = System.Drawing.Color.Black
-        Me.RibbonControl2.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl2.ExpandCollapseItem, Me.tb_user, Me.BarButtonItem4, Me.BarHeaderItem2, Me.BarHeaderItem3, Me.BarButtonItem5, Me.SkinRibbonGalleryBarItem2, Me.btn_main, Me.BarHeaderItem4, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem11, Me.BarButtonItem12, Me.BarButtonItem13, Me.BarButtonItem1, Me.BarHeaderItem1, Me.BarHeaderItem5, Me.BarHeaderItem6, Me.BarStaticItem1, Me.BarHeaderItem7})
+        Me.RibbonControl2.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl2.ExpandCollapseItem, Me.tb_user, Me.BarButtonItem4, Me.BarHeaderItem2, Me.BarHeaderItem3, Me.BarButtonItem5, Me.SkinRibbonGalleryBarItem2, Me.btn_main, Me.BarHeaderItem4, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem11, Me.BarButtonItem12, Me.BarButtonItem13, Me.BarButtonItem1, Me.BarHeaderItem1, Me.BarHeaderItem5, Me.BarHeaderItem6, Me.BarStaticItem1, Me.BarHeaderItem7, Me.BarHeaderItem8})
         Me.RibbonControl2.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl2.MaxItemId = 24
+        Me.RibbonControl2.MaxItemId = 25
         Me.RibbonControl2.Name = "RibbonControl2"
         Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.tb_user)
         Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.BarHeaderItem1)
@@ -1590,6 +1732,7 @@ Partial Class fm_main
         Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.BarHeaderItem6)
         Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.BarStaticItem1)
         Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.BarHeaderItem7)
+        Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.BarHeaderItem8)
         Me.RibbonControl2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010
         Me.RibbonControl2.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl2.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.[False]
@@ -1661,147 +1804,12 @@ Partial Class fm_main
         Me.TileItem10.ItemSize = DevExpress.XtraEditors.TileItemSize.Small
         Me.TileItem10.Name = "TileItem10"
         '
-        'TileItem5
+        'BarHeaderItem8
         '
-        TileItemElement105.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement105.Appearance.Hovered.Options.UseFont = True
-        TileItemElement105.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement105.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement105.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement105.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement105.Appearance.Normal.Options.UseFont = True
-        TileItemElement105.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement105.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement105.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement105.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement105.Appearance.Selected.Options.UseFont = True
-        TileItemElement105.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement105.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement105.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement105.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement105.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement105.MaxWidth = 185
-        TileItemElement105.Text = "احصائيات"
-        TileItemElement105.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement105.TextLocation = New System.Drawing.Point(89, 1)
-        TileItemElement106.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement106.Appearance.Hovered.Options.UseFont = True
-        TileItemElement106.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement106.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement106.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement106.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement106.Appearance.Normal.Options.UseFont = True
-        TileItemElement106.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement106.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement106.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement106.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement106.Appearance.Selected.Options.UseFont = True
-        TileItemElement106.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement106.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement106.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement106.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement106.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement106.MaxWidth = 185
-        TileItemElement106.Text = ""
-        TileItemElement106.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement106.TextLocation = New System.Drawing.Point(89, 32)
-        TileItemElement107.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement107.Appearance.Hovered.Options.UseFont = True
-        TileItemElement107.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement107.Appearance.Normal.Options.UseFont = True
-        TileItemElement107.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement107.Appearance.Selected.Options.UseFont = True
-        TileItemElement107.Image = Global.IQTClinicSystem.My.Resources.Resources.e__82_
-        TileItemElement107.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement107.ImageLocation = New System.Drawing.Point(6, 10)
-        TileItemElement107.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
-        TileItemElement107.ImageSize = New System.Drawing.Size(74, 74)
-        TileItemElement107.TextLocation = New System.Drawing.Point(1, 1)
-        Me.TileItem5.Elements.Add(TileItemElement105)
-        Me.TileItem5.Elements.Add(TileItemElement106)
-        Me.TileItem5.Elements.Add(TileItemElement107)
-        TileItemFrame16.Appearance.BackColor = System.Drawing.Color.HotPink
-        TileItemFrame16.Appearance.BackColor2 = System.Drawing.Color.Orchid
-        TileItemFrame16.Appearance.Options.UseBackColor = True
-        TileItemElement108.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement108.Appearance.Hovered.Options.UseFont = True
-        TileItemElement108.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement108.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement108.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement108.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement108.Appearance.Normal.Options.UseFont = True
-        TileItemElement108.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement108.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement108.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement108.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI Light", 19.83333!)
-        TileItemElement108.Appearance.Selected.Options.UseFont = True
-        TileItemElement108.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement108.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement108.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        TileItemElement108.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement108.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement108.MaxWidth = 185
-        TileItemElement108.Text = "احصائات"
-        TileItemElement108.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement108.TextLocation = New System.Drawing.Point(89, 1)
-        TileItemElement109.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement109.Appearance.Hovered.Options.UseFont = True
-        TileItemElement109.Appearance.Hovered.Options.UseTextOptions = True
-        TileItemElement109.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement109.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement109.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement109.Appearance.Normal.Options.UseFont = True
-        TileItemElement109.Appearance.Normal.Options.UseTextOptions = True
-        TileItemElement109.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement109.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement109.Appearance.Selected.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        TileItemElement109.Appearance.Selected.Options.UseFont = True
-        TileItemElement109.Appearance.Selected.Options.UseTextOptions = True
-        TileItemElement109.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-        TileItemElement109.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-        TileItemElement109.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement109.ImageLocation = New System.Drawing.Point(1, 1)
-        TileItemElement109.MaxWidth = 185
-        TileItemElement109.Text = ""
-        TileItemElement109.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement109.TextLocation = New System.Drawing.Point(89, 32)
-        TileItemElement110.Appearance.Hovered.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement110.Appearance.Hovered.Options.UseFont = True
-        TileItemElement110.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement110.Appearance.Normal.Options.UseFont = True
-        TileItemElement110.Appearance.Selected.Font = New System.Drawing.Font("Tahoma", 9.333333!)
-        TileItemElement110.Appearance.Selected.Options.UseFont = True
-        TileItemElement110.Image = Global.IQTClinicSystem.My.Resources.Resources.e__82_
-        TileItemElement110.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileItemElement110.ImageLocation = New System.Drawing.Point(6, 10)
-        TileItemElement110.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
-        TileItemElement110.ImageSize = New System.Drawing.Size(74, 74)
-        TileItemElement110.TextLocation = New System.Drawing.Point(1, 1)
-        TileItemFrame16.Elements.Add(TileItemElement108)
-        TileItemFrame16.Elements.Add(TileItemElement109)
-        TileItemFrame16.Elements.Add(TileItemElement110)
-        Me.TileItem5.Frames.Add(TileItemFrame16)
-        Me.TileItem5.Id = 35
-        Me.TileItem5.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
-        Me.TileItem5.Name = "TileItem5"
-        '
-        'TileGroup5
-        '
-        Me.TileGroup5.Items.Add(Me.TileItem12)
-        Me.TileGroup5.Items.Add(Me.TileItem11)
-        Me.TileGroup5.Name = "TileGroup5"
-        '
-        'TileGroup7
-        '
-        Me.TileGroup7.Items.Add(Me.TileItem5)
-        Me.TileGroup7.Items.Add(Me.TileItem3)
-        Me.TileGroup7.Name = "TileGroup7"
-        '
-        'TileGroup6
-        '
-        Me.TileGroup6.Items.Add(Me.TileItem2)
-        Me.TileGroup6.Items.Add(Me.TileItem4)
-        Me.TileGroup6.Name = "TileGroup6"
+        Me.BarHeaderItem8.Caption = "البصمة"
+        Me.BarHeaderItem8.Id = 24
+        Me.BarHeaderItem8.ImageOptions.Image = Global.IQTClinicSystem.My.Resources.Resources.fingerprint_512
+        Me.BarHeaderItem8.Name = "BarHeaderItem8"
         '
         'fm_main
         '
@@ -1873,4 +1881,5 @@ Partial Class fm_main
     Friend WithEvents TileGroup5 As DevExpress.XtraEditors.TileGroup
     Friend WithEvents TileGroup7 As DevExpress.XtraEditors.TileGroup
     Friend WithEvents TileGroup6 As DevExpress.XtraEditors.TileGroup
+    Friend WithEvents BarHeaderItem8 As DevExpress.XtraBars.BarHeaderItem
 End Class

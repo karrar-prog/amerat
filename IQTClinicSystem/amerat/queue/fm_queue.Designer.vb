@@ -72,9 +72,11 @@
         Me.Gridnote = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.Gridf1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.time = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.f3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
-        Me.f3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.ApplicationMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,7 +166,7 @@
         '
         Me.dt_queue.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dt_queue.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dt_queue.Location = New System.Drawing.Point(781, 22)
+        Me.dt_queue.Location = New System.Drawing.Point(760, 22)
         Me.dt_queue.Name = "dt_queue"
         Me.dt_queue.RightToLeftLayout = True
         Me.dt_queue.Size = New System.Drawing.Size(127, 29)
@@ -270,6 +272,8 @@
         '
         'XtraTabPage2
         '
+        Me.XtraTabPage2.Controls.Add(Me.Label4)
+        Me.XtraTabPage2.Controls.Add(Me.Label3)
         Me.XtraTabPage2.Controls.Add(Me.Label2)
         Me.XtraTabPage2.Controls.Add(Me.Label1)
         Me.XtraTabPage2.Controls.Add(Me.DateTimePicker1)
@@ -476,6 +480,14 @@
         Me.time.Visible = True
         Me.time.VisibleIndex = 11
         '
+        'f3
+        '
+        Me.f3.Caption = "نوع الفيشة"
+        Me.f3.FieldName = "f3"
+        Me.f3.Name = "f3"
+        Me.f3.Visible = True
+        Me.f3.VisibleIndex = 12
+        '
         'GroupControl2
         '
         Me.GroupControl2.Appearance.BackColor = System.Drawing.Color.Transparent
@@ -498,13 +510,25 @@
         Me.GroupControl1.TabIndex = 277
         Me.GroupControl1.Text = "في هذا التأريخ"
         '
-        'f3
+        'Label3
         '
-        Me.f3.Caption = "نوع الفيشة"
-        Me.f3.FieldName = "f3"
-        Me.f3.Name = "f3"
-        Me.f3.Visible = True
-        Me.f3.VisibleIndex = 12
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(782, 52)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(80, 15)
+        Me.Label3.TabIndex = 281
+        Me.Label3.Text = "فييش هذا التأريخ"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(624, 52)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(97, 15)
+        Me.Label4.TabIndex = 282
+        Me.Label4.Text = "فييش قبل هذا التأريخ"
         '
         'fm_queue
         '
@@ -588,6 +612,8 @@ End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents time As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents f3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 
 #End Region
 

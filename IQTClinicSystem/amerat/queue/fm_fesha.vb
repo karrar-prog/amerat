@@ -34,6 +34,7 @@
                 tb_amount_text.Text = fesha.amount_text
                 tb_number.Text = fesha.booking_number.ToString
                 Dim p As New Patient(fesha.patient_id)
+
                 tb_patient_id.Text = p.id.ToString
                 tb_patient_name.Text = p.name
                 If fesha.dept_id = 0 Then
@@ -42,6 +43,12 @@
                     tb3.Text = p.first_push_amount.ToString
                     tb4.Text = p.first_push_amount_arrived.ToString
                     tb5.Text = "الاولى"
+
+                    'فحص الفيشة خدمة مؤقته
+                    p.code = "تم الفحص"
+                    p.set_virfied_fesha()
+
+
                 Else
                     Dim dept As New Dept(fesha.dept_id)
                     tb1.Text = dept.id.ToString

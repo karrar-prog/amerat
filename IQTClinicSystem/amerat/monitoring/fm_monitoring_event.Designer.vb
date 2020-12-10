@@ -232,6 +232,8 @@ Partial Class fm_monitoring_event
         'coldate
         '
         Me.coldate.Caption = "التأريخ"
+        Me.coldate.DisplayFormat.FormatString = "yyyy-MM-dd   HH:mm:ss"
+        Me.coldate.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.coldate.FieldName = "date"
         Me.coldate.Name = "coldate"
         Me.coldate.Visible = True

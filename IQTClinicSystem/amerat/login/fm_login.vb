@@ -138,14 +138,29 @@ Public Class fm_login
         My.Settings.Skin = UserLookAndFeel.Default.SkinName
         My.Settings.Save()
         Try
+         
             'ProgressPanel1.Show()
             tb_secret_word.Hide()
             user.secret_word = tb_secret_word.Text.Trim
             If user.isExsit() Then
-                get_info()
+                'get_info()
+                If user.f1.Trim = "فعال" Then
 
-                Login()
+                    Login()
+                    Dim content = " تم تسجيل دخول من قبل : " & user.name
+                    new_event2("تسجيل دخول", content, 0)
+
+                Else
+                   
+                    MessageBox.Show("تم تعطيل هذا الحساب مؤقتاً")
+                    Me.Close()
+
+                End If
+
             Else
+                Dim content = " تم محاولة الدخول برمز خاطئ : الرمز : " & tb_secret_word.Text
+                new_event2("تسجيل دخول برمز خاطئ", content, 0)
+
                 tb_secret_word.Show()
                 'ProgressPanel1.Hide()
                 tb_secret_word.BackColor = Color.LightPink

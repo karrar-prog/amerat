@@ -295,5 +295,39 @@ Public Class EventRecord
         End Try
     End Function
 
+    Sub set_is_ok(id As Integer)
+        conn = New MySqlConnection
+        conn.ConnectionString = serverInfo
+
+        Try
+            conn.Open()
+
+
+
+
+            Dim sql = <sql>
+              UPDATE  event_record         
+                    SET title = @title,
+                    content = @content
+                WHERE id = @id
+                  
+           
+          </sql>
+
+            Dim SQLCommand As New MySqlCommand(sql.Value, conn)
+
+            SQLCommand.Parameters.Add("@id", MySqlDbType.Int32).Value = id
+            SQLCommand.Parameters.Add("@title", MySqlDbType.String).Value = "مشاهدة الاحصائيات"
+            SQLCommand.Parameters.Add("@content", MySqlDbType.String).Value = "تمت مشاهدة الاحصائيات من قبل " & user.name
+
+            SQLCommand.ExecuteNonQuery()
+            conn.Close()
+
+        Catch ex As MySqlException
+            conn.Close()
+
+        End Try
+    End Sub
+
 
 End Class

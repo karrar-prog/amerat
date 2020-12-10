@@ -55,6 +55,9 @@ Public Class fm_show_patients
         lv_queue.Columns.Add("حالة البيع", 150)
         lv_queue.Columns.Add("حالة ألفيشة", 150)
         lv_queue.Columns.Add("", 220)
+        lv_queue.Columns.Add("حالة البصمة", 220)
+
+        lv_queue.Columns.Add("توثيق الفيشة الاولى", 220)
 
 
 
@@ -959,15 +962,17 @@ Public Class fm_show_patients
 1:
         Try
 
-            GridControl1.DataSource = DataSet.Tables(0)
-
+            
             Dim dt As New DateTimePicker
             Dim c As Integer
 
             lv_queue.Items.Clear()
 
             tb_count.Caption = DataSet.Tables(0).Rows.Count.ToString
-
+            DataSet.Tables(0).Columns.Add("s1")
+            DataSet.Tables(0).Columns.Add("s2")
+            DataSet.Tables(0).Columns.Add("s3")
+            DataSet.Tables(0).Columns.Add("s4")
             If DataSet.Tables(0).Rows.Count > 0 Then
 
                 For i As Integer = 0 To DataSet.Tables(0).Rows.Count - 1
@@ -981,6 +986,8 @@ Public Class fm_show_patients
 
                     lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("register_date").ToString)
                     lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("is_token").ToString)
+
+
                     If DataSet.Tables(0).Rows(i).Item("is_token").ToString = s_not_booking Then
                         lv_queue.Items(i).BackColor = Color.LightGreen
                     ElseIf DataSet.Tables(0).Rows(i).Item("is_token").ToString = s_booking Then
@@ -995,24 +1002,49 @@ Public Class fm_show_patients
                     If DataSet.Tables(0).Rows(i).Item("first_push_amount_arrived").ToString.Trim <> "0" And DataSet.Tables(0).Rows(i).Item("first_push_amount_arrived").ToString.Trim <> "" Then
                         lv_queue.Items(i).SubItems.Add("الفيشة مستلمة")
                         lv_queue.Items(i).SubItems(7).ForeColor = Color.Green
-                        lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("diagonosis").ToString)
-
+                        DataSet.Tables(0).Rows(i).SetField(Of String)("s1", "الفيشة مستلمة")
 
                     ElseIf DataSet.Tables(0).Rows(i).Item("first_push_amount").ToString.Trim <> "0" And DataSet.Tables(0).Rows(i).Item("first_push_amount").ToString.Trim <> "" Then
                         lv_queue.Items(i).SubItems.Add("انتظار الفيشة")
                         lv_queue.Items(i).SubItems(8).ForeColor = Color.Yellow
+                        DataSet.Tables(0).Rows(i).SetField(Of String)("s1", "انتظار الفيشة")
+
                     ElseIf DataSet.Tables(0).Rows(i).Item("is_token").ToString = s_booking Then
 
                         lv_queue.Items(i).SubItems.Add("حجز فقط")
                         lv_queue.Items(i).SubItems(7).BackColor = Color.LightPink
+                        DataSet.Tables(0).Rows(i).SetField(Of String)("s1", "حجز فقط")
+
                     Else
                         lv_queue.Items(i).SubItems.Add("")
+                        DataSet.Tables(0).Rows(i).SetField(Of String)("s1", "")
+
                     End If
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("diagonosis").ToString)
+                    DataSet.Tables(0).Rows(i).SetField(Of String)("s2", DataSet.Tables(0).Rows(i).Item("diagonosis").ToString)
+
+                    If DataSet.Tables(0).Rows(i).Item("finger_print").ToString = "" Then
+                        lv_queue.Items(i).SubItems.Add("لم تسجل بصمة")
+                        DataSet.Tables(0).Rows(i).SetField(Of String)("s3", "لم تسجل بصمة")
+
+                    ElseIf DataSet.Tables(0).Rows(i).Item("finger_print").ToString = "no" Then
+                        lv_queue.Items(i).SubItems.Add("تعذر تسجيل البصمة")
+                        DataSet.Tables(0).Rows(i).SetField(Of String)("s3", "تعذر تسجيل البصمة")
+
+                    Else
+                        lv_queue.Items(i).SubItems.Add("تم التسجيل ")
+                        DataSet.Tables(0).Rows(i).SetField(Of String)("s3", "تم التسجيل")
+
+                    End If
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("code").ToString)
+
                     'lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("name").ToString)
                     '   dt.Value = Convert.ToDateTime(DataSet.Tables(0).Rows(i).Item("birthdate").ToString)
 
                 Next
             End If
+            GridControl1.DataSource = DataSet.Tables(0)
+
         Catch ex As MySqlException
             MessageBox.Show(ex.Message)
             If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
@@ -1103,7 +1135,19 @@ Public Class fm_show_patients
             ElseIf p.finger_print = "no" Then
                 MessageBox.Show("تعذر على الزبون تسجيل بصمة", "", MessageBoxButtons.OK, MessageBoxIcon.Stop)
             Else
-                MessageBox.Show("تم تسجيل بصمة", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                If lv_queue.SelectedItems.Count > 0 Then
+                    Try
+                        System.IO.File.WriteAllText(Application.StartupPath & "/FingerPrint/server/customer_id.txt", lv_queue.SelectedItems.Item(0).Text)
+                    Catch ex As Exception
+                    End Try
+                    Dim proc As New System.Diagnostics.Process()
+                    Try
+                        proc = Process.Start(Application.StartupPath & "/FingerPrint/fingerPrint.exe", "تشغيل السيرفر")
+                    Catch ex As Exception
+
+                    End Try
+                End If
+
             End If
 
         End If

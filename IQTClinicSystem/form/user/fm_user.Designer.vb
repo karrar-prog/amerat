@@ -20,6 +20,7 @@ Partial Class fm_user
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fm_user))
         Me.RibbonControl = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.RibbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         Me.TabNavigationPage2 = New DevExpress.XtraBars.Navigation.TabNavigationPage()
@@ -449,7 +450,7 @@ Partial Class fm_user
         'tb_id
         '
         Me.tb_id.EditValue = "0"
-        Me.tb_id.Location = New System.Drawing.Point(750, 59)
+        Me.tb_id.Location = New System.Drawing.Point(705, 59)
         Me.tb_id.MenuManager = Me.RibbonControl
         Me.tb_id.Name = "tb_id"
         Me.tb_id.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -457,7 +458,7 @@ Partial Class fm_user
         Me.tb_id.Properties.Appearance.Options.UseTextOptions = True
         Me.tb_id.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.tb_id.Properties.ReadOnly = True
-        Me.tb_id.Size = New System.Drawing.Size(179, 28)
+        Me.tb_id.Size = New System.Drawing.Size(224, 28)
         Me.tb_id.TabIndex = 98
         '
         'l_old_item
@@ -600,10 +601,12 @@ Partial Class fm_user
         '
         Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton2.Appearance.Options.UseFont = True
-        Me.SimpleButton2.Location = New System.Drawing.Point(705, 53)
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(768, 4)
         Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(39, 34)
+        Me.SimpleButton2.Size = New System.Drawing.Size(137, 34)
         Me.SimpleButton2.TabIndex = 78
+        Me.SimpleButton2.Text = "اضافة مستخدم جديد"
         '
         'TabNavigationPage1
         '

@@ -193,12 +193,9 @@
             p.item4 = fm_add_other_required.item4.Text
             If p.register_date.Trim = "" Then
                 p.register_date = Date.Now.ToShortDateString
-
             End If
-
             p.admin_name = fm_add_other_required.tb_admin_name.Text
             p.is_token = "تعاقد"
-
             p.first_push_amount = fm_add_other_required.first_push
             p.first_push_present = fm_add_other_required.first_push_present
 

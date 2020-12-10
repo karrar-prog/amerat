@@ -676,6 +676,51 @@ Public Class Patient
 
         conn.Close()
     End Function
+    Public Function set_virfied_fesha() As Boolean
+
+
+
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        'Try
+        conn.Open()
+        'Catch myerror As MySqlException
+        '    MsgBox("Connection to the Database Failed")
+        '    Return False
+
+        'End Try
+
+        Try
+            Dim SQLCommand As New MySqlCommand()
+            SQLCommand.Connection = conn
+            SQLCommand.CommandText = "UPDATE patient SET `code` = @code WHERE id = @id"
+
+            SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
+
+            SQLCommand.Parameters.Add("@code", MySqlDbType.String).Value = Me.code
+
+
+            SQLCommand.ExecuteNonQuery()
+
+
+
+
+            conn.Close()
+            Return True
+
+        Catch ex As Exception
+            conn.Close()
+            MessageBox.Show(ex.Message)
+            Return False
+        End Try
+
+
+
+
+
+
+
+    End Function
 
     Sub set_contract()
 

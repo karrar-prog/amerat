@@ -149,17 +149,17 @@ Public Class fm_monitoring_event
                     li_event.Items(i).SubItems.Add(d.Tables(0).Rows(i).Item("date").ToString)
                     li_event.Items(i).SubItems.Add(d.Tables(0).Rows(i).Item("user_name").ToString)
                     li_event.Items(i).SubItems.Add(d.Tables(0).Rows(i).Item("amount").ToString)
-                    If (__(d.Tables(0).Rows(i).Item("amount").ToString) > 0) Then
+                    If (___(d.Tables(0).Rows(i).Item("amount").ToString) > 0) Then
 
-                        tb_come.Text = (__(tb_come.Text) + (__(d.Tables(0).Rows(i).Item("amount").ToString))).ToString
-
-                    End If
-                    If (__(d.Tables(0).Rows(i).Item("amount").ToString) < 0) Then
-                        tb_out.Text = (__(tb_out.Text) + (__(d.Tables(0).Rows(i).Item("amount").ToString))).ToString
-
+                        tb_come.Text = (___(tb_come.Text) + (___(d.Tables(0).Rows(i).Item("amount").ToString))).ToString
 
                     End If
-                    tb_net.Text = (__(tb_net.Text) + (__(d.Tables(0).Rows(i).Item("amount").ToString))).ToString
+                    If (___(d.Tables(0).Rows(i).Item("amount").ToString) < 0) Then
+                        tb_out.Text = (___(tb_out.Text) + (___(d.Tables(0).Rows(i).Item("amount").ToString))).ToString
+
+
+                    End If
+                    tb_net.Text = (___(tb_net.Text) + (___(d.Tables(0).Rows(i).Item("amount").ToString))).ToString
 
                 Next
 
@@ -196,6 +196,32 @@ Public Class fm_monitoring_event
 
 
         End If
+    End Sub
+
+    Private Sub li_event_KeyDown(sender As Object, e As KeyEventArgs) Handles li_event.KeyDown
+        If li_event.SelectedItems.Count = 1 Then
+            If (e.Modifiers = Keys.Control AndAlso e.KeyCode = Keys.M) Then
+                If user.id = 1 Then
+                    If li_event.SelectedItems(0).SubItems(5).Text.Trim = "0" Then
+                        Dim ev As New EventRecord
+
+                        ev.set_is_ok(__(li_event.SelectedItems(0).Text))
+
+
+                        get_all()
+                    End If
+
+
+                End If
+
+
+            End If
+        End If
+
+    End Sub
+
+    Private Sub li_event_KeyUp(sender As Object, e As KeyEventArgs) Handles li_event.KeyUp
+      
     End Sub
 
     Private Sub li_event_SelectedIndexChanged(sender As Object, e As EventArgs) Handles li_event.SelectedIndexChanged

@@ -11,7 +11,7 @@ Imports DevExpress.XtraEditors
 Partial Public Class fm_new_finger
     'Inherits XtraForm
 
-    Public ZkFprint As AxZKFPEngX = New AxZKFPEngX()
+    Public ZkFprint As AxZKFPEngX
     Public Shared Synth As SpeechSynthesizer = New SpeechSynthesizer()
     Public Check As Boolean
 
@@ -150,7 +150,14 @@ Partial Public Class fm_new_finger
 
         btnEndReg.Enabled = False
         ShowHintImage(0)
-        'ZkFprint.OnImageReceived += New EventHandler(Of )(zkFprint_OnImageReceived)
+
+        ZkFprint.InitializeLifetimeService()
+
+        'Controls.Add(ZkFprint)
+        AddHandler ZkFprint.OnEnroll, AddressOf zkFprint_OnEnroll
+        AddHandler ZkFprint.OnFeatureInfo, AddressOf zkFprint_OnFeatureInfo
+        AddHandler ZkFprint.OnImageReceived, AddressOf zkFprint_OnImageReceived
+        'ZkFprint.OnImageReceived += New EventHandler(Of OnImageReceived)(zkFprint_OnImageReceived)
         'ZkFprint.OnFeatureInfo += AddressOf zkFprint_OnFeatureInfo
         'ZkFprint.OnEnroll += AddressOf zkFprint_OnEnroll
     End Sub
