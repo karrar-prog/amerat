@@ -69,27 +69,24 @@
 
         Dim f As New fm_x_viewer_treat
         f.ds = d
-        f.user_name = fm_add_other_required.tb_name.Text
-        f.final_price = fm_add_other_required.tb_all_dept.Text
-
-
+        f.user_name = p.name
+        f.final_price = p.house_price.ToString
         f.user_dar = " ( H." & p.f3 & " ) "
         f.user_block = " ( " & p.f1 & "." & p.f2 & " )"
         f.remaind = p.tb_l_5
         f.arrive = p.tb_2
-        f.user_name = fm_add_other_required.tb_name.Text & " )" & " بموجب الهوية المرقمة " & p.f6
-        f.contract_date = p.register_date
-        f.user_block_number = ""
+        f.user_name = p.name & " ) " & " بموجب الهوية المرقمة " & p.f6
+        f.contract_date = p.register_date & "٠"
+        f.user_block_number = " ( " & p.f2 & " ) "
         f.user_id_number = " ( " & p.f6 & " ) "
         f.dar_area = " ( " & p.ref_by & " ) "
-        f.item1 = p.diagonosis
-        f.item2 = p.item2
+        f.item1 = p.register_date
+        f.item2 = p.item2 & "٠"
         f.item3 = p.item3
         f.item4 = p.item4
         f.item9 = p.f1 & p.f2 & "." & p.f3
         f.item10 = p.name
         f.admin_name = p.admin_name
-
         f.Show()
 
 

@@ -147,4 +147,8 @@ Public Class fm_x_viewer_treat
         report.Print()
       
     End Sub
+
+    Private Sub ZoomTrackBarEditItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles ZoomTrackBarEditItem1.ItemClick
+
+    End Sub
 End Class

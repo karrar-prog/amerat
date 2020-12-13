@@ -138,7 +138,7 @@ Public Class fm_add_other_required
                 Dim last_part_value As New Decimal
                 last_part_value = nu_last_part.Value
                 tb_net_dept.EditValue = __(tb_all_dept.EditValue.ToString) - __(tb_arrive.EditValue.ToString)
-                tb_l_5.Text = " الدفعة " & get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة " & " ( " & nu_last_present.Value.ToString & "%) من قيمة شراء الدار" & " البالغ" & " ( " & Format(last_part_value, "###,###,###,###,###") & " ) " & " ( " & ToArabicLetter(nu_last_part.Value) & " ) " & " تدفع قبل مدة ( شهر ) من استلام الدار ولفتره لاتزيد عن 30 شهراً من دفع المقدمة وقدرها "
+                tb_l_5.Text = " الدفعة " & get_text(ds_contract_items.Tables(0).Rows.Count + 2) & " والاخيرة " & " ( " & nu_last_present.Value.ToString & "%) من قيمة شراء الدار" & " البالغ" & " ( " & Format(last_part_value, "###,###,###,###,###") & " ) " & " ( " & ToArabicLetter(nu_last_part.Value) & " ) " & " تدفع قبل مدة ( شهر ) من استلام الدار ولفتره لاتزيد عن 30 شهراً من دفع المقدمة٠  "
 
                 Dim house_value As New Decimal
                 house_value = p.house_price
@@ -368,11 +368,17 @@ Public Class fm_add_other_required
     Private Sub add()
         If lv_treat_table.Items.Count > 0 Then
             Dim date_now As New DateTimePicker
-            Dim p As New Patient(__(tb_id.Text))
 
+
+            Dim p As New Patient(__(tb_id.Text))
+            If p.diagonosis.Trim <> "" Then
+                date_now.Value = Convert.ToDateTime(p.diagonosis)
+            End If
             p.first_push_amount = __(lv_treat_table.Items.Item(0).SubItems(2).Text)
 
             p.first_push_present = ___(lv_treat_table.Items.Item(0).SubItems(3).Text)
+            p.register_date = date_now.Value.ToShortDateString
+
             p.save()
             tb_2.Text = " ألدفعة الاولى " & "(" & p.first_push_present & "%)" & " (" & Format(p.first_push_amount, "###,###,###,###") & ")" & ToArabicLetter(p.first_push_amount)
             Dim dates_count As Integer = __(lv_treat_table.Items.Item(0).SubItems(5).Text)
@@ -859,12 +865,28 @@ Public Class fm_add_other_required
 
     Private Sub put_defult_items()
         Try
-            Dim reader As New StreamReader(Application.StartupPath & "/server/contract_items.txt", Encoding.Default)
+            'Dim reader As New StreamReader(Application.StartupPath & "/server/contract_items.txt", Encoding.Default)
 
-            item4.Text = reader.ReadToEnd
+            'item4.Text = reader.ReadToEnd
 
-            reader.Close()
-            item4.Text = item4.Text & " " & Date.Now.ToShortDateString
+            'reader.Close()
+            'item4.Text = item4.Text & " " & Date.Now.ToShortDateString
+
+            Try
+                Dim store As New store
+                Dim ds As New DataSet
+                ds = store.all()
+                For i = 0 To ds.Tables(0).Rows.Count - 1
+                    'store_title.Add(ds.Tables(0).Rows(i).Item("name").ToString)
+                    item4.Text = ds.Tables(0).Rows(i).Item("name").ToString & " " & Date.Now.ToShortDateString
+
+                Next
+            Catch ex As MySqlException
+                MessageBox.Show(ex.Message)
+                If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                 
+                End If
+            End Try
         Catch ex As Exception
 
         End Try
@@ -876,7 +898,9 @@ Public Class fm_add_other_required
     End Sub
 
     Private Sub SimpleButton8_Click_2(sender As Object, e As EventArgs) Handles SimpleButton8.Click
-        open_text("contract_items")
+        'open_text("contract_items")
+        fm_contact_item.Show()
+
     End Sub
 
     Private Sub SimpleButton11_Click(sender As Object, e As EventArgs) Handles SimpleButton11.Click

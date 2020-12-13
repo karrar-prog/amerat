@@ -44,20 +44,18 @@ Public Class fm_show_patients
 
         lv_queue.View = View.Details
 
-        lv_queue.Columns.Add("رقم العقد", 122)
-        lv_queue.Columns.Add("اسم الزبون", 250)
-        lv_queue.Columns.Add("هاتف", 150)
-        lv_queue.Columns.Add("بلوك", 110)
-        lv_queue.Columns.Add("رقم الدار", 110)
-        lv_queue.Columns.Add("المبلغ الكلي", 200)
-        lv_queue.Columns.Add("تأريخ الشراء", 150)
-
-        lv_queue.Columns.Add("حالة البيع", 150)
-        lv_queue.Columns.Add("حالة ألفيشة", 150)
-        lv_queue.Columns.Add("", 220)
-        lv_queue.Columns.Add("حالة البصمة", 220)
-
-        lv_queue.Columns.Add("توثيق الفيشة الاولى", 220)
+        lv_queue.Columns.Add("العقد", 70)
+        lv_queue.Columns.Add("اسم الزبون", 220)
+        lv_queue.Columns.Add("هاتف", 145)
+        lv_queue.Columns.Add("بلوك", 90)
+        lv_queue.Columns.Add("رقم الدار", 90)
+        lv_queue.Columns.Add("المبلغ الكلي", 120)
+        lv_queue.Columns.Add("تأريخ التعاقد", 10)
+        lv_queue.Columns.Add("حالة البيع", 10)
+        lv_queue.Columns.Add("حالة ألفيشة", 130)
+        lv_queue.Columns.Add("تأريخ الفيشة الاولى", 10)
+        lv_queue.Columns.Add("حالة البصمة", 10)
+        lv_queue.Columns.Add("توثيق الفيشة الاولى", 200)
 
 
 
@@ -423,6 +421,8 @@ Public Class fm_show_patients
             s = "select * from patient WHERE first_push_amount_arrived = 0 and first_push_amount = 0 and is_token ='حجز' order by f2,f1,f3  "
         ElseIf d = 4 Then
             s = "select * from patient WHERE  is_token ='غير محجوز' order by f2,f1,f3  "
+        ElseIf d = 5 Then
+            s = "select * from patient WHERE  is_token ='تعاقد' order by f2,f1,f3  "
 
 
         End If
@@ -700,27 +700,22 @@ Public Class fm_show_patients
         f.ds = d
         f.user_name = p.name
         f.final_price = p.house_price.ToString
-
-
-        f.user_dar = " ( " & p.f3 & " ) "
-        f.user_block = " ( " & p.f1 & " ) "
+        f.user_dar = " ( H." & p.f3 & " ) "
+        f.user_block = " ( " & p.f1 & "." & p.f2 & " )"
         f.remaind = p.tb_l_5
         f.arrive = p.tb_2
-
-        f.user_name = " ( " & p.name & " ) " & " بموجب الهوية المرقمة " & " ( " & p.f6 & " ) "
-        f.contract_date = p.register_date
+        f.user_name = p.name & " ) " & " بموجب الهوية المرقمة " & p.f6
+        f.contract_date = p.register_date & "٠"
         f.user_block_number = " ( " & p.f2 & " ) "
         f.user_id_number = " ( " & p.f6 & " ) "
         f.dar_area = " ( " & p.ref_by & " ) "
-        f.item2 = p.item2
+        f.item1 = p.register_date
+        f.item2 = p.item2 & "٠"
         f.item3 = p.item3
         f.item4 = p.item4
         f.item9 = p.f1 & p.f2 & "." & p.f3
         f.item10 = p.name
         f.admin_name = p.admin_name
-
-
-
         f.Show()
 
 
@@ -1177,5 +1172,9 @@ Public Class fm_show_patients
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub SimpleButton9_Click(sender As Object, e As EventArgs) Handles SimpleButton9.Click
+        searchfeash(5)
     End Sub
 End Class
