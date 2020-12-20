@@ -81,7 +81,7 @@ Public Class fm_statistics_money
         put_in_li_dor("الفييش", "")
 
         c = s.all_dor_booking_with_recived_fesha
-        put_in_li_dor("فيشة اولى مستملة", c)
+        put_in_li_dor("فيشة اولى مستلمة", c)
        
     End Sub
 

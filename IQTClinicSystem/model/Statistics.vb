@@ -122,12 +122,11 @@ Public Class Statistics
         Try
 
             Dim sql = <sql>
-           SELECT * FROM patient WHERE is_token = @is_token and first_push_amount_arrived > 0
+           SELECT * FROM patient WHERE first_push_amount_arrived > 0
          </sql>
 
             Dim SQLCommand As New MySqlCommand(sql.Value, conn)
-            SQLCommand.Parameters.Add("@is_token", MySqlDbType.String).Value = "حجز"
-
+   
             Dim da As New MySqlDataAdapter(SQLCommand)
 
             da.Fill(ds)
