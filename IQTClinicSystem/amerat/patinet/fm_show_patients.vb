@@ -5,6 +5,9 @@ Public Class fm_show_patients
     Dim re As String = ""
     Dim image_path As String = ""
 
+    Private Property is_small As Boolean = True
+
+
 
     Private Sub fm_show_patients_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If re = "" Then
@@ -228,6 +231,21 @@ Public Class fm_show_patients
         'End If
 
 
+    End Sub
+
+    Private Sub lv_queue_KeyDown(sender As Object, e As KeyEventArgs) Handles lv_queue.KeyDown
+        If lv_queue.SelectedItems.Count = 1 Then
+            If (e.Modifiers = Keys.Control AndAlso e.KeyCode = Keys.T) Then
+                If user.id = 1 Then
+                    fm_tanazol.tb_patient_id.Text = lv_queue.SelectedItems(0).Text.Trim()
+                    fm_tanazol.Show()
+
+
+                End If
+
+
+        End If
+        End If
     End Sub
 
     Private Sub lv_queue_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv_queue.SelectedIndexChanged
@@ -1176,5 +1194,47 @@ Public Class fm_show_patients
 
     Private Sub SimpleButton9_Click(sender As Object, e As EventArgs) Handles SimpleButton9.Click
         searchfeash(5)
+    End Sub
+
+  
+    Private Sub BarHeaderItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarHeaderItem6.ItemClick
+        If is_small Then
+            lv_queue.Clear()
+            lv_queue.View = View.Details
+
+            lv_queue.Columns.Add("العقد", 70)
+            lv_queue.Columns.Add("اسم الزبون", 220)
+            lv_queue.Columns.Add("هاتف", 145)
+            lv_queue.Columns.Add("بلوك", 90)
+            lv_queue.Columns.Add("رقم الدار", 90)
+            lv_queue.Columns.Add("المبلغ الكلي", 120)
+            lv_queue.Columns.Add("تأريخ التعاقد", 10)
+            lv_queue.Columns.Add("حالة البيع", 10)
+            lv_queue.Columns.Add("حالة ألفيشة", 130)
+            lv_queue.Columns.Add("تأريخ الفيشة الاولى", 10)
+            lv_queue.Columns.Add("حالة البصمة", 10)
+            lv_queue.Columns.Add("توثيق الفيشة الاولى", 200)
+            is_small = False
+
+
+        Else
+
+            lv_queue.Clear()
+            lv_queue.View = View.Details
+
+            lv_queue.Columns.Add("العقد", 70)
+            lv_queue.Columns.Add("اسم الزبون", 220)
+            lv_queue.Columns.Add("هاتف", 145)
+            lv_queue.Columns.Add("بلوك", 120)
+            lv_queue.Columns.Add("رقم الدار", 120)
+            lv_queue.Columns.Add("المبلغ الكلي", 120)
+            lv_queue.Columns.Add("تأريخ التعاقد", 120)
+            lv_queue.Columns.Add("حالة البيع", 170)
+            lv_queue.Columns.Add("حالة ألفيشة", 130)
+            lv_queue.Columns.Add("تأريخ الفيشة الاولى", 190)
+            lv_queue.Columns.Add("حالة البصمة", 120)
+            lv_queue.Columns.Add("توثيق الفيشة الاولى", 200)
+            is_small = True
+        End If
     End Sub
 End Class

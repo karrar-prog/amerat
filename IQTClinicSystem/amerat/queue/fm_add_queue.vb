@@ -218,9 +218,6 @@ Public Class fm_add_queue
             End Try
 
             If q.save() Then
-
-
-
                 'Dim id As Integer = get_last_id(q.patient_id)
                 print_report()
                 Me.Close()

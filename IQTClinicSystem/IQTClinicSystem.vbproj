@@ -186,6 +186,24 @@
     <Compile Include="amerat\monitoring\fm_statistics_money.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="amerat\monthsDate\fm_months_shoud_push.Designer.vb">
+      <DependentUpon>fm_months_shoud_push.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\monthsDate\fm_months_shoud_push.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\monthsDate\fm_taajeel.Designer.vb">
+      <DependentUpon>fm_taajeel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\monthsDate\fm_taajeel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_tanazol.Designer.vb">
+      <DependentUpon>fm_tanazol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="amerat\patinet\fm_tanazol.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="amerat\queue\fm_fesha.Designer.vb">
       <DependentUpon>fm_fesha.vb</DependentUpon>
     </Compile>
@@ -467,11 +485,13 @@
     <Compile Include="model\Customer.vb" />
     <Compile Include="model\CustomerDiscount.vb" />
     <Compile Include="model\Dept.vb" />
+    <Compile Include="model\Dept2.vb" />
     <Compile Include="model\Discount.vb" />
     <Compile Include="model\EventRecord.vb" />
     <Compile Include="model\GlobalValue.vb" />
     <Compile Include="model\Item.vb" />
     <Compile Include="model\OtherRequired.vb" />
+    <Compile Include="model\patient2.vb" />
     <Compile Include="model\Permission.vb" />
     <Compile Include="model\Plan.vb" />
     <Compile Include="model\Rests.vb" />
@@ -789,6 +809,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="amerat\monitoring\fm_statistics_money.resx">
       <DependentUpon>fm_statistics_money.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\monthsDate\fm_months_shoud_push.resx">
+      <DependentUpon>fm_months_shoud_push.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\monthsDate\fm_taajeel.resx">
+      <DependentUpon>fm_taajeel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amerat\patinet\fm_tanazol.resx">
+      <DependentUpon>fm_tanazol.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="amerat\queue\fm_fesha.resx">
       <DependentUpon>fm_fesha.vb</DependentUpon>

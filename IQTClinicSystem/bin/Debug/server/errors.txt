@@ -1,0 +1,22 @@
+﻿--user_id = 1|2021-02-03 13:29:25|fm_months_shoud_push|طباعةفيشةToolStripMenuItem_Click|InvalidArgument=Value of '8' is not valid for 'index'.
+Parameter name: index
+InvalidArgument=Value of '8' is not valid for 'index'.
+Parameter name: index
+--user_id = 1|2021-02-03 13:30:48|fm_months_shoud_push|طباعةفيشةToolStripMenuItem_Click|InvalidArgument=Value of '8' is not valid for 'index'.
+Parameter name: index
+InvalidArgument=Value of '8' is not valid for 'index'.
+Parameter name: index
+--------------------------------------------------------------
+--user_id = 1|2021-02-03 13:30:51|fm_months_shoud_push|طباعةفيشةToolStripMenuItem_Click|InvalidArgument=Value of '8' is not valid for 'index'.
+Parameter name: index
+InvalidArgument=Value of '8' is not valid for 'index'.
+Parameter name: index
+--------------------------------------------------------------
+2021-02-03 13:45:10|1|fm_months_shoud_push|طباعةفيشةToolStripMenuItem_Click
+InvalidArgument=Value of '7' is not valid for 'index'.
+Parameter name: index
+--------------------------------------------------------------
+2021-02-03 13:45:13|1|fm_months_shoud_push|طباعةفيشةToolStripMenuItem_Click
+InvalidArgument=Value of '7' is not valid for 'index'.
+Parameter name: index
+--------------------------------------------------------------

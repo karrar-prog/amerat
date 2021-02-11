@@ -3,6 +3,7 @@ Imports MySql.Data.MySqlClient
 Imports System.Collections
 Imports System.Drawing.Text
 Imports System.IO
+Imports System.Text
 
 
 Module DB
@@ -162,6 +163,16 @@ Module DB
         Catch ex As Exception
 
         End Try
+    End Sub
+    Public Sub save_error(message As String, form_name As String, function_name As String)
+
+        Dim file As System.IO.StreamWriter
+        file = My.Computer.FileSystem.OpenTextFileWriter(Application.StartupPath & "/server/errors.txt", True)
+        file.WriteLine(Date.Now & "|" & user.id & "|" & form_name & "|" & function_name)
+        file.WriteLine(message.Trim)
+        file.WriteLine("--------------------------------------------------------------")
+        file.Close()
+
     End Sub
 
     Public Function permistion_titles(ByRef li As ListView) As Integer

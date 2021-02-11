@@ -70,6 +70,7 @@ Partial Class fm_show_patients
         Me.BarCheckItem1 = New DevExpress.XtraBars.BarCheckItem()
         Me.BarHeaderItem4 = New DevExpress.XtraBars.BarHeaderItem()
         Me.BarHeaderItem5 = New DevExpress.XtraBars.BarHeaderItem()
+        Me.BarButtonItem11 = New DevExpress.XtraBars.BarButtonItem()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.tb_house_number = New DevExpress.XtraEditors.TextEdit()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -128,6 +129,7 @@ Partial Class fm_show_patients
         Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
+        Me.BarHeaderItem6 = New DevExpress.XtraBars.BarHeaderItem()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.tb_name.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -419,14 +421,15 @@ Partial Class fm_show_patients
         '
         Me.RibbonControl2.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl2.ExpandCollapseItem.Id = 0
-        Me.RibbonControl2.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl2.ExpandCollapseItem, Me.tb_user, Me.BarButtonItem1, Me.BarHeaderItem1, Me.BarHeaderItem2, Me.BarButtonItem2, Me.SkinRibbonGalleryBarItem2, Me.btn_main, Me.BarHeaderItem3, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.tb_count, Me.BarCheckItem1, Me.BarHeaderItem4, Me.BarHeaderItem5})
+        Me.RibbonControl2.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl2.ExpandCollapseItem, Me.tb_user, Me.BarButtonItem1, Me.BarHeaderItem1, Me.BarHeaderItem2, Me.BarButtonItem2, Me.SkinRibbonGalleryBarItem2, Me.btn_main, Me.BarHeaderItem3, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.tb_count, Me.BarCheckItem1, Me.BarHeaderItem4, Me.BarHeaderItem5, Me.BarButtonItem11, Me.BarHeaderItem6})
         Me.RibbonControl2.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl2.MaxItemId = 22
+        Me.RibbonControl2.MaxItemId = 24
         Me.RibbonControl2.Name = "RibbonControl2"
         Me.RibbonControl2.PageHeaderItemLinks.Add(Me.tb_count)
         Me.RibbonControl2.PageHeaderItemLinks.Add(Me.BarHeaderItem4)
         Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.tb_user)
         Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.BarHeaderItem5)
+        Me.RibbonControl2.QuickToolbarItemLinks.Add(Me.BarHeaderItem6)
         Me.RibbonControl2.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
         Me.RibbonControl2.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide
         Me.RibbonControl2.ShowToolbarCustomizeItem = False
@@ -566,6 +569,13 @@ Partial Class fm_show_patients
         Me.BarHeaderItem5.Id = 21
         Me.BarHeaderItem5.ImageOptions.Image = CType(resources.GetObject("BarHeaderItem5.ImageOptions.Image"), System.Drawing.Image)
         Me.BarHeaderItem5.Name = "BarHeaderItem5"
+        '
+        'BarButtonItem11
+        '
+        Me.BarButtonItem11.Caption = "BarButtonItem11"
+        Me.BarButtonItem11.Id = 22
+        Me.BarButtonItem11.ImageOptions.Image = CType(resources.GetObject("BarButtonItem11.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem11.Name = "BarButtonItem11"
         '
         'Label10
         '
@@ -1158,6 +1168,13 @@ Partial Class fm_show_patients
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 16
         '
+        'BarHeaderItem6
+        '
+        Me.BarHeaderItem6.Caption = "ابعاد الحقول"
+        Me.BarHeaderItem6.Id = 23
+        Me.BarHeaderItem6.ImageOptions.Image = CType(resources.GetObject("BarHeaderItem6.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarHeaderItem6.Name = "BarHeaderItem6"
+        '
         'fm_show_patients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1320,4 +1337,6 @@ Partial Class fm_show_patients
     Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents SimpleButton9 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents BarButtonItem11 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarHeaderItem6 As DevExpress.XtraBars.BarHeaderItem
 End Class

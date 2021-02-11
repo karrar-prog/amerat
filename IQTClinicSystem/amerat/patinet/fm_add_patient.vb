@@ -19,6 +19,8 @@ Public Class fm_add_patient
             fm_show_patients.Show()
         ElseIf re = "5" Then
             fm_months.Show()
+        ElseIf re = "7" Then
+            fm_months_shoud_push.Show()
         Else
             fm_show_patients.Show()
         End If

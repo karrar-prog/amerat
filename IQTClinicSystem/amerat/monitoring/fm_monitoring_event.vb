@@ -266,4 +266,8 @@ Public Class fm_monitoring_event
     Private Sub GroupControl1_Paint(sender As Object, e As PaintEventArgs) Handles GroupControl1.Paint
 
     End Sub
+
+    Private Sub XtraTabControl1_Click(sender As Object, e As EventArgs) Handles XtraTabControl1.Click
+
+    End Sub
 End Class

@@ -162,7 +162,7 @@ Partial Class fm_add_patient
         '
         Me.BehaviorManager1.SetBehaviors(Me.tb_phone, New DevExpress.Utils.Behaviors.Behavior() {CType(DevExpress.Utils.Behaviors.Common.FileIconBehavior.Create(GetType(DevExpress.XtraEditors.Behaviors.FileIconBehaviorSourceForTextEdit), DevExpress.Utils.Behaviors.Common.FileIconSize.Large, Global.IQTClinicSystem.My.Resources.Resources.doctor_icon, Nothing), DevExpress.Utils.Behaviors.Behavior), CType(DevExpress.Utils.Behaviors.Common.FilePathBehavior.Create(GetType(DevExpress.XtraEditors.Behaviors.FilePathBehaviorSourceForTextEdit), DevExpress.Utils.Behaviors.Common.FileIconSize.Small, Nothing, Nothing, DevExpress.Utils.Behaviors.Common.CompletionMode.FilesAndDirectories, Nothing), DevExpress.Utils.Behaviors.Behavior)})
         Me.tb_phone.EnterMoveNextControl = True
-        Me.tb_phone.Location = New System.Drawing.Point(44, 235)
+        Me.tb_phone.Location = New System.Drawing.Point(44, 152)
         Me.tb_phone.Name = "tb_phone"
         Me.tb_phone.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_phone.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -175,7 +175,7 @@ Partial Class fm_add_patient
         'tb_name
         '
         Me.tb_name.EnterMoveNextControl = True
-        Me.tb_name.Location = New System.Drawing.Point(44, 160)
+        Me.tb_name.Location = New System.Drawing.Point(44, 96)
         Me.tb_name.Name = "tb_name"
         Me.tb_name.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_name.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -188,7 +188,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.Location = New System.Drawing.Point(363, 164)
+        Me.LabelControl1.Location = New System.Drawing.Point(366, 99)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(30, 21)
         Me.LabelControl1.TabIndex = 212
@@ -256,7 +256,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl7.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl7.Appearance.Options.UseFont = True
-        Me.LabelControl7.Location = New System.Drawing.Point(363, 240)
+        Me.LabelControl7.Location = New System.Drawing.Point(366, 155)
         Me.LabelControl7.Name = "LabelControl7"
         Me.LabelControl7.Size = New System.Drawing.Size(33, 21)
         Me.LabelControl7.TabIndex = 221
@@ -299,7 +299,7 @@ Partial Class fm_add_patient
         'tb_f6
         '
         Me.tb_f6.EnterMoveNextControl = True
-        Me.tb_f6.Location = New System.Drawing.Point(44, 310)
+        Me.tb_f6.Location = New System.Drawing.Point(44, 208)
         Me.tb_f6.Name = "tb_f6"
         Me.tb_f6.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_f6.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -311,7 +311,7 @@ Partial Class fm_add_patient
         'tb_f7
         '
         Me.tb_f7.EnterMoveNextControl = True
-        Me.tb_f7.Location = New System.Drawing.Point(44, 387)
+        Me.tb_f7.Location = New System.Drawing.Point(44, 264)
         Me.tb_f7.Name = "tb_f7"
         Me.tb_f7.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.tb_f7.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -324,7 +324,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl20.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl20.Appearance.Options.UseFont = True
-        Me.LabelControl20.Location = New System.Drawing.Point(363, 468)
+        Me.LabelControl20.Location = New System.Drawing.Point(365, 305)
         Me.LabelControl20.Name = "LabelControl20"
         Me.LabelControl20.Size = New System.Drawing.Size(57, 21)
         Me.LabelControl20.TabIndex = 247
@@ -357,7 +357,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl12.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl12.Appearance.Options.UseFont = True
-        Me.LabelControl12.Location = New System.Drawing.Point(365, 392)
+        Me.LabelControl12.Location = New System.Drawing.Point(366, 267)
         Me.LabelControl12.Name = "LabelControl12"
         Me.LabelControl12.Size = New System.Drawing.Size(45, 21)
         Me.LabelControl12.TabIndex = 252
@@ -367,7 +367,7 @@ Partial Class fm_add_patient
         '
         Me.LabelControl9.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl9.Appearance.Options.UseFont = True
-        Me.LabelControl9.Location = New System.Drawing.Point(365, 316)
+        Me.LabelControl9.Location = New System.Drawing.Point(366, 211)
         Me.LabelControl9.Name = "LabelControl9"
         Me.LabelControl9.Size = New System.Drawing.Size(60, 21)
         Me.LabelControl9.TabIndex = 251
@@ -376,10 +376,10 @@ Partial Class fm_add_patient
         'tb_note
         '
         Me.tb_note.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_note.Location = New System.Drawing.Point(44, 464)
+        Me.tb_note.Location = New System.Drawing.Point(44, 300)
         Me.tb_note.Multiline = True
         Me.tb_note.Name = "tb_note"
-        Me.tb_note.Size = New System.Drawing.Size(315, 65)
+        Me.tb_note.Size = New System.Drawing.Size(315, 424)
         Me.tb_note.TabIndex = 6
         '
         'ProgressPanel1

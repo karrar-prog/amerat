@@ -642,4 +642,11 @@ Public Class fm_main
             End Try
         End If
     End Sub
+
+    Private Sub TileItem15_ItemClick(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles TileItem15.ItemClick
+        If hasPermission(i_fesha) Then
+            fm_months_shoud_push.Show()
+
+        End If
+    End Sub
 End Class

@@ -528,6 +528,110 @@ where id = @id
         conn.Close()
     End Function
 
+    Function get_date(date1 As String) As DataSet
+        Dim query As String = "select * ,patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 from dept , patient where dept.id NOT IN( SELECT dept_id FROM queue) AND CAST(payment_date AS DATE) <= '" & date1 & "' AND arrive_amount = 0 AND patient.id = dept.user_id "
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        conn.Open()
+        Try
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+            Return ds
+        Catch ex As Exception
+            conn.Close()
+            MsgBox("failed to get item" + ex.Message)
+            Return ds
+        End Try
+        conn.Close()
+    End Function
+
+    Function get_date_beteen(date1 As String, date2 As String) As DataSet
+        Dim query As String = "select * , patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 from dept , patient where dept.id NOT IN( SELECT dept_id FROM queue)  AND CAST(payment_date AS DATE) >= '" & date1 & "' AND CAST(payment_date AS DATE) < '" & date2 & "' AND arrive_amount = 0 AND patient.id = dept.user_id"
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        conn.Open()
+        Try
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+            Return ds
+        Catch ex As Exception
+            conn.Close()
+            MsgBox("failed to get item" + ex.Message)
+            Return ds
+        End Try
+        conn.Close()
+    End Function
+    Function get_date_beteen2(date1 As String, date2 As String) As DataSet
+        Dim query As String = "select * , queue.id as queue_id ,patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 from dept , patient , queue where CAST(payment_date AS DATE) >= '" & date1 & "' AND CAST(payment_date AS DATE) < '" & date2 & "' AND arrive_amount = 0 AND patient.id = dept.user_id  AND dept.id = queue.dept_id order by queue.id desc"
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        conn.Open()
+        Try
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+            Return ds
+        Catch ex As Exception
+            conn.Close()
+            MsgBox("failed to get item" + ex.Message)
+            Return ds
+        End Try
+        conn.Close()
+    End Function
+
+    Function get_date2(date1 As String) As DataSet
+        Dim query As String = "select * ,patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 , queue.id as queue_id from dept , patient , queue where CAST(payment_date AS DATE) <= '" & date1 & "' AND arrive_amount = 0 AND patient.id = dept.user_id AND dept.id = queue.dept_id order by queue.id desc"
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        conn.Open()
+        Try
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+            Return ds
+        Catch ex As Exception
+            conn.Close()
+            MsgBox("failed to get item" + ex.Message)
+            Return ds
+        End Try
+        conn.Close()
+    End Function
+
+    Sub taajeel(id As Integer, days As Decimal, taajeel_date As Date)
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+1:
+        Try
+            conn.Open()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            If MessageBox.Show("Retry اعد الاتصال واضغط ", "لايوجد اتصال", MessageBoxButtons.RetryCancel) = DialogResult.Retry Then
+                GoTo 1
+            End If
+        End Try
+        Try
+            Dim sql = <sql>
+              update dept set
+                    days = @days,
+                    taajeel_date = @taajeel_date,
+                    user_id_taajeel = @user_id_taajeel
+                    where id = @id
+                        </sql>
+            Dim SQLCommand As New MySqlCommand(sql.Value, conn)
+            SQLCommand.Parameters.Add("@id", MySqlDbType.Int32).Value = id
+            SQLCommand.Parameters.Add("@days", MySqlDbType.Int32).Value = days
+            SQLCommand.Parameters.Add("@taajeel_date", MySqlDbType.String).Value = taajeel_date
+            SQLCommand.Parameters.Add("@user_id_taajeel", MySqlDbType.Int32).Value = user.id
+            SQLCommand.ExecuteNonQuery()
+            conn.Close()
+        Catch ex As Exception
+            conn.Close()
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
 
 
 End Class

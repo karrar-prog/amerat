@@ -954,7 +954,7 @@ Public Class fm_add_other_required
             End If
 
         Else
-            MessageBox.Show("يرجى اختيار عنر واحد")
+            MessageBox.Show("يرجى اختيار عنصر واحد")
         End If
     End Sub
 

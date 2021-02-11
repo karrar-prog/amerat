@@ -351,7 +351,7 @@ Partial Class fm_monitoring_event
         '
         Me.DateTimePicker1.Font = New System.Drawing.Font("Times New Roman", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(13, 76)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(178, 81)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(135, 32)
         Me.DateTimePicker1.TabIndex = 4
@@ -360,7 +360,7 @@ Partial Class fm_monitoring_event
         '
         Me.DateTimePicker2.Font = New System.Drawing.Font("Times New Roman", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(178, 78)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(5, 81)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(135, 32)
         Me.DateTimePicker2.TabIndex = 5
@@ -369,7 +369,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl8.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl8.Appearance.Options.UseFont = True
-        Me.LabelControl8.Location = New System.Drawing.Point(154, 78)
+        Me.LabelControl8.Location = New System.Drawing.Point(317, 87)
         Me.LabelControl8.Name = "LabelControl8"
         Me.LabelControl8.Size = New System.Drawing.Size(18, 22)
         Me.LabelControl8.TabIndex = 82
@@ -379,7 +379,7 @@ Partial Class fm_monitoring_event
         '
         Me.LabelControl9.Appearance.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl9.Appearance.Options.UseFont = True
-        Me.LabelControl9.Location = New System.Drawing.Point(319, 84)
+        Me.LabelControl9.Location = New System.Drawing.Point(146, 87)
         Me.LabelControl9.Name = "LabelControl9"
         Me.LabelControl9.Size = New System.Drawing.Size(19, 22)
         Me.LabelControl9.TabIndex = 83
