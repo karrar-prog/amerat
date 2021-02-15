@@ -8,6 +8,7 @@ Public Class fm_camera
     Dim CAMERA As VideoCaptureDevice
     Dim bmp As Bitmap
     Public patient_id As Integer
+    Public id As Integer = 0
     Public re As String = from_main
 
     Private Sub fm_camera_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
@@ -70,7 +71,14 @@ Public Class fm_camera
         Else
             tb_type.BackColor = Color.White
             PictureBox2.Image = PictureBox1.Image
-            save_images()
+
+            If re = "tanasol" Then
+                save_tanasol()
+            Else
+
+                save_images()
+            End If
+
 
         End If
 
@@ -174,4 +182,24 @@ Public Class fm_camera
     Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
 
     End Sub
+
+    Private Sub save_tanasol()
+1:
+
+        Dim path As String = patient_image_path
+        Try
+
+            Dim new_path = images_path & "\p" & patient_id & "\tanazolat"
+            If (Not System.IO.Directory.Exists(new_path)) Then
+                System.IO.Directory.CreateDirectory(new_path)
+            End If
+
+            PictureBox2.Image.Save(new_path & "\تنازل-" & id & tb_type.Text & ".png", Imaging.ImageFormat.Png)
+        Catch
+
+            MessageBox.Show("خطأ في الحفظ ")
+
+        End Try
+    End Sub
+
 End Class

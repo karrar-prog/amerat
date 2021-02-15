@@ -1,10 +1,29 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class fm_tanazol
+    Dim p As New Patient
 
+    Private Sub fm_tanazol_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+
+    End Sub
+
+    Private Sub fm_tanazol_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        p_patient.Image = Nothing
+    End Sub
     Private Sub fm_tanazol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         formatlist()
         search()
+        p = New Patient(__(tb_patient_id.Text))
+        tb_f7.Text = p.note
+        TextEdit1.Text = p.f1 & p.f2 & "." & p.f3
+        TextEdit2.Text = p.name
+
+        Try
+            p_patient.Image = Image.FromFile(images_path & "\im" & p.id & ".png")
+        Catch ex As Exception
+            p_patient.Image = Nothing
+        End Try
+
 
     End Sub
     Private Sub formatlist()
@@ -27,7 +46,9 @@ Public Class fm_tanazol
         lv_queue.Columns.Add("حالة ألفيشة", 130)
         lv_queue.Columns.Add("تأريخ الفيشة الاولى", 10)
         lv_queue.Columns.Add("حالة البصمة", 10)
-    
+        lv_queue.Columns.Add("ملاحظات", 10)
+        lv_queue.Columns.Add("نص التنازل", 200)
+
 
 
     End Sub
@@ -120,8 +141,10 @@ Public Class fm_tanazol
                         DataSet.Tables(0).Rows(i).SetField(Of String)("s3", "تم التسجيل")
 
                     End If
-               
-            
+
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("note").ToString)
+                    lv_queue.Items(i).SubItems.Add(DataSet.Tables(0).Rows(i).Item("f7").ToString)
+
                 Next
             End If
 
@@ -137,13 +160,27 @@ Public Class fm_tanazol
     Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles SimpleButton4.Click
         If tb_gender.Text.Trim = "" Then
             MessageBox.Show("ادخل اسم الزبون الجديد")
+            tb_gender.BackColor = Color.Pink
             Exit Sub
         End If
         If tb_gender.Text.Length < 5 Then
             MessageBox.Show("اسم الزبون قصير")
+            tb_gender.BackColor = Color.Pink
+            Exit Sub
+        End If
+        If tb_f7.Text.Length < 5 Then
+            MessageBox.Show("نص التنازل فارغ")
+            tb_f7.BackColor = Color.Pink
             Exit Sub
         End If
         If MessageBox.Show("هل انت متأكد", "", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.Yes Then
+
+            SimpleButton4.Enabled = False
+            SimpleButton1.Enabled = False
+            tb_f7.ReadOnly = True
+            tb_gender.ReadOnly = True
+            lv_queue.Enabled = False
+
             Dim new_p As New Patient(__(tb_patient_id.Text))
             Dim old_p As New patient2()
             old_p.patient_id = new_p.id
@@ -165,7 +202,8 @@ Public Class fm_tanazol
             old_p.f4 = new_p.f4
             old_p.f5 = new_p.f5
             old_p.f6 = new_p.f6
-            old_p.f7 = new_p.f7
+            old_p.f7 = tb_f7.Text
+
 
             old_p.f8 = new_p.f8
             old_p.f9 = new_p.f9
@@ -192,12 +230,235 @@ Public Class fm_tanazol
             old_p.note = new_p.note
 
             old_p.finger_print = new_p.finger_print
-            
+
             old_p.save()
 
             search()
+            print_tanazol(__(lv_queue.Items(0).Text))
+            save_images(lv_queue.Items(0).SubItems(1).Text, lv_queue.Items(0).Text)
+            tb_gender.Text = ""
+            tb_f7.Text = ""
+            lv_queue.Enabled = True
+
+
+
+        End If
+    End Sub
+
+    Private Sub GroupControl1_Paint(sender As Object, e As PaintEventArgs) Handles GroupControl1.Paint
+
+    End Sub
+
+    Private Sub lv_queue_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lv_queue.SelectedIndexChanged
+        If lv_queue.SelectedItems.Count = 1 Then
+            tb_f7.Text = lv_queue.SelectedItems(0).SubItems(15).Text
+            put_image(lv_queue.SelectedItems(0).SubItems(1).Text, lv_queue.SelectedItems(0).Text)
+            SimpleButton4.Enabled = False
+            SimpleButton1.Enabled = False
+            tb_f7.ReadOnly = True
+            tb_gender.ReadOnly = True
+
+
+        End If
+    End Sub
+
+    Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+
+
+        If tb_gender.Text.Trim = "" Then
+            MessageBox.Show("ادخل اسم الزبون الجديد")
+            tb_gender.BackColor = Color.Pink
+            Exit Sub
+        End If
+        If tb_gender.Text.Length < 5 Then
+            MessageBox.Show("اسم الزبون قصير")
+            tb_gender.BackColor = Color.Pink
+            Exit Sub
+        End If
+
+
+        Dim total_amount As Decimal
+        Dim old_name As String
+        Dim new_name As String
+        Dim block As String
+        Dim dar As String
+        Dim contract_date As String
+
+
+        total_amount = get_total_amount(p)
+        old_name = p.name
+        new_name = tb_gender.Text
+        block = p.f1 & "." & p.f2
+        dar = "H." & p.f3
+        contract_date = p.register_date
+
+        tb_f7.Text = " إني السيد ( "
+        tb_f7.Text = tb_f7.Text & old_name
+        tb_f7.Text = tb_f7.Text & " ) اتنازل عن العقد المرقم ( "
+        tb_f7.Text = tb_f7.Text & tb_patient_id.Text
+        tb_f7.Text = tb_f7.Text & " ) بتاريخ  "
+        tb_f7.Text = tb_f7.Text & Date.Now.ToShortDateString & " " & vbNewLine
+        tb_f7.Text = tb_f7.Text & " ( " & dar & " ) " & " على الدار المرقم " & vbNewLine
+        tb_f7.Text = tb_f7.Text & " ( " & block & " ) بلوك  " & vbNewLine
+        tb_f7.Text = tb_f7.Text & "حيث تنازلت عن حقوقي في العقد إلى ( "
+        tb_f7.Text = tb_f7.Text & new_name
+        tb_f7.Text = tb_f7.Text & " ) ولا يحق لي بعد التوقيع المطالبة باي حق يتعلق بهذا العقد قباله الشركه ( شركه كاسو وشركه الجسور العاليه للمقاولات ) ويعتبر هذا التنازل اسقاط لجميع حقوقي بما في ذلك استلامي للمبلغ المذكور في العقد والبالغ" & vbNewLine
+        tb_f7.Text = tb_f7.Text & " ( " & Format(total_amount, "###,###,###,###,###") & " ) " & vbNewLine
+        tb_f7.Text = tb_f7.Text & " ( " & ToArabicLetter(total_amount) & " ) " & vbNewLine
+        tb_f7.Text = tb_f7.Text & "حيث استلمته من المتنازل له ويعتبر تنازلي هذا فسخا للعقد المذكور واستلامي جميع حقوقي في العقد٠"
+
+
+    End Sub
+
+    Private Function get_total_amount(p As Patient) As Decimal
+
+        Dim first_push As Decimal
+        first_push = p.first_push_amount_arrived
+
+        Dim total_pusths As Decimal
+
+        total_pusths = func_total_pusths(p)
+
+        Return first_push + total_pusths
+
+    End Function
+
+    Private Function func_total_pusths(p As Patient) As Decimal
+
+        Dim dept As New Dept
+        Return dept.get_all_pushs(p.id)
+    End Function
+
+    Private Sub طباعةالتنازلToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles طباعةالتنازلToolStripMenuItem.Click
+
+        If lv_queue.SelectedItems.Count = 1 Then
+
+            print_tanazol(__(lv_queue.SelectedItems(0).Text))
+
+
+        End If
+      
+    End Sub
+
+    Private Sub print_tanazol(id As Integer)
+        Dim p As New patient2(id)
+
+        Dim d As New DataSet
+        d = getdatat1("select * from dept2 where user_id = 0 order by id asc")
+
+
+        Dim f As New fm_x_viewer_treat
+        f.ds = d
+        f.user_name = p.name
+        f.final_price = "0"
+        f.user_dar = ""
+        f.user_block = ""
+        f.remaind = ""
+        f.arrive = ""
+        f.user_name = ""
+        f.contract_date = ""
+        f.user_block_number = ""
+        f.user_id_number = "0"
+        f.dar_area = " "
+        f.item1 = ""
+        f.item2 = ""
+        f.item3 = ""
+        f.item4 = ""
+        f.item9 = ""
+        f.item10 = ""
+        f.admin_name = ""
+
+
+        'realy used
+        f.item1 = p.id.ToString
+        f.item2 = p.f7
+        f.item3 = p.name
+        f.item4 = p.f6
+        f.item5 = p.phone
+        f.item6 = p.token_date
+        f.path = "tanazol"
+        f.Show()
+
+    End Sub
+    Private Sub save_images(id As String, tanasol_id As String)
+1:
+
+        Dim path As String = patient_image_path
+        Try
+
+            Dim new_path = images_path & "\p" & id & "\tanazolat"
+            If (Not System.IO.Directory.Exists(new_path)) Then
+                System.IO.Directory.CreateDirectory(new_path)
+            End If
+
+            p_patient.Image.Save(new_path & "\" & tanasol_id & ".png", Imaging.ImageFormat.Png)
+        Catch
+
+            MessageBox.Show("لم يتم ارشفة الصورة - الصورة غير متوفرة")
+
+        End Try
+    End Sub
+    Private Sub put_image(id As String, tanasol_id As String)
+        If lv_queue.SelectedItems.Count > 0 Then
+            Try
+
+                p_patient.Image = Image.FromFile(images_path & "\p" & id & "\tanazolat\" & tanasol_id & ".png")
+
+            Catch ex As Exception
+                p_patient.Image = Nothing
+
+            End Try
+        End If
+    End Sub
+
+    Private Sub عرضتفاصيلالاقساطعندالتنازلToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles عرضتفاصيلالاقساطعندالتنازلToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count = 1 Then
+            If user.type = user_admin Then
+                If MessageBox.Show("هل انت متأكد ؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.Yes Then
+                    Dim p2 As New patient2
+                    p2.id = __(lv_queue.SelectedItems(0).Text)
+                    p2.delete()
+                    search()
+
+                End If
+            End If
+        End If
+
+    End Sub
+
+    Private Sub اضافةصورةالتنازلToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles اضافةصورةالتنازلToolStripMenuItem.Click
+        If lv_queue.SelectedItems.Count = 1 Then
+            If user.type = user_admin Then
+
+                fm_camera.id = Convert.ToInt32(lv_queue.SelectedItems(0).Text)
+                fm_camera.patient_id = Convert.ToInt32(lv_queue.SelectedItems(0).SubItems(1).Text)
+                fm_camera.tb_type.Text = lv_queue.SelectedItems(0).SubItems(2).Text
+                fm_camera.Show()
+                fm_camera.re = "tanasol"
+            End If
+        End If
+
+    End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+
+        If Not hasPermission(i_add_booking) Then
+            Exit Sub
+            MessageBox.Show("ليس لديك الصلاحية", "مركز الصلاحيات")
+        End If
 
        
-        End If
+        Try
+            Dim new_path = images_path & "\p" & tb_patient_id.Text & "\tanazolat"
+            If (Not System.IO.Directory.Exists(new_path)) Then
+                System.IO.Directory.CreateDirectory(new_path)
+            End If
+
+            Process.Start("explorer.exe", new_path)
+
+
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

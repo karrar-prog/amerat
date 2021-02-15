@@ -371,50 +371,26 @@ Public Class patient2
 
     End Function
     Public Function delete() As Boolean
-
         If Me.id = 0 Then
             Return False
-
         Else
             conn = New MySqlConnection()
             conn.ConnectionString = serverInfo
-
-            'Try
             conn.Open()
-            'Catch myerror As MySqlException
-            '    MsgBox("Connection to the Database Failed")
-            '    Return False
-
-
-            'End Try
-
             Try
-
                 Dim SQLCommand As New MySqlCommand()
                 SQLCommand.Connection = conn
-                SQLCommand.CommandText = "UPDATE patient2 SET first_push_amount_arrived= 0 , name = ' ' , wieght = ' ' , gender = ' ' , phone = ' ' , note = ' ' , diagonosis = ''" +
-                " , first_push_amount =0 ,first_push_present = 0  , f4 =0 , f5 = '' , f6 = '' , f7 = '' , f8 = '', f9 = '' , f10 = '' , deleted = 0,saller = '',is_token = 'غير محجوز'  WHERE id = @id"
+                SQLCommand.CommandText = "DELETE FROM patient2 WHERE id = @id"
                 SQLCommand.Parameters.Add("@id", MySqlDbType.String).Value = Me.id
-
-
                 SQLCommand.ExecuteNonQuery()
-
-
-                Dim content = " تمت الغاء حجز" & "  " & Me.name & " رقم الزبون " & Me.id
-
-                new_event2("الغاء حجز زبون", content, 0)
-
                 conn.Close()
                 Return True
-
             Catch ex As Exception
                 conn.Close()
                 MessageBox.Show(ex.Message)
                 Return False
             End Try
         End If
-
-
     End Function
     Public Function undelete() As Boolean
 

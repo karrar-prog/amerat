@@ -547,7 +547,7 @@ where id = @id
     End Function
 
     Function get_date_beteen(date1 As String, date2 As String) As DataSet
-        Dim query As String = "select * , patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 from dept , patient where dept.id NOT IN( SELECT dept_id FROM queue)  AND CAST(payment_date AS DATE) >= '" & date1 & "' AND CAST(payment_date AS DATE) < '" & date2 & "' AND arrive_amount = 0 AND patient.id = dept.user_id"
+        Dim query As String = "select * , patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 from dept , patient where dept.id NOT IN( SELECT dept_id FROM queue)  AND CAST(payment_date AS DATE) >= '" & date1 & "' AND CAST(payment_date AS DATE) < '" & date2 & "' AND arrive_amount = 0  AND first_push_amount_arrived <> 0 AND patient.id = dept.user_id"
         Dim ds As New DataSet()
         conn = New MySqlConnection()
         conn.ConnectionString = serverInfo
@@ -564,7 +564,7 @@ where id = @id
         conn.Close()
     End Function
     Function get_date_beteen2(date1 As String, date2 As String) As DataSet
-        Dim query As String = "select * , queue.id as queue_id ,patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 from dept , patient , queue where CAST(payment_date AS DATE) >= '" & date1 & "' AND CAST(payment_date AS DATE) < '" & date2 & "' AND arrive_amount = 0 AND patient.id = dept.user_id  AND dept.id = queue.dept_id order by queue.id desc"
+        Dim query As String = "select * , queue.id as queue_id ,patient.f1 as patient_f1 ,patient.f2  as patient_f2,patient.f3 as patient_f3 from dept , patient , queue where CAST(payment_date AS DATE) >= '" & date1 & "' AND CAST(payment_date AS DATE) < '" & date2 & "' AND arrive_amount = 0   AND first_push_amount_arrived <> 0 AND patient.id = dept.user_id  AND dept.id = queue.dept_id order by queue.id desc"
         Dim ds As New DataSet()
         conn = New MySqlConnection()
         conn.ConnectionString = serverInfo
@@ -631,6 +631,27 @@ where id = @id
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
+    Function get_all_pushs(id As Integer) As Decimal
+
+        Dim query As String = "select sum(arrive_amount) as total_amount from dept where user_id  =" & id
+        Dim ds As New DataSet()
+        conn = New MySqlConnection()
+        conn.ConnectionString = serverInfo
+        conn.Open()
+        Try
+            Dim da As New MySqlDataAdapter(query, conn)
+            da.Fill(ds)
+
+        Catch ex As Exception
+            conn.Close()
+            Return 0
+
+        End Try
+        conn.Close()
+
+        Return ___(ds.Tables(0).Rows(0).Item("total_amount").ToString)
+    End Function
 
 
 

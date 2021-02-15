@@ -205,8 +205,8 @@
   <data name="e (51)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (51).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e (74)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (74).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="name-card-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\name-card-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,6 +304,9 @@
   <data name="sharp_search_white_48dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_search_white_48dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sharp_build_white_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sharp_build_white_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="e (26)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (26).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -337,9 +340,6 @@
   <data name="certificate-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\certificate-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="e (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -360,9 +360,6 @@
   </data>
   <data name="e (68)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (68).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="e (83)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (83).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e (122)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (122).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -391,6 +388,9 @@
   <data name="folder-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="addition-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addition-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="e (35)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (35).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -417,6 +417,9 @@
   </data>
   <data name="sharp_close_white_18dp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_close_white_18dp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amerat_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amerat_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sharp_public_white_48dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_public_white_48dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -462,6 +465,9 @@
   </data>
   <data name="sharp_important_devices_white_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_important_devices_white_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e (31)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (31).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e (15)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (15).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -541,9 +547,6 @@
   <data name="e (115)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (115).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sharp_library_add_white_48dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_library_add_white_48dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -567,6 +570,9 @@
   </data>
   <data name="e (85)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (85).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fingerprint-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fingerprint-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -625,9 +631,6 @@
   <data name="e (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sharp_person_add_white_48dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sharp_person_add_white_48dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="e (69)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (69).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -673,8 +676,8 @@
   <data name="e (116)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (116).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sharp_build_white_18dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sharp_build_white_18dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e (42)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (42).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="timer-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\timer-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -682,14 +685,17 @@
   <data name="sharp_personal_video_white_48dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_personal_video_white_48dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="e (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sharp_library_add_white_48dp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_library_add_white_48dp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e (106)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (106).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e (83)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (83).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="contact-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\contact-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -700,14 +706,11 @@
   <data name="market-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\market-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="addition-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addition-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e (21)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (21).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e (123)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (123).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="e (61)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (61).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="capsule-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\capsule-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -715,14 +718,14 @@
   <data name="e (67)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (67).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e (31)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (31).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pdf-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pdf-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e (39)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (39).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e (21)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (21).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="system-settings-icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\system-settings-icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -748,8 +751,8 @@
   <data name="e (17)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (17).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e (42)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e (42).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e (61)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (61).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e (91)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (91).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -757,8 +760,11 @@
   <data name="sharp_local_printshop_white_48dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sharp_local_printshop_white_48dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pdf-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pdf-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e (74)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e (74).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sharp_person_add_white_48dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sharp_person_add_white_48dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e (125)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (125).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -778,7 +784,7 @@
   <data name="e (113)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e (113).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fingerprint-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fingerprint-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="amerat2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amerat2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

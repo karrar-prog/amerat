@@ -135,7 +135,10 @@ Public Class fm_months_shoud_push
 1:
         Try
             li_dept.Items.Clear()
+            GridControl1.DataSource = d.Tables(0)
+
             If d.Tables(0).Rows.Count > 0 Then
+
                 Dim i = 0
                 For i2 As Integer = 0 To d.Tables(0).Rows.Count - 1
                     'اذا كان لايساوي صفر فانه مؤجل ويجب معرفة تأريخ التأجيل
@@ -181,6 +184,7 @@ Public Class fm_months_shoud_push
 
                         End If
                         li_dept.Items(i).SubItems.Add(d.Tables(0).Rows(i2).Item("patient_f1").ToString & d.Tables(0).Rows(i2).Item("patient_f2").ToString & "." & d.Tables(0).Rows(i2).Item("patient_f3").ToString)
+                        li_dept.Items(i).SubItems.Add(d.Tables(0).Rows(i2).Item("phone").ToString)
 
                         i = i + 1
                     End If
@@ -198,15 +202,16 @@ Public Class fm_months_shoud_push
     Private Sub lv_format()
         li_dept.View = View.Details
         li_dept.Columns.Add("تسلسل الدفعة", 0)
-        li_dept.Columns.Add("اسم الزبون", 200)
+        li_dept.Columns.Add("اسم الزبون", 240)
         li_dept.Columns.Add("عنوان الدفعة", 140)
         li_dept.Columns.Add("مبلغ الدفعة", 120)
         li_dept.Columns.Add("تأريخ الاستحقاق", 120)
-        li_dept.Columns.Add("رقم العقد", 140)
-        li_dept.Columns.Add("تمت طباعة الفيشة؟", 140)
+        li_dept.Columns.Add("رقم العقد", 100)
+        li_dept.Columns.Add("تمت طباعة الفيشة؟", 120)
         li_dept.Columns.Add("رقم الفيشة", 140)
-        li_dept.Columns.Add("الدار", 140)
-        li_dept.Columns.Add("تفاصيل", 140)
+        li_dept.Columns.Add("الدار", 100)
+
+        li_dept.Columns.Add("هاتف", 140)
 
 
     End Sub
@@ -346,5 +351,27 @@ Public Class fm_months_shoud_push
 
             fm_taajeel.Show()
         End If
+    End Sub
+
+    Private Sub r_with_CheckedChanged(sender As Object, e As EventArgs) Handles r_with.CheckedChanged
+        searched = 4
+
+        search()
+    End Sub
+
+    Private Sub r_without_CheckedChanged(sender As Object, e As EventArgs) Handles r_without.CheckedChanged
+        searched = 4
+
+        search()
+    End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        Export_xlsx("tanazolat", GridControl1)
+    End Sub
+    Private Sub Export_xlsx(output As String, ByRef gridControl As DevExpress.XtraGrid.GridControl)
+        Dim path As String = "xlsx/" & output & "_Date_" & Date.Now.Year & "_" & Date.Now.Month & "_" & Date.Now.Day & "_Time_" & Date.Now.Hour & "_" & Date.Now.Minute & "_" & Date.Now.Second & Date.Now.Millisecond & ".xlsx"
+        GridControl1.ExportToXlsx(path)
+        ' Open the created XLSX file with the default application.
+        Process.Start(Application.StartupPath & "/" & path)
     End Sub
 End Class

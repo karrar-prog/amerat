@@ -50,6 +50,7 @@ Partial Class fm_camera
         '
         'RibbonControl1
         '
+        Me.RibbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
         Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.BarHeaderItem1})
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
@@ -97,7 +98,7 @@ Partial Class fm_camera
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.IQTClinicSystem.My.Resources.Resources.attach_2_icon
-        Me.PictureBox3.Location = New System.Drawing.Point(262, 159)
+        Me.PictureBox3.Location = New System.Drawing.Point(243, 154)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(55, 55)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -138,7 +139,7 @@ Partial Class fm_camera
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(212, 174)
+        Me.Label2.Location = New System.Drawing.Point(193, 174)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 19)
         Me.Label2.TabIndex = 266
@@ -160,10 +161,10 @@ Partial Class fm_camera
         Me.tb_type.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tb_type.FormattingEnabled = True
         Me.tb_type.Items.AddRange(New Object() {"فيشة", "عقد", "هوية", "بطاقة سكن", "بطاقة التموينية", "مستمسكات اخرى"})
-        Me.tb_type.Location = New System.Drawing.Point(14, 172)
+        Me.tb_type.Location = New System.Drawing.Point(12, 126)
         Me.tb_type.Name = "tb_type"
         Me.tb_type.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tb_type.Size = New System.Drawing.Size(194, 27)
+        Me.tb_type.Size = New System.Drawing.Size(286, 27)
         Me.tb_type.TabIndex = 269
         '
         'fm_camera

@@ -1846,6 +1846,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ameratICON.ico" />
+    <None Include="Resources\amerat2.jpg" />
+    <None Include="Resources\amerat_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

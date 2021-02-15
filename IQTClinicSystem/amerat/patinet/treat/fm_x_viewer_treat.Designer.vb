@@ -928,7 +928,7 @@ Partial Class fm_x_viewer_treat
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
         Me.BarDockControl4.Location = New System.Drawing.Point(1134, 78)
         Me.BarDockControl4.Manager = Nothing
-        Me.BarDockControl4.Size = New System.Drawing.Size(0, 778)
+        Me.BarDockControl4.Size = New System.Drawing.Size(0, 618)
         '
         'RibbonPage2
         '
@@ -1396,7 +1396,7 @@ Partial Class fm_x_viewer_treat
         Me.BarDockControl5.Dock = System.Windows.Forms.DockStyle.Right
         Me.BarDockControl5.Location = New System.Drawing.Point(1134, 78)
         Me.BarDockControl5.Manager = Nothing
-        Me.BarDockControl5.Size = New System.Drawing.Size(0, 778)
+        Me.BarDockControl5.Size = New System.Drawing.Size(0, 618)
         '
         'PrintPreviewBarCheckItem1
         '
@@ -1416,7 +1416,7 @@ Partial Class fm_x_viewer_treat
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 31)
         Me.barDockControlLeft.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 852)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 692)
         '
         'DocumentViewerBarManager1
         '
@@ -1787,7 +1787,7 @@ Partial Class fm_x_viewer_treat
         '
         Me.ZoomTrackBarEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
         Me.ZoomTrackBarEditItem1.Edit = Me.RepositoryItemZoomTrackBar1
-        Me.ZoomTrackBarEditItem1.EditValue = 40
+        Me.ZoomTrackBarEditItem1.EditValue = 90
         Me.ZoomTrackBarEditItem1.EditWidth = 140
         Me.ZoomTrackBarEditItem1.Enabled = False
         Me.ZoomTrackBarEditItem1.Id = 5
@@ -1814,7 +1814,7 @@ Partial Class fm_x_viewer_treat
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 883)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 723)
         Me.barDockControlBottom.Manager = Me.DocumentViewerBarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1134, 26)
         '
@@ -1824,7 +1824,7 @@ Partial Class fm_x_viewer_treat
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1134, 31)
         Me.barDockControlRight.Manager = Me.DocumentViewerBarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 852)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 692)
         '
         'DocumentViewer1
         '
@@ -1832,7 +1832,7 @@ Partial Class fm_x_viewer_treat
         Me.DocumentViewer1.IsMetric = True
         Me.DocumentViewer1.Location = New System.Drawing.Point(0, 78)
         Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(1134, 778)
+        Me.DocumentViewer1.Size = New System.Drawing.Size(1134, 618)
         Me.DocumentViewer1.TabIndex = 118
         '
         'miFile
@@ -2094,7 +2094,7 @@ Partial Class fm_x_viewer_treat
         '
         'RibbonStatusBar1
         '
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 856)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 696)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
         Me.RibbonStatusBar1.Size = New System.Drawing.Size(1134, 27)
@@ -2122,7 +2122,7 @@ Partial Class fm_x_viewer_treat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1134, 909)
+        Me.ClientSize = New System.Drawing.Size(1134, 749)
         Me.Controls.Add(Me.SimpleButton2)
         Me.Controls.Add(Me.SimpleButton3)
         Me.Controls.Add(Me.BarDockControl4)

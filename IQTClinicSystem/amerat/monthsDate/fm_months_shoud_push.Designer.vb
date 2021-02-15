@@ -42,15 +42,11 @@ Partial Class fm_months_shoud_push
         Me.colhouse_price = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.first_part = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.last_part = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.f9 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.ref_by = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.is_token = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.f10 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.f8 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.fg = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.ref_by = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.is_token = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
         Me.r_with = New System.Windows.Forms.RadioButton()
@@ -191,7 +187,7 @@ Partial Class fm_months_shoud_push
         '
         Me.GridView1.Appearance.Row.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridView1.Appearance.Row.Options.UseFont = True
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colid, Me.colname, Me.colf1, Me.colf2, Me.colf3, Me.colhouse_price, Me.first_part, Me.last_part, Me.f9, Me.ref_by, Me.is_token, Me.f10, Me.f8, Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colid, Me.colname, Me.colf1, Me.colf2, Me.colf3, Me.colhouse_price, Me.first_part, Me.last_part, Me.fg, Me.GridColumn1, Me.GridColumn2, Me.ref_by, Me.is_token})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -217,8 +213,8 @@ Partial Class fm_months_shoud_push
         '
         'colf1
         '
-        Me.colf1.Caption = "فئة الدار"
-        Me.colf1.FieldName = "f1"
+        Me.colf1.Caption = "العنوان"
+        Me.colf1.FieldName = "title"
         Me.colf1.Name = "colf1"
         Me.colf1.Visible = True
         Me.colf1.VisibleIndex = 2
@@ -226,8 +222,8 @@ Partial Class fm_months_shoud_push
         '
         'colf2
         '
-        Me.colf2.Caption = "بلوك"
-        Me.colf2.FieldName = "f2"
+        Me.colf2.Caption = "المبلغ"
+        Me.colf2.FieldName = "amount"
         Me.colf2.Name = "colf2"
         Me.colf2.Visible = True
         Me.colf2.VisibleIndex = 3
@@ -235,8 +231,8 @@ Partial Class fm_months_shoud_push
         '
         'colf3
         '
-        Me.colf3.Caption = "رقم الدار"
-        Me.colf3.FieldName = "f3"
+        Me.colf3.Caption = "تأريخ الاستحقاق"
+        Me.colf3.FieldName = "payment_date"
         Me.colf3.Name = "colf3"
         Me.colf3.Visible = True
         Me.colf3.VisibleIndex = 4
@@ -244,8 +240,8 @@ Partial Class fm_months_shoud_push
         '
         'colhouse_price
         '
-        Me.colhouse_price.Caption = "سعر الدار"
-        Me.colhouse_price.FieldName = "house_price"
+        Me.colhouse_price.Caption = "رقم العقد"
+        Me.colhouse_price.FieldName = "user_id"
         Me.colhouse_price.Name = "colhouse_price"
         Me.colhouse_price.Visible = True
         Me.colhouse_price.VisibleIndex = 5
@@ -253,7 +249,7 @@ Partial Class fm_months_shoud_push
         '
         'first_part
         '
-        Me.first_part.Caption = "ألقسم الاول"
+        Me.first_part.Caption = "الفيشة"
         Me.first_part.FieldName = "first_part"
         Me.first_part.Name = "first_part"
         Me.first_part.Visible = True
@@ -262,29 +258,45 @@ Partial Class fm_months_shoud_push
         '
         'last_part
         '
-        Me.last_part.Caption = "القسم الاخير"
-        Me.last_part.FieldName = "last_part"
+        Me.last_part.Caption = "رقم الفيشة"
+        Me.last_part.FieldName = "queue_id"
         Me.last_part.Name = "last_part"
         Me.last_part.Visible = True
         Me.last_part.VisibleIndex = 7
         Me.last_part.Width = 65
         '
-        'f9
+        'fg
         '
-        Me.f9.Caption = "القطاع"
-        Me.f9.FieldName = "f9"
-        Me.f9.Name = "f9"
-        Me.f9.Visible = True
-        Me.f9.VisibleIndex = 8
-        Me.f9.Width = 65
+        Me.fg.Caption = "فئة"
+        Me.fg.FieldName = "patient_f1"
+        Me.fg.Name = "fg"
+        Me.fg.Visible = True
+        Me.fg.VisibleIndex = 8
+        Me.fg.Width = 65
+        '
+        'GridColumn1
+        '
+        Me.GridColumn1.Caption = "بلوك"
+        Me.GridColumn1.FieldName = "patient_f2"
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 9
+        '
+        'GridColumn2
+        '
+        Me.GridColumn2.Caption = "دار"
+        Me.GridColumn2.FieldName = "patient_f3"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 10
         '
         'ref_by
         '
-        Me.ref_by.Caption = "المساحة"
-        Me.ref_by.FieldName = "ref_by"
+        Me.ref_by.Caption = "رقم الهاتف"
+        Me.ref_by.FieldName = "phone"
         Me.ref_by.Name = "ref_by"
         Me.ref_by.Visible = True
-        Me.ref_by.VisibleIndex = 9
+        Me.ref_by.VisibleIndex = 11
         Me.ref_by.Width = 65
         '
         'is_token
@@ -293,58 +305,8 @@ Partial Class fm_months_shoud_push
         Me.is_token.FieldName = "is_token"
         Me.is_token.Name = "is_token"
         Me.is_token.Visible = True
-        Me.is_token.VisibleIndex = 10
+        Me.is_token.VisibleIndex = 12
         Me.is_token.Width = 65
-        '
-        'f10
-        '
-        Me.f10.Caption = "الموقع"
-        Me.f10.FieldName = "f10"
-        Me.f10.Name = "f10"
-        Me.f10.Visible = True
-        Me.f10.VisibleIndex = 11
-        Me.f10.Width = 65
-        '
-        'f8
-        '
-        Me.f8.Caption = "رقم السند"
-        Me.f8.FieldName = "f8"
-        Me.f8.Name = "f8"
-        Me.f8.Visible = True
-        Me.f8.VisibleIndex = 12
-        Me.f8.Width = 93
-        '
-        'GridColumn1
-        '
-        Me.GridColumn1.Caption = "الفيشة"
-        Me.GridColumn1.FieldName = "s1"
-        Me.GridColumn1.Name = "GridColumn1"
-        Me.GridColumn1.Visible = True
-        Me.GridColumn1.VisibleIndex = 13
-        '
-        'GridColumn2
-        '
-        Me.GridColumn2.Caption = "تأريخ استلام الفيشة الاولى"
-        Me.GridColumn2.FieldName = "s2"
-        Me.GridColumn2.Name = "GridColumn2"
-        Me.GridColumn2.Visible = True
-        Me.GridColumn2.VisibleIndex = 14
-        '
-        'GridColumn3
-        '
-        Me.GridColumn3.Caption = "البصمة"
-        Me.GridColumn3.FieldName = "s3"
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 15
-        '
-        'GridColumn4
-        '
-        Me.GridColumn4.Caption = "توثيق الفيشة الاولى"
-        Me.GridColumn4.FieldName = "code"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 16
         '
         'GroupControl2
         '
@@ -553,15 +515,9 @@ Partial Class fm_months_shoud_push
     Friend WithEvents colhouse_price As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents first_part As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents last_part As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents f9 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents fg As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents ref_by As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents is_token As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents f10 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents f8 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents SimpleButton4 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
@@ -578,4 +534,6 @@ Partial Class fm_months_shoud_push
     Friend WithEvents r_without As System.Windows.Forms.RadioButton
     Friend WithEvents تحديثالمعلوماتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents تأجيلالموعدToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

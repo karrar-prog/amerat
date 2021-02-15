@@ -992,18 +992,16 @@ C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
 C:\Users\ka\Desktop\MyFiles\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_contact_item.resources
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\bin\Debug\System.Data.SQLite.xml
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbprojResolveAssemblyReference.cache
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_add_fingerprint.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_new_finger.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_change_user.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_statistics.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_statistics_money.resources
+C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_months_shoud_push.resources
+C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_taajeel.resources
+C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_tanazol.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_fesha.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_stecker.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_call.resources
@@ -1086,6 +1084,7 @@ C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinic
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.xreport_designer.resources
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.vbproj.GenerateResource.Cache
 C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.exe.licenses
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_months_shoud_push.resources
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_taajeel.resources
-C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.fm_tanazol.resources
+C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\obj\Debug\IQTClinicSystem.pdb
+C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe.config
+C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.exe
+C:\Users\ka\Desktop\MyFiles\AL Amerat\AMERAT\IQTClinicSystem\bin\Debug\IQTClinicSystem.pdb
